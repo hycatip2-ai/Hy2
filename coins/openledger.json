@@ -1,67 +1,94 @@
 {
- "rank": 118,
+ "rank": 235,
  "slug": "openledger",
  "symbol": "OPEN",
  "name": "OpenLedger",
+ "cmc_id": 37456,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 46,
- "total_exact": 46.31,
+ "total": 36,
+ "total_exact": 36.19,
  "band": "Zayıf",
- "delta": null,
+ "delta": -10.1,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 12.1,
+   "score": 11.8,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.5987,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 71.306305,
-     "percentile": 0.6023,
-     "basis": "universe"
+     "value": 75.627536,
+     "percentile": 0.5909,
+     "basis": "universe",
+     "display": "75,6×",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.4,
+   "score": 7.6,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.2727,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.337805,
-     "percentile": 0.3731,
-     "basis": "sector"
+     "percentile": 0.3636,
+     "basis": "sector",
+     "display": "%34",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.960286,
-     "percentile": 0.4925,
-     "basis": "sector"
+     "percentile": 0.4848,
+     "basis": "sector",
+     "display": "2,96×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5522,
-     "basis": "sector"
+     "percentile": 0.553,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.567542,
+     "percentile": 0.12,
+     "basis": "sector",
+     "display": "+%57",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -71,84 +98,226 @@
    "score": 5.2,
    "has_data": true,
    "weight": 10,
+   "percentile": 0.3906,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2576,
-     "basis": "universe"
+     "percentile": 0.2578,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.2,
+   "score": 5.8,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.4286,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.75543,
-     "percentile": 0.3585,
-     "basis": "universe"
+     "value": 0.754746,
+     "percentile": 0.3774,
+     "basis": "universe",
+     "display": "−%25",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.2037,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.0,
+   "score": 12.8,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.8788,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.311023,
-     "percentile": 0.6716,
-     "basis": "sector"
+     "value": 0.295571,
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "%30",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 174.0,
-     "percentile": 0.8209,
-     "basis": "sector"
+     "percentile": 0.8106,
+     "basis": "sector",
+     "display": "174",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2291,
+     "percentile": 0.8333,
+     "basis": "sector",
+     "display": "%0,23",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1429,
+     "percentile": 0.4167,
+     "basis": "sector",
+     "display": "%14",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.253936,
-     "percentile": 0.3433,
-     "basis": "sector"
+     "value": 1.256674,
+     "percentile": 0.3485,
+     "basis": "sector",
+     "display": "1,3 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7677,
-     "basis": "universe"
+     "percentile": 0.7712,
+     "basis": "universe",
+     "display": "2",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -2.77,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,8)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    46.31
+  ],
+  [
+   "2026-10-24",
+   36.19
   ]
  ],
- "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -10.1,
+   "from": 46.3,
+   "to": 36.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.77,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,8)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -10.1,
+   "from": 46.3,
+   "to": 36.2,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.77,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,8)"
+    }
+   ]
+  }
+ ],
+ "investors": [
+  "Polychain Capital",
+  "Borderless Capital",
+  "Finality Capital Partners",
+  "Hash3",
+  "HashKey Capital",
+  "TRGC",
+  "STIX",
+  "Mask Network",
+  "MH Ventures",
+  "WAGMI Ventures",
+  "Sreeram Kannan",
+  "Balaji Srinivasan",
+  "Sandeep Nailwal",
+  "Kenny Li",
+  "Scott Moore",
+  "Chainyoda",
+  "Vyas Krishnan",
+  "Sebastien Borget",
+  "Paul Taylor",
+  "Alan Curtis",
+  "Trevor Koverko",
+  "Aniket Jindal",
+  "Dino"
+ ],
+ "investors_source": "https://defillama.com/protocol/openledger",
+ "angel_investors": [
+  "Sreeram Kannan",
+  "Balaji Srinivasan",
+  "Sandeep Nailwal",
+  "Kenny Li",
+  "Scott Moore",
+  "Vyas Krishnan",
+  "Sebastien Borget",
+  "Paul Taylor",
+  "Alan Curtis",
+  "Trevor Koverko",
+  "Aniket Jindal"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/openledger",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/openledger",
  "research": null
 }

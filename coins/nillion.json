@@ -1,20 +1,21 @@
 {
- "rank": 125,
+ "rank": 192,
  "slug": "nillion",
  "symbol": "NIL",
  "name": "Nillion",
+ "cmc_id": 35702,
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 45,
- "total_exact": 45.33,
+ "total": 41,
+ "total_exact": 41.06,
  "band": "Zayıf",
- "delta": null,
+ "delta": -4.3,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.0,
+   "score": 5.5,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.0385,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.502755,
-     "percentile": 0.36,
-     "basis": "sector"
+     "value": 0.504188,
+     "percentile": 0.3462,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.98904,
-     "percentile": 0.36,
-     "basis": "sector"
+     "value": 1.983388,
+     "percentile": 0.3462,
+     "basis": "sector",
+     "display": "1,98×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.18,
-     "basis": "sector"
+     "percentile": 0.1923,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.005721,
+     "percentile": 0.2143,
+     "basis": "sector",
+     "display": "+%0,6",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,61 +83,121 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 12.0,
+   "score": 8.9,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.3947,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.6018,
-     "basis": "universe"
+     "percentile": 0.4474,
+     "basis": "sector",
+     "display": "4",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.5,
+   "score": 12.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.7692,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.92,
-     "basis": "sector"
+     "percentile": 0.9231,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 140.0,
-     "percentile": 0.6,
-     "basis": "sector"
+     "percentile": 0.5769,
+     "basis": "sector",
+     "display": "140",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2818,
+     "percentile": 0.8125,
+     "basis": "sector",
+     "display": "%0,28",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0741,
+     "percentile": 0.5625,
+     "basis": "sector",
+     "display": "%7,4",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.69473,
-     "percentile": 0.36,
-     "basis": "sector"
+     "value": 1.697467,
+     "percentile": 0.3462,
+     "basis": "sector",
+     "display": "1,7 yıl",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+   "part": "usage",
+   "delta": -3.86,
+   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −3,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    45.33
+  ],
+  [
+   "2026-10-24",
+   41.06
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -4.3,
+   "from": 45.3,
+   "to": 41.1,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+     "part": "usage",
+     "delta": -3.86,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −3,9)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

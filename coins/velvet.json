@@ -1,23 +1,29 @@
 {
- "rank": null,
+ "rank": 158,
  "slug": "velvet",
  "symbol": "VELVET",
  "name": "Velvet",
+ "cmc_id": 37298,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
  "total": 44,
- "total_exact": 44.25,
+ "total_exact": 44.45,
  "band": "Zayıf",
- "delta": null,
+ "delta": 0.2,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
- "penalty": 0.0,
+ "eligible_for_top": true,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -25,6 +31,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +41,35 @@
    "score": 11.2,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.6061,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.463818,
-     "percentile": 0.5075,
-     "basis": "sector"
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "%46",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.156016,
-     "percentile": 0.6269,
-     "basis": "sector"
+     "percentile": 0.6212,
+     "basis": "sector",
+     "display": "2,16×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5522,
-     "basis": "sector"
+     "percentile": 0.553,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,43 +79,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 10.4,
+   "has_data": true,
    "weight": 30,
-   "metrics": []
+   "percentile": 0.5357,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.5185,
+     "basis": "sector",
+     "display": "1",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.8,
+   "score": 11.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.6061,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.169127,
-     "percentile": 0.5224,
-     "basis": "sector"
+     "value": 0.169256,
+     "percentile": 0.5152,
+     "basis": "sector",
+     "display": "%17",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 157.0,
-     "percentile": 0.7015,
-     "basis": "sector"
+     "percentile": 0.697,
+     "basis": "sector",
+     "display": "157",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3154,
+     "percentile": 0.7222,
+     "basis": "sector",
+     "display": "%0,32",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1333,
+     "percentile": 0.4583,
+     "basis": "sector",
+     "display": "%13",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.289528,
-     "percentile": 0.403,
-     "basis": "sector"
+     "value": 1.292266,
+     "percentile": 0.4091,
+     "basis": "sector",
+     "display": "1,3 yıl",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -109,8 +165,13 @@
   [
    "2026-10-23",
    44.25
+  ],
+  [
+   "2026-10-24",
+   44.45
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

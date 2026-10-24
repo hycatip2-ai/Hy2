@@ -1,74 +1,94 @@
 {
- "rank": 26,
+ "rank": 131,
  "slug": "rhea-finance",
  "symbol": "RHEA",
  "name": "RHEA Finance",
+ "cmc_id": 37529,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 60,
- "total_exact": 59.63,
- "band": "Orta",
- "delta": null,
+ "total": 47,
+ "total_exact": 47.43,
+ "band": "Zayıf",
+ "delta": -12.2,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "hack_12m",
+   "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 14.7,
+   "score": 15.0,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.75,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 15.003494,
-     "percentile": 0.6957,
-     "basis": "sector"
+     "value": 13.811219,
+     "percentile": 0.7111,
+     "basis": "sector",
+     "display": "13,8×",
+     "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.098599,
-     "percentile": 0.8148,
-     "basis": "sector"
+     "value": 0.097026,
+     "percentile": 0.8269,
+     "basis": "sector",
+     "display": "0,097×",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.1,
+   "score": 9.4,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.4469,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.412821,
-     "percentile": 0.3596,
-     "basis": "sector"
+     "value": 0.412311,
+     "percentile": 0.3805,
+     "basis": "sector",
+     "display": "%41",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.424727,
-     "percentile": 0.386,
-     "basis": "sector"
+     "value": 2.427724,
+     "percentile": 0.4071,
+     "basis": "sector",
+     "display": "2,43×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,76 +98,213 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 19.2,
+   "score": 12.8,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.7105,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 2.440329,
-     "percentile": 0.9583,
-     "basis": "sector"
+     "value": 2.44841,
+     "percentile": 0.9362,
+     "basis": "sector",
+     "display": "+%145",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 2.350608,
+     "percentile": 1.0,
+     "basis": "sector",
+     "display": "+%135",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.9,
+   "score": 6.0,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.1416,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.08989,
-     "percentile": 0.3947,
-     "basis": "sector"
+     "value": 0.097838,
+     "percentile": 0.3982,
+     "basis": "sector",
+     "display": "%9,8",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 77.0,
-     "percentile": 0.2456,
-     "basis": "sector"
+     "percentile": 0.2478,
+     "basis": "sector",
+     "display": "77",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5465,
+     "percentile": 0.1692,
+     "basis": "sector",
+     "display": "%0,55",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.5,
+     "percentile": 0.0,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.237509,
-     "percentile": 0.2982,
-     "basis": "sector"
+     "value": 1.240246,
+     "percentile": 0.3186,
+     "basis": "sector",
+     "display": "1,2 yıl",
+     "tier": "alt dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6493,
-     "basis": "sector"
+     "percentile": 0.6615,
+     "basis": "sector",
+     "display": "2",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -6.35,
+   "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −6,4)"
+  },
+  {
+   "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    59.63
+  ],
+  [
+   "2026-10-24",
+   47.43
   ]
  ],
- "events": [],
- "investors": [],
- "investors_source": null,
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -12.2,
+   "from": 59.6,
+   "to": 47.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -6.35,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −6,4)"
+    },
+    {
+     "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -12.2,
+   "from": 59.6,
+   "to": 47.4,
+   "reasons": [
+    {
+     "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -6.35,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −6,4)"
+    },
+    {
+     "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "investors": [
+  "Jump Crypto",
+  "Alameda Research",
+  "Dragonfly Capital",
+  "ParaFi Capital",
+  "Lemniscap",
+  "Mentha Partners",
+  "Warburg Serres Investments",
+  "QCP Capital",
+  "DeFi Capital",
+  "D1 Ventures",
+  "GFS Ventures",
+  "SevenX Ventures",
+  "IOSG Ventures",
+  "Kronos Research",
+  "Move Capital",
+  "Metaweb Ventures"
+ ],
+ "investors_source": "https://defillama.com/protocol/rhea-finance",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
- "hacks_12m": [],
- "defillama_url": null,
+ "hacks_12m": [
+  {
+   "date": "2026-04-16",
+   "amount": 18400000,
+   "returned": 0,
+   "technique": "Spot Price Manipulation"
+  }
+ ],
+ "defillama_url": "https://defillama.com/protocol/rhea-finance",
  "research": null
 }

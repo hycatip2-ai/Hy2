@@ -1,20 +1,21 @@
 {
- "rank": 87,
+ "rank": 90,
  "slug": "request",
  "symbol": "REQ",
  "name": "Request",
+ "cmc_id": 2071,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 51,
- "total_exact": 50.94,
+ "total": 52,
+ "total_exact": 52.12,
  "band": "Orta",
- "delta": null,
+ "delta": 1.2,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.3,
+   "score": 12.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.6593,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.79716,
-     "percentile": 0.6316,
-     "basis": "sector"
+     "percentile": 0.646,
+     "basis": "sector",
+     "display": "%80",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.254454,
-     "percentile": 0.6491,
-     "basis": "sector"
+     "percentile": 0.6726,
+     "basis": "sector",
+     "display": "1,25×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1184,
-     "basis": "sector"
+     "percentile": 0.115,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.20284,
+     "percentile": 0.9592,
+     "basis": "sector",
+     "display": "−%20",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,51 +83,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 18.1,
+   "score": 16.8,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.8882,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 6.0,
-     "percentile": 0.9062,
-     "basis": "sector"
+     "percentile": 0.8421,
+     "basis": "sector",
+     "display": "6",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.3,
+   "score": 10.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.4867,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.007778,
-     "percentile": 0.0965,
-     "basis": "sector"
+     "value": 0.007506,
+     "percentile": 0.0796,
+     "basis": "sector",
+     "display": "%0,8",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 157.0,
-     "percentile": 0.4868,
-     "basis": "sector"
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "157",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5088,
+     "percentile": 0.2154,
+     "basis": "sector",
+     "display": "%0,51",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1111,
+     "percentile": 0.7615,
+     "basis": "sector",
+     "display": "%11",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.007529,
-     "percentile": 0.9649,
-     "basis": "sector"
+     "value": 9.010267,
+     "percentile": 0.9646,
+     "basis": "sector",
+     "display": "9,0 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -117,8 +169,13 @@
   [
    "2026-10-23",
    50.94
+  ],
+  [
+   "2026-10-24",
+   52.12
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

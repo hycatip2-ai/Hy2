@@ -1,20 +1,21 @@
 {
- "rank": 65,
+ "rank": 75,
  "slug": "aztec",
  "symbol": "AZTEC",
  "name": "Aztec",
+ "cmc_id": 39521,
  "sector": "privacy",
  "sector_name": "Gizlilik",
  "total": 53,
- "total_exact": 53.47,
+ "total_exact": 53.42,
  "band": "Orta",
- "delta": null,
+ "delta": -0.0,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.3,
+   "score": 9.4,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.5,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.278222,
-     "percentile": 0.2,
-     "basis": "sector"
+     "percentile": 0.1923,
+     "basis": "sector",
+     "display": "%28",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.59425,
-     "percentile": 0.2,
-     "basis": "sector"
+     "percentile": 0.1923,
+     "basis": "sector",
+     "display": "3,59×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7,
-     "basis": "sector"
+     "percentile": 0.7115,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.017696,
+     "percentile": 0.7857,
+     "basis": "sector",
+     "display": "−%1,8",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,51 +83,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 19.3,
+   "score": 17.9,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.8947,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 19.0,
-     "percentile": 0.9646,
-     "basis": "universe"
+     "percentile": 0.8947,
+     "basis": "sector",
+     "display": "19",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.6,
+   "score": 8.2,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.3077,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.203704,
-     "percentile": 0.68,
-     "basis": "sector"
+     "value": 0.206278,
+     "percentile": 0.6923,
+     "basis": "sector",
+     "display": "%21",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 145.0,
-     "percentile": 0.64,
-     "basis": "sector"
+     "percentile": 0.6154,
+     "basis": "sector",
+     "display": "145",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.4157,
+     "percentile": 0.5625,
+     "basis": "sector",
+     "display": "%0,42",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.3143,
+     "percentile": 0.0625,
+     "basis": "sector",
+     "display": "%31",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.692676,
-     "percentile": 0.12,
-     "basis": "sector"
+     "value": 0.695414,
+     "percentile": 0.1154,
+     "basis": "sector",
+     "display": "0,7 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -117,8 +169,13 @@
   [
    "2026-10-23",
    53.47
+  ],
+  [
+   "2026-10-24",
+   53.42
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

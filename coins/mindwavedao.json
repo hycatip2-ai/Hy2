@@ -3,18 +3,19 @@
  "slug": "mindwavedao",
  "symbol": "NILA",
  "name": "MindWaveDAO",
+ "cmc_id": 36302,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 38,
- "total_exact": 37.68,
+ "total": 43,
+ "total_exact": 43.07,
  "band": "Zayıf",
- "delta": null,
+ "delta": 5.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.8,
+   "score": 13.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.7699,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.797303,
-     "percentile": 0.6404,
-     "basis": "sector"
+     "percentile": 0.6549,
+     "basis": "sector",
+     "display": "%80",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.254229,
-     "percentile": 0.6579,
-     "basis": "sector"
+     "percentile": 0.6814,
+     "basis": "sector",
+     "display": "1,25×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6531,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +83,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,47 +93,118 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 2.8,
+   "score": 9.7,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.4425,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.004808,
-     "percentile": 0.0702,
-     "basis": "sector"
+     "value": 0.004937,
+     "percentile": 0.0708,
+     "basis": "sector",
+     "display": "%0,5",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 6.0,
-     "percentile": 0.0132,
-     "basis": "sector"
+     "percentile": 0.0133,
+     "basis": "sector",
+     "display": "6",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.0169,
+     "percentile": 1.0,
+     "basis": "sector",
+     "display": "%0,02",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.9769,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.505818,
-     "percentile": 0.3421,
-     "basis": "sector"
+     "value": 1.508556,
+     "percentile": 0.3628,
+     "basis": "sector",
+     "display": "1,5 yıl",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": 5.14,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite +5,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    37.68
+  ],
+  [
+   "2026-10-24",
+   43.07
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 5.4,
+   "from": 37.7,
+   "to": 43.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 5.14,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +5,1)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": 5.4,
+   "from": 37.7,
+   "to": 43.1,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 5.14,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +5,1)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

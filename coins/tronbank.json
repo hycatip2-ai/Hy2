@@ -3,18 +3,19 @@
  "slug": "tronbank",
  "symbol": "TBK",
  "name": "TronBank",
+ "cmc_id": 39177,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 30,
- "total_exact": 29.91,
+ "total": 32,
+ "total_exact": 31.5,
  "band": "Zayıf",
- "delta": null,
+ "delta": 1.6,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.3,
+   "score": 5.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0492,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.185333,
-     "percentile": 0.1393,
-     "basis": "sector"
+     "percentile": 0.1475,
+     "basis": "sector",
+     "display": "%19",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.395682,
      "percentile": 0.1967,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "5,40×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
-     "basis": "sector"
+     "percentile": 0.6066,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.856206,
+     "percentile": 0.0541,
+     "basis": "sector",
+     "display": "+%86",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,6 +83,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,35 +93,63 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 2.6,
+   "score": 5.5,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0902,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.004315,
-     "percentile": 0.0984,
-     "basis": "sector"
+     "value": 0.004331,
+     "percentile": 0.0656,
+     "basis": "sector",
+     "display": "%0,4",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 14.0,
-     "percentile": 0.1557,
-     "basis": "sector"
+     "percentile": 0.1516,
+     "basis": "sector",
+     "display": "14",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.3257,
+     "percentile": 0.1034,
+     "basis": "sector",
+     "display": "%1,3",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.9052,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.826831,
-     "percentile": 0.1352,
-     "basis": "sector"
+     "value": 0.829569,
+     "percentile": 0.1434,
+     "basis": "sector",
+     "display": "0,8 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -109,8 +159,13 @@
   [
    "2026-10-23",
    29.91
+  ],
+  [
+   "2026-10-24",
+   31.5
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

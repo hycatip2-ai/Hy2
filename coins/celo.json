@@ -1,20 +1,21 @@
 {
- "rank": 78,
+ "rank": 98,
  "slug": "celo",
  "symbol": "CELO",
  "name": "Celo",
+ "cmc_id": 5567,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 52,
- "total_exact": 52.13,
+ "total": 51,
+ "total_exact": 51.07,
  "band": "Orta",
- "delta": null,
+ "delta": -1.1,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,23 +23,29 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 6.7,
+   "score": 6.8,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.3673,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0852,
-     "basis": "universe"
+     "percentile": 0.0966,
+     "basis": "universe",
+     "display": "Gelir yok",
+     "tier": "alt dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 3.58797,
-     "percentile": 0.8367,
-     "basis": "sector"
+     "value": 3.607786,
+     "percentile": 0.8333,
+     "basis": "sector",
+     "display": "3,61×",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -48,27 +55,44 @@
    "score": 10.2,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.5513,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.608422,
-     "percentile": 0.4051,
-     "basis": "sector"
+     "percentile": 0.3974,
+     "basis": "sector",
+     "display": "%61",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.643595,
-     "percentile": 0.4557,
-     "basis": "sector"
+     "percentile": 0.4359,
+     "basis": "sector",
+     "display": "1,64×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.007716,
+     "percentile": 0.5385,
+     "basis": "sector",
+     "display": "+%0,8",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,101 +102,147 @@
    "score": 5.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3906,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2576,
-     "basis": "universe"
+     "percentile": 0.2578,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.6,
+   "score": 14.5,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.7288,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.966239,
+     "value": 0.966598,
      "percentile": 0.52,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "−%3,3",
+     "tier": "orta dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.83326,
-     "percentile": 0.4,
-     "basis": "sector"
+     "value": 0.822233,
+     "percentile": 0.3556,
+     "basis": "sector",
+     "display": "−%18",
+     "tier": "orta dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.575,
-     "basis": "sector"
+     "percentile": 0.5658,
+     "basis": "sector",
+     "display": "4",
+     "tier": "orta dilim"
     },
     {
      "id": "daily_active_addresses",
      "name": "Günlük aktif adres",
-     "value": 457884.0,
+     "value": 457000.333333,
      "percentile": 1.0,
-     "basis": "universe"
+     "basis": "universe",
+     "display": "457.000",
+     "tier": "üst dilim"
     },
     {
      "id": "chain_profit",
      "name": "Zincir kârı (90 gün)",
-     "value": 355733.619315,
+     "value": 356556.859618,
      "percentile": 1.0,
-     "basis": "universe"
+     "basis": "universe",
+     "display": "356,6 bin $",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.0,
+   "score": 12.7,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.8077,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.09941,
-     "percentile": 0.4557,
-     "basis": "sector"
+     "value": 0.101769,
+     "percentile": 0.4744,
+     "basis": "sector",
+     "display": "%10",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 349.0,
-     "percentile": 0.962,
-     "basis": "sector"
+     "percentile": 0.9615,
+     "basis": "sector",
+     "display": "349",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2217,
+     "percentile": 0.7292,
+     "basis": "sector",
+     "display": "%0,22",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2535,
+     "percentile": 0.2083,
+     "basis": "sector",
+     "display": "%25",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.42026,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "value": 6.422998,
+     "percentile": 0.6538,
+     "basis": "sector",
+     "display": "6,4 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.9062,
-     "basis": "sector"
+     "percentile": 0.9,
+     "basis": "sector",
+     "display": "2",
+     "tier": "üst dilim"
     },
     {
      "id": "l2_stage",
      "name": "L2 güvenlik aşaması",
      "value": 0.0,
      "percentile": 0.5,
-     "basis": "universe"
+     "basis": "universe",
+     "display": "Aşama 0",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -182,8 +252,13 @@
   [
    "2026-10-23",
    52.13
+  ],
+  [
+   "2026-10-24",
+   51.07
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

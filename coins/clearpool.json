@@ -1,20 +1,21 @@
 {
- "rank": 169,
+ "rank": 219,
  "slug": "clearpool",
  "symbol": "CPOOL",
  "name": "Clearpool",
+ "cmc_id": 12573,
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 40,
- "total_exact": 39.82,
+ "total": 38,
+ "total_exact": 38.33,
  "band": "Zayıf",
- "delta": null,
+ "delta": -1.5,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,50 +26,73 @@
    "score": 5.9,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.2895,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0852,
-     "basis": "universe"
+     "percentile": 0.0966,
+     "basis": "universe",
+     "display": "Gelir yok",
+     "tier": "alt dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 1.180485,
-     "percentile": 0.7206,
-     "basis": "universe"
+     "value": 1.289049,
+     "percentile": 0.6889,
+     "basis": "universe",
+     "display": "1,29×",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.9,
+   "score": 11.6,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.6765,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.992282,
-     "percentile": 0.2812,
-     "basis": "sector"
+     "percentile": 0.3235,
+     "basis": "sector",
+     "display": "%99",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.014241,
-     "percentile": 0.4062,
-     "basis": "sector"
+     "percentile": 0.4412,
+     "basis": "sector",
+     "display": "1,01×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7969,
-     "basis": "sector"
+     "percentile": 0.7794,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.014041,
+     "percentile": 0.7808,
+     "basis": "universe",
+     "display": "−%1,4",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -78,66 +102,120 @@
    "score": 5.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3906,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2576,
-     "basis": "universe"
+     "percentile": 0.2578,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 6.8,
+   "score": 6.3,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.2935,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.686834,
-     "percentile": 0.3396,
-     "basis": "universe"
+     "value": 0.684287,
+     "percentile": 0.3491,
+     "basis": "universe",
+     "display": "−%32",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.090647,
+     "percentile": 0.5673,
+     "basis": "universe",
+     "display": "+%9,1",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1577,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.5,
+   "score": 10.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.4118,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.14136,
-     "percentile": 0.5312,
-     "basis": "sector"
+     "value": 0.033934,
+     "percentile": 0.2647,
+     "basis": "sector",
+     "display": "%3,4",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 113.0,
-     "percentile": 0.6562,
-     "basis": "sector"
+     "percentile": 0.6765,
+     "basis": "sector",
+     "display": "113",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.6337,
+     "percentile": 0.1777,
+     "basis": "universe",
+     "display": "%0,63",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2,
+     "percentile": 0.378,
+     "basis": "universe",
+     "display": "%20",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.034908,
-     "percentile": 0.75,
-     "basis": "sector"
+     "value": 5.037645,
+     "percentile": 0.7647,
+     "basis": "sector",
+     "display": "5,0 yıl",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7677,
-     "basis": "universe"
+     "percentile": 0.7712,
+     "basis": "universe",
+     "display": "2",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -147,15 +225,36 @@
   [
    "2026-10-23",
    39.82
+  ],
+  [
+   "2026-10-24",
+   38.33
   ]
  ],
+ "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "investors": [
+  "Arrington XRP Capital",
+  "AscendEX",
+  "BCW Group",
+  "FBG Capital",
+  "Genesis Block Ventures",
+  "Hashkey Capital",
+  "Hex Trust",
+  "Huobi Ventures",
+  "Kinetic",
+  "Mentha Partners",
+  "Parsiq",
+  "Plutus VC",
+  "Sequoia Capital"
+ ],
+ "investors_source": "https://defillama.com/protocol/clearpool",
+ "angel_investors": [
+  "Hex Trust"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/clearpool",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/clearpool",
  "research": null
 }

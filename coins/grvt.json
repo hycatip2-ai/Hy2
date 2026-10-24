@@ -3,18 +3,19 @@
  "slug": "grvt",
  "symbol": "GRVT",
  "name": "Grvt",
+ "cmc_id": 40814,
  "sector": "defi",
  "sector_name": "DeFi",
  "total": 34,
- "total_exact": 34.31,
+ "total_exact": 34.23,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,6 +26,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +36,35 @@
    "score": 4.7,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0442,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.114312,
-     "percentile": 0.0439,
-     "basis": "sector"
+     "percentile": 0.0442,
+     "basis": "sector",
+     "display": "%11",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.747963,
-     "percentile": 0.0439,
-     "basis": "sector"
+     "percentile": 0.0442,
+     "basis": "sector",
+     "display": "8,75×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +74,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,35 +84,63 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.1,
+   "score": 9.0,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3717,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.258499,
-     "percentile": 0.693,
-     "basis": "sector"
+     "value": 0.24629,
+     "percentile": 0.6814,
+     "basis": "sector",
+     "display": "%25",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 195.0,
-     "percentile": 0.6447,
-     "basis": "sector"
+     "percentile": 0.6593,
+     "basis": "sector",
+     "display": "195",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2199,
+     "percentile": 0.8,
+     "basis": "sector",
+     "display": "%0,22",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.375,
+     "percentile": 0.0769,
+     "basis": "sector",
+     "display": "%38",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.232717,
-     "percentile": 0.0263,
-     "basis": "sector"
+     "value": 0.235455,
+     "percentile": 0.0354,
+     "basis": "sector",
+     "display": "0,2 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -109,8 +150,13 @@
   [
    "2026-10-23",
    34.31
+  ],
+  [
+   "2026-10-24",
+   34.23
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

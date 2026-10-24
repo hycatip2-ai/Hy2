@@ -1,20 +1,21 @@
 {
- "rank": 193,
+ "rank": 237,
  "slug": "arcium",
  "symbol": "ARX",
  "name": "Arcium",
+ "cmc_id": 39970,
  "sector": "privacy",
  "sector_name": "Gizlilik",
  "total": 36,
- "total_exact": 35.91,
+ "total_exact": 35.75,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.2,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.5,
+   "score": 7.2,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.1923,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.208831,
-     "percentile": 0.04,
-     "basis": "sector"
+     "percentile": 0.0385,
+     "basis": "sector",
+     "display": "%21",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.788553,
-     "percentile": 0.08,
-     "basis": "sector"
+     "percentile": 0.0769,
+     "basis": "sector",
+     "display": "4,79×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7,
-     "basis": "sector"
+     "percentile": 0.7115,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6071,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,58 +83,92 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.7,
+   "score": 4.7,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.1842,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.385,
-     "basis": "universe"
+     "percentile": 0.2368,
+     "basis": "sector",
+     "display": "1",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.3,
+   "score": 10.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.5385,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.226768,
-     "percentile": 0.72,
-     "basis": "sector"
+     "value": 0.233428,
+     "percentile": 0.7308,
+     "basis": "sector",
+     "display": "%23",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 187.0,
-     "percentile": 0.84,
-     "basis": "sector"
+     "percentile": 0.8077,
+     "basis": "sector",
+     "display": "187",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3857,
+     "percentile": 0.625,
+     "basis": "sector",
+     "display": "%0,39",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0714,
+     "percentile": 0.625,
+     "basis": "sector",
+     "display": "%7,1",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.459959,
-     "percentile": 0.04,
-     "basis": "sector"
+     "value": 0.462697,
+     "percentile": 0.0385,
+     "basis": "sector",
+     "display": "0,5 yıl",
+     "tier": "alt dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2677,
-     "basis": "universe"
+     "percentile": 0.2712,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -124,8 +178,13 @@
   [
    "2026-10-23",
    35.91
+  ],
+  [
+   "2026-10-24",
+   35.75
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [
   "Greenfield Capital",

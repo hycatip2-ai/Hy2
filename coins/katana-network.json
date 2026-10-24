@@ -1,20 +1,21 @@
 {
- "rank": 218,
+ "rank": 277,
  "slug": "katana-network",
  "symbol": "KAT",
  "name": "Katana",
+ "cmc_id": 38769,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 28,
- "total_exact": 27.99,
+ "total": 29,
+ "total_exact": 29.46,
  "band": "Zayıf",
- "delta": null,
+ "delta": 1.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,23 +23,29 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.8,
+   "score": 8.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.4694,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0852,
-     "basis": "universe"
+     "percentile": 0.0966,
+     "basis": "universe",
+     "display": "Gelir yok",
+     "tier": "alt dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.357356,
+     "value": 0.427608,
      "percentile": 1.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "0,43×",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -48,27 +55,35 @@
    "score": 7.1,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.2436,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.335895,
-     "percentile": 0.1772,
-     "basis": "sector"
+     "percentile": 0.1795,
+     "basis": "sector",
+     "display": "%34",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.977119,
-     "percentile": 0.2152,
-     "basis": "sector"
+     "percentile": 0.2179,
+     "basis": "sector",
+     "display": "2,98×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,21 +93,36 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 0.0,
+   "score": 1.0,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.0,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.073956,
+     "value": 0.074581,
      "percentile": 0.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "−%93",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 0.470015,
+     "percentile": 0.1556,
+     "basis": "sector",
+     "display": "−%53",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -102,27 +132,35 @@
    "score": 8.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.2692,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.415981,
-     "percentile": 0.8228,
-     "basis": "sector"
+     "value": 0.393755,
+     "percentile": 0.8205,
+     "basis": "sector",
+     "display": "%39",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 107.0,
-     "percentile": 0.3418,
-     "basis": "sector"
+     "percentile": 0.3462,
+     "basis": "sector",
+     "display": "107",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.599589,
-     "percentile": 0.0506,
-     "basis": "sector"
+     "value": 0.602327,
+     "percentile": 0.0513,
+     "basis": "sector",
+     "display": "0,6 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -132,8 +170,13 @@
   [
    "2026-10-23",
    27.99
+  ],
+  [
+   "2026-10-24",
+   29.46
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

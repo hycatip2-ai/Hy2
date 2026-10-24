@@ -3,18 +3,19 @@
  "slug": "alphawin",
  "symbol": "AWIN",
  "name": "AlphaWin",
+ "cmc_id": 42338,
  "sector": "other",
  "sector_name": "Diğer",
  "total": 27,
- "total_exact": 27.26,
+ "total_exact": 26.9,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,35 +26,45 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.8,
+   "score": 4.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.041,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.1,
-     "percentile": 0.0492,
-     "basis": "sector"
+     "percentile": 0.0574,
+     "basis": "sector",
+     "display": "%10",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 10.0,
-     "percentile": 0.0574,
-     "basis": "sector"
+     "percentile": 0.0656,
+     "basis": "sector",
+     "display": "10,00×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
-     "basis": "sector"
+     "percentile": 0.6066,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +74,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,35 +84,45 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 1.5,
+   "score": 1.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.009326,
-     "percentile": 0.2213,
-     "basis": "sector"
+     "value": 0.006965,
+     "percentile": 0.1557,
+     "basis": "sector",
+     "display": "%0,7",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 2.0,
      "percentile": 0.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "2",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.087611,
+     "value": 0.090349,
      "percentile": 0.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "0,1 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -109,8 +132,13 @@
   [
    "2026-10-23",
    27.26
+  ],
+  [
+   "2026-10-24",
+   26.9
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

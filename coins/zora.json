@@ -1,20 +1,21 @@
 {
- "rank": 151,
+ "rank": 180,
  "slug": "zora",
  "symbol": "ZORA",
  "name": "ZORA",
+ "cmc_id": 35931,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 42,
- "total_exact": 41.96,
+ "total": 43,
+ "total_exact": 42.73,
  "band": "Zayıf",
- "delta": null,
+ "delta": 0.8,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,53 +23,76 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 11.9,
+   "score": 12.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.625,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 520.809349,
-     "percentile": 0.7143,
-     "basis": "sector"
+     "value": 564.742421,
+     "percentile": 0.7333,
+     "basis": "sector",
+     "display": "565×",
+     "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 5.64939,
-     "percentile": 0.35,
-     "basis": "sector"
+     "value": 6.166004,
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "6,17×",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.3,
+   "score": 8.9,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.3778,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.447,
-     "percentile": 0.3409,
-     "basis": "sector"
+     "percentile": 0.3556,
+     "basis": "sector",
+     "display": "%45",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.237136,
-     "percentile": 0.3409,
-     "basis": "sector"
+     "percentile": 0.3556,
+     "basis": "sector",
+     "display": "2,24×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5568,
-     "basis": "sector"
+     "percentile": 0.5556,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.5238,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,73 +102,129 @@
    "score": 5.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3906,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2576,
-     "basis": "universe"
+     "percentile": 0.2578,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 6.4,
+   "score": 7.0,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.2759,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.284302,
-     "percentile": 0.2941,
-     "basis": "sector"
+     "value": 0.283267,
+     "percentile": 0.2778,
+     "basis": "sector",
+     "display": "−%72",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.093614,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "+%9,4",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 2.0,
+     "percentile": 0.3571,
+     "basis": "sector",
+     "display": "2",
+     "tier": "orta dilim"
     },
     {
      "id": "governance",
      "name": "Yönetim oyları (90 gün)",
      "value": 0.0,
-     "percentile": 0.3478,
-     "basis": "universe"
+     "percentile": 0.3409,
+     "basis": "universe",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.5,
+   "score": 9.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.4444,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.306077,
-     "percentile": 0.5909,
-     "basis": "sector"
+     "value": 0.293943,
+     "percentile": 0.5333,
+     "basis": "sector",
+     "display": "%29",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 283.0,
-     "percentile": 0.9091,
-     "basis": "sector"
+     "percentile": 0.8667,
+     "basis": "sector",
+     "display": "283",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2326,
+     "percentile": 0.75,
+     "basis": "sector",
+     "display": "%0,23",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.3038,
+     "percentile": 0.0417,
+     "basis": "sector",
+     "display": "%30",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.637235,
-     "percentile": 0.2273,
-     "basis": "sector"
+     "value": 1.639973,
+     "percentile": 0.2222,
+     "basis": "sector",
+     "display": "1,6 yıl",
+     "tier": "alt dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3788,
-     "basis": "sector"
+     "percentile": 0.3529,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -154,15 +234,36 @@
   [
    "2026-10-23",
    41.96
+  ],
+  [
+   "2026-10-24",
+   42.73
   ]
  ],
+ "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "investors": [
+  "Haun Ventures",
+  "Paradigm",
+  "Alice Lloyd George",
+  "Ash Egan",
+  "Coinbase Ventures",
+  "Jeff Staple",
+  "Kindred Ventures",
+  "Night Ventures",
+  "Trevor McFedries",
+  "Village Global"
+ ],
+ "investors_source": "https://defillama.com/protocol/zora-protocol",
+ "angel_investors": [
+  "Alice Lloyd George",
+  "Ash Egan",
+  "Jeff Staple",
+  "Trevor McFedries"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/zora-protocol",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/zora-protocol",
  "research": null
 }

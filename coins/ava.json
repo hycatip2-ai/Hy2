@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 126,
  "slug": "ava",
  "symbol": "AVA",
  "name": "AVA (Travala)",
+ "cmc_id": 2776,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 52,
- "total_exact": 51.71,
- "band": "Orta",
- "delta": null,
+ "total": 48,
+ "total_exact": 48.07,
+ "band": "Zayıf",
+ "delta": -3.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.0,
+   "score": 13.7,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.8443,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.944264,
-     "percentile": 0.7131,
-     "basis": "sector"
+     "percentile": 0.7295,
+     "basis": "sector",
+     "display": "%94",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.423921,
      "percentile": 0.623,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,42×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
-     "basis": "sector"
+     "percentile": 0.6066,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.041627,
+     "percentile": 0.7838,
+     "basis": "sector",
+     "display": "−%4,2",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,53 +83,133 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.7,
+   "has_data": true,
    "weight": 20,
-   "metrics": []
+   "percentile": 0.2121,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.2333,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 17.7,
+   "score": 15.7,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.9754,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9385,
-     "basis": "sector"
+     "percentile": 0.9262,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 164.0,
      "percentile": 0.7541,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "164",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2028,
+     "percentile": 0.8103,
+     "basis": "sector",
+     "display": "%0,20",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1765,
+     "percentile": 0.4655,
+     "basis": "sector",
+     "display": "%18",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.405202,
+     "value": 8.40794,
      "percentile": 0.9672,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "8,4 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -2.33,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,3)"
+  },
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -2.04,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    51.71
+  ],
+  [
+   "2026-10-24",
+   48.07
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -3.6,
+   "from": 51.7,
+   "to": 48.1,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -2.33,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,3)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.04,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,0)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

@@ -3,18 +3,19 @@
  "slug": "arkham",
  "symbol": "ARKM",
  "name": "Arkham",
+ "cmc_id": 27565,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 38,
- "total_exact": 38.13,
+ "total": 43,
+ "total_exact": 42.72,
  "band": "Zayıf",
- "delta": null,
+ "delta": 4.6,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.7,
+   "score": 9.2,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.4,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.2251,
-     "percentile": 0.1364,
-     "basis": "sector"
+     "percentile": 0.1556,
+     "basis": "sector",
+     "display": "%23",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.44247,
-     "percentile": 0.1591,
-     "basis": "sector"
+     "percentile": 0.1778,
+     "basis": "sector",
+     "display": "4,44×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5568,
-     "basis": "sector"
+     "percentile": 0.5556,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.667498,
+     "percentile": 0.9524,
+     "basis": "sector",
+     "display": "−%67",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,6 +83,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,60 +93,120 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.4,
+   "score": 13.6,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.8889,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.8636,
-     "basis": "sector"
+     "percentile": 0.8556,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 279.0,
-     "percentile": 0.8864,
-     "basis": "sector"
+     "percentile": 0.8444,
+     "basis": "sector",
+     "display": "279",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2579,
+     "percentile": 0.7083,
+     "basis": "sector",
+     "display": "%0,26",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1071,
+     "percentile": 0.7917,
+     "basis": "sector",
+     "display": "%11",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 3.266256,
-     "percentile": 0.5455,
-     "basis": "sector"
+     "value": 3.268994,
+     "percentile": 0.5333,
+     "basis": "sector",
+     "display": "3,3 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3788,
-     "basis": "sector"
+     "percentile": 0.3529,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": 4.41,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    38.13
+  ],
+  [
+   "2026-10-24",
+   42.72
   ]
  ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 4.6,
+   "from": 38.1,
+   "to": 42.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 4.41,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,4)"
+    }
+   ]
+  }
+ ],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Binance Labs"
+ ],
+ "investors_source": "https://defillama.com/protocol/arkham",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/arkham",
  "research": null
 }

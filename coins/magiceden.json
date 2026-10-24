@@ -1,20 +1,21 @@
 {
- "rank": 178,
+ "rank": 238,
  "slug": "magiceden",
  "symbol": "ME",
  "name": "Magic Eden",
+ "cmc_id": 32197,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 38,
- "total_exact": 37.56,
+ "total": 36,
+ "total_exact": 35.73,
  "band": "Zayıf",
- "delta": null,
+ "delta": -1.8,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,46 +23,67 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 1.0,
+   "score": 0.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 248.567746,
-     "percentile": 0.05,
-     "basis": "sector"
+     "value": 257.352593,
+     "percentile": 0.0476,
+     "basis": "sector",
+     "display": "257×",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.2,
+   "score": 11.6,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.6667,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.595552,
-     "percentile": 0.4545,
-     "basis": "sector"
+     "value": 0.595578,
+     "percentile": 0.4667,
+     "basis": "sector",
+     "display": "%60",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.679131,
-     "percentile": 0.5227,
-     "basis": "sector"
+     "value": 1.679059,
+     "percentile": 0.5333,
+     "basis": "sector",
+     "display": "1,68×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5568,
-     "basis": "sector"
+     "percentile": 0.5556,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.019081,
+     "percentile": 0.7619,
+     "basis": "sector",
+     "display": "−%1,9",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -71,50 +93,101 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 5.1,
+   "has_data": true,
    "weight": 25,
-   "metrics": []
+   "percentile": 0.1034,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.233428,
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "+%23",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.0476,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.0,
+   "score": 11.6,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.6889,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.8636,
-     "basis": "sector"
+     "percentile": 0.8556,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 296.0,
-     "percentile": 1.0,
-     "basis": "sector"
+     "percentile": 0.9556,
+     "basis": "sector",
+     "display": "296",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3325,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "%0,33",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2,
+     "percentile": 0.4583,
+     "basis": "sector",
+     "display": "%20",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.272416,
-     "percentile": 0.3636,
-     "basis": "sector"
+     "value": 2.275154,
+     "percentile": 0.3556,
+     "basis": "sector",
+     "display": "2,3 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3788,
-     "basis": "sector"
+     "percentile": 0.3529,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -124,15 +197,27 @@
   [
    "2026-10-23",
    37.56
+  ],
+  [
+   "2026-10-24",
+   35.73
   ]
  ],
+ "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Paradigm",
+  "Sequoia Capital",
+  "Solana Ventures",
+  "6th Man Ventures",
+  "Electric Capital",
+  "Greylock"
+ ],
+ "investors_source": "https://defillama.com/protocol/magic-eden",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/magic-eden",
  "research": null
 }

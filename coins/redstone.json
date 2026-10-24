@@ -1,20 +1,21 @@
 {
- "rank": 52,
+ "rank": 71,
  "slug": "redstone",
  "symbol": "RED",
  "name": "RedStone",
+ "cmc_id": 21707,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 56,
- "total_exact": 55.84,
+ "total": 54,
+ "total_exact": 54.09,
  "band": "Orta",
- "delta": null,
+ "delta": -1.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.6,
+   "score": 7.4,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.2949,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.552725,
-     "percentile": 0.3671,
-     "basis": "sector"
+     "value": 0.553763,
+     "percentile": 0.359,
+     "basis": "sector",
+     "display": "%55",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.809218,
-     "percentile": 0.4051,
-     "basis": "sector"
+     "value": 1.805827,
+     "percentile": 0.3974,
+     "basis": "sector",
+     "display": "1,81×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.205613,
+     "percentile": 0.0513,
+     "basis": "sector",
+     "display": "+%21",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,72 +83,92 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 19.0,
+   "score": 19.5,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.9831,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 22.0,
-     "percentile": 0.95,
-     "basis": "sector"
+     "percentile": 0.9737,
+     "basis": "sector",
+     "display": "22",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.4,
+   "score": 11.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.6282,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.078629,
-     "percentile": 0.3544,
-     "basis": "sector"
+     "value": 0.075927,
+     "percentile": 0.3718,
+     "basis": "sector",
+     "display": "%7,6",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 177.0,
-     "percentile": 0.7089,
-     "basis": "sector"
+     "percentile": 0.7051,
+     "basis": "sector",
+     "display": "177",
+     "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2118,
-     "percentile": 0.6829,
-     "basis": "universe"
+     "percentile": 0.75,
+     "basis": "sector",
+     "display": "%0,21",
+     "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1569,
-     "percentile": 0.5122,
-     "basis": "universe"
+     "percentile": 0.6458,
+     "basis": "sector",
+     "display": "%16",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.131417,
-     "percentile": 0.4937,
-     "basis": "sector"
+     "value": 4.134155,
+     "percentile": 0.4744,
+     "basis": "sector",
+     "display": "4,1 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.375,
-     "basis": "sector"
+     "percentile": 0.3667,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -138,8 +178,13 @@
   [
    "2026-10-23",
    55.84
+  ],
+  [
+   "2026-10-24",
+   54.09
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

@@ -1,44 +1,60 @@
 {
- "rank": 86,
+ "rank": 190,
  "slug": "bitlayer",
  "symbol": "BTR",
  "name": "Bitlayer",
+ "cmc_id": 36277,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 51,
- "total_exact": 51.03,
- "band": "Orta",
- "delta": null,
+ "total": 41,
+ "total_exact": 41.13,
+ "band": "Zayıf",
+ "delta": -9.9,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  },
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 10.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 15.1,
+   "score": 15.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.9082,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 43.082217,
-     "percentile": 0.5102,
-     "basis": "sector"
+     "value": 37.765118,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "37,8×",
+     "tier": "orta dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 19.666298,
+     "value": 17.098308,
      "percentile": 1.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "17,1×",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -48,27 +64,35 @@
    "score": 6.9,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.2051,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.333286,
-     "percentile": 0.1646,
-     "basis": "sector"
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "%33",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.000427,
-     "percentile": 0.2025,
-     "basis": "sector"
+     "percentile": 0.2051,
+     "basis": "sector",
+     "display": "3,00×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,63 +102,129 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 12.0,
+   "score": 12.3,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.6271,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.284488,
+     "value": 1.291612,
      "percentile": 0.6,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "+%29",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.108561,
+     "percentile": 0.6444,
+     "basis": "sector",
+     "display": "+%11",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.4,
+   "score": 9.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.4487,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.186996,
-     "percentile": 0.6835,
-     "basis": "sector"
+     "value": 0.179764,
+     "percentile": 0.641,
+     "basis": "sector",
+     "display": "%18",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 140.0,
-     "percentile": 0.5443,
-     "basis": "sector"
+     "percentile": 0.5513,
+     "basis": "sector",
+     "display": "140",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.519507,
-     "percentile": 0.1772,
-     "basis": "sector"
+     "value": 1.522245,
+     "percentile": 0.1795,
+     "basis": "sector",
+     "display": "1,5 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+   "part": "penalty",
+   "delta": -10.0,
+   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    51.03
+  ],
+  [
+   "2026-10-24",
+   41.13
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -9.9,
+   "from": 51.0,
+   "to": 41.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -9.9,
+   "from": 51.0,
+   "to": 41.1,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

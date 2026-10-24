@@ -3,18 +3,19 @@
  "slug": "mocaverse",
  "symbol": "MOCA",
  "name": "Moca Network",
+ "cmc_id": 31526,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 38,
- "total_exact": 38.3,
+ "total_exact": 38.14,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.9,
+   "score": 9.5,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.4872,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.476233,
-     "percentile": 0.3165,
-     "basis": "sector"
+     "percentile": 0.3077,
+     "basis": "sector",
+     "display": "%48",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.09981,
-     "percentile": 0.3418,
-     "basis": "sector"
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "2,10×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.5897,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +83,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,42 +93,72 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.3,
+   "score": 7.0,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.1795,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.092335,
-     "percentile": 0.4177,
-     "basis": "sector"
+     "value": 0.087823,
+     "percentile": 0.4103,
+     "basis": "sector",
+     "display": "%8,8",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 139.0,
-     "percentile": 0.5253,
-     "basis": "sector"
+     "percentile": 0.5321,
+     "basis": "sector",
+     "display": "139",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.0604,
+     "percentile": 0.0625,
+     "basis": "sector",
+     "display": "%1,1",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2121,
+     "percentile": 0.3958,
+     "basis": "sector",
+     "display": "%21",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.302533,
-     "percentile": 0.3418,
-     "basis": "sector"
+     "value": 2.30527,
+     "percentile": 0.3462,
+     "basis": "sector",
+     "display": "2,3 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.375,
-     "basis": "sector"
+     "percentile": 0.3667,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -116,15 +168,34 @@
   [
    "2026-10-23",
    38.3
+  ],
+  [
+   "2026-10-24",
+   38.14
   ]
  ],
+ "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "OKX Ventures",
+  "HongShan",
+  "CMCC Global",
+  "Republic Crypto",
+  "Decima",
+  "Kingsway Capital",
+  "Liberty City Ventures",
+  "GameFi Ventures",
+  "Animoca Brands",
+  "Block1",
+  "Foresight Ventures",
+  "Polygon Ventures",
+  "Dapper Labs"
+ ],
+ "investors_source": "https://defillama.com/protocol/moca-network",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/moca-network",
  "research": null
 }

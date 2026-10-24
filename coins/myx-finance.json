@@ -1,74 +1,94 @@
 {
- "rank": 222,
+ "rank": 282,
  "slug": "myx-finance",
  "symbol": "MYX",
  "name": "MYX Finance",
+ "cmc_id": 36410,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 26,
- "total_exact": 26.25,
+ "total": 28,
+ "total_exact": 27.71,
  "band": "Zayıf",
- "delta": null,
+ "delta": 1.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 1.4,
+   "score": 1.6,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.0536,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0326,
-     "basis": "sector"
+     "percentile": 0.0444,
+     "basis": "sector",
+     "display": "Gelir yok",
+     "tier": "alt dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 237.618514,
-     "percentile": 0.1481,
-     "basis": "sector"
+     "value": 237.166351,
+     "percentile": 0.1538,
+     "basis": "sector",
+     "display": "237×",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.9,
+   "score": 9.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.4248,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.402994,
-     "percentile": 0.3421,
-     "basis": "sector"
+     "percentile": 0.3717,
+     "basis": "sector",
+     "display": "%40",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.481426,
-     "percentile": 0.3684,
-     "basis": "sector"
+     "percentile": 0.3982,
+     "basis": "sector",
+     "display": "2,48×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,58 +98,110 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 0.0,
+   "score": 5.7,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.2632,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
      "value": 0.0,
-     "percentile": 0.0,
-     "basis": "sector"
+     "percentile": 0.0106,
+     "basis": "sector",
+     "display": "−%100",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.038097,
+     "percentile": 0.5152,
+     "basis": "sector",
+     "display": "+%3,8",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.4474,
+     "basis": "sector",
+     "display": "1",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.4,
+   "score": 11.6,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.6726,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.240696,
-     "percentile": 0.6842,
-     "basis": "sector"
+     "value": 0.241741,
+     "percentile": 0.6726,
+     "basis": "sector",
+     "display": "%24",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 192.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6372,
+     "basis": "sector",
+     "display": "192",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3722,
+     "percentile": 0.3538,
+     "basis": "sector",
+     "display": "%0,37",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0968,
+     "percentile": 0.8,
+     "basis": "sector",
+     "display": "%9,7",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.467488,
-     "percentile": 0.3333,
-     "basis": "sector"
+     "value": 1.470226,
+     "percentile": 0.354,
+     "basis": "sector",
+     "display": "1,5 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6493,
-     "basis": "sector"
+     "percentile": 0.6615,
+     "basis": "sector",
+     "display": "2",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -139,15 +211,43 @@
   [
    "2026-10-23",
    26.25
+  ],
+  [
+   "2026-10-24",
+   27.71
   ]
  ],
+ "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "investors": [
+  "D11 Labs",
+  "HashKey Capital",
+  "Metalpha",
+  "FL Foundation",
+  "Woyong",
+  "Consensys",
+  "Systemic Ventures",
+  "ConsenSys Mesh",
+  "HongShan",
+  "ConsenSys",
+  "Hack VC",
+  "Redpoint China",
+  "Foresight Ventures",
+  "GSR Markets",
+  "Alti5",
+  "Leland Ventures",
+  "Cypher Capital",
+  "Bing Ventures",
+  "Lecca Ventures"
+ ],
+ "investors_source": "https://defillama.com/protocol/myx-finance",
+ "angel_investors": [
+  "ConsenSys Mesh",
+  "Redpoint China"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/myx-finance",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/myx-finance",
  "research": null
 }

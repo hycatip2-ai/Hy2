@@ -3,18 +3,19 @@
  "slug": "victoria-vr",
  "symbol": "VR",
  "name": "Victoria VR",
+ "cmc_id": 14822,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 51,
- "total_exact": 50.59,
- "band": "Orta",
- "delta": null,
+ "total": 49,
+ "total_exact": 49.41,
+ "band": "Zayıf",
+ "delta": -1.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,6 +26,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +36,35 @@
    "score": 16.3,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.9848,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.903,
-     "basis": "sector"
+     "percentile": 0.9015,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9925,
-     "basis": "sector"
+     "percentile": 0.9848,
+     "basis": "sector",
+     "display": "1,00×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5522,
-     "basis": "sector"
+     "percentile": 0.553,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +74,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,35 +84,63 @@
    "score": 7.0,
    "has_data": false,
    "weight": 30,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.2,
+   "score": 7.7,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.2576,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.035292,
-     "percentile": 0.194,
-     "basis": "sector"
+     "value": 0.043116,
+     "percentile": 0.2424,
+     "basis": "sector",
+     "display": "%4,3",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 49.0,
-     "percentile": 0.2388,
-     "basis": "sector"
+     "percentile": 0.2121,
+     "basis": "sector",
+     "display": "49",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.4343,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "%0,43",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.5,
+     "percentile": 0.0278,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.925394,
-     "percentile": 0.9403,
-     "basis": "sector"
+     "value": 4.928131,
+     "percentile": 0.9394,
+     "basis": "sector",
+     "display": "4,9 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -109,8 +150,13 @@
   [
    "2026-10-23",
    50.59
+  ],
+  [
+   "2026-10-24",
+   49.41
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

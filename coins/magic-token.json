@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 130,
  "slug": "magic-token",
  "symbol": "MAGIC",
  "name": "Treasure",
+ "cmc_id": 14783,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 47,
- "total_exact": 47.47,
+ "total": 48,
+ "total_exact": 47.56,
  "band": "Zayıf",
- "delta": null,
+ "delta": 0.1,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.9,
+   "score": 9.6,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.4545,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.976638,
-     "percentile": 0.7313,
-     "basis": "sector"
+     "value": 0.976639,
+     "percentile": 0.7273,
+     "basis": "sector",
+     "display": "%98",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.02392,
-     "percentile": 0.8657,
-     "basis": "sector"
+     "percentile": 0.8636,
+     "basis": "sector",
+     "display": "1,02×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.0448,
-     "basis": "sector"
+     "percentile": 0.0455,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.008413,
+     "percentile": 0.28,
+     "basis": "sector",
+     "display": "+%0,8",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,50 +83,92 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 10.4,
+   "has_data": true,
    "weight": 30,
-   "metrics": []
+   "percentile": 0.5357,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.5185,
+     "basis": "sector",
+     "display": "1",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 15.7,
+   "score": 11.8,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.7273,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9254,
-     "basis": "sector"
+     "percentile": 0.9242,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 399.0,
      "percentile": 1.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "399",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.8344,
+     "percentile": 0.0556,
+     "basis": "sector",
+     "display": "%0,83",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1667,
+     "percentile": 0.3472,
+     "basis": "sector",
+     "display": "%17",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.928131,
-     "percentile": 0.9552,
-     "basis": "sector"
+     "value": 4.930869,
+     "percentile": 0.9545,
+     "basis": "sector",
+     "display": "4,9 yıl",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2677,
-     "basis": "universe"
+     "percentile": 0.2712,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -116,8 +178,13 @@
   [
    "2026-10-23",
    47.47
+  ],
+  [
+   "2026-10-24",
+   47.56
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,
@@ -125,6 +192,6 @@
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/treasure",
  "research": null
 }

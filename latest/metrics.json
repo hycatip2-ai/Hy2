@@ -1,0 +1,215 @@
+{
+ "parts": [
+  {
+   "id": "valuation",
+   "name": "Değerleme",
+   "desc": "Bir ağın temel etkinliğini ürettiği değere göre değerlendiren puan parçasıdır."
+  },
+  {
+   "id": "supply",
+   "name": "Arz baskısı",
+   "desc": "Mevcut ve olası yeni token arzının puan üzerinde yaratabileceği baskıyı özetler."
+  },
+  {
+   "id": "value_capture",
+   "name": "Değer yakalama",
+   "desc": "Ağın oluşturduğu değerin token ile ne ölçüde bağlantılı olduğunu değerlendirir."
+  },
+  {
+   "id": "usage",
+   "name": "Kullanım ve büyüme",
+   "desc": "Ağın ne kadar kullanıldığını ve kullanımın zaman içindeki eğilimini özetler."
+  },
+  {
+   "id": "liquidity",
+   "name": "Likidite",
+   "desc": "Bir varlığın önemli ölçüde fiyat etkisi yaratmadan alınıp satılabilme kolaylığını ifade eder."
+  }
+ ],
+ "metrics": [
+  {
+   "id": "mc_to_revenue",
+   "part": "valuation",
+   "name": "Piyasa değeri / yıllık gelir",
+   "higher_is_better": false,
+   "optional": false,
+   "desc": "Piyasa değerinin yıllık gelire oranıdır; düşük olması, gelirine göre daha ucuz olduğunu gösterir."
+  },
+  {
+   "id": "mc_to_tvl",
+   "part": "valuation",
+   "name": "Piyasa değeri / kilitli varlık",
+   "higher_is_better": false,
+   "optional": false,
+   "desc": "Piyasa değerinin protokolde kilitli varlığa oranıdır; düşük olması daha ucuz değerleme demektir."
+  },
+  {
+   "id": "mc_to_fees",
+   "part": "valuation",
+   "name": "Piyasa değeri / yıllık ücret",
+   "higher_is_better": false,
+   "optional": false,
+   "desc": "Gelir verisi yoksa kullanılır; piyasa değerinin yıllık kullanıcı ücretlerine oranıdır."
+  },
+  {
+   "id": "circulating_ratio",
+   "part": "supply",
+   "name": "Dolaşımdaki arz oranı",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Toplam arzın ne kadarının şu an dolaşımda olduğunu gösterir; yüksek olması ileride daha az yeni arz demektir."
+  },
+  {
+   "id": "fdv_to_mc",
+   "part": "supply",
+   "name": "Tam seyreltilmiş değer / piyasa değeri",
+   "higher_is_better": false,
+   "optional": false,
+   "desc": "Tüm tokenler dolaşıma girdiğindeki değerin bugünkü piyasa değerine oranıdır; 1'e yakın olması iyidir."
+  },
+  {
+   "id": "has_max_supply",
+   "part": "supply",
+   "name": "Azami arz var mı",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Token için üst arz sınırı olup olmadığını gösterir; sınır varsa sonsuz basım riski yoktur."
+  },
+  {
+   "id": "supply_growth_90d",
+   "part": "supply",
+   "name": "Arz artışı (90 gün)",
+   "higher_is_better": false,
+   "optional": false,
+   "desc": "Dolaşımdaki arzın son 90 günde ne kadar arttığını gösterir; düşük olması daha az seyrelme demektir."
+  },
+  {
+   "id": "unlock_6m",
+   "part": "supply",
+   "name": "6 ay içindeki kilit açılışı",
+   "higher_is_better": false,
+   "optional": true,
+   "desc": "Önümüzdeki 6 ayda açılacak kilitli tokenlerin dolaşımdaki arza oranıdır."
+  },
+  {
+   "id": "holders_revenue_share",
+   "part": "value_capture",
+   "name": "Token sahibine dönen gelir payı",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Kullanıcı ücretlerinin ne kadarının token sahiplerine döndüğünü gösterir."
+  },
+  {
+   "id": "buyback_burn",
+   "part": "value_capture",
+   "name": "Geri alım / yakım",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Projenin gelirle token geri alıp almadığını ya da token yakıp yakmadığını gösterir."
+  },
+  {
+   "id": "revenue_trend",
+   "part": "usage",
+   "name": "Gelir trendi (90 gün)",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Son 90 günlük gelirin önceki 90 güne göre değişimidir."
+  },
+  {
+   "id": "tvl_trend",
+   "part": "usage",
+   "name": "Kilitli varlık trendi (90 gün)",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Protokolde kilitli varlığın 90 gün öncesine göre değişimidir."
+  },
+  {
+   "id": "active_devs",
+   "part": "usage",
+   "name": "Aktif geliştirici sayısı (90 gün)",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Son 90 günde projenin kod depolarına katkı veren farklı geliştirici sayısıdır."
+  },
+  {
+   "id": "governance",
+   "part": "usage",
+   "name": "Yönetim oyları (90 gün)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Son 90 günde yönetim önerilerine verilen oy sayısıdır; topluluğun canlılığını gösterir."
+  },
+  {
+   "id": "daily_active_addresses",
+   "part": "usage",
+   "name": "Günlük aktif adres",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Ağda bir günde işlem yapan farklı adreslerin son 7 günlük ortalamasıdır."
+  },
+  {
+   "id": "chain_profit",
+   "part": "usage",
+   "name": "Zincir kârı (90 gün)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Zincirin son 90 günde kullanıcı ücretlerinden, giderleri düştükten sonra elde ettiği kârdır."
+  },
+  {
+   "id": "volume_to_mc",
+   "part": "liquidity",
+   "name": "İşlem hacmi / piyasa değeri",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Günlük işlem hacminin piyasa değerine oranıdır; alım satımın ne kadar kolay olduğunu gösterir."
+  },
+  {
+   "id": "market_pairs",
+   "part": "liquidity",
+   "name": "İşlem çifti sayısı",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Coinin borsalarda işlem gördüğü çift sayısıdır; çok olması erişimin geniş olduğunu gösterir."
+  },
+  {
+   "id": "spread",
+   "part": "liquidity",
+   "name": "Alış-satış farkı",
+   "higher_is_better": false,
+   "optional": true,
+   "desc": "Borsalardaki alış ve satış fiyatı arasındaki ortalama farktır; düşük olması daha derin piyasa demektir."
+  },
+  {
+   "id": "bad_pair_ratio",
+   "part": "liquidity",
+   "name": "Şüpheli işlem çifti oranı",
+   "higher_is_better": false,
+   "optional": true,
+   "desc": "Şüpheli ya da uzun süredir güncellenmeyen işlem çiftlerinin oranıdır; düşük olması iyidir."
+  },
+  {
+   "id": "age_years",
+   "part": "liquidity",
+   "name": "Proje yaşı",
+   "higher_is_better": true,
+   "optional": false,
+   "desc": "Coinin listelenmesinden bu yana geçen süredir; uzun süre ayakta kalmak bir güven işaretidir."
+  },
+  {
+   "id": "audits",
+   "part": "liquidity",
+   "name": "Denetim sayısı",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Protokolün akıllı sözleşmeleri için yapılmış güvenlik denetimi sayısıdır."
+  },
+  {
+   "id": "l2_stage",
+   "part": "liquidity",
+   "name": "L2 güvenlik aşaması",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "L2BEAT'in Katman 2 ağlarına verdiği güvenlik aşamasıdır; 0 en zayıf, 2 en güçlüdür."
+  }
+ ]
+}

@@ -3,21 +3,27 @@
  "slug": "pixels",
  "symbol": "PIXEL",
  "name": "Pixels",
+ "cmc_id": 29335,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 48,
- "total_exact": 48.16,
+ "total": 43,
+ "total_exact": 42.91,
  "band": "Zayıf",
- "delta": null,
+ "delta": -5.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -25,35 +31,45 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.1,
+   "score": 12.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.7131,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.70026,
      "percentile": 0.582,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "%70",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.428042,
      "percentile": 0.6148,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,43×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
-     "basis": "sector"
+     "percentile": 0.6066,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +79,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,47 +89,100 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 15.1,
+   "score": 14.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.9262,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.443262,
-     "percentile": 0.8689,
-     "basis": "sector"
+     "value": 0.445944,
+     "percentile": 0.8443,
+     "basis": "sector",
+     "display": "%45",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 211.0,
      "percentile": 0.873,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "211",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.67488,
-     "percentile": 0.5246,
-     "basis": "sector"
+     "value": 2.677618,
+     "percentile": 0.5164,
+     "basis": "sector",
+     "display": "2,7 yıl",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    48.16
+  ],
+  [
+   "2026-10-24",
+   42.91
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.2,
+   "from": 48.2,
+   "to": 42.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.2,
+   "from": 48.2,
+   "to": 42.9,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

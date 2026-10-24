@@ -3,21 +3,27 @@
  "slug": "lagrange",
  "symbol": "LA",
  "name": "Lagrange",
+ "cmc_id": 36510,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 39.44,
+ "total": 34,
+ "total_exact": 34.33,
  "band": "Zayıf",
- "delta": null,
+ "delta": -5.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -25,6 +31,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +41,35 @@
    "score": 4.6,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0246,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.328289,
      "percentile": 0.2787,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "%33",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.046097,
      "percentile": 0.3115,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "3,05×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1066,
-     "basis": "sector"
+     "percentile": 0.1025,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,6 +79,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,47 +89,100 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.8,
+   "score": 13.7,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.8197,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9385,
-     "basis": "sector"
+     "percentile": 0.9262,
+     "basis": "sector",
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 187.0,
      "percentile": 0.8033,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "187",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.44011,
+     "value": 1.442847,
      "percentile": 0.3279,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,4 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    39.44
+  ],
+  [
+   "2026-10-24",
+   34.33
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.1,
+   "from": 39.4,
+   "to": 34.3,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.1,
+   "from": 39.4,
+   "to": 34.3,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

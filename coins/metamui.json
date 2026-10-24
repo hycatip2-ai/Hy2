@@ -3,21 +3,27 @@
  "slug": "metamui",
  "symbol": "MMUI",
  "name": "MetaMUI",
+ "cmc_id": 11223,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 40,
- "total_exact": 39.96,
+ "total": 35,
+ "total_exact": 34.88,
  "band": "Zayıf",
- "delta": null,
+ "delta": -5.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -25,6 +31,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +41,35 @@
    "score": 11.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.5984,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.595308,
      "percentile": 0.5,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "%60",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.679802,
      "percentile": 0.541,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,68×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
-     "basis": "sector"
+     "percentile": 0.6066,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,6 +79,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,47 +89,100 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.0,
+   "score": 7.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.3115,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.022776,
-     "percentile": 0.3607,
-     "basis": "sector"
+     "value": 0.024267,
+     "percentile": 0.3443,
+     "basis": "sector",
+     "display": "%2,4",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 10.0,
-     "percentile": 0.0861,
-     "basis": "sector"
+     "percentile": 0.0943,
+     "basis": "sector",
+     "display": "10",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.199179,
+     "value": 5.201916,
      "percentile": 0.7459,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "5,2 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    39.96
+  ],
+  [
+   "2026-10-24",
+   34.88
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.1,
+   "from": 40.0,
+   "to": 34.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.1,
+   "from": 40.0,
+   "to": 34.9,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

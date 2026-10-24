@@ -1,20 +1,21 @@
 {
- "rank": 213,
+ "rank": 276,
  "slug": "keeta",
  "symbol": "KTA",
  "name": "Keeta",
+ "cmc_id": 36066,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 30,
- "total_exact": 29.84,
+ "total_exact": 29.51,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.3,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,43 +26,64 @@
    "score": 3.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.1224,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 919.060579,
-     "percentile": 0.1633,
-     "basis": "sector"
+     "value": 921.51379,
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "922×",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.0,
+   "score": 9.1,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.4359,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.622831,
-     "percentile": 0.4557,
-     "basis": "sector"
+     "value": 0.625213,
+     "percentile": 0.4487,
+     "basis": "sector",
+     "display": "%63",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.605572,
-     "percentile": 0.519,
-     "basis": "sector"
+     "value": 1.599455,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "1,60×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.084202,
+     "percentile": 0.2051,
+     "basis": "sector",
+     "display": "+%8,4",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -71,51 +93,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.3,
+   "score": 3.6,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.1186,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.503928,
-     "percentile": 0.1667,
-     "basis": "sector"
+     "value": 0.498774,
+     "percentile": 0.1778,
+     "basis": "sector",
+     "display": "−%50",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 4.6,
+   "score": 6.8,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.141,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.015046,
-     "percentile": 0.0886,
-     "basis": "sector"
+     "value": 0.012688,
+     "percentile": 0.0769,
+     "basis": "sector",
+     "display": "%1,3",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 111.0,
-     "percentile": 0.3861,
-     "basis": "sector"
+     "value": 112.0,
+     "percentile": 0.3974,
+     "basis": "sector",
+     "display": "112",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.0476,
+     "percentile": 0.0833,
+     "basis": "sector",
+     "display": "%1,0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0526,
+     "percentile": 0.9271,
+     "basis": "sector",
+     "display": "%5,3",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.596167,
-     "percentile": 0.2152,
-     "basis": "sector"
+     "value": 1.598905,
+     "percentile": 0.2179,
+     "basis": "sector",
+     "display": "1,6 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -125,8 +179,13 @@
   [
    "2026-10-23",
    29.84
+  ],
+  [
+   "2026-10-24",
+   29.51
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

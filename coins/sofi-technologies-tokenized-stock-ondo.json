@@ -3,18 +3,19 @@
  "slug": "sofi-technologies-tokenized-stock-ondo",
  "symbol": "SOFIon",
  "name": "SoFi Technologies Tokenized Stock (Ondo)",
+ "cmc_id": 39283,
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 35,
- "total_exact": 35.09,
+ "total": 38,
+ "total_exact": 37.9,
  "band": "Zayıf",
- "delta": null,
+ "delta": 2.8,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,35 +26,45 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.7,
+   "score": 12.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.8235,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.6719,
-     "basis": "sector"
+     "percentile": 0.6912,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.5,
-     "basis": "sector"
+     "percentile": 0.8971,
+     "basis": "sector",
+     "display": "1,00×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.2812,
-     "basis": "sector"
+     "percentile": 0.2647,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,6 +74,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,45 +84,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 3.5,
+   "score": 3.7,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.0441,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.054053,
-     "percentile": 0.25,
-     "basis": "sector"
+     "value": 0.06703,
+     "percentile": 0.2941,
+     "basis": "sector",
+     "display": "%6,7",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 11.0,
-     "percentile": 0.0938,
-     "basis": "sector"
+     "percentile": 0.0882,
+     "basis": "sector",
+     "display": "11",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.788501,
-     "percentile": 0.1875,
-     "basis": "sector"
+     "value": 0.791239,
+     "percentile": 0.1765,
+     "basis": "sector",
+     "display": "0,8 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
+   "part": "supply",
+   "delta": 2.66,
+   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Arz +2,7)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    35.09
+  ],
+  [
+   "2026-10-24",
+   37.9
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 2.8,
+   "from": 35.1,
+   "to": 37.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
+     "part": "supply",
+     "delta": 2.66,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Arz +2,7)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

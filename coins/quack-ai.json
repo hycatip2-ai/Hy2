@@ -1,14 +1,15 @@
 {
- "rank": 208,
+ "rank": 264,
  "slug": "quack-ai",
  "symbol": "Q",
  "name": "Quack AI",
+ "cmc_id": 38236,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 31,
- "total_exact": 31.25,
+ "total": 33,
+ "total_exact": 33.02,
  "band": "Zayıf",
- "delta": null,
+ "delta": 1.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -23,7 +24,7 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 10.0,
@@ -34,6 +35,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -42,34 +45,44 @@
    "score": 13.3,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.8182,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.470688,
-     "percentile": 0.5224,
-     "basis": "sector"
+     "percentile": 0.5152,
+     "basis": "sector",
+     "display": "%47",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.12455,
-     "percentile": 0.6418,
-     "basis": "sector"
+     "percentile": 0.6364,
+     "basis": "sector",
+     "display": "2,12×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5522,
-     "basis": "sector"
+     "percentile": 0.553,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.529312,
-     "percentile": 0.9355,
-     "basis": "universe"
+     "percentile": 0.96,
+     "basis": "sector",
+     "display": "−%53",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -79,65 +92,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.2,
+   "score": 4.1,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.1786,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1593,
-     "basis": "universe"
+     "percentile": 0.2037,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.4,
+   "score": 10.9,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.5606,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.059013,
-     "percentile": 0.2985,
-     "basis": "sector"
+     "value": 0.073894,
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "%7,4",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 162.0,
-     "percentile": 0.7612,
-     "basis": "sector"
+     "value": 164.0,
+     "percentile": 0.7576,
+     "basis": "sector",
+     "display": "164",
+     "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1311,
-     "percentile": 0.8293,
-     "basis": "universe"
+     "percentile": 1.0,
+     "basis": "sector",
+     "display": "%0,13",
+     "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.439,
-     "basis": "universe"
+     "percentile": 0.3472,
+     "basis": "sector",
+     "display": "%17",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.149897,
-     "percentile": 0.2836,
-     "basis": "sector"
+     "value": 1.152635,
+     "percentile": 0.2879,
+     "basis": "sector",
+     "display": "1,2 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -147,8 +178,13 @@
   [
    "2026-10-23",
    31.25
+  ],
+  [
+   "2026-10-24",
+   33.02
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

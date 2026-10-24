@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 132,
  "slug": "vana",
  "symbol": "VANA",
  "name": "Vana",
+ "cmc_id": 34619,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 34,
- "total_exact": 33.89,
+ "total": 47,
+ "total_exact": 47.4,
  "band": "Zayıf",
- "delta": null,
+ "delta": 13.5,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,6 +26,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +36,35 @@
    "score": 6.1,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.1795,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.267077,
-     "percentile": 0.1139,
-     "basis": "sector"
+     "percentile": 0.1154,
+     "basis": "sector",
+     "display": "%27",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.988831,
-     "percentile": 0.1266,
-     "basis": "sector"
+     "percentile": 0.1282,
+     "basis": "sector",
+     "display": "3,99×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,68 +74,182 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 16.8,
+   "has_data": true,
    "weight": 25,
-   "metrics": []
+   "percentile": 0.8475,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 8.0,
+     "percentile": 0.8421,
+     "basis": "sector",
+     "display": "8",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.1,
+   "score": 8.7,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3846,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.062501,
-     "percentile": 0.3038,
-     "basis": "sector"
+     "value": 0.060875,
+     "percentile": 0.3077,
+     "basis": "sector",
+     "display": "%6,1",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 128.0,
-     "percentile": 0.4557,
-     "basis": "sector"
+     "percentile": 0.4615,
+     "basis": "sector",
+     "display": "128",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.1627,
+     "percentile": 0.875,
+     "basis": "sector",
+     "display": "%0,16",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2222,
+     "percentile": 0.3125,
+     "basis": "sector",
+     "display": "%22",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.859001,
-     "percentile": 0.2785,
-     "basis": "sector"
+     "value": 1.861739,
+     "percentile": 0.2821,
+     "basis": "sector",
+     "display": "1,9 yıl",
+     "tier": "alt dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.375,
-     "basis": "sector"
+     "percentile": 0.3667,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 12.3,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +12,3)"
+  },
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": 1.21,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    33.89
+  ],
+  [
+   "2026-10-24",
+   47.4
   ]
  ],
- "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 13.5,
+   "from": 33.9,
+   "to": 47.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 12.3,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +12,3)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 1.21,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,2)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": 13.5,
+   "from": 33.9,
+   "to": 47.4,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 12.3,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +12,3)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 1.21,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,2)"
+    }
+   ]
+  }
+ ],
+ "investors": [
+  "Coinbase Ventures",
+  "Paradigm",
+  "Polychain Capital",
+  "Patrick McCormick",
+  "Casey Caruso",
+  "Packy McCormick"
+ ],
+ "investors_source": "https://defillama.com/protocol/vana",
+ "angel_investors": [
+  "Patrick McCormick",
+  "Casey Caruso",
+  "Packy McCormick"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/vana",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/vana",
  "research": null
 }

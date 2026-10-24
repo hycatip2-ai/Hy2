@@ -1,20 +1,21 @@
 {
- "rank": 64,
+ "rank": 46,
  "slug": "wanchain",
  "symbol": "WAN",
  "name": "Wanchain",
+ "cmc_id": 2606,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 54,
- "total_exact": 53.54,
+ "total": 56,
+ "total_exact": 56.41,
  "band": "Orta",
- "delta": null,
+ "delta": 2.9,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,46 +23,58 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 15.1,
+   "score": 15.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.9082,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 4.499366,
-     "percentile": 0.7551,
-     "basis": "sector"
+     "value": 4.493457,
+     "percentile": 0.75,
+     "basis": "sector",
+     "display": "4,49×",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.4,
+   "score": 15.3,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.9231,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8924,
-     "basis": "sector"
+     "percentile": 0.891,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.0536,
-     "percentile": 0.7468,
-     "basis": "sector"
+     "value": 1.053599,
+     "percentile": 0.7436,
+     "basis": "sector",
+     "display": "1,05×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -71,53 +84,103 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 9.3,
+   "has_data": true,
    "weight": 25,
-   "metrics": []
+   "percentile": 0.4322,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.01145,
+     "percentile": 0.4667,
+     "basis": "sector",
+     "display": "+%1,1",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.9,
+   "score": 7.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.1923,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.005596,
-     "percentile": 0.0127,
-     "basis": "sector"
+     "value": 0.007139,
+     "percentile": 0.0385,
+     "basis": "sector",
+     "display": "%0,7",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 51.0,
-     "percentile": 0.1646,
-     "basis": "sector"
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "51",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.5859,
-     "percentile": 0.8608,
-     "basis": "sector"
+     "value": 8.588638,
+     "percentile": 0.859,
+     "basis": "sector",
+     "display": "8,6 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 2.92,
+   "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım +2,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    53.54
+  ],
+  [
+   "2026-10-24",
+   56.41
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 2.9,
+   "from": 53.5,
+   "to": 56.4,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 2.92,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım +2,9)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

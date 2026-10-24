@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 149,
  "slug": "orbs",
  "symbol": "ORBS",
  "name": "Orbs",
+ "cmc_id": 3835,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 36,
- "total_exact": 36.49,
+ "total": 45,
+ "total_exact": 45.47,
  "band": "Zayıf",
- "delta": null,
+ "delta": 9.0,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.2,
+   "score": 9.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.4336,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.439963,
-     "percentile": 0.3947,
-     "basis": "sector"
+     "percentile": 0.4159,
+     "basis": "sector",
+     "display": "%44",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.272919,
-     "percentile": 0.4123,
-     "basis": "sector"
+     "percentile": 0.4336,
+     "basis": "sector",
+     "display": "2,27×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1184,
-     "basis": "sector"
+     "percentile": 0.115,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.114887,
+     "percentile": 0.898,
+     "basis": "sector",
+     "display": "−%11",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,68 +83,171 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.2,
+   "has_data": true,
    "weight": 20,
-   "metrics": []
+   "percentile": 0.8421,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 4.0,
+     "percentile": 0.7105,
+     "basis": "sector",
+     "display": "4",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.1,
+   "score": 8.3,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.2655,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.079554,
-     "percentile": 0.3596,
-     "basis": "sector"
+     "value": 0.061055,
+     "percentile": 0.3097,
+     "basis": "sector",
+     "display": "%6,1",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 181.0,
-     "percentile": 0.5965,
-     "basis": "sector"
+     "percentile": 0.6106,
+     "basis": "sector",
+     "display": "181",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.2406,
+     "percentile": 0.0154,
+     "basis": "sector",
+     "display": "%1,2",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1923,
+     "percentile": 0.4615,
+     "basis": "sector",
+     "display": "%19",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.556468,
-     "percentile": 0.9123,
-     "basis": "sector"
+     "value": 7.559206,
+     "percentile": 0.9204,
+     "basis": "sector",
+     "display": "7,6 yıl",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.1493,
-     "basis": "sector"
+     "percentile": 0.1615,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 7.21,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +7,2)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": 3.14,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    36.49
+  ],
+  [
+   "2026-10-24",
+   45.47
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 9.0,
+   "from": 36.5,
+   "to": 45.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 7.21,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +7,2)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 3.14,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,1)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": 9.0,
+   "from": 36.5,
+   "to": 45.5,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 7.21,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +7,2)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 3.14,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,1)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/orbs",
  "research": null
 }

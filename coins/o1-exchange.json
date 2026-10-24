@@ -1,20 +1,21 @@
 {
- "rank": 205,
+ "rank": 261,
  "slug": "o1-exchange",
  "symbol": "O",
  "name": "o1.exchange",
+ "cmc_id": 40092,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 32,
- "total_exact": 31.94,
+ "total": 33,
+ "total_exact": 33.34,
  "band": "Zayıf",
- "delta": null,
+ "delta": 1.4,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.4,
+   "score": 7.4,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.292,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.16,
-     "percentile": 0.0877,
-     "basis": "sector"
+     "percentile": 0.0973,
+     "basis": "sector",
+     "display": "%16",
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.25,
-     "percentile": 0.0965,
-     "basis": "sector"
+     "percentile": 0.1062,
+     "basis": "sector",
+     "display": "6,25×",
+     "tier": "alt dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6531,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,51 +83,83 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.7,
+   "score": 3.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.1118,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2344,
-     "basis": "sector"
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.2,
+   "score": 9.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3805,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.326428,
-     "percentile": 0.7456,
-     "basis": "sector"
+     "value": 0.315941,
+     "percentile": 0.7257,
+     "basis": "sector",
+     "display": "%32",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 142.0,
-     "percentile": 0.4254,
-     "basis": "sector"
+     "percentile": 0.4292,
+     "basis": "sector",
+     "display": "142",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3183,
+     "percentile": 0.5077,
+     "basis": "sector",
+     "display": "%0,32",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1852,
+     "percentile": 0.5692,
+     "basis": "sector",
+     "display": "%19",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.355921,
-     "percentile": 0.0526,
-     "basis": "sector"
+     "value": 0.358658,
+     "percentile": 0.0619,
+     "basis": "sector",
+     "display": "0,4 yıl",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -117,8 +169,13 @@
   [
    "2026-10-23",
    31.94
+  ],
+  [
+   "2026-10-24",
+   33.34
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

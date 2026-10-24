@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 40,
  "slug": "polyswarm",
  "symbol": "NCT",
  "name": "PolySwarm",
+ "cmc_id": 2630,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 45,
- "total_exact": 44.89,
- "band": "Zayıf",
- "delta": null,
+ "total": 57,
+ "total_exact": 57.19,
+ "band": "Orta",
+ "delta": 12.3,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,35 +26,45 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.2,
+   "score": 15.3,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.9204,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.999781,
-     "percentile": 0.807,
-     "basis": "sector"
+     "percentile": 0.823,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.000219,
-     "percentile": 0.8421,
-     "basis": "sector"
+     "percentile": 0.8496,
+     "basis": "sector",
+     "display": "1,00×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,55 +74,120 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 18.6,
+   "has_data": true,
    "weight": 20,
-   "metrics": []
+   "percentile": 0.9605,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 9.0,
+     "percentile": 0.9298,
+     "basis": "sector",
+     "display": "9",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.3,
+   "score": 10.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.4956,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.056244,
-     "percentile": 0.2982,
-     "basis": "sector"
+     "value": 0.09869,
+     "percentile": 0.4071,
+     "basis": "sector",
+     "display": "%9,9",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 50.0,
-     "percentile": 0.1711,
-     "basis": "sector"
+     "percentile": 0.177,
+     "basis": "sector",
+     "display": "50",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.536619,
-     "percentile": 0.9298,
-     "basis": "sector"
+     "value": 8.539357,
+     "percentile": 0.9292,
+     "basis": "sector",
+     "display": "8,5 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 11.6,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +11,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    44.89
+  ],
+  [
+   "2026-10-24",
+   57.19
   ]
  ],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": 12.3,
+   "from": 44.9,
+   "to": 57.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 11.6,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +11,6)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": 12.3,
+   "from": 44.9,
+   "to": 57.2,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 11.6,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +11,6)"
+    }
+   ]
+  }
+ ],
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

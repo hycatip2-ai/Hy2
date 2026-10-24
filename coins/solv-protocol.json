@@ -1,23 +1,33 @@
 {
- "rank": 37,
+ "rank": 125,
  "slug": "solv-protocol",
  "symbol": "SOLV",
  "name": "Solv Protocol",
+ "cmc_id": 12165,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 58,
- "total_exact": 57.66,
- "band": "Orta",
- "delta": null,
+ "total": 48,
+ "total_exact": 48.16,
+ "band": "Zayıf",
+ "delta": -9.5,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  },
+  {
+   "id": "hack_12m",
+   "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 10.0,
  "parts": [
   {
    "id": "valuation",
@@ -25,50 +35,64 @@
    "score": 20.0,
    "has_data": true,
    "weight": 20,
+   "percentile": 1.0,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 1.713762,
+     "value": 1.696419,
      "percentile": 1.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,70×",
+     "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.027723,
+     "value": 0.028296,
      "percentile": 1.0,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "0,028×",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.8,
+   "score": 9.9,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.4667,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.57199,
-     "percentile": 0.4318,
-     "basis": "sector"
+     "percentile": 0.4444,
+     "basis": "sector",
+     "display": "%57",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.748281,
-     "percentile": 0.4773,
-     "basis": "sector"
+     "percentile": 0.4889,
+     "basis": "sector",
+     "display": "1,75×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5568,
-     "basis": "sector"
+     "percentile": 0.5556,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -78,91 +102,231 @@
    "score": 5.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3906,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2576,
-     "basis": "universe"
+     "percentile": 0.2578,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 9.9,
+   "score": 10.3,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.6207,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.112499,
-     "percentile": 0.6471,
-     "basis": "sector"
+     "value": 1.11938,
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "+%12",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.746785,
+     "percentile": 0.8889,
+     "basis": "sector",
+     "display": "+%75",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 2.0,
+     "percentile": 0.3571,
+     "basis": "sector",
+     "display": "2",
+     "tier": "orta dilim"
     },
     {
      "id": "governance",
      "name": "Yönetim oyları (90 gün)",
      "value": 0.0,
-     "percentile": 0.3478,
-     "basis": "universe"
+     "percentile": 0.3409,
+     "basis": "universe",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.2,
+   "score": 12.0,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.7333,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.155521,
-     "percentile": 0.3636,
-     "basis": "sector"
+     "value": 0.156744,
+     "percentile": 0.3556,
+     "basis": "sector",
+     "display": "%16",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 150.0,
-     "percentile": 0.4091,
-     "basis": "sector"
+     "percentile": 0.3778,
+     "basis": "sector",
+     "display": "150",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3695,
+     "percentile": 0.375,
+     "basis": "sector",
+     "display": "%0,37",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0732,
+     "percentile": 0.8333,
+     "basis": "sector",
+     "display": "%7,3",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.0705,
-     "percentile": 0.7727,
-     "basis": "sector"
+     "value": 5.073238,
+     "percentile": 0.7778,
+     "basis": "sector",
+     "display": "5,1 yıl",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.8939,
-     "basis": "sector"
+     "percentile": 0.8676,
+     "basis": "sector",
+     "display": "2",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -10.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −10,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    57.66
+  ],
+  [
+   "2026-10-24",
+   48.16
   ]
  ],
- "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
- "hacks_12m": [],
- "defillama_url": null,
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -9.5,
+   "from": 57.7,
+   "to": 48.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −10,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -9.5,
+   "from": 57.7,
+   "to": 48.2,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −10,0)"
+    }
+   ]
+  }
+ ],
+ "investors": [
+  "Blockchain Capital",
+  "Sfermion",
+  "gumi Cryptos Capital",
+  "DeFi Alliance",
+  "The Lao",
+  "CMT Digital",
+  "CMS Holdings",
+  "Apollo Capital",
+  "Shima Capital",
+  "SNZ Capital",
+  "Zonff Partners",
+  "HASH CIB",
+  "The Spartan Group",
+  "Axia8 Ventures",
+  "IOSG",
+  "Hashed",
+  "Krypital Group",
+  "GBV Capital",
+  "Maple Leaf Capital",
+  "IOSG Ventures",
+  "Laser Digital",
+  "OKX Ventures",
+  "UOB Venture Management",
+  "Mirana Ventures",
+  "Emirates Consortium",
+  "Matrix Partners",
+  "HashCIB",
+  "Geek Cartel",
+  "ByteTrade Labs"
+ ],
+ "investors_source": "https://defillama.com/protocol/solv-protocol",
+ "angel_investors": [
+  "The Lao",
+  "Emirates Consortium",
+  "Geek Cartel"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/solv-protocol",
+ "angel_investors_estimated": true,
+ "hacks_12m": [
+  {
+   "date": "2026-03-06",
+   "amount": 2700000,
+   "returned": 0,
+   "technique": "Infinite Mint"
+  }
+ ],
+ "defillama_url": "https://defillama.com/protocol/solv-protocol",
  "research": null
 }

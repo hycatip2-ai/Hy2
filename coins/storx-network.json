@@ -1,20 +1,21 @@
 {
- "rank": 157,
+ "rank": 231,
  "slug": "storx-network",
  "symbol": "SRX",
  "name": "StorX Network",
+ "cmc_id": 10894,
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 41,
- "total_exact": 41.01,
+ "total": 37,
+ "total_exact": 37.19,
  "band": "Zayıf",
- "delta": null,
+ "delta": -3.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,6 +26,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +36,35 @@
    "score": 11.6,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.5455,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.853634,
      "percentile": 0.5455,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "%85",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.798561,
      "percentile": 0.5152,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,80×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
      "percentile": 0.6818,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "Var",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,61 +74,103 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 9.6,
+   "score": 5.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.2941,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 2.0,
-     "percentile": 0.4779,
-     "basis": "universe"
+     "percentile": 0.2941,
+     "basis": "sector",
+     "display": "2",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.5,
+   "score": 5.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.0909,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.026279,
-     "percentile": 0.1818,
-     "basis": "sector"
+     "value": 0.027,
+     "percentile": 0.1515,
+     "basis": "sector",
+     "display": "%2,7",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 30.0,
      "percentile": 0.0606,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "30",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.275838,
+     "value": 5.278576,
      "percentile": 0.5758,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "5,3 yıl",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+   "part": "usage",
+   "delta": -3.68,
+   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −3,7)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    41.01
+  ],
+  [
+   "2026-10-24",
+   37.19
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -3.8,
+   "from": 41.0,
+   "to": 37.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+     "part": "usage",
+     "delta": -3.68,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −3,7)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

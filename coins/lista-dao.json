@@ -3,18 +3,19 @@
  "slug": "lista-dao",
  "symbol": "LISTA",
  "name": "Lista DAO",
+ "cmc_id": 21533,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 69,
- "total_exact": 69.05,
+ "total": 68,
+ "total_exact": 67.81,
  "band": "Orta",
- "delta": null,
+ "delta": -1.2,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,122 +23,199 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 16.9,
+   "score": 16.8,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.8571,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 6.788561,
-     "percentile": 0.8043,
-     "basis": "sector"
+     "value": 6.827768,
+     "percentile": 0.8,
+     "basis": "sector",
+     "display": "6,83×",
+     "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.020157,
-     "percentile": 0.9259,
-     "basis": "sector"
+     "value": 0.020253,
+     "percentile": 0.9231,
+     "basis": "sector",
+     "display": "0,020×",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.1,
+   "score": 9.7,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.5044,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.593448,
-     "percentile": 0.5175,
-     "basis": "sector"
+     "percentile": 0.5398,
+     "basis": "sector",
+     "display": "%59",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.694412,
-     "percentile": 0.5263,
-     "basis": "sector"
+     "percentile": 0.5575,
+     "basis": "sector",
+     "display": "1,69×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
-     "basis": "sector"
+     "percentile": 0.6195,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.135142,
+     "percentile": 0.2245,
+     "basis": "sector",
+     "display": "+%14",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 10.5,
+   "score": 10.6,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.5278,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
-     "value": 0.019724,
-     "percentile": 0.5263,
-     "basis": "sector"
+     "value": 0.019733,
+     "percentile": 0.5278,
+     "basis": "sector",
+     "display": "%2,0",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 18.3,
+   "score": 17.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.9211,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 2.305321,
-     "percentile": 0.9167,
-     "basis": "sector"
+     "value": 2.310258,
+     "percentile": 0.8936,
+     "basis": "sector",
+     "display": "+%131",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.677103,
+     "percentile": 0.9091,
+     "basis": "sector",
+     "display": "+%68",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 7.0,
+     "percentile": 0.886,
+     "basis": "sector",
+     "display": "7",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.6,
+   "score": 11.5,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.6637,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.061403,
-     "percentile": 0.307,
-     "basis": "sector"
+     "value": 0.061794,
+     "percentile": 0.3186,
+     "basis": "sector",
+     "display": "%6,2",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 181.0,
-     "percentile": 0.5965,
-     "basis": "sector"
+     "percentile": 0.6106,
+     "basis": "sector",
+     "display": "181",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3611,
+     "percentile": 0.3846,
+     "basis": "sector",
+     "display": "%0,36",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0263,
+     "percentile": 0.9077,
+     "basis": "sector",
+     "display": "%2,6",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.167009,
-     "percentile": 0.5702,
-     "basis": "sector"
+     "value": 4.169747,
+     "percentile": 0.5752,
+     "basis": "sector",
+     "display": "4,2 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6493,
-     "basis": "sector"
+     "percentile": 0.6615,
+     "basis": "sector",
+     "display": "2",
+     "tier": "orta dilim"
     }
    ]
   }
@@ -147,15 +225,22 @@
   [
    "2026-10-23",
    69.05
+  ],
+  [
+   "2026-10-24",
+   67.81
   ]
  ],
+ "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Binance Labs"
+ ],
+ "investors_source": "https://defillama.com/protocol/lista-dao",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/lista-dao",
  "research": null
 }

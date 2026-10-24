@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 206,
  "slug": "ontology-gas",
  "symbol": "ONG",
  "name": "Ontology Gas",
+ "cmc_id": 3217,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 40,
- "total_exact": 40.5,
+ "total_exact": 39.89,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,35 +26,54 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.4,
+   "score": 9.2,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.4487,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.604905,
-     "percentile": 0.3924,
-     "basis": "sector"
+     "percentile": 0.3846,
+     "basis": "sector",
+     "display": "%60",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.066441,
-     "percentile": 0.3544,
-     "basis": "sector"
+     "percentile": 0.3462,
+     "basis": "sector",
+     "display": "2,07×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6709,
-     "basis": "sector"
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.017657,
+     "percentile": 0.4359,
+     "basis": "sector",
+     "display": "+%1,8",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,15 +83,29 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.8,
+   "has_data": true,
    "weight": 25,
-   "metrics": []
+   "percentile": 0.2542,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.3421,
+     "basis": "sector",
+     "display": "1",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
@@ -79,27 +113,53 @@
    "score": 10.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.5,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.047585,
-     "percentile": 0.2532,
-     "basis": "sector"
+     "value": 0.048308,
+     "percentile": 0.2949,
+     "basis": "sector",
+     "display": "%4,8",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 133.0,
-     "percentile": 0.4747,
-     "basis": "sector"
+     "percentile": 0.4808,
+     "basis": "sector",
+     "display": "133",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.0781,
+     "percentile": 0.9375,
+     "basis": "sector",
+     "display": "%0,08",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.4,
+     "percentile": 0.0208,
+     "basis": "sector",
+     "display": "%40",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.167009,
-     "percentile": 0.8101,
-     "basis": "sector"
+     "value": 8.169747,
+     "percentile": 0.8077,
+     "basis": "sector",
+     "display": "8,2 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -109,8 +169,13 @@
   [
    "2026-10-23",
    40.5
+  ],
+  [
+   "2026-10-24",
+   39.89
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

@@ -1,22 +1,23 @@
 {
- "rank": null,
+ "rank": 176,
  "slug": "ravencoin",
  "symbol": "RVN",
  "name": "Ravencoin",
+ "cmc_id": 2577,
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 48,
- "total_exact": 47.59,
+ "total": 43,
+ "total_exact": 43.04,
  "band": "Zayıf",
- "delta": null,
+ "delta": -4.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -25,35 +26,45 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.9,
+   "score": 12.2,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.7059,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.6719,
-     "basis": "sector"
+     "percentile": 0.6912,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.270771,
-     "percentile": 0.3125,
-     "basis": "sector"
+     "value": 1.270634,
+     "percentile": 0.3529,
+     "basis": "sector",
+     "display": "1,27×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7969,
-     "basis": "sector"
+     "percentile": 0.7794,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -63,53 +74,103 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 3.1,
+   "has_data": true,
    "weight": 25,
-   "metrics": []
+   "percentile": 0.067,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1577,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 17.3,
+   "score": 17.2,
    "has_data": true,
    "weight": 15,
+   "percentile": 1.0,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.303612,
-     "percentile": 0.7188,
-     "basis": "sector"
+     "value": 0.31627,
+     "percentile": 0.7059,
+     "basis": "sector",
+     "display": "%32",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 212.0,
-     "percentile": 0.9062,
-     "basis": "sector"
+     "percentile": 0.9118,
+     "basis": "sector",
+     "display": "212",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.621492,
-     "percentile": 0.9688,
-     "basis": "sector"
+     "value": 8.62423,
+     "percentile": 0.9706,
+     "basis": "sector",
+     "display": "8,6 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -4.81,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,8)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    47.59
+  ],
+  [
+   "2026-10-24",
+   43.04
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -4.6,
+   "from": 47.6,
+   "to": 43.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -4.81,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,8)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

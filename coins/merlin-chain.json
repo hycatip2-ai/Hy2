@@ -1,14 +1,15 @@
 {
- "rank": 163,
+ "rank": 225,
  "slug": "merlin-chain",
  "symbol": "MERL",
  "name": "Merlin Chain",
+ "cmc_id": 30712,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 40,
- "total_exact": 40.15,
+ "total": 38,
+ "total_exact": 37.84,
  "band": "Zayıf",
- "delta": null,
+ "delta": -2.3,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -19,7 +20,7 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 5.0,
@@ -27,53 +28,76 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 9.9,
+   "score": 10.2,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.5417,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 5.629324,
-     "percentile": 0.4,
-     "basis": "sector"
+     "value": 4.219175,
+     "percentile": 0.4286,
+     "basis": "sector",
+     "display": "4,22×",
+     "tier": "orta dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 1809.333017,
+     "value": 1727.997076,
      "percentile": 0.5909,
-     "basis": "universe"
+     "basis": "universe",
+     "display": "1.728×",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.3,
+   "score": 10.0,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.4889,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.680863,
-     "percentile": 0.5455,
-     "basis": "sector"
+     "percentile": 0.5778,
+     "basis": "sector",
+     "display": "%68",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.468725,
-     "percentile": 0.5909,
-     "basis": "sector"
+     "percentile": 0.6222,
+     "basis": "sector",
+     "display": "1,47×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5568,
-     "basis": "sector"
+     "percentile": 0.5556,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.057126,
+     "percentile": 0.2381,
+     "basis": "sector",
+     "display": "+%5,7",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -83,75 +107,148 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.3,
+   "score": 7.1,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.3103,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.619603,
-     "percentile": 0.3529,
-     "basis": "sector"
+     "value": 0.629625,
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "−%37",
+     "tier": "alt dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.98633,
-     "percentile": 0.3906,
-     "basis": "universe"
+     "value": 1.278552,
+     "percentile": 0.7778,
+     "basis": "sector",
+     "display": "+%28",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "1",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.0,
+   "score": 8.1,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.2222,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.087308,
-     "percentile": 0.25,
-     "basis": "sector"
+     "value": 0.090339,
+     "percentile": 0.2667,
+     "basis": "sector",
+     "display": "%9,0",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 193.0,
-     "percentile": 0.6932,
-     "basis": "sector"
+     "percentile": 0.6444,
+     "basis": "sector",
+     "display": "193",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.294,
+     "percentile": 0.5833,
+     "basis": "sector",
+     "display": "%0,29",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2759,
+     "percentile": 0.125,
+     "basis": "sector",
+     "display": "%28",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.516085,
-     "percentile": 0.4773,
-     "basis": "sector"
+     "value": 2.518823,
+     "percentile": 0.4444,
+     "basis": "sector",
+     "display": "2,5 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3788,
-     "basis": "sector"
+     "percentile": 0.3529,
+     "basis": "sector",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -1.65,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    40.15
+  ],
+  [
+   "2026-10-24",
+   37.84
   ]
+ ],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -2.3,
+   "from": 40.1,
+   "to": 37.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.65,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
+    }
+   ]
+  }
  ],
  "events": [],
  "investors": [],

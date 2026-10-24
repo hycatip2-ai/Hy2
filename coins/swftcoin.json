@@ -3,18 +3,19 @@
  "slug": "swftcoin",
  "symbol": "SWFTC",
  "name": "SwftCoin",
+ "cmc_id": 2341,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 43,
- "total_exact": 43.09,
+ "total": 42,
+ "total_exact": 41.68,
  "band": "Zayıf",
- "delta": null,
+ "delta": -1.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": false,
  "penalty": 0.0,
@@ -25,6 +26,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +36,35 @@
    "score": 13.4,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.8009,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9167,
-     "basis": "sector"
+     "percentile": 0.9248,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9737,
-     "basis": "sector"
+     "percentile": 0.969,
+     "basis": "sector",
+     "display": "1,00×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1184,
-     "basis": "sector"
+     "percentile": 0.115,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -63,6 +74,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -71,35 +84,63 @@
    "score": 7.0,
    "has_data": false,
    "weight": 20,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.3,
+   "score": 7.4,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.2124,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.014595,
-     "percentile": 0.1579,
-     "basis": "sector"
+     "value": 0.015555,
+     "percentile": 0.1681,
+     "basis": "sector",
+     "display": "%1,6",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 99.0,
-     "percentile": 0.2763,
-     "basis": "sector"
+     "percentile": 0.2743,
+     "basis": "sector",
+     "display": "99",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3442,
+     "percentile": 0.4308,
+     "basis": "sector",
+     "display": "%0,34",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.4375,
+     "percentile": 0.0154,
+     "basis": "sector",
+     "display": "%44",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.799452,
-     "percentile": 0.9561,
-     "basis": "sector"
+     "value": 8.80219,
+     "percentile": 0.9558,
+     "basis": "sector",
+     "display": "8,8 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -109,8 +150,13 @@
   [
    "2026-10-23",
    43.09
+  ],
+  [
+   "2026-10-24",
+   41.68
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,

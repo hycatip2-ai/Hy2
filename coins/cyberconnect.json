@@ -1,23 +1,33 @@
 {
- "rank": null,
+ "rank": 248,
  "slug": "cyberconnect",
  "symbol": "CYBER",
  "name": "Cyber",
+ "cmc_id": 24781,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 50,
- "total_exact": 49.75,
+ "total": 35,
+ "total_exact": 34.59,
  "band": "Zayıf",
- "delta": null,
+ "delta": -15.2,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  },
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
- "eligible_for_top": false,
- "penalty": 0.0,
+ "eligible_for_top": true,
+ "penalty": 10.0,
  "parts": [
   {
    "id": "valuation",
@@ -25,6 +35,8 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
@@ -33,27 +45,35 @@
    "score": 13.1,
    "has_data": true,
    "weight": 30,
+   "percentile": 0.7727,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.783071,
-     "percentile": 0.6418,
-     "basis": "sector"
+     "percentile": 0.6364,
+     "basis": "sector",
+     "display": "%78",
+     "tier": "orta dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.277023,
-     "percentile": 0.7761,
-     "basis": "sector"
+     "percentile": 0.7727,
+     "basis": "sector",
+     "display": "1,28×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5522,
-     "basis": "sector"
+     "percentile": 0.553,
+     "basis": "sector",
+     "display": "Var",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -63,68 +83,195 @@
    "score": 7.0,
    "has_data": false,
    "weight": 10,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.1,
+   "has_data": true,
    "weight": 30,
-   "metrics": []
+   "percentile": 0.1786,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.2037,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.4,
+   "score": 13.5,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.9091,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.396657,
-     "percentile": 0.7612,
-     "basis": "sector"
+     "value": 0.397656,
+     "percentile": 0.7576,
+     "basis": "sector",
+     "display": "%40",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 246.0,
-     "percentile": 0.9851,
-     "basis": "sector"
+     "percentile": 0.9848,
+     "basis": "sector",
+     "display": "246",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.4054,
+     "percentile": 0.5556,
+     "basis": "sector",
+     "display": "%0,41",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1042,
+     "percentile": 0.6111,
+     "basis": "sector",
+     "display": "%10",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 3.189596,
-     "percentile": 0.8657,
-     "basis": "sector"
+     "value": 3.192334,
+     "percentile": 0.8636,
+     "basis": "sector",
+     "display": "3,2 yıl",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2677,
-     "basis": "universe"
+     "percentile": 0.2712,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+   "part": "penalty",
+   "delta": -10.0,
+   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+  },
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -4.39,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
    49.75
+  ],
+  [
+   "2026-10-24",
+   34.59
   ]
  ],
- "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -15.2,
+   "from": 49.8,
+   "to": 34.6,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    },
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -4.39,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,4)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -15.2,
+   "from": 49.8,
+   "to": 34.6,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    },
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -4.39,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,4)"
+    }
+   ]
+  }
+ ],
+ "investors": [
+  "Animoca Brands",
+  "Sky9 Capital",
+  "Delphi Digital",
+  "Protocol Labs",
+  "IOSG Ventures",
+  "Tribe Capital",
+  "GGV Capital",
+  "The Spartan Group",
+  "Amber Group",
+  "Polygon Studios",
+  "SevenX Ventures",
+  "Binance Labs",
+  "Multicoin Capital",
+  "Lattice Fund",
+  "Draper Dragon",
+  "Hashed",
+  "Zoo Capital",
+  "Sipher, Smrti Lab",
+  "UpHonest Capital",
+  "INCE Capital",
+  "Mask Network fund"
+ ],
+ "investors_source": "https://defillama.com/protocol/cyberconnect",
+ "angel_investors": [
+  "Draper Dragon"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/cyberconnect",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/cyberconnect",
  "research": null
 }

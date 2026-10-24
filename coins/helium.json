@@ -1,20 +1,21 @@
 {
- "rank": 85,
+ "rank": 116,
  "slug": "helium",
  "symbol": "HNT",
  "name": "Helium",
+ "cmc_id": 5665,
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 51,
- "total_exact": 51.12,
- "band": "Orta",
- "delta": null,
+ "total": 49,
+ "total_exact": 49.18,
+ "band": "Zayıf",
+ "delta": -1.9,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -22,46 +23,67 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 1.7,
+   "score": 1.9,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0592,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0852,
-     "basis": "universe"
+     "percentile": 0.0966,
+     "basis": "universe",
+     "display": "Gelir yok",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.9,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.697,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
      "percentile": 0.8939,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.196856,
      "percentile": 0.6667,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "1,20×",
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
      "percentile": 0.6818,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "Var",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.025634,
+     "percentile": 0.2353,
+     "basis": "sector",
+     "display": "+%2,6",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -71,58 +93,92 @@
    "score": 7.0,
    "has_data": false,
    "weight": 25,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 18.2,
+   "score": 17.6,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.8824,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 11.0,
-     "percentile": 0.9115,
-     "basis": "universe"
+     "percentile": 0.8824,
+     "basis": "sector",
+     "display": "11",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.0,
+   "score": 11.3,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.6364,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.03436,
+     "value": 0.036821,
      "percentile": 0.2424,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "%3,7",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 238.0,
      "percentile": 0.8182,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "238",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3991,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "%0,40",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1,
+     "percentile": 0.8864,
+     "basis": "sector",
+     "display": "%10",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.38193,
+     "value": 6.384668,
      "percentile": 0.6667,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "6,4 yıl",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2677,
-     "basis": "universe"
+     "percentile": 0.2712,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
@@ -132,8 +188,13 @@
   [
    "2026-10-23",
    51.12
+  ],
+  [
+   "2026-10-24",
+   49.18
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [
   "Khosla Ventures",

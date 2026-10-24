@@ -1,20 +1,21 @@
 {
- "rank": 168,
+ "rank": 208,
  "slug": "stratis-new",
  "symbol": "STRAX",
  "name": "Xertra",
+ "cmc_id": 30168,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 40,
- "total_exact": 39.92,
+ "total": 39,
+ "total_exact": 39.19,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.7,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "formula_version": "1.0.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -25,50 +26,64 @@
    "score": 2.1,
    "has_data": true,
    "weight": 20,
+   "percentile": 0.0816,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 971.741368,
-     "percentile": 0.1429,
-     "basis": "sector"
+     "value": 955.891398,
+     "percentile": 0.1458,
+     "basis": "sector",
+     "display": "956×",
+     "tier": "alt dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 33305607.884293,
+     "value": 33608530.417762,
      "percentile": 0.0667,
-     "basis": "sector"
+     "basis": "sector",
+     "display": "33.608.530×",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.5,
+   "score": 13.3,
    "has_data": true,
    "weight": 25,
+   "percentile": 0.8077,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8924,
-     "basis": "sector"
+     "percentile": 0.891,
+     "basis": "sector",
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9747,
-     "basis": "sector"
+     "percentile": 0.9487,
+     "basis": "sector",
+     "display": "1,00×",
+     "tier": "üst dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1646,
-     "basis": "sector"
+     "percentile": 0.1603,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -78,43 +93,74 @@
    "score": 7.0,
    "has_data": false,
    "weight": 15,
+   "percentile": null,
+   "tier": null,
    "metrics": []
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.9,
+   "has_data": true,
    "weight": 25,
-   "metrics": []
+   "percentile": 0.2712,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.16423,
+     "percentile": 0.7778,
+     "basis": "sector",
+     "display": "+%16",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1316,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.2,
+   "score": 8.6,
    "has_data": true,
    "weight": 15,
+   "percentile": 0.3718,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.066673,
-     "percentile": 0.3165,
-     "basis": "sector"
+     "value": 0.04215,
+     "percentile": 0.2436,
+     "basis": "sector",
+     "display": "%4,2",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 29.0,
-     "percentile": 0.0886,
-     "basis": "sector"
+     "percentile": 0.0769,
+     "basis": "sector",
+     "display": "29",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 10.195756,
-     "percentile": 0.9747,
-     "basis": "sector"
+     "value": 10.198494,
+     "percentile": 0.9744,
+     "basis": "sector",
+     "display": "10,2 yıl",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -124,8 +170,13 @@
   [
    "2026-10-23",
    39.92
+  ],
+  [
+   "2026-10-24",
+   39.19
   ]
  ],
+ "changes": [],
  "events": [],
  "investors": [],
  "investors_source": null,
