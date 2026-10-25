@@ -4,19 +4,21 @@
  "symbol": "STORJ",
  "name": "Storj",
  "cmc_id": 1772,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 50,
- "total_exact": 49.77,
+ "total": 46,
+ "total_exact": 45.9,
  "band": "Zayıf",
- "delta": 0.2,
+ "delta": -3.9,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.5,
+   "score": 13.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8939,
+   "percentile": 0.9118,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8939,
+     "percentile": 0.8971,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9697,
+     "percentile": 0.9118,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -61,7 +63,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1667,
+     "percentile": 0.1765,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
@@ -91,17 +93,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 18.0,
+   "score": 13.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 1.0,
+   "percentile": 0.8529,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.289264,
-     "percentile": 0.8182,
+     "value": 0.293393,
+     "percentile": 0.7353,
      "basis": "sector",
      "display": "%29",
      "tier": "üst dilim"
@@ -110,16 +112,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 324.0,
-     "percentile": 0.9394,
+     "percentile": 0.9412,
      "basis": "sector",
      "display": "324",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3644,
+     "percentile": 0.5312,
+     "basis": "sector",
+     "display": "%0,36",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2581,
+     "percentile": 0.1562,
+     "basis": "sector",
+     "display": "%26",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.311431,
-     "percentile": 0.9394,
+     "value": 9.314168,
+     "percentile": 0.9412,
      "basis": "sector",
      "display": "9,3 yıl",
      "tier": "üst dilim"
@@ -127,7 +147,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -3.56,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +163,68 @@
   [
    "2026-10-24",
    49.77
+  ],
+  [
+   "2026-10-25",
+   45.9
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -3.9,
+   "from": 49.8,
+   "to": 45.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -3.56,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,6)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 959,
+  "rank_start": 662,
+  "score": 0,
+  "rise": 0,
+  "steady": 8,
+  "calm": 0,
+  "weeks_up": 1,
+  "weeks_down": 11,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ethereum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

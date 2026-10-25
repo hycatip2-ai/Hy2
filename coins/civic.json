@@ -4,19 +4,21 @@
  "symbol": "CVC",
  "name": "Civic",
  "cmc_id": 1816,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 48,
- "total_exact": 48.07,
+ "total": 47,
+ "total_exact": 46.84,
  "band": "Zayıf",
- "delta": -0.5,
+ "delta": -1.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.0,
+   "score": 13.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8222,
+   "percentile": 0.8409,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9556,
+     "percentile": 0.9545,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9556,
+     "percentile": 1.0,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.0444,
+     "percentile": 0.0455,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.7308,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -91,35 +102,53 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.4,
+   "score": 11.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9111,
+   "percentile": 0.7045,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.240123,
-     "percentile": 0.4444,
+     "value": 0.213918,
+     "percentile": 0.3409,
      "basis": "sector",
-     "display": "%24",
+     "display": "%21",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 219.0,
-     "percentile": 0.7333,
+     "percentile": 0.75,
      "basis": "sector",
      "display": "219",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3036,
+     "percentile": 0.6047,
+     "basis": "sector",
+     "display": "%0,30",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2683,
+     "percentile": 0.25,
+     "basis": "sector",
+     "display": "%27",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.270363,
-     "percentile": 0.9778,
+     "value": 9.273101,
+     "percentile": 0.9773,
      "basis": "sector",
      "display": "9,3 yıl",
      "tier": "üst dilim"
@@ -136,10 +165,52 @@
   [
    "2026-10-24",
    48.07
+  ],
+  [
+   "2026-10-25",
+   46.84
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 632,
+  "rank_start": 737,
+  "score": 25,
+  "rise": 12,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 6,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   0
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ethereum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

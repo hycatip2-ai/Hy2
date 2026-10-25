@@ -4,21 +4,28 @@
  "symbol": "ANIME",
  "name": "Animecoin",
  "cmc_id": 35319,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 41,
- "total_exact": 40.86,
+ "total": 36,
+ "total_exact": 36.28,
  "band": "Zayıf",
- "delta": -0.4,
+ "delta": -4.6,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -33,10 +40,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.7,
+   "score": 8.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2131,
+   "percentile": 0.2787,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -61,10 +68,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1025,
+     "percentile": 0.1066,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6131,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -91,19 +107,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.2,
+   "score": 12.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7705,
+   "percentile": 0.8033,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.221284,
-     "percentile": 0.7459,
+     "value": 0.5,
+     "percentile": 0.9139,
      "basis": "sector",
-     "display": "%22",
+     "display": "%50",
      "tier": "üst dilim"
     },
     {
@@ -116,18 +132,49 @@
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3733,
+     "percentile": 0.5294,
+     "basis": "sector",
+     "display": "%0,37",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1967,
+     "percentile": 0.3697,
+     "basis": "sector",
+     "display": "%20",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.749487,
+     "value": 1.752225,
      "percentile": 0.3852,
      "basis": "sector",
-     "display": "1,7 yıl",
+     "display": "1,8 yıl",
      "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": 1.42,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +1,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +183,69 @@
   [
    "2026-10-24",
    40.86
+  ],
+  [
+   "2026-10-25",
+   36.28
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -4.6,
+   "from": 40.9,
+   "to": 36.3,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 1.42,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +1,4)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 737,
+  "rank_start": 846,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

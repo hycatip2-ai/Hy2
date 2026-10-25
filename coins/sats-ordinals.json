@@ -4,19 +4,21 @@
  "symbol": "SATS",
  "name": "SATS (Ordinals)",
  "cmc_id": 28194,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 49,
- "total_exact": 48.57,
+ "total": 48,
+ "total_exact": 48.01,
  "band": "Zayıf",
- "delta": -1.6,
+ "delta": -0.6,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.4,
+   "score": 14.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9877,
+   "percentile": 0.9344,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.959,
+     "percentile": 0.8607,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -61,9 +63,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6131,
+     "basis": "sector",
+     "display": "%0",
      "tier": "orta dilim"
     }
    ]
@@ -91,34 +102,52 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.2,
+   "score": 12.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5984,
-   "tier": "orta dilim",
+   "percentile": 0.7787,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.045669,
-     "percentile": 0.4262,
+     "value": 0.048961,
+     "percentile": 0.418,
      "basis": "sector",
-     "display": "%4,6",
+     "display": "%4,9",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 125.0,
-     "percentile": 0.6803,
+     "percentile": 0.6885,
      "basis": "sector",
      "display": "125",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3137,
+     "percentile": 0.6303,
+     "basis": "sector",
+     "display": "%0,31",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0435,
+     "percentile": 0.7227,
+     "basis": "sector",
+     "display": "%4,3",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 3.069131,
+     "value": 3.071869,
      "percentile": 0.5656,
      "basis": "sector",
      "display": "3,1 yıl",
@@ -136,10 +165,52 @@
   [
    "2026-10-24",
    48.57
+  ],
+  [
+   "2026-10-25",
+   48.01
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 655,
+  "rank_start": 717,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 7,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ordinals - BRC20",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

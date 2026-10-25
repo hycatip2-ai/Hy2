@@ -1,24 +1,31 @@
 {
- "rank": null,
+ "rank": 327,
  "slug": "naoris-protocol",
  "symbol": "NAORIS",
  "name": "NaoX Protocol",
  "cmc_id": 35114,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 35,
- "total_exact": 35.15,
+ "total": 34,
+ "total_exact": 33.83,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -1.3,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
- "eligible_for_top": false,
- "penalty": 0.0,
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
+ "eligible_for_top": true,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -33,10 +40,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.4,
+   "score": 8.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.082,
+   "percentile": 0.3115,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -61,10 +68,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.095165,
+     "percentile": 0.8452,
+     "basis": "sector",
+     "display": "−%9,5",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -81,44 +97,72 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 5.7,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.3051,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.2857,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.8,
+   "score": 10.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4057,
+   "percentile": 0.5902,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.053776,
-     "percentile": 0.4508,
+     "value": 0.056224,
+     "percentile": 0.459,
      "basis": "sector",
-     "display": "%5,4",
+     "display": "%5,6",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 94.0,
-     "percentile": 0.5738,
+     "percentile": 0.582,
      "basis": "sector",
      "display": "94",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2232,
+     "percentile": 0.7815,
+     "basis": "sector",
+     "display": "%0,22",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1333,
+     "percentile": 0.5966,
+     "basis": "sector",
+     "display": "%13",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.234771,
+     "value": 1.237509,
      "percentile": 0.2951,
      "basis": "sector",
      "display": "1,2 yıl",
@@ -136,10 +180,47 @@
   [
    "2026-10-24",
    35.15
+  ],
+  [
+   "2026-10-25",
+   33.83
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 762,
+  "rank_start": 729,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 8,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

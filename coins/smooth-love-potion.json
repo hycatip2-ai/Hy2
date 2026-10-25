@@ -4,19 +4,21 @@
  "symbol": "SLP",
  "name": "Smooth Love Potion",
  "cmc_id": 5824,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 49,
- "total_exact": 49.47,
+ "total": 46,
+ "total_exact": 46.15,
  "band": "Zayıf",
- "delta": 0.5,
+ "delta": -3.3,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.1,
+   "score": 11.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7869,
+   "percentile": 0.7295,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.959,
+     "percentile": 0.9016,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1025,
+     "percentile": 0.1066,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.002204,
+     "percentile": 0.4762,
+     "basis": "sector",
+     "display": "+%0,2",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -91,19 +102,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 15.4,
+   "score": 13.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9508,
+   "percentile": 0.877,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.060547,
-     "percentile": 0.5,
+     "value": 0.0623,
+     "percentile": 0.5082,
      "basis": "sector",
-     "display": "%6,1",
+     "display": "%6,2",
      "tier": "orta dilim"
     },
     {
@@ -116,9 +127,27 @@
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3385,
+     "percentile": 0.5798,
+     "basis": "sector",
+     "display": "%0,34",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1818,
+     "percentile": 0.4118,
+     "basis": "sector",
+     "display": "%18",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.294319,
+     "value": 6.297057,
      "percentile": 0.8689,
      "basis": "sector",
      "display": "6,3 yıl",
@@ -127,7 +156,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -2.16,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -1.15,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +178,69 @@
   [
    "2026-10-24",
    49.47
+  ],
+  [
+   "2026-10-25",
+   46.15
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -3.3,
+   "from": 49.5,
+   "to": 46.1,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.16,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.15,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,2)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 695,
+  "rank_start": 728,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 7,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

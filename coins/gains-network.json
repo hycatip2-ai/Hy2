@@ -1,50 +1,57 @@
 {
- "rank": 3,
+ "rank": 11,
  "slug": "gains-network",
  "symbol": "GNS",
  "name": "Gains Network",
  "cmc_id": 13663,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 71,
- "total_exact": 70.68,
- "band": "Güçlü",
- "delta": 0.5,
+ "total": 63,
+ "total_exact": 63.12,
+ "band": "Orta",
+ "delta": -7.8,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "flags": [
+  {
+   "id": "hidden_owner",
+   "text": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi)."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 17.1,
+   "score": 16.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8929,
+   "percentile": 0.8077,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 1.972465,
+     "value": 1.937476,
      "percentile": 1.0,
      "basis": "sector",
-     "display": "1,97×",
+     "display": "1,94×",
      "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 1.247317,
-     "percentile": 0.5577,
+     "value": 1.396927,
+     "percentile": 0.4754,
      "basis": "sector",
-     "display": "1,25×",
+     "display": "1,40×",
      "tier": "orta dilim"
     }
    ]
@@ -52,17 +59,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.4,
+   "score": 12.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8009,
+   "percentile": 0.7724,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9248,
+     "percentile": 0.9106,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -71,7 +78,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.969,
+     "percentile": 0.8699,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -80,7 +87,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.115,
+     "percentile": 0.1138,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
@@ -90,17 +97,17 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 13.9,
+   "score": 14.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6944,
+   "percentile": 0.7045,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
-     "value": 0.104299,
-     "percentile": 0.6944,
+     "value": 0.103135,
+     "percentile": 0.7045,
      "basis": "sector",
      "display": "%10",
      "tier": "üst dilim"
@@ -110,46 +117,46 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.4,
+   "score": 10.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5395,
+   "percentile": 0.6132,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.361387,
-     "percentile": 0.7234,
+     "value": 1.343032,
+     "percentile": 0.7321,
      "basis": "sector",
-     "display": "+%36",
+     "display": "+%34",
      "tier": "üst dilim"
     },
     {
      "id": "governance",
      "name": "Yönetim oyları (90 gün)",
      "value": 0.0,
-     "percentile": 0.3214,
+     "percentile": 0.3571,
      "basis": "sector",
      "display": "0",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 15.5,
+   "score": 13.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9558,
+   "percentile": 0.9106,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9204,
+     "percentile": 0.8943,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -158,16 +165,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 271.0,
-     "percentile": 0.8673,
+     "percentile": 0.8293,
      "basis": "sector",
      "display": "271",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3126,
+     "percentile": 0.5,
+     "basis": "sector",
+     "display": "%0,31",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1905,
+     "percentile": 0.475,
+     "basis": "sector",
+     "display": "%19",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.977413,
-     "percentile": 0.6549,
+     "value": 4.980151,
+     "percentile": 0.6098,
      "basis": "sector",
      "display": "5,0 yıl",
      "tier": "orta dilim"
@@ -176,7 +201,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6615,
+     "percentile": 0.6447,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -184,19 +209,106 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi).",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi). (Uyarı −5,0)"
+  },
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -1.7,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,7)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   70.2
+   70.42
   ],
   [
    "2026-10-24",
-   70.68
+   70.91
+  ],
+  [
+   "2026-10-25",
+   63.12
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -7.8,
+   "from": 70.9,
+   "to": 63.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi).",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi). (Uyarı −5,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.7,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,7)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": -7.8,
+   "from": 70.9,
+   "to": 63.1,
+   "reasons": [
+    {
+     "text": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi).",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Kontratta gizli sahip yetkisi tespit edildi (köklü ve denetimli proje olduğu için elenmedi). (Uyarı −5,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.7,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,7)"
+    }
+   ]
+  }
+ ],
+ "trend": {
+  "rank_now": 956,
+  "rank_start": 914,
+  "score": 0,
+  "rise": 0,
+  "steady": 0,
+  "calm": 0,
+  "weeks_up": 0,
+  "weeks_down": 1,
+  "weeks_total": 1,
+  "weekly": [
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Arbitrum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

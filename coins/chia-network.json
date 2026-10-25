@@ -1,22 +1,24 @@
 {
- "rank": 215,
+ "rank": 158,
  "slug": "chia-network",
  "symbol": "XCH",
  "name": "Chia",
  "cmc_id": 9258,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 39,
- "total_exact": 38.54,
+ "total": 47,
+ "total_exact": 46.9,
  "band": "Zayıf",
- "delta": -2.7,
+ "delta": 8.4,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -26,14 +28,14 @@
    "score": 3.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1633,
+   "percentile": 0.1837,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0966,
+     "percentile": 0.0918,
      "basis": "universe",
      "display": "Gelir yok",
      "tier": "alt dilim"
@@ -41,10 +43,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 98.395211,
+     "value": 97.149975,
      "percentile": 0.3542,
      "basis": "sector",
-     "display": "98,4×",
+     "display": "97,1×",
      "tier": "orta dilim"
     }
    ]
@@ -52,11 +54,11 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.8,
+   "score": 8.6,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.0641,
-   "tier": "alt dilim",
+   "percentile": 0.3462,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
@@ -84,6 +86,15 @@
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.230696,
+     "percentile": 1.0,
+     "basis": "sector",
+     "display": "−%23",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -100,48 +111,57 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.8,
+   "score": 16.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7627,
+   "percentile": 0.8429,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 3.525229,
+     "value": 3.553786,
      "percentile": 0.84,
      "basis": "sector",
-     "display": "+%253",
+     "display": "+%255",
      "tier": "üst dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.02628,
-     "percentile": 0.5333,
+     "value": 0.995819,
+     "percentile": 0.4889,
      "basis": "sector",
-     "display": "+%2,6",
+     "display": "−%0,4",
      "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 18.0,
+     "percentile": 0.9474,
+     "basis": "sector",
+     "display": "18",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.9,
+   "score": 9.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1603,
-   "tier": "alt dilim",
+   "percentile": 0.3974,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.037167,
-     "percentile": 0.1923,
+     "value": 0.037507,
+     "percentile": 0.2179,
      "basis": "sector",
-     "display": "%3,7",
+     "display": "%3,8",
      "tier": "alt dilim"
     },
     {
@@ -154,9 +174,27 @@
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.4472,
+     "percentile": 0.4026,
+     "basis": "sector",
+     "display": "%0,45",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0588,
+     "percentile": 0.8636,
+     "basis": "sector",
+     "display": "%5,9",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.522245,
+     "value": 5.524983,
      "percentile": 0.5962,
      "basis": "sector",
      "display": "5,5 yıl",
@@ -167,20 +205,30 @@
  ],
  "reasons": [
   {
-   "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": 4.74,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,7)"
+  },
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
    "part": "usage",
-   "delta": -2.56,
-   "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −2,6)"
+   "delta": 1.88,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +1,9)"
   }
  ],
  "history": [
   [
    "2026-10-23",
-   41.28
+   41.27
   ],
   [
    "2026-10-24",
-   38.54
+   38.53
+  ],
+  [
+   "2026-10-25",
+   46.9
   ]
  ],
  "changes": [
@@ -198,9 +246,89 @@
      "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −2,6)"
     }
    ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": 8.4,
+   "from": 38.5,
+   "to": 46.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 4.74,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,7)"
+    },
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 1.88,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +1,9)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": 8.4,
+   "from": 38.5,
+   "to": 46.9,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 4.74,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,7)"
+    },
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 1.88,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +1,9)"
+    }
+   ]
+  }
+ ],
+ "trend": {
+  "rank_now": 713,
+  "rank_start": 716,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 7,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Chia",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

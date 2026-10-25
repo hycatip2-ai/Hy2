@@ -4,21 +4,28 @@
  "symbol": "NST",
  "name": "Ninja Squad Token",
  "cmc_id": 16807,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 44,
- "total_exact": 44.09,
+ "total": 39,
+ "total_exact": 38.72,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -5.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -36,7 +43,7 @@
    "score": 14.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9057,
+   "percentile": 0.9262,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -52,7 +59,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.161268,
-     "percentile": 0.7049,
+     "percentile": 0.6967,
      "basis": "sector",
      "display": "1,16×",
      "tier": "üst dilim"
@@ -61,7 +68,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -91,34 +98,52 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.4,
+   "score": 8.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3689,
-   "tier": "orta dilim",
+   "percentile": 0.3033,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.014864,
-     "percentile": 0.2869,
+     "value": 0.017979,
+     "percentile": 0.3197,
      "basis": "sector",
-     "display": "%1,5",
+     "display": "%1,8",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 26.0,
-     "percentile": 0.2869,
+     "percentile": 0.3033,
      "basis": "sector",
      "display": "26",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.1641,
+     "percentile": 0.0756,
+     "basis": "sector",
+     "display": "%1,2",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.125,
+     "percentile": 0.6261,
+     "basis": "sector",
+     "display": "%12",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.80219,
+     "value": 4.804928,
      "percentile": 0.6803,
      "basis": "sector",
      "display": "4,8 yıl",
@@ -127,7 +152,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +168,78 @@
   [
    "2026-10-24",
    44.09
+  ],
+  [
+   "2026-10-25",
+   38.72
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -5.4,
+   "from": 44.1,
+   "to": 38.7,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": -5.4,
+   "from": 44.1,
+   "to": 38.7,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "trend": {
+  "rank_now": 904,
+  "rank_start": 999,
+  "score": 20,
+  "rise": 7,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

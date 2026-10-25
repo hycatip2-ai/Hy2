@@ -1,22 +1,24 @@
 {
- "rank": 137,
+ "rank": 160,
  "slug": "ethereum-pow",
  "symbol": "ETHW",
  "name": "EthereumPoW",
  "cmc_id": 21296,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 47,
- "total_exact": 46.73,
+ "total_exact": 46.79,
  "band": "Zayıf",
- "delta": 0.5,
+ "delta": 0.1,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -26,16 +28,16 @@
    "score": 7.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.449,
+   "percentile": 0.4694,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 74.428398,
+     "value": 78.389112,
      "percentile": 0.3958,
      "basis": "sector",
-     "display": "74,4×",
+     "display": "78,4×",
      "tier": "orta dilim"
     }
    ]
@@ -43,17 +45,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.3,
+   "score": 13.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8077,
+   "percentile": 0.7949,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.891,
+     "percentile": 0.8974,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -62,7 +64,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9487,
+     "percentile": 0.9808,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -75,6 +77,15 @@
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 3e-06,
+     "percentile": 0.6061,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -91,26 +102,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 8.4,
+   "score": 8.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.322,
-   "tier": "alt dilim",
+   "percentile": 0.3571,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 31.471265,
+     "value": 28.920529,
      "percentile": 1.0,
      "basis": "sector",
-     "display": "+%3.047",
+     "display": "+%2.792",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1316,
+     "percentile": 0.1491,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -120,19 +131,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.5,
+   "score": 8.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3205,
+   "percentile": 0.3077,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.065271,
-     "percentile": 0.3333,
+     "value": 0.066987,
+     "percentile": 0.2949,
      "basis": "sector",
-     "display": "%6,5",
+     "display": "%6,7",
      "tier": "alt dilim"
     },
     {
@@ -148,7 +159,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.7848,
-     "percentile": 0.1042,
+     "percentile": 0.1299,
      "basis": "sector",
      "display": "%0,78",
      "tier": "alt dilim"
@@ -157,7 +168,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.5833,
+     "percentile": 0.5649,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -165,7 +176,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.210815,
+     "value": 4.213552,
      "percentile": 0.4872,
      "basis": "sector",
      "display": "4,2 yıl",
@@ -183,10 +194,52 @@
   [
    "2026-10-24",
    46.73
+  ],
+  [
+   "2026-10-25",
+   46.79
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 611,
+  "rank_start": 631,
+  "score": 0,
+  "rise": 0,
+  "steady": 17,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "EthereumPoW",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

@@ -4,19 +4,21 @@
  "symbol": "BIGTIME",
  "name": "Big Time",
  "cmc_id": 28230,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
  "total": 46,
- "total_exact": 45.64,
+ "total_exact": 45.72,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": 0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.7,
+   "score": 12.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5656,
-   "tier": "orta dilim",
+   "percentile": 0.7623,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.580839,
-     "percentile": 0.4836,
+     "value": 0.580889,
+     "percentile": 0.4754,
      "basis": "sector",
      "display": "%58",
      "tier": "orta dilim"
@@ -51,8 +53,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.721646,
-     "percentile": 0.5164,
+     "value": 1.7215,
+     "percentile": 0.5082,
      "basis": "sector",
      "display": "1,72×",
      "tier": "orta dilim"
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.419111,
+     "percentile": 0.9048,
+     "basis": "sector",
+     "display": "−%42",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -91,17 +102,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.9,
+   "score": 12.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8484,
+   "percentile": 0.8115,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9262,
+     "percentile": 0.9139,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -116,9 +127,27 @@
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2869,
+     "percentile": 0.6723,
+     "basis": "sector",
+     "display": "%0,29",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2549,
+     "percentile": 0.2185,
+     "basis": "sector",
+     "display": "%25",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 3.036277,
+     "value": 3.039014,
      "percentile": 0.5574,
      "basis": "sector",
      "display": "3,0 yıl",
@@ -128,7 +157,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.4286,
+     "percentile": 0.4333,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -145,16 +174,71 @@
   [
    "2026-10-24",
    45.64
+  ],
+  [
+   "2026-10-25",
+   45.72
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 683,
+  "rank_start": 810,
+  "score": 0,
+  "rise": 0,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 6,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   },
+   {
+    "id": "supply",
+    "text": "Arz etkisi"
+   }
+  ],
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ethereum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/big-time",
  "research": null
 }

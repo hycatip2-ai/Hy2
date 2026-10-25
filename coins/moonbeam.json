@@ -1,22 +1,24 @@
 {
- "rank": 89,
+ "rank": 98,
  "slug": "moonbeam",
  "symbol": "GLMR",
  "name": "Moonbeam",
  "cmc_id": 6836,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "infra",
  "sector_name": "Altyapı",
  "total": 52,
- "total_exact": 52.19,
+ "total_exact": 52.11,
  "band": "Orta",
- "delta": 0.6,
+ "delta": -0.1,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -26,16 +28,16 @@
    "score": 6.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.25,
+   "percentile": 0.2917,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 89435010.958776,
+     "value": 87190143.016542,
      "percentile": 0.3333,
      "basis": "sector",
-     "display": "89.435.011×",
+     "display": "87.190.143×",
      "tier": "alt dilim"
     }
    ]
@@ -43,17 +45,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.6,
+   "score": 15.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9556,
+   "percentile": 0.9773,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.986258,
-     "percentile": 0.8667,
+     "percentile": 0.8636,
      "basis": "sector",
      "display": "%99",
      "tier": "üst dilim"
@@ -62,7 +64,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.013933,
-     "percentile": 0.9111,
+     "percentile": 0.9091,
      "basis": "sector",
      "display": "1,01×",
      "tier": "üst dilim"
@@ -71,7 +73,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5556,
+     "percentile": 0.5568,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -84,14 +86,14 @@
    "score": 19.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9766,
+   "percentile": 0.9795,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 1.0,
-     "percentile": 0.9844,
+     "percentile": 0.9863,
      "basis": "universe",
      "display": "%100",
      "tier": "üst dilim"
@@ -101,10 +103,10 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 2.2,
+   "score": 2.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.0345,
+   "percentile": 0.0541,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -115,23 +117,32 @@
      "basis": "sector",
      "display": "−%90",
      "tier": "alt dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.1364,
+     "basis": "sector",
+     "display": "1",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.4,
+   "score": 10.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6444,
+   "percentile": 0.5909,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.8556,
+     "percentile": 0.8295,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -140,25 +151,43 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 153.0,
-     "percentile": 0.4,
+     "percentile": 0.4091,
      "basis": "sector",
      "display": "153",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2082,
+     "percentile": 0.8372,
+     "basis": "sector",
+     "display": "%0,21",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2941,
+     "percentile": 0.1364,
+     "basis": "sector",
+     "display": "%29",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.783025,
-     "percentile": 0.6667,
+     "value": 4.785763,
+     "percentile": 0.6818,
      "basis": "sector",
      "display": "4,8 yıl",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3529,
+     "percentile": 0.3636,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -175,10 +204,21 @@
   [
    "2026-10-24",
    52.19
+  ],
+  [
+   "2026-10-25",
+   52.11
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": null,
+ "chain": {
+  "name": "Moonbeam",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

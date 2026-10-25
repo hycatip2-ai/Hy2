@@ -4,19 +4,21 @@
  "symbol": "PRL",
  "name": "Perle",
  "cmc_id": 39797,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 32,
- "total_exact": 31.98,
+ "total": 35,
+ "total_exact": 35.46,
  "band": "Zayıf",
- "delta": -0.5,
+ "delta": 3.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.2,
+   "score": 5.9,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.0303,
+   "percentile": 0.1014,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.175,
-     "percentile": 0.0303,
+     "percentile": 0.0435,
      "basis": "sector",
      "display": "%18",
      "tier": "alt dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.714286,
-     "percentile": 0.0455,
+     "percentile": 0.058,
      "basis": "sector",
      "display": "5,71×",
      "tier": "alt dilim"
@@ -61,9 +63,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.553,
+     "percentile": 0.558,
      "basis": "sector",
      "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.5185,
+     "basis": "sector",
+     "display": "%0",
      "tier": "orta dilim"
     }
    ]
@@ -91,35 +102,53 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.6,
+   "score": 9.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3333,
-   "tier": "alt dilim",
+   "percentile": 0.4928,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.26015,
-     "percentile": 0.6212,
+     "value": 0.272445,
+     "percentile": 0.5942,
      "basis": "sector",
-     "display": "%26",
+     "display": "%27",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 147.0,
-     "percentile": 0.6061,
+     "percentile": 0.6087,
      "basis": "sector",
      "display": "147",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5383,
+     "percentile": 0.3382,
+     "basis": "sector",
+     "display": "%0,54",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.8603,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.588638,
-     "percentile": 0.0606,
+     "value": 0.591376,
+     "percentile": 0.058,
      "basis": "sector",
      "display": "0,6 yıl",
      "tier": "alt dilim"
@@ -127,7 +156,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": 2.54,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,5)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +172,63 @@
   [
    "2026-10-24",
    31.98
+  ],
+  [
+   "2026-10-25",
+   35.46
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": 3.5,
+   "from": 32.0,
+   "to": 35.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 2.54,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,5)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 748,
+  "rank_start": 553,
+  "score": 0,
+  "rise": 0,
+  "steady": 17,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 10,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

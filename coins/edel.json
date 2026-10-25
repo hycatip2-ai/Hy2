@@ -1,24 +1,31 @@
 {
- "rank": 280,
+ "rank": 379,
  "slug": "edel",
  "symbol": "EDEL",
  "name": "Edel",
  "cmc_id": 38966,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 29,
- "total_exact": 28.51,
+ "total": 22,
+ "total_exact": 22.25,
  "band": "Zayıf",
- "delta": -1.5,
+ "delta": -6.1,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "flags": [
+  {
+   "id": "hack_12m",
+   "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -26,14 +33,14 @@
    "score": 0.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.0179,
+   "percentile": 0.0308,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0444,
+     "percentile": 0.0463,
      "basis": "sector",
      "display": "Gelir yok",
      "tier": "alt dilim"
@@ -41,10 +48,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 25941.054475,
-     "percentile": 0.0192,
+     "value": 24270.160742,
+     "percentile": 0.0164,
      "basis": "sector",
-     "display": "25.941×",
+     "display": "24.270×",
      "tier": "alt dilim"
     }
    ]
@@ -52,17 +59,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.0,
+   "score": 9.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6726,
-   "tier": "üst dilim",
+   "percentile": 0.5041,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.692045,
-     "percentile": 0.5752,
+     "value": 0.694595,
+     "percentile": 0.5528,
      "basis": "sector",
      "display": "%69",
      "tier": "orta dilim"
@@ -70,8 +77,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.444992,
-     "percentile": 0.6018,
+     "value": 1.439687,
+     "percentile": 0.5772,
      "basis": "sector",
      "display": "1,44×",
      "tier": "orta dilim"
@@ -80,10 +87,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6195,
+     "percentile": 0.6179,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.128353,
+     "percentile": 0.2,
+     "basis": "sector",
+     "display": "+%13",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -100,26 +116,35 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.6,
+   "score": 5.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2237,
+   "percentile": 0.3113,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
      "value": 0.0,
-     "percentile": 0.0106,
+     "percentile": 0.0089,
      "basis": "sector",
      "display": "−%100",
      "tier": "alt dilim"
     },
     {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.029675,
+     "percentile": 0.4808,
+     "basis": "sector",
+     "display": "+%3,0",
+     "tier": "orta dilim"
+    },
+    {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.4474,
+     "percentile": 0.4894,
      "basis": "sector",
      "display": "1",
      "tier": "orta dilim"
@@ -129,35 +154,53 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.4,
+   "score": 4.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.115,
+   "percentile": 0.0732,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.138711,
-     "percentile": 0.5044,
+     "value": 0.15819,
+     "percentile": 0.4959,
      "basis": "sector",
-     "display": "%14",
+     "display": "%16",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 59.0,
-     "percentile": 0.2124,
+     "value": 60.0,
+     "percentile": 0.1951,
      "basis": "sector",
-     "display": "59",
+     "display": "60",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.4137,
+     "percentile": 0.3083,
+     "basis": "sector",
+     "display": "%0,41",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.3077,
+     "percentile": 0.1542,
+     "basis": "sector",
+     "display": "%31",
      "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.930869,
-     "percentile": 0.2035,
+     "value": 0.933607,
+     "percentile": 0.1789,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -166,7 +209,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.1615,
+     "percentile": 0.1447,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -174,25 +217,99 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı. (Uyarı −5,0)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -2.19,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   29.99
+   29.63
   ],
   [
    "2026-10-24",
-   28.51
+   28.36
+  ],
+  [
+   "2026-10-25",
+   22.25
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -6.1,
+   "from": 28.4,
+   "to": 22.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı. (Uyarı −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.19,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,2)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": -6.1,
+   "from": 28.4,
+   "to": 22.2,
+   "reasons": [
+    {
+     "text": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Son 12 ay içinde bir güvenlik ihlali (hack) yaşandı. (Uyarı −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.19,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,2)"
+    }
+   ]
+  }
+ ],
+ "trend": null,
+ "chain": {
+  "name": "Ethereum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
- "hacks_12m": [],
- "defillama_url": null,
+ "hacks_12m": [
+  {
+   "date": "2026-06-30",
+   "amount": 403000,
+   "returned": 0,
+   "technique": "Spot Price Manipulation"
+  }
+ ],
+ "defillama_url": "https://defillama.com/protocol/edel",
  "research": null
 }

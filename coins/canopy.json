@@ -1,24 +1,35 @@
 {
- "rank": null,
+ "rank": 224,
  "slug": "canopy",
  "symbol": "CNPY",
  "name": "Canopy",
  "cmc_id": 42011,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 35,
- "total_exact": 35.31,
+ "total": 42,
+ "total_exact": 42.06,
  "band": "Zayıf",
- "delta": -0.3,
+ "delta": 6.8,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
- "eligible_for_top": false,
- "penalty": 0.0,
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  },
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
+ "eligible_for_top": true,
+ "penalty": 10.0,
  "parts": [
   {
    "id": "valuation",
@@ -33,17 +44,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.6,
+   "score": 5.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.1212,
+   "percentile": 0.0725,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.274605,
-     "percentile": 0.2879,
+     "value": 0.274218,
+     "percentile": 0.2899,
      "basis": "sector",
      "display": "%27",
      "tier": "alt dilim"
@@ -52,7 +63,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.342558,
-     "percentile": 0.0,
+     "percentile": 0.0145,
      "basis": "sector",
      "display": "8,34×",
      "tier": "alt dilim"
@@ -61,7 +72,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.553,
+     "percentile": 0.558,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -81,27 +92,37 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 18.5,
+   "has_data": true,
    "weight": 30,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.925,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 8.0,
+     "percentile": 0.9231,
+     "basis": "sector",
+     "display": "8",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.2,
+   "score": 9.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4848,
+   "percentile": 0.3913,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9242,
+     "percentile": 0.913,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -110,16 +131,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 146.0,
-     "percentile": 0.5909,
+     "percentile": 0.5942,
      "basis": "sector",
      "display": "146",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5614,
+     "percentile": 0.2647,
+     "basis": "sector",
+     "display": "%0,56",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1111,
+     "percentile": 0.5441,
+     "basis": "sector",
+     "display": "%11",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.136893,
-     "percentile": 0.0152,
+     "value": 0.13963,
+     "percentile": 0.0145,
      "basis": "sector",
      "display": "0,1 yıl",
      "tier": "alt dilim"
@@ -127,7 +166,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 17.19,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +17,2)"
+  },
+  {
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+   "part": "penalty",
+   "delta": -10.0,
+   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +188,64 @@
   [
    "2026-10-24",
    35.31
+  ],
+  [
+   "2026-10-25",
+   42.06
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": 6.8,
+   "from": 35.3,
+   "to": 42.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 17.19,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +17,2)"
+    },
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": 6.8,
+   "from": 35.3,
+   "to": 42.1,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 17.19,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +17,2)"
+    },
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    }
+   ]
+  }
+ ],
+ "trend": null,
+ "chain": {
+  "name": "BSC",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

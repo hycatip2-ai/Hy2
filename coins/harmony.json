@@ -1,13 +1,15 @@
 {
- "rank": 47,
+ "rank": 77,
  "slug": "harmony",
  "symbol": "ONE",
  "name": "Harmony",
  "cmc_id": 3945,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 56,
- "total_exact": 56.27,
+ "total": 54,
+ "total_exact": 54.33,
  "band": "Orta",
  "delta": -1.9,
  "confidence": {
@@ -15,27 +17,27 @@
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 8.0,
+   "score": 8.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4898,
+   "percentile": 0.5306,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 27476.491405,
-     "percentile": 0.4,
+     "value": 26050.374869,
+     "percentile": 0.4286,
      "basis": "sector",
-     "display": "27.476×",
+     "display": "26.050×",
      "tier": "orta dilim"
     }
    ]
@@ -43,10 +45,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.0,
+   "score": 6.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.2179,
+   "percentile": 0.1667,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -75,6 +77,15 @@
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.087955,
+     "percentile": 0.2576,
+     "basis": "sector",
+     "display": "+%8,8",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -91,26 +102,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 17.1,
+   "score": 17.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8814,
+   "percentile": 0.9143,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 7.202842,
+     "value": 7.1767,
      "percentile": 0.92,
      "basis": "sector",
-     "display": "+%620",
+     "display": "+%618",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 7.0,
-     "percentile": 0.7895,
+     "percentile": 0.8246,
      "basis": "sector",
      "display": "7",
      "tier": "üst dilim"
@@ -120,17 +131,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 17.3,
+   "score": 14.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 1.0,
+   "percentile": 0.9744,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9487,
+     "percentile": 0.9103,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -145,9 +156,27 @@
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.33,
+     "percentile": 0.5325,
+     "basis": "sector",
+     "display": "%0,33",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2,
+     "percentile": 0.4351,
+     "basis": "sector",
+     "display": "%20",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.397673,
+     "value": 7.400411,
      "percentile": 0.7564,
      "basis": "sector",
      "display": "7,4 yıl",
@@ -165,10 +194,52 @@
   [
    "2026-10-24",
    56.27
+  ],
+  [
+   "2026-10-25",
+   54.33
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 653,
+  "rank_start": 735,
+  "score": 0,
+  "rise": 0,
+  "steady": 17,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 9,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Harmony",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

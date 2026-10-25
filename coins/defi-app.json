@@ -1,22 +1,24 @@
 {
- "rank": 233,
+ "rank": 304,
  "slug": "defi-app",
  "symbol": "HOME",
  "name": "Defi App",
  "cmc_id": 36133,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 37,
- "total_exact": 36.95,
+ "total": 36,
+ "total_exact": 35.94,
  "band": "Zayıf",
- "delta": -3.3,
+ "delta": -0.9,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.6,
+   "score": 8.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4867,
+   "percentile": 0.3821,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.435942,
-     "percentile": 0.3982,
+     "value": 0.435954,
+     "percentile": 0.374,
      "basis": "sector",
      "display": "%44",
      "tier": "orta dilim"
@@ -51,8 +53,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.293883,
-     "percentile": 0.4248,
+     "value": 2.29382,
+     "percentile": 0.3984,
      "basis": "sector",
      "display": "2,29×",
      "tier": "orta dilim"
@@ -61,9 +63,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6195,
+     "percentile": 0.6179,
      "basis": "sector",
      "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.022695,
+     "percentile": 0.3895,
+     "basis": "sector",
+     "display": "+%2,3",
      "tier": "orta dilim"
     }
    ]
@@ -81,17 +92,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.3,
+   "score": 3.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1118,
+   "percentile": 0.1415,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1667,
+     "percentile": 0.1915,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -101,17 +112,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.0,
+   "score": 9.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5929,
+   "percentile": 0.4634,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.333383,
-     "percentile": 0.7434,
+     "value": 0.334689,
+     "percentile": 0.6992,
      "basis": "sector",
      "display": "%33",
      "tier": "üst dilim"
@@ -120,16 +131,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 140.0,
-     "percentile": 0.3982,
+     "percentile": 0.3659,
      "basis": "sector",
      "display": "140",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.6812,
+     "percentile": 0.1,
+     "basis": "sector",
+     "display": "%0,68",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1026,
+     "percentile": 0.7917,
+     "basis": "sector",
+     "display": "%10",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.57974,
-     "percentile": 0.3982,
+     "value": 1.582478,
+     "percentile": 0.3821,
      "basis": "sector",
      "display": "1,6 yıl",
      "tier": "orta dilim"
@@ -138,7 +167,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6615,
+     "percentile": 0.6447,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -146,48 +175,83 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-   "part": "usage",
-   "delta": -3.67,
-   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,7)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
-   40.3
+   40.25
   ],
   [
    "2026-10-24",
-   36.95
+   36.84
+  ],
+  [
+   "2026-10-25",
+   35.94
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": -3.3,
-   "from": 40.3,
-   "to": 37.0,
+   "delta": -3.4,
+   "from": 40.2,
+   "to": 36.8,
    "event": false,
    "reasons": [
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -3.67,
+     "delta": -3.72,
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,7)"
     }
    ]
   }
  ],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "trend": {
+  "rank_now": 641,
+  "rank_start": 638,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 8,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
+ "investors": [
+  "Mechanism Capital",
+  "DCF Capital Partners",
+  "Selini Capital",
+  "Northrock Capital"
+ ],
+ "investors_source": "https://defillama.com/protocol/defi-app",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/defi-app",
  "research": null
 }

@@ -1,18 +1,20 @@
 {
- "rank": 267,
+ "rank": 266,
  "slug": "interfold",
  "symbol": "FOLD",
  "name": "The Interfold",
  "cmc_id": 41892,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 32,
- "total_exact": 31.87,
+ "total": 39,
+ "total_exact": 39.22,
  "band": "Zayıf",
- "delta": -5.7,
+ "delta": 7.4,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [
   {
@@ -20,27 +22,27 @@
    "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
   }
  ],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 5.6,
+   "score": 6.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2632,
+   "percentile": 0.2938,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 56.673046,
-     "percentile": 0.2815,
+     "value": 45.246918,
+     "percentile": 0.3077,
      "basis": "universe",
-     "display": "56,7×",
+     "display": "45,2×",
      "tier": "alt dilim"
     }
    ]
@@ -51,13 +53,13 @@
    "score": 7.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.3077,
+   "percentile": 0.2308,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.282465,
+     "value": 0.28265,
      "percentile": 0.2308,
      "basis": "sector",
      "display": "%28",
@@ -66,7 +68,7 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 3.540265,
+     "value": 3.53794,
      "percentile": 0.2308,
      "basis": "sector",
      "display": "3,54×",
@@ -96,29 +98,39 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.2,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7083,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 11.0,
+     "percentile": 0.7083,
+     "basis": "sector",
+     "display": "11",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.7,
+   "score": 6.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4231,
-   "tier": "orta dilim",
+   "percentile": 0.1154,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.426467,
-     "percentile": 0.8077,
+     "value": 0.476484,
+     "percentile": 0.7692,
      "basis": "sector",
-     "display": "%43",
+     "display": "%48",
      "tier": "üst dilim"
     },
     {
@@ -131,9 +143,27 @@
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.0219,
+     "percentile": 0.12,
+     "basis": "sector",
+     "display": "%1,0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2727,
+     "percentile": 0.2,
+     "basis": "sector",
+     "display": "%27",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.175222,
+     "value": 0.17796,
      "percentile": 0.0,
      "basis": "sector",
      "display": "0,2 yıl",
@@ -143,7 +173,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7712,
+     "percentile": 0.7561,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -153,20 +183,30 @@
  ],
  "reasons": [
   {
-   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 8.96,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +9,0)"
+  },
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -2.0,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,0)"
   }
  ],
  "history": [
   [
    "2026-10-23",
-   37.54
+   37.5
   ],
   [
    "2026-10-24",
-   31.87
+   31.83
+  ],
+  [
+   "2026-10-25",
+   39.22
   ]
  ],
  "changes": [
@@ -174,7 +214,7 @@
    "date": "2026-10-24",
    "delta": -5.7,
    "from": 37.5,
-   "to": 31.9,
+   "to": 31.8,
    "event": true,
    "reasons": [
     {
@@ -184,6 +224,27 @@
      "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": 7.4,
+   "from": 31.8,
+   "to": 39.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 8.96,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +9,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.0,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,0)"
+    }
+   ]
   }
  ],
  "events": [
@@ -191,7 +252,7 @@
    "date": "2026-10-24",
    "delta": -5.7,
    "from": 37.5,
-   "to": 31.9,
+   "to": 31.8,
    "reasons": [
     {
      "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
@@ -200,14 +261,41 @@
      "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": 7.4,
+   "from": 31.8,
+   "to": 39.2,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 8.96,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +9,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.0,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,0)"
+    }
+   ]
   }
  ],
+ "trend": null,
+ "chain": {
+  "name": "Ethereum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/the-interfold",
  "research": null
 }

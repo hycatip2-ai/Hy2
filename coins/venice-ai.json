@@ -4,19 +4,21 @@
  "symbol": "DIEM",
  "name": "Diem",
  "cmc_id": 38186,
+ "graduated": false,
+ "chain_flow": "Base",
  "sector": "other",
  "sector_name": "Diğer",
  "total": 38,
- "total_exact": 37.58,
+ "total_exact": 37.64,
  "band": "Zayıf",
- "delta": -2.2,
+ "delta": 0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.3,
+   "score": 11.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6352,
+   "percentile": 0.6107,
    "tier": "orta dilim",
    "metrics": [
     {
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.959,
+     "percentile": 0.9754,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -61,7 +63,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1025,
+     "percentile": 0.1066,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
@@ -69,8 +71,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.029005,
-     "percentile": 0.2973,
+     "value": 0.028621,
+     "percentile": 0.25,
      "basis": "sector",
      "display": "+%2,9",
      "tier": "alt dilim"
@@ -100,7 +102,7 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.3,
+   "score": 5.5,
    "has_data": true,
    "weight": 20,
    "percentile": 0.0738,
@@ -109,35 +111,35 @@
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.004738,
-     "percentile": 0.082,
+     "value": 0.0058,
+     "percentile": 0.1311,
      "basis": "sector",
-     "display": "%0,5",
+     "display": "%0,6",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 29.0,
-     "percentile": 0.3074,
+     "value": 31.0,
+     "percentile": 0.3361,
      "basis": "sector",
-     "display": "29",
+     "display": "31",
      "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5942,
-     "percentile": 0.3448,
+     "percentile": 0.3193,
      "basis": "sector",
      "display": "%0,59",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2143,
-     "percentile": 0.319,
+     "percentile": 0.3151,
      "basis": "sector",
      "display": "%21",
      "tier": "alt dilim"
@@ -145,7 +147,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.163587,
+     "value": 1.166324,
      "percentile": 0.2705,
      "basis": "sector",
      "display": "1,2 yıl",
@@ -154,14 +156,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı (90 gün) verisi artık mevcut.",
-   "part": "supply",
-   "delta": -1.86,
-   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,9)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -170,6 +165,10 @@
   [
    "2026-10-24",
    37.58
+  ],
+  [
+   "2026-10-25",
+   37.64
   ]
  ],
  "changes": [
@@ -190,6 +189,53 @@
   }
  ],
  "events": [],
+ "trend": {
+  "rank_now": 297,
+  "rank_start": 341,
+  "score": 30,
+  "rise": 34,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Base",
+  "source": "contract",
+  "flow": true,
+  "flow_rank": 2
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

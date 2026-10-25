@@ -4,19 +4,21 @@
  "symbol": "MEY",
  "name": "Mey Network",
  "cmc_id": 34269,
+ "graduated": false,
+ "chain_flow": "Base",
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 34,
- "total_exact": 34.27,
+ "total": 33,
+ "total_exact": 32.61,
  "band": "Zayıf",
- "delta": 0.9,
+ "delta": 1.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.2,
+   "score": 3.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0294,
+   "percentile": 0.0,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7794,
+     "percentile": 0.6389,
      "basis": "sector",
      "display": "Var",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.837153,
+     "percentile": 0.0663,
+     "basis": "universe",
+     "display": "+%84",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -94,35 +105,53 @@
    "score": 8.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2941,
+   "percentile": 0.2778,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.082734,
-     "percentile": 0.3824,
+     "value": 0.167588,
+     "percentile": 0.4444,
      "basis": "sector",
-     "display": "%8,3",
+     "display": "%17",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 22.0,
-     "percentile": 0.2941,
+     "percentile": 0.1667,
      "basis": "sector",
      "display": "22",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.1527,
+     "percentile": 0.8889,
+     "basis": "sector",
+     "display": "%0,15",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2,
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "%20",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.902806,
-     "percentile": 0.5882,
+     "value": 1.905544,
+     "percentile": 0.2778,
      "basis": "sector",
      "display": "1,9 yıl",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     }
    ]
   }
@@ -131,15 +160,57 @@
  "history": [
   [
    "2026-10-23",
-   33.38
+   30.34
   ],
   [
    "2026-10-24",
-   34.27
+   31.42
+  ],
+  [
+   "2026-10-25",
+   32.61
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 844,
+  "rank_start": 863,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Base",
+  "source": "contract",
+  "flow": true,
+  "flow_rank": 2
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

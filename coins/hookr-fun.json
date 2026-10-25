@@ -4,19 +4,21 @@
  "symbol": "HOOKR",
  "name": "Hookr.fun",
  "cmc_id": 41983,
+ "graduated": false,
+ "chain_flow": "Robinhood Chain",
  "sector": "other",
  "sector_name": "Diğer",
- "total": 45,
- "total_exact": 45.29,
+ "total": 43,
+ "total_exact": 42.89,
  "band": "Zayıf",
- "delta": 0.8,
+ "delta": -2.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.4,
+   "score": 16.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9877,
+   "percentile": 0.9959,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.959,
+     "percentile": 0.9754,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -61,7 +63,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -91,34 +93,52 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.9,
+   "score": 5.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3033,
+   "percentile": 0.0656,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.150947,
-     "percentile": 0.6803,
+     "value": 0.137908,
+     "percentile": 0.6311,
      "basis": "sector",
-     "display": "%15",
-     "tier": "üst dilim"
+     "display": "%14",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 56.0,
-     "percentile": 0.4836,
+     "value": 58.0,
+     "percentile": 0.5,
      "basis": "sector",
-     "display": "56",
+     "display": "58",
      "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.8406,
+     "percentile": 0.1765,
+     "basis": "sector",
+     "display": "%0,84",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.5714,
+     "percentile": 0.0084,
+     "basis": "sector",
+     "display": "%57",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.13963,
+     "value": 0.142368,
      "percentile": 0.0164,
      "basis": "sector",
      "display": "0,1 yıl",
@@ -127,7 +147,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -2.54,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,5)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +163,37 @@
   [
    "2026-10-24",
    45.29
+  ],
+  [
+   "2026-10-25",
+   42.89
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -2.4,
+   "from": 45.3,
+   "to": 42.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.54,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,5)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": null,
+ "chain": {
+  "name": "Robinhood Chain",
+  "source": "contract",
+  "flow": true,
+  "flow_rank": 1
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

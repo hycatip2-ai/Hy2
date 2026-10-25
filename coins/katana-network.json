@@ -1,39 +1,41 @@
 {
- "rank": 277,
+ "rank": 363,
  "slug": "katana-network",
  "symbol": "KAT",
  "name": "Katana",
  "cmc_id": 38769,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 29,
- "total_exact": 29.46,
+ "total_exact": 28.97,
  "band": "Zayıf",
- "delta": 1.5,
+ "delta": -0.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 8.0,
+   "score": 7.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4694,
+   "percentile": 0.449,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0966,
+     "percentile": 0.0918,
      "basis": "universe",
      "display": "Gelir yok",
      "tier": "alt dilim"
@@ -41,10 +43,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.427608,
+     "value": 0.383303,
      "percentile": 1.0,
      "basis": "sector",
-     "display": "0,43×",
+     "display": "0,38×",
      "tier": "üst dilim"
     }
    ]
@@ -52,10 +54,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.1,
+   "score": 5.6,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.2436,
+   "percentile": 0.0897,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -84,6 +86,15 @@
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.434224,
+     "percentile": 0.0606,
+     "basis": "sector",
+     "display": "+%43",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -100,7 +111,7 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 1.0,
+   "score": 1.8,
    "has_data": true,
    "weight": 25,
    "percentile": 0.0,
@@ -109,19 +120,28 @@
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.074581,
+     "value": 0.07578,
      "percentile": 0.0,
      "basis": "sector",
-     "display": "−%93",
+     "display": "−%92",
      "tier": "alt dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.470015,
+     "value": 0.459375,
      "percentile": 0.1556,
      "basis": "sector",
-     "display": "−%53",
+     "display": "−%54",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1491,
+     "basis": "sector",
+     "display": "0",
      "tier": "alt dilim"
     }
    ]
@@ -129,19 +149,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.1,
+   "score": 8.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2692,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.393755,
-     "percentile": 0.8205,
+     "value": 0.5,
+     "percentile": 0.9103,
      "basis": "sector",
-     "display": "%39",
+     "display": "%50",
      "tier": "üst dilim"
     },
     {
@@ -154,9 +174,27 @@
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3047,
+     "percentile": 0.5714,
+     "basis": "sector",
+     "display": "%0,30",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2258,
+     "percentile": 0.2987,
+     "basis": "sector",
+     "display": "%23",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.602327,
+     "value": 0.605065,
      "percentile": 0.0513,
      "basis": "sector",
      "display": "0,6 yıl",
@@ -169,15 +207,70 @@
  "history": [
   [
    "2026-10-23",
-   27.99
+   27.98
   ],
   [
    "2026-10-24",
-   29.46
+   29.44
+  ],
+  [
+   "2026-10-25",
+   28.97
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 810,
+  "rank_start": 938,
+  "score": 0,
+  "rise": 0,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 6,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   1,
+   -1,
+   0,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   },
+   {
+    "id": "supply",
+    "text": "Arz etkisi"
+   }
+  ],
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Katana",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

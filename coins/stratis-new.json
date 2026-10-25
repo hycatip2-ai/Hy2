@@ -1,29 +1,31 @@
 {
- "rank": 208,
+ "rank": 240,
  "slug": "stratis-new",
  "symbol": "STRAX",
  "name": "Xertra",
  "cmc_id": 30168,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 39,
- "total_exact": 39.19,
+ "total": 41,
+ "total_exact": 41.23,
  "band": "Zayıf",
- "delta": -0.7,
+ "delta": 2.0,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 2.1,
+   "score": 2.2,
    "has_data": true,
    "weight": 20,
    "percentile": 0.0816,
@@ -32,19 +34,19 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 955.891398,
+     "value": 925.674786,
      "percentile": 0.1458,
      "basis": "sector",
-     "display": "956×",
+     "display": "926×",
      "tier": "alt dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 33608530.417762,
-     "percentile": 0.0667,
+     "value": 33844187.99056,
+     "percentile": 0.0714,
      "basis": "sector",
-     "display": "33.608.530×",
+     "display": "33.844.188×",
      "tier": "alt dilim"
     }
    ]
@@ -52,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.3,
+   "score": 12.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8077,
+   "percentile": 0.7436,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.891,
+     "percentile": 0.8974,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -71,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9487,
+     "percentile": 0.8718,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -84,6 +86,15 @@
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.013916,
+     "percentile": 0.4697,
+     "basis": "sector",
+     "display": "+%1,4",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -100,26 +111,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 6.9,
+   "score": 7.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.2712,
+   "percentile": 0.2643,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.16423,
-     "percentile": 0.7778,
+     "value": 1.202348,
+     "percentile": 0.8,
      "basis": "sector",
-     "display": "+%16",
+     "display": "+%20",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1316,
+     "percentile": 0.1491,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -129,20 +140,20 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.6,
+   "score": 12.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3718,
-   "tier": "orta dilim",
+   "percentile": 0.8718,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.04215,
-     "percentile": 0.2436,
+     "value": 0.5,
+     "percentile": 0.9103,
      "basis": "sector",
-     "display": "%4,2",
-     "tier": "alt dilim"
+     "display": "%50",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
@@ -154,9 +165,27 @@
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2873,
+     "percentile": 0.6104,
+     "basis": "sector",
+     "display": "%0,29",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1333,
+     "percentile": 0.6494,
+     "basis": "sector",
+     "display": "%13",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 10.198494,
+     "value": 10.201232,
      "percentile": 0.9744,
      "basis": "sector",
      "display": "10,2 yıl",
@@ -165,7 +194,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "İşlem hacmi piyasa değerine göre güçlendi.",
+   "part": "liquidity",
+   "delta": 3.19,
+   "label": "İşlem hacmi piyasa değerine göre güçlendi. (Likidite +3,2)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -1.68,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,7)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -174,10 +216,74 @@
   [
    "2026-10-24",
    39.19
+  ],
+  [
+   "2026-10-25",
+   41.23
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": 2.0,
+   "from": 39.2,
+   "to": 41.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "İşlem hacmi piyasa değerine göre güçlendi.",
+     "part": "liquidity",
+     "delta": 3.19,
+     "label": "İşlem hacmi piyasa değerine göre güçlendi. (Likidite +3,2)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.68,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,7)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 625,
+  "rank_start": 724,
+  "score": 8,
+  "rise": 1,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 4,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   1,
+   0
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.51,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Stratis",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

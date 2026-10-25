@@ -1,15 +1,17 @@
 {
- "rank": 199,
+ "rank": 264,
  "slug": "terrausd",
  "symbol": "USTC",
  "name": "TerraClassicUSD",
  "cmc_id": 7129,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 40,
- "total_exact": 40.49,
+ "total": 39,
+ "total_exact": 39.26,
  "band": "Zayıf",
- "delta": -5.2,
+ "delta": -1.2,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -20,8 +22,8 @@
    "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
   }
  ],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 5.0,
  "parts": [
@@ -38,17 +40,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.8,
+   "score": 10.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9545,
-   "tier": "üst dilim",
+   "percentile": 0.4706,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.917866,
-     "percentile": 0.6061,
+     "value": 0.917863,
+     "percentile": 0.6176,
      "basis": "sector",
      "display": "%92",
      "tier": "orta dilim"
@@ -56,8 +58,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.089483,
-     "percentile": 0.7879,
+     "value": 1.089487,
+     "percentile": 0.7941,
      "basis": "sector",
      "display": "1,09×",
      "tier": "üst dilim"
@@ -66,10 +68,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6818,
+     "percentile": 0.6912,
      "basis": "sector",
      "display": "Var",
      "tier": "üst dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 61.671242,
+     "percentile": 0.0,
+     "basis": "sector",
+     "display": "+%6.167",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -86,17 +97,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.6,
+   "score": 12.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5294,
+   "percentile": 0.6304,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.5294,
+     "percentile": 0.6304,
      "basis": "sector",
      "display": "4",
      "tier": "orta dilim"
@@ -106,19 +117,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.1,
+   "score": 7.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2121,
+   "percentile": 0.2647,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.025723,
-     "percentile": 0.1212,
+     "value": 0.028235,
+     "percentile": 0.1471,
      "basis": "sector",
-     "display": "%2,6",
+     "display": "%2,8",
      "tier": "alt dilim"
     },
     {
@@ -134,7 +145,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.1266,
-     "percentile": 0.0455,
+     "percentile": 0.0312,
      "basis": "sector",
      "display": "%1,1",
      "tier": "alt dilim"
@@ -151,8 +162,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.08898,
-     "percentile": 0.6061,
+     "value": 6.091718,
+     "percentile": 0.6176,
      "basis": "sector",
      "display": "6,1 yıl",
      "tier": "orta dilim"
@@ -160,20 +171,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
-  },
-  {
-   "text": "Alış-satış farkı verisi artık mevcut.",
-   "part": "liquidity",
-   "delta": -3.77,
-   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,8)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -182,6 +180,10 @@
   [
    "2026-10-24",
    40.49
+  ],
+  [
+   "2026-10-25",
+   39.26
   ]
  ],
  "changes": [
@@ -229,6 +231,39 @@
    ]
   }
  ],
+ "trend": {
+  "rank_now": 560,
+  "rank_start": 598,
+  "score": 0,
+  "rise": 0,
+  "steady": 17,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 8,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

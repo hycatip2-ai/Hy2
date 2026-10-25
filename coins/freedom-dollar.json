@@ -4,19 +4,21 @@
  "symbol": "FUSD",
  "name": "Freedom Dollar",
  "cmc_id": 37320,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 39,
- "total_exact": 38.97,
+ "total": 45,
+ "total_exact": 45.37,
  "band": "Zayıf",
- "delta": -2.1,
+ "delta": 6.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -36,7 +38,7 @@
    "score": 12.4,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.75,
+   "percentile": 0.7692,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -91,16 +93,16 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 2.8,
+   "score": 9.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0,
-   "tier": "alt dilim",
+   "percentile": 0.4231,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.005355,
+     "value": 0.005444,
      "percentile": 0.1154,
      "basis": "sector",
      "display": "%0,5",
@@ -116,9 +118,27 @@
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.0816,
+     "percentile": 1.0,
+     "basis": "sector",
+     "display": "%0,08",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.88,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.28679,
+     "value": 1.289528,
      "percentile": 0.3077,
      "basis": "sector",
      "display": "1,3 yıl",
@@ -129,10 +149,10 @@
  ],
  "reasons": [
   {
-   "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
-   "part": "supply",
-   "delta": -1.95,
-   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Arz −2,0)"
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": 6.39,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite +6,4)"
   }
  ],
  "history": [
@@ -143,6 +163,10 @@
   [
    "2026-10-24",
    38.97
+  ],
+  [
+   "2026-10-25",
+   45.37
   ]
  ],
  "changes": [
@@ -160,9 +184,72 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Arz −2,0)"
     }
    ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": 6.4,
+   "from": 39.0,
+   "to": 45.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 6.39,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +6,4)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": 6.4,
+   "from": 39.0,
+   "to": 45.4,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 6.39,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +6,4)"
+    }
+   ]
+  }
+ ],
+ "trend": {
+  "rank_now": 881,
+  "rank_start": 915,
+  "score": 0,
+  "rise": 0,
+  "steady": 8,
+  "calm": 0,
+  "weeks_up": 1,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   0
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

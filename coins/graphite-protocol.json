@@ -4,19 +4,21 @@
  "symbol": "GP",
  "name": "Graphite Protocol",
  "cmc_id": 25241,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 38,
- "total_exact": 37.86,
+ "total": 37,
+ "total_exact": 37.35,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -0.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.8,
+   "score": 7.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2951,
+   "percentile": 0.2213,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.610359,
-     "percentile": 0.5082,
+     "percentile": 0.5,
      "basis": "sector",
      "display": "%61",
      "tier": "orta dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.638381,
-     "percentile": 0.5574,
+     "percentile": 0.541,
      "basis": "sector",
      "display": "1,64×",
      "tier": "orta dilim"
@@ -61,9 +63,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1025,
+     "percentile": 0.1066,
      "basis": "sector",
      "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.021053,
+     "percentile": 0.3214,
+     "basis": "sector",
+     "display": "+%2,1",
      "tier": "alt dilim"
     }
    ]
@@ -91,34 +102,52 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.1,
+   "score": 9.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4344,
+   "percentile": 0.3607,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.013168,
-     "percentile": 0.2541,
+     "value": 0.014743,
+     "percentile": 0.2787,
      "basis": "sector",
-     "display": "%1,3",
+     "display": "%1,5",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 85.0,
-     "percentile": 0.541,
+     "percentile": 0.5492,
      "basis": "sector",
      "display": "85",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.9103,
+     "percentile": 0.1345,
+     "basis": "sector",
+     "display": "%0,91",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0667,
+     "percentile": 0.7143,
+     "basis": "sector",
+     "display": "%6,7",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 3.45243,
+     "value": 3.455168,
      "percentile": 0.5902,
      "basis": "sector",
      "display": "3,5 yıl",
@@ -128,7 +157,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.4286,
+     "percentile": 0.4333,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -145,16 +174,27 @@
   [
    "2026-10-24",
    37.86
+  ],
+  [
+   "2026-10-25",
+   37.35
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": null,
+ "chain": {
+  "name": "Solana",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/graphite-protocol",
  "research": null
 }

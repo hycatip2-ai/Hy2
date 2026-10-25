@@ -1,23 +1,25 @@
 {
- "rank": null,
+ "rank": 167,
  "slug": "moonriver",
  "symbol": "MOVR",
  "name": "Moonriver",
  "cmc_id": 9285,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 45,
- "total_exact": 44.8,
+ "total": 46,
+ "total_exact": 46.35,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": 1.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
- "eligible_for_top": false,
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.3,
+   "score": 11.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6538,
+   "percentile": 0.6667,
    "tier": "orta dilim",
    "metrics": [
     {
@@ -65,6 +67,15 @@
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.000819,
+     "percentile": 0.5909,
+     "basis": "sector",
+     "display": "+%0,1",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -81,29 +92,39 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 7.5,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.3143,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.3772,
+     "basis": "sector",
+     "display": "1",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.9,
+   "score": 13.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8462,
+   "percentile": 0.9615,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.474766,
-     "percentile": 0.8718,
+     "value": 0.5,
+     "percentile": 0.9103,
      "basis": "sector",
-     "display": "%47",
+     "display": "%50",
      "tier": "üst dilim"
     },
     {
@@ -116,9 +137,27 @@
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2652,
+     "percentile": 0.6623,
+     "basis": "sector",
+     "display": "%0,27",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0833,
+     "percentile": 0.8247,
+     "basis": "sector",
+     "display": "%8,3",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.514031,
+     "value": 5.516769,
      "percentile": 0.5769,
      "basis": "sector",
      "display": "5,5 yıl",
@@ -136,10 +175,52 @@
   [
    "2026-10-24",
    44.8
+  ],
+  [
+   "2026-10-25",
+   46.35
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 828,
+  "rank_start": 833,
+  "score": 0,
+  "rise": 0,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 7,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Moonriver",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

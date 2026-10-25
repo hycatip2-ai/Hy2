@@ -4,10 +4,12 @@
  "symbol": "QFI",
  "name": "Quantix Finance",
  "cmc_id": 30651,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 33,
- "total_exact": 33.19,
+ "total": 35,
+ "total_exact": 35.09,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
@@ -15,8 +17,8 @@
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-23",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,10 +35,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 3.7,
+   "score": 6.6,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.0,
+   "percentile": 0.1449,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5522,
+     "percentile": 0.558,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.018393,
+     "percentile": 0.7593,
+     "basis": "sector",
+     "display": "−%1,8",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -91,35 +102,53 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.2,
+   "score": 7.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6269,
-   "tier": "orta dilim",
+   "percentile": 0.2609,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.180546,
-     "percentile": 0.5373,
+     "value": 0.125152,
+     "percentile": 0.4203,
      "basis": "sector",
-     "display": "%18",
+     "display": "%13",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 15.0,
-     "percentile": 0.1343,
+     "percentile": 0.1449,
      "basis": "sector",
      "display": "15",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 3.1211,
+     "percentile": 0.0,
+     "basis": "sector",
+     "display": "%3,1",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.25,
+     "percentile": 0.25,
+     "basis": "sector",
+     "display": "%25",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.518823,
-     "percentile": 0.806,
+     "value": 2.524298,
+     "percentile": 0.8116,
      "basis": "sector",
      "display": "2,5 yıl",
      "tier": "üst dilim"
@@ -128,7 +157,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7677,
+     "percentile": 0.7561,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -141,16 +170,58 @@
   [
    "2026-10-23",
    33.19
+  ],
+  [
+   "2026-10-25",
+   35.09
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 741,
+  "rank_start": 328,
+  "score": 0,
+  "rise": 0,
+  "steady": 8,
+  "calm": 0,
+  "weeks_up": 1,
+  "weeks_down": 9,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   0
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Tron",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/quantixai",
  "research": null
 }

@@ -1,50 +1,52 @@
 {
- "rank": 2,
+ "rank": 4,
  "slug": "usual",
  "symbol": "USUAL",
  "name": "Usual",
  "cmc_id": 33979,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 73,
- "total_exact": 72.68,
- "band": "Güçlü",
- "delta": -0.0,
+ "total": 68,
+ "total_exact": 68.16,
+ "band": "Orta",
+ "delta": -4.5,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 17.2,
+   "score": 17.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9079,
+   "percentile": 0.925,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 4.956385,
-     "percentile": 0.8864,
+     "value": 4.948382,
+     "percentile": 0.898,
      "basis": "universe",
-     "display": "4,96×",
+     "display": "4,95×",
      "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.440096,
-     "percentile": 0.8148,
+     "value": 0.237669,
+     "percentile": 0.8601,
      "basis": "universe",
-     "display": "0,44×",
+     "display": "0,24×",
      "tier": "üst dilim"
     }
    ]
@@ -52,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.4,
+   "score": 10.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6471,
+   "percentile": 0.5556,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.6912,
+     "percentile": 0.8333,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -70,39 +72,48 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.512687,
-     "percentile": 0.2353,
+     "value": 1.513448,
+     "percentile": 0.3889,
      "basis": "sector",
      "display": "1,51×",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7794,
+     "percentile": 0.6389,
      "basis": "sector",
      "display": "Var",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.066657,
+     "percentile": 0.2727,
+     "basis": "universe",
+     "display": "+%6,7",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 15.3,
+   "score": 15.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.7344,
+   "percentile": 0.7397,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
-     "value": 0.345635,
-     "percentile": 0.7656,
+     "value": 0.356728,
+     "percentile": 0.7808,
      "basis": "universe",
-     "display": "%35",
+     "display": "%36",
      "tier": "üst dilim"
     }
    ]
@@ -110,37 +121,46 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 13.0,
+   "score": 11.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6957,
-   "tier": "üst dilim",
+   "percentile": 0.5973,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.185463,
-     "percentile": 0.6509,
+     "value": 1.217579,
+     "percentile": 0.6696,
      "basis": "universe",
-     "display": "+%19",
+     "display": "+%22",
      "tier": "orta dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 0.882702,
+     "percentile": 0.3047,
+     "basis": "universe",
+     "display": "−%12",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 16.0,
+   "score": 13.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9412,
+   "percentile": 0.8889,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9559,
+     "percentile": 0.9444,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -149,25 +169,43 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 173.0,
-     "percentile": 0.8529,
+     "percentile": 0.7778,
      "basis": "sector",
      "display": "173",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.4337,
+     "percentile": 0.3889,
+     "basis": "sector",
+     "display": "%0,43",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.125,
+     "percentile": 0.7778,
+     "basis": "sector",
+     "display": "%12",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.941136,
-     "percentile": 0.6176,
+     "value": 1.943874,
+     "percentile": 0.3333,
      "basis": "sector",
      "display": "1,9 yıl",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7712,
+     "percentile": 0.7561,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -175,25 +213,163 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -2.66,
+   "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −2,7)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -1.66,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,7)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   72.71
+   72.57
   ],
   [
    "2026-10-24",
-   72.68
+   72.62
+  ],
+  [
+   "2026-10-25",
+   68.16
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -4.5,
+   "from": 72.6,
+   "to": 68.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -2.66,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −2,7)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.66,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,7)"
+    }
+   ]
+  }
+ ],
  "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "trend": {
+  "rank_now": 673,
+  "rank_start": 817,
+  "score": 25,
+  "rise": 29,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 6,
+  "weeks_down": 4,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.34,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ethereum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "IOSG Ventures",
+  "Kraken Ventures",
+  "GSR",
+  "Mantle Network",
+  "Flowdesk",
+  "StarkWare",
+  "Avid3",
+  "Bing Ventures",
+  "Breed VC",
+  "Hypershere",
+  "Kima Ventures",
+  "Psalion",
+  "Public Works",
+  "0x Ventures",
+  "LBank Labs",
+  "TRGC",
+  "Capsule Corp.",
+  "Pleb Capital",
+  "Kalpha DAO",
+  "KaizenDAO",
+  "Primony",
+  "0xSalazar",
+  "apolynya",
+  "HighStakesCap",
+  "DCF God",
+  "Nicolas Bacca",
+  "Sebastien Couture",
+  "echoxyz",
+  "Comfy Capital",
+  "Jed Breed",
+  "Binance Labs",
+  "Galaxy Digital",
+  "OKX Ventures",
+  "Coinbase Ventures",
+  "Wintermute Ventures",
+  "Echo",
+  "Fasanara Digital Ventures",
+  "Symbolic Capital",
+  "Amber Group",
+  "FunFair Ventures",
+  "LeadBlock Partners",
+  "White Loop Capital",
+  "PHAEDRUS",
+  "Krypital Group",
+  "JPEG Trading",
+  "M^0"
+ ],
+ "investors_source": "https://defillama.com/protocol/usual",
+ "angel_investors": [
+  "Capsule Corp.",
+  "Nicolas Bacca",
+  "Sebastien Couture",
+  "Jed Breed"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/usual",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/usual",
  "research": null
 }

@@ -1,22 +1,24 @@
 {
- "rank": 160,
+ "rank": 220,
  "slug": "xphere",
  "symbol": "XP",
  "name": "Xphere",
  "cmc_id": 36056,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 44,
- "total_exact": 44.31,
+ "total": 42,
+ "total_exact": 42.49,
  "band": "Zayıf",
- "delta": 4.2,
+ "delta": -1.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -26,16 +28,16 @@
    "score": 8.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.551,
+   "percentile": 0.5714,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 53.422729,
+     "value": 53.580879,
      "percentile": 0.4375,
      "basis": "sector",
-     "display": "53,4×",
+     "display": "53,6×",
      "tier": "orta dilim"
     }
    ]
@@ -43,17 +45,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.1,
+   "score": 11.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7692,
+   "percentile": 0.6923,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.891,
+     "percentile": 0.8974,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -61,7 +63,7 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.801741,
+     "value": 1.800506,
      "percentile": 0.4103,
      "basis": "sector",
      "display": "1,80×",
@@ -75,6 +77,15 @@
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.065635,
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "+%6,6",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -101,20 +112,20 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.9,
+   "score": 7.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1603,
+   "percentile": 0.1731,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.04241,
-     "percentile": 0.2564,
+     "value": 0.087131,
+     "percentile": 0.3462,
      "basis": "sector",
-     "display": "%4,2",
-     "tier": "alt dilim"
+     "display": "%8,7",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
@@ -129,7 +140,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6155,
-     "percentile": 0.2292,
+     "percentile": 0.2078,
      "basis": "sector",
      "display": "%0,62",
      "tier": "alt dilim"
@@ -138,7 +149,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.9792,
+     "percentile": 0.961,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -146,7 +157,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.601643,
+     "value": 1.604381,
      "percentile": 0.2308,
      "basis": "sector",
      "display": "1,6 yıl",
@@ -155,14 +166,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "İşlem hacmi piyasa değerine göre güçlendi.",
-   "part": "liquidity",
-   "delta": 3.58,
-   "label": "İşlem hacmi piyasa değerine göre güçlendi. (Likidite +3,6)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -171,6 +175,10 @@
   [
    "2026-10-24",
    44.31
+  ],
+  [
+   "2026-10-25",
+   42.49
   ]
  ],
  "changes": [
@@ -191,6 +199,44 @@
   }
  ],
  "events": [],
+ "trend": {
+  "rank_now": 601,
+  "rank_start": 387,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 9,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Xphere",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

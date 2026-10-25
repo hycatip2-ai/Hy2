@@ -4,19 +4,21 @@
  "symbol": "IQ",
  "name": "IQ",
  "cmc_id": 2930,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 43,
- "total_exact": 42.81,
+ "total": 41,
+ "total_exact": 41.44,
  "band": "Zayıf",
- "delta": -0.0,
+ "delta": -1.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.6,
+   "score": 10.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8,
-   "tier": "üst dilim",
+   "percentile": 0.5455,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9556,
+     "percentile": 0.9545,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.158292,
-     "percentile": 0.3778,
+     "percentile": 0.3636,
      "basis": "sector",
      "display": "2,16×",
      "tier": "orta dilim"
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5556,
+     "percentile": 0.5568,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.041116,
+     "percentile": 0.3077,
+     "basis": "sector",
+     "display": "+%4,1",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -91,35 +102,53 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.1,
+   "score": 9.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2444,
+   "percentile": 0.3295,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.029004,
-     "percentile": 0.0889,
+     "value": 0.17006,
+     "percentile": 0.3182,
      "basis": "sector",
-     "display": "%2,9",
+     "display": "%17",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 123.0,
-     "percentile": 0.2222,
+     "percentile": 0.2045,
      "basis": "sector",
      "display": "123",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3058,
+     "percentile": 0.5814,
+     "basis": "sector",
+     "display": "%0,31",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2593,
+     "percentile": 0.2955,
+     "basis": "sector",
+     "display": "%26",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.057495,
-     "percentile": 0.9556,
+     "value": 8.060233,
+     "percentile": 0.9545,
      "basis": "sector",
      "display": "8,1 yıl",
      "tier": "üst dilim"
@@ -128,7 +157,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3529,
+     "percentile": 0.3636,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -145,16 +174,56 @@
   [
    "2026-10-24",
    42.81
+  ],
+  [
+   "2026-10-25",
+   41.44
   ]
  ],
  "changes": [],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "trend": {
+  "rank_now": 647,
+  "rank_start": 734,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
+ "investors": [
+  "EOS VC Fund",
+  "Galaxy Digital"
+ ],
+ "investors_source": "https://defillama.com/protocol/iq",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/iq",
  "research": null
 }

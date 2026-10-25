@@ -1,41 +1,43 @@
 {
- "rank": 105,
+ "rank": 171,
  "slug": "aevo",
  "symbol": "AEVO",
  "name": "Aevo",
  "cmc_id": 29676,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 50,
- "total_exact": 50.36,
- "band": "Orta",
- "delta": 0.7,
+ "total": 46,
+ "total_exact": 46.17,
+ "band": "Zayıf",
+ "delta": -3.9,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 10.4,
+   "score": 9.8,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5179,
+   "percentile": 0.4769,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 1.410884,
-     "percentile": 0.5192,
+     "value": 1.382314,
+     "percentile": 0.4918,
      "basis": "sector",
-     "display": "1,41×",
+     "display": "1,38×",
      "tier": "orta dilim"
     }
    ]
@@ -43,17 +45,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.0,
+   "score": 12.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8496,
+   "percentile": 0.7317,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.932702,
-     "percentile": 0.7345,
+     "percentile": 0.7073,
      "basis": "sector",
      "display": "%93",
      "tier": "üst dilim"
@@ -62,7 +64,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.072154,
-     "percentile": 0.7434,
+     "percentile": 0.7317,
      "basis": "sector",
      "display": "1,07×",
      "tier": "üst dilim"
@@ -71,9 +73,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6195,
+     "percentile": 0.6179,
      "basis": "sector",
      "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.016922,
+     "percentile": 0.4105,
+     "basis": "sector",
+     "display": "+%1,7",
      "tier": "orta dilim"
     }
    ]
@@ -91,45 +102,82 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 5.2,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.2736,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 0.999679,
+     "percentile": 0.4038,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1915,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.5,
+   "score": 12.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.7965,
+   "percentile": 0.8415,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.171175,
-     "percentile": 0.5752,
+     "value": 0.179308,
+     "percentile": 0.5285,
      "basis": "sector",
-     "display": "%17",
+     "display": "%18",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 220.0,
-     "percentile": 0.7478,
+     "percentile": 0.7195,
      "basis": "sector",
      "display": "220",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2703,
+     "percentile": 0.65,
+     "basis": "sector",
+     "display": "%0,27",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.1538,
+     "percentile": 0.6792,
+     "basis": "sector",
+     "display": "%15",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.631075,
-     "percentile": 0.5221,
+     "value": 2.633812,
+     "percentile": 0.4959,
      "basis": "sector",
      "display": "2,6 yıl",
      "tier": "orta dilim"
@@ -138,7 +186,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6615,
+     "percentile": 0.6447,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -146,25 +194,104 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -1.75,
+   "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −1,8)"
+  },
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -1.58,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   49.68
+   49.35
   ],
   [
    "2026-10-24",
-   50.36
+   50.02
+  ],
+  [
+   "2026-10-25",
+   46.17
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -3.9,
+   "from": 50.0,
+   "to": 46.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -1.75,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −1,8)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.58,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
+    }
+   ]
+  }
+ ],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "trend": {
+  "rank_now": 671,
+  "rank_start": 771,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   0,
+   0,
+   1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ethereum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "Binance Labs"
+ ],
+ "investors_source": "https://defillama.com/protocol/aevo",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/aevo",
  "research": null
 }

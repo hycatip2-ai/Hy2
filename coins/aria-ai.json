@@ -4,19 +4,21 @@
  "symbol": "ARIA",
  "name": "AriaAI",
  "cmc_id": 38102,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 38.53,
+ "total": 40,
+ "total_exact": 39.78,
  "band": "Zayıf",
- "delta": -0.9,
+ "delta": 1.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,26 +35,26 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.8,
+   "score": 6.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2295,
+   "percentile": 0.2008,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.44,
-     "percentile": 0.3443,
+     "percentile": 0.3361,
      "basis": "sector",
      "display": "%44",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.272729,
-     "percentile": 0.3852,
+     "percentile": 0.377,
      "basis": "sector",
      "display": "2,27×",
      "tier": "orta dilim"
@@ -61,7 +63,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -70,7 +72,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 1.40437,
-     "percentile": 0.027,
+     "percentile": 0.0595,
      "basis": "sector",
      "display": "+%140",
      "tier": "alt dilim"
@@ -100,35 +102,35 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.7,
+   "score": 11.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.541,
-   "tier": "orta dilim",
+   "percentile": 0.7377,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.035288,
-     "percentile": 0.3934,
+     "value": 0.350479,
+     "percentile": 0.7951,
      "basis": "sector",
-     "display": "%3,5",
-     "tier": "orta dilim"
+     "display": "%35",
+     "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 145.0,
-     "percentile": 0.7213,
+     "value": 146.0,
+     "percentile": 0.7336,
      "basis": "sector",
-     "display": "145",
+     "display": "146",
      "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.349,
-     "percentile": 0.6379,
+     "percentile": 0.563,
      "basis": "sector",
      "display": "%0,35",
      "tier": "orta dilim"
@@ -137,7 +139,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1333,
-     "percentile": 0.6466,
+     "percentile": 0.5966,
      "basis": "sector",
      "display": "%13",
      "tier": "orta dilim"
@@ -145,7 +147,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.182752,
+     "value": 1.185489,
      "percentile": 0.2787,
      "basis": "sector",
      "display": "1,2 yıl",
@@ -163,10 +165,57 @@
   [
    "2026-10-24",
    38.53
+  ],
+  [
+   "2026-10-25",
+   39.78
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 507,
+  "rank_start": 996,
+  "score": 49,
+  "rise": 84,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 6,
+  "weeks_down": 4,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   0,
+   -1,
+   1,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.23,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "BSC",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

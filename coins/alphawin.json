@@ -4,21 +4,28 @@
  "symbol": "AWIN",
  "name": "AlphaWin",
  "cmc_id": 42338,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 27,
- "total_exact": 26.9,
+ "total": 25,
+ "total_exact": 25.23,
  "band": "Zayıf",
- "delta": -0.4,
+ "delta": -1.7,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -61,7 +68,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -91,17 +98,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 1.0,
+   "score": 4.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0,
+   "percentile": 0.0328,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.006965,
-     "percentile": 0.1557,
+     "value": 0.006949,
+     "percentile": 0.1639,
      "basis": "sector",
      "display": "%0,7",
      "tier": "alt dilim"
@@ -116,9 +123,27 @@
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 2.9738,
+     "percentile": 0.0504,
+     "basis": "sector",
+     "display": "%3,0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.8697,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.090349,
+     "value": 0.093087,
      "percentile": 0.0,
      "basis": "sector",
      "display": "0,1 yıl",
@@ -136,10 +161,21 @@
   [
    "2026-10-24",
    26.9
+  ],
+  [
+   "2026-10-25",
+   25.23
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": null,
+ "chain": {
+  "name": "BSC",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

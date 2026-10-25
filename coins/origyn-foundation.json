@@ -4,19 +4,21 @@
  "symbol": "OGY",
  "name": "ORIGYN",
  "cmc_id": 17960,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 38,
- "total_exact": 37.73,
+ "total": 37,
+ "total_exact": 36.72,
  "band": "Zayıf",
- "delta": 0.4,
+ "delta": -1.0,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.3,
+   "score": 9.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2647,
-   "tier": "alt dilim",
+   "percentile": 0.4444,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.75171,
-     "percentile": 0.2059,
+     "percentile": 0.3333,
      "basis": "sector",
      "display": "%75",
      "tier": "alt dilim"
@@ -52,19 +54,19 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.35662,
-     "percentile": 0.2647,
+     "percentile": 0.4444,
      "basis": "sector",
      "display": "1,36×",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.7794,
+     "percentile": 0.6389,
      "basis": "sector",
      "display": "Var",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   },
@@ -91,44 +93,62 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.9,
+   "score": 6.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3529,
-   "tier": "orta dilim",
+   "percentile": 0.0,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.009039,
-     "percentile": 0.0882,
+     "value": 0.007462,
+     "percentile": 0.0,
      "basis": "sector",
-     "display": "%0,9",
+     "display": "%0,7",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 15.0,
-     "percentile": 0.1765,
+     "percentile": 0.0556,
      "basis": "sector",
      "display": "15",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.7866,
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "%0,79",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2,
+     "percentile": 0.3333,
+     "basis": "sector",
+     "display": "%20",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.706366,
-     "percentile": 0.7353,
+     "value": 4.709103,
+     "percentile": 0.5,
      "basis": "sector",
      "display": "4,7 yıl",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7712,
+     "percentile": 0.7561,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -140,15 +160,55 @@
  "history": [
   [
    "2026-10-23",
-   37.32
+   37.15
   ],
   [
    "2026-10-24",
-   37.73
+   37.67
+  ],
+  [
+   "2026-10-25",
+   36.72
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": {
+  "rank_now": 949,
+  "rank_start": 979,
+  "score": 22,
+  "rise": 14,
+  "steady": 40,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 5,
+  "weeks_total": 10,
+  "weekly": [
+   1,
+   -1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "ICP",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

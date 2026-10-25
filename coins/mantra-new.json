@@ -1,22 +1,24 @@
 {
- "rank": 107,
+ "rank": 148,
  "slug": "mantra-new",
  "symbol": "MANTRA",
  "name": "MANTRA",
  "cmc_id": 39611,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 50,
- "total_exact": 50.1,
- "band": "Orta",
- "delta": -1.1,
+ "total": 48,
+ "total_exact": 47.86,
+ "band": "Zayıf",
+ "delta": -2.2,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -32,10 +34,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 49.149528,
+     "value": 48.919272,
      "percentile": 0.4583,
      "basis": "sector",
-     "display": "49,1×",
+     "display": "48,9×",
      "tier": "orta dilim"
     }
    ]
@@ -43,16 +45,16 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.8,
+   "score": 9.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7051,
-   "tier": "üst dilim",
+   "percentile": 0.4872,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.809995,
+     "value": 0.810079,
      "percentile": 0.5641,
      "basis": "sector",
      "display": "%81",
@@ -61,7 +63,7 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.488595,
+     "value": 1.487761,
      "percentile": 0.5385,
      "basis": "sector",
      "display": "1,49×",
@@ -75,6 +77,15 @@
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.224645,
+     "percentile": 0.1212,
+     "basis": "sector",
+     "display": "+%22",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -91,26 +102,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.4,
+   "score": 11.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5085,
+   "percentile": 0.6143,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.929097,
-     "percentile": 0.4222,
+     "value": 0.924092,
+     "percentile": 0.4,
      "basis": "sector",
-     "display": "−%7,1",
+     "display": "−%7,6",
      "tier": "orta dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.5658,
+     "percentile": 0.6316,
      "basis": "sector",
      "display": "4",
      "tier": "orta dilim"
@@ -120,20 +131,20 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.7,
+   "score": 10.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5897,
+   "percentile": 0.5,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.265589,
-     "percentile": 0.7436,
+     "value": 0.22125,
+     "percentile": 0.6667,
      "basis": "sector",
-     "display": "%27",
-     "tier": "üst dilim"
+     "display": "%22",
+     "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
@@ -148,16 +159,16 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4991,
-     "percentile": 0.3333,
+     "percentile": 0.3636,
      "basis": "sector",
      "display": "%0,50",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1613,
-     "percentile": 0.625,
+     "percentile": 0.5974,
      "basis": "sector",
      "display": "%16",
      "tier": "orta dilim"
@@ -165,7 +176,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.201232,
+     "value": 6.20397,
      "percentile": 0.641,
      "basis": "sector",
      "display": "6,2 yıl",
@@ -174,7 +185,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -2.92,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -183,10 +201,68 @@
   [
    "2026-10-24",
    50.1
+  ],
+  [
+   "2026-10-25",
+   47.86
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -2.2,
+   "from": 50.1,
+   "to": 47.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.92,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,9)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 584,
+  "rank_start": 549,
+  "score": 0,
+  "rise": 0,
+  "steady": 17,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 9,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "MANTRA",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

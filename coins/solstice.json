@@ -1,24 +1,31 @@
 {
- "rank": null,
+ "rank": 314,
  "slug": "solstice",
  "symbol": "SLX",
  "name": "Solstice",
  "cmc_id": 40047,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 37,
- "total_exact": 37.48,
+ "total": 35,
+ "total_exact": 34.84,
  "band": "Zayıf",
- "delta": 0.3,
+ "delta": -2.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
- "eligible_for_top": false,
- "penalty": 0.0,
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
+ "eligible_for_top": true,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -33,17 +40,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.9,
+   "score": 6.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2301,
+   "percentile": 0.1626,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.242854,
-     "percentile": 0.1947,
+     "percentile": 0.1707,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -52,7 +59,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.117697,
-     "percentile": 0.2212,
+     "percentile": 0.1951,
      "basis": "sector",
      "display": "4,12×",
      "tier": "alt dilim"
@@ -61,7 +68,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6195,
+     "percentile": 0.6179,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -81,27 +88,37 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 9.8,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5189,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.4894,
+     "basis": "sector",
+     "display": "1",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.4,
+   "score": 10.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.531,
+   "percentile": 0.5041,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9204,
+     "percentile": 0.8943,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -110,16 +127,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 178.0,
-     "percentile": 0.5752,
+     "percentile": 0.561,
      "basis": "sector",
      "display": "178",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.1463,
+     "percentile": 0.9417,
+     "basis": "sector",
+     "display": "%0,15",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.32,
+     "percentile": 0.1292,
+     "basis": "sector",
+     "display": "%32",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.424367,
-     "percentile": 0.0708,
+     "value": 0.427105,
+     "percentile": 0.0569,
      "basis": "sector",
      "display": "0,4 yıl",
      "tier": "alt dilim"
@@ -127,19 +162,91 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
+  },
+  {
+   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 2.79,
+   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +2,8)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   37.14
+   37.11
   ],
   [
    "2026-10-24",
-   37.48
+   37.46
+  ],
+  [
+   "2026-10-25",
+   34.84
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -2.6,
+   "from": 37.5,
+   "to": 34.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
+    },
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 2.79,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +2,8)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 885,
+  "rank_start": 656,
+  "score": 0,
+  "rise": 0,
+  "steady": 0,
+  "calm": 0,
+  "weeks_up": 0,
+  "weeks_down": 11,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

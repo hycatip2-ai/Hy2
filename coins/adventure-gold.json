@@ -4,21 +4,32 @@
  "symbol": "AGLD",
  "name": "Adventure Gold",
  "cmc_id": 11568,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 52,
- "total_exact": 52.34,
- "band": "Orta",
- "delta": -0.1,
+ "total": 40,
+ "total_exact": 40.1,
+ "band": "Zayıf",
+ "delta": -12.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  },
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
- "penalty": 0.0,
+ "penalty": 10.0,
  "parts": [
   {
    "id": "valuation",
@@ -33,10 +44,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.4,
+   "score": 14.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9426,
+   "percentile": 0.918,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -52,7 +63,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.034148,
-     "percentile": 0.8033,
+     "percentile": 0.7951,
      "basis": "sector",
      "display": "1,03×",
      "tier": "üst dilim"
@@ -61,9 +72,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6131,
+     "basis": "sector",
+     "display": "%0",
      "tier": "orta dilim"
     }
    ]
@@ -91,17 +111,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 16.0,
+   "score": 14.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9836,
+   "percentile": 0.9672,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.250612,
-     "percentile": 0.7705,
+     "value": 0.251458,
+     "percentile": 0.7213,
      "basis": "sector",
      "display": "%25",
      "tier": "üst dilim"
@@ -116,9 +136,27 @@
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.227,
+     "percentile": 0.7647,
+     "basis": "sector",
+     "display": "%0,23",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.15,
+     "percentile": 0.521,
+     "basis": "sector",
+     "display": "%15",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.141684,
+     "value": 5.144422,
      "percentile": 0.7295,
      "basis": "sector",
      "display": "5,1 yıl",
@@ -127,7 +165,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+   "part": "penalty",
+   "delta": -10.0,
+   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+  },
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -1.44,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +187,90 @@
   [
    "2026-10-24",
    52.34
+  ],
+  [
+   "2026-10-25",
+   40.1
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -12.2,
+   "from": 52.3,
+   "to": 40.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.44,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,4)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": -12.2,
+   "from": 52.3,
+   "to": 40.1,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -10.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −10,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.44,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,4)"
+    }
+   ]
+  }
+ ],
+ "trend": {
+  "rank_now": 767,
+  "rank_start": 856,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

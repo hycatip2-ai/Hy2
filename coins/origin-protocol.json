@@ -1,15 +1,17 @@
 {
- "rank": 26,
+ "rank": 23,
  "slug": "origin-protocol",
  "symbol": "OGN",
  "name": "Origin Protocol",
  "cmc_id": 5117,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 58,
- "total_exact": 58.36,
+ "total": 60,
+ "total_exact": 59.59,
  "band": "Orta",
- "delta": -3.6,
+ "delta": 0.8,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -20,36 +22,36 @@
    "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
   }
  ],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 13.3,
+   "score": 13.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6607,
+   "percentile": 0.6308,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 32.720827,
-     "percentile": 0.6222,
+     "value": 31.086228,
+     "percentile": 0.6111,
      "basis": "sector",
-     "display": "32,7×",
+     "display": "31,1×",
      "tier": "orta dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.276576,
-     "percentile": 0.75,
+     "value": 0.265886,
+     "percentile": 0.7213,
      "basis": "sector",
-     "display": "0,28×",
+     "display": "0,27×",
      "tier": "üst dilim"
     }
    ]
@@ -57,17 +59,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.7,
+   "score": 8.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5664,
+   "percentile": 0.3659,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.529058,
-     "percentile": 0.4779,
+     "value": 0.529001,
+     "percentile": 0.4472,
      "basis": "sector",
      "display": "%53",
      "tier": "orta dilim"
@@ -75,8 +77,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.890153,
-     "percentile": 0.5044,
+     "value": 1.890354,
+     "percentile": 0.4715,
      "basis": "sector",
      "display": "1,89×",
      "tier": "orta dilim"
@@ -85,27 +87,36 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6195,
+     "percentile": 0.6179,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.110594,
+     "percentile": 0.2211,
+     "basis": "sector",
+     "display": "+%11",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 15.6,
+   "score": 15.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7778,
+   "percentile": 0.7955,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
-     "value": 0.200001,
-     "percentile": 0.7778,
+     "value": 0.2,
+     "percentile": 0.7955,
      "basis": "sector",
      "display": "%20",
      "tier": "üst dilim"
@@ -115,46 +126,64 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 8.5,
+   "score": 12.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4342,
-   "tier": "orta dilim",
+   "percentile": 0.6887,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.071771,
-     "percentile": 0.5319,
+     "value": 1.073781,
+     "percentile": 0.5536,
      "basis": "sector",
-     "display": "+%7,2",
+     "display": "+%7,4",
      "tier": "orta dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.711817,
+     "percentile": 0.9038,
+     "basis": "sector",
+     "display": "+%71",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 6.0,
+     "percentile": 0.8564,
+     "basis": "sector",
+     "display": "6",
+     "tier": "üst dilim"
     },
     {
      "id": "governance",
      "name": "Yönetim oyları (90 gün)",
      "value": 0.0,
-     "percentile": 0.3214,
+     "percentile": 0.3571,
      "basis": "sector",
      "display": "0",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 16.0,
+   "score": 14.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9823,
+   "percentile": 0.9593,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9204,
+     "percentile": 0.8943,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -163,16 +192,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 224.0,
-     "percentile": 0.7611,
+     "percentile": 0.7317,
      "basis": "sector",
      "display": "224",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.1807,
+     "percentile": 0.8917,
+     "basis": "sector",
+     "display": "%0,18",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2,
+     "percentile": 0.4167,
+     "basis": "sector",
+     "display": "%20",
+     "tier": "orta dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.78987,
-     "percentile": 0.8496,
+     "value": 6.792608,
+     "percentile": 0.8293,
      "basis": "sector",
      "display": "6,8 yıl",
      "tier": "üst dilim"
@@ -181,7 +228,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6615,
+     "percentile": 0.6447,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -189,30 +236,27 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
-   62.01
+   62.46
   ],
   [
    "2026-10-24",
-   58.36
+   58.81
+  ],
+  [
+   "2026-10-25",
+   59.59
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
    "delta": -3.6,
-   "from": 62.0,
-   "to": 58.4,
+   "from": 62.5,
+   "to": 58.8,
    "event": false,
    "reasons": [
     {
@@ -225,12 +269,74 @@
   }
  ],
  "events": [],
- "investors": [],
- "investors_source": null,
+ "trend": {
+  "rank_now": 681,
+  "rank_start": 947,
+  "score": 41,
+  "rise": 69,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 3,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   0,
+   0,
+   1,
+   1,
+   1,
+   -1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.18,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Ethereum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "Bamboo Sea Ventures",
+  "Blockchain.com Ventures",
+  "BlockTower Capital",
+  "Cypher Capital",
+  "DHVC",
+  "Eterna Capital",
+  "FBG Capital",
+  "Foundation Capital",
+  "gumi Cryptos Capital",
+  "KBW Ventures",
+  "Kenetic",
+  "One Block Capital",
+  "Oyster Ventures",
+  "Sora Ventures",
+  "Tuling Capital",
+  "Chain Capital",
+  "Pantera Capital",
+  "ORCAS"
+ ],
+ "investors_source": "https://defillama.com/protocol/origin-protocol",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/origin-protocol",
  "research": null
 }

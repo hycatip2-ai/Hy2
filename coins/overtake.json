@@ -1,22 +1,24 @@
 {
- "rank": 263,
+ "rank": 338,
  "slug": "overtake",
  "symbol": "TAKE",
  "name": "OVERTAKE",
  "cmc_id": 38175,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 33,
- "total_exact": 33.09,
+ "total": 32,
+ "total_exact": 31.96,
  "band": "Zayıf",
- "delta": -5.4,
+ "delta": -1.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -33,28 +35,28 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.0,
+   "score": 6.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3333,
+   "percentile": 0.1795,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.372066,
+     "value": 0.391813,
      "percentile": 0.2564,
      "basis": "sector",
-     "display": "%37",
+     "display": "%39",
      "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.687695,
+     "value": 2.552241,
      "percentile": 0.2821,
      "basis": "sector",
-     "display": "2,69×",
+     "display": "2,55×",
      "tier": "alt dilim"
     },
     {
@@ -65,6 +67,15 @@
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.178125,
+     "percentile": 0.1667,
+     "basis": "sector",
+     "display": "+%18",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -81,17 +92,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 2.6,
+   "score": 3.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.0593,
+   "percentile": 0.0929,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1316,
+     "percentile": 0.1491,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -101,17 +112,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.0,
+   "score": 9.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4872,
+   "percentile": 0.4359,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9487,
+     "percentile": 0.9103,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -129,7 +140,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5642,
-     "percentile": 0.2708,
+     "percentile": 0.2987,
      "basis": "sector",
      "display": "%0,56",
      "tier": "alt dilim"
@@ -138,7 +149,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.125,
-     "percentile": 0.7188,
+     "percentile": 0.6948,
      "basis": "sector",
      "display": "%12",
      "tier": "üst dilim"
@@ -146,7 +157,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.166324,
+     "value": 1.169062,
      "percentile": 0.1154,
      "basis": "sector",
      "display": "1,2 yıl",
@@ -155,14 +166,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-   "part": "usage",
-   "delta": -5.46,
-   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −5,5)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -171,6 +175,10 @@
   [
    "2026-10-24",
    33.09
+  ],
+  [
+   "2026-10-25",
+   31.96
   ]
  ],
  "changes": [
@@ -206,6 +214,44 @@
    ]
   }
  ],
+ "trend": {
+  "rank_now": 571,
+  "rank_start": 958,
+  "score": 47,
+  "rise": 72,
+  "steady": 58,
+  "calm": 0,
+  "weeks_up": 7,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.22,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

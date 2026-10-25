@@ -4,12 +4,14 @@
  "symbol": "UP",
  "name": "Unitas",
  "cmc_id": 39665,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 33,
- "total_exact": 32.94,
+ "total": 31,
+ "total_exact": 30.53,
  "band": "Zayıf",
- "delta": -5.1,
+ "delta": -2.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -20,8 +22,8 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 5.0,
  "parts": [
@@ -38,10 +40,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.5,
+   "score": 4.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1107,
+   "percentile": 0.0328,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -66,10 +68,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.158731,
+     "percentile": 0.1429,
+     "basis": "sector",
+     "display": "+%16",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -96,17 +107,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.4,
+   "score": 9.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6557,
+   "percentile": 0.418,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9262,
+     "percentile": 0.9139,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -115,16 +126,34 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 137.0,
-     "percentile": 0.6967,
+     "percentile": 0.7049,
      "basis": "sector",
      "display": "137",
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.3548,
+     "percentile": 0.5546,
+     "basis": "sector",
+     "display": "%0,35",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.3077,
+     "percentile": 0.1597,
+     "basis": "sector",
+     "display": "%31",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.626968,
-     "percentile": 0.0902,
+     "value": 0.629706,
+     "percentile": 0.082,
      "basis": "sector",
      "display": "0,6 yıl",
      "tier": "alt dilim"
@@ -134,10 +163,10 @@
  ],
  "reasons": [
   {
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -1.76,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,8)"
   }
  ],
  "history": [
@@ -148,6 +177,10 @@
   [
    "2026-10-24",
    32.94
+  ],
+  [
+   "2026-10-25",
+   30.53
   ]
  ],
  "changes": [
@@ -163,6 +196,21 @@
      "part": "penalty",
      "delta": -5.0,
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": -2.4,
+   "from": 32.9,
+   "to": 30.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.76,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,8)"
     }
    ]
   }
@@ -183,6 +231,39 @@
    ]
   }
  ],
+ "trend": {
+  "rank_now": 633,
+  "rank_start": 414,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 8,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   -1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

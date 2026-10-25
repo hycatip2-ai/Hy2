@@ -1,29 +1,31 @@
 {
- "rank": 28,
+ "rank": 55,
  "slug": "boba-network",
  "symbol": "BOBA",
  "name": "Boba Network",
  "cmc_id": 14556,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 58,
- "total_exact": 58.26,
+ "total": 56,
+ "total_exact": 56.05,
  "band": "Orta",
- "delta": 0.5,
+ "delta": -2.2,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 9.7,
+   "score": 9.5,
    "has_data": true,
    "weight": 20,
    "percentile": 0.6327,
@@ -32,19 +34,19 @@
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 2307.681076,
-     "percentile": 0.3295,
+     "value": 2331.417327,
+     "percentile": 0.3163,
      "basis": "universe",
-     "display": "2.308×",
+     "display": "2.331×",
      "tier": "alt dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 3.878684,
+     "value": 3.932878,
      "percentile": 0.7917,
      "basis": "sector",
-     "display": "3,88×",
+     "display": "3,93×",
      "tier": "üst dilim"
     }
    ]
@@ -55,7 +57,7 @@
    "score": 14.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8718,
+   "percentile": 0.8462,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -100,28 +102,28 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.0,
+   "score": 14.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6949,
+   "percentile": 0.6857,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.872538,
+     "value": 1.90658,
      "percentile": 0.68,
      "basis": "sector",
-     "display": "+%87",
+     "display": "+%91",
      "tier": "üst dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.162031,
-     "percentile": 0.7333,
+     "value": 1.141187,
+     "percentile": 0.7556,
      "basis": "sector",
-     "display": "+%16",
+     "display": "+%14",
      "tier": "üst dilim"
     }
    ]
@@ -129,17 +131,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.6,
+   "score": 7.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5641,
-   "tier": "orta dilim",
+   "percentile": 0.2436,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.291668,
-     "percentile": 0.7692,
+     "value": 0.288933,
+     "percentile": 0.7179,
      "basis": "sector",
      "display": "%29",
      "tier": "üst dilim"
@@ -154,9 +156,27 @@
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5375,
+     "percentile": 0.3247,
+     "basis": "sector",
+     "display": "%0,54",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.4,
+     "percentile": 0.0455,
+     "basis": "sector",
+     "display": "%40",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.936345,
+     "value": 4.939083,
      "percentile": 0.5385,
      "basis": "sector",
      "display": "4,9 yıl",
@@ -165,19 +185,84 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -2.22,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   57.71
+   57.66
   ],
   [
    "2026-10-24",
-   58.26
+   58.21
+  ],
+  [
+   "2026-10-25",
+   56.05
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -2.2,
+   "from": 58.2,
+   "to": 56.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.22,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 983,
+  "rank_start": 998,
+  "score": 0,
+  "rise": 0,
+  "steady": 17,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   0,
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   0
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": {
+  "name": "Boba",
+  "source": "native",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

@@ -4,19 +4,21 @@
  "symbol": "XDP",
  "name": "Doppler Finance",
  "cmc_id": 40953,
+ "graduated": false,
+ "chain_flow": "Base",
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 35,
- "total_exact": 34.9,
+ "total": 33,
+ "total_exact": 33.24,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": -1.6,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.6,
+   "score": 4.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0354,
+   "percentile": 0.0325,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.1139,
-     "percentile": 0.0354,
+     "percentile": 0.0325,
      "basis": "sector",
      "display": "%11",
      "tier": "alt dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.779631,
-     "percentile": 0.0354,
+     "percentile": 0.0325,
      "basis": "sector",
      "display": "8,78×",
      "tier": "alt dilim"
@@ -61,7 +63,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6195,
+     "percentile": 0.6179,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -91,17 +93,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.1,
+   "score": 7.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4779,
-   "tier": "orta dilim",
+   "percentile": 0.2276,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9204,
+     "percentile": 0.8943,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -109,17 +111,35 @@
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 175.0,
-     "percentile": 0.5664,
+     "value": 176.0,
+     "percentile": 0.5528,
      "basis": "sector",
-     "display": "175",
+     "display": "176",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5653,
+     "percentile": 0.1583,
+     "basis": "sector",
+     "display": "%0,57",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2105,
+     "percentile": 0.3583,
+     "basis": "sector",
+     "display": "%21",
      "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.224504,
-     "percentile": 0.0221,
+     "value": 0.227242,
+     "percentile": 0.0163,
      "basis": "sector",
      "display": "0,2 yıl",
      "tier": "alt dilim"
@@ -131,15 +151,26 @@
  "history": [
   [
    "2026-10-23",
-   34.83
+   34.82
   ],
   [
    "2026-10-24",
-   34.9
+   34.89
+  ],
+  [
+   "2026-10-25",
+   33.24
   ]
  ],
  "changes": [],
  "events": [],
+ "trend": null,
+ "chain": {
+  "name": "Base",
+  "source": "contract",
+  "flow": true,
+  "flow_rank": 2
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

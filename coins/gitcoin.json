@@ -1,22 +1,24 @@
 {
- "rank": 48,
+ "rank": 65,
  "slug": "gitcoin",
  "symbol": "GTC",
  "name": "Gitcoin",
  "cmc_id": 10052,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
  "total": 56,
- "total_exact": 56.27,
+ "total_exact": 55.51,
  "band": "Orta",
- "delta": -2.4,
+ "delta": -0.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
@@ -33,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.8,
+   "score": 9.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4836,
+   "percentile": 0.5082,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.874915,
-     "percentile": 0.6475,
+     "percentile": 0.6393,
      "basis": "sector",
      "display": "%87",
      "tier": "orta dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.142968,
-     "percentile": 0.7131,
+     "percentile": 0.7049,
      "basis": "sector",
      "display": "1,14×",
      "tier": "üst dilim"
@@ -61,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1025,
+     "percentile": 0.1066,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.5238,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -81,17 +92,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 17.7,
+   "score": 18.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8788,
+   "percentile": 0.9322,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 5.0,
-     "percentile": 0.7667,
+     "percentile": 0.8482,
      "basis": "sector",
      "display": "5",
      "tier": "üst dilim"
@@ -110,17 +121,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.8,
+   "score": 13.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9016,
+   "percentile": 0.8607,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9262,
+     "percentile": 0.9139,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -135,9 +146,27 @@
      "tier": "üst dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2817,
+     "percentile": 0.6807,
+     "basis": "sector",
+     "display": "%0,28",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.225,
+     "percentile": 0.3025,
+     "basis": "sector",
+     "display": "%22",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.415469,
+     "value": 5.418207,
      "percentile": 0.7705,
      "basis": "sector",
      "display": "5,4 yıl",
@@ -147,7 +176,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.4286,
+     "percentile": 0.4333,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -155,14 +184,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-   "part": "usage",
-   "delta": -2.33,
-   "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,3)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -171,6 +193,10 @@
   [
    "2026-10-24",
    56.27
+  ],
+  [
+   "2026-10-25",
+   55.51
   ]
  ],
  "changes": [
@@ -191,12 +217,31 @@
   }
  ],
  "events": [],
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "trend": null,
+ "chain": null,
+ "investors": [
+  "1kx",
+  "Balaji Srinivasan",
+  "Electric Capital",
+  "Ideo Colab",
+  "Metacartel Ventures",
+  "Naval Ravikant",
+  "Paradigm",
+  "The Lao",
+  "Zak Cole",
+  "Ethereum Foundation"
+ ],
+ "investors_source": "https://defillama.com/protocol/gitcoin",
+ "angel_investors": [
+  "Balaji Srinivasan",
+  "Ideo Colab",
+  "Naval Ravikant",
+  "The Lao",
+  "Zak Cole"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/gitcoin",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/gitcoin",
  "research": null
 }

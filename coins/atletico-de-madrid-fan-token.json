@@ -4,19 +4,21 @@
  "symbol": "ATM",
  "name": "Atletico De Madrid Fan Token",
  "cmc_id": 5227,
+ "graduated": false,
+ "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 50,
- "total_exact": 50.4,
- "band": "Orta",
- "delta": -0.1,
+ "total": 48,
+ "total_exact": 48.02,
+ "band": "Zayıf",
+ "delta": -2.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.0.0",
+ "date": "2026-10-25",
+ "formula_version": "1.1.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -33,7 +35,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.8,
+   "score": 13.7,
    "has_data": true,
    "weight": 20,
    "percentile": 0.8525,
@@ -43,7 +45,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.912149,
-     "percentile": 0.6967,
+     "percentile": 0.6885,
      "basis": "sector",
      "display": "%91",
      "tier": "üst dilim"
@@ -52,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.096312,
-     "percentile": 0.7623,
+     "percentile": 0.7541,
      "basis": "sector",
      "display": "1,10×",
      "tier": "üst dilim"
@@ -61,7 +63,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6066,
+     "percentile": 0.6107,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -91,17 +93,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 15.6,
+   "score": 13.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9672,
+   "percentile": 0.8934,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9262,
+     "percentile": 0.9139,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -110,15 +112,33 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 83.0,
-     "percentile": 0.5246,
+     "percentile": 0.5328,
      "basis": "sector",
      "display": "83",
      "tier": "orta dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.2633,
+     "percentile": 0.7143,
+     "basis": "sector",
+     "display": "%0,26",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.2353,
+     "percentile": 0.2773,
+     "basis": "sector",
+     "display": "%24",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.694045,
+     "value": 6.696783,
      "percentile": 0.8934,
      "basis": "sector",
      "display": "6,7 yıl",
@@ -127,7 +147,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Alış-satış farkı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -2.3,
+   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,3)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -136,10 +163,52 @@
   [
    "2026-10-24",
    50.4
+  ],
+  [
+   "2026-10-25",
+   48.02
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": -2.4,
+   "from": 50.4,
+   "to": 48.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.3,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,3)"
+    }
+   ]
+  }
+ ],
  "events": [],
+ "trend": {
+  "rank_now": 998,
+  "rank_start": 834,
+  "score": 0,
+  "rise": 0,
+  "steady": 100,
+  "calm": 0,
+  "weeks_up": 1,
+  "weeks_down": 0,
+  "weeks_total": 1,
+  "weekly": [
+   1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
+ "chain": null,
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
