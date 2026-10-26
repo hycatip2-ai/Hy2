@@ -8,17 +8,17 @@
  "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 39.17,
+ "total": 38,
+ "total_exact": 37.75,
  "band": "Zayıf",
- "delta": -3.3,
+ "delta": -1.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-25",
- "formula_version": "1.1.0",
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -35,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.2,
+   "score": 9.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.623,
+   "percentile": 0.4463,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.990452,
-     "percentile": 0.7541,
+     "value": 0.990443,
+     "percentile": 0.7521,
      "basis": "sector",
      "display": "%99",
      "tier": "üst dilim"
@@ -53,8 +53,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.00964,
-     "percentile": 0.8197,
+     "value": 1.009649,
+     "percentile": 0.8099,
      "basis": "sector",
      "display": "1,01×",
      "tier": "üst dilim"
@@ -63,9 +63,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1066,
+     "percentile": 0.1074,
      "basis": "sector",
      "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.039991,
+     "percentile": 0.2451,
+     "basis": "sector",
+     "display": "+%4,0",
      "tier": "alt dilim"
     }
    ]
@@ -93,26 +102,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.0,
+   "score": 7.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1393,
+   "percentile": 0.1736,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.072075,
-     "percentile": 0.5328,
+     "value": 0.079445,
+     "percentile": 0.562,
      "basis": "sector",
-     "display": "%7,2",
+     "display": "%7,9",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 9.0,
-     "percentile": 0.0779,
+     "percentile": 0.0785,
      "basis": "sector",
      "display": "9",
      "tier": "alt dilim"
@@ -121,7 +130,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.976,
-     "percentile": 0.1092,
+     "percentile": 0.1102,
      "basis": "sector",
      "display": "%0,98",
      "tier": "alt dilim"
@@ -130,7 +139,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1134,
+     "percentile": 0.1271,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -138,8 +147,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.885695,
-     "percentile": 0.9098,
+     "value": 6.888433,
+     "percentile": 0.9174,
      "basis": "sector",
      "display": "6,9 yıl",
      "tier": "üst dilim"
@@ -147,14 +156,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Alış-satış farkı verisi artık mevcut.",
-   "part": "liquidity",
-   "delta": -3.22,
-   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,2)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -162,11 +164,15 @@
   ],
   [
    "2026-10-24",
-   42.48
+   42.52
   ],
   [
    "2026-10-25",
-   39.17
+   39.2
+  ],
+  [
+   "2026-10-26",
+   37.75
   ]
  ],
  "changes": [
@@ -180,14 +186,40 @@
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": -3.22,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,2)"
+     "delta": -3.36,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,4)"
     }
    ]
   }
  ],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 929,
+  "rank_start": 937,
+  "score": 0,
+  "rise": 0,
+  "steady": 43,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 3,
+  "weeks_total": 7,
+  "weekly": [
+   1,
+   1,
+   -1,
+   0,
+   -1,
+   -1,
+   1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "Ethereum",
   "source": "contract",

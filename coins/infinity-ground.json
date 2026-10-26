@@ -8,10 +8,10 @@
  "chain_flow": null,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 37,
- "total_exact": 36.93,
+ "total": 35,
+ "total_exact": 34.54,
  "band": "Zayıf",
- "delta": -7.5,
+ "delta": -2.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -22,8 +22,8 @@
    "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
   }
  ],
- "date": "2026-10-25",
- "formula_version": "1.1.0",
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
  "eligible_for_top": false,
  "penalty": 5.0,
  "parts": [
@@ -40,11 +40,11 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.1,
+   "score": 7.5,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.4493,
-   "tier": "orta dilim",
+   "percentile": 0.2464,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
@@ -72,6 +72,15 @@
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.721354,
+     "percentile": 0.1406,
+     "basis": "sector",
+     "display": "+%72",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -98,7 +107,7 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.0,
+   "score": 11.9,
    "has_data": true,
    "weight": 15,
    "percentile": 0.7681,
@@ -108,7 +117,7 @@
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.913,
+     "percentile": 0.9058,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -143,7 +152,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.377139,
+     "value": 1.379877,
      "percentile": 0.5797,
      "basis": "sector",
      "display": "1,4 yıl",
@@ -154,16 +163,10 @@
  ],
  "reasons": [
   {
-   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
-  },
-  {
-   "text": "Alış-satış farkı verisi artık mevcut.",
-   "part": "liquidity",
-   "delta": -2.45,
-   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,4)"
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -2.42,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,4)"
   }
  ],
  "history": [
@@ -173,19 +176,23 @@
   ],
   [
    "2026-10-24",
-   44.4
+   44.56
   ],
   [
    "2026-10-25",
-   36.93
+   36.99
+  ],
+  [
+   "2026-10-26",
+   34.54
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": -7.5,
-   "from": 44.4,
-   "to": 36.9,
+   "delta": -7.6,
+   "from": 44.6,
+   "to": 37.0,
    "event": true,
    "reasons": [
     {
@@ -197,8 +204,23 @@
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": -2.45,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,4)"
+     "delta": -2.47,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,5)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "delta": -2.5,
+   "from": 37.0,
+   "to": 34.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.42,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,4)"
     }
    ]
   }
@@ -206,9 +228,9 @@
  "events": [
   {
    "date": "2026-10-25",
-   "delta": -7.5,
-   "from": 44.4,
-   "to": 36.9,
+   "delta": -7.6,
+   "from": 44.6,
+   "to": 37.0,
    "reasons": [
     {
      "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
@@ -219,23 +241,24 @@
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": -2.45,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,4)"
+     "delta": -2.47,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,5)"
     }
    ]
   }
  ],
  "trend": {
-  "rank_now": 882,
-  "rank_start": 625,
+  "rank_now": 862,
+  "rank_start": 630,
   "score": 0,
   "rise": 0,
   "steady": 0,
   "calm": 0,
   "weeks_up": 0,
-  "weeks_down": 1,
-  "weeks_total": 2,
+  "weeks_down": 2,
+  "weeks_total": 3,
   "weekly": [
+   -1,
    0,
    -1
   ],

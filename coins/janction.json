@@ -9,16 +9,16 @@
  "sector": "depin",
  "sector_name": "DePIN",
  "total": 36,
- "total_exact": 35.93,
+ "total_exact": 36.0,
  "band": "Zayıf",
- "delta": 2.1,
+ "delta": 0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-25",
- "formula_version": "1.1.0",
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -35,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.1,
+   "score": 7.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2941,
+   "percentile": 0.2647,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.2068,
-     "percentile": 0.0588,
+     "percentile": 0.0294,
      "basis": "sector",
      "display": "%21",
      "tier": "alt dilim"
@@ -54,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.83559,
-     "percentile": 0.0588,
+     "percentile": 0.0294,
      "basis": "sector",
      "display": "4,84×",
      "tier": "alt dilim"
@@ -72,7 +72,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.100376,
-     "percentile": 0.8148,
+     "percentile": 0.8333,
      "basis": "sector",
      "display": "−%10",
      "tier": "üst dilim"
@@ -102,35 +102,35 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.8,
+   "score": 7.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2059,
+   "percentile": 0.2647,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.11643,
-     "percentile": 0.4706,
+     "value": 0.105484,
+     "percentile": 0.5,
      "basis": "sector",
-     "display": "%12",
+     "display": "%11",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 113.0,
+     "value": 114.0,
      "percentile": 0.3235,
      "basis": "sector",
-     "display": "113",
+     "display": "114",
      "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4181,
-     "percentile": 0.4062,
+     "percentile": 0.4375,
      "basis": "sector",
      "display": "%0,42",
      "tier": "orta dilim"
@@ -139,7 +139,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2273,
-     "percentile": 0.2812,
+     "percentile": 0.3125,
      "basis": "sector",
      "display": "%23",
      "tier": "alt dilim"
@@ -147,7 +147,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.95551,
+     "value": 0.958248,
      "percentile": 0.2059,
      "basis": "sector",
      "display": "1,0 yıl",
@@ -156,14 +156,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı (90 gün) verisi artık mevcut.",
-   "part": "supply",
-   "delta": 2.77,
-   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,8)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -171,11 +164,15 @@
   ],
   [
    "2026-10-24",
-   33.83
+   33.84
   ],
   [
    "2026-10-25",
    35.93
+  ],
+  [
+   "2026-10-26",
+   36.0
   ]
  ],
  "changes": [
@@ -189,7 +186,7 @@
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
-     "delta": 2.77,
+     "delta": 2.83,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,8)"
     }
    ]
@@ -197,14 +194,14 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 323,
+  "rank_now": 335,
   "rank_start": 401,
-  "score": 0,
-  "rise": 0,
+  "score": 22,
+  "rise": 22,
   "steady": 33,
   "calm": 0,
   "weeks_up": 4,
-  "weeks_down": 8,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    1,
@@ -213,15 +210,24 @@
    -1,
    -1,
    -1,
-   -1,
+   0,
    -1,
    -1,
    1,
    1,
    1
   ],
-  "labels": [],
-  "trend": "falling",
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,

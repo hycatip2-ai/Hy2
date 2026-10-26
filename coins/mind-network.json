@@ -1,5 +1,5 @@
 {
- "rank": 272,
+ "rank": 325,
  "slug": "mind-network",
  "symbol": "FHE",
  "name": "Mind Network",
@@ -8,13 +8,13 @@
  "chain_flow": null,
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 39,
- "total_exact": 38.83,
+ "total": 35,
+ "total_exact": 34.8,
  "band": "Zayıf",
- "delta": -5.4,
+ "delta": -4.1,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [
   {
@@ -22,8 +22,8 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
- "date": "2026-10-25",
- "formula_version": "1.1.0",
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
  "eligible_for_top": true,
  "penalty": 5.0,
  "parts": [
@@ -33,16 +33,16 @@
    "score": 2.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1156,
+   "percentile": 0.1083,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 384.200063,
-     "percentile": 0.1399,
+     "value": 367.995365,
+     "percentile": 0.1418,
      "basis": "universe",
-     "display": "384×",
+     "display": "368×",
      "tier": "alt dilim"
     }
    ]
@@ -50,10 +50,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.9,
+   "score": 9.4,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.6667,
+   "percentile": 0.4928,
    "tier": "orta dilim",
    "metrics": [
     {
@@ -82,6 +82,15 @@
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 1.200368,
+     "percentile": 0.0938,
+     "basis": "sector",
+     "display": "+%120",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -98,12 +107,31 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.8,
+   "has_data": true,
    "weight": 30,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.4318,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 1.091314,
+     "percentile": 0.6029,
+     "basis": "universe",
+     "display": "+%9,1",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.2093,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
@@ -117,10 +145,10 @@
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.295489,
+     "value": 0.309767,
      "percentile": 0.6377,
      "basis": "sector",
-     "display": "%30",
+     "display": "%31",
      "tier": "orta dilim"
     },
     {
@@ -153,7 +181,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.57974,
+     "value": 1.582478,
      "percentile": 0.6232,
      "basis": "sector",
      "display": "1,6 yıl",
@@ -163,7 +191,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7561,
+     "percentile": 0.7531,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -173,10 +201,10 @@
  ],
  "reasons": [
   {
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": -3.88,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,9)"
   }
  ],
  "history": [
@@ -186,19 +214,23 @@
   ],
   [
    "2026-10-24",
-   44.22
+   44.11
   ],
   [
    "2026-10-25",
-   38.83
+   38.91
+  ],
+  [
+   "2026-10-26",
+   34.8
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": -5.4,
-   "from": 44.2,
-   "to": 38.8,
+   "delta": -5.2,
+   "from": 44.1,
+   "to": 38.9,
    "event": true,
    "reasons": [
     {
@@ -208,14 +240,29 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-10-26",
+   "delta": -4.1,
+   "from": 38.9,
+   "to": 34.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -3.88,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,9)"
+    }
+   ]
   }
  ],
  "events": [
   {
    "date": "2026-10-25",
-   "delta": -5.4,
-   "from": 44.2,
-   "to": 38.8,
+   "delta": -5.2,
+   "from": 44.1,
+   "to": 38.9,
    "reasons": [
     {
      "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
@@ -227,23 +274,23 @@
   }
  ],
  "trend": {
-  "rank_now": 948,
-  "rank_start": 961,
+  "rank_now": 964,
+  "rank_start": 963,
   "score": 0,
   "rise": 0,
-  "steady": 25,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 3,
-  "weeks_down": 8,
+  "weeks_up": 4,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
    -1,
    -1,
+   1,
+   -1,
    0,
-   -1,
-   -1,
    -1,
    -1,
    -1,
@@ -264,12 +311,27 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Comma3 Ventures",
+  "SevenX Ventures",
+  "HashKey",
+  "Big Brain Holdings",
+  "Arweave SCP Ventures",
+  "Mandala Capital",
+  "Animoca Brands",
+  "Cogitent Ventures",
+  "ArkStream Capital",
+  "Moonhill Capital",
+  "SwissBorg",
+  "MH Ventures",
+  "MV Global",
+  "IBC"
+ ],
+ "investors_source": "https://defillama.com/protocol/mind-network",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/mind-network",
  "research": null
 }

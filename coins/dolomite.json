@@ -1,5 +1,5 @@
 {
- "rank": 16,
+ "rank": 15,
  "slug": "dolomite",
  "symbol": "DOLO",
  "name": "Dolomite",
@@ -9,44 +9,44 @@
  "sector": "defi",
  "sector_name": "DeFi",
  "total": 61,
- "total_exact": 61.07,
+ "total_exact": 61.28,
  "band": "Orta",
- "delta": 1.1,
+ "delta": 0.2,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-25",
- "formula_version": "1.1.0",
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
  "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 18.5,
+   "score": 18.6,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9692,
+   "percentile": 0.9524,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 3.684597,
-     "percentile": 0.963,
+     "value": 3.541103,
+     "percentile": 0.9615,
      "basis": "sector",
-     "display": "3,68×",
+     "display": "3,54×",
      "tier": "üst dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.052509,
-     "percentile": 0.8525,
+     "value": 0.051261,
+     "percentile": 0.8667,
      "basis": "sector",
-     "display": "0,053×",
+     "display": "0,051×",
      "tier": "üst dilim"
     }
    ]
@@ -54,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.5,
+   "score": 11.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4878,
+   "percentile": 0.6148,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.44213,
-     "percentile": 0.3984,
+     "percentile": 0.3934,
      "basis": "sector",
      "display": "%44",
      "tier": "orta dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.26438,
-     "percentile": 0.4146,
+     "percentile": 0.4098,
      "basis": "sector",
      "display": "2,26×",
      "tier": "orta dilim"
@@ -82,10 +82,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6179,
+     "percentile": 0.6189,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.128231,
+     "percentile": 0.8661,
+     "basis": "sector",
+     "display": "−%13",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -102,26 +111,35 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 13.3,
+   "score": 11.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7358,
-   "tier": "üst dilim",
+   "percentile": 0.6481,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.09552,
-     "percentile": 0.5714,
+     "value": 1.108729,
+     "percentile": 0.5741,
      "basis": "sector",
-     "display": "+%9,6",
+     "display": "+%11",
      "tier": "orta dilim"
+    },
+    {
+     "id": "tvl_trend",
+     "name": "Kilitli varlık trendi (90 gün)",
+     "value": 0.834742,
+     "percentile": 0.1864,
+     "basis": "sector",
+     "display": "−%17",
+     "tier": "alt dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.7553,
+     "percentile": 0.7677,
      "basis": "sector",
      "display": "4",
      "tier": "üst dilim"
@@ -134,23 +152,23 @@
    "score": 10.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.561,
+   "percentile": 0.5738,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.257666,
-     "percentile": 0.6504,
+     "value": 0.267185,
+     "percentile": 0.6557,
      "basis": "sector",
-     "display": "%26",
+     "display": "%27",
      "tier": "orta dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 139.0,
-     "percentile": 0.3577,
+     "percentile": 0.3689,
      "basis": "sector",
      "display": "139",
      "tier": "orta dilim"
@@ -159,7 +177,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4184,
-     "percentile": 0.3,
+     "percentile": 0.3025,
      "basis": "sector",
      "display": "%0,42",
      "tier": "alt dilim"
@@ -168,7 +186,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0323,
-     "percentile": 0.8833,
+     "percentile": 0.8739,
      "basis": "sector",
      "display": "%3,2",
      "tier": "üst dilim"
@@ -176,8 +194,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.64271,
-     "percentile": 0.4065,
+     "value": 1.645448,
+     "percentile": 0.4016,
      "basis": "sector",
      "display": "1,6 yıl",
      "tier": "orta dilim"
@@ -186,7 +204,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6447,
+     "percentile": 0.6419,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -202,18 +220,22 @@
   ],
   [
    "2026-10-24",
-   59.96
+   59.92
   ],
   [
    "2026-10-25",
    61.07
+  ],
+  [
+   "2026-10-26",
+   61.28
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 916,
-  "rank_start": 985,
+  "rank_now": 917,
+  "rank_start": 997,
   "score": 0,
   "rise": 0,
   "steady": 33,
@@ -225,12 +247,12 @@
    1,
    0,
    1,
-   -1,
+   0,
    1,
    -1,
    0,
    1,
-   0,
+   -1,
    -1,
    -1,
    0
@@ -249,12 +271,20 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "investors": [
+  "Draper Goren Holm",
+  "NGC Ventures",
+  "Coinbase Ventures",
+  "WWVentures",
+  "6th Man Ventures"
+ ],
+ "investors_source": "https://defillama.com/protocol/dolomite",
+ "angel_investors": [
+  "Draper Goren Holm"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/dolomite",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/dolomite",
  "research": null
 }

@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 316,
  "slug": "qanplatform",
  "symbol": "QANX",
  "name": "QANplatform",
@@ -8,18 +8,18 @@
  "chain_flow": null,
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 39,
- "total_exact": 38.88,
+ "total": 35,
+ "total_exact": 35.49,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-24",
- "formula_version": "1.1.0",
- "eligible_for_top": false,
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -35,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.0,
+   "score": 10.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6842,
-   "tier": "üst dilim",
+   "percentile": 0.5328,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.82666,
-     "percentile": 0.6667,
+     "value": 0.827612,
+     "percentile": 0.6311,
      "basis": "sector",
      "display": "%83",
      "tier": "orta dilim"
@@ -53,8 +53,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.83286,
-     "percentile": 0.5088,
+     "value": 1.830752,
+     "percentile": 0.4836,
      "basis": "sector",
      "display": "1,83×",
      "tier": "orta dilim"
@@ -63,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6228,
+     "percentile": 0.6189,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.071027,
+     "percentile": 0.2679,
+     "basis": "sector",
+     "display": "+%7,1",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -83,27 +92,37 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.0,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.1528,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.202,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.5,
+   "score": 7.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1228,
+   "percentile": 0.2008,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.002839,
-     "percentile": 0.0351,
+     "value": 0.002626,
+     "percentile": 0.0328,
      "basis": "sector",
      "display": "%0,3",
      "tier": "alt dilim"
@@ -112,18 +131,36 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 46.0,
-     "percentile": 0.1623,
+     "percentile": 0.1516,
      "basis": "sector",
      "display": "46",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.5523,
+     "percentile": 0.1597,
+     "basis": "sector",
+     "display": "%0,55",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.9538,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.944559,
-     "percentile": 0.6316,
+     "value": 4.950034,
+     "percentile": 0.5984,
      "basis": "sector",
-     "display": "4,9 yıl",
+     "display": "5,0 yıl",
      "tier": "orta dilim"
     }
    ]
@@ -133,12 +170,47 @@
  "history": [
   [
    "2026-10-24",
-   38.88
+   38.86
+  ],
+  [
+   "2026-10-26",
+   35.49
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 634,
+  "rank_start": 695,
+  "score": 0,
+  "rise": 0,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   -1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   0,
+   1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": null,
  "investors": [],
  "investors_source": null,

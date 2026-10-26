@@ -8,17 +8,17 @@
  "chain_flow": null,
  "sector": "other",
  "sector_name": "Diğer",
- "total": 49,
- "total_exact": 48.73,
+ "total": 47,
+ "total_exact": 46.86,
  "band": "Zayıf",
- "delta": -2.3,
+ "delta": -1.9,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-25",
- "formula_version": "1.1.0",
+ "date": "2026-10-26",
+ "formula_version": "1.2.0",
  "eligible_for_top": false,
  "penalty": 0.0,
  "parts": [
@@ -35,17 +35,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.4,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8934,
+   "percentile": 0.7686,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.973594,
-     "percentile": 0.7459,
+     "percentile": 0.7438,
      "basis": "sector",
      "display": "%97",
      "tier": "üst dilim"
@@ -54,7 +54,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.027122,
-     "percentile": 0.8115,
+     "percentile": 0.8017,
      "basis": "sector",
      "display": "1,03×",
      "tier": "üst dilim"
@@ -63,10 +63,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
+     "percentile": 0.6116,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.023802,
+     "percentile": 0.3235,
+     "basis": "sector",
+     "display": "+%2,4",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -93,17 +102,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.3,
+   "score": 13.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8852,
+   "percentile": 0.8926,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.219183,
-     "percentile": 0.7049,
+     "value": 0.218806,
+     "percentile": 0.719,
      "basis": "sector",
      "display": "%22",
      "tier": "üst dilim"
@@ -112,7 +121,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 142.0,
-     "percentile": 0.7131,
+     "percentile": 0.719,
      "basis": "sector",
      "display": "142",
      "tier": "üst dilim"
@@ -121,7 +130,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.0655,
-     "percentile": 0.9748,
+     "percentile": 0.9746,
      "basis": "sector",
      "display": "%0,07",
      "tier": "üst dilim"
@@ -130,7 +139,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3846,
-     "percentile": 0.0504,
+     "percentile": 0.0593,
      "basis": "sector",
      "display": "%38",
      "tier": "alt dilim"
@@ -138,8 +147,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.620123,
-     "percentile": 0.877,
+     "value": 6.622861,
+     "percentile": 0.8926,
      "basis": "sector",
      "display": "6,6 yıl",
      "tier": "üst dilim"
@@ -147,14 +156,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Alış-satış farkı verisi artık mevcut.",
-   "part": "liquidity",
-   "delta": -2.18,
-   "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -162,34 +164,38 @@
   ],
   [
    "2026-10-24",
-   51.0
+   50.97
   ],
   [
    "2026-10-25",
-   48.73
+   48.75
+  ],
+  [
+   "2026-10-26",
+   46.86
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": -2.3,
+   "delta": -2.2,
    "from": 51.0,
-   "to": 48.7,
+   "to": 48.8,
    "event": false,
    "reasons": [
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": -2.18,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
+     "delta": -2.31,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,3)"
     }
    ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 860,
-  "rank_start": 912,
+  "rank_now": 854,
+  "rank_start": 895,
   "score": 0,
   "rise": 0,
   "steady": 25,
