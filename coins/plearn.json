@@ -1,26 +1,32 @@
 {
- "rank": null,
+ "rank": 327,
  "slug": "plearn",
  "symbol": "PLN",
  "name": "Plearn",
  "cmc_id": 31160,
  "graduated": false,
  "chain_flow": null,
+ "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 32,
- "total_exact": 32.39,
+ "total": 34,
+ "total_exact": 34.28,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-23",
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  }
+ ],
+ "date": "2026-10-27",
  "formula_version": "1.2.0",
- "eligible_for_top": false,
- "penalty": 0.0,
+ "eligible_for_top": true,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -35,17 +41,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.8,
+   "score": 9.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1393,
-   "tier": "alt dilim",
+   "percentile": 0.3967,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.250207,
-     "percentile": 0.1885,
+     "percentile": 0.1901,
      "basis": "sector",
      "display": "%25",
      "tier": "alt dilim"
@@ -54,7 +60,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.13351,
-     "percentile": 0.0738,
+     "percentile": 0.0826,
      "basis": "sector",
      "display": "8,13×",
      "tier": "alt dilim"
@@ -63,10 +69,19 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6107,
+     "percentile": 0.6116,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.749793,
+     "percentile": 0.9804,
+     "basis": "sector",
+     "display": "−%75",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -83,45 +98,73 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.0,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.3175,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.3,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.6,
+   "score": 10.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1148,
-   "tier": "alt dilim",
+   "percentile": 0.4545,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.010024,
-     "percentile": 0.2377,
+     "value": 0.006816,
+     "percentile": 0.157,
      "basis": "sector",
-     "display": "%1,0",
+     "display": "%0,7",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 13.0,
-     "percentile": 0.1311,
+     "percentile": 0.1322,
      "basis": "sector",
      "display": "13",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 0.1501,
+     "percentile": 0.8559,
+     "basis": "sector",
+     "display": "%0,15",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.0,
+     "percentile": 0.8644,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.455852,
-     "percentile": 0.4672,
+     "value": 2.466804,
+     "percentile": 0.4793,
      "basis": "sector",
      "display": "2,5 yıl",
      "tier": "orta dilim"
@@ -134,12 +177,21 @@
   [
    "2026-10-23",
    32.39
+  ],
+  [
+   "2026-10-27",
+   34.28
   ]
  ],
  "changes": [],
  "events": [],
  "trend": null,
- "chain": null,
+ "chain": {
+  "name": "BSC",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],

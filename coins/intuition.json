@@ -1,25 +1,28 @@
 {
- "rank": null,
+ "rank": 267,
  "slug": "intuition",
  "symbol": "TRUST",
  "name": "Intuition",
  "cmc_id": 38863,
  "graduated": false,
  "chain_flow": null,
+ "us_exchanges": [
+  "Coinbase"
+ ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 32,
- "total_exact": 32.11,
+ "total": 39,
+ "total_exact": 39.27,
  "band": "Zayıf",
- "delta": 2.0,
+ "delta": null,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
- "date": "2026-10-25",
+ "date": "2026-10-27",
  "formula_version": "1.2.0",
- "eligible_for_top": false,
+ "eligible_for_top": true,
  "penalty": 0.0,
  "parts": [
   {
@@ -35,10 +38,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 1.2,
+   "score": 4.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0,
+   "percentile": 0.0294,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -67,6 +70,15 @@
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6667,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -83,30 +95,40 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 12.0,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 4.0,
+     "percentile": 0.6,
+     "basis": "sector",
+     "display": "4",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.9,
+   "score": 9.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5882,
+   "percentile": 0.4412,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.186269,
-     "percentile": 0.6176,
+     "value": 0.065764,
+     "percentile": 0.3235,
      "basis": "sector",
-     "display": "%19",
-     "tier": "orta dilim"
+     "display": "%6,6",
+     "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
@@ -138,7 +160,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.974675,
+     "value": 0.980151,
      "percentile": 0.2353,
      "basis": "sector",
      "display": "1,0 yıl",
@@ -156,11 +178,46 @@
   [
    "2026-10-25",
    32.11
+  ],
+  [
+   "2026-10-27",
+   39.27
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 989,
+  "rank_start": 917,
+  "score": 0,
+  "rise": 0,
+  "steady": 25,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 6,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   -1,
+   0,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "Base",
   "source": "contract",

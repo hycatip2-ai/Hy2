@@ -1,26 +1,32 @@
 {
- "rank": 299,
+ "rank": 340,
  "slug": "holo",
  "symbol": "HOT",
  "name": "Holo",
  "cmc_id": 2682,
  "graduated": false,
  "chain_flow": null,
+ "us_exchanges": [],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 37,
- "total_exact": 37.24,
+ "total": 33,
+ "total_exact": 32.63,
  "band": "Zayıf",
- "delta": -0.3,
+ "delta": -4.6,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-26",
+ "flags": [
+  {
+   "id": "owner_can_mint",
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi."
+  }
+ ],
+ "date": "2026-10-27",
  "formula_version": "1.2.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "parts": [
   {
    "id": "valuation",
@@ -35,17 +41,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.2,
+   "score": 12.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5882,
-   "tier": "orta dilim",
+   "percentile": 0.7353,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.7353,
+     "percentile": 0.7647,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -72,10 +78,10 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.6667,
+     "percentile": 0.7333,
      "basis": "sector",
      "display": "%0",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   },
@@ -112,19 +118,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.8,
+   "score": 9.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4412,
+   "percentile": 0.4118,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.032695,
+     "value": 0.031666,
      "percentile": 0.1765,
      "basis": "sector",
-     "display": "%3,3",
+     "display": "%3,2",
      "tier": "alt dilim"
     },
     {
@@ -149,7 +155,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2093,
-     "percentile": 0.4062,
+     "percentile": 0.375,
      "basis": "sector",
      "display": "%21",
      "tier": "orta dilim"
@@ -157,7 +163,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.492813,
+     "value": 8.495551,
      "percentile": 0.8529,
      "basis": "sector",
      "display": "8,5 yıl",
@@ -166,7 +172,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -183,6 +196,10 @@
   [
    "2026-10-26",
    37.24
+  ],
+  [
+   "2026-10-27",
+   32.63
   ]
  ],
  "changes": [
@@ -206,26 +223,41 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −2,0)"
     }
    ]
+  },
+  {
+   "date": "2026-10-27",
+   "delta": -4.6,
+   "from": 37.2,
+   "to": 32.6,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kontrat sahibinin yeni token basabildiği tespit edildi.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Kontrat sahibinin yeni token basabildiği tespit edildi. (Uyarı −5,0)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 322,
-  "rank_start": 322,
+  "rank_now": 321,
+  "rank_start": 294,
   "score": 0,
   "rise": 0,
   "steady": 25,
   "calm": 0,
   "weeks_up": 3,
-  "weeks_down": 7,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    0,
-   -1,
+   0,
    1,
    -1,
    -1,
-   -1,
+   0,
    -1,
    1,
    1,
