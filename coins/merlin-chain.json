@@ -1,5 +1,5 @@
 {
- "rank": 329,
+ "rank": 290,
  "slug": "merlin-chain",
  "symbol": "MERL",
  "name": "Merlin Chain",
@@ -10,9 +10,9 @@
  "sector": "infra",
  "sector_name": "Altyapı",
  "total": 34,
- "total_exact": 34.07,
+ "total_exact": 34.47,
  "band": "Zayıf",
- "delta": 0.5,
+ "delta": 0.4,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -23,36 +23,43 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
- "date": "2026-10-27",
- "formula_version": "1.2.0",
+ "earns": null,
+ "supply": {
+  "status": "unchecked",
+  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+ },
+ "date": "2026-10-28",
+ "formula_version": "1.5.0",
  "eligible_for_top": true,
  "penalty": 5.0,
+ "bonus": 0.0,
+ "contract": null,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 9.5,
+   "score": 9.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5208,
+   "percentile": 0.5238,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 6.051859,
-     "percentile": 0.381,
+     "value": 5.906343,
+     "percentile": 0.3889,
      "basis": "sector",
-     "display": "6,05×",
+     "display": "5,91×",
      "tier": "orta dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 1772.418634,
-     "percentile": 0.5714,
+     "value": 1753.883197,
+     "percentile": 0.6,
      "basis": "universe",
-     "display": "1.772×",
+     "display": "1.754×",
      "tier": "orta dilim"
     }
    ]
@@ -60,17 +67,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.8,
+   "score": 10.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.4545,
+   "percentile": 0.4872,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.680863,
-     "percentile": 0.5455,
+     "percentile": 0.5641,
      "basis": "sector",
      "display": "%68",
      "tier": "orta dilim"
@@ -79,7 +86,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.468725,
-     "percentile": 0.5909,
+     "percentile": 0.6154,
      "basis": "sector",
      "display": "1,47×",
      "tier": "orta dilim"
@@ -88,7 +95,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5682,
+     "percentile": 0.5641,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -97,7 +104,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.057126,
-     "percentile": 0.2558,
+     "percentile": 0.2632,
      "basis": "sector",
      "display": "+%5,7",
      "tier": "alt dilim"
@@ -117,16 +124,16 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.5,
+   "score": 4.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1081,
+   "percentile": 0.125,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.622729,
+     "value": 0.624049,
      "percentile": 0.3529,
      "basis": "sector",
      "display": "−%38",
@@ -135,17 +142,17 @@
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.875917,
-     "percentile": 0.1429,
+     "value": 0.894298,
+     "percentile": 0.1667,
      "basis": "sector",
-     "display": "−%12",
+     "display": "−%11",
      "tier": "alt dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.1324,
+     "percentile": 0.1129,
      "basis": "sector",
      "display": "1",
      "tier": "alt dilim"
@@ -155,26 +162,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.6,
+   "score": 8.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2727,
+   "percentile": 0.2308,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.092084,
-     "percentile": 0.2273,
+     "value": 0.091109,
+     "percentile": 0.2051,
      "basis": "sector",
-     "display": "%9,2",
+     "display": "%9,1",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 193.0,
-     "percentile": 0.6591,
+     "percentile": 0.641,
      "basis": "sector",
      "display": "193",
      "tier": "orta dilim"
@@ -183,7 +190,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.294,
-     "percentile": 0.6591,
+     "percentile": 0.641,
      "basis": "sector",
      "display": "%0,29",
      "tier": "orta dilim"
@@ -192,7 +199,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2759,
-     "percentile": 0.2045,
+     "percentile": 0.2051,
      "basis": "sector",
      "display": "%28",
      "tier": "alt dilim"
@@ -200,8 +207,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.527036,
-     "percentile": 0.4773,
+     "value": 2.529774,
+     "percentile": 0.4615,
      "basis": "sector",
      "display": "2,5 yıl",
      "tier": "orta dilim"
@@ -210,7 +217,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3636,
+     "percentile": 0.3667,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -239,6 +246,10 @@
   [
    "2026-10-27",
    34.07
+  ],
+  [
+   "2026-10-28",
+   34.47
   ]
  ],
  "changes": [
@@ -275,10 +286,10 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 442,
-  "rank_start": 564,
+  "rank_now": 451,
+  "rank_start": 566,
   "score": 62,
-  "rise": 67,
+  "rise": 66,
   "steady": 83,
   "calm": 49,
   "weeks_up": 10,
@@ -300,7 +311,7 @@
   ],
   "labels": [],
   "trend": "rising",
-  "supply_share": 0.17,
+  "supply_share": 0.16,
   "eligible": true,
   "window_days": 90,
   "score_change": null,

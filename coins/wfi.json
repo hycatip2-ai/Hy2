@@ -10,9 +10,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 32,
- "total_exact": 32.34,
+ "total_exact": 32.43,
  "band": "Zayıf",
- "delta": -5.1,
+ "delta": 0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -23,10 +23,20 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
- "date": "2026-10-27",
- "formula_version": "1.2.0",
+ "earns": null,
+ "supply": {
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
+ },
+ "date": "2026-10-28",
+ "formula_version": "1.5.0",
  "eligible_for_top": false,
  "penalty": 5.0,
+ "bonus": 0.0,
+ "contract": {
+  "chain": "BNB Chain",
+  "address": "0x90c48855bb69f9d2c261efd0d8c7f35990f2dd6f"
+ },
  "parts": [
   {
    "id": "valuation",
@@ -41,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.5,
+   "score": 5.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0868,
+   "percentile": 0.0642,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.086828,
-     "percentile": 0.0331,
+     "value": 0.086843,
+     "percentile": 0.0275,
      "basis": "sector",
      "display": "%8,7",
      "tier": "alt dilim"
@@ -59,8 +69,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 11.517002,
-     "percentile": 0.0331,
+     "value": 11.515026,
+     "percentile": 0.0275,
      "basis": "sector",
      "display": "11,5×",
      "tier": "alt dilim"
@@ -69,7 +79,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6116,
+     "percentile": 0.5917,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -77,8 +87,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.010671,
-     "percentile": 0.4118,
+     "value": 0.01063,
+     "percentile": 0.4194,
      "basis": "sector",
      "display": "+%1,1",
      "tier": "orta dilim"
@@ -108,26 +118,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.9,
+   "score": 11.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5868,
+   "percentile": 0.5917,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.011263,
-     "percentile": 0.2149,
+     "value": 0.011679,
+     "percentile": 0.2569,
      "basis": "sector",
-     "display": "%1,1",
+     "display": "%1,2",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 22.0,
-     "percentile": 0.2727,
+     "percentile": 0.2661,
      "basis": "sector",
      "display": "22",
      "tier": "alt dilim"
@@ -136,7 +146,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.0783,
-     "percentile": 0.9576,
+     "percentile": 0.9528,
      "basis": "sector",
      "display": "%0,08",
      "tier": "üst dilim"
@@ -145,7 +155,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8644,
+     "percentile": 0.8679,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -153,8 +163,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.913758,
-     "percentile": 0.4132,
+     "value": 1.916496,
+     "percentile": 0.4312,
      "basis": "sector",
      "display": "1,9 yıl",
      "tier": "orta dilim"
@@ -162,14 +172,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -190,6 +193,10 @@
   [
    "2026-10-27",
    32.34
+  ],
+  [
+   "2026-10-28",
+   32.43
   ]
  ],
  "changes": [

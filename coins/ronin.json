@@ -1,5 +1,5 @@
 {
- "rank": 87,
+ "rank": 63,
  "slug": "ronin",
  "symbol": "RON",
  "name": "Ronin",
@@ -10,44 +10,51 @@
  "sector": "infra",
  "sector_name": "Altyapı",
  "total": 53,
- "total_exact": 52.56,
+ "total_exact": 53.17,
  "band": "Orta",
- "delta": 0.9,
+ "delta": 0.6,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
- "date": "2026-10-27",
- "formula_version": "1.2.0",
+ "earns": null,
+ "supply": {
+  "status": "unchecked",
+  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+ },
+ "date": "2026-10-28",
+ "formula_version": "1.5.0",
  "eligible_for_top": true,
  "penalty": 0.0,
+ "bonus": 0.0,
+ "contract": null,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 11.4,
+   "score": 11.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.625,
+   "percentile": 0.619,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 1280.510273,
+     "value": 1320.692232,
      "percentile": 0.5714,
      "basis": "sector",
-     "display": "1.281×",
+     "display": "1.321×",
      "tier": "orta dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 3.999637,
-     "percentile": 0.5714,
+     "value": 4.033999,
+     "percentile": 0.5556,
      "basis": "sector",
-     "display": "4,00×",
+     "display": "4,03×",
      "tier": "orta dilim"
     }
    ]
@@ -55,17 +62,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.7,
+   "score": 13.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7955,
+   "percentile": 0.8205,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.772402,
-     "percentile": 0.6591,
+     "percentile": 0.6667,
      "basis": "sector",
      "display": "%77",
      "tier": "orta dilim"
@@ -74,7 +81,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.294663,
-     "percentile": 0.7045,
+     "percentile": 0.7179,
      "basis": "sector",
      "display": "1,29×",
      "tier": "üst dilim"
@@ -83,7 +90,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.5682,
+     "percentile": 0.5641,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -92,7 +99,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6047,
+     "percentile": 0.6579,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -112,52 +119,52 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 11.7,
+   "score": 12.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6486,
-   "tier": "orta dilim",
+   "percentile": 0.7188,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.676531,
+     "value": 0.674756,
      "percentile": 0.4118,
      "basis": "sector",
-     "display": "−%32",
+     "display": "−%33",
      "tier": "orta dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.099034,
-     "percentile": 0.619,
+     "value": 1.131189,
+     "percentile": 0.7222,
      "basis": "sector",
-     "display": "+%9,9",
-     "tier": "orta dilim"
+     "display": "+%13",
+     "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 9.0,
-     "percentile": 0.6618,
+     "percentile": 0.6774,
      "basis": "sector",
      "display": "9",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "daily_active_addresses",
      "name": "Günlük aktif adres",
-     "value": 10897.833333,
+     "value": 10881.428571,
      "percentile": 0.8571,
      "basis": "universe",
-     "display": "10.898",
+     "display": "10.881",
      "tier": "üst dilim"
     },
     {
      "id": "chain_profit",
      "name": "Zincir kârı (90 gün)",
-     "value": 1390.674728,
+     "value": 1402.667388,
      "percentile": 0.4,
      "basis": "universe",
      "display": "1,4 bin $",
@@ -168,26 +175,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.1,
+   "score": 7.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2045,
+   "percentile": 0.1282,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.047841,
-     "percentile": 0.1136,
+     "value": 0.046714,
+     "percentile": 0.1026,
      "basis": "sector",
-     "display": "%4,8",
+     "display": "%4,7",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 118.0,
-     "percentile": 0.1818,
+     "percentile": 0.1795,
      "basis": "sector",
      "display": "118",
      "tier": "alt dilim"
@@ -196,7 +203,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4764,
-     "percentile": 0.2727,
+     "percentile": 0.2564,
      "basis": "sector",
      "display": "%0,48",
      "tier": "alt dilim"
@@ -205,16 +212,16 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2333,
-     "percentile": 0.3409,
+     "percentile": 0.3077,
      "basis": "sector",
      "display": "%23",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.966461,
-     "percentile": 0.7273,
+     "value": 4.969199,
+     "percentile": 0.7436,
      "basis": "sector",
      "display": "5,0 yıl",
      "tier": "üst dilim"
@@ -223,7 +230,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3636,
+     "percentile": 0.3667,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -261,6 +268,10 @@
   [
    "2026-10-27",
    52.56
+  ],
+  [
+   "2026-10-28",
+   53.17
   ]
  ],
  "changes": [
@@ -282,13 +293,13 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 426,
-  "rank_start": 420,
+  "rank_now": 422,
+  "rank_start": 409,
   "score": 0,
   "rise": 0,
-  "steady": 58,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 7,
+  "weeks_up": 6,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
@@ -297,7 +308,7 @@
    1,
    -1,
    -1,
-   1,
+   0,
    1,
    1,
    1,

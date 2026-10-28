@@ -6,21 +6,34 @@
  "cmc_id": 39564,
  "graduated": false,
  "chain_flow": null,
+ "us_exchanges": [
+  "Coinbase"
+ ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 38,
- "total_exact": 38.43,
+ "total": 39,
+ "total_exact": 39.35,
  "band": "Zayıf",
- "delta": -0.6,
+ "delta": null,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-25",
- "formula_version": "1.2.0",
+ "earns": null,
+ "supply": {
+  "status": "unchecked",
+  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+ },
+ "date": "2026-10-28",
+ "formula_version": "1.5.0",
  "eligible_for_top": false,
  "penalty": 0.0,
+ "bonus": 0.0,
+ "contract": {
+  "chain": "Ethereum",
+  "address": "0x7977bf3e7e0c954d12cdca3e013adaf57e0b06e0"
+ },
  "parts": [
   {
    "id": "valuation",
@@ -35,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.2,
+   "score": 6.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.124,
+   "percentile": 0.1743,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.182255,
-     "percentile": 0.1322,
+     "percentile": 0.1284,
      "basis": "sector",
      "display": "%18",
      "tier": "alt dilim"
@@ -54,7 +67,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.48682,
-     "percentile": 0.1818,
+     "percentile": 0.1743,
      "basis": "sector",
      "display": "5,49×",
      "tier": "alt dilim"
@@ -63,9 +76,18 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6116,
+     "percentile": 0.5917,
      "basis": "sector",
      "display": "Var",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.002865,
+     "percentile": 0.4731,
+     "basis": "sector",
+     "display": "+%0,3",
      "tier": "orta dilim"
     }
    ]
@@ -93,17 +115,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.3,
+   "score": 11.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6694,
-   "tier": "orta dilim",
+   "percentile": 0.7202,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.9132,
+     "percentile": 0.922,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -112,7 +134,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 152.0,
-     "percentile": 0.7438,
+     "percentile": 0.7431,
      "basis": "sector",
      "display": "152",
      "tier": "üst dilim"
@@ -121,7 +143,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3475,
-     "percentile": 0.5678,
+     "percentile": 0.5943,
      "basis": "sector",
      "display": "%0,35",
      "tier": "orta dilim"
@@ -130,7 +152,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.16,
-     "percentile": 0.5,
+     "percentile": 0.5094,
      "basis": "sector",
      "display": "%16",
      "tier": "orta dilim"
@@ -138,8 +160,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.640657,
-     "percentile": 0.0909,
+     "value": 0.648871,
+     "percentile": 0.1101,
      "basis": "sector",
      "display": "0,6 yıl",
      "tier": "alt dilim"
@@ -160,11 +182,38 @@
   [
    "2026-10-25",
    38.43
+  ],
+  [
+   "2026-10-28",
+   39.35
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 995,
+  "rank_start": 937,
+  "score": 0,
+  "rise": 0,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 2,
+  "weeks_down": 2,
+  "weeks_total": 4,
+  "weekly": [
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": null,
  "investors": [],
  "investors_source": null,

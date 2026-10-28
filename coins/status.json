@@ -1,26 +1,42 @@
 {
- "rank": 19,
+ "rank": 45,
  "slug": "status",
  "symbol": "SNT",
  "name": "Status",
  "cmc_id": 1759,
  "graduated": false,
  "chain_flow": null,
+ "us_exchanges": [],
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 60,
- "total_exact": 60.48,
+ "total": 56,
+ "total_exact": 55.57,
  "band": "Orta",
  "delta": 0.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [],
- "date": "2026-10-26",
- "formula_version": "1.2.0",
+ "flags": [
+  {
+   "id": "honeypot",
+   "text": "GoPlus satışı engelleyen kontrat işareti verdi (köklü ve bol işlem gören coin olduğu için elenmedi; büyük olasılıkla yanlış alarm)."
+  }
+ ],
+ "earns": null,
+ "supply": {
+  "status": "unchecked",
+  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+ },
+ "date": "2026-10-28",
+ "formula_version": "1.5.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
+ "bonus": 0.0,
+ "contract": {
+  "chain": "Ethereum",
+  "address": "0x744d70fdbe2ba4cf95131626614a1763df805b9e"
+ },
  "parts": [
   {
    "id": "valuation",
@@ -38,7 +54,7 @@
    "score": 10.1,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.5769,
+   "percentile": 0.5385,
    "tier": "orta dilim",
    "metrics": [
     {
@@ -112,19 +128,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.5,
+   "score": 11.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6538,
-   "tier": "orta dilim",
+   "percentile": 0.6923,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.108893,
+     "value": 0.100823,
      "percentile": 0.5385,
      "basis": "sector",
-     "display": "%11",
+     "display": "%10",
      "tier": "orta dilim"
     },
     {
@@ -157,7 +173,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.327858,
+     "value": 9.333333,
      "percentile": 0.8846,
      "basis": "sector",
      "display": "9,3 yıl",
@@ -167,7 +183,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2531,
+     "percentile": 0.2803,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -192,6 +208,14 @@
   [
    "2026-10-26",
    60.48
+  ],
+  [
+   "2026-10-27",
+   55.48
+  ],
+  [
+   "2026-10-28",
+   55.57
   ]
  ],
  "changes": [
@@ -213,6 +237,21 @@
      "part": "supply",
      "delta": 3.17,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,2)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "delta": -5.0,
+   "from": 60.5,
+   "to": 55.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "GoPlus satışı engelleyen kontrat işareti verdi (köklü ve bol işlem gören coin olduğu için elenmedi; büyük olasılıkla yanlış alarm).",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "GoPlus satışı engelleyen kontrat işareti verdi (köklü ve bol işlem gören coin olduğu için elenmedi; büyük olasılıkla yanlış alarm). (Uyarı −5,0)"
     }
    ]
   }
@@ -240,13 +279,13 @@
   }
  ],
  "trend": {
-  "rank_now": 482,
-  "rank_start": 569,
-  "score": 19,
-  "rise": 13,
-  "steady": 33,
+  "rank_now": 492,
+  "rank_start": 487,
+  "score": 26,
+  "rise": 24,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 4,
+  "weeks_up": 5,
   "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
@@ -254,17 +293,26 @@
    -1,
    1,
    1,
-   -1,
+   1,
    1,
    -1,
    1,
    -1,
-   0,
+   -1,
    -1,
    -1
   ],
-  "labels": [],
-  "trend": "flat",
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,

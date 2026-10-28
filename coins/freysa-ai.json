@@ -5,25 +5,35 @@
  "name": "Freysa",
  "cmc_id": 34330,
  "graduated": false,
- "chain_flow": null,
+ "chain_flow": "Base",
  "us_exchanges": [
   "Coinbase"
  ],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
  "total": 49,
- "total_exact": 49.45,
+ "total_exact": 49.14,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": -0.3,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
- "date": "2026-10-27",
- "formula_version": "1.2.0",
+ "earns": null,
+ "supply": {
+  "status": "unchecked",
+  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+ },
+ "date": "2026-10-28",
+ "formula_version": "1.5.0",
  "eligible_for_top": false,
  "penalty": 0.0,
+ "bonus": 0.0,
+ "contract": {
+  "chain": "Base",
+  "address": "0xb33ff54b9f7242ef1593d2c9bcd8f9df46c77935"
+ },
  "parts": [
   {
    "id": "valuation",
@@ -38,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.9,
+   "score": 14.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.9638,
+   "percentile": 0.9444,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8986,
+     "percentile": 0.9048,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -57,7 +67,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9928,
+     "percentile": 0.9841,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -66,7 +76,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.558,
+     "percentile": 0.5476,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
@@ -75,7 +85,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5234,
+     "percentile": 0.5345,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -105,26 +115,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.5,
+   "score": 10.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5217,
+   "percentile": 0.4921,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.048176,
-     "percentile": 0.2754,
+     "value": 0.048854,
+     "percentile": 0.2222,
      "basis": "sector",
-     "display": "%4,8",
+     "display": "%4,9",
      "tier": "alt dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 52.0,
-     "percentile": 0.2464,
+     "percentile": 0.2381,
      "basis": "sector",
      "display": "52",
      "tier": "alt dilim"
@@ -133,7 +143,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4477,
-     "percentile": 0.5,
+     "percentile": 0.4677,
      "basis": "sector",
      "display": "%0,45",
      "tier": "orta dilim"
@@ -142,7 +152,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8603,
+     "percentile": 0.8629,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -150,8 +160,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.905544,
-     "percentile": 0.7536,
+     "value": 1.908282,
+     "percentile": 0.746,
      "basis": "sector",
      "display": "1,9 yıl",
      "tier": "üst dilim"
@@ -180,23 +190,27 @@
   [
    "2026-10-27",
    49.45
+  ],
+  [
+   "2026-10-28",
+   49.14
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 769,
-  "rank_start": 642,
+  "rank_now": 773,
+  "rank_start": 649,
   "score": 0,
   "rise": 0,
-  "steady": 17,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 2,
+  "weeks_up": 4,
   "weeks_down": 8,
   "weeks_total": 12,
   "weekly": [
    1,
-   0,
+   1,
    1,
    -1,
    -1,
@@ -204,7 +218,7 @@
    -1,
    -1,
    -1,
-   0,
+   1,
    -1,
    -1
   ],
@@ -219,8 +233,8 @@
  "chain": {
   "name": "Base",
   "source": "contract",
-  "flow": false,
-  "flow_rank": null
+  "flow": true,
+  "flow_rank": 3
  },
  "investors": [],
  "investors_source": null,
