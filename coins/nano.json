@@ -1,5 +1,5 @@
 {
- "rank": 30,
+ "rank": 48,
  "slug": "nano",
  "symbol": "XNO",
  "name": "Nano",
@@ -11,10 +11,10 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 57,
- "total_exact": 57.44,
+ "total": 55,
+ "total_exact": 54.66,
  "band": "Orta",
- "delta": 0.0,
+ "delta": -2.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,7 +25,7 @@
   "status": "unchecked",
   "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
  },
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "formula_version": "1.5.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -45,17 +45,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.2,
+   "score": 16.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9924,
+   "percentile": 0.9545,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8939,
+     "percentile": 0.8788,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -64,7 +64,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.947,
+     "percentile": 0.9091,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -82,7 +82,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7109,
+     "percentile": 0.7266,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -102,39 +102,39 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.4,
+   "score": 12.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7583,
+   "percentile": 0.6833,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 5.0,
-     "percentile": 0.7212,
+     "value": 4.0,
+     "percentile": 0.625,
      "basis": "sector",
-     "display": "5",
-     "tier": "üst dilim"
+     "display": "4",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.1,
+   "score": 9.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3788,
+   "percentile": 0.3636,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.039919,
-     "percentile": 0.2424,
+     "value": 0.04068,
+     "percentile": 0.2121,
      "basis": "sector",
-     "display": "%4,0",
+     "display": "%4,1",
      "tier": "alt dilim"
     },
     {
@@ -150,7 +150,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5621,
-     "percentile": 0.3231,
+     "percentile": 0.3077,
      "basis": "sector",
      "display": "%0,56",
      "tier": "alt dilim"
@@ -167,16 +167,23 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.648186,
+     "value": 9.650924,
      "percentile": 0.9545,
      "basis": "sector",
-     "display": "9,6 yıl",
+     "display": "9,7 yıl",
      "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kod deposundaki çalışma son 3 ayda hafifçe azaldı.",
+   "part": "usage",
+   "delta": -2.41,
+   "label": "Kod deposundaki çalışma son 3 ayda hafifçe azaldı. (Kullanım −2,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -205,19 +212,39 @@
   [
    "2026-10-29",
    57.44
+  ],
+  [
+   "2026-10-30",
+   54.66
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-30",
+   "delta": -2.8,
+   "from": 57.4,
+   "to": 54.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kod deposundaki çalışma son 3 ayda hafifçe azaldı.",
+     "part": "usage",
+     "delta": -2.41,
+     "label": "Kod deposundaki çalışma son 3 ayda hafifçe azaldı. (Kullanım −2,4)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 403,
-  "rank_start": 311,
+  "rank_now": 390,
+  "rank_start": 312,
   "score": 0,
   "rise": 0,
   "steady": 17,
   "calm": 0,
   "weeks_up": 2,
-  "weeks_down": 9,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -229,9 +256,9 @@
    1,
    0,
    -1,
-   -1,
+   0,
    1,
-   -1
+   0
   ],
   "labels": [],
   "trend": "falling",

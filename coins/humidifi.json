@@ -1,51 +1,61 @@
 {
- "rank": 27,
+ "rank": 9,
  "slug": "humidifi",
  "symbol": "WET",
  "name": "Humidifi",
  "cmc_id": 39049,
  "graduated": false,
  "chain_flow": null,
- "us_exchanges": [],
+ "us_exchanges": [
+  "Coinbase"
+ ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 60,
- "total_exact": 59.7,
+ "total": 61,
+ "total_exact": 60.84,
  "band": "Orta",
- "delta": 2.5,
+ "delta": null,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
- "date": "2026-10-25",
+ "date": "2026-10-30",
  "formula_version": "1.5.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
- "contract": null,
+ "contract": {
+  "chain": "Solana",
+  "address": "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U"
+ },
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 17.8,
+   "score": 19.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9385,
+   "percentile": 0.9722,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 4.951194,
-     "percentile": 0.8889,
+     "value": 4.98213,
+     "percentile": 0.9655,
      "basis": "sector",
-     "display": "4,95×",
+     "display": "4,98×",
      "tier": "üst dilim"
     }
    ]
@@ -53,17 +63,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.4,
+   "score": 8.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0894,
+   "percentile": 0.3291,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.17075,
-     "percentile": 0.0894,
+     "percentile": 0.1013,
      "basis": "sector",
      "display": "%17",
      "tier": "alt dilim"
@@ -72,7 +82,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.856525,
-     "percentile": 0.0976,
+     "percentile": 0.1013,
      "basis": "sector",
      "display": "5,86×",
      "tier": "alt dilim"
@@ -81,27 +91,36 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 1.0,
-     "percentile": 0.6179,
+     "percentile": 0.5949,
      "basis": "sector",
      "display": "Var",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": -0.25761,
+     "percentile": 0.9306,
+     "basis": "sector",
+     "display": "−%26",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 4.5,
+   "score": 5.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2273,
+   "percentile": 0.2619,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2273,
+     "percentile": 0.2619,
      "basis": "sector",
      "display": "%0",
      "tier": "alt dilim"
@@ -120,10 +139,10 @@
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 8.815276,
+     "value": 6.298552,
      "percentile": 1.0,
      "basis": "sector",
-     "display": "+%782",
+     "display": "+%530",
      "tier": "üst dilim"
     }
    ]
@@ -131,17 +150,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.1,
+   "score": 10.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4878,
+   "percentile": 0.4937,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
      "value": 0.5,
-     "percentile": 0.8943,
+     "percentile": 0.8797,
      "basis": "sector",
      "display": "%50",
      "tier": "üst dilim"
@@ -150,7 +169,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 155.0,
-     "percentile": 0.4634,
+     "percentile": 0.5316,
      "basis": "sector",
      "display": "155",
      "tier": "orta dilim"
@@ -159,25 +178,25 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2758,
-     "percentile": 0.6167,
+     "percentile": 0.6883,
      "basis": "sector",
      "display": "%0,28",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.12,
-     "percentile": 0.7375,
+     "percentile": 0.6429,
      "basis": "sector",
      "display": "%12",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.892539,
-     "percentile": 0.1707,
+     "value": 0.906229,
+     "percentile": 0.2152,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -186,7 +205,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.1447,
+     "percentile": 0.1705,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -194,14 +213,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "İşlem hacmi piyasa değerine göre güçlendi.",
-   "part": "liquidity",
-   "delta": 2.57,
-   "label": "İşlem hacmi piyasa değerine göre güçlendi. (Likidite +2,6)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-24",
@@ -210,6 +222,10 @@
   [
    "2026-10-25",
    59.7
+  ],
+  [
+   "2026-10-30",
+   60.84
   ]
  ],
  "changes": [
@@ -230,7 +246,25 @@
   }
  ],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 987,
+  "rank_start": 718,
+  "score": 0,
+  "rise": 0,
+  "steady": 0,
+  "calm": 0,
+  "weeks_up": 0,
+  "weeks_down": 0,
+  "weeks_total": 0,
+  "weekly": [],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "Solana",
   "source": "contract",
@@ -243,6 +277,6 @@
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/humidifi",
  "research": null
 }

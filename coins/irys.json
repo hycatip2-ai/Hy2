@@ -1,5 +1,5 @@
 {
- "rank": 232,
+ "rank": 254,
  "slug": "irys",
  "symbol": "IRYS",
  "name": "Irys",
@@ -11,24 +11,29 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 38,
- "total_exact": 38.35,
+ "total": 32,
+ "total_exact": 32.49,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": -5.9,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "top10_concentration",
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  }
+ ],
  "earns": null,
  "supply": {
   "status": "unchecked",
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "formula_version": "1.5.0",
  "eligible_for_top": true,
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": null,
  "parts": [
@@ -55,7 +60,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.256681,
-     "percentile": 0.2258,
+     "percentile": 0.2222,
      "basis": "sector",
      "display": "%26",
      "tier": "alt dilim"
@@ -64,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.895882,
-     "percentile": 0.2581,
+     "percentile": 0.2593,
      "basis": "sector",
      "display": "3,90×",
      "tier": "alt dilim"
@@ -73,7 +78,7 @@
      "id": "has_max_supply",
      "name": "Azami arz var mı",
      "value": 0.0,
-     "percentile": 0.1613,
+     "percentile": 0.1481,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
@@ -82,7 +87,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.283407,
-     "percentile": 0.1481,
+     "percentile": 0.1739,
      "basis": "sector",
      "display": "+%28",
      "tier": "alt dilim"
@@ -102,17 +107,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 9.1,
+   "score": 8.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4565,
+   "percentile": 0.425,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.4565,
+     "percentile": 0.425,
      "basis": "sector",
      "display": "3",
      "tier": "orta dilim"
@@ -122,26 +127,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.7,
+   "score": 12.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8387,
+   "percentile": 0.8148,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.395687,
-     "percentile": 0.7742,
+     "value": 0.414045,
+     "percentile": 0.7407,
      "basis": "sector",
-     "display": "%40",
+     "display": "%41",
      "tier": "üst dilim"
     },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 168.0,
-     "percentile": 0.6129,
+     "percentile": 0.5926,
      "basis": "sector",
      "display": "168",
      "tier": "orta dilim"
@@ -150,7 +155,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2033,
-     "percentile": 0.8966,
+     "percentile": 0.88,
      "basis": "sector",
      "display": "%0,20",
      "tier": "üst dilim"
@@ -159,16 +164,16 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.129,
-     "percentile": 0.6897,
+     "percentile": 0.64,
      "basis": "sector",
      "display": "%13",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.925394,
-     "percentile": 0.1935,
+     "value": 0.928131,
+     "percentile": 0.2222,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -176,7 +181,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -201,29 +213,64 @@
   [
    "2026-10-29",
    38.35
+  ],
+  [
+   "2026-10-30",
+   32.49
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-10-30",
+   "delta": -5.9,
+   "from": 38.4,
+   "to": 32.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-30",
+   "delta": -5.9,
+   "from": 38.4,
+   "to": 32.5,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 331,
-  "rank_start": 384,
-  "score": 57,
-  "rise": 93,
-  "steady": 50,
+  "rank_now": 334,
+  "rank_start": 387,
+  "score": 52,
+  "rise": 89,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 6,
-  "weeks_down": 6,
+  "weeks_up": 5,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    1,
    -1,
    -1,
-   -1,
+   0,
    1,
    -1,
    1,
-   1,
+   0,
    -1,
    -1,
    1,
@@ -233,6 +280,10 @@
    {
     "id": "spike",
     "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
    }
   ],
   "trend": "rising",

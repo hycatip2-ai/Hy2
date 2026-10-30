@@ -1,5 +1,5 @@
 {
- "rank": 37,
+ "rank": 20,
  "slug": "pharos",
  "symbol": "PROS",
  "name": "Pharos",
@@ -11,10 +11,10 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 56,
- "total_exact": 56.41,
+ "total": 59,
+ "total_exact": 58.9,
  "band": "Orta",
- "delta": -0.3,
+ "delta": 2.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -25,7 +25,7 @@
   "status": "unchecked",
   "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
  },
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "formula_version": "1.5.0",
  "eligible_for_top": true,
  "penalty": 0.0,
@@ -44,10 +44,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 1.134213,
+     "value": 1.102416,
      "percentile": 0.9268,
      "basis": "sector",
-     "display": "1,13×",
+     "display": "1,10×",
      "tier": "üst dilim"
     }
    ]
@@ -55,10 +55,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.9,
+   "score": 5.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.0455,
+   "percentile": 0.0303,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -92,7 +92,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7109,
+     "percentile": 0.7266,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -112,7 +112,7 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 15.9,
+   "score": 16.7,
    "has_data": true,
    "weight": 25,
    "percentile": 0.8667,
@@ -121,19 +121,19 @@
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 9.54665,
+     "value": 9.433434,
      "percentile": 0.9487,
      "basis": "sector",
-     "display": "+%855",
+     "display": "+%843",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 5.0,
-     "percentile": 0.7212,
+     "value": 6.0,
+     "percentile": 0.7788,
      "basis": "sector",
-     "display": "5",
+     "display": "6",
      "tier": "üst dilim"
     }
    ]
@@ -141,19 +141,19 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.8,
+   "score": 10.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3485,
+   "percentile": 0.5606,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "volume_to_mc",
      "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.036159,
+     "value": 0.039032,
      "percentile": 0.197,
      "basis": "sector",
-     "display": "%3,6",
+     "display": "%3,9",
      "tier": "alt dilim"
     },
     {
@@ -168,25 +168,25 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.2292,
-     "percentile": 0.8,
+     "value": 0.2428,
+     "percentile": 0.7385,
      "basis": "sector",
-     "display": "%0,23",
+     "display": "%0,24",
      "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.2,
-     "percentile": 0.4308,
+     "value": 0.0,
+     "percentile": 0.9692,
      "basis": "sector",
-     "display": "%20",
-     "tier": "orta dilim"
+     "display": "%0",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.517454,
+     "value": 0.520192,
      "percentile": 0.0303,
      "basis": "sector",
      "display": "0,5 yıl",
@@ -195,7 +195,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+   "part": "liquidity",
+   "delta": 1.43,
+   "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +1,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -224,26 +231,46 @@
   [
    "2026-10-29",
    56.41
+  ],
+  [
+   "2026-10-30",
+   58.9
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-30",
+   "delta": 2.5,
+   "from": 56.4,
+   "to": 58.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+     "part": "liquidity",
+     "delta": 1.43,
+     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +1,4)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 262,
-  "rank_start": 293,
-  "score": 48,
-  "rise": 63,
-  "steady": 58,
-  "calm": 0,
-  "weeks_up": 7,
-  "weeks_down": 2,
+  "rank_now": 266,
+  "rank_start": 297,
+  "score": 54,
+  "rise": 65,
+  "steady": 67,
+  "calm": 5,
+  "weeks_up": 8,
+  "weeks_down": 3,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
    0,
-   0,
-   0,
+   -1,
+   1,
    1,
    1,
    1,
@@ -256,10 +283,6 @@
    {
     "id": "spike",
     "text": "Ani sıçrama"
-   },
-   {
-    "id": "wavy",
-    "text": "Dalgalı"
    }
   ],
   "trend": "rising",
