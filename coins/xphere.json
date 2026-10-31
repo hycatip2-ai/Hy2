@@ -1,5 +1,5 @@
 {
- "rank": 163,
+ "rank": null,
  "slug": "xphere",
  "symbol": "XP",
  "name": "Xphere",
@@ -9,23 +9,30 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 42,
- "total_exact": 42.34,
+ "total": 40,
+ "total_exact": 40.19,
  "band": "Zayıf",
- "delta": 0.8,
+ "delta": 1.0,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler; arzın yıllık artışı henüz ölçülemedi (en az 6 aylık geçmiş gerekir). Kendin araştır."
  },
+ "revenue_unmeasured": false,
  "date": "2026-10-30",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "gelir",
+  "gelir trendi",
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -33,7 +40,7 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.8,
+   "score": 7.3,
    "has_data": true,
    "weight": 20,
    "percentile": 0.4286,
@@ -43,7 +50,7 @@
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
      "value": 57.898609,
-     "percentile": 0.3902,
+     "percentile": 0.3654,
      "basis": "sector",
      "display": "57,9×",
      "tier": "orta dilim"
@@ -53,17 +60,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.3,
+   "score": 10.6,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6818,
-   "tier": "üst dilim",
+   "percentile": 0.5606,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8788,
+     "percentile": 0.8818,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -72,25 +79,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.794281,
-     "percentile": 0.3939,
+     "percentile": 0.4165,
      "basis": "sector",
      "display": "1,79×",
      "tier": "orta dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.697,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "üst dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.065542,
-     "percentile": 0.2969,
+     "percentile": 0.2937,
      "basis": "sector",
      "display": "+%6,6",
      "tier": "alt dilim"
@@ -120,26 +118,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.5,
+   "score": 7.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2879,
+   "percentile": 0.2273,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.266588,
-     "percentile": 0.6364,
-     "basis": "sector",
-     "display": "%27",
-     "tier": "orta dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 10.0,
-     "percentile": 0.0303,
+     "percentile": 0.0356,
      "basis": "sector",
      "display": "10",
      "tier": "alt dilim"
@@ -148,7 +137,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6155,
-     "percentile": 0.2154,
+     "percentile": 0.2107,
      "basis": "sector",
      "display": "%0,62",
      "tier": "alt dilim"
@@ -157,7 +146,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.9692,
+     "percentile": 0.9552,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -166,7 +155,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 1.61807,
-     "percentile": 0.2727,
+     "percentile": 0.2968,
      "basis": "sector",
      "display": "1,6 yıl",
      "tier": "alt dilim"
@@ -178,87 +167,77 @@
  "history": [
   [
    "2026-10-23",
-   40.07
+   39.33
   ],
   [
    "2026-10-24",
-   44.31
+   43.89
   ],
   [
    "2026-10-25",
-   42.49
+   41.0
   ],
   [
    "2026-10-26",
-   42.22
+   40.77
   ],
   [
    "2026-10-27",
-   41.38
+   39.54
   ],
   [
    "2026-10-28",
-   42.9
+   40.69
   ],
   [
    "2026-10-29",
-   41.52
+   39.18
   ],
   [
    "2026-10-30",
-   42.34
+   40.19
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": 4.2,
-   "from": 40.1,
-   "to": 44.3,
+   "delta": 4.6,
+   "from": 39.3,
+   "to": 43.9,
    "event": false,
    "reasons": [
     {
-     "text": "İşlem hacmi piyasa değerine göre güçlendi.",
+     "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 3.58,
-     "label": "İşlem hacmi piyasa değerine göre güçlendi. (Likidite +3,6)"
+     "delta": 3.38,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +3,4)"
+    },
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
+     "part": "supply",
+     "delta": 1.38,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Arz +1,4)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": -2.9,
+   "from": 43.9,
+   "to": 41.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.78,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,8)"
     }
    ]
   }
  ],
  "events": [],
- "trend": {
-  "rank_now": 592,
-  "rank_start": 357,
-  "score": 0,
-  "rise": 0,
-  "steady": 25,
-  "calm": 0,
-  "weeks_up": 3,
-  "weeks_down": 8,
-  "weeks_total": 12,
-  "weekly": [
-   1,
-   -1,
-   -1,
-   -1,
-   -1,
-   1,
-   -1,
-   -1,
-   -1,
-   0,
-   1,
-   -1
-  ],
-  "labels": [],
-  "trend": "falling",
-  "supply_share": 0.0,
-  "eligible": false,
-  "window_days": 90,
-  "score_change": null,
-  "double": false
- },
+ "trend": null,
  "chain": {
   "name": "Xphere",
   "source": "native",

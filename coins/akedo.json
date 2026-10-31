@@ -9,23 +9,28 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 40,
- "total_exact": 39.86,
+ "total": 39,
+ "total_exact": 38.93,
  "band": "Zayıf",
- "delta": 0.8,
+ "delta": 0.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
- "date": "2026-10-30",
- "formula_version": "1.5.0",
+ "revenue_unmeasured": true,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
  "eligible_for_top": false,
+ "missing": [
+  "kullanım kanıtı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
@@ -46,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.5,
+   "score": 6.4,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.2075,
+   "percentile": 0.25,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.227963,
-     "percentile": 0.1509,
+     "percentile": 0.1668,
      "basis": "sector",
      "display": "%23",
      "tier": "alt dilim"
@@ -65,25 +70,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.386686,
-     "percentile": 0.3019,
+     "percentile": 0.2152,
      "basis": "sector",
      "display": "4,39×",
      "tier": "alt dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.5377,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5102,
+     "percentile": 0.5738,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -113,26 +109,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.5,
+   "score": 13.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.7925,
+   "percentile": 0.9615,
    "tier": "üst dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.294152,
-     "percentile": 0.6038,
-     "basis": "sector",
-     "display": "%29",
-     "tier": "orta dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 201.0,
-     "percentile": 0.9057,
+     "percentile": 0.8597,
      "basis": "sector",
      "display": "201",
      "tier": "üst dilim"
@@ -141,7 +128,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2703,
-     "percentile": 0.7885,
+     "percentile": 0.7797,
      "basis": "sector",
      "display": "%0,27",
      "tier": "üst dilim"
@@ -150,19 +137,19 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0714,
-     "percentile": 0.5385,
+     "percentile": 0.7085,
      "basis": "sector",
      "display": "%7,1",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.196441,
-     "percentile": 0.283,
+     "value": 1.199179,
+     "percentile": 0.352,
      "basis": "sector",
      "display": "1,2 yıl",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     }
    ]
   }
@@ -171,48 +158,52 @@
  "history": [
   [
    "2026-10-23",
-   38.92
+   37.01
   ],
   [
    "2026-10-24",
-   37.9
+   36.87
   ],
   [
    "2026-10-25",
-   38.93
+   37.36
   ],
   [
    "2026-10-26",
-   38.89
+   37.26
   ],
   [
    "2026-10-27",
-   38.98
+   37.27
   ],
   [
    "2026-10-28",
-   39.23
+   37.61
   ],
   [
    "2026-10-29",
-   39.09
+   37.55
   ],
   [
    "2026-10-30",
-   39.86
+   38.46
+  ],
+  [
+   "2026-10-31",
+   38.93
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 217,
-  "rank_start": 237,
-  "score": 69,
-  "rise": 100,
+  "rank_now": 219,
+  "rank_start": 240,
+  "score": 66,
+  "rise": 99,
   "steady": 58,
-  "calm": 29,
+  "calm": 16,
   "weeks_up": 7,
-  "weeks_down": 5,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    1,
@@ -224,14 +215,19 @@
    1,
    -1,
    -1,
-   -1,
+   0,
    1,
    -1
   ],
-  "labels": [],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   }
+  ],
   "trend": "rising",
   "supply_share": 0.0,
-  "eligible": true,
+  "eligible": false,
   "window_days": 90,
   "score_change": null,
   "double": false

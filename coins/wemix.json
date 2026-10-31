@@ -1,5 +1,5 @@
 {
- "rank": 63,
+ "rank": null,
  "slug": "wemix",
  "symbol": "WEMIX",
  "name": "WEMIX",
@@ -9,23 +9,29 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 52,
- "total_exact": 52.34,
+ "total": 53,
+ "total_exact": 53.21,
  "band": "Orta",
- "delta": 0.0,
+ "delta": 0.6,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+  "status": "ok",
+  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; azami arza kadar en fazla %5,2 yer kaldı."
  },
- "date": "2026-10-30",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "revenue_unmeasured": false,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "gelir",
+  "gelir trendi"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -33,19 +39,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 9.3,
+   "score": 8.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5476,
+   "percentile": 0.561,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 26.737097,
-     "percentile": 0.4634,
+     "value": 27.405083,
+     "percentile": 0.4238,
      "basis": "sector",
-     "display": "26,7×",
+     "display": "27,4×",
      "tier": "orta dilim"
     }
    ]
@@ -53,17 +59,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.7,
+   "score": 12.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7727,
-   "tier": "üst dilim",
+   "percentile": 0.6406,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.89162,
-     "percentile": 0.6212,
+     "percentile": 0.6654,
      "basis": "sector",
      "display": "%89",
      "tier": "orta dilim"
@@ -72,25 +78,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.179616,
-     "percentile": 0.6667,
+     "percentile": 0.6671,
      "basis": "sector",
      "display": "1,18×",
      "tier": "orta dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.697,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "üst dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.004048,
-     "percentile": 0.5469,
+     "percentile": 0.489,
      "basis": "sector",
      "display": "+%0,4",
      "tier": "orta dilim"
@@ -110,26 +107,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 13.8,
+   "score": 14.8,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.75,
+   "percentile": 0.7966,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 6631.337163,
+     "value": 6758.128306,
      "percentile": 1.0,
      "basis": "sector",
-     "display": "+%663.034",
+     "display": "+%675.713",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.5385,
+     "percentile": 0.6079,
      "basis": "sector",
      "display": "3",
      "tier": "orta dilim"
@@ -139,26 +136,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.2,
+   "score": 7.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0909,
+   "percentile": 0.2188,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.007899,
-     "percentile": 0.0303,
-     "basis": "sector",
-     "display": "%0,8",
-     "tier": "alt dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 65.0,
-     "percentile": 0.2121,
+     "percentile": 0.2061,
      "basis": "sector",
      "display": "65",
      "tier": "alt dilim"
@@ -167,7 +155,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5896,
-     "percentile": 0.2615,
+     "percentile": 0.2906,
      "basis": "sector",
      "display": "%0,59",
      "tier": "alt dilim"
@@ -176,7 +164,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.4385,
+     "percentile": 0.3884,
      "basis": "sector",
      "display": "%20",
      "tier": "orta dilim"
@@ -184,11 +172,11 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.001369,
-     "percentile": 0.6212,
+     "value": 6.004107,
+     "percentile": 0.6714,
      "basis": "sector",
      "display": "6,0 yıl",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   }
@@ -197,36 +185,40 @@
  "history": [
   [
    "2026-10-28",
-   53.8
+   53.92
   ],
   [
    "2026-10-29",
-   52.33
+   52.6
   ],
   [
    "2026-10-30",
-   52.34
+   52.58
+  ],
+  [
+   "2026-10-31",
+   53.21
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 300,
-  "rank_start": 170,
+  "rank_now": 296,
+  "rank_start": 171,
   "score": 0,
   "rise": 0,
   "steady": 17,
   "calm": 0,
   "weeks_up": 2,
-  "weeks_down": 8,
+  "weeks_down": 10,
   "weeks_total": 12,
   "weekly": [
    1,
-   0,
    -1,
    -1,
    -1,
-   0,
+   -1,
+   -1,
    -1,
    -1,
    -1,

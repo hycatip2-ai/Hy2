@@ -1,5 +1,5 @@
 {
- "rank": 78,
+ "rank": null,
  "slug": "drift",
  "symbol": "DRIFT",
  "name": "Drift",
@@ -9,8 +9,8 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 52,
- "total_exact": 52.22,
+ "total": 56,
+ "total_exact": 56.1,
  "band": "Orta",
  "delta": null,
  "confidence": {
@@ -18,14 +18,20 @@
   "level": "Yüksek"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
   "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
  },
+ "revenue_unmeasured": false,
  "date": "2026-10-23",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "arz geçmişi",
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -33,7 +39,7 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 14.6,
+   "score": 14.9,
    "has_data": true,
    "weight": 25,
    "percentile": 0.7414,
@@ -43,7 +49,7 @@
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": 24.546935,
-     "percentile": 0.6383,
+     "percentile": 0.6588,
      "basis": "sector",
      "display": "24,5×",
      "tier": "orta dilim"
@@ -52,7 +58,7 @@
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
      "value": 0.031036,
-     "percentile": 0.9091,
+     "percentile": 0.9215,
      "basis": "sector",
      "display": "0,031×",
      "tier": "üst dilim"
@@ -62,17 +68,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.1,
+   "score": 10.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3522,
+   "percentile": 0.5478,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.611516,
-     "percentile": 0.5391,
+     "percentile": 0.5322,
      "basis": "sector",
      "display": "%61",
      "tier": "orta dilim"
@@ -81,36 +87,27 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.635281,
-     "percentile": 0.5478,
+     "percentile": 0.5477,
      "basis": "sector",
      "display": "1,64×",
      "tier": "orta dilim"
-    },
-    {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 0.0,
-     "percentile": 0.1217,
-     "basis": "sector",
-     "display": "Yok",
-     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 4.4,
+   "score": 4.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2179,
+   "percentile": 0.225,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2179,
+     "percentile": 0.2299,
      "basis": "sector",
      "display": "%0",
      "tier": "alt dilim"
@@ -120,17 +117,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 12.2,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6716,
+   "percentile": 0.6866,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
      "value": 1.178734,
-     "percentile": 0.6122,
+     "percentile": 0.6216,
      "basis": "sector",
      "display": "+%18",
      "tier": "orta dilim"
@@ -140,26 +137,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.4,
+   "score": 12.8,
    "has_data": true,
    "weight": 15,
    "percentile": 0.7652,
    "tier": "üst dilim",
    "metrics": [
     {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.189731,
-     "percentile": 0.6087,
-     "basis": "sector",
-     "display": "%19",
-     "tier": "orta dilim"
-    },
-    {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 225.0,
-     "percentile": 0.7478,
+     "percentile": 0.7607,
      "basis": "sector",
      "display": "225",
      "tier": "üst dilim"
@@ -168,7 +156,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 2.436687,
-     "percentile": 0.487,
+     "percentile": 0.4874,
      "basis": "sector",
      "display": "2,4 yıl",
      "tier": "orta dilim"
@@ -177,10 +165,10 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6471,
+     "percentile": 0.6738,
      "basis": "sector",
      "display": "2",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   }
@@ -189,7 +177,7 @@
  "history": [
   [
    "2026-10-23",
-   52.22
+   56.1
   ]
  ],
  "changes": [],

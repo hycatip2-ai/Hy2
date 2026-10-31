@@ -1,5 +1,5 @@
 {
- "rank": 54,
+ "rank": null,
  "slug": "rocket-pool",
  "symbol": "RPL",
  "name": "Rocket Pool",
@@ -11,23 +11,33 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 56,
- "total_exact": 56.15,
+ "total": 54,
+ "total_exact": 53.69,
  "band": "Orta",
  "delta": 0.2,
  "confidence": {
-  "parts": 4,
-  "level": "Orta"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
+ "notes": [
+  {
+   "id": "incentive_growth",
+   "text": "Yılda basılan yeni tokenlerin değeri gelirin iki katından fazla; büyüme büyük ölçüde teşvikle besleniyor olabilir."
+  }
+ ],
  "earns": null,
  "supply": {
   "status": "unchecked",
   "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
  },
+ "revenue_unmeasured": false,
  "date": "2026-10-27",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -35,17 +45,17 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 6.7,
+   "score": 7.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3492,
-   "tier": "orta dilim",
+   "percentile": 0.3016,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.0472,
+     "percentile": 0.0586,
      "basis": "sector",
      "display": "Gelir yok",
      "tier": "alt dilim"
@@ -54,7 +64,7 @@
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
      "value": 0.03,
-     "percentile": 0.9167,
+     "percentile": 0.9267,
      "basis": "sector",
      "display": "0,030×",
      "tier": "üst dilim"
@@ -64,17 +74,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.0,
+   "score": 15.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6911,
+   "percentile": 0.8455,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9187,
+     "percentile": 0.9157,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -83,25 +93,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9715,
+     "percentile": 0.9709,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 0.0,
-     "percentile": 0.1138,
-     "basis": "sector",
-     "display": "Yok",
-     "tier": "alt dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.015084,
-     "percentile": 0.3982,
+     "percentile": 0.3965,
      "basis": "sector",
      "display": "+%1,5",
      "tier": "orta dilim"
@@ -111,12 +112,22 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 0.7,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.0094,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": 0.0,
+     "percentile": 0.0349,
+     "basis": "sector",
+     "display": "0,00×",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -131,7 +142,7 @@
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
      "value": 1.72255,
-     "percentile": 0.8182,
+     "percentile": 0.819,
      "basis": "sector",
      "display": "+%72",
      "tier": "üst dilim"
@@ -140,7 +151,7 @@
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
      "value": 1.112965,
-     "percentile": 0.6441,
+     "percentile": 0.6485,
      "basis": "sector",
      "display": "+%11",
      "tier": "orta dilim"
@@ -149,7 +160,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 18.0,
-     "percentile": 0.9901,
+     "percentile": 0.9861,
      "basis": "sector",
      "display": "18",
      "tier": "üst dilim"
@@ -158,7 +169,7 @@
      "id": "governance",
      "name": "Yönetim oyları (90 gün)",
      "value": 32.0,
-     "percentile": 0.9524,
+     "percentile": 0.9422,
      "basis": "sector",
      "display": "32",
      "tier": "üst dilim"
@@ -168,26 +179,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.8,
+   "score": 15.4,
    "has_data": true,
    "weight": 15,
    "percentile": 0.9675,
    "tier": "üst dilim",
    "metrics": [
     {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.240589,
-     "percentile": 0.6179,
-     "basis": "sector",
-     "display": "%24",
-     "tier": "orta dilim"
-    },
-    {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 240.0,
-     "percentile": 0.7805,
+     "percentile": 0.7921,
      "basis": "sector",
      "display": "240",
      "tier": "üst dilim"
@@ -196,7 +198,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1822,
-     "percentile": 0.8917,
+     "percentile": 0.8894,
      "basis": "sector",
      "display": "%0,18",
      "tier": "üst dilim"
@@ -205,7 +207,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1724,
-     "percentile": 0.5917,
+     "percentile": 0.5806,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -214,7 +216,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 8.279261,
-     "percentile": 0.9187,
+     "percentile": 0.9174,
      "basis": "sector",
      "display": "8,3 yıl",
      "tier": "üst dilim"
@@ -223,7 +225,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.637,
+     "percentile": 0.6617,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -235,15 +237,15 @@
  "history": [
   [
    "2026-10-25",
-   55.88
+   53.48
   ],
   [
    "2026-10-26",
-   55.96
+   53.52
   ],
   [
    "2026-10-27",
-   56.15
+   53.69
   ]
  ],
  "changes": [],

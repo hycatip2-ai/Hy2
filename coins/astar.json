@@ -1,5 +1,5 @@
 {
- "rank": 29,
+ "rank": null,
  "slug": "astar",
  "symbol": "ASTR",
  "name": "Astar",
@@ -11,23 +11,28 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 59,
- "total_exact": 59.23,
+ "total": 53,
+ "total_exact": 52.88,
  "band": "Orta",
- "delta": -0.1,
+ "delta": null,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
- "date": "2026-10-27",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "revenue_unmeasured": false,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -35,28 +40,28 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 6.2,
+   "score": 6.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3333,
-   "tier": "alt dilim",
+   "percentile": 0.3415,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 38195.32301,
-     "percentile": 0.2421,
+     "value": 36162.246397,
+     "percentile": 0.2564,
      "basis": "universe",
-     "display": "38.195×",
+     "display": "36.162×",
      "tier": "alt dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 47.857418,
-     "percentile": 0.4468,
+     "value": 46.572163,
+     "percentile": 0.3846,
      "basis": "sector",
-     "display": "47,9×",
+     "display": "46,6×",
      "tier": "orta dilim"
     }
    ]
@@ -64,17 +69,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.3,
+   "score": 13.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8182,
+   "percentile": 0.6719,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.999911,
-     "percentile": 0.7532,
+     "percentile": 0.7873,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -82,26 +87,17 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.137557,
-     "percentile": 0.7013,
+     "value": 1.137354,
+     "percentile": 0.6988,
      "basis": "sector",
      "display": "1,14×",
      "tier": "üst dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.6688,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.006648,
-     "percentile": 0.5333,
+     "value": 0.00655,
+     "percentile": 0.4602,
      "basis": "sector",
      "display": "+%0,7",
      "tier": "orta dilim"
@@ -111,55 +107,73 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 18.0,
+   "score": 10.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8732,
-   "tier": "üst dilim",
+   "percentile": 0.5897,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
-     "value": 0.801369,
-     "percentile": 0.9014,
+     "value": 0.801385,
+     "percentile": 0.9286,
      "basis": "universe",
      "display": "%80",
      "tier": "üst dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": -0.026573,
+     "percentile": 0.3934,
+     "basis": "universe",
+     "display": "−%2,7",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": 0.00104,
+     "percentile": 0.2564,
+     "basis": "universe",
+     "display": "0,0010×",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.7,
+   "score": 11.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5571,
+   "percentile": 0.6102,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.340955,
-     "percentile": 0.6667,
+     "value": 1.357902,
+     "percentile": 0.6776,
      "basis": "sector",
-     "display": "+%34",
-     "tier": "orta dilim"
+     "display": "+%36",
+     "tier": "üst dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.026528,
-     "percentile": 0.5682,
+     "value": 1.148462,
+     "percentile": 0.6838,
      "basis": "sector",
-     "display": "+%2,7",
-     "tier": "orta dilim"
+     "display": "+%15",
+     "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.3833,
+     "percentile": 0.4205,
      "basis": "sector",
      "display": "1",
      "tier": "orta dilim"
@@ -169,26 +183,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.7,
+   "score": 11.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8312,
+   "percentile": 0.6719,
    "tier": "üst dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.078905,
-     "percentile": 0.3117,
-     "basis": "sector",
-     "display": "%7,9",
-     "tier": "alt dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 151.0,
-     "percentile": 0.5844,
+     "percentile": 0.5941,
      "basis": "sector",
      "display": "151",
      "tier": "orta dilim"
@@ -196,26 +201,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.2941,
-     "percentile": 0.5789,
+     "value": 0.3625,
+     "percentile": 0.5467,
      "basis": "sector",
-     "display": "%0,29",
+     "display": "%0,36",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0526,
-     "percentile": 0.8882,
+     "value": 0.225,
+     "percentile": 0.3261,
      "basis": "sector",
-     "display": "%5,3",
-     "tier": "üst dilim"
+     "display": "%22",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.021218,
-     "percentile": 0.5584,
+     "value": 5.03217,
+     "percentile": 0.5684,
      "basis": "sector",
      "display": "5,0 yıl",
      "tier": "orta dilim"
@@ -224,8 +229,8 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.9,
-     "basis": "sector",
+     "percentile": 0.7614,
+     "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
     }
@@ -236,28 +241,115 @@
  "history": [
   [
    "2026-10-23",
-   60.06
+   61.45
   ],
   [
    "2026-10-24",
-   59.42
+   55.12
   ],
   [
    "2026-10-25",
-   59.73
+   54.71
   ],
   [
    "2026-10-26",
-   59.34
+   54.37
   ],
   [
    "2026-10-27",
-   59.23
+   54.2
+  ],
+  [
+   "2026-10-31",
+   52.88
   ]
  ],
- "changes": [],
- "events": [],
- "trend": null,
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -6.3,
+   "from": 61.5,
+   "to": 55.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -5.01,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.63,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -6.3,
+   "from": 61.5,
+   "to": 55.1,
+   "reasons": [
+    {
+     "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -5.01,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama −5,0)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.63,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
+    }
+   ]
+  }
+ ],
+ "trend": {
+  "rank_now": 351,
+  "rank_start": 376,
+  "score": 41,
+  "rise": 42,
+  "steady": 58,
+  "calm": 11,
+  "weeks_up": 7,
+  "weeks_down": 4,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.06,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "Astar",
   "source": "native",

@@ -1,5 +1,5 @@
 {
- "rank": 81,
+ "rank": null,
  "slug": "chromia",
  "symbol": "CHR",
  "name": "Chromia",
@@ -10,22 +10,29 @@
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 52,
- "total_exact": 51.59,
+ "total_exact": 51.6,
  "band": "Orta",
- "delta": 2.5,
+ "delta": 3.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
   "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
  },
+ "revenue_unmeasured": false,
  "date": "2026-10-28",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "gelir",
+  "gelir trendi",
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
@@ -36,17 +43,17 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 4.9,
+   "score": 4.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2391,
+   "percentile": 0.2174,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
      "value": 304.766813,
-     "percentile": 0.2444,
+     "percentile": 0.2264,
      "basis": "sector",
      "display": "305×",
      "tier": "alt dilim"
@@ -56,17 +63,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.4,
+   "score": 15.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9444,
+   "percentile": 0.8889,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8819,
+     "percentile": 0.8846,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -75,25 +82,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9444,
+     "percentile": 0.948,
      "basis": "sector",
      "display": "1,00×",
-     "tier": "üst dilim"
-    },
-    {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.6806,
-     "basis": "sector",
-     "display": "Var",
      "tier": "üst dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.003316,
-     "percentile": 0.5714,
+     "percentile": 0.5498,
      "basis": "sector",
      "display": "+%0,3",
      "tier": "orta dilim"
@@ -113,17 +111,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 11.2,
+   "score": 11.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5846,
+   "percentile": 0.5692,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
      "value": 1.044843,
-     "percentile": 0.5581,
+     "percentile": 0.5522,
      "basis": "sector",
      "display": "+%4,5",
      "tier": "orta dilim"
@@ -133,26 +131,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.0,
+   "score": 10.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.625,
+   "percentile": 0.5833,
    "tier": "orta dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.205678,
-     "percentile": 0.5972,
-     "basis": "sector",
-     "display": "%21",
-     "tier": "orta dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 216.0,
-     "percentile": 0.7917,
+     "percentile": 0.7975,
      "basis": "sector",
      "display": "216",
      "tier": "üst dilim"
@@ -161,7 +150,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5705,
-     "percentile": 0.2958,
+     "percentile": 0.2881,
      "basis": "sector",
      "display": "%0,57",
      "tier": "alt dilim"
@@ -170,7 +159,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2222,
-     "percentile": 0.3169,
+     "percentile": 0.315,
      "basis": "sector",
      "display": "%22",
      "tier": "alt dilim"
@@ -179,7 +168,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 7.419576,
-     "percentile": 0.75,
+     "percentile": 0.776,
      "basis": "sector",
      "display": "7,4 yıl",
      "tier": "üst dilim"
@@ -191,131 +180,112 @@
   {
    "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
    "part": "usage",
-   "delta": 2.02,
-   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Kullanım +2,0)"
+   "delta": 2.77,
+   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Kullanım +2,8)"
   }
  ],
  "history": [
   [
    "2026-10-23",
-   49.7
+   52.56
   ],
   [
    "2026-10-24",
-   54.46
+   56.85
   ],
   [
    "2026-10-25",
-   49.78
+   49.33
   ],
   [
    "2026-10-26",
-   48.77
+   48.03
   ],
   [
    "2026-10-27",
-   49.08
+   48.11
   ],
   [
    "2026-10-28",
-   51.59
+   51.6
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": 4.8,
-   "from": 49.7,
-   "to": 54.5,
+   "delta": 4.3,
+   "from": 52.6,
+   "to": 56.9,
    "event": false,
    "reasons": [
     {
      "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": 4.03,
-     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım +4,0)"
+     "delta": 3.69,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım +3,7)"
     }
    ]
   },
   {
    "date": "2026-10-25",
-   "delta": -4.7,
-   "from": 54.5,
-   "to": 49.8,
-   "event": false,
+   "delta": -7.5,
+   "from": 56.9,
+   "to": 49.3,
+   "event": true,
    "reasons": [
-    {
-     "text": "Alış-satış farkı verisi artık mevcut.",
-     "part": "liquidity",
-     "delta": -2.53,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,5)"
-    },
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
-     "delta": -2.15,
-     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,2)"
+     "delta": -3.76,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,8)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -3.74,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,7)"
     }
    ]
   },
   {
    "date": "2026-10-28",
-   "delta": 2.5,
-   "from": 49.1,
+   "delta": 3.5,
+   "from": 48.1,
    "to": 51.6,
    "event": false,
    "reasons": [
     {
      "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
      "part": "usage",
-     "delta": 2.02,
-     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Kullanım +2,0)"
+     "delta": 2.77,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Kullanım +2,8)"
     }
    ]
   }
  ],
- "events": [],
- "trend": {
-  "rank_now": 732,
-  "rank_start": 796,
-  "score": 33,
-  "rise": 33,
-  "steady": 50,
-  "calm": 0,
-  "weeks_up": 6,
-  "weeks_down": 3,
-  "weeks_total": 12,
-  "weekly": [
-   1,
-   0,
-   1,
-   -1,
-   1,
-   0,
-   1,
-   1,
-   1,
-   0,
-   -1,
-   -1
-  ],
-  "labels": [
-   {
-    "id": "spike",
-    "text": "Ani sıçrama"
-   },
-   {
-    "id": "wavy",
-    "text": "Dalgalı"
-   }
-  ],
-  "trend": "rising",
-  "supply_share": 0.02,
-  "eligible": false,
-  "window_days": 90,
-  "score_change": null,
-  "double": false
- },
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": -7.5,
+   "from": 56.9,
+   "to": 49.3,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -3.76,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,8)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -3.74,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,7)"
+    }
+   ]
+  }
+ ],
+ "trend": null,
  "chain": {
   "name": "Chromia",
   "source": "native",

@@ -1,5 +1,5 @@
 {
- "rank": 69,
+ "rank": 38,
  "slug": "harmony",
  "symbol": "ONE",
  "name": "Harmony",
@@ -10,22 +10,25 @@
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 52,
- "total_exact": 51.68,
+ "total_exact": 52.32,
  "band": "Orta",
- "delta": 0.2,
+ "delta": -0.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+  "status": "ok",
+  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %2,2 artıyor (sınır %10)."
  },
- "date": "2026-10-30",
- "formula_version": "1.5.0",
+ "revenue_unmeasured": false,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
  "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -33,19 +36,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 5.6,
+   "score": 5.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3095,
+   "percentile": 0.3171,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 23384.791259,
-     "percentile": 0.2778,
+     "value": 23026.235056,
+     "percentile": 0.2632,
      "basis": "universe",
-     "display": "23.385×",
+     "display": "23.026×",
      "tier": "alt dilim"
     }
    ]
@@ -53,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.5,
+   "score": 7.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1364,
+   "percentile": 0.2734,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.622988,
-     "percentile": 0.4242,
+     "percentile": 0.4584,
      "basis": "sector",
      "display": "%62",
      "tier": "orta dilim"
@@ -72,25 +75,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.605167,
-     "percentile": 0.4697,
+     "percentile": 0.4645,
      "basis": "sector",
      "display": "1,61×",
      "tier": "orta dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 0.0,
-     "percentile": 0.1894,
-     "basis": "sector",
-     "display": "Yok",
-     "tier": "alt dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.100625,
-     "percentile": 0.2188,
+     "percentile": 0.191,
      "basis": "sector",
      "display": "+%10",
      "tier": "alt dilim"
@@ -110,26 +104,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 17.9,
+   "score": 18.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9333,
+   "percentile": 0.9492,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 7.0766,
-     "percentile": 0.95,
+     "value": 7.068134,
+     "percentile": 0.9399,
      "basis": "sector",
-     "display": "+%608",
+     "display": "+%607",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 7.0,
-     "percentile": 0.8365,
+     "percentile": 0.8658,
      "basis": "sector",
      "display": "7",
      "tier": "üst dilim"
@@ -139,26 +133,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.9,
+   "score": 13.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9848,
+   "percentile": 0.9062,
    "tier": "üst dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.5,
-     "percentile": 0.8864,
-     "basis": "sector",
-     "display": "%50",
-     "tier": "üst dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 260.0,
-     "percentile": 0.8788,
+     "percentile": 0.8962,
      "basis": "sector",
      "display": "260",
      "tier": "üst dilim"
@@ -167,7 +152,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.33,
-     "percentile": 0.5385,
+     "percentile": 0.6061,
      "basis": "sector",
      "display": "%0,33",
      "tier": "orta dilim"
@@ -176,7 +161,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.4385,
+     "percentile": 0.3884,
      "basis": "sector",
      "display": "%20",
      "tier": "orta dilim"
@@ -184,8 +169,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.4141,
-     "percentile": 0.7273,
+     "value": 7.416838,
+     "percentile": 0.7649,
      "basis": "sector",
      "display": "7,4 yıl",
      "tier": "üst dilim"
@@ -197,48 +182,89 @@
  "history": [
   [
    "2026-10-23",
-   58.16
+   59.66
   ],
   [
    "2026-10-24",
-   56.27
+   57.52
   ],
   [
    "2026-10-25",
-   54.33
+   53.89
   ],
   [
    "2026-10-26",
-   54.42
+   54.03
   ],
   [
    "2026-10-27",
-   54.19
+   53.85
   ],
   [
    "2026-10-28",
-   52.38
+   53.54
   ],
   [
    "2026-10-29",
-   51.44
+   52.58
   ],
   [
    "2026-10-30",
-   51.68
+   52.87
+  ],
+  [
+   "2026-10-31",
+   52.32
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -2.1,
+   "from": 59.7,
+   "to": 57.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -1.85,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −1,8)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": -3.6,
+   "from": 57.5,
+   "to": 53.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.64,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,6)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.74,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,7)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 681,
-  "rank_start": 650,
+  "rank_now": 686,
+  "rank_start": 651,
   "score": 0,
   "rise": 0,
   "steady": 17,
   "calm": 0,
   "weeks_up": 2,
-  "weeks_down": 9,
+  "weeks_down": 10,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -249,7 +275,7 @@
    1,
    1,
    -1,
-   0,
+   -1,
    -1,
    -1,
    -1

@@ -10,22 +10,27 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 32,
- "total_exact": 32.18,
+ "total_exact": 31.62,
  "band": "Zayıf",
- "delta": -0.0,
+ "delta": 0.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+  "status": "ok",
+  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; azami arzın tamamı çıkarıldı, arz artmaz."
  },
+ "revenue_unmeasured": true,
  "date": "2026-10-28",
- "formula_version": "1.5.0",
+ "formula_version": "1.15.0",
  "eligible_for_top": false,
+ "missing": [
+  "kullanım kanıtı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -43,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.1,
+   "score": 8.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3486,
-   "tier": "orta dilim",
+   "percentile": 0.3364,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.325013,
-     "percentile": 0.2844,
+     "percentile": 0.2809,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -62,25 +67,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.0768,
-     "percentile": 0.3119,
+     "percentile": 0.3167,
      "basis": "sector",
      "display": "3,08×",
      "tier": "alt dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.5917,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6237,
+     "percentile": 0.6288,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -110,26 +106,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 2.1,
+   "score": 2.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0,
+   "percentile": 0.0091,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.000402,
-     "percentile": 0.0183,
-     "basis": "sector",
-     "display": "%0",
-     "tier": "alt dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 11.0,
-     "percentile": 0.1101,
+     "percentile": 0.1021,
      "basis": "sector",
      "display": "11",
      "tier": "alt dilim"
@@ -138,7 +125,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.857,
-     "percentile": 0.1887,
+     "percentile": 0.1777,
      "basis": "sector",
      "display": "%0,86",
      "tier": "alt dilim"
@@ -147,7 +134,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1226,
+     "percentile": 0.1187,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -156,7 +143,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 0.610541,
-     "percentile": 0.0917,
+     "percentile": 0.0894,
      "basis": "sector",
      "display": "0,6 yıl",
      "tier": "alt dilim"
@@ -168,23 +155,23 @@
  "history": [
   [
    "2026-10-23",
-   30.26
+   28.47
   ],
   [
    "2026-10-24",
-   31.3
+   29.33
   ],
   [
    "2026-10-26",
-   32.15
+   31.34
   ],
   [
    "2026-10-27",
-   32.21
+   31.4
   ],
   [
    "2026-10-28",
-   32.18
+   31.62
   ]
  ],
  "changes": [],

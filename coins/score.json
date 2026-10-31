@@ -1,5 +1,5 @@
 {
- "rank": 189,
+ "rank": null,
  "slug": "score",
  "symbol": "SN44",
  "name": "Score",
@@ -9,23 +9,29 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 40,
- "total_exact": 40.04,
+ "total": 41,
+ "total_exact": 40.6,
  "band": "Zayıf",
- "delta": 0.6,
+ "delta": 0.2,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
+ "revenue_unmeasured": true,
  "date": "2026-10-30",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "kullanım kanıtı",
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -43,17 +49,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.4,
+   "score": 13.0,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.7736,
+   "percentile": 0.7547,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8868,
+     "percentile": 0.8882,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -62,25 +68,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.863377,
-     "percentile": 0.1887,
+     "percentile": 0.1799,
      "basis": "sector",
      "display": "4,86×",
      "tier": "alt dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.5377,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.149152,
-     "percentile": 0.8776,
+     "percentile": 0.881,
      "basis": "sector",
      "display": "−%15",
      "tier": "üst dilim"
@@ -100,7 +97,7 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.8,
+   "score": 4.4,
    "has_data": true,
    "weight": 30,
    "percentile": 0.2031,
@@ -110,7 +107,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2419,
+     "percentile": 0.2182,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -120,26 +117,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.1,
+   "score": 7.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1509,
+   "percentile": 0.2264,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.036705,
-     "percentile": 0.2075,
-     "basis": "sector",
-     "display": "%3,7",
-     "tier": "alt dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 2.0,
-     "percentile": 0.1038,
+     "percentile": 0.0799,
      "basis": "sector",
      "display": "2",
      "tier": "alt dilim"
@@ -148,7 +136,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.601,
-     "percentile": 0.1731,
+     "percentile": 0.1923,
      "basis": "sector",
      "display": "%0,60",
      "tier": "alt dilim"
@@ -157,7 +145,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8269,
+     "percentile": 0.8494,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -166,7 +154,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 1.360712,
-     "percentile": 0.4717,
+     "percentile": 0.4283,
      "basis": "sector",
      "display": "1,4 yıl",
      "tier": "orta dilim"
@@ -178,71 +166,40 @@
  "history": [
   [
    "2026-10-23",
-   39.47
+   39.63
   ],
   [
    "2026-10-24",
-   38.97
+   39.8
   ],
   [
    "2026-10-25",
-   39.0
+   40.02
   ],
   [
    "2026-10-26",
-   39.1
+   40.36
   ],
   [
    "2026-10-27",
-   39.27
+   40.39
   ],
   [
    "2026-10-28",
-   39.46
+   40.63
   ],
   [
    "2026-10-29",
-   39.47
+   40.38
   ],
   [
    "2026-10-30",
-   40.04
+   40.6
   ]
  ],
  "changes": [],
  "events": [],
- "trend": {
-  "rank_now": 511,
-  "rank_start": 476,
-  "score": 0,
-  "rise": 0,
-  "steady": 50,
-  "calm": 0,
-  "weeks_up": 6,
-  "weeks_down": 5,
-  "weeks_total": 12,
-  "weekly": [
-   1,
-   -1,
-   1,
-   -1,
-   1,
-   -1,
-   1,
-   1,
-   1,
-   -1,
-   0,
-   -1
-  ],
-  "labels": [],
-  "trend": "flat",
-  "supply_share": 0.0,
-  "eligible": false,
-  "window_days": 90,
-  "score_change": null,
-  "double": false
- },
+ "trend": null,
  "chain": {
   "name": "Bittensor",
   "source": "contract",

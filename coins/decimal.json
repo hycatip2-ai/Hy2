@@ -1,5 +1,5 @@
 {
- "rank": 288,
+ "rank": null,
  "slug": "decimal",
  "symbol": "DEL",
  "name": "Decimal",
@@ -9,23 +9,31 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 35,
- "total_exact": 34.64,
+ "total": 36,
+ "total_exact": 35.64,
  "band": "Zayıf",
- "delta": 5.7,
+ "delta": 5.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler; arzın yıllık artışı henüz ölçülemedi (en az 6 aylık geçmiş gerekir). Kendin araştır."
  },
+ "revenue_unmeasured": false,
  "date": "2026-10-28",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "gelir",
+  "gelir trendi",
+  "arz geçmişi",
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -43,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.4,
+   "score": 9.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5556,
+   "percentile": 0.4747,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9141,
+     "percentile": 0.9109,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -62,19 +70,10 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.279434,
-     "percentile": 0.0505,
+     "percentile": 0.0486,
      "basis": "sector",
      "display": "8,28×",
      "tier": "alt dilim"
-    },
-    {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.596,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
     }
    ]
   },
@@ -91,17 +90,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.7,
+   "score": 4.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1802,
+   "percentile": 0.157,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2338,
+     "percentile": 0.2248,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -111,26 +110,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.1,
+   "score": 7.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0808,
+   "percentile": 0.2222,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 5.7e-05,
-     "percentile": 0.0,
-     "basis": "sector",
-     "display": "%0",
-     "tier": "alt dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 23.0,
-     "percentile": 0.0859,
+     "percentile": 0.0935,
      "basis": "sector",
      "display": "23",
      "tier": "alt dilim"
@@ -139,7 +129,7 @@
      "id": "age_years",
      "name": "Proje yaşı",
      "value": 5.059548,
-     "percentile": 0.6768,
+     "percentile": 0.68,
      "basis": "sector",
      "display": "5,1 yıl",
      "tier": "üst dilim"
@@ -158,35 +148,35 @@
  "history": [
   [
    "2026-10-23",
-   29.61
+   30.03
   ],
   [
    "2026-10-24",
-   28.47
+   29.46
   ],
   [
    "2026-10-25",
-   28.65
+   29.52
   ],
   [
    "2026-10-26",
-   28.85
+   29.71
   ],
   [
    "2026-10-27",
-   28.98
+   29.84
   ],
   [
    "2026-10-28",
-   34.64
+   35.64
   ]
  ],
  "changes": [
   {
    "date": "2026-10-28",
-   "delta": 5.7,
-   "from": 29.0,
-   "to": 34.6,
+   "delta": 5.8,
+   "from": 29.8,
+   "to": 35.6,
    "event": true,
    "reasons": [
     {
@@ -201,9 +191,9 @@
  "events": [
   {
    "date": "2026-10-28",
-   "delta": 5.7,
-   "from": 29.0,
-   "to": 34.6,
+   "delta": 5.8,
+   "from": 29.8,
+   "to": 35.6,
    "reasons": [
     {
      "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",

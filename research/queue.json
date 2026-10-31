@@ -1,0 +1,176 @@
+{
+ "date": "2026-10-31",
+ "system": "You are a careful crypto research assistant. Use web search for every answer. Report only facts you found in sources during this session and never guess or rely on memory. If you cannot find a reliable source for something, return null for it. Each field must cite exactly one specific page URL that itself states the fact (not a search page, not a homepage unless the fact is on it).",
+ "items": [
+  {
+   "slug": "axelar",
+   "name": "Axelar",
+   "symbol": "AXL",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Axelar",
+    "symbol": "AXL",
+    "slug": "axelar",
+    "sector_name": "Altyapı",
+    "websites": [
+     "https://axelar.network/",
+     "https://app.squidrouter.com/"
+    ],
+    "contracts": [
+     {
+      "platform": "Ethereum",
+      "address": "0x467719aD09025FcC6cF6F8311755809d45a5E5f3"
+     },
+     {
+      "platform": "BNB Smart Chain (BEP20)",
+      "address": "0x8b1f4432F943c465A973FeDC6d7aa50Fc96f1f65"
+     },
+     {
+      "platform": "Polygon",
+      "address": "0x6e4E624106Cb12E168E6533F8ec7c82263358940"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 1252175483.5764642,
+    "total_supply": 1258807927.108292,
+    "max_supply": null,
+    "defillama_url": "https://defillama.com/protocol/axelar-network"
+   },
+   "prompt": "Today is 2026-10-31. Research this cryptocurrency project:\n- Name: Axelar\n- Ticker: AXL\n- CoinMarketCap slug: axelar (https://coinmarketcap.com/currencies/axelar/)\n- Sector: Altyapı\n- Official website: https://axelar.network/\n- Official website: https://app.squidrouter.com/\n- Token contract on Ethereum: 0x467719aD09025FcC6cF6F8311755809d45a5E5f3\n- Token contract on BNB Smart Chain (BEP20): 0x8b1f4432F943c465A973FeDC6d7aa50Fc96f1f65\n- Token contract on Polygon: 0x6e4E624106Cb12E168E6533F8ec7c82263358940\n- Current circulating supply: 1,252,175,484 tokens\n- Total supply on CoinMarketCap: 1,258,807,927\n- DefiLlama page: https://defillama.com/protocol/axelar-network\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-10-31 and 2027-05-01, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-10-31 and 2026-10-31? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "cetus-protocol",
+   "name": "Cetus Protocol",
+   "symbol": "CETUS",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Cetus Protocol",
+    "symbol": "CETUS",
+    "slug": "cetus-protocol",
+    "sector_name": "DeFi",
+    "websites": [
+     "https://www.cetus.zone/"
+    ],
+    "contracts": [
+     {
+      "platform": "Sui Network",
+      "address": "0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 965217391,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "defillama_url": "https://defillama.com/protocol/cetus"
+   },
+   "prompt": "Today is 2026-10-31. Research this cryptocurrency project:\n- Name: Cetus Protocol\n- Ticker: CETUS\n- CoinMarketCap slug: cetus-protocol (https://coinmarketcap.com/currencies/cetus-protocol/)\n- Sector: DeFi\n- Official website: https://www.cetus.zone/\n- Token contract on Sui Network: 0x06864a6f921804860930db6ddbe2e16acdf8504495ea7481637a1c8b9a8fe54b::cetus::CETUS\n- Current circulating supply: 965,217,391 tokens\n- Total supply on CoinMarketCap: 1,000,000,000\n- Max supply on CoinMarketCap: 1,000,000,000\n- DefiLlama page: https://defillama.com/protocol/cetus\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-10-31 and 2027-05-01, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-10-31 and 2026-10-31? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "allora",
+   "name": "Allora",
+   "symbol": "ALLO",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Allora",
+    "symbol": "ALLO",
+    "slug": "allora",
+    "sector_name": "Yapay zekâ",
+    "websites": [
+     "https://www.allora.network",
+     "https://explorer.allora.network/"
+    ],
+    "contracts": [
+     {
+      "platform": "Ethereum",
+      "address": "0x8408D45b61f5823298F19a09B53b7339c0280489"
+     },
+     {
+      "platform": "BNB Smart Chain (BEP20)",
+      "address": "0xCCe5F304fD043d6A4E8cCB5376A4a4Fb583B98d5"
+     },
+     {
+      "platform": "Base",
+      "address": "0x032d86656Db142138AC97d2c5C4E3766E8c0482d"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 200500000,
+    "total_supply": 785499999,
+    "max_supply": 1000000000,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-10-31. Research this cryptocurrency project:\n- Name: Allora\n- Ticker: ALLO\n- CoinMarketCap slug: allora (https://coinmarketcap.com/currencies/allora/)\n- Sector: Yapay zekâ\n- Official website: https://www.allora.network\n- Official website: https://explorer.allora.network/\n- Token contract on Ethereum: 0x8408D45b61f5823298F19a09B53b7339c0280489\n- Token contract on BNB Smart Chain (BEP20): 0xCCe5F304fD043d6A4E8cCB5376A4a4Fb583B98d5\n- Token contract on Base: 0x032d86656Db142138AC97d2c5C4E3766E8c0482d\n- Current circulating supply: 200,500,000 tokens\n- Total supply on CoinMarketCap: 785,499,999\n- Max supply on CoinMarketCap: 1,000,000,000\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-10-31 and 2027-05-01, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-10-31 and 2026-10-31? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "nym",
+   "name": "NYM",
+   "symbol": "NYM",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "NYM",
+    "symbol": "NYM",
+    "slug": "nym",
+    "sector_name": "Gizlilik",
+    "websites": [
+     "https://nym.com/"
+    ],
+    "contracts": [
+     {
+      "platform": "Ethereum",
+      "address": "0x525A8F6F3Ba4752868cde25164382BfbaE3990e1"
+     },
+     {
+      "platform": "BNB Smart Chain (BEP20)",
+      "address": "0x31d0E332ccEf98b583E40e0cEFBb7502c9a6b3f8"
+     },
+     {
+      "platform": "Osmosis",
+      "address": "ibc/37CB3078432510EE57B9AFA8DBE028B33AE3280A144826FEAC5F2334CF2C5539"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 844753900.045848,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-10-31. Research this cryptocurrency project:\n- Name: NYM\n- Ticker: NYM\n- CoinMarketCap slug: nym (https://coinmarketcap.com/currencies/nym/)\n- Sector: Gizlilik\n- Official website: https://nym.com/\n- Token contract on Ethereum: 0x525A8F6F3Ba4752868cde25164382BfbaE3990e1\n- Token contract on BNB Smart Chain (BEP20): 0x31d0E332ccEf98b583E40e0cEFBb7502c9a6b3f8\n- Token contract on Osmosis: ibc/37CB3078432510EE57B9AFA8DBE028B33AE3280A144826FEAC5F2334CF2C5539\n- Current circulating supply: 844,753,900 tokens\n- Total supply on CoinMarketCap: 1,000,000,000\n- Max supply on CoinMarketCap: 1,000,000,000\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-10-31 and 2027-05-01, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-10-31 and 2026-10-31? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "astar",
+   "name": "Astar",
+   "symbol": "ASTR",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Astar",
+    "symbol": "ASTR",
+    "slug": "astar",
+    "sector_name": "Katman 1/2",
+    "websites": [
+     "https://astar.network/"
+    ],
+    "contracts": [
+     {
+      "platform": "Ethereum",
+      "address": "0xF27441230EADEaC85B764610325Cc9a0D7859689"
+     },
+     {
+      "platform": "Astar",
+      "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 8792335012,
+    "total_supply": 8793113210,
+    "max_supply": 10000000000,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-10-31. Research this cryptocurrency project:\n- Name: Astar\n- Ticker: ASTR\n- CoinMarketCap slug: astar (https://coinmarketcap.com/currencies/astar/)\n- Sector: Katman 1/2\n- Official website: https://astar.network/\n- Token contract on Ethereum: 0xF27441230EADEaC85B764610325Cc9a0D7859689\n- Token contract on Astar: 0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n- Current circulating supply: 8,792,335,012 tokens\n- Total supply on CoinMarketCap: 8,793,113,210\n- Max supply on CoinMarketCap: 10,000,000,000\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-10-31 and 2027-05-01, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-10-31 and 2026-10-31? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  }
+ ]
+}

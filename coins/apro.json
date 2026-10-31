@@ -1,5 +1,5 @@
 {
- "rank": 283,
+ "rank": null,
  "slug": "apro",
  "symbol": "AT",
  "name": "APRO",
@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 28,
- "total_exact": 28.24,
+ "total": 25,
+ "total_exact": 24.75,
  "band": "Zayıf",
- "delta": 0.2,
+ "delta": -0.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -23,14 +23,19 @@
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
   }
  ],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
- "date": "2026-10-30",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "revenue_unmeasured": true,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "kullanım kanıtı"
+ ],
  "penalty": 5.0,
  "bonus": 0.0,
  "contract": {
@@ -51,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.5,
+   "score": 5.7,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.2264,
+   "percentile": 0.1923,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.266667,
-     "percentile": 0.2642,
+     "percentile": 0.2681,
      "basis": "sector",
      "display": "%27",
      "tier": "alt dilim"
@@ -70,25 +75,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.75,
-     "percentile": 0.3962,
+     "percentile": 0.3006,
      "basis": "sector",
      "display": "3,75×",
-     "tier": "orta dilim"
-    },
-    {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.5377,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.15942,
-     "percentile": 0.3061,
+     "percentile": 0.2795,
      "basis": "sector",
      "display": "+%16",
      "tier": "alt dilim"
@@ -108,17 +104,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.8,
+   "score": 4.2,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.2031,
+   "percentile": 0.1833,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2419,
+     "percentile": 0.2089,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -128,53 +124,44 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.9,
+   "score": 8.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2453,
+   "percentile": 0.2692,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.168969,
-     "percentile": 0.4906,
-     "basis": "sector",
-     "display": "%17",
-     "tier": "orta dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 153.0,
-     "percentile": 0.6792,
+     "percentile": 0.6407,
      "basis": "sector",
      "display": "153",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.5337,
-     "percentile": 0.3077,
+     "value": 0.4087,
+     "percentile": 0.5027,
      "basis": "sector",
-     "display": "%0,53",
-     "tier": "alt dilim"
+     "display": "%0,41",
+     "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.1739,
-     "percentile": 0.3558,
+     "value": 0.1818,
+     "percentile": 0.3317,
      "basis": "sector",
-     "display": "%17",
-     "tier": "orta dilim"
+     "display": "%18",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.021218,
-     "percentile": 0.1509,
+     "value": 1.023956,
+     "percentile": 0.1925,
      "basis": "sector",
      "display": "1,0 yıl",
      "tier": "alt dilim"
@@ -186,43 +173,47 @@
  "history": [
   [
    "2026-10-23",
-   37.46
+   33.04
   ],
   [
    "2026-10-24",
-   26.25
+   22.47
   ],
   [
    "2026-10-25",
-   26.37
+   23.28
   ],
   [
    "2026-10-26",
-   27.12
+   23.86
   ],
   [
    "2026-10-27",
-   27.08
+   23.89
   ],
   [
    "2026-10-28",
-   27.68
+   24.73
   ],
   [
    "2026-10-29",
-   28.06
+   24.96
   ],
   [
    "2026-10-30",
-   28.24
+   24.82
+  ],
+  [
+   "2026-10-31",
+   24.75
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": -11.2,
-   "from": 37.5,
-   "to": 26.2,
+   "delta": -10.6,
+   "from": 33.0,
+   "to": 22.5,
    "event": true,
    "reasons": [
     {
@@ -234,8 +225,8 @@
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -4.15,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,2)"
+     "delta": -4.84,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,8)"
     }
    ]
   }
@@ -243,9 +234,9 @@
  "events": [
   {
    "date": "2026-10-24",
-   "delta": -11.2,
-   "from": 37.5,
-   "to": 26.2,
+   "delta": -10.6,
+   "from": 33.0,
+   "to": 22.5,
    "reasons": [
     {
      "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
@@ -256,29 +247,29 @@
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -4.15,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,2)"
+     "delta": -4.84,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,8)"
     }
    ]
   }
  ],
  "trend": {
-  "rank_now": 453,
-  "rank_start": 450,
+  "rank_now": 473,
+  "rank_start": 448,
   "score": 0,
   "rise": 0,
   "steady": 50,
   "calm": 0,
   "weeks_up": 6,
-  "weeks_down": 5,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    1,
    -1,
    -1,
-   0,
    1,
    1,
+   -1,
    -1,
    -1,
    -1,

@@ -108,6 +108,22 @@
    "desc": "Projenin gelirle token geri alıp almadığını ya da token yakıp yakmadığını gösterir."
   },
   {
+   "id": "net_holder_yield",
+   "part": "value_capture",
+   "name": "Sahibe net getiri (seyrelme düşülmüş)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Token sahiplerine dönen yıllık getiriden yeni arzın yarattığı seyrelme düşülünce kalan net kazançtır; eksiyse sahip yeni arz yüzünden kaybeder."
+  },
+  {
+   "id": "revenue_to_emissions",
+   "part": "value_capture",
+   "name": "Gelirin yeni arzın değerine oranı",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Protokolün yıllık gelirinin, yılda basılan ya da dolaşıma giren yeni tokenlerin değerine oranıdır; 1'in altı büyümenin teşvikle satın alındığını gösterir."
+  },
+  {
    "id": "revenue_trend",
    "part": "usage",
    "name": "Gelir trendi (90 gün)",
@@ -122,6 +138,22 @@
    "higher_is_better": true,
    "optional": false,
    "desc": "Protokolde kilitli varlığın 90 gün öncesine göre değişimidir."
+  },
+  {
+   "id": "category_share_change",
+   "part": "usage",
+   "name": "Kategorideki ücret payının değişimi (90 gün)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Protokolün kendi kategorisindeki (ör. borç verme) toplam ücretlerden aldığı payın son 90 günde nasıl değiştiğidir; artış rakiplerinden pay kazandığını gösterir."
+  },
+  {
+   "id": "fee_consistency",
+   "part": "usage",
+   "name": "Kullanımın sürekliliği (13 hafta)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Son 13 haftada kullanıcı ücretlerinin haftalara ne kadar düzenli yayıldığını gösterir; yüksek olması kullanımın birkaç haftalık bir sıçrama değil sürekli olduğunu gösterir."
   },
   {
    "id": "active_devs",

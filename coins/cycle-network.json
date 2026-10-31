@@ -1,5 +1,5 @@
 {
- "rank": 227,
+ "rank": null,
  "slug": "cycle-network",
  "symbol": "CYC",
  "name": "Cycle Network",
@@ -9,23 +9,28 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 37,
- "total_exact": 36.78,
+ "total": 35,
+ "total_exact": 34.58,
  "band": "Zayıf",
- "delta": -0.0,
+ "delta": 0.7,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler, kontrat yetkisi okunamaz. Enflasyonu ve kuralı kimin değiştirebildiğini kendin araştır."
+  "status": "ok",
+  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz son bir yılda artmadı."
  },
- "date": "2026-10-30",
- "formula_version": "1.5.0",
- "eligible_for_top": true,
+ "revenue_unmeasured": true,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
+ "eligible_for_top": false,
+ "missing": [
+  "kullanım kanıtı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -43,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.0,
+   "score": 5.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2289,
+   "percentile": 0.2247,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.307464,
-     "percentile": 0.2771,
+     "percentile": 0.2783,
      "basis": "sector",
      "display": "%31",
      "tier": "alt dilim"
@@ -62,25 +67,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.506181,
-     "percentile": 0.1446,
+     "percentile": 0.1325,
      "basis": "sector",
      "display": "6,51×",
      "tier": "alt dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.5663,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.011184,
-     "percentile": 0.4225,
+     "percentile": 0.3941,
      "basis": "sector",
      "display": "+%1,1",
      "tier": "orta dilim"
@@ -100,17 +96,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 6.1,
+   "score": 6.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3043,
-   "tier": "alt dilim",
+   "percentile": 0.3617,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.3068,
+     "percentile": 0.298,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -120,44 +116,35 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.6,
+   "score": 9.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4337,
+   "percentile": 0.4494,
    "tier": "orta dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.059652,
-     "percentile": 0.5181,
-     "basis": "sector",
-     "display": "%6,0",
-     "tier": "orta dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 34.0,
-     "percentile": 0.3554,
+     "percentile": 0.2989,
      "basis": "sector",
      "display": "34",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6031,
-     "percentile": 0.3438,
+     "percentile": 0.3338,
      "basis": "sector",
      "display": "%0,60",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8562,
+     "percentile": 0.8767,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -165,11 +152,11 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.341547,
-     "percentile": 0.3253,
+     "value": 1.344285,
+     "percentile": 0.3413,
      "basis": "sector",
      "display": "1,3 yıl",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     }
    ]
   }
@@ -178,43 +165,47 @@
  "history": [
   [
    "2026-10-23",
-   35.21
+   31.25
   ],
   [
    "2026-10-24",
-   35.43
+   31.32
   ],
   [
    "2026-10-25",
-   31.76
+   28.85
   ],
   [
    "2026-10-26",
-   31.05
+   28.67
   ],
   [
    "2026-10-27",
-   31.33
+   28.8
   ],
   [
    "2026-10-28",
-   36.87
+   34.22
   ],
   [
    "2026-10-29",
-   36.81
+   33.97
   ],
   [
    "2026-10-30",
-   36.78
+   33.92
+  ],
+  [
+   "2026-10-31",
+   34.58
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": -3.7,
-   "from": 35.4,
-   "to": 31.8,
+   "delta": -2.5,
+   "from": 31.3,
+   "to": 28.9,
    "event": false,
    "reasons": [
     {
@@ -226,16 +217,16 @@
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 1.33,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,3)"
+     "delta": 2.57,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +2,6)"
     }
    ]
   },
   {
    "date": "2026-10-28",
-   "delta": 5.5,
-   "from": 31.3,
-   "to": 36.9,
+   "delta": 5.4,
+   "from": 28.8,
+   "to": 34.2,
    "event": true,
    "reasons": [
     {
@@ -250,9 +241,9 @@
  "events": [
   {
    "date": "2026-10-28",
-   "delta": 5.5,
-   "from": 31.3,
-   "to": 36.9,
+   "delta": 5.4,
+   "from": 28.8,
+   "to": 34.2,
    "reasons": [
     {
      "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",

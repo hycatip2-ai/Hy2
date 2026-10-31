@@ -9,26 +9,35 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 42,
- "total_exact": 41.53,
+ "total": 40,
+ "total_exact": 39.89,
  "band": "Zayıf",
- "delta": -1.5,
+ "delta": null,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
  "flags": [],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
   "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
  },
- "date": "2026-10-26",
- "formula_version": "1.5.0",
+ "revenue_unmeasured": true,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
  "eligible_for_top": false,
+ "missing": [
+  "kullanım kanıtı",
+  "arz kuralı"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
- "contract": null,
+ "contract": {
+  "chain": "BNB Chain",
+  "address": "0x9f589e3eabe42ebc94a44727b3f3531c0c877809"
+ },
  "parts": [
   {
    "id": "valuation",
@@ -43,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.5,
+   "score": 4.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1653,
+   "percentile": 0.1629,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.366057,
-     "percentile": 0.2975,
+     "percentile": 0.3176,
      "basis": "sector",
      "display": "%37",
      "tier": "alt dilim"
@@ -62,25 +71,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.76969,
-     "percentile": 0.3306,
+     "percentile": 0.3272,
      "basis": "sector",
      "display": "2,77×",
      "tier": "alt dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.6116,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 1.407008,
-     "percentile": 0.0588,
+     "percentile": 0.0509,
      "basis": "sector",
      "display": "+%141",
      "tier": "alt dilim"
@@ -110,26 +110,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.0,
+   "score": 14.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9256,
+   "percentile": 0.9888,
    "tier": "üst dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.146436,
-     "percentile": 0.6694,
-     "basis": "sector",
-     "display": "%15",
-     "tier": "orta dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 110.0,
-     "percentile": 0.6529,
+     "percentile": 0.6245,
      "basis": "sector",
      "display": "110",
      "tier": "orta dilim"
@@ -138,7 +129,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2799,
-     "percentile": 0.6949,
+     "percentile": 0.7258,
      "basis": "sector",
      "display": "%0,28",
      "tier": "üst dilim"
@@ -147,7 +138,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0714,
-     "percentile": 0.6992,
+     "percentile": 0.6869,
      "basis": "sector",
      "display": "%7,1",
      "tier": "üst dilim"
@@ -155,8 +146,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.552361,
-     "percentile": 0.7934,
+     "value": 5.566051,
+     "percentile": 0.8141,
      "basis": "sector",
      "display": "5,6 yıl",
      "tier": "üst dilim"
@@ -168,24 +159,59 @@
  "history": [
   [
    "2026-10-23",
-   43.54
+   41.3
   ],
   [
    "2026-10-24",
-   43.19
+   41.3
   ],
   [
    "2026-10-25",
-   43.07
+   41.22
   ],
   [
    "2026-10-26",
-   41.53
+   39.6
+  ],
+  [
+   "2026-10-31",
+   39.89
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 998,
+  "rank_start": 960,
+  "score": 0,
+  "rise": 0,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   0,
+   -1,
+   -1,
+   1,
+   1,
+   0,
+   1,
+   -1,
+   -1,
+   1,
+   -1
+  ],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "BSC",
   "source": "contract",

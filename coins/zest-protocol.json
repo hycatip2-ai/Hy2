@@ -1,5 +1,5 @@
 {
- "rank": 218,
+ "rank": 85,
  "slug": "zest-protocol",
  "symbol": "ZEST",
  "name": "Zest Protocol",
@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 38,
- "total_exact": 37.5,
+ "total": 32,
+ "total_exact": 32.01,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -10.1,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -21,17 +21,24 @@
   {
    "id": "top10_concentration",
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  },
+  {
+   "id": "usage_spike",
+   "text": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir."
   }
  ],
+ "notes": [],
  "earns": null,
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
- "date": "2026-10-30",
- "formula_version": "1.5.0",
+ "revenue_unmeasured": false,
+ "date": "2026-10-31",
+ "formula_version": "1.15.0",
  "eligible_for_top": true,
- "penalty": 5.0,
+ "missing": [],
+ "penalty": 10.0,
  "bonus": 0.0,
  "contract": {
   "chain": "BNB Chain",
@@ -41,46 +48,46 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 10.3,
+   "score": 10.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.4722,
+   "percentile": 0.4423,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
-     "value": 193.189629,
-     "percentile": 0.4483,
+     "value": 194.345805,
+     "percentile": 0.4106,
      "basis": "sector",
-     "display": "193×",
+     "display": "194×",
      "tier": "orta dilim"
     },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.525781,
-     "percentile": 0.6471,
+     "value": 0.508434,
+     "percentile": 0.7083,
      "basis": "sector",
-     "display": "0,53×",
-     "tier": "orta dilim"
+     "display": "0,51×",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.7,
+   "score": 4.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2025,
+   "percentile": 0.1287,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.146,
-     "percentile": 0.0633,
+     "percentile": 0.0586,
      "basis": "sector",
      "display": "%15",
      "tier": "alt dilim"
@@ -89,25 +96,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.849315,
-     "percentile": 0.0633,
+     "percentile": 0.0598,
      "basis": "sector",
      "display": "6,85×",
      "tier": "alt dilim"
     },
     {
-     "id": "has_max_supply",
-     "name": "Azami arz var mı",
-     "value": 1.0,
-     "percentile": 0.5949,
-     "basis": "sector",
-     "display": "Var",
-     "tier": "orta dilim"
-    },
-    {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.625,
+     "percentile": 0.5793,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -117,37 +115,55 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 5.2,
+   "score": 10.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2619,
-   "tier": "alt dilim",
+   "percentile": 0.5,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2619,
+     "percentile": 0.2439,
      "basis": "sector",
      "display": "%0",
      "tier": "alt dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": 0.0,
+     "percentile": 0.5587,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": null,
+     "percentile": 0.7134,
+     "basis": "sector",
+     "display": "Yeni arz yok",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 11.3,
+   "score": 10.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6324,
+   "percentile": 0.5667,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.479855,
-     "percentile": 0.7742,
+     "value": 1.480632,
+     "percentile": 0.7765,
      "basis": "sector",
      "display": "+%48",
      "tier": "üst dilim"
@@ -155,10 +171,28 @@
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.733891,
-     "percentile": 0.1515,
+     "value": 0.769395,
+     "percentile": 0.1417,
      "basis": "sector",
-     "display": "−%27",
+     "display": "−%23",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": 1.399036,
+     "percentile": 0.9315,
+     "basis": "sector",
+     "display": "+%140",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "fee_consistency",
+     "name": "Kullanımın sürekliliği (13 hafta)",
+     "value": 0.541103,
+     "percentile": 0.029,
+     "basis": "sector",
+     "display": "%54",
      "tier": "alt dilim"
     }
    ]
@@ -166,26 +200,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.4,
+   "score": 5.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3038,
+   "percentile": 0.0891,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "volume_to_mc",
-     "name": "İşlem hacmi / piyasa değeri",
-     "value": 0.5,
-     "percentile": 0.8797,
-     "basis": "sector",
-     "display": "%50",
-     "tier": "üst dilim"
-    },
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 109.0,
-     "percentile": 0.2911,
+     "percentile": 0.2918,
      "basis": "sector",
      "display": "109",
      "tier": "alt dilim"
@@ -193,26 +218,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.4908,
-     "percentile": 0.2987,
+     "value": 0.3157,
+     "percentile": 0.5624,
      "basis": "sector",
-     "display": "%0,49",
-     "tier": "alt dilim"
+     "display": "%0,32",
+     "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0588,
-     "percentile": 0.8182,
+     "value": 0.2222,
+     "percentile": 0.2874,
      "basis": "sector",
-     "display": "%5,9",
-     "tier": "üst dilim"
+     "display": "%22",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.451745,
-     "percentile": 0.0759,
+     "value": 0.454483,
+     "percentile": 0.0661,
      "basis": "sector",
      "display": "0,5 yıl",
      "tier": "alt dilim"
@@ -221,7 +246,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.1705,
+     "percentile": 0.1838,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -229,47 +254,64 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir. (Uyarı −5,0)"
+  },
+  {
+   "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+   "part": "valuation",
+   "delta": -1.59,
+   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Değerleme −1,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   42.47
+   37.11
   ],
   [
    "2026-10-24",
-   34.88
+   31.04
   ],
   [
    "2026-10-25",
-   35.79
+   39.47
   ],
   [
    "2026-10-26",
-   36.2
+   39.57
   ],
   [
    "2026-10-27",
-   35.72
+   39.09
   ],
   [
    "2026-10-28",
-   39.99
+   43.61
   ],
   [
    "2026-10-29",
-   37.75
+   42.47
   ],
   [
    "2026-10-30",
-   37.5
+   42.09
+  ],
+  [
+   "2026-10-31",
+   32.01
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": -7.6,
-   "from": 42.5,
-   "to": 34.9,
+   "delta": -6.1,
+   "from": 37.1,
+   "to": 31.0,
    "event": true,
    "reasons": [
     {
@@ -281,38 +323,65 @@
     {
      "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -3.99,
-     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −4,0)"
+     "delta": -3.77,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −3,8)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": 8.4,
+   "from": 31.0,
+   "to": 39.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.87,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +5,9)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 3.61,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,6)"
     }
    ]
   },
   {
    "date": "2026-10-28",
-   "delta": 4.3,
-   "from": 35.7,
-   "to": 40.0,
+   "delta": 4.5,
+   "from": 39.1,
+   "to": 43.6,
    "event": false,
    "reasons": [
     {
      "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
      "part": "valuation",
-     "delta": 2.48,
-     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Değerleme +2,5)"
+     "delta": 2.62,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Değerleme +2,6)"
     }
    ]
   },
   {
-   "date": "2026-10-29",
-   "delta": -2.2,
-   "from": 40.0,
-   "to": 37.8,
-   "event": false,
+   "date": "2026-10-31",
+   "delta": -10.1,
+   "from": 42.1,
+   "to": 32.0,
+   "event": true,
    "reasons": [
+    {
+     "text": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir. (Uyarı −5,0)"
+    },
     {
      "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
      "part": "valuation",
-     "delta": -1.23,
-     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Değerleme −1,2)"
+     "delta": -1.59,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Değerleme −1,6)"
     }
    ]
   }
@@ -320,9 +389,9 @@
  "events": [
   {
    "date": "2026-10-24",
-   "delta": -7.6,
-   "from": 42.5,
-   "to": 34.9,
+   "delta": -6.1,
+   "from": 37.1,
+   "to": 31.0,
    "reasons": [
     {
      "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
@@ -333,21 +402,61 @@
     {
      "text": "Kilitli varlık trendi (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -3.99,
-     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −4,0)"
+     "delta": -3.77,
+     "label": "Kilitli varlık trendi (90 gün) verisi artık mevcut. (Kullanım −3,8)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-25",
+   "delta": 8.4,
+   "from": 31.0,
+   "to": 39.5,
+   "reasons": [
+    {
+     "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.87,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +5,9)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 3.61,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,6)"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-31",
+   "delta": -10.1,
+   "from": 42.1,
+   "to": 32.0,
+   "reasons": [
+    {
+     "text": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Son 13 haftanın ücretlerinin yarıdan fazlası yalnızca iki haftada oluştu; kullanım kısa süreli bir sıçrama olabilir. (Uyarı −5,0)"
+    },
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+     "part": "valuation",
+     "delta": -1.59,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Değerleme −1,6)"
     }
    ]
   }
  ],
  "trend": {
-  "rank_now": 587,
-  "rank_start": 418,
+  "rank_now": 590,
+  "rank_start": 434,
   "score": 0,
   "rise": 0,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
-  "weeks_down": 5,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -358,10 +467,10 @@
    1,
    1,
    1,
-   0,
+   -1,
    1,
    1,
-   0
+   -1
   ],
   "labels": [],
   "trend": "falling",
