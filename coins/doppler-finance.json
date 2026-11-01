@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 23,
- "total_exact": 22.96,
+ "total": 26,
+ "total_exact": 25.69,
  "band": "Zayıf",
- "delta": -0.3,
+ "delta": 2.7,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -30,8 +30,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-10-31",
- "formula_version": "1.15.0",
+ "date": "2026-11-01",
+ "formula_version": "1.16.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -61,14 +61,14 @@
    "score": 0.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0198,
+   "percentile": 0.0204,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.122835,
-     "percentile": 0.0386,
+     "percentile": 0.04,
      "basis": "sector",
      "display": "%12",
      "tier": "alt dilim"
@@ -77,7 +77,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.141002,
-     "percentile": 0.039,
+     "percentile": 0.0404,
      "basis": "sector",
      "display": "8,14×",
      "tier": "alt dilim"
@@ -107,17 +107,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.9,
+   "score": 9.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1089,
-   "tier": "alt dilim",
+   "percentile": 0.3878,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 178.0,
-     "percentile": 0.6512,
+     "percentile": 0.6597,
      "basis": "sector",
      "display": "178",
      "tier": "orta dilim"
@@ -125,26 +125,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.5653,
-     "percentile": 0.1973,
+     "value": 0.5573,
+     "percentile": 0.2808,
      "basis": "sector",
-     "display": "%0,57",
+     "display": "%0,56",
      "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.2105,
-     "percentile": 0.3159,
+     "value": 0.0,
+     "percentile": 0.9446,
      "basis": "sector",
-     "display": "%21",
-     "tier": "alt dilim"
+     "display": "%0",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.243669,
-     "percentile": 0.0181,
+     "value": 0.246407,
+     "percentile": 0.0186,
      "basis": "sector",
      "display": "0,2 yıl",
      "tier": "alt dilim"
@@ -152,51 +152,62 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+   "part": "liquidity",
+   "delta": 2.65,
+   "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   27.84
+   27.85
   ],
   [
    "2026-10-24",
-   27.99
+   28.0
   ],
   [
    "2026-10-25",
-   27.6
+   27.64
   ],
   [
    "2026-10-26",
-   27.58
+   27.62
   ],
   [
    "2026-10-27",
-   27.42
+   27.47
   ],
   [
    "2026-10-28",
-   27.72
+   27.77
   ],
   [
    "2026-10-29",
-   28.32
+   28.38
   ],
   [
    "2026-10-30",
-   23.22
+   23.28
   ],
   [
    "2026-10-31",
-   22.96
+   23.01
+  ],
+  [
+   "2026-11-01",
+   25.69
   ]
  ],
  "changes": [
   {
    "date": "2026-10-30",
    "delta": -5.1,
-   "from": 28.3,
-   "to": 23.2,
+   "from": 28.4,
+   "to": 23.3,
    "event": true,
    "reasons": [
     {
@@ -206,14 +217,29 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-01",
+   "delta": 2.7,
+   "from": 23.0,
+   "to": 25.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+     "part": "liquidity",
+     "delta": 2.65,
+     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,6)"
+    }
+   ]
   }
  ],
  "events": [
   {
    "date": "2026-10-30",
    "delta": -5.1,
-   "from": 28.3,
-   "to": 23.2,
+   "from": 28.4,
+   "to": 23.3,
    "reasons": [
     {
      "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",

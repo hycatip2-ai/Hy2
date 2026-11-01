@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 47,
- "total_exact": 46.99,
+ "total": 44,
+ "total_exact": 44.45,
  "band": "Zayıf",
- "delta": null,
+ "delta": -2.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,8 +25,8 @@
   "text": "Kontrat sonradan değiştirilebiliyor ama yetkili (okunamayan bir yetkili) görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-10-31",
- "formula_version": "1.15.0",
+ "date": "2026-11-01",
+ "formula_version": "1.16.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -53,7 +53,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 17.2,
+   "score": 16.6,
    "has_data": true,
    "weight": 20,
    "percentile": 1.0,
@@ -63,7 +63,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8662,
+     "percentile": 0.8664,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -72,7 +72,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9689,
+     "percentile": 0.8815,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -81,7 +81,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -1e-06,
-     "percentile": 0.7504,
+     "percentile": 0.7465,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -111,17 +111,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.3,
+   "score": 6.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5,
-   "tier": "orta dilim",
+   "percentile": 0.0625,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 111.0,
-     "percentile": 0.4505,
+     "percentile": 0.4526,
      "basis": "sector",
      "display": "111",
      "tier": "orta dilim"
@@ -129,26 +129,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 1.4437,
-     "percentile": 0.0537,
+     "value": 1.0385,
+     "percentile": 0.0845,
      "basis": "sector",
-     "display": "%1,4",
+     "display": "%1,0",
      "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.1333,
-     "percentile": 0.6982,
+     "value": 0.2857,
+     "percentile": 0.1484,
      "basis": "sector",
-     "display": "%13",
-     "tier": "üst dilim"
+     "display": "%29",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.691992,
-     "percentile": 0.6651,
+     "value": 5.69473,
+     "percentile": 0.6677,
      "basis": "sector",
      "display": "5,7 yıl",
      "tier": "orta dilim"
@@ -156,7 +156,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+   "part": "liquidity",
+   "delta": -1.93,
+   "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −1,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -189,33 +196,53 @@
   [
    "2026-10-31",
    46.99
+  ],
+  [
+   "2026-11-01",
+   44.45
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-01",
+   "delta": -2.5,
+   "from": 47.0,
+   "to": 44.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -1.93,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −1,9)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 817,
-  "rank_start": 745,
+  "rank_now": 843,
+  "rank_start": 755,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 8,
+  "weeks_up": 3,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
-   1,
-   1,
-   -1,
-   -1,
-   -1,
+   0,
    1,
    -1,
    -1,
+   0,
+   1,
    -1,
-   -1
+   -1,
+   -1,
+   0
   ],
   "labels": [],
   "trend": "falling",

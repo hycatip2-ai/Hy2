@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 34,
- "total_exact": 33.63,
+ "total": 33,
+ "total_exact": 33.49,
  "band": "Zayıf",
- "delta": -0.8,
+ "delta": -0.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -30,8 +30,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-10-31",
- "formula_version": "1.15.0",
+ "date": "2026-11-01",
+ "formula_version": "1.16.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -56,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 11.1,
+   "score": 11.0,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.5962,
+   "percentile": 0.5926,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.736755,
-     "percentile": 0.6518,
+     "percentile": 0.6491,
      "basis": "sector",
      "display": "%74",
      "tier": "orta dilim"
@@ -75,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.357304,
-     "percentile": 0.6869,
+     "percentile": 0.6834,
      "basis": "sector",
      "display": "1,36×",
      "tier": "üst dilim"
@@ -84,7 +84,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.111449,
-     "percentile": 0.3218,
+     "percentile": 0.3129,
      "basis": "sector",
      "display": "+%11",
      "tier": "alt dilim"
@@ -114,7 +114,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2089,
+     "percentile": 0.2086,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -124,17 +124,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.3,
+   "score": 9.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4615,
+   "percentile": 0.3889,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 120.0,
-     "percentile": 0.4511,
+     "percentile": 0.4671,
      "basis": "sector",
      "display": "120",
      "tier": "orta dilim"
@@ -143,7 +143,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4302,
-     "percentile": 0.448,
+     "percentile": 0.4337,
      "basis": "sector",
      "display": "%0,43",
      "tier": "orta dilim"
@@ -152,7 +152,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1538,
-     "percentile": 0.4491,
+     "percentile": 0.4644,
      "basis": "sector",
      "display": "%15",
      "tier": "orta dilim"
@@ -160,8 +160,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.058864,
-     "percentile": 0.7282,
+     "value": 2.061602,
+     "percentile": 0.7102,
      "basis": "sector",
      "display": "2,1 yıl",
      "tier": "üst dilim"
@@ -170,7 +170,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2614,
+     "percentile": 0.2674,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -215,6 +215,10 @@
   [
    "2026-10-31",
    33.63
+  ],
+  [
+   "2026-11-01",
+   33.49
   ]
  ],
  "changes": [
@@ -266,38 +270,46 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 612,
-  "rank_start": 665,
-  "score": 18,
-  "rise": 23,
+  "rank_now": 614,
+  "rank_start": 667,
+  "score": 0,
+  "rise": 0,
   "steady": 50,
-  "calm": 27,
+  "calm": 14,
   "weeks_up": 6,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    1,
+   1,
+   -1,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   1,
+   -1,
    0,
-   -1,
-   1,
-   1,
-   -1,
-   1,
-   -1,
-   1,
-   -1,
-   -1,
-   1
+   -1
   ],
   "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   },
    {
     "id": "supply",
     "text": "Arz etkisi"
    }
   ],
-  "trend": "rising",
-  "supply_share": 0.66,
-  "eligible": true,
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
   "window_days": 90,
   "score_change": null,
   "double": false

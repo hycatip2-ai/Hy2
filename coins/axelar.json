@@ -12,10 +12,10 @@
  ],
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 55,
- "total_exact": 55.19,
+ "total": 61,
+ "total_exact": 61.42,
  "band": "Orta",
- "delta": -1.1,
+ "delta": 6.2,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -27,26 +27,32 @@
    "text": "Yılda basılan yeni tokenlerin değeri gelirin iki katından fazla; büyüme büyük ölçüde teşvikle besleniyor olabilir."
   }
  ],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: yeni token basma ya da basım oranını değiştirme yetkisi bir grupta; planlanan artış yılda %4,8, kesin üst sınır belgelenmemiş. Kendin araştır.",
+  "source": "https://www.axelar.network/blog/cobalt-tokenomics-upgrade",
+  "researched_at": "2026-10-31"
  },
  "revenue_unmeasured": false,
- "date": "2026-10-31",
- "formula_version": "1.15.0",
+ "date": "2026-11-01",
+ "formula_version": "1.16.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.1,
+   "score": 7.2,
    "has_data": true,
    "weight": 20,
    "percentile": 0.4091,
@@ -56,7 +62,7 @@
      "id": "mc_to_revenue",
      "name": "Piyasa değeri / yıllık gelir",
      "value": null,
-     "percentile": 0.1026,
+     "percentile": 0.1053,
      "basis": "universe",
      "display": "Gelir yok",
      "tier": "alt dilim"
@@ -64,10 +70,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.407883,
-     "percentile": 0.8655,
+     "value": 0.401346,
+     "percentile": 0.864,
      "basis": "sector",
-     "display": "0,41×",
+     "display": "0,40×",
      "tier": "üst dilim"
     }
    ]
@@ -75,17 +81,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.9,
+   "score": 14.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7949,
+   "percentile": 0.8158,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.994731,
-     "percentile": 0.8781,
+     "value": 0.994824,
+     "percentile": 0.8935,
      "basis": "sector",
      "display": "%99",
      "tier": "üst dilim"
@@ -93,8 +99,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.005297,
-     "percentile": 0.9126,
+     "value": 1.005203,
+     "percentile": 0.9296,
      "basis": "sector",
      "display": "1,01×",
      "tier": "üst dilim"
@@ -102,8 +108,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.031967,
-     "percentile": 0.2944,
+     "value": 0.031681,
+     "percentile": 0.2995,
      "basis": "sector",
      "display": "+%3,2",
      "tier": "alt dilim"
@@ -113,26 +119,35 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 3.9,
+   "score": 5.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.141,
+   "percentile": 0.2792,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2589,
+     "percentile": 0.2685,
      "basis": "universe",
      "display": "%0",
      "tier": "alt dilim"
     },
     {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.5,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "orta dilim"
+    },
+    {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
-     "value": -0.129644,
-     "percentile": 0.2623,
+     "value": -0.128485,
+     "percentile": 0.2712,
      "basis": "universe",
      "display": "−%13",
      "tier": "alt dilim"
@@ -141,7 +156,7 @@
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": 0.0,
-     "percentile": 0.0641,
+     "percentile": 0.0658,
      "basis": "universe",
      "display": "0,00×",
      "tier": "alt dilim"
@@ -151,44 +166,44 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.5,
+   "score": 14.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8529,
+   "percentile": 0.8485,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.340704,
-     "percentile": 0.7569,
+     "value": 1.334771,
+     "percentile": 0.7535,
      "basis": "sector",
-     "display": "+%34",
+     "display": "+%33",
      "tier": "üst dilim"
     },
     {
      "id": "tvl_trend",
      "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.093368,
-     "percentile": 0.5219,
+     "value": 1.08706,
+     "percentile": 0.527,
      "basis": "sector",
-     "display": "+%9,3",
+     "display": "+%8,7",
      "tier": "orta dilim"
     },
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": -0.071939,
-     "percentile": 0.6885,
+     "value": -0.078255,
+     "percentile": 0.678,
      "basis": "universe",
-     "display": "−%7,2",
+     "display": "−%7,8",
      "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 11.0,
-     "percentile": 0.8335,
+     "percentile": 0.8096,
      "basis": "sector",
      "display": "11",
      "tier": "üst dilim"
@@ -198,26 +213,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.8,
+   "score": 12.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8718,
+   "percentile": 0.8947,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 259.0,
-     "percentile": 0.8762,
+     "value": 260.0,
+     "percentile": 0.8849,
      "basis": "sector",
-     "display": "259",
+     "display": "260",
      "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.7591,
-     "percentile": 0.1349,
+     "percentile": 0.1399,
      "basis": "sector",
      "display": "%0,76",
      "tier": "alt dilim"
@@ -226,25 +241,25 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1346,
-     "percentile": 0.7107,
+     "percentile": 0.6423,
      "basis": "sector",
      "display": "%13",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.741958,
-     "percentile": 0.6603,
+     "value": 4.744695,
+     "percentile": 0.6764,
      "basis": "sector",
      "display": "4,7 yıl",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.8218,
+     "percentile": 0.8327,
      "basis": "sector",
      "display": "2",
      "tier": "üst dilim"
@@ -252,7 +267,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 1.22,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +1,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -289,6 +317,10 @@
   [
    "2026-10-31",
    55.19
+  ],
+  [
+   "2026-11-01",
+   61.42
   ]
  ],
  "changes": [
@@ -310,6 +342,27 @@
      "part": "liquidity",
      "delta": -3.17,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,2)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "delta": 6.2,
+   "from": 55.2,
+   "to": 61.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 1.22,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +1,2)"
     }
    ]
   }
@@ -334,27 +387,47 @@
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,2)"
     }
    ]
+  },
+  {
+   "date": "2026-11-01",
+   "delta": 6.2,
+   "from": 55.2,
+   "to": 61.4,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 1.22,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +1,2)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 332,
-  "rank_start": 354,
+  "rank_now": 335,
+  "rank_start": 359,
   "score": 32,
-  "rise": 41,
+  "rise": 42,
   "steady": 42,
-  "calm": 13,
+  "calm": 15,
   "weeks_up": 5,
-  "weeks_down": 5,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
+   -1,
+   1,
+   -1,
    0,
    1,
    -1,
-   -1,
-   1,
-   0,
    1,
    1,
    -1,
@@ -364,10 +437,14 @@
    {
     "id": "spike",
     "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
    }
   ],
   "trend": "rising",
-  "supply_share": 0.2,
+  "supply_share": 0.22,
   "eligible": false,
   "window_days": 90,
   "score_change": null,

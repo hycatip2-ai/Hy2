@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 38.56,
+ "total": 36,
+ "total_exact": 36.21,
  "band": "Zayıf",
- "delta": 0.3,
+ "delta": -2.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -30,8 +30,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-10-31",
- "formula_version": "1.15.0",
+ "date": "2026-11-01",
+ "formula_version": "1.16.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -56,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.7,
+   "score": 8.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4045,
+   "percentile": 0.3864,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.70026,
-     "percentile": 0.6279,
+     "percentile": 0.6347,
      "basis": "sector",
      "display": "%70",
      "tier": "orta dilim"
@@ -75,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.428042,
-     "percentile": 0.6607,
+     "percentile": 0.6683,
      "basis": "sector",
      "display": "1,43×",
      "tier": "orta dilim"
@@ -84,7 +84,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 3.540997,
-     "percentile": 0.0134,
+     "percentile": 0.0249,
      "basis": "sector",
      "display": "+%354",
      "tier": "alt dilim"
@@ -114,17 +114,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.9,
+   "score": 11.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9663,
+   "percentile": 0.6818,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 211.0,
-     "percentile": 0.9001,
+     "percentile": 0.8998,
      "basis": "sector",
      "display": "211",
      "tier": "üst dilim"
@@ -132,26 +132,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.3201,
-     "percentile": 0.6396,
+     "value": 0.6718,
+     "percentile": 0.2689,
      "basis": "sector",
-     "display": "%0,32",
-     "tier": "orta dilim"
+     "display": "%0,67",
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0741,
-     "percentile": 0.6709,
+     "value": 0.1667,
+     "percentile": 0.5289,
      "basis": "sector",
-     "display": "%7,4",
-     "tier": "üst dilim"
+     "display": "%17",
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.696783,
-     "percentile": 0.5662,
+     "value": 2.699521,
+     "percentile": 0.5729,
      "basis": "sector",
      "display": "2,7 yıl",
      "tier": "orta dilim"
@@ -159,43 +159,54 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+   "part": "liquidity",
+   "delta": -2.56,
+   "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −2,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   46.75
+   46.81
   ],
   [
    "2026-10-24",
-   41.63
+   41.69
   ],
   [
    "2026-10-25",
-   37.36
+   37.43
   ],
   [
    "2026-10-26",
-   37.47
+   37.53
   ],
   [
    "2026-10-27",
-   37.51
+   37.57
   ],
   [
    "2026-10-28",
-   37.7
+   37.76
   ],
   [
    "2026-10-29",
-   37.66
+   37.73
   ],
   [
    "2026-10-30",
-   38.25
+   38.31
   ],
   [
    "2026-10-31",
-   38.56
+   38.67
+  ],
+  [
+   "2026-11-01",
+   36.21
   ]
  ],
  "changes": [
@@ -203,7 +214,7 @@
    "date": "2026-10-24",
    "delta": -5.1,
    "from": 46.8,
-   "to": 41.6,
+   "to": 41.7,
    "event": true,
    "reasons": [
     {
@@ -217,15 +228,30 @@
   {
    "date": "2026-10-25",
    "delta": -4.3,
-   "from": 41.6,
+   "from": 41.7,
    "to": 37.4,
    "event": false,
    "reasons": [
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
-     "delta": -3.8,
+     "delta": -3.84,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,8)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-01",
+   "delta": -2.5,
+   "from": 38.7,
+   "to": 36.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -2.56,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −2,6)"
     }
    ]
   }
@@ -235,7 +261,7 @@
    "date": "2026-10-24",
    "delta": -5.1,
    "from": 46.8,
-   "to": 41.6,
+   "to": 41.7,
    "reasons": [
     {
      "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
@@ -247,23 +273,23 @@
   }
  ],
  "trend": {
-  "rank_now": 761,
-  "rank_start": 738,
+  "rank_now": 769,
+  "rank_start": 742,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_up": 5,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
    -1,
-   -1,
-   -1,
-   -1,
    0,
+   -1,
+   -1,
+   1,
    1,
    1,
    0,
