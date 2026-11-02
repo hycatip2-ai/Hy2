@@ -1,0 +1,349 @@
+{
+ "date": "2026-11-02",
+ "items": [
+  {
+   "slug": "pocket-network",
+   "name": "Pocket Network",
+   "symbol": "POKT",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Pocket Network",
+    "symbol": "POKT",
+    "slug": "pocket-network",
+    "sector_name": "DePIN",
+    "websites": [
+     "https://pocket.network/"
+    ],
+    "contracts": [
+     {
+      "platform": "Ethereum",
+      "address": "0x764A726d9ceD0433A8D7643335919dEb03a9a935"
+     },
+     {
+      "platform": "Solana",
+      "address": "6CAsXfiCXZfP8APCG6Vma2DFMindopxiqYQN4LSQfhoC"
+     },
+     {
+      "platform": "Base",
+      "address": "0x764A726d9ceD0433A8D7643335919dEb03a9a935"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 2375200927.431292,
+    "total_supply": 2375200927.431292,
+    "max_supply": null,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-11-02. Research this cryptocurrency project:\n- Name: Pocket Network\n- Ticker: POKT\n- CoinMarketCap slug: pocket-network (https://coinmarketcap.com/currencies/pocket-network/)\n- Sector: DePIN\n- Official website: https://pocket.network/\n- Token contract on Ethereum: 0x764A726d9ceD0433A8D7643335919dEb03a9a935\n- Token contract on Solana: 6CAsXfiCXZfP8APCG6Vma2DFMindopxiqYQN4LSQfhoC\n- Token contract on Base: 0x764A726d9ceD0433A8D7643335919dEb03a9a935\n- Current circulating supply: 2,375,200,927 tokens\n- Total supply on CoinMarketCap: 2,375,200,927\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-11-02 and 2027-05-03, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n   unlock_12m_pct: the same for the 12 months between 2026-11-02 and 2027-11-02. 0 if all vesting has ended. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-11-02 and 2026-11-02? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n6. token_utility (VERY IMPORTANT): Must users or operators acquire and use THIS token to use the product or network?\n   level: \"required\" = using the product or network requires the token: fees or gas are paid in it, the service is paid in it or by burning it (burn-and-mint), operators must stake it to provide the service, or it is required collateral; \"partial\" = the product can be used without the token, but the token gives fee discounts, priority, a share of protocol revenue, or is one of several accepted payment options; \"none\" = the token is only for governance or voting, or only earns emission rewards, and the product is fully usable without it. null if unclear.\n   uses: the ways the token is used, from: \"network_fees\", \"service_payment\", \"burn_mint\", \"stake_to_operate\", \"collateral\", \"fee_discount\", \"revenue_share\", \"governance\", \"emission_rewards\".\n   The source must be official documentation describing how the token is used in the protocol.\n7. usage_evidence (VERY IMPORTANT): One recent, measurable statistic that shows the product is really used, dated between 2026-05-03 and 2026-11-02: for example active nodes or providers, paying customers, monthly transactions, compute hours sold, data or storage served, fees paid by users. Give metric (short English name), value (a plain number exactly as the page shows it, without units), unit and as_of (YYYY-MM-DD). The source must be an official dashboard, block explorer, analytics site or official report that shows this number. null if you find none. Never estimate.\n8. allocation: insiders_pct = share of the total or max supply allocated to team, founders, advisors and investors together, in percent; vesting_end = when their vesting ends (YYYY-MM). null if unknown.\n9. value_transfer_pending: A token buyback, burn or revenue sharing to token holders that governance approved or the team officially announced but that is not live yet. mechanism: \"buyback\" | \"burn\" | \"revenue_share\"; status: \"approved\" | \"announced\"; expected: YYYY-MM or null. null if there is none.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_12m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"token_utility\": {\n  \"value\": {\n   \"level\": \"required | partial | none | null\",\n   \"uses\": [\n    \"...\"\n   ]\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"usage_evidence\": {\n  \"value\": {\n   \"metric\": \"...\",\n   \"value\": \"number\",\n   \"unit\": \"...\",\n   \"as_of\": \"YYYY-MM-DD\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"allocation\": {\n  \"value\": {\n   \"insiders_pct\": \"number or null\",\n   \"vesting_end\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"value_transfer_pending\": {\n  \"value\": {\n   \"mechanism\": \"buyback | burn | revenue_share\",\n   \"status\": \"approved | announced\",\n   \"expected\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "rsk-infrastructure-framework",
+   "name": "Rootstock Infrastructure Framework",
+   "symbol": "RIF",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Rootstock Infrastructure Framework",
+    "symbol": "RIF",
+    "slug": "rsk-infrastructure-framework",
+    "sector_name": "Katman 1/2",
+    "websites": [
+     "https://rif.technology/",
+     "https://rootstockcollective.xyz/"
+    ],
+    "contracts": [
+     {
+      "platform": "Ethereum",
+      "address": "0x01b603be3D545F096015741e6503440282BF45fb"
+     },
+     {
+      "platform": "Solana",
+      "address": "AAeENcfHbTExuTvs4q7r9Bjax98Dg6BGX3aMph4bTLdK"
+     },
+     {
+      "platform": "Arbitrum",
+      "address": "0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 1000000000,
+    "total_supply": 1000000000,
+    "max_supply": 1000000000,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-11-02. Research this cryptocurrency project:\n- Name: Rootstock Infrastructure Framework\n- Ticker: RIF\n- CoinMarketCap slug: rsk-infrastructure-framework (https://coinmarketcap.com/currencies/rsk-infrastructure-framework/)\n- Sector: Katman 1/2\n- Official website: https://rif.technology/\n- Official website: https://rootstockcollective.xyz/\n- Token contract on Ethereum: 0x01b603be3D545F096015741e6503440282BF45fb\n- Token contract on Solana: AAeENcfHbTExuTvs4q7r9Bjax98Dg6BGX3aMph4bTLdK\n- Token contract on Arbitrum: 0xe5e851b01DD3Eda24FDe709a407dB44555B6d1E0\n- Current circulating supply: 1,000,000,000 tokens\n- Total supply on CoinMarketCap: 1,000,000,000\n- Max supply on CoinMarketCap: 1,000,000,000\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-11-02 and 2027-05-03, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n   unlock_12m_pct: the same for the 12 months between 2026-11-02 and 2027-11-02. 0 if all vesting has ended. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-11-02 and 2026-11-02? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n6. token_utility (VERY IMPORTANT): Must users or operators acquire and use THIS token to use the product or network?\n   level: \"required\" = using the product or network requires the token: fees or gas are paid in it, the service is paid in it or by burning it (burn-and-mint), operators must stake it to provide the service, or it is required collateral; \"partial\" = the product can be used without the token, but the token gives fee discounts, priority, a share of protocol revenue, or is one of several accepted payment options; \"none\" = the token is only for governance or voting, or only earns emission rewards, and the product is fully usable without it. null if unclear.\n   uses: the ways the token is used, from: \"network_fees\", \"service_payment\", \"burn_mint\", \"stake_to_operate\", \"collateral\", \"fee_discount\", \"revenue_share\", \"governance\", \"emission_rewards\".\n   The source must be official documentation describing how the token is used in the protocol.\n7. usage_evidence (VERY IMPORTANT): One recent, measurable statistic that shows the product is really used, dated between 2026-05-03 and 2026-11-02: for example active nodes or providers, paying customers, monthly transactions, compute hours sold, data or storage served, fees paid by users. Give metric (short English name), value (a plain number exactly as the page shows it, without units), unit and as_of (YYYY-MM-DD). The source must be an official dashboard, block explorer, analytics site or official report that shows this number. null if you find none. Never estimate.\n8. allocation: insiders_pct = share of the total or max supply allocated to team, founders, advisors and investors together, in percent; vesting_end = when their vesting ends (YYYY-MM). null if unknown.\n9. value_transfer_pending: A token buyback, burn or revenue sharing to token holders that governance approved or the team officially announced but that is not live yet. mechanism: \"buyback\" | \"burn\" | \"revenue_share\"; status: \"approved\" | \"announced\"; expected: YYYY-MM or null. null if there is none.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_12m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"token_utility\": {\n  \"value\": {\n   \"level\": \"required | partial | none | null\",\n   \"uses\": [\n    \"...\"\n   ]\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"usage_evidence\": {\n  \"value\": {\n   \"metric\": \"...\",\n   \"value\": \"number\",\n   \"unit\": \"...\",\n   \"as_of\": \"YYYY-MM-DD\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"allocation\": {\n  \"value\": {\n   \"insiders_pct\": \"number or null\",\n   \"vesting_end\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"value_transfer_pending\": {\n  \"value\": {\n   \"mechanism\": \"buyback | burn | revenue_share\",\n   \"status\": \"approved | announced\",\n   \"expected\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "berachain",
+   "name": "Berachain",
+   "symbol": "BERA",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Berachain",
+    "symbol": "BERA",
+    "slug": "berachain",
+    "sector_name": "Katman 1/2",
+    "websites": [
+     "https://berachain.com/"
+    ],
+    "contracts": [
+     {
+      "platform": "Bera Chain",
+      "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 351422731.7464118,
+    "total_supply": 563933842.8575228,
+    "max_supply": null,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-11-02. Research this cryptocurrency project:\n- Name: Berachain\n- Ticker: BERA\n- CoinMarketCap slug: berachain (https://coinmarketcap.com/currencies/berachain/)\n- Sector: Katman 1/2\n- Official website: https://berachain.com/\n- Token contract on Bera Chain: 0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n- Current circulating supply: 351,422,732 tokens\n- Total supply on CoinMarketCap: 563,933,843\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-11-02 and 2027-05-03, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n   unlock_12m_pct: the same for the 12 months between 2026-11-02 and 2027-11-02. 0 if all vesting has ended. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-11-02 and 2026-11-02? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n6. token_utility (VERY IMPORTANT): Must users or operators acquire and use THIS token to use the product or network?\n   level: \"required\" = using the product or network requires the token: fees or gas are paid in it, the service is paid in it or by burning it (burn-and-mint), operators must stake it to provide the service, or it is required collateral; \"partial\" = the product can be used without the token, but the token gives fee discounts, priority, a share of protocol revenue, or is one of several accepted payment options; \"none\" = the token is only for governance or voting, or only earns emission rewards, and the product is fully usable without it. null if unclear.\n   uses: the ways the token is used, from: \"network_fees\", \"service_payment\", \"burn_mint\", \"stake_to_operate\", \"collateral\", \"fee_discount\", \"revenue_share\", \"governance\", \"emission_rewards\".\n   The source must be official documentation describing how the token is used in the protocol.\n7. usage_evidence (VERY IMPORTANT): One recent, measurable statistic that shows the product is really used, dated between 2026-05-03 and 2026-11-02: for example active nodes or providers, paying customers, monthly transactions, compute hours sold, data or storage served, fees paid by users. Give metric (short English name), value (a plain number exactly as the page shows it, without units), unit and as_of (YYYY-MM-DD). The source must be an official dashboard, block explorer, analytics site or official report that shows this number. null if you find none. Never estimate.\n8. allocation: insiders_pct = share of the total or max supply allocated to team, founders, advisors and investors together, in percent; vesting_end = when their vesting ends (YYYY-MM). null if unknown.\n9. value_transfer_pending: A token buyback, burn or revenue sharing to token holders that governance approved or the team officially announced but that is not live yet. mechanism: \"buyback\" | \"burn\" | \"revenue_share\"; status: \"approved\" | \"announced\"; expected: YYYY-MM or null. null if there is none.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_12m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"token_utility\": {\n  \"value\": {\n   \"level\": \"required | partial | none | null\",\n   \"uses\": [\n    \"...\"\n   ]\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"usage_evidence\": {\n  \"value\": {\n   \"metric\": \"...\",\n   \"value\": \"number\",\n   \"unit\": \"...\",\n   \"as_of\": \"YYYY-MM-DD\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"allocation\": {\n  \"value\": {\n   \"insiders_pct\": \"number or null\",\n   \"vesting_end\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"value_transfer_pending\": {\n  \"value\": {\n   \"mechanism\": \"buyback | burn | revenue_share\",\n   \"status\": \"approved | announced\",\n   \"expected\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "walrus-xyz",
+   "name": "Walrus",
+   "symbol": "WAL",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Walrus",
+    "symbol": "WAL",
+    "slug": "walrus-xyz",
+    "sector_name": "Altyapı",
+    "websites": [
+     "https://www.walrus.xyz"
+    ],
+    "contracts": [
+     {
+      "platform": "Sui Network",
+      "address": "0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 2670833333,
+    "total_supply": 4999881792.576046,
+    "max_supply": 5000000000,
+    "defillama_url": "https://defillama.com/protocol/walrus-protocol"
+   },
+   "prompt": "Today is 2026-11-02. Research this cryptocurrency project:\n- Name: Walrus\n- Ticker: WAL\n- CoinMarketCap slug: walrus-xyz (https://coinmarketcap.com/currencies/walrus-xyz/)\n- Sector: Altyapı\n- Official website: https://www.walrus.xyz\n- Token contract on Sui Network: 0x356a26eb9e012a68958082340d4c4116e7f55615cf27affcff209cf0ae544f59::wal::WAL\n- Current circulating supply: 2,670,833,333 tokens\n- Total supply on CoinMarketCap: 4,999,881,793\n- Max supply on CoinMarketCap: 5,000,000,000\n- DefiLlama page: https://defillama.com/protocol/walrus-protocol\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-11-02 and 2027-05-03, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n   unlock_12m_pct: the same for the 12 months between 2026-11-02 and 2027-11-02. 0 if all vesting has ended. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-11-02 and 2026-11-02? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n6. token_utility (VERY IMPORTANT): Must users or operators acquire and use THIS token to use the product or network?\n   level: \"required\" = using the product or network requires the token: fees or gas are paid in it, the service is paid in it or by burning it (burn-and-mint), operators must stake it to provide the service, or it is required collateral; \"partial\" = the product can be used without the token, but the token gives fee discounts, priority, a share of protocol revenue, or is one of several accepted payment options; \"none\" = the token is only for governance or voting, or only earns emission rewards, and the product is fully usable without it. null if unclear.\n   uses: the ways the token is used, from: \"network_fees\", \"service_payment\", \"burn_mint\", \"stake_to_operate\", \"collateral\", \"fee_discount\", \"revenue_share\", \"governance\", \"emission_rewards\".\n   The source must be official documentation describing how the token is used in the protocol.\n7. usage_evidence (VERY IMPORTANT): One recent, measurable statistic that shows the product is really used, dated between 2026-05-03 and 2026-11-02: for example active nodes or providers, paying customers, monthly transactions, compute hours sold, data or storage served, fees paid by users. Give metric (short English name), value (a plain number exactly as the page shows it, without units), unit and as_of (YYYY-MM-DD). The source must be an official dashboard, block explorer, analytics site or official report that shows this number. null if you find none. Never estimate.\n8. allocation: insiders_pct = share of the total or max supply allocated to team, founders, advisors and investors together, in percent; vesting_end = when their vesting ends (YYYY-MM). null if unknown.\n9. value_transfer_pending: A token buyback, burn or revenue sharing to token holders that governance approved or the team officially announced but that is not live yet. mechanism: \"buyback\" | \"burn\" | \"revenue_share\"; status: \"approved\" | \"announced\"; expected: YYYY-MM or null. null if there is none.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_12m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"token_utility\": {\n  \"value\": {\n   \"level\": \"required | partial | none | null\",\n   \"uses\": [\n    \"...\"\n   ]\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"usage_evidence\": {\n  \"value\": {\n   \"metric\": \"...\",\n   \"value\": \"number\",\n   \"unit\": \"...\",\n   \"as_of\": \"YYYY-MM-DD\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"allocation\": {\n  \"value\": {\n   \"insiders_pct\": \"number or null\",\n   \"vesting_end\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"value_transfer_pending\": {\n  \"value\": {\n   \"mechanism\": \"buyback | burn | revenue_share\",\n   \"status\": \"approved | announced\",\n   \"expected\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  },
+  {
+   "slug": "citrea",
+   "name": "Citrea",
+   "symbol": "CTR",
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı",
+   "context": {
+    "name": "Citrea",
+    "symbol": "CTR",
+    "slug": "citrea",
+    "sector_name": "Katman 1/2",
+    "websites": [
+     "https://citrea.xyz/"
+    ],
+    "contracts": [
+     {
+      "platform": "Base",
+      "address": "0x11030f79109269d796fd0fb956d6244e502757f7"
+     }
+    ],
+    "native": false,
+    "circulating_supply": 1500000000,
+    "total_supply": 10000000000,
+    "max_supply": 10000000000,
+    "defillama_url": null
+   },
+   "prompt": "Today is 2026-11-02. Research this cryptocurrency project:\n- Name: Citrea\n- Ticker: CTR\n- CoinMarketCap slug: citrea (https://coinmarketcap.com/currencies/citrea/)\n- Sector: Katman 1/2\n- Official website: https://citrea.xyz/\n- Token contract on Base: 0x11030f79109269d796fd0fb956d6244e502757f7\n- Current circulating supply: 1,500,000,000 tokens\n- Total supply on CoinMarketCap: 10,000,000,000\n- Max supply on CoinMarketCap: 10,000,000,000\n\nAnswer these questions:\n0. supply_rule (MOST IMPORTANT): Who can create new tokens, and under what rule?\n   minting: \"none\" = nobody can create new tokens (fixed supply, mint authority renounced or burned, no mint function); \"protocol_rule\" = new tokens are created only by fixed protocol rules (block rewards or an emission schedule in code) that no single person, company, multisig or DAO can change at will; \"capped\" = a person, team, foundation, multisig or DAO can mint or change the emission rate, and the yearly amount is limited (give the limit in max_annual_mint_pct only if a source states a hard limit, otherwise null); \"unlimited\" = a source explicitly shows that a person, team, foundation, multisig or DAO can mint at its own discretion with no limit (for example an owner or minter role without a cap). If documents only describe a planned emission that governance may adjust, answer \"capped\" with max_annual_mint_pct null. null if unclear.\n   annual_inflation_pct: the current yearly increase of the total supply in percent according to the issuance schedule (for example 4.5); 0 if supply does not grow yet; null if unknown. If the documents state a target rate (for example \"10% per year\"), use it; if they give an emission per block, day or year, compute new tokens per year ÷ current total supply × 100.\n   max_annual_mint_pct: only for \"capped\": the maximum yearly mint the on-chain limit allows, in percent of the total supply; otherwise null.\n   upgradeable_by_group: for a token (not a chain's native coin): true if a person, team, multisig or DAO can upgrade or replace the token contract or program (proxy, upgradeable package, mutable program); false if it is immutable; null if unknown or if this is a native coin.\n   The source must state the mechanism itself (official tokenomics or documentation page, or the contract page on a block explorer).\n1. buyback_burn: Does the project currently buy back and/or burn its token using protocol revenue or fees?\n   \"regular\" = an ongoing, programmatic or regularly executed buyback/burn; \"partial\" = occasional, one-off or small; \"none\" = official documentation says there is no such mechanism. null if unclear.\n2. unlock_6m_pct: How many tokens are scheduled to unlock between 2026-11-02 and 2027-05-03, as a percentage of the current circulating supply? Use the official vesting schedule or a token unlock tracker. null if unknown.\n   unlock_12m_pct: the same for the 12 months between 2026-11-02 and 2027-11-02. 0 if all vesting has ended. null if unknown.\n3. hack_12m: Did the project or its smart contracts suffer an exploit or hack with user fund losses between 2025-11-02 and 2026-11-02? Answer true only with a source; otherwise null (never answer false).\n4. investors: Institutional investors (funds, companies) that invested in the project's token or equity rounds.\n5. angel_investors: Individual people (angel investors) who invested in the project.\n6. token_utility (VERY IMPORTANT): Must users or operators acquire and use THIS token to use the product or network?\n   level: \"required\" = using the product or network requires the token: fees or gas are paid in it, the service is paid in it or by burning it (burn-and-mint), operators must stake it to provide the service, or it is required collateral; \"partial\" = the product can be used without the token, but the token gives fee discounts, priority, a share of protocol revenue, or is one of several accepted payment options; \"none\" = the token is only for governance or voting, or only earns emission rewards, and the product is fully usable without it. null if unclear.\n   uses: the ways the token is used, from: \"network_fees\", \"service_payment\", \"burn_mint\", \"stake_to_operate\", \"collateral\", \"fee_discount\", \"revenue_share\", \"governance\", \"emission_rewards\".\n   The source must be official documentation describing how the token is used in the protocol.\n7. usage_evidence (VERY IMPORTANT): One recent, measurable statistic that shows the product is really used, dated between 2026-05-03 and 2026-11-02: for example active nodes or providers, paying customers, monthly transactions, compute hours sold, data or storage served, fees paid by users. Give metric (short English name), value (a plain number exactly as the page shows it, without units), unit and as_of (YYYY-MM-DD). The source must be an official dashboard, block explorer, analytics site or official report that shows this number. null if you find none. Never estimate.\n8. allocation: insiders_pct = share of the total or max supply allocated to team, founders, advisors and investors together, in percent; vesting_end = when their vesting ends (YYYY-MM). null if unknown.\n9. value_transfer_pending: A token buyback, burn or revenue sharing to token holders that governance approved or the team officially announced but that is not live yet. mechanism: \"buyback\" | \"burn\" | \"revenue_share\"; status: \"approved\" | \"announced\"; expected: YYYY-MM or null. null if there is none.\n\nFor every field give: value, source (one URL of a page that states it) and note (one short sentence in Turkish, at most 140 characters).\nReply with only one JSON object in a ```json code block, in exactly this shape:\n```json\n{\n \"supply_rule\": {\n  \"value\": {\n   \"minting\": \"none | protocol_rule | capped | unlimited | null\",\n   \"annual_inflation_pct\": \"number or null\",\n   \"max_annual_mint_pct\": \"number or null\",\n   \"upgradeable_by_group\": \"true | false | null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"buyback_burn\": {\n  \"value\": \"regular | partial | none | null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_6m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"hack_12m\": {\n  \"value\": \"true or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"angel_investors\": {\n  \"value\": [\n   \"...\"\n  ],\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"unlock_12m_pct\": {\n  \"value\": \"number or null\",\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"token_utility\": {\n  \"value\": {\n   \"level\": \"required | partial | none | null\",\n   \"uses\": [\n    \"...\"\n   ]\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"usage_evidence\": {\n  \"value\": {\n   \"metric\": \"...\",\n   \"value\": \"number\",\n   \"unit\": \"...\",\n   \"as_of\": \"YYYY-MM-DD\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"allocation\": {\n  \"value\": {\n   \"insiders_pct\": \"number or null\",\n   \"vesting_end\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n },\n \"value_transfer_pending\": {\n  \"value\": {\n   \"mechanism\": \"buyback | burn | revenue_share\",\n   \"status\": \"approved | announced\",\n   \"expected\": \"YYYY-MM or null\"\n  },\n  \"source\": \"https://...\",\n  \"note\": \"...\"\n }\n}\n```"
+  }
+ ],
+ "answers": {
+  "pocket-network": {
+   "buyback_burn": {
+    "value": "regular",
+    "source": "https://docs.pocket.network/token/tokenomics/",
+    "note": "Sayfaya göre röle ücretleri her işlemde zincir üstünde yakılıyor."
+   },
+   "unlock_6m_pct": {
+    "value": null,
+    "source": null,
+    "note": "Tarihli kilit açılım takvimi kaynakta yok."
+   },
+   "hack_12m": {
+    "value": null,
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynakta isim verilmemiş."
+   },
+   "angel_investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "supply_rule": {
+    "value": {
+     "minting": null,
+     "annual_inflation_pct": null,
+     "max_annual_mint_pct": null,
+     "upgradeable_by_group": null
+    },
+    "source": "https://docs.pocket.network/token/tokenomics/",
+    "note": "Basım röle hacmiyle orantılı; mint_ratio parametresini kimin değiştirdiği yazmıyor, enflasyon oranı verilmemiş."
+   }
+  },
+  "rsk-infrastructure-framework": {
+   "buyback_burn": {
+    "value": null,
+    "source": null,
+    "note": "Güvenilir kaynak bulunamadı."
+   },
+   "unlock_6m_pct": {
+    "value": null,
+    "source": null,
+    "note": "Tarihli kilit açılım takvimi kaynakta yok."
+   },
+   "hack_12m": {
+    "value": null,
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynakta isim verilmemiş."
+   },
+   "angel_investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "supply_rule": {
+    "value": {
+     "minting": null,
+     "annual_inflation_pct": null,
+     "max_annual_mint_pct": null,
+     "upgradeable_by_group": null
+    },
+    "source": "https://dev.rootstock.io/concepts/rif-suite/token/index.md",
+    "note": "Toplam arz 1 milyar RIF (ERC677); sayfa basım mekanizmasını ve yükseltilebilirliği anlatmıyor."
+   }
+  },
+  "berachain": {
+   "buyback_burn": {
+    "value": null,
+    "source": null,
+    "note": "Güvenilir kaynak bulunamadı."
+   },
+   "unlock_6m_pct": {
+    "value": null,
+    "source": null,
+    "note": "Tarihli kilit açılım takvimi kaynakta yok."
+   },
+   "hack_12m": {
+    "value": null,
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynakta isim verilmemiş."
+   },
+   "angel_investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "supply_rule": {
+    "value": {
+     "minting": "capped",
+     "annual_inflation_pct": 5,
+     "max_annual_mint_pct": null,
+     "upgradeable_by_group": null
+    },
+    "source": "https://docs.berachain.com/learn/pol/tokens/bera",
+    "note": "Sayfaya göre yıllık ~%5 PoL emisyonu, yönetişime tabi; sert üst sınır yok. Oran yaklaşık değer."
+   }
+  },
+  "walrus-xyz": {
+   "buyback_burn": {
+    "value": null,
+    "source": null,
+    "note": "Güvenilir kaynak bulunamadı."
+   },
+   "unlock_6m_pct": {
+    "value": null,
+    "source": null,
+    "note": "Tarihli kilit açılım takvimi kaynakta yok."
+   },
+   "hack_12m": {
+    "value": null,
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynakta isim verilmemiş."
+   },
+   "angel_investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "supply_rule": {
+    "value": {
+     "minting": null,
+     "annual_inflation_pct": null,
+     "max_annual_mint_pct": null,
+     "upgradeable_by_group": null
+    },
+    "source": null,
+    "note": "Resmi tokenomics sayfası açılıp okunamadı."
+   }
+  },
+  "citrea": {
+   "buyback_burn": {
+    "value": null,
+    "source": null,
+    "note": "Güvenilir kaynak bulunamadı."
+   },
+   "unlock_6m_pct": {
+    "value": null,
+    "source": null,
+    "note": "Tarihli kilit açılım takvimi kaynakta yok."
+   },
+   "hack_12m": {
+    "value": null,
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynakta isim verilmemiş."
+   },
+   "angel_investors": {
+    "value": [],
+    "source": null,
+    "note": "Kaynak bulunamadı."
+   },
+   "supply_rule": {
+    "value": {
+     "minting": null,
+     "annual_inflation_pct": 0,
+     "max_annual_mint_pct": null,
+     "upgradeable_by_group": null
+    },
+    "source": "https://docs.citrea.xyz/ctr-token/ctr-token.md",
+    "note": "Belgede 'sabit arz: 10 milyar CTR, enflasyon yok' yazıyor; basım yetkisi belirtilmemiş."
+   }
+  }
+ }
+}
