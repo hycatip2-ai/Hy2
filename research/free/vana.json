@@ -1,0 +1,87 @@
+{
+ "slug": "vana",
+ "schema": 2,
+ "name": "Vana",
+ "symbol": "VANA",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-02",
+ "pages": [
+  "https://docs.vana.org/network/vana-token",
+  "https://vana.org/learn",
+  "https://docs.vana.org/",
+  "https://docs.vana.org/resources/whitepaper",
+  "https://vana.org/",
+  "https://token.vana.org/",
+  "https://tokenradar.ai/tokens/vana/tokenomics",
+  "https://coinmarketcap.com/cmc-ai/vana/price-analysis/",
+  "https://defillama.com/unlocks/vana"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://docs.vana.org/network/vana-token",
+   "note": "VANA arzı 120 milyon ile sınırlandırılmıştır ve emisyonlar protokol kurallarına göre belirlenir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://token.vana.org/",
+   "note": "Protokol gelirlerinin %20'si VANA tokenlarını geri almak ve yakmak için kullanılır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "stake_to_operate",
+     "emission_rewards",
+     "governance"
+    ]
+   },
+   "source": "https://docs.vana.org/network/vana-token",
+   "note": "VANA, ağ ücretleri, doğrulayıcı staking ve yönetişim için zorunludur.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.331,
+    "vesting_end": "2029-10"
+   },
+   "source": "https://docs.vana.org/network/vana-token",
+   "note": "Ekip ve yatırımcılar toplam arzın %33,1'ini oluşturur ve hak edişleri 4-5 yıl sürer.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [
+  {
+   "field": "unlock_6m_pct",
+   "source": "https://tokenradar.ai/tokens/vana/tokenomics",
+   "reason": "site erişimi engelledi (HTTP 403)"
+  },
+  {
+   "field": "unlock_12m_pct",
+   "source": "https://tokenradar.ai/tokens/vana/tokenomics",
+   "reason": "site erişimi engelledi (HTTP 403)"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://token.vana.org/",
+   "reason": "sayı kaynak sayfada bulunamadı"
+  }
+ ],
+ "queue": {
+  "priority": 2,
+  "reason": "arz kuralı kontrol edilemedi"
+ },
+ "usage": {
+  "input_tokens": 14508,
+  "output_tokens": 844
+ }
+}

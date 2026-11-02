@@ -10,9 +10,9 @@
  "sector": "defi",
  "sector_name": "DeFi",
  "total": 28,
- "total_exact": 27.94,
+ "total_exact": 27.74,
  "band": "Zayıf",
- "delta": -5.3,
+ "delta": -0.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -53,17 +53,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.4,
+   "score": 5.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1939,
+   "percentile": 0.1354,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.455546,
-     "percentile": 0.4483,
+     "percentile": 0.4554,
      "basis": "sector",
      "display": "%46",
      "tier": "orta dilim"
@@ -72,7 +72,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.946395,
-     "percentile": 0.2247,
+     "percentile": 0.2195,
      "basis": "sector",
      "display": "3,95×",
      "tier": "alt dilim"
@@ -80,8 +80,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.232555,
-     "percentile": 0.1435,
+     "value": 0.226965,
+     "percentile": 0.0914,
      "basis": "sector",
      "display": "+%23",
      "tier": "alt dilim"
@@ -101,17 +101,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.0,
+   "score": 4.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1609,
+   "percentile": 0.1905,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2011,
+     "percentile": 0.2053,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -121,17 +121,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 3.6,
+   "score": 3.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0306,
+   "percentile": 0.0312,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 18.0,
-     "percentile": 0.0738,
+     "percentile": 0.0744,
      "basis": "sector",
      "display": "18",
      "tier": "alt dilim"
@@ -140,7 +140,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6404,
-     "percentile": 0.1867,
+     "percentile": 0.1992,
      "basis": "sector",
      "display": "%0,64",
      "tier": "alt dilim"
@@ -149,7 +149,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.5,
-     "percentile": 0.0167,
+     "percentile": 0.0162,
      "basis": "sector",
      "display": "%50",
      "tier": "alt dilim"
@@ -157,8 +157,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.716632,
-     "percentile": 0.4493,
+     "value": 1.71937,
+     "percentile": 0.4491,
      "basis": "sector",
      "display": "1,7 yıl",
      "tier": "orta dilim"
@@ -166,50 +166,47 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Şüpheli işlem çiftlerinin oranı arttı.",
-   "part": "liquidity",
-   "delta": -5.41,
-   "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
-   32.07
+   32.01
   ],
   [
    "2026-10-24",
-   32.51
+   32.45
   ],
   [
    "2026-10-25",
-   35.97
+   35.94
   ],
   [
    "2026-10-26",
-   32.05
+   31.98
   ],
   [
    "2026-10-27",
-   32.15
+   32.08
   ],
   [
    "2026-10-29",
-   33.9
+   33.72
   ],
   [
    "2026-10-30",
-   33.64
+   33.44
   ],
   [
    "2026-10-31",
-   33.27
+   33.09
   ],
   [
    "2026-11-01",
-   27.94
+   27.82
+  ],
+  [
+   "2026-11-02",
+   27.74
   ]
  ],
  "changes": [
@@ -217,28 +214,28 @@
    "date": "2026-10-25",
    "delta": 3.5,
    "from": 32.5,
-   "to": 36.0,
+   "to": 35.9,
    "event": false,
    "reasons": [
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 3.8,
+     "delta": 3.83,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +3,8)"
     }
    ]
   },
   {
    "date": "2026-10-26",
-   "delta": -3.9,
-   "from": 36.0,
+   "delta": -4.0,
+   "from": 35.9,
    "to": 32.0,
    "event": false,
    "reasons": [
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -3.06,
+     "delta": -3.12,
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,1)"
     }
    ]
@@ -246,14 +243,14 @@
   {
    "date": "2026-11-01",
    "delta": -5.3,
-   "from": 33.3,
-   "to": 27.9,
+   "from": 33.1,
+   "to": 27.8,
    "event": true,
    "reasons": [
     {
      "text": "Şüpheli işlem çiftlerinin oranı arttı.",
      "part": "liquidity",
-     "delta": -5.41,
+     "delta": -5.35,
      "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
     }
    ]
@@ -263,34 +260,34 @@
   {
    "date": "2026-11-01",
    "delta": -5.3,
-   "from": 33.3,
-   "to": 27.9,
+   "from": 33.1,
+   "to": 27.8,
    "reasons": [
     {
      "text": "Şüpheli işlem çiftlerinin oranı arttı.",
      "part": "liquidity",
-     "delta": -5.41,
+     "delta": -5.35,
      "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
     }
    ]
   }
  ],
  "trend": {
-  "rank_now": 916,
-  "rank_start": 849,
+  "rank_now": 914,
+  "rank_start": 855,
   "score": 0,
   "rise": 0,
-  "steady": 25,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 3,
+  "weeks_up": 4,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
-   0,
+   1,
    -1,
    1,
-   0,
    -1,
+   0,
    1,
    -1,
    -1,
@@ -320,5 +317,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 24,
- "total_exact": 24.28,
+ "total": 28,
+ "total_exact": 28.41,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": 4.2,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,13 +25,12 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; azami arzın tamamı çıkarıldı, arz artmaz."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz geçmişi"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -50,10 +49,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 0.0,
+   "score": 4.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0,
+   "percentile": 0.0729,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -73,6 +72,15 @@
      "basis": "sector",
      "display": "125×",
      "tier": "alt dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6054,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -89,17 +97,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.0,
+   "score": 4.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1609,
+   "percentile": 0.1905,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2011,
+     "percentile": 0.2053,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -112,14 +120,14 @@
    "score": 6.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.102,
+   "percentile": 0.1042,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 8.0,
-     "percentile": 0.0204,
+     "percentile": 0.0208,
      "basis": "sector",
      "display": "8",
      "tier": "alt dilim"
@@ -127,8 +135,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.997947,
-     "percentile": 0.5796,
+     "value": 3.000684,
+     "percentile": 0.5815,
      "basis": "sector",
      "display": "3,0 yıl",
      "tier": "orta dilim"
@@ -136,47 +144,58 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arz artışı (90 gün) verisi artık mevcut.",
+   "part": "supply",
+   "delta": 4.04,
+   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   26.99
+   26.98
   ],
   [
    "2026-10-24",
-   23.23
+   23.19
   ],
   [
    "2026-10-25",
-   23.63
+   23.56
   ],
   [
    "2026-10-26",
-   23.77
+   23.71
   ],
   [
    "2026-10-27",
-   23.91
+   23.84
   ],
   [
    "2026-10-28",
-   24.71
+   24.61
   ],
   [
    "2026-10-29",
-   24.66
+   24.55
   ],
   [
    "2026-10-30",
-   24.41
+   24.3
   ],
   [
    "2026-10-31",
-   24.16
+   24.08
   ],
   [
    "2026-11-01",
-   24.28
+   24.19
+  ],
+  [
+   "2026-11-02",
+   28.41
   ]
  ],
  "changes": [
@@ -190,16 +209,31 @@
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": -3.76,
+     "delta": -3.79,
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,8)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "delta": 4.2,
+   "from": 24.2,
+   "to": 28.4,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 4.04,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +4,0)"
     }
    ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 552,
-  "rank_start": 448,
+  "rank_now": 542,
+  "rank_start": 454,
   "score": 0,
   "rise": 0,
   "steady": 25,
@@ -237,5 +271,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

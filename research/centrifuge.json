@@ -1,10 +1,11 @@
 {
  "slug": "centrifuge",
+ "schema": 2,
  "name": "Centrifuge",
  "symbol": "CFG",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-30",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
   "supply_rule": {
    "value": {
@@ -13,9 +14,45 @@
     "max_annual_mint": null,
     "upgradeable": null
    },
-   "source": "https://gov.centrifuge.io/t/cp149-migration-of-centrifuge-governance-token-cfg-to-evm/6810",
-   "note": "CP149 (kabul edildi): yıllık %3 enflasyon sürer ve DAO hazinesine gider; ek 115M CFG vakfa basıldı.",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://docs.centrifuge.io/getting-started/token-summary/",
+   "note": "CFG toplam arzı üzerinden yıllık %3 enflasyon uygulanmakta ve yeni basılan tokenlar Hazine'ye aktarılmaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "none",
+    "uses": [
+     "governance"
+    ]
+   },
+   "source": "https://docs.centrifuge.io/getting-started/token-summary/",
+   "note": "CFG yalnızca DAO yönetişim oylamalarında kullanılır; RWA havuzlarına yatırım yapmak için token şart değildir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Monthly Protocol Revenue",
+    "value": 416754.0,
+    "unit": "USD",
+    "as_of": "2026-09-30",
+    "confirmed": true
+   },
+   "source": "https://defillama.com/protocol/centrifuge",
+   "note": "DefiLlama verilerine göre protokol, Eylül 2026 döneminde 416.754 dolar gelir üretmiştir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.477,
+    "vesting_end": null
+   },
+   "source": "https://tokenomist.ai/tokens/centrifuge",
+   "note": "İlk dağıtımda çekirdek katkıcılar %29,20 ve erken yatırımcılar %18,50 pay almış olup toplam iç pay %47,70'tir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   },
   "investors": {
    "value": [
@@ -33,12 +70,73 @@
    ],
    "source": "https://www.coinspeaker.com/centrifuge-15m-funding-defi/",
    "note": "2024'teki 15 milyon dolarlık A serisi turunda adı geçenler; liste eksik.",
-   "check": "sayfada coin adı geçiyor"
+   "check": "sayfada coin adı geçiyor",
+   "carried": {
+    "provider": "claude-code",
+    "researched_at": "2026-10-30"
+   }
   }
  },
- "dropped": [],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "dropped": [
+  {
+   "field": "investors",
+   "source": "https://www.rootdata.com/Projects/detail/Centrifuge",
+   "reason": "sayfada coin adı ya da sembolü geçmiyor"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://www.rootdata.com/Projects/detail/Centrifuge",
+   "reason": "sayfada coin adı ya da sembolü geçmiyor"
+  }
+ ],
+ "usage": {
+  "searches": 57,
+  "input_tokens": 9786,
+  "output_tokens": 1105,
+  "usd": 0.01148
+ },
+ "previous": {
+  "slug": "centrifuge",
+  "name": "Centrifuge",
+  "symbol": "CFG",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-30",
+  "fields": {
+   "supply_rule": {
+    "value": {
+     "minting": "capped",
+     "annual_inflation": 0.03,
+     "max_annual_mint": null,
+     "upgradeable": null
+    },
+    "source": "https://gov.centrifuge.io/t/cp149-migration-of-centrifuge-governance-token-cfg-to-evm/6810",
+    "note": "CP149 (kabul edildi): yıllık %3 enflasyon sürer ve DAO hazinesine gider; ek 115M CFG vakfa basıldı.",
+    "check": "sayfada coin adı geçiyor"
+   },
+   "investors": {
+    "value": [
+     "ParaFi Capital",
+     "Greenfield",
+     "Arrington Capital",
+     "Bloccelerate",
+     "Borderless Capital",
+     "Circle Ventures",
+     "Edessa Capital",
+     "Gnosis",
+     "IOSG Ventures",
+     "Modular Capital",
+     "ProtoCap"
+    ],
+    "source": "https://www.coinspeaker.com/centrifuge-15m-funding-defi/",
+    "note": "2024'teki 15 milyon dolarlık A serisi turunda adı geçenler; liste eksik.",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

@@ -1,26 +1,117 @@
 {
  "slug": "nym",
+ "schema": 2,
  "name": "NYM",
  "symbol": "NYM",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-31",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "none",
+    "annual_inflation": 0.0,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://dropstab.com/coins/nym/vesting",
+   "note": "Toplam arz 1 milyar NYM ile sabitlenmiştir; protokolde enflasyon veya yeni token basım mekanizması bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
   "buyback_burn": {
    "value": 1.0,
-   "source": "https://nym.com/token",
-   "note": "Sayfa NymVPN abonelikleriyle sürekli NYM geri alımı yapıldığını belirtiyor.",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://www.youtube.com/watch?v=BqsfYqSrrF8",
+   "note": "NymVPN abonelik gelirleri düzenli ve kalıcı geri alım (perpetual buyback) mekanizması ile piyasadan NYM alımında kullanılır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "angel_investors": {
+   "value": [
+    "William Wolf",
+    "Lior Messika"
+   ],
+   "source": "https://startupintros.com/news/nym-technologies-sa-series-a",
+   "note": "William Wolf ve Lior Messika Nym'in Seri A finansman turuna melek yatırımcı olarak katılmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "stake_to_operate",
+     "emission_rewards",
+     "service_payment"
+    ]
+   },
+   "source": "https://www.gate.com/learn/articles/what-is-nym/1195",
+   "note": "Düğüm operatörlerinin ağda çalışabilmesi için NYM stake etmesi zorunludur; ağ işlem ücretleri de NYM ile ödenir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Active Validators",
+    "value": 14.0,
+    "unit": "validators",
+    "as_of": "2026-10-28",
+    "confirmed": true
+   },
+   "source": "https://nym.explorers.guru/validators",
+   "note": "Nyx ana ağında 39 doğrulayıcı arasından 14 tanesi aktif olarak konsensüse katılmaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.565,
+    "vesting_end": "2024-05"
+   },
+   "source": "https://dropstab.com/coins/nym/vesting",
+   "note": "Toplam arzın %36.5'i yatırımcılara, %20'si ekibe ayrılmış olup hak ediş süreleri Mayıs 2024'te tamamlanmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   }
  },
  "dropped": [
   {
-   "field": "supply_rule",
-   "reason": "biçim anlaşılmadı"
+   "field": "investors",
+   "source": "https://www.forbes.com/sites/ninabambysheva/2021/11/17/andreessen-horowitz-leads-investment-in-privacy-startup-integrating-with-bitcoin/",
+   "reason": "site erişimi engelledi (HTTP 403)"
   }
  ],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "usage": {
+  "searches": 62,
+  "input_tokens": 9680,
+  "output_tokens": 1144,
+  "usd": 0.01155
+ },
+ "previous": {
+  "slug": "nym",
+  "name": "NYM",
+  "symbol": "NYM",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-31",
+  "fields": {
+   "buyback_burn": {
+    "value": 1.0,
+    "source": "https://nym.com/token",
+    "note": "Sayfa NymVPN abonelikleriyle sürekli NYM geri alımı yapıldığını belirtiyor.",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "reason": "biçim anlaşılmadı"
+   }
+  ],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

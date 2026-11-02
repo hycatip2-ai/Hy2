@@ -9,19 +9,15 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 35,
- "total_exact": 34.55,
+ "total": 37,
+ "total_exact": 36.62,
  "band": "Zayıf",
- "delta": 1.3,
+ "delta": -1.9,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [
-  {
-   "id": "top10_concentration",
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
-  },
   {
    "id": "dev_decline",
    "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü."
@@ -34,14 +30,14 @@
   "text": "Kontrattaki üst sınıra ulaşıldı; yeni token basılamaz."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
   "gelir trendi"
  ],
- "penalty": 10.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": {
   "chain": "BNB Chain",
@@ -51,17 +47,17 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 5.2,
+   "score": 4.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3333,
+   "percentile": 0.2222,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 224.026143,
-     "percentile": 0.2605,
+     "value": 223.752549,
+     "percentile": 0.2277,
      "basis": "sector",
      "display": "224×",
      "tier": "alt dilim"
@@ -71,17 +67,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 17.0,
+   "score": 16.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9638,
+   "percentile": 0.9205,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9129,
+     "percentile": 0.9049,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -90,7 +86,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9772,
+     "percentile": 0.9659,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -99,7 +95,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6542,
+     "percentile": 0.6016,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -119,26 +115,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.9,
+   "score": 2.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1719,
+   "percentile": 0.0938,
    "tier": "alt dilim",
    "metrics": [
-    {
-     "id": "tvl_trend",
-     "name": "Kilitli varlık trendi (90 gün)",
-     "value": 0.702862,
-     "percentile": 0.2711,
-     "basis": "sector",
-     "display": "−%30",
-     "tier": "alt dilim"
-    },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1581,
+     "percentile": 0.1364,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -148,17 +135,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.7,
+   "score": 10.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.529,
+   "percentile": 0.5341,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 71.0,
-     "percentile": 0.2308,
+     "percentile": 0.1888,
      "basis": "sector",
      "display": "71",
      "tier": "alt dilim"
@@ -167,7 +154,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5634,
-     "percentile": 0.3346,
+     "percentile": 0.2986,
      "basis": "sector",
      "display": "%0,56",
      "tier": "alt dilim"
@@ -176,7 +163,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0714,
-     "percentile": 0.7858,
+     "percentile": 0.8025,
      "basis": "sector",
      "display": "%7,1",
      "tier": "üst dilim"
@@ -184,8 +171,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.542779,
-     "percentile": 0.7801,
+     "value": 7.545517,
+     "percentile": 0.7908,
      "basis": "sector",
      "display": "7,5 yıl",
      "tier": "üst dilim"
@@ -197,66 +184,55 @@
  "history": [
   [
    "2026-10-23",
-   45.08
+   43.84
   ],
   [
    "2026-10-24",
-   43.38
+   42.63
   ],
   [
    "2026-10-25",
-   43.55
+   42.67
   ],
   [
    "2026-10-26",
-   43.46
+   42.78
   ],
   [
    "2026-10-27",
-   43.68
+   42.86
   ],
   [
    "2026-10-28",
-   43.59
+   42.89
   ],
   [
    "2026-10-29",
-   42.71
+   41.86
   ],
   [
    "2026-10-30",
-   38.59
+   42.55
   ],
   [
    "2026-10-31",
-   33.28
+   37.52
   ],
   [
    "2026-11-01",
-   34.55
+   38.49
+  ],
+  [
+   "2026-11-02",
+   36.62
   ]
  ],
  "changes": [
   {
-   "date": "2026-10-30",
-   "delta": -4.1,
-   "from": 42.7,
-   "to": 38.6,
-   "event": false,
-   "reasons": [
-    {
-     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
-     "part": "penalty",
-     "delta": -5.0,
-     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
-    }
-   ]
-  },
-  {
    "date": "2026-10-31",
-   "delta": -5.3,
-   "from": 38.6,
-   "to": 33.3,
+   "delta": -5.0,
+   "from": 42.5,
+   "to": 37.5,
    "event": true,
    "reasons": [
     {
@@ -271,9 +247,9 @@
  "events": [
   {
    "date": "2026-10-31",
-   "delta": -5.3,
-   "from": 38.6,
-   "to": 33.3,
+   "delta": -5.0,
+   "from": 42.5,
+   "to": 37.5,
    "reasons": [
     {
      "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü.",
@@ -285,24 +261,24 @@
   }
  ],
  "trend": {
-  "rank_now": 358,
-  "rank_start": 173,
+  "rank_now": 350,
+  "rank_start": 171,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_up": 3,
+  "weeks_down": 8,
   "weeks_total": 12,
   "weekly": [
    1,
-   1,
    -1,
    -1,
    -1,
    -1,
    -1,
-   0,
+   -1,
+   -1,
    -1,
    0,
    1,
@@ -329,5 +305,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

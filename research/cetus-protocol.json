@@ -1,29 +1,123 @@
 {
  "slug": "cetus-protocol",
+ "schema": 2,
  "name": "Cetus Protocol",
  "symbol": "CETUS",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-31",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
+  "unlock_6m_pct": {
+   "value": 0.0,
+   "source": "https://defillama.com/unlocks/cetus",
+   "note": "DefiLlama verilerine göre tüm kilit açılışları tamamlanmış olup yeni kilit açılışı planlanmamaktadır.",
+   "check": "sayfada sembol geçiyor",
+   "cited": false
+  },
   "investors": {
    "value": [
+    "OKX Ventures",
+    "KuCoin Ventures",
+    "Comma3 Ventures",
+    "NGC Ventures",
     "Animoca Brands",
-    "OKX Ventures"
+    "IDG Capital",
+    "Leland Ventures",
+    "AC Capital",
+    "Adaverse",
+    "Coin98 Ventures",
+    "Sui Foundation"
    ],
-   "source": "https://www.coingecko.com/en/coins/cetus-protocol",
-   "note": "Sayfa Animoca Brands ve OKX Ventures desteğini belirtiyor.",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://defillama.com/protocol/cetus",
+   "note": "Cetus; OKX Ventures, KuCoin Ventures ve Sui Foundation gibi kurumsal yatırımcılar tarafından fonlanmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "unlock_12m_pct": {
+   "value": 0.0,
+   "source": "https://defillama.com/unlocks/cetus",
+   "note": "Gelecek 12 aylık dönemde planlanan herhangi bir CETUS token kilit açılışı bulunmamaktadır.",
+   "check": "sayfada sembol geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "partial",
+    "uses": [
+     "revenue_share",
+     "governance",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://cetus-1.gitbook.io/cetus-docs/guides/how-to-join-xcetus-staking",
+   "note": "CETUS stake edilerek xCETUS ile protokol işlem ücreti gelir payı, yönetim oylaması ve teşvikler elde edilir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Fees 30d",
+    "value": 597233.0,
+    "unit": "USD",
+    "as_of": "2026-10-30",
+    "confirmed": true
+   },
+   "source": "https://defillama.com/protocol/cetus",
+   "note": "DefiLlama verilerine göre Cetus protokolü son 30 günde 597.233 dolar tutarında işlem ücreti üretmiştir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   }
  },
  "dropped": [
   {
    "field": "supply_rule",
-   "reason": "biçim anlaşılmadı"
+   "source": "https://cetus-1.gitbook.io/cetus-docs/tokenomics/cetus/basic",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://gritt.io/investor/jerome-wong",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "allocation",
+   "source": "https://cetus-1.gitbook.io/cetus-docs/tokenomics/cetus/basic",
+   "reason": "HTTP 404"
   }
  ],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "usage": {
+  "searches": 30,
+  "input_tokens": 8344,
+  "output_tokens": 1108,
+  "usd": 0.01041
+ },
+ "previous": {
+  "slug": "cetus-protocol",
+  "name": "Cetus Protocol",
+  "symbol": "CETUS",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-31",
+  "fields": {
+   "investors": {
+    "value": [
+     "Animoca Brands",
+     "OKX Ventures"
+    ],
+    "source": "https://www.coingecko.com/en/coins/cetus-protocol",
+    "note": "Sayfa Animoca Brands ve OKX Ventures desteğini belirtiyor.",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "reason": "biçim anlaşılmadı"
+   }
+  ],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

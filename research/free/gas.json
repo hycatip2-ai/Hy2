@@ -1,0 +1,64 @@
+{
+ "slug": "gas",
+ "schema": 2,
+ "name": "Gas",
+ "symbol": "GAS",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-02",
+ "pages": [
+  "https://neo.org/",
+  "https://neo.org/neogas",
+  "https://neo.org/about",
+  "https://neo.org/technology",
+  "https://www.findas.org/tokenomics-review/the-tokenomics-of-neo",
+  "https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2026.1817622/full",
+  "https://docs.chiliz.com/learn/about-chiliz-chain/tokenomics"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "capped",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://neo.org/neogas",
+   "note": "GAS arzı yönetişim tarafından belirlenen parametrelere tabidir ve komite tarafından değiştirilebilir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://neo.org/neogas",
+   "note": "Neo ağında sistem ücretleri yakılmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "service_payment",
+     "governance"
+    ]
+   },
+   "source": "https://neo.org/neogas",
+   "note": "GAS, ağ operasyonları, akıllı sözleşmeler ve yönetişim için gereklidir.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  }
+ ],
+ "queue": {
+  "priority": 2,
+  "reason": "arz kuralı kontrol edilemedi"
+ },
+ "usage": {
+  "input_tokens": 16177,
+  "output_tokens": 701
+ }
+}

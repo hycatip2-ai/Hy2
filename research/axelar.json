@@ -1,32 +1,135 @@
 {
  "slug": "axelar",
+ "schema": 2,
  "name": "Axelar",
  "symbol": "AXL",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-31",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
   "supply_rule": {
    "value": {
     "minting": "capped",
-    "annual_inflation": 0.048,
+    "annual_inflation": 0.038,
     "max_annual_mint": null,
-    "upgradeable": null
+    "upgradeable": false
    },
-   "source": "https://www.axelar.network/blog/cobalt-tokenomics-upgrade",
-   "note": "Enflasyon zincir üstü yönetim oyuyla ayarlanıyor; %4,8 değeri Şubat 2025 tarihli, sert üst sınır yok.",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://axelarscan.io/",
+   "note": "Axelar'ın enflasyon parametreleri zincir üstü yönetişimle ayarlanmakta olup güncel yıllık enflasyon oranı yaklaşık %3,8'dir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "unlock_6m_pct": {
+   "value": 0.0028,
+   "source": "https://dropstab.com/coins/axelar/vesting",
+   "note": "Vesting süreci neredeyse tamamlanmış olup önümüzdeki 6 ay içinde dolaşımdaki arzın yalnızca yaklaşık %0,28'i kilit açacaktır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "unlock_12m_pct": {
+   "value": 0.0028,
+   "source": "https://dropstab.com/coins/axelar/vesting",
+   "note": "Kalan son kilit açılışının ardından vesting takvimi tamamen bitecek olup 12 aylık kilit açılışı yaklaşık %0,28'dir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "total value locked",
+    "value": 141920000.0,
+    "unit": "USD",
+    "as_of": "2026-11-01",
+    "confirmed": true
+   },
+   "source": "https://defillama.com/protocol/axelar-network",
+   "note": "DefiLlama verilerine göre 1 Kasım 2026 itibarıyla Axelar ağında kilitli toplam değer (TVL) 141,92 milyon dolardır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.4654,
+    "vesting_end": "2026-12"
+   },
+   "source": "https://dropstab.com/coins/axelar/vesting",
+   "note": "Çekirdek ekip (%17) ve yatırımcılara (%29,54) ayrılan toplam pay %46,54 olup vesting süreci 2026 sonunda tamamlanmaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   },
   "buyback_burn": {
    "value": 1.0,
    "source": "https://www.axelar.network/blog/cobalt-tokenomics-upgrade",
    "note": "Sayfaya göre gaz ücretlerinin %98'i yakım adresine gönderiliyor.",
-   "check": "sayfada coin adı geçiyor"
+   "check": "sayfada coin adı geçiyor",
+   "carried": {
+    "provider": "claude-code",
+    "researched_at": "2026-10-31"
+   }
   }
  },
- "dropped": [],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "dropped": [
+  {
+   "field": "buyback_burn",
+   "source": "https://axelar.network/blog/the-path-to-infinite-interop-cobalt-upgrade-hardens-axl-tokenomics-expands-utility",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "hack_12m",
+   "source": "https://thedefiant.io/news/hacks/secret-networks-axelar-bridge-drained-4-67m-via-infinite-mint-flaw",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "investors",
+   "source": "https://www.businesswire.com/news/home/20221219005139/en/Introducing-the-60M-Axelar-Ecosystem-Startup-Funding-Program",
+   "reason": "sayfa açılamadı"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://multiples.vc/companies/axelar-network",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "token_utility",
+   "source": "https://axelar.network/blog/the-axl-token-and-the-interchain-future",
+   "reason": "HTTP 404"
+  }
+ ],
+ "usage": {
+  "searches": 30,
+  "input_tokens": 8914,
+  "output_tokens": 1290,
+  "usd": 0.01152
+ },
+ "previous": {
+  "slug": "axelar",
+  "name": "Axelar",
+  "symbol": "AXL",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-31",
+  "fields": {
+   "supply_rule": {
+    "value": {
+     "minting": "capped",
+     "annual_inflation": 0.048,
+     "max_annual_mint": null,
+     "upgradeable": null
+    },
+    "source": "https://www.axelar.network/blog/cobalt-tokenomics-upgrade",
+    "note": "Enflasyon zincir üstü yönetim oyuyla ayarlanıyor; %4,8 değeri Şubat 2025 tarihli, sert üst sınır yok.",
+    "check": "sayfada coin adı geçiyor"
+   },
+   "buyback_burn": {
+    "value": 1.0,
+    "source": "https://www.axelar.network/blog/cobalt-tokenomics-upgrade",
+    "note": "Sayfaya göre gaz ücretlerinin %98'i yakım adresine gönderiliyor.",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

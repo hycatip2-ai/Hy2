@@ -1,26 +1,28 @@
 {
  "slug": "dolomite",
+ "schema": 2,
  "name": "Dolomite",
  "symbol": "DOLO",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-30",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
   "supply_rule": {
    "value": {
     "minting": "capped",
-    "annual_inflation": null,
+    "annual_inflation": 0.0,
     "max_annual_mint": null,
-    "upgradeable": null
+    "upgradeable": false
    },
-   "source": "https://docs.dolomite.io/dolo/token-mechanics",
-   "note": "1 milyar sabit arz; 4. yıldan itibaren %3 yıllık enflasyon, DAO dağıtır ya da yakar. Kontratın yükseltilebilirliği belirtilmemiş.",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://docs.dolomite.io/dolo/distribution",
+   "note": "İlk 4 yıl arz sabit olup 4. yıldan sonra yönetişimle değiştirilebilir %3 yıllık enflasyon başlar; sözleşme proxy değildir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   },
   "investors": {
    "value": [
     "Draper Goren Holm",
-    "NGC",
+    "NGC Ventures",
     "Coinbase Ventures",
     "WWVentures",
     "RR2 Capital",
@@ -29,24 +31,119 @@
     "Orchard Street Capital",
     "Guanxi DAO"
    ],
-   "source": "https://www.chaincatcher.com/en/article/2093122",
-   "note": "2023'teki 2,5 milyon dolarlık tohum turunun yatırımcıları.",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://medium.com/dolomite-official/dolomite-closes-2-5-million-funding-round-to-revolutionize-decentralized-money-markets-and-hedging-196144e135ba",
+   "note": "Dolomite'in 2,5 milyon dolarlık fonlama turuna kurumsal yatırımcılar katılmıştır.",
+   "check": "site botları engelliyor; güvenilir alan adı",
+   "cited": false
   },
   "angel_investors": {
    "value": [
     "Matthew Finestone",
     "Kyle Rojas",
-    "David Bleznak"
+    "David Bleznak",
+    "Coinflipcanada",
+    "CryptoCondom"
    ],
-   "source": "https://www.chaincatcher.com/en/article/2093122",
-   "note": "Aynı turda adı geçen bireysel yatırımcılar (takma adlılar hariç).",
-   "check": "sayfada coin adı geçiyor"
+   "source": "https://medium.com/dolomite-official/dolomite-closes-2-5-million-funding-round-to-revolutionize-decentralized-money-markets-and-hedging-196144e135ba",
+   "note": "Dolomite'in tohum finansman turuna bireysel melek yatırımcılar da dahil olmuştur.",
+   "check": "site botları engelliyor; güvenilir alan adı",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "partial",
+    "uses": [
+     "fee_discount",
+     "governance",
+     "collateral"
+    ]
+   },
+   "source": "https://docs.dolomite.io/dolo/token-mechanics",
+   "note": "DOLO teminat olarak kullanılabilir; veDOLO'ya kilitlenerek yönetişim oyu ve borçlanma faizi indirimi (rebate) sağlar.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "active_loans",
+    "value": 411.16,
+    "unit": "million USD",
+    "as_of": "2026-10-31",
+    "confirmed": true
+   },
+   "source": "https://defillama.com/protocol/dolomite",
+   "note": "DefiLlama verilerine göre 31 Ekim 2026 itibarıyla Dolomite üzerindeki aktif borç miktarı 411,16 milyon dolardır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.356,
+    "vesting_end": "2028-04"
+   },
+   "source": "https://docs.dolomite.io/dolo/distribution",
+   "note": "Ekip (%20,21), yatırımcılar (%15,18) ve danışmanlara (%0,21) toplam %35,6 pay ayrılmış olup hak edişleri Nisan 2028'de tamamlanır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   }
  },
  "dropped": [],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "usage": {
+  "searches": 62,
+  "input_tokens": 11866,
+  "output_tokens": 1249,
+  "usd": 0.01358
+ },
+ "previous": {
+  "slug": "dolomite",
+  "name": "Dolomite",
+  "symbol": "DOLO",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-30",
+  "fields": {
+   "supply_rule": {
+    "value": {
+     "minting": "capped",
+     "annual_inflation": null,
+     "max_annual_mint": null,
+     "upgradeable": null
+    },
+    "source": "https://docs.dolomite.io/dolo/token-mechanics",
+    "note": "1 milyar sabit arz; 4. yıldan itibaren %3 yıllık enflasyon, DAO dağıtır ya da yakar. Kontratın yükseltilebilirliği belirtilmemiş.",
+    "check": "sayfada coin adı geçiyor"
+   },
+   "investors": {
+    "value": [
+     "Draper Goren Holm",
+     "NGC",
+     "Coinbase Ventures",
+     "WWVentures",
+     "RR2 Capital",
+     "6th Man Ventures",
+     "Token Metrics Ventures",
+     "Orchard Street Capital",
+     "Guanxi DAO"
+    ],
+    "source": "https://www.chaincatcher.com/en/article/2093122",
+    "note": "2023'teki 2,5 milyon dolarlık tohum turunun yatırımcıları.",
+    "check": "sayfada coin adı geçiyor"
+   },
+   "angel_investors": {
+    "value": [
+     "Matthew Finestone",
+     "Kyle Rojas",
+     "David Bleznak"
+    ],
+    "source": "https://www.chaincatcher.com/en/article/2093122",
+    "note": "Aynı turda adı geçen bireysel yatırımcılar (takma adlılar hariç).",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

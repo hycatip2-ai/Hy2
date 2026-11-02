@@ -1,26 +1,114 @@
 {
  "slug": "ergo",
+ "schema": 2,
  "name": "Ergo",
  "symbol": "ERG",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-30",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
   "supply_rule": {
    "value": {
     "minting": "protocol_rule",
-    "annual_inflation": null,
+    "annual_inflation": 0.0095,
     "max_annual_mint": null,
     "upgradeable": null
    },
    "source": "https://docs.ergoplatform.com/mining/emission/",
-   "note": "Arz 97.739.925 ERG ile sınırlı; blok ödülü protokoldeki takvime göre azalır, EIP-27 ile madencilik ~2045'e uzatıldı.",
-   "check": "sayfada coin adı geçiyor"
+   "note": "Ergo blok ödülleri EIP-27 protokol kuralına göre basılır ve arz 97.739.925 ERG ile kesin olarak sınırlandırılmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "buyback_burn": {
+   "value": 0.0,
+   "source": "https://docs.ergoplatform.com/mining/emission/",
+   "note": "Protokol gelirleri veya işlem ücretleriyle ERG geri alımı veya yakımı yapılmamaktadır; ücretler madencilere verilir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "unlock_6m_pct": {
+   "value": 0.0,
+   "source": "https://docs.ergoplatform.com/mining/emission/",
+   "note": "Ergo Vakfı Hazine hakedişi Ocak 2022'de tamamlandığından gelecekte herhangi bir kilit açılımı bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "unlock_12m_pct": {
+   "value": 0.0,
+   "source": "https://docs.ergoplatform.com/mining/emission/",
+   "note": "Vakıf hazinesine ait tüm kilit açılımları 2,5 yılın ardından Ocak 2022'de sona ermiştir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "emission_rewards",
+     "collateral"
+    ]
+   },
+   "source": "https://docs.ergoplatform.com/dev/protocol/tx/fees/",
+   "note": "Ağ işlem ücretleri ERG ile ödenir, madenciler blok ödülü olarak ERG alır ve yerel DeFi protokollerinde teminat olarak kullanılır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "daily_transactions",
+    "value": 5354.0,
+    "unit": "transactions",
+    "as_of": "2026-11-02",
+    "confirmed": true
+   },
+   "source": "https://explorer.ergoplatform.com/en/stats",
+   "note": "Ergo resmi blok gezgini verilerine göre son 24 saatte ağda 5.354 işlem gerçekleşmiştir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.0443,
+    "vesting_end": "2022-01"
+   },
+   "source": "https://docs.ergoplatform.com/mining/emission/",
+   "note": "Toplam arzın yalnızca %4,43'ü Ergo Vakfı Hazinesine ayrılmış olup hakediş süreci Ocak 2022'de tamamlanmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
   }
  },
  "dropped": [],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "usage": {
+  "searches": 16,
+  "input_tokens": 6212,
+  "output_tokens": 1012,
+  "usd": 0.00845
+ },
+ "previous": {
+  "slug": "ergo",
+  "name": "Ergo",
+  "symbol": "ERG",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-30",
+  "fields": {
+   "supply_rule": {
+    "value": {
+     "minting": "protocol_rule",
+     "annual_inflation": null,
+     "max_annual_mint": null,
+     "upgradeable": null
+    },
+    "source": "https://docs.ergoplatform.com/mining/emission/",
+    "note": "Arz 97.739.925 ERG ile sınırlı; blok ödülü protokoldeki takvime göre azalır, EIP-27 ile madencilik ~2045'e uzatıldı.",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

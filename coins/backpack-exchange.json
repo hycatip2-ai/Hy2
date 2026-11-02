@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 53,
- "total_exact": 52.53,
- "band": "Orta",
- "delta": 0.1,
+ "total": 43,
+ "total_exact": 42.87,
+ "band": "Zayıf",
+ "delta": 0.3,
  "confidence": {
-  "parts": 4,
-  "level": "Orta"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [
   {
@@ -30,8 +30,8 @@
   "text": "Yeni token basılabiliyor ama yetkili (başka bir kontrat) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -48,19 +48,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 16.7,
+   "score": 16.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9091,
+   "percentile": 0.8855,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.440928,
-     "percentile": 0.8333,
-     "basis": "sector",
-     "display": "0,44×",
+     "value": 0.425192,
+     "percentile": 0.8214,
+     "basis": "universe",
+     "display": "0,43×",
      "tier": "üst dilim"
     }
    ]
@@ -68,17 +68,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.9,
+   "score": 9.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3421,
+   "percentile": 0.56,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.249999,
-     "percentile": 0.2027,
+     "percentile": 0.1932,
      "basis": "sector",
      "display": "%25",
      "tier": "alt dilim"
@@ -87,7 +87,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.000024,
-     "percentile": 0.2274,
+     "percentile": 0.2254,
      "basis": "sector",
      "display": "4,00×",
      "tier": "alt dilim"
@@ -95,8 +95,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -6e-06,
-     "percentile": 0.754,
+     "value": -5e-06,
+     "percentile": 0.9747,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -116,22 +116,12 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 15.9,
-   "has_data": true,
+   "score": 7.0,
+   "has_data": false,
    "weight": 25,
-   "percentile": 0.8788,
-   "tier": "üst dilim",
-   "metrics": [
-    {
-     "id": "tvl_trend",
-     "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.348994,
-     "percentile": 0.7965,
-     "basis": "sector",
-     "display": "+%35",
-     "tier": "üst dilim"
-    }
-   ]
+   "percentile": null,
+   "tier": null,
+   "metrics": []
   },
   {
    "id": "liquidity",
@@ -139,14 +129,14 @@
    "score": 7.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1053,
+   "percentile": 0.08,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 93.0,
-     "percentile": 0.2015,
+     "percentile": 0.2345,
      "basis": "sector",
      "display": "93",
      "tier": "alt dilim"
@@ -155,7 +145,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4395,
-     "percentile": 0.5053,
+     "percentile": 0.5161,
      "basis": "sector",
      "display": "%0,44",
      "tier": "orta dilim"
@@ -164,7 +154,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0741,
-     "percentile": 0.8716,
+     "percentile": 0.8593,
      "basis": "sector",
      "display": "%7,4",
      "tier": "üst dilim"
@@ -172,8 +162,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.629706,
-     "percentile": 0.0467,
+     "value": 0.632444,
+     "percentile": 0.038,
      "basis": "sector",
      "display": "0,6 yıl",
      "tier": "alt dilim"
@@ -182,7 +172,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3205,
+     "percentile": 0.297,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -194,31 +184,35 @@
  "history": [
   [
    "2026-10-23",
-   55.62
+   45.19
   ],
   [
    "2026-10-24",
-   55.33
+   44.58
   ],
   [
    "2026-10-25",
-   56.77
+   45.3
   ],
   [
    "2026-10-26",
-   56.27
+   45.12
   ],
   [
    "2026-10-27",
-   56.37
+   45.23
   ],
   [
    "2026-10-31",
-   52.47
+   42.21
   ],
   [
    "2026-11-01",
-   52.53
+   42.52
+  ],
+  [
+   "2026-11-02",
+   42.87
   ]
  ],
  "changes": [],
@@ -226,20 +220,20 @@
  "trend": {
   "rank_now": 221,
   "rank_start": 243,
-  "score": 56,
+  "score": 63,
   "rise": 90,
-  "steady": 50,
+  "steady": 67,
   "calm": 0,
-  "weeks_up": 6,
-  "weeks_down": 5,
+  "weeks_up": 8,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
    -1,
-   -1,
    1,
-   0,
+   1,
+   1,
    1,
    1,
    -1,
@@ -280,5 +274,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/backpack",
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

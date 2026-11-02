@@ -1,0 +1,96 @@
+{
+ "slug": "rhea-finance",
+ "schema": 2,
+ "name": "RHEA Finance",
+ "symbol": "RHEA",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
+ "fields": {
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://rhea.finance/",
+   "note": "Sayfa DEX gelirinin %100'ünün RHEA geri alımına gittiğini belirtiyor.",
+   "check": "site botları engelliyor; güvenilir alan adı",
+   "carried": {
+    "provider": "claude-code",
+    "researched_at": "2026-11-01"
+   }
+  }
+ },
+ "dropped": [
+  {
+   "field": "supply_rule",
+   "source": "https://guide.rhea.finance/docs/rhea-tokenomics",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "buyback_burn",
+   "source": "https://www.rootdata.com/Projects/detail/Rhea%20Finance?k=MTY5MzA%3D",
+   "reason": "sayfada coin adı ya da sembolü geçmiyor"
+  },
+  {
+   "field": "hack_12m",
+   "source": "https://defillama.com/protocol/rhea-finance",
+   "reason": "sayfa açılamadı"
+  },
+  {
+   "field": "investors",
+   "source": "https://defillama.com/protocol/rhea-finance",
+   "reason": "sayfa açılamadı"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://tracxn.com/d/companies/ref-finance/__26fB-8t8s_oM4_N6iKxQf4vO8k5pQ5sX-e6a-Xf1z6s",
+   "reason": "site erişimi engelledi (HTTP 403)"
+  },
+  {
+   "field": "token_utility",
+   "source": "https://guide.rhea.finance/docs/rhea-tokenomics",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://defillama.com/protocol/rhea-finance",
+   "reason": "sayfa açılamadı"
+  },
+  {
+   "field": "allocation",
+   "source": "https://guide.rhea.finance/docs/rhea-tokenomics",
+   "reason": "HTTP 404"
+  }
+ ],
+ "usage": {
+  "searches": 46,
+  "input_tokens": 7440,
+  "output_tokens": 1189,
+  "usd": 0.01004
+ },
+ "previous": {
+  "slug": "rhea-finance",
+  "schema": 1,
+  "name": "RHEA Finance",
+  "symbol": "RHEA",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-11-01",
+  "fields": {
+   "buyback_burn": {
+    "value": 1.0,
+    "source": "https://rhea.finance/",
+    "note": "Sayfa DEX gelirinin %100'ünün RHEA geri alımına gittiğini belirtiyor.",
+    "check": "site botları engelliyor; güvenilir alan adı"
+   }
+  },
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "reason": "biçim anlaşılmadı"
+   }
+  ],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "slug": "irys",
+ "schema": 2,
+ "name": "Irys",
+ "symbol": "IRYS",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": 0.02,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+   "note": "Ağda yeni tokenlar blok ödülü olarak yıllık %2 başlangıç enflasyonu ve 4 yılda bir yarılanma kuralıyla protokolce basılır; yerel L1 coinidir.",
+   "check": "belge açıldı",
+   "cited": false
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+   "note": "Akıllı sözleşme yürütme ücretlerinin %50'si ve vadeli depolama ücretlerinin %95'i protokol tarafından düzenli olarak yakılmaktadır.",
+   "check": "belge açıldı",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "service_payment",
+     "stake_to_operate",
+     "collateral",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+   "note": "IRYS, ağ işlem ve depolama ücretlerinin ödenmesinde, madencilerin konsensüse katılım stake'inde ve teminatta zorunlu yerel varlıktır.",
+   "check": "belge açıldı",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.441,
+    "vesting_end": "2029-11"
+   },
+   "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+   "note": "Ekip ve danışmanlara %18.8, yatırımcılara %25.3 ayrılmıştır; 1 yıl cliff ve 36 ay lineer kilit açılımı Kasım 2029'da tamamlanır.",
+   "check": "belge açıldı",
+   "cited": false
+  }
+ },
+ "dropped": [
+  {
+   "field": "investors",
+   "source": "https://www.theblock.co/post/299691/irys-funding-round-lemniscap",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://www.theblock.co/post/299691/irys-funding-round-lemniscap",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://explorer.irys.xyz/",
+   "reason": "sayı kaynak sayfada bulunamadı"
+  }
+ ],
+ "usage": {
+  "searches": 92,
+  "input_tokens": 11208,
+  "output_tokens": 1241,
+  "usd": 0.01306
+ }
+}

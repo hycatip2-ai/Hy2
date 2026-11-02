@@ -1,19 +1,109 @@
 {
  "slug": "allora",
+ "schema": 2,
  "name": "Allora",
  "symbol": "ALLO",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-31",
- "fields": {},
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "capped",
+    "annual_inflation": 0.0173,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://docs.allora.network/reference/params/mint",
+   "note": "Yeni tokenlar mint modülü emisyon kurallarıyla basılır; maksimum arz 1 milyarla sınırlı olup güncel yıllık enflasyon %1,73'tür.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "buyback_burn": {
+   "value": 0.0,
+   "source": "https://docs.allora.network/learn/tokenomics",
+   "note": "Ağda geri alım veya yakım mekanizması yoktur; toplanan çıkarım ücretleri emisyon hazinesine ve katılımcılara aktarılır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "angel_investors": {
+   "value": [
+    "Stani Kulechov",
+    "Kain Warwick",
+    "Ryan Selkis",
+    "Shayne Coplan",
+    "Andrew Steinwold",
+    "Tegan Kline",
+    "Tony Sheng",
+    "Alexander Salnikov"
+   ],
+   "source": "https://icodrops.com/allora/",
+   "note": "Stani Kulechov, Kain Warwick ve Ryan Selkis gibi sektör liderleri projeye melek yatırımcı olarak katılmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "service_payment",
+     "stake_to_operate",
+     "governance",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://docs.allora.network/learn/tokenomics",
+   "note": "ALLO; çıkarım ödemeleri, gas ücretleri, doğrulayıcı/reputer/worker staking zorunluluğu ve yönetişim oylamalarında kullanılır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.4855,
+    "vesting_end": "2028-11"
+   },
+   "source": "https://docs.allora.network/reference/params/mint",
+   "note": "Yatırımcılara %31,05 ve ekibe %17,50 (toplam %48,55) ayrılmıştır; hak edişleri 12 ay cliff ve 24 ay lineer ile Kasım 2028'de biter.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  }
+ },
  "dropped": [
   {
-   "field": "supply_rule",
-   "reason": "biçim anlaşılmadı"
+   "field": "investors",
+   "source": "https://www.allora.network/blog/allora-labs-brings-total-funding-to-35-million-with-latest-strategic-round",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://explorer.allora.network/",
+   "reason": "sayı kaynak sayfada bulunamadı"
   }
  ],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "usage": {
+  "searches": 44,
+  "input_tokens": 9999,
+  "output_tokens": 1227,
+  "usd": 0.0121
+ },
+ "previous": {
+  "slug": "allora",
+  "name": "Allora",
+  "symbol": "ALLO",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-31",
+  "fields": {},
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "reason": "biçim anlaşılmadı"
+   }
+  ],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }

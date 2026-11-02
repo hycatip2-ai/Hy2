@@ -11,15 +11,20 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 37,
- "total_exact": 36.57,
+ "total": 34,
+ "total_exact": 33.52,
  "band": "Zayıf",
- "delta": -1.1,
+ "delta": -3.4,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "dev_decline",
+   "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü."
+  }
+ ],
  "notes": [],
  "earns": null,
  "supply": {
@@ -27,14 +32,13 @@
   "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
   "arz kuralı"
  ],
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": {
   "chain": "Ethereum",
@@ -54,17 +58,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.1,
+   "score": 5.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2812,
+   "percentile": 0.2,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.524269,
-     "percentile": 0.418,
+     "value": 0.524317,
+     "percentile": 0.4126,
      "basis": "sector",
      "display": "%52",
      "tier": "orta dilim"
@@ -72,8 +76,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.907418,
-     "percentile": 0.4429,
+     "value": 1.907242,
+     "percentile": 0.4395,
      "basis": "sector",
      "display": "1,91×",
      "tier": "orta dilim"
@@ -81,10 +85,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.947547,
-     "percentile": 0.049,
+     "value": 0.795038,
+     "percentile": 0.0278,
      "basis": "sector",
-     "display": "+%95",
+     "display": "+%80",
      "tier": "alt dilim"
     }
    ]
@@ -102,19 +106,19 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.9,
+   "score": 10.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2609,
-   "tier": "alt dilim",
+   "percentile": 0.4091,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 2.0,
-     "percentile": 0.3958,
+     "value": 3.0,
+     "percentile": 0.5085,
      "basis": "sector",
-     "display": "2",
+     "display": "3",
      "tier": "orta dilim"
     }
    ]
@@ -122,17 +126,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.1,
+   "score": 9.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.375,
-   "tier": "orta dilim",
+   "percentile": 0.3333,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 193.0,
-     "percentile": 0.7632,
+     "percentile": 0.7522,
      "basis": "sector",
      "display": "193",
      "tier": "üst dilim"
@@ -141,7 +145,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6503,
-     "percentile": 0.2079,
+     "percentile": 0.1967,
      "basis": "sector",
      "display": "%0,65",
      "tier": "alt dilim"
@@ -150,7 +154,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1389,
-     "percentile": 0.5671,
+     "percentile": 0.5496,
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
@@ -158,8 +162,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.138946,
-     "percentile": 0.2848,
+     "value": 1.141684,
+     "percentile": 0.2973,
      "basis": "sector",
      "display": "1,1 yıl",
      "tier": "alt dilim"
@@ -167,60 +171,99 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü. (Uyarı −5,0)"
+  },
+  {
+   "text": "Aktif geliştirici sayısı sert biçimde arttı.",
+   "part": "usage",
+   "delta": 1.85,
+   "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +1,8)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   38.4
+   38.87
   ],
   [
    "2026-10-24",
-   38.27
+   38.73
   ],
   [
    "2026-10-25",
-   37.37
+   37.74
   ],
   [
    "2026-10-26",
-   37.34
+   37.7
   ],
   [
    "2026-10-27",
-   37.08
+   37.43
   ],
   [
    "2026-10-28",
-   37.85
+   38.23
   ],
   [
    "2026-10-29",
-   37.8
+   38.18
   ],
   [
    "2026-10-30",
-   37.16
+   37.54
   ],
   [
    "2026-10-31",
-   37.71
+   38.13
   ],
   [
    "2026-11-01",
-   36.57
+   36.93
+  ],
+  [
+   "2026-11-02",
+   33.52
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-02",
+   "delta": -3.4,
+   "from": 36.9,
+   "to": 33.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü. (Uyarı −5,0)"
+    },
+    {
+     "text": "Aktif geliştirici sayısı sert biçimde arttı.",
+     "part": "usage",
+     "delta": 1.85,
+     "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +1,8)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
   "rank_now": 706,
-  "rank_start": 822,
+  "rank_start": 823,
   "score": 0,
   "rise": 0,
-  "steady": 42,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 5,
+  "weeks_up": 4,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    0,
@@ -229,9 +272,9 @@
    1,
    -1,
    1,
-   1,
    -1,
-   0,
+   -1,
+   -1,
    -1,
    -1,
    -1
@@ -261,5 +304,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

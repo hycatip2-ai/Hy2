@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 50,
- "total_exact": 50.32,
- "band": "Orta",
- "delta": 0.2,
+ "total": 49,
+ "total_exact": 49.14,
+ "band": "Zayıf",
+ "delta": -2.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,8 +25,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.9,
+   "score": 14.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8864,
+   "percentile": 0.8182,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.9356,
-     "percentile": 0.7668,
+     "percentile": 0.7955,
      "basis": "sector",
      "display": "%94",
      "tier": "üst dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.069136,
-     "percentile": 0.8313,
+     "percentile": 0.8508,
      "basis": "sector",
      "display": "1,07×",
      "tier": "üst dilim"
@@ -78,11 +78,11 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.064665,
-     "percentile": 0.7913,
+     "value": 0.0,
+     "percentile": 0.5616,
      "basis": "sector",
-     "display": "−%6,5",
-     "tier": "üst dilim"
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -112,7 +112,7 @@
    "score": 13.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8977,
+   "percentile": 0.9091,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -128,7 +128,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.22,
-     "percentile": 0.8523,
+     "percentile": 0.853,
      "basis": "sector",
      "display": "%0,22",
      "tier": "üst dilim"
@@ -137,7 +137,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1923,
-     "percentile": 0.4348,
+     "percentile": 0.4451,
      "basis": "sector",
      "display": "%19",
      "tier": "orta dilim"
@@ -145,8 +145,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.344285,
-     "percentile": 0.8105,
+     "value": 5.347023,
+     "percentile": 0.8008,
      "basis": "sector",
      "display": "5,3 yıl",
      "tier": "üst dilim"
@@ -155,7 +155,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2674,
+     "percentile": 0.2731,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -163,70 +163,97 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
+   "part": "supply",
+   "delta": -2.12,
+   "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −2,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   49.26
+   49.36
   ],
   [
    "2026-10-24",
-   49.38
+   49.48
   ],
   [
    "2026-10-25",
-   49.35
+   50.11
   ],
   [
    "2026-10-26",
-   49.32
-  ],
-  [
-   "2026-10-27",
-   49.27
-  ],
-  [
-   "2026-10-28",
-   49.06
-  ],
-  [
-   "2026-10-29",
-   49.21
-  ],
-  [
-   "2026-10-30",
-   49.76
-  ],
-  [
-   "2026-10-31",
    50.12
   ],
   [
+   "2026-10-27",
+   50.13
+  ],
+  [
+   "2026-10-28",
+   49.86
+  ],
+  [
+   "2026-10-29",
+   49.97
+  ],
+  [
+   "2026-10-30",
+   50.47
+  ],
+  [
+   "2026-10-31",
+   50.98
+  ],
+  [
    "2026-11-01",
-   50.32
+   51.2
+  ],
+  [
+   "2026-11-02",
+   49.14
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-02",
+   "delta": -2.1,
+   "from": 51.2,
+   "to": 49.1,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
+     "part": "supply",
+     "delta": -2.12,
+     "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −2,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
   "rank_now": 630,
-  "rank_start": 686,
-  "score": 29,
-  "rise": 32,
-  "steady": 42,
+  "rank_start": 682,
+  "score": 34,
+  "rise": 27,
+  "steady": 58,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 3,
+  "weeks_up": 7,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
-   0,
+   -1,
    1,
    -1,
+   1,
    0,
-   0,
-   0,
+   1,
    1,
    1,
    -1,
@@ -307,5 +334,9 @@
  "angel_investors_estimated": true,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/yield-guild-games",
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

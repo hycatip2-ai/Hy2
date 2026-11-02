@@ -1,0 +1,90 @@
+{
+ "slug": "folks-finance",
+ "schema": 2,
+ "name": "Folks Finance",
+ "symbol": "FOLKS",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "none",
+    "annual_inflation": 0.0,
+    "max_annual_mint": null,
+    "upgradeable": true
+   },
+   "source": "https://docs.folks.finance/folks-token/tokenomics",
+   "note": "FOLKS toplam arzı 50 milyon ile sabittir; yeni token basımı yoktur, EVM sözleşmesi ERC-1967 proxy olup yükseltilebilir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "partial",
+    "uses": [
+     "fee_discount",
+     "governance",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://docs.folks.finance/folks-token/utilities",
+   "note": "Protokol tokensiz kullanılabilir; FOLKS takas ücreti indirimleri, yönetişim oylaması ve ödül artırımı sağlar.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.4027,
+    "vesting_end": "2028-05"
+   },
+   "source": "https://docs.folks.finance/folks-token/tokenomics",
+   "note": "Ekip (%10), danışmanlar (%3,5) ve yatırımcılara (%26,77) toplam %40,27 pay ayrılmıştır; hak ediş Mayıs 2028'de tamamlanır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  }
+ },
+ "dropped": [
+  {
+   "field": "investors",
+   "source": "https://www.prnewswire.com/news-releases/leading-capital-markets-protocol-folks-finance-closes-3-million-seed-funding-round-301464871.html",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://www.prnewswire.com/news-releases/leading-capital-markets-protocol-folks-finance-closes-3-million-seed-funding-round-301464871.html",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://defillama.com/protocol/folks-finance",
+   "reason": "sayfa açılamadı"
+  }
+ ],
+ "usage": {
+  "searches": 60,
+  "input_tokens": 8932,
+  "output_tokens": 1180,
+  "usd": 0.01112
+ },
+ "previous": {
+  "slug": "folks-finance",
+  "schema": 1,
+  "name": "Folks Finance",
+  "symbol": "FOLKS",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-11-01",
+  "fields": {},
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "reason": "biçim anlaşılmadı"
+   }
+  ],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
+ }
+}

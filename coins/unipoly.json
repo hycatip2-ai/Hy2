@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 31,
- "total_exact": 31.14,
+ "total": 29,
+ "total_exact": 28.67,
  "band": "Zayıf",
- "delta": 0.0,
+ "delta": -2.7,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -52,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.7,
+   "score": 6.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3333,
+   "percentile": 0.1761,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.21923,
-     "percentile": 0.111,
+     "percentile": 0.1001,
      "basis": "sector",
      "display": "%22",
      "tier": "alt dilim"
@@ -71,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.56142,
-     "percentile": 0.1163,
+     "percentile": 0.1045,
      "basis": "sector",
      "display": "4,56×",
      "tier": "alt dilim"
@@ -79,10 +79,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.214877,
-     "percentile": 0.9301,
+     "value": 0.0,
+     "percentile": 0.7136,
      "basis": "sector",
-     "display": "−%21",
+     "display": "%0",
      "tier": "üst dilim"
     }
    ]
@@ -100,17 +100,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.2,
+   "score": 2.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1016,
+   "percentile": 0.0938,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.1581,
+     "percentile": 0.1364,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -123,14 +123,14 @@
    "score": 7.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1739,
+   "percentile": 0.1534,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 3.0,
-     "percentile": 0.0013,
+     "percentile": 0.0011,
      "basis": "sector",
      "display": "3",
      "tier": "alt dilim"
@@ -139,7 +139,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.4164,
-     "percentile": 0.06,
+     "percentile": 0.0599,
      "basis": "sector",
      "display": "%1,4",
      "tier": "alt dilim"
@@ -148,7 +148,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.9441,
+     "percentile": 0.9489,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -156,8 +156,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.872005,
-     "percentile": 0.4063,
+     "value": 2.874743,
+     "percentile": 0.4188,
      "basis": "sector",
      "display": "2,9 yıl",
      "tier": "orta dilim"
@@ -165,83 +165,109 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
+   "part": "supply",
+   "delta": -2.37,
+   "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −2,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   21.78
+   21.65
   ],
   [
    "2026-10-24",
-   34.35
+   34.57
   ],
   [
    "2026-10-25",
-   34.64
+   34.74
   ],
   [
    "2026-10-26",
-   34.66
+   34.9
   ],
   [
    "2026-10-27",
-   34.68
+   34.85
   ],
   [
    "2026-10-28",
-   35.03
+   35.18
   ],
   [
    "2026-10-29",
-   34.64
+   34.81
   ],
   [
    "2026-10-30",
-   35.09
+   35.13
   ],
   [
    "2026-10-31",
-   31.1
+   31.31
   ],
   [
    "2026-11-01",
-   31.14
+   31.34
+  ],
+  [
+   "2026-11-02",
+   28.67
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": 12.6,
-   "from": 21.8,
-   "to": 34.4,
+   "delta": 12.9,
+   "from": 21.6,
+   "to": 34.6,
    "event": true,
    "reasons": [
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
-     "delta": 7.04,
-     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +7,0)"
+     "delta": 7.36,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +7,4)"
     },
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 5.68,
+     "delta": 5.7,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +5,7)"
     }
    ]
   },
   {
    "date": "2026-10-31",
-   "delta": -4.0,
+   "delta": -3.8,
    "from": 35.1,
-   "to": 31.1,
+   "to": 31.3,
    "event": false,
    "reasons": [
     {
      "text": "Borsalardaki alış-satış farkı açıldı.",
      "part": "liquidity",
-     "delta": -3.73,
+     "delta": -3.68,
      "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −3,7)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "delta": -2.7,
+   "from": 31.3,
+   "to": 28.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
+     "part": "supply",
+     "delta": -2.37,
+     "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −2,4)"
     }
    ]
   }
@@ -249,62 +275,26 @@
  "events": [
   {
    "date": "2026-10-24",
-   "delta": 12.6,
-   "from": 21.8,
-   "to": 34.4,
+   "delta": 12.9,
+   "from": 21.6,
+   "to": 34.6,
    "reasons": [
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
-     "delta": 7.04,
-     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +7,0)"
+     "delta": 7.36,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +7,4)"
     },
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 5.68,
+     "delta": 5.7,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +5,7)"
     }
    ]
   }
  ],
- "trend": {
-  "rank_now": 411,
-  "rank_start": 561,
-  "score": 65,
-  "rise": 85,
-  "steady": 67,
-  "calm": 23,
-  "weeks_up": 8,
-  "weeks_down": 3,
-  "weeks_total": 12,
-  "weekly": [
-   0,
-   -1,
-   -1,
-   1,
-   1,
-   1,
-   1,
-   1,
-   1,
-   1,
-   1,
-   -1
-  ],
-  "labels": [
-   {
-    "id": "spike",
-    "text": "Ani sıçrama"
-   }
-  ],
-  "trend": "rising",
-  "supply_share": 0.0,
-  "eligible": true,
-  "window_days": 90,
-  "score_change": null,
-  "double": false
- },
+ "trend": null,
  "chain": null,
  "investors": [],
  "investors_source": null,
@@ -313,5 +303,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

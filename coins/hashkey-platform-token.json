@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 49,
- "total_exact": 48.75,
- "band": "Zayıf",
- "delta": -0.2,
+ "total": 54,
+ "total_exact": 54.49,
+ "band": "Orta",
+ "delta": 1.6,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -25,8 +25,8 @@
   "text": "Kontrat sonradan değiştirilebiliyor ama yetkili (okunamayan bir yetkili) görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
- "formula_version": "1.16.0",
+ "date": "2026-11-02",
+ "formula_version": "1.19.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
@@ -41,28 +41,28 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 8.1,
+   "score": 8.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5238,
+   "percentile": 0.5,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 21534.135507,
-     "percentile": 0.0831,
+     "value": 21547.013536,
+     "percentile": 0.0726,
      "basis": "sector",
-     "display": "21.534×",
+     "display": "21.547×",
      "tier": "alt dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 725.048051,
-     "percentile": 0.7222,
-     "basis": "universe",
-     "display": "725×",
+     "value": 721.684978,
+     "percentile": 0.7716,
+     "basis": "sector",
+     "display": "722×",
      "tier": "üst dilim"
     }
    ]
@@ -70,17 +70,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.7,
+   "score": 8.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3188,
-   "tier": "alt dilim",
+   "percentile": 0.4318,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.34496,
-     "percentile": 0.2487,
+     "percentile": 0.2412,
      "basis": "sector",
      "display": "%34",
      "tier": "alt dilim"
@@ -89,7 +89,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.898887,
-     "percentile": 0.2503,
+     "percentile": 0.2426,
      "basis": "sector",
      "display": "2,90×",
      "tier": "alt dilim"
@@ -97,11 +97,11 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.6542,
+     "value": -0.0,
+     "percentile": 0.8549,
      "basis": "sector",
      "display": "%0",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   },
@@ -118,46 +118,37 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 16.7,
+   "score": 20.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8281,
+   "percentile": 1.0,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 11377.4,
+     "value": 11417.4,
      "percentile": 1.0,
      "basis": "sector",
-     "display": "+%1.137.640",
+     "display": "+%1.141.640",
      "tier": "üst dilim"
-    },
-    {
-     "id": "tvl_trend",
-     "name": "Kilitli varlık trendi (90 gün)",
-     "value": 1.042669,
-     "percentile": 0.5109,
-     "basis": "sector",
-     "display": "+%4,3",
-     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.5,
+   "score": 6.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1159,
+   "percentile": 0.0909,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 54.0,
-     "percentile": 0.1882,
+     "percentile": 0.1537,
      "basis": "sector",
      "display": "54",
      "tier": "alt dilim"
@@ -166,7 +157,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2932,
-     "percentile": 0.7477,
+     "percentile": 0.7404,
      "basis": "sector",
      "display": "%0,29",
      "tier": "üst dilim"
@@ -175,7 +166,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.4286,
-     "percentile": 0.0219,
+     "percentile": 0.0168,
      "basis": "sector",
      "display": "%43",
      "tier": "alt dilim"
@@ -183,11 +174,11 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.979466,
-     "percentile": 0.3516,
+     "value": 1.982204,
+     "percentile": 0.3276,
      "basis": "sector",
      "display": "2,0 yıl",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     }
    ]
   }
@@ -196,78 +187,103 @@
  "history": [
   [
    "2026-10-23",
-   45.32
+   48.6
   ],
   [
    "2026-10-24",
-   50.12
+   53.73
   ],
   [
    "2026-10-25",
-   50.4
+   54.07
   ],
   [
    "2026-10-26",
-   50.4
+   53.97
   ],
   [
    "2026-10-27",
-   50.41
+   53.85
   ],
   [
    "2026-10-31",
-   48.91
+   53.02
   ],
   [
    "2026-11-01",
-   48.75
+   52.9
+  ],
+  [
+   "2026-11-02",
+   54.49
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": 4.8,
-   "from": 45.3,
-   "to": 50.1,
-   "event": false,
+   "delta": 5.1,
+   "from": 48.6,
+   "to": 53.7,
+   "event": true,
    "reasons": [
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
-     "delta": 3.56,
-     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,6)"
+     "delta": 3.93,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,9)"
     },
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 1.19,
+     "delta": 1.2,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,2)"
     }
    ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": 5.1,
+   "from": 48.6,
+   "to": 53.7,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": 3.93,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,9)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 1.2,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,2)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 522,
-  "rank_start": 507,
+  "rank_now": 520,
+  "rank_start": 498,
   "score": 0,
   "rise": 0,
   "steady": 50,
   "calm": 0,
   "weeks_up": 6,
-  "weeks_down": 5,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
    1,
+   0,
    -1,
    -1,
    -1,
-   -1,
+   1,
    1,
    0,
-   1,
    -1,
    1
   ],
@@ -292,5 +308,9 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null
+ "research": null,
+ "token_utility": null,
+ "usage_evidence": null,
+ "allocation": null,
+ "value_transfer_pending": null
 }

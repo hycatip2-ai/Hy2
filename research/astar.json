@@ -1,11 +1,25 @@
 {
  "slug": "astar",
+ "schema": 2,
  "name": "Astar",
  "symbol": "ASTR",
- "provider": "claude-code",
- "model": null,
- "researched_at": "2026-10-31",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-02",
  "fields": {
+  "usage_evidence": {
+   "value": {
+    "metric": "daily_transactions",
+    "value": 2192.0,
+    "unit": "transactions",
+    "as_of": "2026-10-29",
+    "confirmed": true
+   },
+   "source": "https://defillama.com/chain/astar",
+   "note": "DefiLlama verilerine göre 29 Ekim 2026 tarihinde Astar ağında 2.192 işlem gerçekleştirilmiştir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
   "supply_rule": {
    "value": {
     "minting": "capped",
@@ -15,12 +29,80 @@
    },
    "source": "https://docs.astar.network/docs/learn/tokenomics3/",
    "note": "Parametreler zincir üstü oylamayla belirleniyor; yıllık enflasyon tavanı %5,5, sert arz sınırı yok.",
-   "check": "sayfada coin adı geçiyor"
+   "check": "sayfada coin adı geçiyor",
+   "carried": {
+    "provider": "claude-code",
+    "researched_at": "2026-10-31"
+   }
   }
  },
- "dropped": [],
- "queue": {
-  "priority": 1,
-  "reason": "ilk 50 için tek eksiği arz kuralı"
+ "dropped": [
+  {
+   "field": "supply_rule",
+   "source": "https://docs.astar.network/docs/learn/tokenomics-3/inflation",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "buyback_burn",
+   "source": "https://docs.astar.network/docs/learn/tokenomics-3/faq",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "investors",
+   "source": "https://cryptobriefing.com/astar-network-raises-22m-to-boost-polkadot-interoperability/",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "angel_investors",
+   "source": "https://cryptobriefing.com/astar-network-raises-22m-to-boost-polkadot-interoperability/",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "token_utility",
+   "source": "https://docs.astar.network/docs/learn/about-astar/astar-token",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "allocation",
+   "source": "https://docs.astar.network/docs/learn/about-astar/astar-token",
+   "reason": "HTTP 404"
+  },
+  {
+   "field": "value_transfer_pending",
+   "source": "https://docs.astar.network/docs/learn/tokenomics-3/faq",
+   "reason": "HTTP 404"
+  }
+ ],
+ "usage": {
+  "searches": 43,
+  "input_tokens": 8109,
+  "output_tokens": 1141,
+  "usd": 0.01036
+ },
+ "previous": {
+  "slug": "astar",
+  "name": "Astar",
+  "symbol": "ASTR",
+  "provider": "claude-code",
+  "model": null,
+  "researched_at": "2026-10-31",
+  "fields": {
+   "supply_rule": {
+    "value": {
+     "minting": "capped",
+     "annual_inflation": null,
+     "max_annual_mint": 0.055,
+     "upgradeable": null
+    },
+    "source": "https://docs.astar.network/docs/learn/tokenomics3/",
+    "note": "Parametreler zincir üstü oylamayla belirleniyor; yıllık enflasyon tavanı %5,5, sert arz sınırı yok.",
+    "check": "sayfada coin adı geçiyor"
+   }
+  },
+  "dropped": [],
+  "queue": {
+   "priority": 1,
+   "reason": "ilk 50 için tek eksiği arz kuralı"
+  }
  }
 }
