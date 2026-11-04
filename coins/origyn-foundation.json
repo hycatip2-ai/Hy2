@@ -9,32 +9,37 @@
  "us_exchanges": [],
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 50,
- "total_exact": 49.71,
- "band": "Zayıf",
- "delta": -0.5,
+ "total": 61,
+ "total_exact": 60.89,
+ "band": "Orta",
+ "delta": 11.2,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
+  "source": "https://origyn.gitbook.io/origyn/tokenomics/tokenomics-faq",
+  "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -50,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.4,
+   "score": 13.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6667,
-   "tier": "orta dilim",
+   "percentile": 0.6875,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.75171,
-     "percentile": 0.4893,
+     "percentile": 0.5284,
      "basis": "sector",
      "display": "%75",
      "tier": "orta dilim"
@@ -69,7 +74,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.35662,
-     "percentile": 0.5284,
+     "percentile": 0.5653,
      "basis": "sector",
      "display": "1,36×",
      "tier": "orta dilim"
@@ -78,7 +83,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8481,
+     "percentile": 0.8556,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -88,12 +93,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.4,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7454,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6111,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7778,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -101,14 +125,14 @@
    "score": 14.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.7581,
+   "percentile": 0.7669,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.7042,
+     "percentile": 0.7032,
      "basis": "universe",
      "display": "4",
      "tier": "üst dilim"
@@ -118,17 +142,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.5,
+   "score": 7.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1333,
+   "percentile": 0.1875,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 15.0,
-     "percentile": 0.0613,
+     "percentile": 0.061,
      "basis": "sector",
      "display": "15",
      "tier": "alt dilim"
@@ -137,7 +161,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.7591,
-     "percentile": 0.1468,
+     "percentile": 0.1426,
      "basis": "sector",
      "display": "%0,76",
      "tier": "alt dilim"
@@ -146,16 +170,16 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.3318,
+     "percentile": 0.348,
      "basis": "sector",
      "display": "%20",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.731006,
-     "percentile": 0.5715,
+     "value": 4.736482,
+     "percentile": 0.5805,
      "basis": "sector",
      "display": "4,7 yıl",
      "tier": "orta dilim"
@@ -164,7 +188,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7769,
+     "percentile": 0.7774,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -172,7 +196,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.58,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,6)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -217,6 +254,10 @@
   [
    "2026-11-02",
    49.71
+  ],
+  [
+   "2026-11-04",
+   60.89
   ]
  ],
  "changes": [
@@ -238,6 +279,27 @@
      "part": "supply",
      "delta": 2.81,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,8)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 11.2,
+   "from": 49.7,
+   "to": 60.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.58,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,6)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
     }
    ]
   }
@@ -262,29 +324,50 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,8)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 11.2,
+   "from": 49.7,
+   "to": 60.9,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.58,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,6)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 979,
+  "rank_now": 978,
   "rank_start": 979,
   "score": 0,
   "rise": 0,
-  "steady": 27,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 3,
-  "weeks_down": 4,
-  "weeks_total": 11,
+  "weeks_up": 6,
+  "weeks_down": 6,
+  "weeks_total": 12,
   "weekly": [
    1,
-   -1,
-   0,
    1,
-   0,
    -1,
-   -1,
-   0,
    1,
-   0,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
    -1
   ],
   "labels": [],
@@ -320,8 +403,35 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/origyn",
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "service_payment",
+   "burn_mint",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://origyn.gitbook.io/origyn/tokenomics/tokenomics-faq",
+  "note": "OGY, sertifikasyon, işlem ücretleri ve yönetişim için zorunlu bir yardımcı program tokenidir.",
+  "researched_at": "2026-11-02"
+ },
+ "usage_evidence": {
+  "metric": "OGY Protocol Users",
+  "value": 87249.0,
+  "unit": "users",
+  "as_of": "2026-11-02",
+  "confirmed": true,
+  "source": "https://dashboard.origyn.com/",
+  "note": "Dashboard verilerine göre 2026-11-02 itibarıyla 87.249 protokol kullanıcısı bulunmaktadır.",
+  "researched_at": "2026-11-02"
+ },
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": null
 }

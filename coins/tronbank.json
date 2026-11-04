@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 37,
- "total_exact": 37.29,
+ "total": 35,
+ "total_exact": 34.76,
  "band": "Zayıf",
- "delta": 3.3,
+ "delta": -2.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,8 +25,8 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -49,38 +49,38 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.8,
+   "score": 3.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2386,
+   "percentile": 0.0723,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.185333,
-     "percentile": 0.1473,
+     "value": 0.268399,
+     "percentile": 0.225,
      "basis": "sector",
-     "display": "%19",
+     "display": "%27",
      "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 5.395682,
-     "percentile": 0.1871,
+     "value": 3.725802,
+     "percentile": 0.2469,
      "basis": "sector",
-     "display": "5,40×",
+     "display": "3,73×",
      "tier": "alt dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.528,
+     "value": 0.425552,
+     "percentile": 0.0388,
      "basis": "sector",
-     "display": "%0",
-     "tier": "orta dilim"
+     "display": "+%43",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -107,17 +107,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.5,
+   "score": 10.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5682,
+   "percentile": 0.5301,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 14.0,
-     "percentile": 0.0924,
+     "percentile": 0.0974,
      "basis": "sector",
      "display": "14",
      "tier": "alt dilim"
@@ -126,7 +126,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.0984,
-     "percentile": 0.97,
+     "percentile": 0.9684,
      "basis": "sector",
      "display": "%0,10",
      "tier": "üst dilim"
@@ -135,7 +135,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8917,
+     "percentile": 0.8863,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -143,8 +143,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.854209,
-     "percentile": 0.1535,
+     "value": 0.859685,
+     "percentile": 0.1193,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -154,10 +154,10 @@
  ],
  "reasons": [
   {
-   "text": "Arz artışı son 3 ayda yavaşladı.",
+   "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
    "part": "supply",
-   "delta": 3.2,
-   "label": "Arz artışı son 3 ayda yavaşladı. (Arz +3,2)"
+   "delta": -2.34,
+   "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −2,3)"
   }
  ],
  "history": [
@@ -204,6 +204,10 @@
   [
    "2026-11-02",
    37.29
+  ],
+  [
+   "2026-11-04",
+   34.76
   ]
  ],
  "changes": [
@@ -251,18 +255,33 @@
      "label": "Arz artışı son 3 ayda yavaşladı. (Arz +3,2)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -2.5,
+   "from": 37.3,
+   "to": 34.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
+     "part": "supply",
+     "delta": -2.34,
+     "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −2,3)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 393,
-  "rank_start": 235,
+  "rank_now": 313,
+  "rank_start": 232,
   "score": 0,
   "rise": 0,
   "steady": 25,
   "calm": 0,
   "weeks_up": 3,
-  "weeks_down": 9,
+  "weeks_down": 8,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -273,8 +292,8 @@
    -1,
    -1,
    -1,
-   -1,
    1,
+   0,
    1,
    1
   ],
@@ -303,5 +322,12 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Gate",
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": null
 }

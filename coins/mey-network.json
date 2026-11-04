@@ -5,14 +5,14 @@
  "name": "Mey Network",
  "cmc_id": 34269,
  "graduated": false,
- "chain_flow": "Base",
+ "chain_flow": null,
  "us_exchanges": [],
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
  "total": 34,
- "total_exact": 33.69,
+ "total_exact": 34.17,
  "band": "Zayıf",
- "delta": 3.3,
+ "delta": 0.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -21,17 +21,16 @@
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -53,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.0,
+   "score": 4.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0667,
+   "percentile": 0.0625,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.123613,
-     "percentile": 0.0202,
+     "percentile": 0.0493,
      "basis": "sector",
      "display": "%12",
      "tier": "alt dilim"
@@ -72,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.089782,
-     "percentile": 0.0216,
+     "percentile": 0.0507,
      "basis": "sector",
      "display": "8,09×",
      "tier": "alt dilim"
@@ -81,7 +80,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5655,
+     "percentile": 0.5508,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -111,17 +110,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.2,
+   "score": 9.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4,
+   "percentile": 0.5,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 22.0,
-     "percentile": 0.1395,
+     "percentile": 0.1343,
      "basis": "sector",
      "display": "22",
      "tier": "alt dilim"
@@ -130,7 +129,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1142,
-     "percentile": 0.9931,
+     "percentile": 0.993,
      "basis": "sector",
      "display": "%0,11",
      "tier": "üst dilim"
@@ -139,16 +138,16 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.3318,
+     "percentile": 0.348,
      "basis": "sector",
      "display": "%20",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.927447,
-     "percentile": 0.374,
+     "value": 1.932923,
+     "percentile": 0.4137,
      "basis": "sector",
      "display": "1,9 yıl",
      "tier": "orta dilim"
@@ -156,14 +155,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı son 3 ayda yavaşladı.",
-   "part": "supply",
-   "delta": 3.29,
-   "label": "Arz artışı son 3 ayda yavaşladı. (Arz +3,3)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -208,6 +200,10 @@
   [
    "2026-11-02",
    33.69
+  ],
+  [
+   "2026-11-04",
+   34.17
   ]
  ],
  "changes": [
@@ -244,31 +240,31 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 842,
-  "rank_start": 773,
+  "rank_now": 879,
+  "rank_start": 823,
   "score": 0,
   "rise": 0,
   "steady": 25,
   "calm": 0,
   "weeks_up": 3,
-  "weeks_down": 6,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    1,
-   0,
-   0,
-   1,
    -1,
    1,
+   1,
    -1,
    0,
    -1,
    -1,
+   -1,
+   0,
    -1,
    -1
   ],
   "labels": [],
-  "trend": "flat",
+  "trend": "falling",
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
@@ -278,8 +274,8 @@
  "chain": {
   "name": "Base",
   "source": "contract",
-  "flow": true,
-  "flow_rank": 2
+  "flow": false,
+  "flow_rank": null
  },
  "investors": [],
  "investors_source": null,
@@ -292,5 +288,13 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 15689
+ }
 }

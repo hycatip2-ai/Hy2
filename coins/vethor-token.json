@@ -12,32 +12,37 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 56,
- "total_exact": 55.99,
+ "total": 67,
+ "total_exact": 67.11,
  "band": "Orta",
- "delta": -5.8,
+ "delta": 11.1,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: arzı ağın açık kuralı belirler; yılda %9,1 artıyor (sınır %10).",
+  "source": "https://docs.vechain.org/introduction-to-vechain/dual-token-economic-model/vethor-vtho",
+  "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -53,17 +58,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.1,
+   "score": 14.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8068,
+   "percentile": 0.8427,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9049,
+     "percentile": 0.905,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -72,7 +77,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.8898,
+     "percentile": 0.9011,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -80,38 +85,66 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.02184,
-     "percentile": 0.3233,
+     "value": 0.021848,
+     "percentile": 0.3081,
      "basis": "sector",
      "display": "+%2,2",
      "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7857,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.4,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.74,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6111,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7778,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 13.1,
+   "score": 13.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6875,
+   "percentile": 0.6914,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.6567,
+     "percentile": 0.6601,
      "basis": "sector",
      "display": "4",
      "tier": "orta dilim"
@@ -124,14 +157,14 @@
    "score": 12.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8636,
+   "percentile": 0.8652,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 139.0,
-     "percentile": 0.4671,
+     "percentile": 0.4715,
      "basis": "sector",
      "display": "139",
      "tier": "orta dilim"
@@ -139,8 +172,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 8.260096,
-     "percentile": 0.8231,
+     "value": 8.265572,
+     "percentile": 0.8146,
      "basis": "sector",
      "display": "8,3 yıl",
      "tier": "üst dilim"
@@ -150,10 +183,16 @@
  ],
  "reasons": [
   {
-   "text": "Arz artışı (90 gün) verisi artık mevcut.",
-   "part": "supply",
-   "delta": -5.34,
-   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −5,3)"
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.58,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,6)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
   }
  ],
  "history": [
@@ -200,6 +239,10 @@
   [
    "2026-11-02",
    55.99
+  ],
+  [
+   "2026-11-04",
+   67.11
   ]
  ],
  "changes": [
@@ -215,6 +258,27 @@
      "part": "supply",
      "delta": -5.34,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −5,3)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 11.1,
+   "from": 56.0,
+   "to": 67.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.58,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,6)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
     }
    ]
   }
@@ -233,30 +297,50 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −5,3)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 11.1,
+   "from": 56.0,
+   "to": 67.1,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.58,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,6)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 322,
-  "rank_start": 450,
+  "rank_now": 334,
+  "rank_start": 455,
   "score": 53,
-  "rise": 85,
+  "rise": 86,
   "steady": 50,
   "calm": 0,
   "weeks_up": 6,
-  "weeks_down": 5,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
    1,
-   0,
    1,
    1,
-   -1,
    -1,
    1,
    -1,
    1,
+   -1,
+   -1,
    -1
   ],
   "labels": [
@@ -281,8 +365,47 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
- "value_transfer_pending": null
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees"
+  ],
+  "source": "https://docs.vechain.org/introduction-to-vechain/dual-token-economic-model/vethor-vtho",
+  "note": "VTHO, VeChainThor ağındaki transfer ücretleri ve akıllı sözleşme yürütme maliyetlerini ödemek için zorunludur.",
+  "researched_at": "2026-11-02"
+ },
+ "usage_evidence": {
+  "metric": "transfer_events",
+  "value": 16398488.0,
+  "unit": "events",
+  "as_of": "2026-11-01",
+  "confirmed": true,
+  "source": "https://vechainstats.com/token/vtho/",
+  "note": "VeChain Stats verilerine göre VTHO tokenı üzerinde toplam 16.398.488 transfer işlemi kaydedilmiştir.",
+  "researched_at": "2026-11-02"
+ },
+ "allocation": {
+  "insiders": 0.0,
+  "vesting_end": null,
+  "source": "https://docs.vechain.org/introduction-to-vechain/dual-token-economic-model/vethor-vtho",
+  "note": "VTHO genesis bloğunda sıfır arzla başlatılmış olup ekip veya kuruculara doğrudan başlangıç payı ayrılmamıştır.",
+  "researched_at": "2026-11-02"
+ },
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Binance",
+  "Upbit",
+  "Coinbase",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "Kraken",
+  "Binance.US"
+ ],
+ "delisted": [],
+ "recorded": {
+  "insider_share": 0.0
+ }
 }

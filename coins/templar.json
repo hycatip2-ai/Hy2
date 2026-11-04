@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 48,
- "total_exact": 48.21,
+ "total": 49,
+ "total_exact": 48.55,
  "band": "Zayıf",
- "delta": -3.3,
+ "delta": 0.3,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -52,14 +52,14 @@
    "score": 11.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.76,
+   "percentile": 0.7447,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9319,
+     "percentile": 0.9276,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -68,7 +68,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.978105,
-     "percentile": 0.1539,
+     "percentile": 0.144,
      "basis": "sector",
      "display": "4,98×",
      "tier": "alt dilim"
@@ -77,7 +77,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6886,
+     "percentile": 0.6952,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -97,17 +97,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.4,
+   "score": 10.7,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.5862,
+   "percentile": 0.62,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.519,
+     "percentile": 0.5355,
      "basis": "sector",
      "display": "1",
      "tier": "orta dilim"
@@ -117,10 +117,10 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.2,
+   "score": 8.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.18,
+   "percentile": 0.1702,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -136,7 +136,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6027,
-     "percentile": 0.237,
+     "percentile": 0.2464,
      "basis": "sector",
      "display": "%0,60",
      "tier": "alt dilim"
@@ -145,7 +145,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.9233,
+     "percentile": 0.92,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -153,8 +153,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.368925,
-     "percentile": 0.4788,
+     "value": 1.374401,
+     "percentile": 0.451,
      "basis": "sector",
      "display": "1,4 yıl",
      "tier": "orta dilim"
@@ -162,14 +162,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
-   "part": "supply",
-   "delta": -2.96,
-   "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −3,0)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -214,6 +207,10 @@
   [
    "2026-11-02",
    48.21
+  ],
+  [
+   "2026-11-04",
+   48.55
   ]
  ],
  "changes": [
@@ -291,7 +288,38 @@
    ]
   }
  ],
- "trend": null,
+ "trend": {
+  "rank_now": 640,
+  "rank_start": 605,
+  "score": 0,
+  "rise": 0,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 7,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "Bittensor",
   "source": "contract",
@@ -309,5 +337,9 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [],
+ "delisted": [],
+ "recorded": null
 }

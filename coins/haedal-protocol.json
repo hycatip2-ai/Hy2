@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 78,
  "slug": "haedal-protocol",
  "symbol": "HAEDAL",
  "name": "Haedal Protocol",
@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 42,
- "total_exact": 41.78,
+ "total": 44,
+ "total_exact": 44.35,
  "band": "Zayıf",
- "delta": -1.8,
+ "delta": 1.1,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -31,16 +31,16 @@
  ],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
+  "source": "https://haedal-protocol.gitbook.io/haedal-protocol-docs/tokenomics/haedal",
+  "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
- "eligible_for_top": false,
- "missing": [
-  "arz kuralı"
- ],
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 5.0,
  "bonus": 0.0,
  "contract": null,
@@ -48,28 +48,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 13.2,
+   "score": 13.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6,
+   "percentile": 0.6154,
    "tier": "orta dilim",
    "metrics": [
     {
-     "id": "mc_to_revenue",
-     "name": "Piyasa değeri / yıllık gelir",
-     "value": 31.255157,
-     "percentile": 0.6151,
-     "basis": "sector",
-     "display": "31,3×",
-     "tier": "orta dilim"
-    },
-    {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.352621,
-     "percentile": 0.7439,
+     "value": 0.391765,
+     "percentile": 0.6932,
      "basis": "sector",
-     "display": "0,35×",
+     "display": "0,39×",
      "tier": "üst dilim"
     }
    ]
@@ -77,17 +68,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.9,
+   "score": 7.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4115,
+   "percentile": 0.4253,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.558333,
-     "percentile": 0.5209,
+     "percentile": 0.5058,
      "basis": "sector",
      "display": "%56",
      "tier": "orta dilim"
@@ -96,7 +87,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.791045,
-     "percentile": 0.5333,
+     "percentile": 0.5096,
      "basis": "sector",
      "display": "1,79×",
      "tier": "orta dilim"
@@ -104,28 +95,37 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.151556,
-     "percentile": 0.1274,
+     "value": 0.148103,
+     "percentile": 0.1193,
      "basis": "sector",
      "display": "+%15",
      "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.1791,
+     "percentile": 0.4286,
+     "basis": "universe",
+     "display": "%18",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 4.5,
+   "score": 4.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.15,
+   "percentile": 0.1556,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2624,
+     "percentile": 0.2851,
      "basis": "sector",
      "display": "%0",
      "tier": "alt dilim"
@@ -133,19 +133,28 @@
     {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
-     "value": -0.614642,
-     "percentile": 0.1088,
+     "value": -0.600641,
+     "percentile": 0.0991,
      "basis": "sector",
-     "display": "−%61",
+     "display": "−%60",
      "tier": "alt dilim"
     },
     {
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
-     "value": 0.052054,
-     "percentile": 0.3099,
+     "value": 0.052723,
+     "percentile": 0.2911,
      "basis": "sector",
-     "display": "0,052×",
+     "display": "0,053×",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3148,
+     "basis": "universe",
+     "display": "Kısmen",
      "tier": "alt dilim"
     }
    ]
@@ -153,26 +162,26 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 9.7,
+   "score": 11.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5119,
+   "percentile": 0.6579,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.862643,
-     "percentile": 0.3586,
+     "value": 0.876604,
+     "percentile": 0.4062,
      "basis": "sector",
-     "display": "−%14",
+     "display": "−%12",
      "tier": "orta dilim"
     },
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": -0.303811,
-     "percentile": 0.4973,
+     "value": -0.298094,
+     "percentile": 0.4607,
      "basis": "sector",
      "display": "−%30",
      "tier": "orta dilim"
@@ -180,17 +189,17 @@
     {
      "id": "fee_consistency",
      "name": "Kullanımın sürekliliği (13 hafta)",
-     "value": 0.97492,
-     "percentile": 0.5724,
+     "value": 1.0,
+     "percentile": 0.8967,
      "basis": "sector",
-     "display": "%97",
-     "tier": "orta dilim"
+     "display": "%100",
+     "tier": "üst dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.5143,
+     "percentile": 0.4944,
      "basis": "sector",
      "display": "1",
      "tier": "orta dilim"
@@ -200,17 +209,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.9,
+   "score": 10.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5938,
+   "percentile": 0.5287,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 145.0,
-     "percentile": 0.4752,
+     "percentile": 0.4589,
      "basis": "sector",
      "display": "145",
      "tier": "orta dilim"
@@ -219,7 +228,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2415,
-     "percentile": 0.8489,
+     "percentile": 0.844,
      "basis": "sector",
      "display": "%0,24",
      "tier": "üst dilim"
@@ -228,7 +237,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.3609,
+     "percentile": 0.3431,
      "basis": "sector",
      "display": "%20",
      "tier": "orta dilim"
@@ -236,8 +245,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.511294,
-     "percentile": 0.3603,
+     "value": 1.516769,
+     "percentile": 0.36,
      "basis": "sector",
      "display": "1,5 yıl",
      "tier": "orta dilim"
@@ -246,7 +255,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6884,
+     "percentile": 0.6826,
      "basis": "sector",
      "display": "2",
      "tier": "üst dilim"
@@ -258,39 +267,43 @@
  "history": [
   [
    "2026-10-25",
-   46.98
+   48.69
   ],
   [
    "2026-10-26",
-   42.43
+   43.88
   ],
   [
    "2026-10-27",
-   42.18
+   43.13
   ],
   [
    "2026-10-28",
-   46.59
+   47.12
   ],
   [
    "2026-10-31",
-   45.4
+   45.68
   ],
   [
    "2026-11-01",
-   43.59
+   46.09
   ],
   [
    "2026-11-02",
-   41.78
+   43.21
+  ],
+  [
+   "2026-11-04",
+   44.35
   ]
  ],
  "changes": [
   {
    "date": "2026-10-26",
-   "delta": -4.5,
-   "from": 47.0,
-   "to": 42.4,
+   "delta": -4.8,
+   "from": 48.7,
+   "to": 43.9,
    "event": false,
    "reasons": [
     {
@@ -302,16 +315,16 @@
     {
      "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
      "part": "value_capture",
-     "delta": -1.78,
-     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama −1,8)"
+     "delta": -2.14,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama −2,1)"
     }
    ]
   },
   {
    "date": "2026-10-28",
-   "delta": 4.4,
-   "from": 42.2,
-   "to": 46.6,
+   "delta": 4.0,
+   "from": 43.1,
+   "to": 47.1,
    "event": false,
    "reasons": [
     {
@@ -321,29 +334,50 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Kullanım +1,6)"
     },
     {
-     "text": "Gelirine göre değerlemesi sektörüne kıyasla belirgin biçimde pahalandı.",
+     "text": "Kilitli varlığına göre değerlemesi belirgin biçimde pahalandı.",
      "part": "valuation",
-     "delta": 1.45,
-     "label": "Gelirine göre değerlemesi sektörüne kıyasla belirgin biçimde pahalandı. (Değerleme +1,4)"
+     "delta": 1.12,
+     "label": "Kilitli varlığına göre değerlemesi belirgin biçimde pahalandı. (Değerleme +1,1)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "delta": -2.9,
+   "from": 46.1,
+   "to": 43.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    },
+    {
+     "text": "Token sahibine kalan net getiri (yeni arz düşüldükten sonra) arttı.",
+     "part": "value_capture",
+     "delta": 1.65,
+     "label": "Token sahibine kalan net getiri (yeni arz düşüldükten sonra) arttı. (Değer yakalama +1,7)"
     }
    ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 759,
+  "rank_now": 751,
   "rank_start": 997,
-  "score": 35,
-  "rise": 49,
-  "steady": 50,
-  "calm": 17,
-  "weeks_up": 6,
-  "weeks_down": 3,
+  "score": 40,
+  "rise": 57,
+  "steady": 58,
+  "calm": 6,
+  "weeks_up": 7,
+  "weeks_down": 2,
   "weeks_total": 12,
   "weekly": [
-   0,
    1,
-   -1,
+   1,
+   0,
    1,
    1,
    0,
@@ -361,7 +395,7 @@
    }
   ],
   "trend": "rising",
-  "supply_share": 0.35,
+  "supply_share": 0.3,
   "eligible": false,
   "window_days": 90,
   "score_change": null,
@@ -373,16 +407,82 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
+ "investors": [
+  "Hashed",
+  "Comma3 Ventures",
+  "OKX Ventures",
+  "Animoca Ventures",
+  "Sui Foundation",
+  "Flow Traders",
+  "Dewhales Capital",
+  "Cetus",
+  "Scallop"
+ ],
+ "investors_source": "https://chainwire.org/2025/01/03/haedal-protocol-secures-seed-round-funding-to-advance-liquid-staking-on-sui-network/",
+ "angel_investors": [
+  "Arthur Cheong",
+  "Evans Huangfu"
+ ],
+ "angel_investors_source": "https://icodrops.com/haedal/",
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/haedal",
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
- "value_transfer_pending": null
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-02"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "revenue_share",
+   "emission_rewards"
+  ],
+  "source": "https://haedal-protocol.gitbook.io/haedal-protocol-docs/tokenomics/vehaedal",
+  "note": "Token kilitlenerek veHAEDAL elde edilir; bu da DAO yönetişimi, farm getiri artırımı ve komisyon geri alımları sağlar.",
+  "researched_at": "2026-11-02"
+ },
+ "usage_evidence": {
+  "metric": "TVL",
+  "value": 35240000.0,
+  "unit": "USD",
+  "as_of": "2026-11-01",
+  "confirmed": true,
+  "source": "https://defillama.com/protocol/haedal",
+  "note": "DefiLlama verilerine göre Haedal Protocol bünyesinde kilitli toplam varlık değeri 1 Kasım 2026 itibarıyla 35,24 milyon dolardır.",
+  "researched_at": "2026-11-02"
+ },
+ "allocation": {
+  "insiders": 0.35,
+  "vesting_end": "2028-05",
+  "source": "https://haedal-protocol.gitbook.io/haedal-protocol-docs/tokenomics/haedal",
+  "note": "Toplam arzın %20'si ekibe, %15'i yatırımcılara ayrılmıştır; 24 aylık doğrusal hakediş Mayıs 2028'de sona ermektedir.",
+  "researched_at": "2026-11-02"
+ },
+ "value_transfer_pending": null,
+ "usage_share": {
+  "category": "Liquid Staking",
+  "peers": "category",
+  "protocols": 92,
+  "quarters": [
+   0.00158,
+   0.00117,
+   0.0006769,
+   0.0005494,
+   0.0003856
+  ]
+ },
+ "exchanges": [
+  "Binance",
+  "Upbit",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX"
+ ],
+ "delisted": [],
+ "recorded": {
+  "insider_share": 0.35
+ }
 }

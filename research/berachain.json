@@ -3,8 +3,8 @@
  "schema": 2,
  "name": "Berachain",
  "symbol": "BERA",
- "provider": "gemini",
- "model": "gemini-3.8-flash",
+ "provider": "claude-code",
+ "model": null,
  "researched_at": "2026-11-02",
  "fields": {
   "supply_rule": {
@@ -14,31 +14,42 @@
     "max_annual_mint": null,
     "upgradeable": null
    },
-   "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
-   "note": "BERA'nın yıllık enflasyonu PoL blok ödülleri üzerinden yaklaşık %5'tir ve yönetişim tarafından ayarlanabilmektedir.",
-   "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "source": "https://docs.berachain.com/general/tokens/bera",
+   "note": "Sayfaya göre yıllık ~%5 PoL emisyonu, yönetişime tabi; sert üst sınır yok. Oran yaklaşık değer.",
+   "check": "sayfada coin adı geçiyor"
   },
   "buyback_burn": {
    "value": 1.0,
    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
    "note": "Ağdaki tüm işlem ücretleri (gas) programatik olarak yakılarak dolaşımdaki BERA arzı düzenli azaltılır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "unlock_6m_pct": {
    "value": 0.2261,
    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
    "note": "2026-11-02 ile 2027-05-03 arasında 24 aylık lineer hak ediş kapsamında ~79,47M BERA (%22,61) kilit açılacaktır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "unlock_12m_pct": {
    "value": 0.4535,
    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
    "note": "2026-11-02 ile 2027-11-02 arasındaki 12 ayda lineer hak edişle 159,38M BERA (%45,35) dolaşıma açılacaktır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "token_utility": {
    "value": {
@@ -52,7 +63,11 @@
    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
    "note": "BERA; ağ işlem ücretlerini ödemek, doğrulayıcı çalıştırmak için stake edilmek ve PoL blok ödülü sağlamak için kullanılır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "usage_evidence": {
    "value": {
@@ -65,7 +80,11 @@
    "source": "https://defillama.com/chain/berachain",
    "note": "DefiLlama verilerine göre Berachain ağında 31 Ekim 2026 itibarıyla son 24 saatte 89.390 işlem kaydedilmiştir.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "allocation": {
    "value": {
@@ -75,30 +94,120 @@
    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
    "note": "Çekirdek ekip (%16,8) ve yatırımcılar (%34,3) toplam %51,1 paya sahiptir; hak ediş 1 yıl uçurum sonrası Şubat 2028'de tamamlanır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   }
  },
- "dropped": [
-  {
-   "field": "hack_12m",
-   "source": "https://therecord.media/more-than-100-million-stolen-in-exploit-of-balancer-defi-protocol",
-   "reason": "HTTP 404"
+ "dropped": [],
+ "queue": {
+  "priority": 1,
+  "reason": "ilk 50 için tek eksiği arz kuralı"
+ },
+ "previous": {
+  "slug": "berachain",
+  "schema": 2,
+  "name": "Berachain",
+  "symbol": "BERA",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "researched_at": "2026-11-02",
+  "fields": {
+   "supply_rule": {
+    "value": {
+     "minting": "capped",
+     "annual_inflation": 0.05,
+     "max_annual_mint": null,
+     "upgradeable": null
+    },
+    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
+    "note": "BERA'nın yıllık enflasyonu PoL blok ödülleri üzerinden yaklaşık %5'tir ve yönetişim tarafından ayarlanabilmektedir.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "buyback_burn": {
+    "value": 1.0,
+    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
+    "note": "Ağdaki tüm işlem ücretleri (gas) programatik olarak yakılarak dolaşımdaki BERA arzı düzenli azaltılır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "unlock_6m_pct": {
+    "value": 0.2261,
+    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
+    "note": "2026-11-02 ile 2027-05-03 arasında 24 aylık lineer hak ediş kapsamında ~79,47M BERA (%22,61) kilit açılacaktır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "unlock_12m_pct": {
+    "value": 0.4535,
+    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
+    "note": "2026-11-02 ile 2027-11-02 arasındaki 12 ayda lineer hak edişle 159,38M BERA (%45,35) dolaşıma açılacaktır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "token_utility": {
+    "value": {
+     "level": "required",
+     "uses": [
+      "network_fees",
+      "stake_to_operate",
+      "emission_rewards"
+     ]
+    },
+    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
+    "note": "BERA; ağ işlem ücretlerini ödemek, doğrulayıcı çalıştırmak için stake edilmek ve PoL blok ödülü sağlamak için kullanılır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "usage_evidence": {
+    "value": {
+     "metric": "24h Transactions",
+     "value": 89390.0,
+     "unit": "transactions",
+     "as_of": "2026-10-31",
+     "confirmed": true
+    },
+    "source": "https://defillama.com/chain/berachain",
+    "note": "DefiLlama verilerine göre Berachain ağında 31 Ekim 2026 itibarıyla son 24 saatte 89.390 işlem kaydedilmiştir.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "allocation": {
+    "value": {
+     "insiders": 0.511,
+     "vesting_end": "2028-02"
+    },
+    "source": "https://docs.berachain.com/general/tokens/bera#tokenomics",
+    "note": "Çekirdek ekip (%16,8) ve yatırımcılar (%34,3) toplam %51,1 paya sahiptir; hak ediş 1 yıl uçurum sonrası Şubat 2028'de tamamlanır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   }
   },
-  {
-   "field": "investors",
-   "source": "https://www.finsmes.com/2024/04/berachain-raises-100m-in-series-b-funding.html",
-   "reason": "site erişimi engelledi (HTTP 403)"
-  },
-  {
-   "field": "angel_investors",
-   "source": "https://www.finsmes.com/2024/04/berachain-raises-100m-in-series-b-funding.html",
-   "reason": "site erişimi engelledi (HTTP 403)"
+  "dropped": [
+   {
+    "field": "hack_12m",
+    "source": "https://therecord.media/more-than-100-million-stolen-in-exploit-of-balancer-defi-protocol",
+    "reason": "HTTP 404"
+   },
+   {
+    "field": "investors",
+    "source": "https://www.finsmes.com/2024/04/berachain-raises-100m-in-series-b-funding.html",
+    "reason": "site erişimi engelledi (HTTP 403)"
+   },
+   {
+    "field": "angel_investors",
+    "source": "https://www.finsmes.com/2024/04/berachain-raises-100m-in-series-b-funding.html",
+    "reason": "site erişimi engelledi (HTTP 403)"
+   }
+  ],
+  "usage": {
+   "searches": 45,
+   "input_tokens": 9435,
+   "output_tokens": 1343,
+   "usd": 0.01211
   }
- ],
- "usage": {
-  "searches": 45,
-  "input_tokens": 9435,
-  "output_tokens": 1343,
-  "usd": 0.01211
  }
 }

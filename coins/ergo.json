@@ -1,5 +1,5 @@
 {
- "rank": 4,
+ "rank": 3,
  "slug": "ergo",
  "symbol": "ERG",
  "name": "Ergo",
@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 67,
- "total_exact": 66.89,
+ "total": 69,
+ "total_exact": 69.35,
  "band": "Orta",
- "delta": -0.4,
+ "delta": 2.5,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -25,8 +25,8 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %0,9 artıyor (sınır %10)."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": true,
  "missing": [],
  "penalty": 0.0,
@@ -46,17 +46,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.9,
+   "score": 14.3,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.7646,
+   "percentile": 0.7812,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9114,
+     "percentile": 0.9071,
      "basis": "universe",
      "display": "%100",
      "tier": "üst dilim"
@@ -64,8 +64,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.170231,
-     "percentile": 0.7184,
+     "value": 1.17017,
+     "percentile": 0.7099,
      "basis": "universe",
      "display": "1,17×",
      "tier": "üst dilim"
@@ -73,23 +73,51 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.002287,
-     "percentile": 0.4621,
+     "value": 0.002289,
+     "percentile": 0.467,
      "basis": "universe",
      "display": "+%0,2",
      "tier": "orta dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7857,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 10.9,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.4861,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.0833,
+     "basis": "universe",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7778,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -97,14 +125,14 @@
    "score": 18.6,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9464,
+   "percentile": 0.951,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 12.0,
-     "percentile": 0.9308,
+     "percentile": 0.9281,
      "basis": "universe",
      "display": "12",
      "tier": "üst dilim"
@@ -117,14 +145,14 @@
    "score": 13.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9308,
+   "percentile": 0.93,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 28.0,
-     "percentile": 0.1299,
+     "percentile": 0.1272,
      "basis": "universe",
      "display": "28",
      "tier": "alt dilim"
@@ -133,7 +161,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2784,
-     "percentile": 0.7643,
+     "percentile": 0.7604,
      "basis": "universe",
      "display": "%0,28",
      "tier": "üst dilim"
@@ -142,7 +170,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.9318,
+     "percentile": 0.9323,
      "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
@@ -150,8 +178,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.344285,
-     "percentile": 0.9636,
+     "value": 9.34976,
+     "percentile": 0.9618,
      "basis": "universe",
      "display": "9,3 yıl",
      "tier": "üst dilim"
@@ -159,7 +187,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 1.96,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -204,6 +239,10 @@
   [
    "2026-11-02",
    66.89
+  ],
+  [
+   "2026-11-04",
+   69.35
   ]
  ],
  "changes": [
@@ -242,6 +281,21 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,6)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 2.5,
+   "from": 66.9,
+   "to": 69.3,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 1.96,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,0)"
+    }
+   ]
   }
  ],
  "events": [
@@ -267,28 +321,28 @@
   }
  ],
  "trend": {
-  "rank_now": 603,
-  "rank_start": 642,
-  "score": 29,
-  "rise": 32,
-  "steady": 42,
+  "rank_now": 592,
+  "rank_start": 630,
+  "score": 38,
+  "rise": 37,
+  "steady": 58,
   "calm": 0,
-  "weeks_up": 5,
+  "weeks_up": 7,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
+   -1,
+   -1,
+   1,
+   1,
    1,
    -1,
-   0,
    1,
    1,
    -1,
-   0,
-   1,
-   -1,
-   -1
+   1
   ],
   "labels": [
    {
@@ -301,7 +355,7 @@
    }
   ],
   "trend": "rising",
-  "supply_share": 0.02,
+  "supply_share": 0.03,
   "eligible": false,
   "window_days": 90,
   "score_change": null,
@@ -316,8 +370,43 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
- "value_transfer_pending": null
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "emission_rewards",
+   "collateral"
+  ],
+  "source": "https://docs.ergoplatform.com/dev/protocol/tx/fees/",
+  "note": "Ağ işlem ücretleri ERG ile ödenir, madenciler blok ödülü olarak ERG alır ve yerel DeFi protokollerinde teminat olarak kullanılır.",
+  "researched_at": "2026-11-02"
+ },
+ "usage_evidence": {
+  "metric": "daily_transactions",
+  "value": 5354.0,
+  "unit": "transactions",
+  "as_of": "2026-11-02",
+  "confirmed": true,
+  "source": "https://explorer.ergoplatform.com/en/stats",
+  "note": "Ergo resmi blok gezgini verilerine göre son 24 saatte ağda 5.354 işlem gerçekleşmiştir.",
+  "researched_at": "2026-11-02"
+ },
+ "allocation": {
+  "insiders": 0.0443,
+  "vesting_end": "2022-01",
+  "source": "https://docs.ergoplatform.com/mining/emission/",
+  "note": "Toplam arzın yalnızca %4,43'ü Ergo Vakfı Hazinesine ayrılmış olup hakediş süreci Ocak 2022'de tamamlanmıştır.",
+  "researched_at": "2026-11-02"
+ },
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Gate",
+  "KuCoin",
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": {
+  "insider_share": 0.0443
+ }
 }

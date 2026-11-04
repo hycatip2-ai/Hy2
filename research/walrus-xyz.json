@@ -3,8 +3,8 @@
  "schema": 2,
  "name": "Walrus",
  "symbol": "WAL",
- "provider": "gemini",
- "model": "gemini-3.8-flash",
+ "provider": "claude-code",
+ "model": null,
  "researched_at": "2026-11-02",
  "fields": {
   "unlock_6m_pct": {
@@ -12,14 +12,22 @@
    "source": "https://defillama.com/unlocks/walrus-protocol",
    "note": "Resmi kilit açılım takvimine göre sonraki 6 ayda yaklaşık 321,25 milyon WAL dolaşıma girecektir (dolaşımın %12,03'ü).",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "unlock_12m_pct": {
    "value": 0.2406,
    "source": "https://defillama.com/unlocks/walrus-protocol",
    "note": "Resmi kilit açılım takvimine göre sonraki 12 ayda yaklaşık 642,50 milyon WAL dolaşıma girecektir (dolaşımın %24,06'sı).",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "usage_evidence": {
    "value": {
@@ -32,7 +40,11 @@
    "source": "https://defillama.com/protocol/walrus-protocol",
    "note": "DefiLlama verilerine göre Eylül 2026 döneminde Walrus üzerinde kullanıcılar tarafından toplam 3.027 dolar depolama ücreti ödenmiştir.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "allocation": {
    "value": {
@@ -42,40 +54,102 @@
    "source": "https://defillama.com/unlocks/walrus-protocol",
    "note": "İçeridekiler toplam arzın %37'sine sahiptir (Katkıda bulunanlar %20, Mysten Labs %10, Yatırımcılar %7); hak ediş Mart 2030'da biter.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   }
  },
  "dropped": [
   {
    "field": "supply_rule",
-   "source": "https://phemex.com/news/article/what-is-walrus-wal-decentralized-storage-token-on-sui",
-   "reason": "sayfada coin adı ya da sembolü geçmiyor"
-  },
-  {
-   "field": "buyback_burn",
-   "source": "https://docs.walrus.site/wal-tokenomics",
-   "reason": "sayfa açılamadı"
-  },
-  {
-   "field": "investors",
-   "source": "https://walrus.xyz/blog/walrus-foundation-secures-140m-in-fundraising-led-by-standard-crypto",
-   "reason": "HTTP 404"
-  },
-  {
-   "field": "token_utility",
-   "source": "https://docs.walrus.site/wal-tokenomics",
-   "reason": "sayfa açılamadı"
-  },
-  {
-   "field": "value_transfer_pending",
-   "source": "https://docs.walrus.site/wal-tokenomics",
-   "reason": "sayfa açılamadı"
+   "reason": "biçim anlaşılmadı"
   }
  ],
- "usage": {
-  "searches": 54,
-  "input_tokens": 11043,
-  "output_tokens": 1192,
-  "usd": 0.01275
+ "queue": {
+  "priority": 1,
+  "reason": "ilk 50 için tek eksiği arz kuralı"
+ },
+ "previous": {
+  "slug": "walrus-xyz",
+  "schema": 2,
+  "name": "Walrus",
+  "symbol": "WAL",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "researched_at": "2026-11-02",
+  "fields": {
+   "unlock_6m_pct": {
+    "value": 0.1203,
+    "source": "https://defillama.com/unlocks/walrus-protocol",
+    "note": "Resmi kilit açılım takvimine göre sonraki 6 ayda yaklaşık 321,25 milyon WAL dolaşıma girecektir (dolaşımın %12,03'ü).",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "unlock_12m_pct": {
+    "value": 0.2406,
+    "source": "https://defillama.com/unlocks/walrus-protocol",
+    "note": "Resmi kilit açılım takvimine göre sonraki 12 ayda yaklaşık 642,50 milyon WAL dolaşıma girecektir (dolaşımın %24,06'sı).",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "usage_evidence": {
+    "value": {
+     "metric": "monthly_fees",
+     "value": 3027.0,
+     "unit": "USD",
+     "as_of": "2026-09-30",
+     "confirmed": true
+    },
+    "source": "https://defillama.com/protocol/walrus-protocol",
+    "note": "DefiLlama verilerine göre Eylül 2026 döneminde Walrus üzerinde kullanıcılar tarafından toplam 3.027 dolar depolama ücreti ödenmiştir.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "allocation": {
+    "value": {
+     "insiders": 0.37,
+     "vesting_end": "2030-03"
+    },
+    "source": "https://defillama.com/unlocks/walrus-protocol",
+    "note": "İçeridekiler toplam arzın %37'sine sahiptir (Katkıda bulunanlar %20, Mysten Labs %10, Yatırımcılar %7); hak ediş Mart 2030'da biter.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   }
+  },
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "source": "https://phemex.com/news/article/what-is-walrus-wal-decentralized-storage-token-on-sui",
+    "reason": "sayfada coin adı ya da sembolü geçmiyor"
+   },
+   {
+    "field": "buyback_burn",
+    "source": "https://docs.walrus.site/wal-tokenomics",
+    "reason": "sayfa açılamadı"
+   },
+   {
+    "field": "investors",
+    "source": "https://walrus.xyz/blog/walrus-foundation-secures-140m-in-fundraising-led-by-standard-crypto",
+    "reason": "HTTP 404"
+   },
+   {
+    "field": "token_utility",
+    "source": "https://docs.walrus.site/wal-tokenomics",
+    "reason": "sayfa açılamadı"
+   },
+   {
+    "field": "value_transfer_pending",
+    "source": "https://docs.walrus.site/wal-tokenomics",
+    "reason": "sayfa açılamadı"
+   }
+  ],
+  "usage": {
+   "searches": 54,
+   "input_tokens": 11043,
+   "output_tokens": 1192,
+   "usd": 0.01275
+  }
  }
 }

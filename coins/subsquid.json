@@ -12,9 +12,9 @@
  "sector": "infra",
  "sector_name": "Altyapı",
  "total": 56,
- "total_exact": 56.37,
+ "total_exact": 55.88,
  "band": "Orta",
- "delta": -4.6,
+ "delta": -0.5,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,8 +27,8 @@
   "text": "Yeni token basılabiliyor ama yetkili (başka bir kontrat) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -55,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.3,
+   "score": 12.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.76,
+   "percentile": 0.7692,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.876382,
-     "percentile": 0.7819,
+     "value": 0.881601,
+     "percentile": 0.7806,
      "basis": "sector",
      "display": "%88",
      "tier": "üst dilim"
@@ -73,19 +73,19 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.141237,
-     "percentile": 0.8214,
+     "value": 1.134658,
+     "percentile": 0.8222,
      "basis": "sector",
-     "display": "1,14×",
+     "display": "1,13×",
      "tier": "üst dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.060427,
-     "percentile": 0.24,
+     "value": 0.064983,
+     "percentile": 0.2059,
      "basis": "sector",
-     "display": "+%6,0",
+     "display": "+%6,5",
      "tier": "alt dilim"
     }
    ]
@@ -103,7 +103,7 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 18.1,
+   "score": 18.2,
    "has_data": true,
    "weight": 25,
    "percentile": 1.0,
@@ -113,7 +113,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 13.0,
-     "percentile": 0.9065,
+     "percentile": 0.9079,
      "basis": "sector",
      "display": "13",
      "tier": "üst dilim"
@@ -123,26 +123,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.1,
+   "score": 7.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.16,
+   "percentile": 0.1538,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 129.0,
-     "percentile": 0.3672,
+     "percentile": 0.3361,
      "basis": "sector",
      "display": "129",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5006,
-     "percentile": 0.4364,
+     "percentile": 0.4015,
      "basis": "sector",
      "display": "%0,50",
      "tier": "orta dilim"
@@ -151,7 +151,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.4091,
-     "percentile": 0.0442,
+     "percentile": 0.0443,
      "basis": "sector",
      "display": "%41",
      "tier": "alt dilim"
@@ -159,8 +159,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.037645,
-     "percentile": 0.7782,
+     "value": 5.043121,
+     "percentile": 0.7801,
      "basis": "sector",
      "display": "5,0 yıl",
      "tier": "üst dilim"
@@ -168,14 +168,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı.",
-   "part": "supply",
-   "delta": -4.88,
-   "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −4,9)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -208,6 +201,10 @@
   [
    "2026-11-02",
    56.37
+  ],
+  [
+   "2026-11-04",
+   55.88
   ]
  ],
  "changes": [
@@ -274,20 +271,19 @@
   }
  ],
  "trend": {
-  "rank_now": 628,
-  "rank_start": 429,
+  "rank_now": 639,
+  "rank_start": 409,
   "score": 0,
   "rise": 0,
-  "steady": 25,
+  "steady": 8,
   "calm": 0,
-  "weeks_up": 3,
+  "weeks_up": 1,
   "weeks_down": 9,
   "weeks_total": 12,
   "weekly": [
    1,
    -1,
    -1,
-   1,
    -1,
    -1,
    -1,
@@ -295,7 +291,8 @@
    -1,
    -1,
    -1,
-   1
+   0,
+   0
   ],
   "labels": [],
   "trend": "falling",
@@ -305,7 +302,12 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
+ "chain": {
+  "name": "Arbitrum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
@@ -317,5 +319,17 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Coinbase",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 17104
+ }
 }

@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 46,
- "total_exact": 45.83,
+ "total": 41,
+ "total_exact": 40.51,
  "band": "Zayıf",
- "delta": -0.4,
+ "delta": -5.3,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -21,6 +21,10 @@
   {
    "id": "top10_concentration",
    "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
+  },
+  {
+   "id": "site_down",
+   "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir."
   }
  ],
  "notes": [],
@@ -30,13 +34,13 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
- "penalty": 5.0,
+ "penalty": 10.0,
  "bonus": 0.0,
  "contract": {
   "chain": "Solana",
@@ -56,17 +60,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.5,
+   "score": 14.3,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.82,
+   "percentile": 0.8298,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.85,
-     "percentile": 0.723,
+     "percentile": 0.706,
      "basis": "sector",
      "display": "%85",
      "tier": "üst dilim"
@@ -75,7 +79,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.176471,
-     "percentile": 0.7613,
+     "percentile": 0.748,
      "basis": "sector",
      "display": "1,18×",
      "tier": "üst dilim"
@@ -84,7 +88,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6886,
+     "percentile": 0.6952,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -114,17 +118,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.1,
+   "score": 13.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.92,
+   "percentile": 0.8936,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 169.0,
-     "percentile": 0.7374,
+     "percentile": 0.7578,
      "basis": "sector",
      "display": "169",
      "tier": "üst dilim"
@@ -133,7 +137,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3344,
-     "percentile": 0.625,
+     "percentile": 0.6217,
      "basis": "sector",
      "display": "%0,33",
      "tier": "orta dilim"
@@ -142,7 +146,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1304,
-     "percentile": 0.5931,
+     "percentile": 0.5889,
      "basis": "sector",
      "display": "%13",
      "tier": "orta dilim"
@@ -150,16 +154,23 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.850787,
-     "percentile": 0.671,
+     "value": 1.856263,
+     "percentile": 0.6371,
      "basis": "sector",
      "display": "1,9 yıl",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -204,6 +215,10 @@
   [
    "2026-11-02",
    45.83
+  ],
+  [
+   "2026-11-04",
+   40.51
   ]
  ],
  "changes": [
@@ -219,6 +234,21 @@
      "part": "penalty",
      "delta": -5.0,
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -5.3,
+   "from": 45.8,
+   "to": 40.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
     }
    ]
   }
@@ -237,30 +267,44 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -5.3,
+   "from": 45.8,
+   "to": 40.5,
+   "reasons": [
+    {
+     "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 510,
-  "rank_start": 565,
-  "score": 38,
+  "rank_now": 492,
+  "rank_start": 566,
+  "score": 41,
   "rise": 53,
-  "steady": 42,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 6,
+  "weeks_up": 6,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    -1,
-   -1,
-   1,
-   -1,
-   1,
-   1,
-   1,
-   -1,
-   -1,
-   -1,
    0,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
    1
   ],
   "labels": [
@@ -297,5 +341,14 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Gate",
+  "MEXC",
+  "HTX",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": null
 }

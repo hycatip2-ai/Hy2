@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 96,
  "slug": "infinex",
  "symbol": "INX",
  "name": "Infinex",
@@ -11,30 +11,26 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 31,
- "total_exact": 31.36,
+ "total": 36,
+ "total_exact": 36.03,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": 4.7,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
- "eligible_for_top": false,
- "missing": [
-  "gelir",
-  "gelir trendi",
-  "arz kuralı"
- ],
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
@@ -58,14 +54,14 @@
    "score": 6.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2917,
+   "percentile": 0.3218,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.19943,
-     "percentile": 0.1396,
+     "percentile": 0.1411,
      "basis": "sector",
      "display": "%20",
      "tier": "alt dilim"
@@ -74,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.014291,
-     "percentile": 0.1515,
+     "percentile": 0.1537,
      "basis": "sector",
      "display": "5,01×",
      "tier": "alt dilim"
@@ -83,7 +79,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7118,
+     "percentile": 0.7066,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -93,27 +89,73 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 12.4,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6222,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "holders_revenue_share",
+     "name": "Token sahibine dönen gelir payı",
+     "value": 0.0,
+     "percentile": 0.2851,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": 0.0,
+     "percentile": 0.6649,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": null,
+     "percentile": 0.7475,
+     "basis": "sector",
+     "display": "Yeni arz yok",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.1,
+   "score": 4.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1905,
+   "percentile": 0.2632,
    "tier": "alt dilim",
    "metrics": [
+    {
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 0.716068,
+     "percentile": 0.2614,
+     "basis": "sector",
+     "display": "−%28",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": -0.556523,
+     "percentile": 0.2119,
+     "basis": "sector",
+     "display": "−%56",
+     "tier": "alt dilim"
+    },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2053,
+     "percentile": 0.1881,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -123,17 +165,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.4,
+   "score": 5.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1458,
+   "percentile": 0.0345,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 112.0,
-     "percentile": 0.3208,
+     "percentile": 0.281,
      "basis": "sector",
      "display": "112",
      "tier": "alt dilim"
@@ -141,34 +183,56 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.3684,
-     "percentile": 0.5325,
+     "value": 0.3625,
+     "percentile": 0.5122,
      "basis": "sector",
-     "display": "%0,37",
+     "display": "%0,36",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.2143,
-     "percentile": 0.3092,
+     "value": 0.2857,
+     "percentile": 0.1636,
      "basis": "sector",
-     "display": "%21",
+     "display": "%29",
      "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.761123,
-     "percentile": 0.1219,
+     "value": 0.766598,
+     "percentile": 0.12,
      "basis": "sector",
      "display": "0,8 yıl",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.1759,
+     "basis": "sector",
+     "display": "0",
      "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.44,
+   "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +5,4)"
+  },
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+   "part": "liquidity",
+   "delta": -1.06,
+   "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −1,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-27",
@@ -193,13 +257,39 @@
   [
    "2026-11-02",
    31.36
+  ],
+  [
+   "2026-11-04",
+   36.03
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-04",
+   "delta": 4.7,
+   "from": 31.4,
+   "to": 36.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.44,
+     "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +5,4)"
+    },
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -1.06,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −1,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 986,
-  "rank_start": 725,
+  "rank_now": 984,
+  "rank_start": 757,
   "score": 0,
   "rise": 0,
   "steady": 0,
@@ -216,17 +306,45 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
+ "chain": {
+  "name": "Ethereum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/infinex",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": {
+  "category": "Interface",
+  "peers": "category",
+  "protocols": 27,
+  "quarters": [
+   0.02796,
+   0.012,
+   0.002876,
+   0.001275
+  ]
+ },
+ "exchanges": [
+  "Coinbase",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 4222
+ }
 }

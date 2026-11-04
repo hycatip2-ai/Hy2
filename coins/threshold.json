@@ -12,10 +12,10 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 66,
- "total_exact": 66.23,
- "band": "Orta",
- "delta": -0.1,
+ "total": 71,
+ "total_exact": 71.47,
+ "band": "Güçlü",
+ "delta": 0.1,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -29,7 +29,7 @@
  },
  "revenue_unmeasured": false,
  "date": "2026-10-27",
- "formula_version": "1.19.0",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
@@ -41,21 +41,12 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 13.4,
+   "score": 17.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.707,
+   "percentile": 0.8916,
    "tier": "üst dilim",
    "metrics": [
-    {
-     "id": "mc_to_revenue",
-     "name": "Piyasa değeri / yıllık gelir",
-     "value": 117.977566,
-     "percentile": 0.5684,
-     "basis": "universe",
-     "display": "118×",
-     "tier": "orta dilim"
-    },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
@@ -108,7 +99,7 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 10.9,
+   "score": 12.1,
    "has_data": true,
    "weight": 20,
    "percentile": 0.6649,
@@ -233,38 +224,38 @@
  "history": [
   [
    "2026-10-23",
-   62.52
+   66.75
   ],
   [
    "2026-10-24",
-   66.84
+   72.39
   ],
   [
    "2026-10-25",
-   65.35
+   70.92
   ],
   [
    "2026-10-26",
-   66.3
+   71.39
   ],
   [
    "2026-10-27",
-   66.23
+   71.47
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": 4.3,
-   "from": 62.5,
-   "to": 66.8,
-   "event": false,
+   "delta": 5.6,
+   "from": 66.8,
+   "to": 72.4,
+   "event": true,
    "reasons": [
     {
      "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
      "part": "value_capture",
-     "delta": 6.65,
-     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +6,7)"
+     "delta": 7.98,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +8,0)"
     },
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
@@ -275,7 +266,28 @@
    ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": 5.6,
+   "from": 66.8,
+   "to": 72.4,
+   "reasons": [
+    {
+     "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.98,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +8,0)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.59,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,6)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
   "name": "Bitcoin",
@@ -294,5 +306,9 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": null,
+ "delisted": [],
+ "recorded": null
 }

@@ -1,0 +1,69 @@
+{
+ "slug": "c8ntinuum",
+ "schema": 2,
+ "name": "c8ntinuum",
+ "symbol": "CTM",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-04",
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "capped",
+    "annual_inflation": 0.0,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://docs.c8ntinuum.com/reference/precompile-abi",
+   "note": "CTM arzı 8,888,888,888 ile sınırlandırılmıştır; ana ağda enflasyon 0 olup işlem ücretleri yakılmaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://docs.c8ntinuum.com/developer-essentials/gas",
+   "note": "x/feeburn modülü ile her bloktaki tüm temel ve öncelik işlem ücretleri düzenli ve programatik olarak yakılır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "stake_to_operate",
+     "governance"
+    ]
+   },
+   "source": "https://docs.c8ntinuum.com/introduction/for-users",
+   "note": "CTM; ağda gaz ücretlerinin ödenmesi, doğrulayıcı staking ve yönetişim oylamaları için zorunlu yerel coindir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "24h Transactions",
+    "value": 3447.0,
+    "unit": "transactions",
+    "as_of": "2026-10-22",
+    "confirmed": true
+   },
+   "source": "https://blocktivity.info/coin/c8ntinuum",
+   "note": "Blocktivity verilerine göre ağda 24 saatlik işlem sayısı 3.447 olarak kaydedilmiştir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  }
+ ],
+ "usage": {
+  "searches": 34,
+  "input_tokens": 7450,
+  "output_tokens": 1111,
+  "usd": 0.00975
+ }
+}

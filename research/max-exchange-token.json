@@ -1,0 +1,58 @@
+{
+ "slug": "max-exchange-token",
+ "schema": 2,
+ "name": "MAX Exchange Token",
+ "symbol": "MAX",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-04",
+ "fields": {
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://coinmarketcap.com/currencies/max-exchange-token/",
+   "note": "Borsa düzenli olarak geri alım ve yakım gerçekleştirmekte olup toplam arzın %43'ünden fazlasını yakmıştır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "partial",
+    "uses": [
+     "fee_discount",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://max.maicoin.com/docs/fees",
+   "note": "Borsa tokensız kullanılabilir; MAX Token işlem ve çekim ücretlerinde indirim ile staking ödülleri sunar.",
+   "check": "sayfada sembol geçiyor",
+   "cited": false
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  },
+  {
+   "field": "supply_rule",
+   "source": "https://etherscan.io/token/0xe7976c4efc60d9f4c200cc1bcef1a1e3b02c73e7",
+   "reason": "site erişimi engelledi (HTTP 403)"
+  },
+  {
+   "field": "investors",
+   "source": "https://pitchbook.com/profiles/company/103759-45",
+   "reason": "site erişimi engelledi (HTTP 403)"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://etherscan.io/token/0xe7976c4efc60d9f4c200cc1bcef1a1e3b02c73e7",
+   "reason": "site erişimi engelledi (HTTP 403)"
+  }
+ ],
+ "usage": {
+  "searches": 32,
+  "input_tokens": 7984,
+  "output_tokens": 1077,
+  "usd": 0.01003
+ }
+}

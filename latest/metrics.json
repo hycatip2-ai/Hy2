@@ -169,7 +169,7 @@
    "name": "Kullanımın sürekliliği (13 hafta)",
    "higher_is_better": true,
    "optional": true,
-   "desc": "Son 13 haftada kullanıcı ücretlerinin haftalara ne kadar düzenli yayıldığını gösterir; yüksek olması kullanımın birkaç haftalık bir sıçrama değil sürekli olduğunu gösterir."
+   "desc": "Son 13 haftada kullanıcı ücretlerinin, kategorisindeki rakiplerin aynı haftalarına göre ne kadar düzenli yayıldığını gösterir; piyasanın tamamının sıçradığı ya da düştüğü haftalar sayılmaz. Yüksek olması kullanımın birkaç haftalık bir sıçrama değil sürekli olduğunu gösterir."
   },
   {
    "id": "active_devs",
@@ -242,6 +242,54 @@
    "higher_is_better": false,
    "optional": true,
    "desc": "Şüpheli ya da uzun süredir güncellenmeyen işlem çiftlerinin oranıdır; düşük olması iyidir."
+  },
+  {
+   "id": "depth_to_mc",
+   "part": "liquidity",
+   "name": "%2 derinlik / piyasa değeri",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Büyük borsalarda fiyatı %2 oynatmak için gereken paranın piyasa değerine oranıdır; yüksek olması piyasanın derin olduğunu gösterir."
+  },
+  {
+   "id": "major_volume_share",
+   "part": "liquidity",
+   "name": "Büyük borsalardaki hacim payı",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "İşlem hacminin Binance, Coinbase, Upbit, OKX gibi büyük borsalardaki payıdır."
+  },
+  {
+   "id": "users_to_mc",
+   "part": "valuation",
+   "name": "Aktif kullanıcı / piyasa değeri",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Piyasa değerinin her 1 milyon doları başına düşen günlük aktif kullanıcı sayısıdır (son 30 günün ortalaması)."
+  },
+  {
+   "id": "users_growth",
+   "part": "usage",
+   "name": "Aktif kullanıcı değişimi (90 gün)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Günlük aktif kullanıcı sayısının son 90 gündeki değişimidir."
+  },
+  {
+   "id": "holder_growth",
+   "part": "usage",
+   "name": "Sahip sayısı değişimi (90 gün)",
+   "higher_is_better": true,
+   "optional": true,
+   "desc": "Tokeni elinde tutan adres sayısının son 90 gündeki değişimidir."
+  },
+  {
+   "id": "insider_share",
+   "part": "supply",
+   "name": "Ekip ve yatırımcı payı",
+   "higher_is_better": false,
+   "optional": true,
+   "desc": "Arzın ekip, kurucular, danışmanlar ve yatırımcılara ayrılan payıdır; yüksek olması ileride satış baskısı olabileceğini gösterir."
   },
   {
    "id": "age_years",

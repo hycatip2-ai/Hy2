@@ -9,29 +9,28 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 45,
- "total_exact": 45.21,
+ "total": 46,
+ "total_exact": 46.25,
  "band": "Zayıf",
- "delta": 6.0,
+ "delta": 1.0,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Basma yetkisi bırakılmış; kimse yeni token basamaz."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -43,27 +42,37 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 7.4,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.3077,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 3.897432,
+     "percentile": 0.3689,
+     "basis": "sector",
+     "display": "3,90×",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.3,
+   "score": 10.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5938,
+   "percentile": 0.5747,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.357087,
-     "percentile": 0.3393,
+     "percentile": 0.3282,
      "basis": "sector",
      "display": "%36",
      "tier": "alt dilim"
@@ -72,16 +81,16 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.80044,
-     "percentile": 0.3492,
+     "percentile": 0.3296,
      "basis": "sector",
      "display": "2,80×",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8519,
+     "percentile": 0.8395,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -101,17 +110,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 13.1,
+   "score": 13.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7798,
+   "percentile": 0.8158,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 2.0,
-     "percentile": 0.6569,
+     "percentile": 0.6605,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -121,26 +130,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.1,
+   "score": 9.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2604,
+   "percentile": 0.2989,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 110.0,
-     "percentile": 0.3099,
+     "value": 115.0,
+     "percentile": 0.2929,
      "basis": "sector",
-     "display": "110",
+     "display": "115",
      "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1932,
-     "percentile": 0.9528,
+     "percentile": 0.9476,
      "basis": "sector",
      "display": "%0,19",
      "tier": "üst dilim"
@@ -149,7 +158,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3571,
-     "percentile": 0.1021,
+     "percentile": 0.1006,
      "basis": "sector",
      "display": "%36",
      "tier": "alt dilim"
@@ -157,23 +166,25 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.138946,
-     "percentile": 0.2479,
+     "value": 1.144422,
+     "percentile": 0.2564,
      "basis": "sector",
      "display": "1,1 yıl",
      "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 2.0,
+     "percentile": 0.6826,
+     "basis": "sector",
+     "display": "2",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı son 3 ayda yavaşladı.",
-   "part": "supply",
-   "delta": 5.63,
-   "label": "Arz artışı son 3 ayda yavaşladı. (Arz +5,6)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -218,6 +229,10 @@
   [
    "2026-11-02",
    45.21
+  ],
+  [
+   "2026-11-04",
+   46.25
   ]
  ],
  "changes": [
@@ -290,14 +305,14 @@
   }
  ],
  "trend": {
-  "rank_now": 578,
-  "rank_start": 716,
-  "score": 30,
-  "rise": 58,
-  "steady": 17,
+  "rank_now": 528,
+  "rank_start": 733,
+  "score": 43,
+  "rise": 74,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 2,
-  "weeks_down": 9,
+  "weeks_up": 4,
+  "weeks_down": 8,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -307,10 +322,10 @@
    -1,
    1,
    -1,
-   0,
+   1,
    -1,
    -1,
-   -1,
+   1,
    1
   ],
   "labels": [
@@ -330,17 +345,42 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
- "investors": [],
- "investors_source": null,
+ "chain": {
+  "name": "TON",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "TON Ventures",
+  "Polymorphic Capital",
+  "Animoca Brands",
+  "CMT Digital",
+  "Mythos Ventures",
+  "WAGMI Ventures",
+  "TONcoin.fund"
+ ],
+ "investors_source": "https://defillama.com/protocol/evaa-protocol",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/evaa-protocol",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 25945
+ }
 }

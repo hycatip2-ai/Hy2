@@ -10,9 +10,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 43,
- "total_exact": 43.36,
+ "total_exact": 42.7,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": -0.7,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Basma yetkisi bırakılmış; kimse yeni token basamaz."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "arz geçmişi"
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 2.4,
+   "score": 1.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0227,
+   "percentile": 0.012,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.15,
-     "percentile": 0.1132,
+     "percentile": 0.0896,
      "basis": "sector",
      "display": "%15",
      "tier": "alt dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.666667,
-     "percentile": 0.1238,
+     "percentile": 0.1003,
      "basis": "sector",
      "display": "6,67×",
      "tier": "alt dilim"
@@ -90,17 +90,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 16.8,
+   "score": 16.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8646,
+   "percentile": 0.8617,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 5.0,
-     "percentile": 0.8384,
+     "percentile": 0.8337,
      "basis": "sector",
      "display": "5",
      "tier": "üst dilim"
@@ -110,26 +110,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.2,
+   "score": 10.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5227,
+   "percentile": 0.494,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 45.0,
-     "percentile": 0.388,
+     "value": 46.0,
+     "percentile": 0.3882,
      "basis": "sector",
-     "display": "45",
+     "display": "46",
      "tier": "orta dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1316,
-     "percentile": 0.9585,
+     "percentile": 0.9563,
      "basis": "sector",
      "display": "%0,13",
      "tier": "üst dilim"
@@ -138,7 +138,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1111,
-     "percentile": 0.6661,
+     "percentile": 0.6495,
      "basis": "sector",
      "display": "%11",
      "tier": "orta dilim"
@@ -146,8 +146,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.19165,
-     "percentile": 0.0312,
+     "value": 0.197125,
+     "percentile": 0.0321,
      "basis": "sector",
      "display": "0,2 yıl",
      "tier": "alt dilim"
@@ -200,6 +200,10 @@
   [
    "2026-11-02",
    43.36
+  ],
+  [
+   "2026-11-04",
+   42.7
   ]
  ],
  "changes": [
@@ -227,7 +231,12 @@
  ],
  "events": [],
  "trend": null,
- "chain": null,
+ "chain": {
+  "name": "BSC",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
@@ -239,5 +248,17 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 11583
+ }
 }

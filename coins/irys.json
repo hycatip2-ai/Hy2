@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 29,
  "slug": "irys",
  "symbol": "IRYS",
  "name": "Irys",
@@ -11,30 +11,34 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 43,
- "total_exact": 42.66,
- "band": "Zayıf",
- "delta": 4.7,
+ "total": 57,
+ "total_exact": 56.62,
+ "band": "Orta",
+ "delta": 14.0,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: arzı ağın açık kuralı belirler; arz artmıyor.",
+  "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+  "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
- "eligible_for_top": false,
- "missing": [
-  "arz kuralı"
- ],
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -50,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.2,
+   "score": 8.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5333,
+   "percentile": 0.48,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.256681,
-     "percentile": 0.2218,
+     "percentile": 0.1938,
      "basis": "sector",
      "display": "%26",
      "tier": "alt dilim"
@@ -69,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.895882,
-     "percentile": 0.2313,
+     "percentile": 0.2049,
      "basis": "sector",
      "display": "3,90×",
      "tier": "alt dilim"
@@ -78,7 +82,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.9212,
+     "percentile": 0.9158,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -88,27 +92,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.4,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7454,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6111,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7778,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.2,
+   "score": 10.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4091,
+   "percentile": 0.3947,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.5085,
+     "percentile": 0.513,
      "basis": "sector",
      "display": "3",
      "tier": "orta dilim"
@@ -121,14 +144,14 @@
    "score": 10.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5667,
+   "percentile": 0.52,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 168.0,
-     "percentile": 0.5897,
+     "percentile": 0.6141,
      "basis": "sector",
      "display": "168",
      "tier": "orta dilim"
@@ -137,7 +160,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2223,
-     "percentile": 0.9287,
+     "percentile": 0.9387,
      "basis": "sector",
      "display": "%0,22",
      "tier": "üst dilim"
@@ -146,7 +169,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.3188,
+     "percentile": 0.3067,
      "basis": "sector",
      "display": "%20",
      "tier": "alt dilim"
@@ -154,8 +177,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.936345,
-     "percentile": 0.1825,
+     "value": 0.941821,
+     "percentile": 0.1524,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -165,10 +188,16 @@
  ],
  "reasons": [
   {
-   "text": "Arz artışı son 3 ayda yavaşladı.",
-   "part": "supply",
-   "delta": 5.27,
-   "label": "Arz artışı son 3 ayda yavaşladı. (Arz +5,3)"
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 9.31,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,3)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
   }
  ],
  "history": [
@@ -211,6 +240,10 @@
   [
    "2026-11-02",
    42.66
+  ],
+  [
+   "2026-11-04",
+   56.62
   ]
  ],
  "changes": [
@@ -228,30 +261,72 @@
      "label": "Arz artışı son 3 ayda yavaşladı. (Arz +5,3)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 14.0,
+   "from": 42.7,
+   "to": 56.6,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 9.31,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,3)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-04",
+   "delta": 14.0,
+   "from": 42.7,
+   "to": 56.6,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 9.31,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,3)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 354,
-  "rank_start": 419,
-  "score": 42,
-  "rise": 64,
-  "steady": 42,
+  "rank_now": 344,
+  "rank_start": 394,
+  "score": 40,
+  "rise": 66,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 7,
+  "weeks_up": 4,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
-   1,
+   0,
    -1,
    -1,
    1,
-   1,
    -1,
    1,
+   1,
    -1,
    -1,
-   -1,
+   0,
    1,
    -1
   ],
@@ -281,8 +356,40 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "service_payment",
+   "stake_to_operate",
+   "collateral",
+   "emission_rewards"
+  ],
+  "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+  "note": "IRYS, ağ işlem ve depolama ücretlerinin ödenmesinde, madencilerin konsensüse katılım stake'inde ve teminatta zorunlu yerel varlıktır.",
+  "researched_at": "2026-11-02"
+ },
  "usage_evidence": null,
- "allocation": null,
- "value_transfer_pending": null
+ "allocation": {
+  "insiders": 0.441,
+  "vesting_end": "2029-11",
+  "source": "https://irys.xyz/assets/IrysWhitepaper.pdf",
+  "note": "Ekip ve danışmanlara %18.8, yatırımcılara %25.3 ayrılmıştır; 1 yıl cliff ve 36 ay lineer kilit açılımı Kasım 2029'da tamamlanır.",
+  "researched_at": "2026-11-02"
+ },
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Upbit",
+  "Coinbase",
+  "OKX",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": {
+  "insider_share": 0.441
+ }
 }

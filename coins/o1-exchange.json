@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 81,
  "slug": "o1-exchange",
  "symbol": "O",
  "name": "o1.exchange",
@@ -11,13 +11,13 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 32,
- "total_exact": 32.26,
+ "total": 44,
+ "total_exact": 43.77,
  "band": "Zayıf",
- "delta": 0.4,
+ "delta": 11.5,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -27,13 +27,10 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
- "eligible_for_top": false,
- "missing": [
-  "gelir",
-  "gelir trendi"
- ],
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
@@ -54,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.8,
+   "score": 5.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2396,
+   "percentile": 0.2529,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.16,
-     "percentile": 0.0807,
+     "percentile": 0.0876,
      "basis": "sector",
      "display": "%16",
      "tier": "alt dilim"
@@ -73,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.25,
-     "percentile": 0.0824,
+     "percentile": 0.0895,
      "basis": "sector",
      "display": "6,25×",
      "tier": "alt dilim"
@@ -82,7 +79,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7118,
+     "percentile": 0.7066,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -92,27 +89,82 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 12.4,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6222,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "holders_revenue_share",
+     "name": "Token sahibine dönen gelir payı",
+     "value": 0.0,
+     "percentile": 0.2851,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": 0.0,
+     "percentile": 0.6649,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": null,
+     "percentile": 0.7475,
+     "basis": "sector",
+     "display": "Yeni arz yok",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.1,
+   "score": 11.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1905,
-   "tier": "alt dilim",
+   "percentile": 0.6316,
+   "tier": "orta dilim",
    "metrics": [
+    {
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 8.336772,
+     "percentile": 0.9941,
+     "basis": "sector",
+     "display": "+%734",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": 2.561246,
+     "percentile": 0.9956,
+     "basis": "sector",
+     "display": "+%256",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "fee_consistency",
+     "name": "Kullanımın sürekliliği (13 hafta)",
+     "value": 0.476771,
+     "percentile": 0.0286,
+     "basis": "sector",
+     "display": "%48",
+     "tier": "alt dilim"
+    },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2053,
+     "percentile": 0.1881,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -122,17 +174,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.8,
+   "score": 7.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2917,
+   "percentile": 0.2241,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 143.0,
-     "percentile": 0.4653,
+     "percentile": 0.4481,
      "basis": "sector",
      "display": "143",
      "tier": "orta dilim"
@@ -141,7 +193,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2983,
-     "percentile": 0.7065,
+     "percentile": 0.6993,
      "basis": "sector",
      "display": "%0,30",
      "tier": "üst dilim"
@@ -150,7 +202,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.5398,
+     "percentile": 0.5179,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -158,16 +210,38 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.383299,
-     "percentile": 0.042,
+     "value": 0.388775,
+     "percentile": 0.0445,
      "basis": "sector",
      "display": "0,4 yıl",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.1759,
+     "basis": "sector",
+     "display": "0",
      "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 6.92,
+   "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım +6,9)"
+  },
+  {
+   "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.44,
+   "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +5,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -212,6 +286,10 @@
   [
    "2026-11-02",
    32.26
+  ],
+  [
+   "2026-11-04",
+   43.77
   ]
  ],
  "changes": [
@@ -233,6 +311,27 @@
      "part": "liquidity",
      "delta": 2.22,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +2,2)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 11.5,
+   "from": 32.3,
+   "to": 43.8,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 6.92,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım +6,9)"
+    },
+    {
+     "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.44,
+     "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +5,4)"
     }
    ]
   }
@@ -257,30 +356,50 @@
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +2,2)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 11.5,
+   "from": 32.3,
+   "to": 43.8,
+   "reasons": [
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 6.92,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım +6,9)"
+    },
+    {
+     "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.44,
+     "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +5,4)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 305,
-  "rank_start": 187,
+  "rank_now": 301,
+  "rank_start": 189,
   "score": 0,
   "rise": 0,
-  "steady": 17,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 2,
-  "weeks_down": 10,
+  "weeks_up": 4,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
+   1,
    -1,
-   -1,
-   -1,
+   1,
+   0,
    1,
    -1,
    -1,
    -1,
    -1,
    -1,
-   -1,
-   -1,
+   0,
    1
   ],
   "labels": [],
@@ -291,17 +410,47 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
- "investors": [],
- "investors_source": null,
+ "chain": {
+  "name": "Base",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "Coinbase Ventures",
+  "AllianceDAO"
+ ],
+ "investors_source": "https://defillama.com/protocol/o1.exchange",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/o1.exchange",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": {
+  "category": "Trading App",
+  "peers": "category",
+  "protocols": 22,
+  "quarters": [
+   0.008728,
+   0.03108
+  ]
+ },
+ "exchanges": [
+  "Upbit",
+  "Coinbase",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 14616
+ }
 }

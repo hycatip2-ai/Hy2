@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 38.93,
+ "total": 38,
+ "total_exact": 38.39,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -0.5,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.0,
+   "score": 6.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3068,
+   "percentile": 0.3012,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.21,
-     "percentile": 0.1632,
+     "percentile": 0.1305,
      "basis": "sector",
      "display": "%21",
      "tier": "alt dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.761905,
-     "percentile": 0.2238,
+     "percentile": 0.1943,
      "basis": "sector",
      "display": "4,76×",
      "tier": "alt dilim"
@@ -79,10 +79,10 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6663,
+     "percentile": 0.6915,
      "basis": "sector",
      "display": "%0",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   },
@@ -99,17 +99,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.8,
+   "score": 5.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3333,
+   "percentile": 0.3298,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2884,
+     "percentile": 0.2857,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -119,17 +119,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.1,
+   "score": 11.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8068,
+   "percentile": 0.7952,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 167.0,
-     "percentile": 0.7824,
+     "percentile": 0.7829,
      "basis": "sector",
      "display": "167",
      "tier": "üst dilim"
@@ -138,7 +138,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2907,
-     "percentile": 0.7423,
+     "percentile": 0.7384,
      "basis": "sector",
      "display": "%0,29",
      "tier": "üst dilim"
@@ -147,7 +147,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0769,
-     "percentile": 0.7188,
+     "percentile": 0.7055,
      "basis": "sector",
      "display": "%7,7",
      "tier": "üst dilim"
@@ -155,8 +155,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.91718,
-     "percentile": 0.1853,
+     "value": 0.922656,
+     "percentile": 0.1529,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -209,6 +209,10 @@
   [
    "2026-11-02",
    38.93
+  ],
+  [
+   "2026-11-04",
+   38.39
   ]
  ],
  "changes": [
@@ -230,20 +234,19 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 754,
-  "rank_start": 653,
+  "rank_now": 767,
+  "rank_start": 631,
   "score": 0,
   "rise": 0,
   "steady": 33,
   "calm": 0,
   "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    -1,
    -1,
-   -1,
-   1,
+   0,
    1,
    1,
    -1,
@@ -251,6 +254,7 @@
    -1,
    0,
    0,
+   1,
    1
   ],
   "labels": [],
@@ -261,7 +265,12 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
+ "chain": {
+  "name": "Ethereum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
@@ -273,5 +282,15 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Bitget",
+  "Gate",
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 1
+ }
 }

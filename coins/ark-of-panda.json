@@ -10,9 +10,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 30,
- "total_exact": 30.25,
+ "total_exact": 29.94,
  "band": "Zayıf",
- "delta": -2.1,
+ "delta": -0.3,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Basma yetkisi bırakılmış; kimse yeni token basamaz."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -51,26 +51,26 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.4,
+   "score": 5.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2045,
+   "percentile": 0.2169,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.418,
-     "percentile": 0.3452,
+     "value": 0.419,
+     "percentile": 0.3308,
      "basis": "sector",
      "display": "%42",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.392344,
-     "percentile": 0.3659,
+     "value": 2.386635,
+     "percentile": 0.3522,
      "basis": "sector",
      "display": "2,39×",
      "tier": "orta dilim"
@@ -78,8 +78,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.157347,
-     "percentile": 0.0932,
+     "value": 0.156397,
+     "percentile": 0.1086,
      "basis": "sector",
      "display": "+%16",
      "tier": "alt dilim"
@@ -99,17 +99,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.8,
+   "score": 5.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3333,
+   "percentile": 0.3298,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2884,
+     "percentile": 0.2857,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -119,17 +119,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.1,
+   "score": 5.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0795,
+   "percentile": 0.0602,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 29.0,
-     "percentile": 0.2567,
+     "percentile": 0.269,
      "basis": "sector",
      "display": "29",
      "tier": "alt dilim"
@@ -137,8 +137,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.122519,
-     "percentile": 0.2557,
+     "value": 1.127995,
+     "percentile": 0.226,
      "basis": "sector",
      "display": "1,1 yıl",
      "tier": "alt dilim"
@@ -146,14 +146,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı (90 gün) verisi artık mevcut.",
-   "part": "supply",
-   "delta": -1.84,
-   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,8)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -198,6 +191,10 @@
   [
    "2026-11-02",
    30.25
+  ],
+  [
+   "2026-11-04",
+   29.94
   ]
  ],
  "changes": [
@@ -234,43 +231,30 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 567,
-  "rank_start": 621,
+  "rank_now": 561,
+  "rank_start": 616,
   "score": 0,
   "rise": 0,
-  "steady": 58,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 7,
+  "weeks_up": 6,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
-   1,
    -1,
-   -1,
-   1,
    -1,
    -1,
    1,
+   -1,
+   0,
    1,
    -1,
+   1,
    1
   ],
-  "labels": [
-   {
-    "id": "spike",
-    "text": "Ani sıçrama"
-   },
-   {
-    "id": "wavy",
-    "text": "Dalgalı"
-   },
-   {
-    "id": "supply",
-    "text": "Arz etkisi"
-   }
-  ],
+  "labels": [],
   "trend": "flat",
   "supply_share": 1.0,
   "eligible": false,
@@ -295,5 +279,11 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 25374
+ }
 }

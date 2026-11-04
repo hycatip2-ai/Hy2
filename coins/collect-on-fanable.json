@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "rwa",
  "sector_name": "Gerçek varlık (RWA)",
- "total": 31,
- "total_exact": 30.91,
+ "total": 32,
+ "total_exact": 31.76,
  "band": "Zayıf",
- "delta": -0.3,
+ "delta": 0.9,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -21,17 +21,16 @@
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -53,7 +52,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 3.3,
+   "score": 4.0,
    "has_data": true,
    "weight": 20,
    "percentile": 0.0,
@@ -63,7 +62,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.377783,
-     "percentile": 0.2467,
+     "percentile": 0.2923,
      "basis": "sector",
      "display": "%38",
      "tier": "alt dilim"
@@ -72,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.64702,
-     "percentile": 0.2507,
+     "percentile": 0.295,
      "basis": "sector",
      "display": "2,65×",
      "tier": "alt dilim"
@@ -80,10 +79,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 1.076528,
-     "percentile": 0.0042,
+     "value": 1.044494,
+     "percentile": 0.0057,
      "basis": "sector",
-     "display": "+%108",
+     "display": "+%104",
      "tier": "alt dilim"
     }
    ]
@@ -111,17 +110,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.4,
+   "score": 6.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0,
+   "percentile": 0.0625,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 76.0,
-     "percentile": 0.2756,
+     "percentile": 0.2956,
      "basis": "sector",
      "display": "76",
      "tier": "alt dilim"
@@ -130,7 +129,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5444,
-     "percentile": 0.3046,
+     "percentile": 0.2922,
      "basis": "sector",
      "display": "%0,54",
      "tier": "alt dilim"
@@ -139,7 +138,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1429,
-     "percentile": 0.6323,
+     "percentile": 0.6686,
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
@@ -147,8 +146,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.856947,
-     "percentile": 0.0728,
+     "value": 0.862423,
+     "percentile": 0.092,
      "basis": "sector",
      "display": "0,9 yıl",
      "tier": "alt dilim"
@@ -201,6 +200,10 @@
   [
    "2026-11-02",
    30.91
+  ],
+  [
+   "2026-11-04",
+   31.76
   ]
  ],
  "changes": [
@@ -237,27 +240,27 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 537,
-  "rank_start": 508,
+  "rank_now": 558,
+  "rank_start": 510,
   "score": 0,
   "rise": 0,
   "steady": 58,
   "calm": 0,
   "weeks_up": 7,
-  "weeks_down": 5,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    1,
-   -1,
-   1,
-   -1,
-   -1,
-   -1,
-   -1,
    1,
    1,
+   -1,
+   -1,
+   -1,
+   -1,
    1,
    1,
+   1,
+   0,
    1
   ],
   "labels": [],
@@ -285,5 +288,14 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Bitget",
+  "MEXC"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 53289
+ }
 }

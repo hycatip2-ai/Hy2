@@ -1,0 +1,641 @@
+{
+ "generated": "2026-11-04",
+ "formula_version": "1.22.0",
+ "label": "Doğrulama",
+ "rule": {
+  "step_days": 7,
+  "horizon": 90,
+  "check_horizon": 30,
+  "min_days": 8,
+  "min_ic": 0.03,
+  "min_t": 2.0,
+  "reject_t": -2.0,
+  "reject_after_days": 26,
+  "noise_t": 1.0,
+  "min_sector": 5,
+  "entry_weight": 1.0
+ },
+ "candidates": [
+  {
+   "id": "depth_to_mc",
+   "name": "%2 derinlik / piyasa değeri",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "higher_is_better": true,
+   "why": "Gerçek likidite: fiyatı %2 oynatmak için gereken para; sahte hacimden etkilenmez.",
+   "since": "2026-11-03",
+   "coverage": 1,
+   "coverage_top": 1,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-22"
+  },
+  {
+   "id": "major_volume_share",
+   "name": "Büyük borsalardaki hacim payı",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "higher_is_better": true,
+   "why": "Hacmin güvenilir büyük borsalardan gelen kısmı.",
+   "since": "2026-11-03",
+   "coverage": 1,
+   "coverage_top": 1,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-22"
+  },
+  {
+   "id": "users_to_mc",
+   "name": "Aktif kullanıcı / piyasa değeri",
+   "part": "valuation",
+   "part_name": "Değerleme",
+   "higher_is_better": true,
+   "why": "Aktif kullanıcı başına ucuzluk (kapsam dar: ~20 coin).",
+   "since": "2026-11-03",
+   "coverage": 12,
+   "coverage_top": 7,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-22"
+  },
+  {
+   "id": "users_growth",
+   "name": "Aktif kullanıcı değişimi (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "higher_is_better": true,
+   "why": "Aktif kullanıcının 90 günlük büyümesi: gerçek benimsenme.",
+   "since": "2026-11-03",
+   "coverage": 3,
+   "coverage_top": 2,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-22"
+  },
+  {
+   "id": "holder_growth",
+   "name": "Sahip sayısı değişimi (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "higher_is_better": true,
+   "why": "Sahip sayısının 90 günlük büyümesi: tabana yayılma (ilk değerler ~1 Şubat 2027).",
+   "since": "2026-11-03",
+   "coverage": 0,
+   "coverage_top": 0,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-22"
+  },
+  {
+   "id": "insider_share",
+   "name": "Ekip ve yatırımcı payı",
+   "part": "supply",
+   "part_name": "Arz baskısı",
+   "higher_is_better": false,
+   "why": "Ekip ve yatırımcı payı: içeriden satış baskısı (yapay zekâ araştırması).",
+   "since": "2026-11-03",
+   "coverage": 23,
+   "coverage_top": 7,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-22"
+  }
+ ],
+ "scored": [
+  {
+   "id": "mc_to_tvl",
+   "name": "Piyasa değeri / kilitli varlık",
+   "part": "valuation",
+   "part_name": "Değerleme",
+   "weight": 1.0,
+   "coverage": 124,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "mc_to_fees",
+   "name": "Piyasa değeri / yıllık ücret",
+   "part": "valuation",
+   "part_name": "Değerleme",
+   "weight": 1.0,
+   "coverage": 21,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "circulating_ratio",
+   "name": "Dolaşımdaki arz oranı",
+   "part": "supply",
+   "part_name": "Arz baskısı",
+   "weight": 1.0,
+   "coverage": 394,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "fdv_to_mc",
+   "name": "Tam seyreltilmiş değer / piyasa değeri",
+   "part": "supply",
+   "part_name": "Arz baskısı",
+   "weight": 1.0,
+   "coverage": 394,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "supply_growth_90d",
+   "name": "Arz artışı (90 gün)",
+   "part": "supply",
+   "part_name": "Arz baskısı",
+   "weight": 1.0,
+   "coverage": 380,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "unlock_12m",
+   "name": "12 ay içindeki kilit açılışı",
+   "part": "supply",
+   "part_name": "Arz baskısı",
+   "weight": 1.0,
+   "coverage": 15,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "holders_revenue_share",
+   "name": "Token sahibine dönen gelir payı",
+   "part": "value_capture",
+   "part_name": "Değer yakalama",
+   "weight": 1.0,
+   "coverage": 62,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "buyback_burn",
+   "name": "Geri alım / yakım",
+   "part": "value_capture",
+   "part_name": "Değer yakalama",
+   "weight": 1.0,
+   "coverage": 19,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "net_holder_yield",
+   "name": "Sahibe net getiri (seyrelme düşülmüş)",
+   "part": "value_capture",
+   "part_name": "Değer yakalama",
+   "weight": 2.0,
+   "coverage": 66,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "revenue_to_emissions",
+   "name": "Gelirin yeni arzın değerine oranı",
+   "part": "value_capture",
+   "part_name": "Değer yakalama",
+   "weight": 2.0,
+   "coverage": 87,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "token_need",
+   "name": "Token gerekli mi",
+   "part": "value_capture",
+   "part_name": "Değer yakalama",
+   "weight": 2.0,
+   "coverage": 28,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "revenue_trend",
+   "name": "Gelir trendi (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 103,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "category_share_change",
+   "name": "Kategorideki ücret payının değişimi (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 69,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "fee_consistency",
+   "name": "Kullanımın sürekliliği (13 hafta)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 45,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "active_devs",
+   "name": "Aktif geliştirici sayısı (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 279,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "governance",
+   "name": "Yönetim oyları (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 19,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "daily_active_addresses",
+   "name": "Günlük aktif adres",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 8,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "chain_profit",
+   "name": "Zincir kârı (90 gün)",
+   "part": "usage",
+   "part_name": "Kullanım",
+   "weight": 1.0,
+   "coverage": 6,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "market_pairs",
+   "name": "İşlem çifti sayısı",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "weight": 1.0,
+   "coverage": 394,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "spread",
+   "name": "Alış-satış farkı",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "weight": 1.0,
+   "coverage": 385,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "bad_pair_ratio",
+   "name": "Şüpheli işlem çifti oranı",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "weight": 1.0,
+   "coverage": 385,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "age_years",
+   "name": "Proje yaşı",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "weight": 1.0,
+   "coverage": 394,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "audits",
+   "name": "Denetim sayısı",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "weight": 1.0,
+   "coverage": 147,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  },
+  {
+   "id": "l2_stage",
+   "name": "L2 güvenlik aşaması",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "weight": 1.0,
+   "coverage": 8,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
+  }
+ ],
+ "attention": []
+}

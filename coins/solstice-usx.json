@@ -10,9 +10,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 42,
- "total_exact": 42.09,
+ "total_exact": 41.55,
  "band": "Zayıf",
- "delta": 3.4,
+ "delta": -0.5,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,8 +25,8 @@
   "text": "Yeni token basılabiliyor ama yetkili (başka bir kontrat) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -52,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.2,
+   "score": 12.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6932,
+   "percentile": 0.6867,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.560388,
-     "percentile": 0.4863,
+     "percentile": 0.4579,
      "basis": "sector",
      "display": "%56",
      "tier": "orta dilim"
@@ -71,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.784478,
-     "percentile": 0.5088,
+     "percentile": 0.4812,
      "basis": "sector",
      "display": "1,78×",
      "tier": "orta dilim"
@@ -79,10 +79,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.602083,
-     "percentile": 0.9895,
+     "value": -0.594205,
+     "percentile": 0.9889,
      "basis": "sector",
-     "display": "−%60",
+     "display": "−%59",
      "tier": "üst dilim"
     }
    ]
@@ -110,17 +110,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.9,
+   "score": 7.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2955,
+   "percentile": 0.253,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 14.0,
-     "percentile": 0.0924,
+     "percentile": 0.0974,
      "basis": "sector",
      "display": "14",
      "tier": "alt dilim"
@@ -129,7 +129,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.603,
-     "percentile": 0.377,
+     "percentile": 0.3749,
      "basis": "sector",
      "display": "%0,60",
      "tier": "orta dilim"
@@ -138,7 +138,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8917,
+     "percentile": 0.8863,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -146,8 +146,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.966461,
-     "percentile": 0.2114,
+     "value": 0.971937,
+     "percentile": 0.1804,
      "basis": "sector",
      "display": "1,0 yıl",
      "tier": "alt dilim"
@@ -155,14 +155,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı (90 gün) verisi artık mevcut.",
-   "part": "supply",
-   "delta": 3.36,
-   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,4)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -195,6 +188,10 @@
   [
    "2026-11-02",
    42.09
+  ],
+  [
+   "2026-11-04",
+   41.55
   ]
  ],
  "changes": [
@@ -215,38 +212,7 @@
   }
  ],
  "events": [],
- "trend": {
-  "rank_now": 226,
-  "rank_start": 212,
-  "score": 0,
-  "rise": 0,
-  "steady": 33,
-  "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 7,
-  "weeks_total": 12,
-  "weekly": [
-   1,
-   -1,
-   -1,
-   -1,
-   -1,
-   -1,
-   -1,
-   -1,
-   1,
-   1,
-   0,
-   1
-  ],
-  "labels": [],
-  "trend": "falling",
-  "supply_share": 0.0,
-  "eligible": false,
-  "window_days": 90,
-  "score_change": null,
-  "double": false
- },
+ "trend": null,
  "chain": {
   "name": "Solana",
   "source": "contract",
@@ -264,5 +230,9 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [],
+ "delisted": [],
+ "recorded": null
 }

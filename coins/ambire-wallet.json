@@ -10,7 +10,7 @@
  "sector": "infra",
  "sector_name": "Altyapı",
  "total": 52,
- "total_exact": 52.07,
+ "total_exact": 51.94,
  "band": "Orta",
  "delta": -0.1,
  "confidence": {
@@ -25,8 +25,8 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz son bir yılda artmadı."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -52,14 +52,14 @@
    "score": 14.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.92,
+   "percentile": 0.8846,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9502,
+     "percentile": 0.9494,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -67,8 +67,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.37865,
-     "percentile": 0.6319,
+     "value": 1.378617,
+     "percentile": 0.6355,
      "basis": "sector",
      "display": "1,38×",
      "tier": "orta dilim"
@@ -76,8 +76,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.002651,
-     "percentile": 0.539,
+     "value": 0.002617,
+     "percentile": 0.529,
      "basis": "sector",
      "display": "+%0,3",
      "tier": "orta dilim"
@@ -97,17 +97,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 12.1,
+   "score": 12.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5789,
+   "percentile": 0.6,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 11.0,
-     "percentile": 0.8252,
+     "percentile": 0.8281,
      "basis": "sector",
      "display": "11",
      "tier": "üst dilim"
@@ -126,17 +126,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.3,
+   "score": 9.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.32,
-   "tier": "alt dilim",
+   "percentile": 0.3462,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 24.0,
-     "percentile": 0.068,
+     "percentile": 0.0433,
      "basis": "sector",
      "display": "24",
      "tier": "alt dilim"
@@ -145,7 +145,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5943,
-     "percentile": 0.2823,
+     "percentile": 0.2523,
      "basis": "sector",
      "display": "%0,59",
      "tier": "alt dilim"
@@ -154,7 +154,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.959,
+     "percentile": 0.9712,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -162,8 +162,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.758385,
-     "percentile": 0.7166,
+     "value": 4.76386,
+     "percentile": 0.7202,
      "basis": "sector",
      "display": "4,8 yıl",
      "tier": "üst dilim"
@@ -172,7 +172,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.297,
+     "percentile": 0.3001,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -225,6 +225,10 @@
   [
    "2026-11-02",
    52.07
+  ],
+  [
+   "2026-11-04",
+   51.94
   ]
  ],
  "changes": [
@@ -267,10 +271,10 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 714,
-  "rank_start": 882,
-  "score": 45,
-  "rise": 17,
+  "rank_now": 825,
+  "rank_start": 919,
+  "score": 60,
+  "rise": 52,
   "steady": 100,
   "calm": 0,
   "weeks_up": 1,
@@ -279,9 +283,18 @@
   "weekly": [
    1
   ],
-  "labels": [],
-  "trend": "flat",
-  "supply_share": 0.03,
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.01,
   "eligible": false,
   "window_days": 90,
   "score_change": null,
@@ -309,5 +322,11 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Gate"
+ ],
+ "delisted": [],
+ "recorded": null
 }

@@ -11,24 +11,30 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 50,
- "total_exact": 50.36,
+ "total": 63,
+ "total_exact": 62.96,
  "band": "Orta",
- "delta": -0.9,
+ "delta": 12.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: yeni token basma ya da basım oranını değiştirme yetkisi bir grupta, kesin üst sınır belgelenmemiş. Kendin araştır.",
+  "source": "https://neo.org/neogas",
+  "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -36,7 +42,7 @@
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -52,17 +58,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 17.0,
+   "score": 17.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.875,
+   "percentile": 0.9598,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9244,
+     "percentile": 0.9172,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -71,7 +77,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.916,
+     "percentile": 0.9721,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -80,7 +86,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7118,
+     "percentile": 0.7066,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -90,12 +96,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.4,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7556,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6111,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7778,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -110,17 +135,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.1,
+   "score": 13.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9375,
+   "percentile": 0.9195,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 193.0,
-     "percentile": 0.7381,
+     "percentile": 0.7148,
      "basis": "sector",
      "display": "193",
      "tier": "üst dilim"
@@ -129,7 +154,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2009,
-     "percentile": 0.9201,
+     "percentile": 0.922,
      "basis": "sector",
      "display": "%0,20",
      "tier": "üst dilim"
@@ -138,7 +163,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2667,
-     "percentile": 0.2011,
+     "percentile": 0.1891,
      "basis": "sector",
      "display": "%27",
      "tier": "alt dilim"
@@ -146,8 +171,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 9.32512,
-     "percentile": 0.967,
+     "value": 9.330595,
+     "percentile": 0.9639,
      "basis": "sector",
      "display": "9,3 yıl",
      "tier": "üst dilim"
@@ -155,7 +180,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 7.44,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,4)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -200,33 +238,80 @@
   [
    "2026-11-02",
    50.36
+  ],
+  [
+   "2026-11-04",
+   62.96
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-04",
+   "delta": 12.6,
+   "from": 50.4,
+   "to": 63.0,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.44,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,4)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-04",
+   "delta": 12.6,
+   "from": 50.4,
+   "to": 63.0,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.44,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,4)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 272,
-  "rank_start": 293,
-  "score": 32,
-  "rise": 37,
+  "rank_now": 277,
+  "rank_start": 292,
+  "score": 33,
+  "rise": 41,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
-  "weeks_down": 4,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
-   1,
-   -1,
-   1,
-   0,
-   1,
-   -1,
-   -1,
    0,
    -1,
-   0
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1
   ],
   "labels": [
    {
@@ -259,8 +344,31 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "service_payment",
+   "governance"
+  ],
+  "source": "https://neo.org/neogas",
+  "note": "GAS, ağ operasyonları, akıllı sözleşmeler ve yönetişim için gereklidir.",
+  "researched_at": "2026-11-02"
+ },
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Upbit",
+  "OKX",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "HTX",
+  "Kraken",
+  "Binance.US"
+ ],
+ "delisted": [],
+ "recorded": null
 }

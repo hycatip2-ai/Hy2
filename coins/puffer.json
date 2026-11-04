@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 90,
  "slug": "puffer",
  "symbol": "PUFFER",
  "name": "Puffer",
@@ -9,29 +9,31 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 46,
- "total_exact": 46.4,
+ "total": 42,
+ "total_exact": 41.7,
  "band": "Zayıf",
- "delta": -0.8,
+ "delta": -4.7,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
- "notes": [],
+ "notes": [
+  {
+   "id": "incentive_growth",
+   "text": "Yılda basılan yeni tokenlerin değeri gelirin iki katından fazla; büyüme büyük ölçüde teşvikle besleniyor olabilir."
+  }
+ ],
  "earns": null,
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
- "eligible_for_top": false,
- "missing": [
-  "gelir",
-  "gelir trendi"
- ],
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
@@ -42,27 +44,37 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 11.7,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5192,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 0.718969,
+     "percentile": 0.5856,
+     "basis": "sector",
+     "display": "0,72×",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.2,
+   "score": 7.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4583,
+   "percentile": 0.4368,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.5749,
-     "percentile": 0.5325,
+     "percentile": 0.5185,
      "basis": "sector",
      "display": "%57",
      "tier": "orta dilim"
@@ -71,7 +83,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.739431,
-     "percentile": 0.5453,
+     "percentile": 0.5227,
      "basis": "sector",
      "display": "1,74×",
      "tier": "orta dilim"
@@ -79,8 +91,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.131735,
-     "percentile": 0.1472,
+     "value": 0.128759,
+     "percentile": 0.1409,
      "basis": "sector",
      "display": "+%13",
      "tier": "alt dilim"
@@ -90,47 +102,111 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.0,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.0889,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "holders_revenue_share",
+     "name": "Token sahibine dönen gelir payı",
+     "value": 0.0,
+     "percentile": 0.2851,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": -0.522188,
+     "percentile": 0.1514,
+     "basis": "sector",
+     "display": "−%52",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": 0.005857,
+     "percentile": 0.2067,
+     "basis": "sector",
+     "display": "0,0059×",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 16.1,
+   "score": 9.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9405,
-   "tier": "üst dilim",
+   "percentile": 0.4474,
+   "tier": "orta dilim",
    "metrics": [
+    {
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 0.788194,
+     "percentile": 0.3611,
+     "basis": "sector",
+     "display": "−%21",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": -0.211024,
+     "percentile": 0.6026,
+     "basis": "sector",
+     "display": "−%21",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "fee_consistency",
+     "name": "Kullanımın sürekliliği (13 hafta)",
+     "value": 0.810348,
+     "percentile": 0.255,
+     "basis": "sector",
+     "display": "%81",
+     "tier": "alt dilim"
+    },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.8032,
+     "percentile": 0.7988,
      "basis": "sector",
      "display": "4",
      "tier": "üst dilim"
+    },
+    {
+     "id": "governance",
+     "name": "Yönetim oyları (90 gün)",
+     "value": 0.0,
+     "percentile": 0.3889,
+     "basis": "universe",
+     "display": "0",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.6,
+   "score": 7.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2812,
+   "percentile": 0.2069,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 150.0,
-     "percentile": 0.4886,
+     "percentile": 0.4736,
      "basis": "sector",
      "display": "150",
      "tier": "orta dilim"
@@ -139,7 +215,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.3067,
-     "percentile": 0.0573,
+     "percentile": 0.0524,
      "basis": "sector",
      "display": "%1,3",
      "tier": "alt dilim"
@@ -148,7 +224,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.129,
-     "percentile": 0.6507,
+     "percentile": 0.6394,
      "basis": "sector",
      "display": "%13",
      "tier": "orta dilim"
@@ -156,16 +232,38 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.2423,
-     "percentile": 0.5152,
+     "value": 2.247775,
+     "percentile": 0.5091,
      "basis": "sector",
      "display": "2,2 yıl",
      "tier": "orta dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.1759,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -6.43,
+   "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım −6,4)"
+  },
+  {
+   "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+   "part": "valuation",
+   "delta": 5.89,
+   "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme +5,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -210,6 +308,10 @@
   [
    "2026-11-02",
    46.4
+  ],
+  [
+   "2026-11-04",
+   41.7
   ]
  ],
  "changes": [
@@ -248,21 +350,93 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Kullanım +1,1)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -4.7,
+   "from": 46.4,
+   "to": 41.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -6.43,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım −6,4)"
+    },
+    {
+     "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+     "part": "valuation",
+     "delta": 5.89,
+     "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme +5,9)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": null,
- "chain": null,
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "chain": {
+  "name": "Ethereum",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "Brevan Howard Digital",
+  "Electric Capital",
+  "Coinbase Ventures",
+  "Kraken Ventures",
+  "Lemniscap",
+  "Franklin Templeton",
+  "Fidelity",
+  "Mechanism Capital",
+  "Lightspeed Faction",
+  "ConsenSys",
+  "Animoca Brands",
+  "GSR",
+  "Binance Labs",
+  "Bankless Ventures",
+  "DACM",
+  "LBK",
+  "SNZ Capital",
+  "Canonical Crypto"
+ ],
+ "investors_source": "https://defillama.com/protocol/puffer-finance",
+ "angel_investors": [
+  "Lightspeed Faction"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/puffer-finance",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/puffer-finance",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": {
+  "category": "Liquid Restaking",
+  "peers": "category",
+  "protocols": 9,
+  "quarters": [
+   0.03239,
+   0.03824,
+   0.02821,
+   0.02148,
+   0.01695
+  ]
+ },
+ "exchanges": [
+  "Upbit",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 26058
+ }
 }

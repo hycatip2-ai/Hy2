@@ -3,8 +3,8 @@
  "schema": 2,
  "name": "Citrea",
  "symbol": "CTR",
- "provider": "gemini",
- "model": "gemini-3.8-flash",
+ "provider": "claude-code",
+ "model": null,
  "researched_at": "2026-11-02",
  "fields": {
   "token_utility": {
@@ -18,7 +18,11 @@
    "source": "https://docs.citrea.xyz/ctr-token/staking-and-governance",
    "note": "Gas ücreti cBTC ile ödenir; CTR ağı kullanmak için zorunlu olmayıp xCTR ile yönetişim ve teşvik dağıtımında kullanılır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "usage_evidence": {
    "value": {
@@ -31,7 +35,11 @@
    "source": "https://explorer.mainnet.citrea.xyz/",
    "note": "Citrea Mainnet üzerinde kaydedilen kümülatif işlem sayısı 1.648.536 adettir.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "allocation": {
    "value": {
@@ -41,7 +49,11 @@
    "source": "https://docs.citrea.xyz/ctr-token/supply-and-allocations",
    "note": "Yatırımcılar (%19,35) ve erken katkıcılar (%20,66) için 1 yıl uçurum ve 4 yıllık hakediş takvimi mevcuttur.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   },
   "value_transfer_pending": {
    "value": {
@@ -52,40 +64,112 @@
    "source": "https://app.aragon.org/dao/citrea-mainnet/0xA941b1C1D9aDC88C9241aA3ACA59E8B8f0386419/dashboard?proposals=all",
    "note": "Citrea DAO üzerinde CORE-11 teklifi kabul edilerek işlem ücretleriyle CTR geri alımı planlanmıştır.",
    "check": "sayfada coin adı geçiyor",
-   "cited": false
+   "cited": false,
+   "carried": {
+    "provider": "gemini",
+    "researched_at": "2026-11-02"
+   }
   }
  },
  "dropped": [
   {
    "field": "supply_rule",
-   "source": "https://docs.citrea.xyz/ctr-token/overview",
-   "reason": "HTTP 404"
-  },
-  {
-   "field": "unlock_6m_pct",
-   "source": "https://tokenomics.com/citrea/unlocks",
-   "reason": "HTTP 404"
-  },
-  {
-   "field": "investors",
-   "source": "https://citrea.xyz/blog/announcing-our-14m-series-a-to-expand-bitcoin-into-an-active-programmable-asset",
-   "reason": "HTTP 404"
-  },
-  {
-   "field": "angel_investors",
-   "source": "https://citrea.xyz/blog/announcing-our-14m-series-a-to-expand-bitcoin-into-an-active-programmable-asset",
-   "reason": "HTTP 404"
-  },
-  {
-   "field": "unlock_12m_pct",
-   "source": "https://tokenomics.com/citrea/unlocks",
-   "reason": "HTTP 404"
+   "reason": "biçim anlaşılmadı"
   }
  ],
- "usage": {
-  "searches": 61,
-  "input_tokens": 9715,
-  "output_tokens": 1230,
-  "usd": 0.0119
+ "queue": {
+  "priority": 1,
+  "reason": "ilk 50 için tek eksiği arz kuralı"
+ },
+ "previous": {
+  "slug": "citrea",
+  "schema": 2,
+  "name": "Citrea",
+  "symbol": "CTR",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "researched_at": "2026-11-02",
+  "fields": {
+   "token_utility": {
+    "value": {
+     "level": "none",
+     "uses": [
+      "governance",
+      "emission_rewards"
+     ]
+    },
+    "source": "https://docs.citrea.xyz/ctr-token/staking-and-governance",
+    "note": "Gas ücreti cBTC ile ödenir; CTR ağı kullanmak için zorunlu olmayıp xCTR ile yönetişim ve teşvik dağıtımında kullanılır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "usage_evidence": {
+    "value": {
+     "metric": "Total transactions",
+     "value": 1648536.0,
+     "unit": "txns",
+     "as_of": "2026-10-30",
+     "confirmed": true
+    },
+    "source": "https://explorer.mainnet.citrea.xyz/",
+    "note": "Citrea Mainnet üzerinde kaydedilen kümülatif işlem sayısı 1.648.536 adettir.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "allocation": {
+    "value": {
+     "insiders": 0.4001,
+     "vesting_end": "2030-04"
+    },
+    "source": "https://docs.citrea.xyz/ctr-token/supply-and-allocations",
+    "note": "Yatırımcılar (%19,35) ve erken katkıcılar (%20,66) için 1 yıl uçurum ve 4 yıllık hakediş takvimi mevcuttur.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   },
+   "value_transfer_pending": {
+    "value": {
+     "mechanism": "buyback",
+     "status": "approved",
+     "expected": null
+    },
+    "source": "https://app.aragon.org/dao/citrea-mainnet/0xA941b1C1D9aDC88C9241aA3ACA59E8B8f0386419/dashboard?proposals=all",
+    "note": "Citrea DAO üzerinde CORE-11 teklifi kabul edilerek işlem ücretleriyle CTR geri alımı planlanmıştır.",
+    "check": "sayfada coin adı geçiyor",
+    "cited": false
+   }
+  },
+  "dropped": [
+   {
+    "field": "supply_rule",
+    "source": "https://docs.citrea.xyz/ctr-token/overview",
+    "reason": "HTTP 404"
+   },
+   {
+    "field": "unlock_6m_pct",
+    "source": "https://tokenomics.com/citrea/unlocks",
+    "reason": "HTTP 404"
+   },
+   {
+    "field": "investors",
+    "source": "https://citrea.xyz/blog/announcing-our-14m-series-a-to-expand-bitcoin-into-an-active-programmable-asset",
+    "reason": "HTTP 404"
+   },
+   {
+    "field": "angel_investors",
+    "source": "https://citrea.xyz/blog/announcing-our-14m-series-a-to-expand-bitcoin-into-an-active-programmable-asset",
+    "reason": "HTTP 404"
+   },
+   {
+    "field": "unlock_12m_pct",
+    "source": "https://tokenomics.com/citrea/unlocks",
+    "reason": "HTTP 404"
+   }
+  ],
+  "usage": {
+   "searches": 61,
+   "input_tokens": 9715,
+   "output_tokens": 1230,
+   "usd": 0.0119
+  }
  }
 }

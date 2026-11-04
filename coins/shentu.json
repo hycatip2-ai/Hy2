@@ -9,15 +9,20 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 44,
- "total_exact": 43.68,
+ "total": 38,
+ "total_exact": 37.64,
  "band": "Zayıf",
- "delta": 0.3,
+ "delta": -6.0,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "site_down",
+   "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir."
+  }
+ ],
  "notes": [],
  "earns": null,
  "supply": {
@@ -25,14 +30,14 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %9 artıyor (sınır %10)."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
   "gelir trendi"
  ],
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": null,
  "parts": [
@@ -49,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.9,
+   "score": 14.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7708,
+   "percentile": 0.7471,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9244,
+     "percentile": 0.9172,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -68,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9683,
+     "percentile": 0.8969,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -76,7 +81,7 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.021448,
+     "value": 0.02146,
      "percentile": 0.337,
      "basis": "sector",
      "display": "+%2,1",
@@ -97,17 +102,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.1,
+   "score": 3.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1905,
+   "percentile": 0.1382,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2053,
+     "percentile": 0.1881,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -117,17 +122,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.9,
+   "score": 11.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.7396,
+   "percentile": 0.7011,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 142.0,
-     "percentile": 0.4557,
+     "percentile": 0.4375,
      "basis": "sector",
      "display": "142",
      "tier": "orta dilim"
@@ -136,7 +141,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2916,
-     "percentile": 0.7271,
+     "percentile": 0.7218,
      "basis": "sector",
      "display": "%0,29",
      "tier": "üst dilim"
@@ -145,7 +150,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.3609,
+     "percentile": 0.3431,
      "basis": "sector",
      "display": "%20",
      "tier": "orta dilim"
@@ -153,8 +158,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.039014,
-     "percentile": 0.8447,
+     "value": 7.04449,
+     "percentile": 0.8397,
      "basis": "sector",
      "display": "7,0 yıl",
      "tier": "üst dilim"
@@ -162,7 +167,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -207,6 +219,10 @@
   [
    "2026-11-02",
    43.68
+  ],
+  [
+   "2026-11-04",
+   37.64
   ]
  ],
  "changes": [
@@ -228,6 +244,21 @@
      "part": "usage",
      "delta": -3.29,
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,3)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -6.0,
+   "from": 43.7,
+   "to": 37.6,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
     }
    ]
   }
@@ -252,29 +283,43 @@
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,3)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -6.0,
+   "from": 43.7,
+   "to": 37.6,
+   "reasons": [
+    {
+     "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 762,
-  "rank_start": 701,
+  "rank_now": 765,
+  "rank_start": 688,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 17,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_up": 2,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
+   -1,
+   0,
+   0,
+   0,
    1,
    0,
    -1,
+   -1,
+   1,
    0,
-   -1,
-   1,
-   -1,
-   -1,
-   1,
-   1,
    -1,
    -1
   ],
@@ -303,5 +348,12 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Binance",
+  "Gate"
+ ],
+ "delisted": [],
+ "recorded": null
 }

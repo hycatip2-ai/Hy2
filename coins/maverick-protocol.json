@@ -9,8 +9,8 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 34,
- "total_exact": 34.5,
+ "total": 40,
+ "total_exact": 40.02,
  "band": "Zayıf",
  "delta": -0.5,
  "confidence": {
@@ -31,7 +31,7 @@
  },
  "revenue_unmeasured": false,
  "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
@@ -46,21 +46,12 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 3.3,
+   "score": 7.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.14,
-   "tier": "alt dilim",
+   "percentile": 0.3404,
+   "tier": "orta dilim",
    "metrics": [
-    {
-     "id": "mc_to_revenue",
-     "name": "Piyasa değeri / yıllık gelir",
-     "value": null,
-     "percentile": 0.0492,
-     "basis": "sector",
-     "display": "Gelir yok",
-     "tier": "alt dilim"
-    },
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
@@ -113,7 +104,7 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 4.0,
+   "score": 3.7,
    "has_data": true,
    "weight": 20,
    "percentile": 0.1,
@@ -154,7 +145,7 @@
    "score": 9.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4762,
+   "percentile": 0.4643,
    "tier": "orta dilim",
    "metrics": [
     {
@@ -247,72 +238,78 @@
  "history": [
   [
    "2026-10-23",
-   37.68
+   42.91
   ],
   [
    "2026-10-24",
-   38.53
+   43.68
   ],
   [
    "2026-10-25",
-   36.77
+   41.73
   ],
   [
    "2026-10-26",
-   42.14
+   48.14
   ],
   [
    "2026-10-27",
-   41.61
+   47.43
   ],
   [
    "2026-10-28",
-   45.08
+   51.86
   ],
   [
    "2026-10-29",
-   37.76
+   43.75
   ],
   [
    "2026-10-30",
-   37.53
+   43.53
   ],
   [
    "2026-10-31",
-   34.61
+   39.96
   ],
   [
    "2026-11-01",
-   34.95
+   40.53
   ],
   [
    "2026-11-02",
-   34.5
+   40.02
   ]
  ],
  "changes": [
   {
    "date": "2026-10-26",
-   "delta": 5.4,
-   "from": 36.8,
-   "to": 42.1,
+   "delta": 6.4,
+   "from": 41.7,
+   "to": 48.1,
    "event": true,
    "reasons": [
     {
      "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
      "part": "value_capture",
-     "delta": 4.89,
-     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +4,9)"
+     "delta": 5.87,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +5,9)"
     }
    ]
   },
   {
    "date": "2026-10-28",
-   "delta": 3.5,
-   "from": 41.6,
-   "to": 45.1,
+   "delta": 4.4,
+   "from": 47.4,
+   "to": 51.9,
    "event": false,
    "reasons": [
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
+     "part": "valuation",
+     "delta": 1.77,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Değerleme +1,8)"
+    },
     {
      "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
      "part": "value_capture",
@@ -323,31 +320,31 @@
   },
   {
    "date": "2026-10-29",
-   "delta": -7.3,
-   "from": 45.1,
-   "to": 37.8,
+   "delta": -8.1,
+   "from": 51.9,
+   "to": 43.8,
    "event": true,
    "reasons": [
     {
      "text": "Token sahibine kalan net getiri azaldı; yeni arz getiriyi daha çok sulandırıyor.",
      "part": "value_capture",
-     "delta": -6.76,
-     "label": "Token sahibine kalan net getiri azaldı; yeni arz getiriyi daha çok sulandırıyor. (Değer yakalama −6,8)"
+     "delta": -8.06,
+     "label": "Token sahibine kalan net getiri azaldı; yeni arz getiriyi daha çok sulandırıyor. (Değer yakalama −8,1)"
     }
    ]
   },
   {
    "date": "2026-10-31",
-   "delta": -2.9,
-   "from": 37.5,
-   "to": 34.6,
+   "delta": -3.6,
+   "from": 43.5,
+   "to": 40.0,
    "event": false,
    "reasons": [
     {
-     "text": "Puanı az değişti; sıralamada diğer coinler öne geçti.",
-     "part": null,
-     "delta": -2.92,
-     "label": "Puanı az değişti; sıralamada diğer coinler öne geçti."
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi.",
+     "part": "valuation",
+     "delta": -1.56,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Değerleme −1,6)"
     }
    ]
   }
@@ -355,65 +352,34 @@
  "events": [
   {
    "date": "2026-10-26",
-   "delta": 5.4,
-   "from": 36.8,
-   "to": 42.1,
+   "delta": 6.4,
+   "from": 41.7,
+   "to": 48.1,
    "reasons": [
     {
      "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
      "part": "value_capture",
-     "delta": 4.89,
-     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +4,9)"
+     "delta": 5.87,
+     "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +5,9)"
     }
    ]
   },
   {
    "date": "2026-10-29",
-   "delta": -7.3,
-   "from": 45.1,
-   "to": 37.8,
+   "delta": -8.1,
+   "from": 51.9,
+   "to": 43.8,
    "reasons": [
     {
      "text": "Token sahibine kalan net getiri azaldı; yeni arz getiriyi daha çok sulandırıyor.",
      "part": "value_capture",
-     "delta": -6.76,
-     "label": "Token sahibine kalan net getiri azaldı; yeni arz getiriyi daha çok sulandırıyor. (Değer yakalama −6,8)"
+     "delta": -8.06,
+     "label": "Token sahibine kalan net getiri azaldı; yeni arz getiriyi daha çok sulandırıyor. (Değer yakalama −8,1)"
     }
    ]
   }
  ],
- "trend": {
-  "rank_now": 913,
-  "rank_start": 905,
-  "score": 0,
-  "rise": 0,
-  "steady": 25,
-  "calm": 0,
-  "weeks_up": 3,
-  "weeks_down": 5,
-  "weeks_total": 12,
-  "weekly": [
-   1,
-   1,
-   1,
-   0,
-   -1,
-   -1,
-   0,
-   -1,
-   0,
-   -1,
-   -1,
-   0
-  ],
-  "labels": [],
-  "trend": "flat",
-  "supply_share": 0.0,
-  "eligible": false,
-  "window_days": 90,
-  "score_change": null,
-  "double": false
- },
+ "trend": null,
  "chain": null,
  "investors": [
   "Pantera Capital",
@@ -450,5 +416,9 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": null,
+ "delisted": [],
+ "recorded": null
 }

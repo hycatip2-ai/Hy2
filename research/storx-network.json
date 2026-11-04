@@ -1,0 +1,75 @@
+{
+ "slug": "storx-network",
+ "schema": 2,
+ "name": "StorX Network",
+ "symbol": "SRX",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-04",
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "unlimited",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": true
+   },
+   "source": "https://storx.tech/pdf/storx-whitepaper-1.pdf",
+   "note": "Teknik belgede arzın teknik bir üst sınırının bulunmadığı belirtilmiş olup sözleşme yükseltilebilir proxy mimarisindedir.",
+   "check": "belge açıldı",
+   "cited": false
+  },
+  "buyback_burn": {
+   "value": 0.0,
+   "source": "https://storx.tech/pdf/storx-whitepaper-1.pdf",
+   "note": "Projenin MiCA dokümantasyonuna göre token değerini korumaya yönelik herhangi bir geri alım veya yakım mekanizması bulunmamaktadır.",
+   "check": "belge açıldı",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "service_payment",
+     "stake_to_operate",
+     "emission_rewards",
+     "governance"
+    ]
+   },
+   "source": "https://storx.tech/host-node.html",
+   "note": "Depolama operatörlerinin ağda düğüm çalıştırabilmesi için SRX stake etmesi zorunludur ve hizmetler SRX ile ödenebilmektedir.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "active_nodes",
+    "value": 4000.0,
+    "unit": "nodes",
+    "as_of": "2026-09-05",
+    "confirmed": true
+   },
+   "source": "https://coinmarketcap.com/currencies/storx-network/",
+   "note": "Ağ üzerinde 117.000'den fazla kullanıcıya hizmet veren 4.000'in üzerinde aktif depolama düğümü bulunmaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.345,
+    "vesting_end": null
+   },
+   "source": "https://storx.tech/pdf/storx-whitepaper-1.pdf",
+   "note": "Dağıtımda çekirdek ekibe %17,5, tohum turuna %10 ve özel satışa %7 pay ayrılmış olup net bir hak ediş bitiş tarihi belirtilmemiştir.",
+   "check": "belge açıldı",
+   "cited": false
+  }
+ },
+ "dropped": [],
+ "usage": {
+  "searches": 34,
+  "input_tokens": 10404,
+  "output_tokens": 1033,
+  "usd": 0.01168
+ }
+}

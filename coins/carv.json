@@ -10,9 +10,9 @@
  "sector": "ai",
  "sector_name": "Yapay zekâ",
  "total": 38,
- "total_exact": 37.81,
+ "total_exact": 37.75,
  "band": "Zayıf",
- "delta": -1.0,
+ "delta": -0.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,8 +25,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.4,
+   "score": 10.2,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.66,
+   "percentile": 0.617,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.736755,
-     "percentile": 0.6587,
+     "percentile": 0.6407,
      "basis": "sector",
      "display": "%74",
      "tier": "orta dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.357304,
-     "percentile": 0.6943,
+     "percentile": 0.6775,
      "basis": "sector",
      "display": "1,36×",
      "tier": "üst dilim"
@@ -78,8 +78,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.108899,
-     "percentile": 0.2127,
+     "value": 0.106462,
+     "percentile": 0.2199,
      "basis": "sector",
      "display": "+%11",
      "tier": "alt dilim"
@@ -99,17 +99,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.3,
+   "score": 4.4,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.2069,
+   "percentile": 0.26,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.213,
+     "percentile": 0.222,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -122,14 +122,14 @@
    "score": 9.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.38,
+   "percentile": 0.3617,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 120.0,
-     "percentile": 0.4343,
+     "percentile": 0.4377,
      "basis": "sector",
      "display": "120",
      "tier": "orta dilim"
@@ -138,7 +138,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4302,
-     "percentile": 0.4222,
+     "percentile": 0.4398,
      "basis": "sector",
      "display": "%0,43",
      "tier": "orta dilim"
@@ -147,7 +147,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1538,
-     "percentile": 0.4558,
+     "percentile": 0.4443,
      "basis": "sector",
      "display": "%15",
      "tier": "orta dilim"
@@ -155,8 +155,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.064339,
-     "percentile": 0.7524,
+     "value": 2.069815,
+     "percentile": 0.7219,
      "basis": "sector",
      "display": "2,1 yıl",
      "tier": "üst dilim"
@@ -165,7 +165,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2731,
+     "percentile": 0.274,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -218,6 +218,10 @@
   [
    "2026-11-02",
    37.81
+  ],
+  [
+   "2026-11-04",
+   37.75
   ]
  ],
  "changes": [
@@ -254,25 +258,25 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 622,
-  "rank_start": 659,
+  "rank_now": 618,
+  "rank_start": 614,
   "score": 0,
   "rise": 0,
-  "steady": 58,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 7,
-  "weeks_down": 3,
+  "weeks_up": 4,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
+   -1,
    0,
    1,
-   0,
    1,
+   0,
+   0,
+   0,
    1,
    -1,
-   1,
-   1,
-   1,
    -1,
    1,
    -1
@@ -285,7 +289,12 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
+ "chain": {
+  "name": "Base",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [
   "HashKey Capital",
   "Vertex",
@@ -312,5 +321,19 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Upbit",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 241853
+ }
 }

@@ -12,13 +12,13 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 64,
- "total_exact": 63.79,
- "band": "Orta",
- "delta": 1.8,
+ "total": 72,
+ "total_exact": 71.54,
+ "band": "Güçlü",
+ "delta": 7.8,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -27,9 +27,9 @@
   "status": "unchecked",
   "text": "Yeni token basılabiliyor ama yetkili (başka bir kontrat) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
- "revenue_unmeasured": true,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "revenue_unmeasured": false,
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
@@ -54,7 +54,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 18.2,
+   "score": 17.9,
    "has_data": true,
    "weight": 20,
    "percentile": 1.0,
@@ -64,7 +64,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9045,
+     "percentile": 0.8918,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9563,
+     "percentile": 0.9304,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -82,7 +82,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8708,
+     "percentile": 0.8614,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -92,27 +92,73 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 17.0,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.9815,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "holders_revenue_share",
+     "name": "Token sahibine dönen gelir payı",
+     "value": 1.0,
+     "percentile": 0.9918,
+     "basis": "universe",
+     "display": "%100",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": 0.008237,
+     "percentile": 0.8615,
+     "basis": "universe",
+     "display": "+%0,8",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": null,
+     "percentile": 0.7674,
+     "basis": "universe",
+     "display": "Yeni arz yok",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 19.5,
+   "score": 16.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 1.0,
+   "percentile": 0.7895,
    "tier": "üst dilim",
    "metrics": [
+    {
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 1.781093,
+     "percentile": 0.8137,
+     "basis": "universe",
+     "display": "+%78",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": 0.0,
+     "percentile": 0.6765,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 13.0,
-     "percentile": 0.9742,
+     "percentile": 0.9712,
      "basis": "sector",
      "display": "13",
      "tier": "üst dilim"
@@ -122,17 +168,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.8,
+   "score": 12.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9333,
+   "percentile": 0.72,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 325.0,
-     "percentile": 0.9848,
+     "percentile": 0.9834,
      "basis": "sector",
      "display": "325",
      "tier": "üst dilim"
@@ -141,7 +187,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3974,
-     "percentile": 0.5257,
+     "percentile": 0.5394,
      "basis": "sector",
      "display": "%0,40",
      "tier": "orta dilim"
@@ -150,7 +196,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1739,
-     "percentile": 0.4339,
+     "percentile": 0.4109,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -158,16 +204,38 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.871321,
-     "percentile": 0.8134,
+     "value": 7.876797,
+     "percentile": 0.7897,
      "basis": "sector",
      "display": "7,9 yıl",
      "tier": "üst dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.274,
+     "basis": "universe",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 12.5,
+   "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +12,5)"
+  },
+  {
+   "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": -3.07,
+   "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım −3,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -200,6 +268,10 @@
   [
    "2026-11-02",
    63.79
+  ],
+  [
+   "2026-11-04",
+   71.54
   ]
  ],
  "changes": [
@@ -223,32 +295,74 @@
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,5)"
     }
    ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": 7.8,
+   "from": 63.8,
+   "to": 71.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 12.5,
+     "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +12,5)"
+    },
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -3.07,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım −3,1)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-04",
+   "delta": 7.8,
+   "from": 63.8,
+   "to": 71.5,
+   "reasons": [
+    {
+     "text": "Token sahibine dönen gelir payı verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 12.5,
+     "label": "Token sahibine dönen gelir payı verisi artık mevcut. (Değer yakalama +12,5)"
+    },
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -3.07,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım −3,1)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 291,
-  "rank_start": 282,
-  "score": 24,
-  "rise": 9,
+  "rank_now": 295,
+  "rank_start": 290,
+  "score": 26,
+  "rise": 14,
   "steady": 50,
   "calm": 0,
   "weeks_up": 6,
-  "weeks_down": 5,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
    -1,
+   1,
+   -1,
+   1,
+   1,
+   1,
+   1,
    0,
    -1,
-   1,
-   1,
-   1,
-   1,
-   1,
-   -1,
-   -1
+   0
   ],
   "labels": [],
   "trend": "flat",
@@ -258,17 +372,46 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
- "angel_investors_estimated": false,
+ "chain": {
+  "name": "Ethereum",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "NorthZone",
+  "Ben Rubin",
+  "David Mendels"
+ ],
+ "investors_source": "https://defillama.com/protocol/livepeer",
+ "angel_investors": [
+  "Ben Rubin",
+  "David Mendels"
+ ],
+ "angel_investors_source": "https://defillama.com/protocol/livepeer",
+ "angel_investors_estimated": true,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/livepeer",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Binance",
+  "Upbit",
+  "Coinbase",
+  "OKX",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX",
+  "Kraken",
+  "Binance.US"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 1743861
+ }
 }

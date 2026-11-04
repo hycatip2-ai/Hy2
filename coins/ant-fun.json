@@ -10,9 +10,9 @@
  "sector": "defi",
  "sector_name": "DeFi",
  "total": 30,
- "total_exact": 30.41,
+ "total_exact": 30.29,
  "band": "Zayıf",
- "delta": 2.4,
+ "delta": -0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,8 +25,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -55,14 +55,14 @@
    "score": 5.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.125,
+   "percentile": 0.1494,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.188784,
-     "percentile": 0.1293,
+     "percentile": 0.1298,
      "basis": "sector",
      "display": "%19",
      "tier": "alt dilim"
@@ -71,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.297069,
-     "percentile": 0.1318,
+     "percentile": 0.1322,
      "basis": "sector",
      "display": "5,30×",
      "tier": "alt dilim"
@@ -80,7 +80,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.4952,
+     "percentile": 0.4909,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -110,26 +110,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 3.5,
+   "score": 3.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0104,
+   "percentile": 0.0115,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 25.0,
-     "percentile": 0.0962,
+     "value": 28.0,
+     "percentile": 0.0891,
      "basis": "sector",
-     "display": "25",
+     "display": "28",
      "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5508,
-     "percentile": 0.3123,
+     "percentile": 0.29,
      "basis": "sector",
      "display": "%0,55",
      "tier": "alt dilim"
@@ -138,7 +138,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1188,
+     "percentile": 0.1139,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -146,23 +146,25 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.895277,
-     "percentile": 0.1705,
+     "value": 0.900753,
+     "percentile": 0.1729,
      "basis": "sector",
      "display": "0,9 yıl",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.1759,
+     "basis": "sector",
+     "display": "0",
      "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Arz artışı (90 gün) verisi artık mevcut.",
-   "part": "supply",
-   "delta": 2.34,
-   "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +2,3)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -207,6 +209,10 @@
   [
    "2026-11-02",
    30.41
+  ],
+  [
+   "2026-11-04",
+   30.29
   ]
  ],
  "changes": [
@@ -243,17 +249,17 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 481,
+  "rank_now": 454,
   "rank_start": 249,
   "score": 0,
   "rise": 0,
-  "steady": 42,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 7,
+  "weeks_up": 6,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
-   -1,
+   0,
    -1,
    1,
    1,
@@ -262,7 +268,7 @@
    -1,
    -1,
    -1,
-   -1,
+   1,
    1,
    1
   ],
@@ -274,17 +280,35 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
- "investors": [],
- "investors_source": null,
+ "chain": {
+  "name": "Solana",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
+ "investors": [
+  "MH Ventures",
+  "Zerra Ventures",
+  "X21",
+  "Zuala Capital",
+  "Becker Ventures"
+ ],
+ "investors_source": "https://defillama.com/protocol/antfun",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/antfun",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Gate",
+  "KuCoin"
+ ],
+ "delisted": [],
+ "recorded": null
 }

@@ -1,0 +1,68 @@
+{
+ "slug": "steem",
+ "schema": 2,
+ "name": "Steem",
+ "symbol": "STEEM",
+ "provider": "gemini",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-04",
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": 0.045,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://steem.com/steem-whitepaper.pdf",
+   "note": "Aralık 2016'da %9,5 ile başlayan enflasyon, her 250.000 blokta %0,01 (yılda ~%0,5) azalarak 2026 sonunda yaklaşık %4,5 seviyesindedir.",
+   "check": "belge açıldı",
+   "cited": false
+  },
+  "unlock_6m_pct": {
+   "value": 0.0,
+   "source": "https://coinmarketcap.com/currencies/steem/",
+   "note": "STEEM arzının tamamı (%100) serbest dolaşımdadır; kilitli kurumsal hakediş takvimi bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "unlock_12m_pct": {
+   "value": 0.0,
+   "source": "https://coinmarketcap.com/currencies/steem/",
+   "note": "Arzın tamamı dolaşımda olup önümüzdeki 12 ayda açılacak kilitli kurumsal token bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor",
+   "cited": false
+  },
+  "token_utility": {
+   "value": {
+    "level": "partial",
+    "uses": [
+     "governance",
+     "emission_rewards",
+     "collateral"
+    ]
+   },
+   "source": "https://steem.com/steem-bluepaper.pdf",
+   "note": "STEEM, Steem Power'a kilitlenerek yönetişim oylaması, ödül havuzu payı ve SBD dönüşümünde teminat işlevi görür.",
+   "check": "belge açıldı",
+   "cited": false
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  },
+  {
+   "field": "usage_evidence",
+   "source": "https://www.steemdb.io/",
+   "reason": "sayı kaynak sayfada bulunamadı"
+  }
+ ],
+ "usage": {
+  "searches": 37,
+  "input_tokens": 8274,
+  "output_tokens": 2245,
+  "usd": 0.01462
+ }
+}

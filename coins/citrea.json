@@ -11,13 +11,13 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 45,
- "total_exact": 45.09,
+ "total": 41,
+ "total_exact": 40.51,
  "band": "Zayıf",
- "delta": 2.0,
+ "delta": -4.6,
  "confidence": {
-  "parts": 4,
-  "level": "Orta"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
  "notes": [],
@@ -27,8 +27,8 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
@@ -40,28 +40,28 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 13.1,
+   "score": 13.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8519,
+   "percentile": 0.7358,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 2.306988,
-     "percentile": 0.7913,
+     "value": 2.454459,
+     "percentile": 0.7693,
      "basis": "sector",
-     "display": "2,31×",
+     "display": "2,45×",
      "tier": "üst dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 2854.971207,
-     "percentile": 0.5145,
+     "value": 2971.912293,
+     "percentile": 0.5287,
      "basis": "sector",
-     "display": "2.855×",
+     "display": "2.972×",
      "tier": "orta dilim"
     }
    ]
@@ -72,14 +72,14 @@
    "score": 5.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1364,
+   "percentile": 0.1348,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.15,
-     "percentile": 0.0394,
+     "percentile": 0.0391,
      "basis": "sector",
      "display": "%15",
      "tier": "alt dilim"
@@ -88,7 +88,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.666667,
-     "percentile": 0.0399,
+     "percentile": 0.0401,
      "basis": "sector",
      "display": "6,67×",
      "tier": "alt dilim"
@@ -97,7 +97,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7136,
+     "percentile": 0.7101,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -107,36 +107,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 0.7,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.0,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.0,
+     "percentile": 0.037,
+     "basis": "universe",
+     "display": "Gerekli değil",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.1,
+   "score": 10.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5125,
+   "percentile": 0.5062,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.309876,
-     "percentile": 0.1977,
+     "value": 0.335453,
+     "percentile": 0.2144,
      "basis": "sector",
-     "display": "−%69",
+     "display": "−%66",
      "tier": "alt dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 7.0,
-     "percentile": 0.8105,
+     "percentile": 0.8112,
      "basis": "sector",
      "display": "7",
      "tier": "üst dilim"
@@ -149,14 +159,14 @@
    "score": 10.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4943,
+   "percentile": 0.4944,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 143.0,
-     "percentile": 0.5091,
+     "percentile": 0.5134,
      "basis": "sector",
      "display": "143",
      "tier": "orta dilim"
@@ -165,7 +175,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3642,
-     "percentile": 0.5887,
+     "percentile": 0.5818,
      "basis": "sector",
      "display": "%0,36",
      "tier": "orta dilim"
@@ -174,7 +184,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.5336,
+     "percentile": 0.5366,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -182,8 +192,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.457221,
-     "percentile": 0.0275,
+     "value": 0.462697,
+     "percentile": 0.0171,
      "basis": "sector",
      "display": "0,5 yıl",
      "tier": "alt dilim"
@@ -192,7 +202,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.8638,
+     "percentile": 0.8774,
      "basis": "sector",
      "display": "2",
      "tier": "üst dilim"
@@ -200,7 +210,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token gerekli mi verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": -4.69,
+   "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama −4,7)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -245,6 +262,10 @@
   [
    "2026-11-02",
    45.09
+  ],
+  [
+   "2026-11-04",
+   40.51
   ]
  ],
  "changes": [
@@ -281,6 +302,21 @@
      "part": "supply",
      "delta": 5.72,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +5,7)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-04",
+   "delta": -4.6,
+   "from": 45.1,
+   "to": 40.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -4.69,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama −4,7)"
     }
    ]
   }
@@ -322,13 +358,13 @@
   }
  ],
  "trend": {
-  "rank_now": 646,
-  "rank_start": 829,
-  "score": 58,
-  "rise": 74,
-  "steady": 67,
-  "calm": 8,
-  "weeks_up": 8,
+  "rank_now": 633,
+  "rank_start": 828,
+  "score": 60,
+  "rise": 72,
+  "steady": 75,
+  "calm": 4,
+  "weeks_up": 9,
   "weeks_down": 3,
   "weeks_total": 12,
   "weekly": [
@@ -336,7 +372,7 @@
    -1,
    1,
    1,
-   0,
+   1,
    1,
    -1,
    1,
@@ -377,11 +413,66 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": {
-  "provider": "gemini-free",
-  "researched_at": "2026-11-01"
+  "provider": "claude-code",
+  "researched_at": "2026-11-02"
  },
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
- "value_transfer_pending": null
+ "token_utility": {
+  "level": "none",
+  "uses": [
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://docs.citrea.xyz/ctr-token/staking-and-governance",
+  "note": "Gas ücreti cBTC ile ödenir; CTR ağı kullanmak için zorunlu olmayıp xCTR ile yönetişim ve teşvik dağıtımında kullanılır.",
+  "researched_at": "2026-11-02"
+ },
+ "usage_evidence": {
+  "metric": "Total transactions",
+  "value": 1648536.0,
+  "unit": "txns",
+  "as_of": "2026-10-30",
+  "confirmed": true,
+  "source": "https://explorer.mainnet.citrea.xyz/",
+  "note": "Citrea Mainnet üzerinde kaydedilen kümülatif işlem sayısı 1.648.536 adettir.",
+  "researched_at": "2026-11-02"
+ },
+ "allocation": {
+  "insiders": 0.4001,
+  "vesting_end": "2030-04",
+  "source": "https://docs.citrea.xyz/ctr-token/supply-and-allocations",
+  "note": "Yatırımcılar (%19,35) ve erken katkıcılar (%20,66) için 1 yıl uçurum ve 4 yıllık hakediş takvimi mevcuttur.",
+  "researched_at": "2026-11-02"
+ },
+ "value_transfer_pending": {
+  "mechanism": "buyback",
+  "status": "approved",
+  "expected": null,
+  "source": "https://app.aragon.org/dao/citrea-mainnet/0xA941b1C1D9aDC88C9241aA3ACA59E8B8f0386419/dashboard?proposals=all",
+  "note": "Citrea DAO üzerinde CORE-11 teklifi kabul edilerek işlem ücretleriyle CTR geri alımı planlanmıştır.",
+  "researched_at": "2026-11-02"
+ },
+ "usage_share": {
+  "category": "Chain",
+  "peers": "chains",
+  "protocols": 66,
+  "quarters": [
+   0.0001012,
+   4.565e-05,
+   2.673e-05,
+   7.112e-06
+  ]
+ },
+ "exchanges": [
+  "Upbit",
+  "Coinbase",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX",
+  "Kraken"
+ ],
+ "delisted": [],
+ "recorded": {
+  "insider_share": 0.4001
+ }
 }

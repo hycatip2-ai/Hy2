@@ -11,10 +11,10 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 34,
- "total_exact": 33.75,
+ "total": 33,
+ "total_exact": 32.91,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -0.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,8 +27,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-02",
- "formula_version": "1.19.0",
+ "date": "2026-11-04",
+ "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -54,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.1,
+   "score": 7.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4479,
+   "percentile": 0.4023,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.436058,
-     "percentile": 0.4262,
+     "value": 0.436064,
+     "percentile": 0.4045,
      "basis": "sector",
      "display": "%44",
      "tier": "orta dilim"
@@ -72,8 +72,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.293272,
-     "percentile": 0.4373,
+     "value": 2.293244,
+     "percentile": 0.4069,
      "basis": "sector",
      "display": "2,29×",
      "tier": "orta dilim"
@@ -81,8 +81,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.020317,
-     "percentile": 0.3475,
+     "value": 0.019893,
+     "percentile": 0.3496,
      "basis": "sector",
      "display": "+%2,0",
      "tier": "orta dilim"
@@ -102,17 +102,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.1,
+   "score": 3.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1905,
+   "percentile": 0.1382,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2053,
+     "percentile": 0.1881,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -122,17 +122,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.8,
+   "score": 7.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2292,
+   "percentile": 0.2241,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 140.0,
-     "percentile": 0.4275,
+     "percentile": 0.4068,
      "basis": "sector",
      "display": "140",
      "tier": "orta dilim"
@@ -141,7 +141,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.7276,
-     "percentile": 0.1524,
+     "percentile": 0.1369,
      "basis": "sector",
      "display": "%0,73",
      "tier": "alt dilim"
@@ -150,7 +150,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.225,
-     "percentile": 0.2698,
+     "percentile": 0.2645,
      "basis": "sector",
      "display": "%22",
      "tier": "alt dilim"
@@ -158,8 +158,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.604381,
-     "percentile": 0.4009,
+     "value": 1.609856,
+     "percentile": 0.3949,
      "basis": "sector",
      "display": "1,6 yıl",
      "tier": "orta dilim"
@@ -168,7 +168,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6884,
+     "percentile": 0.6826,
      "basis": "sector",
      "display": "2",
      "tier": "üst dilim"
@@ -221,6 +221,10 @@
   [
    "2026-11-02",
    33.75
+  ],
+  [
+   "2026-11-04",
+   32.91
   ]
  ],
  "changes": [
@@ -242,27 +246,27 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 624,
-  "rank_start": 420,
+  "rank_now": 595,
+  "rank_start": 392,
   "score": 0,
   "rise": 0,
   "steady": 25,
   "calm": 0,
   "weeks_up": 3,
-  "weeks_down": 8,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    -1,
    -1,
-   -1,
-   -1,
-   -1,
-   1,
+   0,
    -1,
    -1,
    1,
+   -1,
    -1,
    0,
+   -1,
+   1,
    1
   ],
   "labels": [],
@@ -273,7 +277,12 @@
   "score_change": null,
   "double": false
  },
- "chain": null,
+ "chain": {
+  "name": "Base",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [
   "Mechanism Capital",
   "DCF Capital Partners",
@@ -290,5 +299,19 @@
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
- "value_transfer_pending": null
+ "value_transfer_pending": null,
+ "usage_share": null,
+ "exchanges": [
+  "Binance",
+  "Upbit",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX"
+ ],
+ "delisted": [],
+ "recorded": {
+  "holder_count": 80398
+ }
 }
