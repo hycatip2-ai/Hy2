@@ -9,23 +9,29 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 45,
- "total_exact": 44.51,
- "band": "Zayıf",
- "delta": -0.1,
+ "total": 57,
+ "total_exact": 56.89,
+ "band": "Orta",
+ "delta": 12.4,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: token kontratını bir kişi ya da grup değiştirebiliyor (sınırsız basım eklenebilir); ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://docs.nexpace.io/tokenomics/nxpc/distribution",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -34,7 +40,7 @@
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -50,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.5,
+   "score": 5.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1724,
+   "percentile": 0.1461,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.31971,
-     "percentile": 0.3033,
+     "percentile": 0.3075,
      "basis": "sector",
      "display": "%32",
      "tier": "alt dilim"
@@ -69,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.174859,
-     "percentile": 0.2855,
+     "percentile": 0.2896,
      "basis": "sector",
      "display": "3,17×",
      "tier": "alt dilim"
@@ -77,10 +83,19 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.066811,
-     "percentile": 0.2307,
+     "value": 0.066085,
+     "percentile": 0.2246,
      "basis": "sector",
-     "display": "+%6,7",
+     "display": "+%6,6",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.2818,
+     "percentile": 0.2174,
+     "basis": "universe",
+     "display": "%28",
      "tier": "alt dilim"
     }
    ]
@@ -88,27 +103,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.9,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.83,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.8,
+   "score": 14.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8947,
+   "percentile": 0.8846,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.7377,
+     "percentile": 0.7214,
      "basis": "sector",
      "display": "3",
      "tier": "üst dilim"
@@ -118,17 +152,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.4,
+   "score": 11.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6552,
-   "tier": "orta dilim",
+   "percentile": 0.6854,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 196.0,
-     "percentile": 0.738,
+     "percentile": 0.7335,
      "basis": "sector",
      "display": "196",
      "tier": "üst dilim"
@@ -137,7 +171,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6594,
-     "percentile": 0.1754,
+     "percentile": 0.1909,
      "basis": "sector",
      "display": "%0,66",
      "tier": "alt dilim"
@@ -146,7 +180,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.949,
+     "percentile": 0.9549,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -154,8 +188,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.634497,
-     "percentile": 0.4158,
+     "value": 1.637235,
+     "percentile": 0.4189,
      "basis": "sector",
      "display": "1,6 yıl",
      "tier": "orta dilim"
@@ -163,7 +197,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 7.9,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,9)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -212,18 +259,65 @@
   [
    "2026-11-04",
    44.51
+  ],
+  [
+   "2026-11-05",
+   56.89
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": 12.4,
+   "from": 44.5,
+   "to": 56.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.9,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,9)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 12.4,
+   "from": 44.5,
+   "to": 56.9,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.9,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,9)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
   "rank_now": 353,
-  "rank_start": 261,
+  "rank_start": 266,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 4,
+  "weeks_up": 3,
   "weeks_down": 8,
   "weeks_total": 12,
   "weekly": [
@@ -233,7 +327,7 @@
    -1,
    1,
    -1,
-   1,
+   0,
    -1,
    -1,
    -1,
@@ -257,9 +351,25 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "service_payment",
+   "emission_rewards"
+  ],
+  "source": "https://docs.nexpace.io/tokenomics/token-structure-abstract",
+  "note": "NXPC, Henesys ağında yerel gaz tokeni olup NFT basım/fisyon işlemlerinde ve katkı ödüllerinde zorunludur.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.031,
+  "vesting_end": "2029-02",
+  "source": "https://docs.nexpace.io/tokenomics/nxpc/allocation",
+  "note": "Ekip %0,696, Danışmanlar %0,40 ve IP Lisansör payı %2,0 olup hak edişler 9 aylık cliff sonrası Şubat 2029'da tamamlanır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -272,5 +382,7 @@
   "HTX"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.031
+ }
 }

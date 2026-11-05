@@ -12,12 +12,12 @@
  "sector": "ai",
  "sector_name": "Yapay zekâ",
  "total": 38,
- "total_exact": 38.25,
+ "total_exact": 37.73,
  "band": "Zayıf",
- "delta": -0.0,
+ "delta": -0.5,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
@@ -27,7 +27,7 @@
   "text": "Kontrat sonradan değiştirilebiliyor ama yetkili (okunamayan bir yetkili) görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -57,14 +57,14 @@
    "score": 7.0,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.3617,
-   "tier": "orta dilim",
+   "percentile": 0.3111,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.347165,
-     "percentile": 0.4022,
+     "value": 0.348802,
+     "percentile": 0.401,
      "basis": "sector",
      "display": "%35",
      "tier": "orta dilim"
@@ -72,19 +72,19 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.880476,
-     "percentile": 0.4195,
+     "value": 2.866957,
+     "percentile": 0.418,
      "basis": "sector",
-     "display": "2,88×",
+     "display": "2,87×",
      "tier": "orta dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.104949,
-     "percentile": 0.2362,
+     "value": 0.108719,
+     "percentile": 0.2259,
      "basis": "sector",
-     "display": "+%10",
+     "display": "+%11",
      "tier": "alt dilim"
     }
    ]
@@ -92,12 +92,22 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 5.9,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.2593,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.2941,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -112,17 +122,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.2,
+   "score": 11.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.766,
+   "percentile": 0.7778,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 161.0,
-     "percentile": 0.7248,
+     "percentile": 0.7168,
      "basis": "sector",
      "display": "161",
      "tier": "üst dilim"
@@ -131,7 +141,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1565,
-     "percentile": 0.9442,
+     "percentile": 0.9579,
      "basis": "sector",
      "display": "%0,16",
      "tier": "üst dilim"
@@ -140,7 +150,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2821,
-     "percentile": 0.1099,
+     "percentile": 0.1312,
      "basis": "sector",
      "display": "%28",
      "tier": "alt dilim"
@@ -148,8 +158,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.377139,
-     "percentile": 0.4668,
+     "value": 1.379877,
+     "percentile": 0.4838,
      "basis": "sector",
      "display": "1,4 yıl",
      "tier": "orta dilim"
@@ -206,6 +216,10 @@
   [
    "2026-11-04",
    38.25
+  ],
+  [
+   "2026-11-05",
+   37.73
   ]
  ],
  "changes": [
@@ -228,11 +242,11 @@
  "events": [],
  "trend": {
   "rank_now": 773,
-  "rank_start": 816,
+  "rank_start": 814,
   "score": 0,
   "rise": 0,
   "steady": 42,
-  "calm": 3,
+  "calm": 1,
   "weeks_up": 5,
   "weeks_down": 6,
   "weeks_total": 12,
@@ -241,8 +255,8 @@
    1,
    -1,
    1,
-   0,
    -1,
+   0,
    1,
    -1,
    -1,
@@ -281,9 +295,26 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "network_fees",
+   "stake_to_operate",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://coinmarketcap.com/currencies/newton-protocol/",
+  "note": "NEWT, operatör stakingi, işlem ücretleri, staking ödülleri ve protokol yönetişim oylamalarında kullanılmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.4,
+  "vesting_end": "2029-06",
+  "source": "https://coinmarketcap.com/currencies/newton-protocol/",
+  "note": "Arzın %40'ı iç paydaşlara ayrılmış olup 12 aylık kilit süresinin ardından 36 aylık hak ediş süreci Haziran 2029'da tamamlanmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -298,6 +329,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 13798
+  "holder_count": 13798,
+  "insider_share": 0.4
  }
 }

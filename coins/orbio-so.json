@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 47,
- "total_exact": 47.33,
+ "total": 45,
+ "total_exact": 45.31,
  "band": "Zayıf",
- "delta": -1.2,
+ "delta": -2.0,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -23,11 +23,11 @@
  "supply": {
   "status": "ok",
   "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
-  "source": "https://coinmarketcap.com/currencies/orbio-so/",
-  "researched_at": "2026-11-02"
+  "source": "https://phemex.com/academy/what-is-orbio-orbio-robinhood-chain-ai-credit-token",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 18.3,
+   "score": 16.9,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.9787,
+   "percentile": 0.9556,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9276,
+     "percentile": 0.9257,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -70,9 +70,18 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9018,
+     "percentile": 0.8986,
      "basis": "sector",
      "display": "1,00×",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
+     "display": "%0",
      "tier": "üst dilim"
     }
    ]
@@ -80,17 +89,17 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 4.8,
+   "score": 4.9,
    "has_data": true,
    "weight": 10,
-   "percentile": 0.162,
+   "percentile": 0.0741,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "buyback_burn",
      "name": "Geri alım / yakım",
      "value": 0.0,
-     "percentile": 0.0833,
+     "percentile": 0.1442,
      "basis": "universe",
      "display": "Yok",
      "tier": "alt dilim"
@@ -99,8 +108,8 @@
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 0.5,
-     "percentile": 0.3148,
-     "basis": "universe",
+     "percentile": 0.2941,
+     "basis": "sector",
      "display": "Kısmen",
      "tier": "alt dilim"
     }
@@ -128,17 +137,17 @@
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 49.0,
-     "percentile": 0.1346,
+     "value": 50.0,
+     "percentile": 0.1327,
      "basis": "sector",
-     "display": "49",
+     "display": "50",
      "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 3.0442,
-     "percentile": 0.0227,
+     "percentile": 0.0234,
      "basis": "sector",
      "display": "%3,0",
      "tier": "alt dilim"
@@ -147,7 +156,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.24,
-     "percentile": 0.1554,
+     "percentile": 0.1758,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -155,7 +164,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.158795,
+     "value": 0.161533,
      "percentile": 0.0015,
      "basis": "sector",
      "display": "0,2 yıl",
@@ -165,7 +174,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.274,
+     "percentile": 0.2703,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -173,7 +182,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+   "part": "supply",
+   "delta": -2.13,
+   "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −2,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -222,9 +238,29 @@
   [
    "2026-11-04",
    47.33
+  ],
+  [
+   "2026-11-05",
+   45.31
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": -2.0,
+   "from": 47.3,
+   "to": 45.3,
+   "event": false,
+   "reasons": [
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.13,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −2,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": null,
  "chain": {
@@ -244,20 +280,27 @@
  "token_utility": {
   "level": "partial",
   "uses": [
-   "stake_to_operate",
-   "emission_rewards"
+   "revenue_share"
   ],
-  "source": "https://www.orbio.so/launchpad/whitepaper",
-  "note": "ORBIO stake edilerek CREDIT ödülleri kazanılır ve ajanların ekonomik sistemini destekler.",
-  "researched_at": "2026-11-02"
+  "source": "https://phemex.com/academy/what-is-orbio-orbio-robinhood-chain-ai-credit-token",
+  "note": "ORBIO stake edenler işlem ücretlerinden karşılanan yapay zeka çıkarım kredisi (CREDIT) gelir payı kazanır.",
+  "researched_at": "2026-11-04"
  },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.0,
+  "vesting_end": null,
+  "source": "https://phemex.com/academy/what-is-orbio-orbio-robinhood-chain-ai-credit-token",
+  "note": "Tüm token arzı Pons bonding curve üzerinden doğrudan piyasaya sürülmüş olup ekibe veya içeridekilere pay ayrılmamıştır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
   "MEXC"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.0
+ }
 }

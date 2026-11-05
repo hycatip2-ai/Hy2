@@ -9,23 +9,23 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 45,
- "total_exact": 45.36,
+ "total": 46,
+ "total_exact": 45.83,
  "band": "Zayıf",
- "delta": 0.4,
+ "delta": 0.5,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "ok",
-  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %5,9 artıyor (sınır %10)."
+  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %5,8 artıyor (sınır %10)."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -48,7 +48,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.8,
+   "score": 14.6,
    "has_data": true,
    "weight": 20,
    "percentile": 0.8072,
@@ -58,7 +58,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9189,
+     "percentile": 0.9191,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -67,7 +67,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9759,
+     "percentile": 0.9734,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -75,38 +75,57 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.013612,
-     "percentile": 0.3186,
+     "value": 0.01361,
+     "percentile": 0.3225,
      "basis": "sector",
      "display": "+%1,4",
      "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 7.6,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.3375,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3298,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2857,
+     "percentile": 0.289,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -126,7 +145,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 111.0,
-     "percentile": 0.6218,
+     "percentile": 0.6414,
      "basis": "sector",
      "display": "111",
      "tier": "orta dilim"
@@ -135,7 +154,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 3.1503,
-     "percentile": 0.0447,
+     "percentile": 0.0448,
      "basis": "sector",
      "display": "%3,2",
      "tier": "alt dilim"
@@ -144,7 +163,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.5137,
+     "percentile": 0.4934,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -152,7 +171,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 10.546201,
+     "value": 10.548939,
      "percentile": 0.998,
      "basis": "sector",
      "display": "10,5 yıl",
@@ -210,6 +229,10 @@
   [
    "2026-11-04",
    45.36
+  ],
+  [
+   "2026-11-05",
+   45.83
   ]
  ],
  "changes": [
@@ -258,13 +281,13 @@
   }
  ],
  "trend": {
-  "rank_now": 549,
-  "rank_start": 623,
-  "score": 39,
-  "rise": 56,
-  "steady": 42,
-  "calm": 6,
-  "weeks_up": 5,
+  "rank_now": 543,
+  "rank_start": 624,
+  "score": 43,
+  "rise": 58,
+  "steady": 50,
+  "calm": 8,
+  "weeks_up": 6,
   "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
@@ -279,7 +302,7 @@
    -1,
    -1,
    -1,
-   0
+   1
   ],
   "labels": [
    {
@@ -307,7 +330,17 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "emission_rewards",
+   "collateral"
+  ],
+  "source": "https://steem.com/steem-bluepaper.pdf",
+  "note": "STEEM, Steem Power'a kilitlenerek yönetişim oylaması, ödül havuzu payı ve SBD dönüşümünde teminat işlevi görür.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,

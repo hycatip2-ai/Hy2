@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 38,
  "slug": "tokenbot-2",
  "symbol": "CLANKER",
  "name": "tokenbot",
@@ -11,30 +11,32 @@
  ],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 52,
- "total_exact": 51.73,
+ "total": 55,
+ "total_exact": 54.64,
  "band": "Orta",
- "delta": -0.3,
+ "delta": 2.9,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
- "eligible_for_top": false,
- "missing": [
-  "kullanım kanıtı"
- ],
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Base",
   "address": "0x1bc0c42215582d5a085795f4badbac3ff36d1bcb"
@@ -53,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.9,
+   "score": 16.2,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.8723,
+   "percentile": 0.8778,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.986277,
-     "percentile": 0.7802,
+     "percentile": 0.774,
      "basis": "sector",
      "display": "%99",
      "tier": "üst dilim"
@@ -72,7 +74,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.013914,
-     "percentile": 0.8275,
+     "percentile": 0.8228,
      "basis": "sector",
      "display": "1,01×",
      "tier": "üst dilim"
@@ -81,8 +83,17 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.9335,
+     "percentile": 0.9467,
      "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
     }
@@ -91,12 +102,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.8,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.037,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.0,
+     "percentile": 0.0159,
+     "basis": "sector",
+     "display": "Gerekli değil",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -111,17 +141,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.4,
+   "score": 9.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4043,
+   "percentile": 0.4444,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 142.0,
-     "percentile": 0.5499,
+     "percentile": 0.5387,
      "basis": "sector",
      "display": "142",
      "tier": "orta dilim"
@@ -130,7 +160,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.8117,
-     "percentile": 0.1345,
+     "percentile": 0.1225,
      "basis": "sector",
      "display": "%0,81",
      "tier": "alt dilim"
@@ -139,7 +169,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1364,
-     "percentile": 0.5145,
+     "percentile": 0.5293,
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
@@ -147,8 +177,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.932923,
-     "percentile": 0.687,
+     "value": 1.935661,
+     "percentile": 0.7111,
      "basis": "sector",
      "display": "1,9 yıl",
      "tier": "üst dilim"
@@ -156,7 +186,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": -1.12,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −1,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -205,23 +248,49 @@
   [
    "2026-11-04",
    51.73
+  ],
+  [
+   "2026-11-05",
+   54.64
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": 2.9,
+   "from": 51.7,
+   "to": 54.6,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -1.12,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −1,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 742,
-  "rank_start": 815,
+  "rank_now": 727,
+  "rank_start": 809,
   "score": 0,
   "rise": 0,
-  "steady": 42,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 5,
+  "weeks_up": 4,
   "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    0,
-   1,
+   0,
    -1,
    0,
    -1,
@@ -255,9 +324,30 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "none",
+  "uses": [],
+  "source": "https://clanker.gitbook.io/documentation/general/token-deployments",
+  "note": "Protokolde token oluşturma ve kullanım için CLANKER zorunlu değildir; gaz ve ücretler ETH ile ödenir.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "30-day fees (Base)",
+  "value": 868092.0,
+  "unit": "USD",
+  "as_of": "2026-11-04",
+  "confirmed": true,
+  "source": "https://defillama.com/protocol/fees/clanker",
+  "note": "DefiLlama verilerine göre Base ağında son 30 günde 868.092 USD protokol işlem ücreti üretilmiştir.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.0,
+  "vesting_end": null,
+  "source": "https://coinmarketcap.com/currencies/tokenbot-2/",
+  "note": "Adil lansman modeliyle başlatılmış olup kuruculara veya ekibe önceden token tahsis edilmemiştir.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -271,6 +361,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 464856
+  "holder_count": 464856,
+  "insider_share": 0.0
  }
 }

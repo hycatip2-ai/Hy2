@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 39.43,
+ "total": 41,
+ "total_exact": 40.72,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": 1.3,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -25,7 +25,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.3,
+   "score": 12.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6145,
-   "tier": "orta dilim",
+   "percentile": 0.6867,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.698388,
-     "percentile": 0.6341,
+     "percentile": 0.6237,
      "basis": "sector",
      "display": "%70",
      "tier": "orta dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.354629,
-     "percentile": 0.3634,
+     "percentile": 0.3636,
      "basis": "sector",
      "display": "2,35×",
      "tier": "orta dilim"
@@ -79,8 +79,17 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8458,
+     "percentile": 0.8388,
      "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
     }
@@ -89,27 +98,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 7.8,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.4875,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.5,
+     "percentile": 0.4135,
+     "basis": "sector",
+     "display": "Kısmi",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3298,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2857,
+     "percentile": 0.289,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -119,17 +147,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.4,
+   "score": 7.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2349,
+   "percentile": 0.2289,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 59.0,
-     "percentile": 0.4557,
+     "percentile": 0.4753,
      "basis": "sector",
      "display": "59",
      "tier": "orta dilim"
@@ -138,7 +166,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.8245,
-     "percentile": 0.1,
+     "percentile": 0.1006,
      "basis": "sector",
      "display": "%1,8",
      "tier": "alt dilim"
@@ -147,7 +175,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1196,
+     "percentile": 0.1207,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -155,8 +183,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.409993,
-     "percentile": 0.8094,
+     "value": 5.412731,
+     "percentile": 0.8001,
      "basis": "sector",
      "display": "5,4 yıl",
      "tier": "üst dilim"
@@ -213,26 +241,30 @@
   [
    "2026-11-04",
    39.43
+  ],
+  [
+   "2026-11-05",
+   40.72
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 381,
-  "rank_start": 361,
+  "rank_now": 387,
+  "rank_start": 365,
   "score": 0,
   "rise": 0,
-  "steady": 42,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 4,
+  "weeks_up": 6,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
-   0,
    -1,
-   0,
    -1,
-   0,
+   1,
+   -1,
+   -1,
    -1,
    -1,
    1,
@@ -255,15 +287,29 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "PraeGold"
+ ],
+ "investors_source": "https://coinmarketcap.com/currencies/escointoken/",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "service_payment",
+   "fee_discount"
+  ],
+  "source": "https://escoin.ee/WhitePaper.pdf",
+  "note": "ELG, hukuk ekosisteminde hizmet bedellerinin ödenmesinde ve işlem ücreti indirimlerinde kullanılmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,

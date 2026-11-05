@@ -9,30 +9,34 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 40,
- "total_exact": 39.79,
+ "total": 47,
+ "total_exact": 46.55,
  "band": "Zayıf",
- "delta": -0.6,
+ "delta": 6.8,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "BNB Chain",
   "address": "0x2c3a8ee94ddd97244a93bc48298f97d2c412f7db"
@@ -51,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.9,
+   "score": 5.4,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.2979,
+   "percentile": 0.1333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.227963,
-     "percentile": 0.1463,
+     "percentile": 0.1517,
      "basis": "sector",
      "display": "%23",
      "tier": "alt dilim"
@@ -70,7 +74,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.386686,
-     "percentile": 0.1988,
+     "percentile": 0.2059,
      "basis": "sector",
      "display": "4,39×",
      "tier": "alt dilim"
@@ -79,22 +83,50 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6952,
+     "percentile": 0.7015,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 1.1095,
+     "percentile": 0.0217,
+     "basis": "universe",
+     "display": "%111",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.9,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6852,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7783,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -109,17 +141,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.5,
+   "score": 13.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9362,
+   "percentile": 0.9556,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 216.0,
-     "percentile": 0.8612,
+     "percentile": 0.8568,
      "basis": "sector",
      "display": "216",
      "tier": "üst dilim"
@@ -128,7 +160,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2703,
-     "percentile": 0.7374,
+     "percentile": 0.7306,
      "basis": "sector",
      "display": "%0,27",
      "tier": "üst dilim"
@@ -137,7 +169,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0714,
-     "percentile": 0.7589,
+     "percentile": 0.7818,
      "basis": "sector",
      "display": "%7,1",
      "tier": "üst dilim"
@@ -145,8 +177,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.21013,
-     "percentile": 0.3448,
+     "value": 1.212868,
+     "percentile": 0.3573,
      "basis": "sector",
      "display": "1,2 yıl",
      "tier": "orta dilim"
@@ -154,7 +186,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 3.96,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -203,15 +248,62 @@
   [
    "2026-11-04",
    39.79
+  ],
+  [
+   "2026-11-05",
+   46.55
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": 6.8,
+   "from": 39.8,
+   "to": 46.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 3.96,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 6.8,
+   "from": 39.8,
+   "to": 46.5,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 3.96,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 282,
-  "rank_start": 247,
-  "score": 59,
-  "rise": 90,
+  "rank_now": 337,
+  "rank_start": 248,
+  "score": 46,
+  "rise": 57,
   "steady": 58,
   "calm": 0,
   "weeks_up": 7,
@@ -254,17 +346,47 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Karatage",
+  "Sfermion",
+  "Collab+Currency",
+  "MARBLEX Corp.",
+  "Seed Club",
+  "The Open Platform (TOP)",
+  "TON Ventures",
+  "Gagra Ventures",
+  "Kenetic",
+  "Metalabs Ventures"
+ ],
+ "investors_source": "https://crypto-fundraising.info/blog/dates-18-24-jan-2026/",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment",
+   "revenue_share",
+   "governance"
+  ],
+  "source": "https://chainclarity.io/akedo",
+  "note": "AKE; AI istemleri ve oyun yayınlama ödemelerinde, staking gelir paylaşımında ve yönetişimde zorunlu olarak kullanılır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.45,
+  "vesting_end": "2029-08",
+  "source": "https://app.tokenomics.com/tokenomics/akedo-games/unlocks",
+  "note": "Yatırımcılar (%25), erken katkıda bulunanlar (%15) ve danışmanlara (%5) toplam %45 ayrılmış olup kilit Ağustos 2029'da biter.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -275,6 +397,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 43580
+  "holder_count": 43580,
+  "insider_share": 0.45
  }
 }

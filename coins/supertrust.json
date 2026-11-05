@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 38.72,
+ "total": 40,
+ "total_exact": 39.57,
  "band": "Zayıf",
- "delta": -0.0,
+ "delta": 0.9,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -25,7 +25,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.4,
+   "score": 14.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.747,
+   "percentile": 0.7711,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9189,
+     "percentile": 0.9191,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.265388,
-     "percentile": 0.7194,
+     "percentile": 0.7095,
      "basis": "sector",
      "display": "1,27×",
      "tier": "üst dilim"
@@ -79,37 +79,65 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5249,
+     "percentile": 0.5243,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 7.8,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.4875,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.5,
+     "percentile": 0.4135,
+     "basis": "sector",
+     "display": "Kısmi",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3298,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2857,
+     "percentile": 0.289,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -119,17 +147,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 4.6,
+   "score": 4.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0482,
+   "percentile": 0.0361,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 27.0,
-     "percentile": 0.2517,
+     "percentile": 0.2722,
      "basis": "sector",
      "display": "27",
      "tier": "alt dilim"
@@ -147,7 +175,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1196,
+     "percentile": 0.1207,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -155,8 +183,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.960301,
-     "percentile": 0.4569,
+     "value": 1.963039,
+     "percentile": 0.4586,
      "basis": "sector",
      "display": "2,0 yıl",
      "tier": "orta dilim"
@@ -213,6 +241,10 @@
   [
    "2026-11-04",
    38.72
+  ],
+  [
+   "2026-11-05",
+   39.57
   ]
  ],
  "changes": [
@@ -255,14 +287,14 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 391,
-  "rank_start": 437,
+  "rank_now": 398,
+  "rank_start": 439,
   "score": 35,
   "rise": 47,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
-  "weeks_down": 7,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    1,
@@ -275,7 +307,7 @@
    -1,
    -1,
    -1,
-   -1,
+   0,
    1
   ],
   "labels": [
@@ -309,9 +341,24 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "service_payment",
+   "fee_discount"
+  ],
+  "source": "https://supertrust.club/",
+  "note": "SUT, ekosistem servislerinde ödeme aracı olarak kullanılır ve %30-50 işlem ücreti indirimi sağlar.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.0,
+  "vesting_end": null,
+  "source": "https://supertrust.club/",
+  "note": "Sıfır rezerv politikasıyla ekip ve kuruculara token ayrılmamış; arz doğrudan dolaşıma sunulmuştur.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -320,6 +367,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 41382
+  "holder_count": 41382,
+  "insider_share": 0.0
  }
 }

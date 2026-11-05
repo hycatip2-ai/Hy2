@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 44,
- "total_exact": 44.5,
+ "total": 46,
+ "total_exact": 45.55,
  "band": "Zayıf",
- "delta": 0.5,
+ "delta": null,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -21,17 +21,16 @@
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-01",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -53,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.0,
+   "score": 5.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.16,
+   "percentile": 0.1798,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.143157,
-     "percentile": 0.0505,
+     "percentile": 0.0552,
      "basis": "sector",
      "display": "%14",
      "tier": "alt dilim"
@@ -72,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 6.985328,
-     "percentile": 0.0513,
+     "percentile": 0.0562,
      "basis": "sector",
      "display": "6,99×",
      "tier": "alt dilim"
@@ -81,10 +80,10 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6491,
+     "percentile": 0.7055,
      "basis": "sector",
      "display": "%0",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   },
@@ -101,17 +100,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 18.2,
+   "score": 17.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9886,
+   "percentile": 0.9872,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 7.0,
-     "percentile": 0.91,
+     "percentile": 0.8924,
      "basis": "sector",
      "display": "7",
      "tier": "üst dilim"
@@ -121,17 +120,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.4,
+   "score": 8.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.185,
+   "percentile": 0.2809,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 134.0,
-     "percentile": 0.3941,
+     "percentile": 0.364,
      "basis": "sector",
      "display": "134",
      "tier": "orta dilim"
@@ -139,28 +138,28 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.31,
-     "percentile": 0.6603,
+     "value": 0.3396,
+     "percentile": 0.536,
      "basis": "sector",
-     "display": "%0,31",
+     "display": "%0,34",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.1875,
-     "percentile": 0.4064,
+     "value": 0.0714,
+     "percentile": 0.8162,
      "basis": "sector",
-     "display": "%19",
-     "tier": "orta dilim"
+     "display": "%7,1",
+     "tier": "üst dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.246407,
-     "percentile": 0.0183,
+     "value": 0.257358,
+     "percentile": 0.0201,
      "basis": "sector",
-     "display": "0,2 yıl",
+     "display": "0,3 yıl",
      "tier": "alt dilim"
     }
    ]
@@ -183,6 +182,10 @@
   [
    "2026-11-01",
    44.5
+  ],
+  [
+   "2026-11-05",
+   45.55
   ]
  ],
  "changes": [],
@@ -207,7 +210,17 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
- "exchanges": null,
+ "exchanges": [
+  "Upbit",
+  "Bitget",
+  "MEXC",
+  "Kraken"
+ ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "depth_2pct_usd": 50210.31,
+  "major_volume_share": 0.7212,
+  "holder_count": 15450,
+  "depth_to_mc": 0.005608
+ }
 }

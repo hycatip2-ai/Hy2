@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 25,
- "total_exact": 25.08,
+ "total": 27,
+ "total_exact": 26.52,
  "band": "Zayıf",
- "delta": -3.3,
+ "delta": 1.4,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -30,7 +30,7 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -53,17 +53,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 4.6,
+   "score": 4.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.0426,
+   "percentile": 0.0444,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.271635,
-     "percentile": 0.3032,
+     "percentile": 0.3135,
      "basis": "sector",
      "display": "%27",
      "tier": "alt dilim"
@@ -72,7 +72,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.681416,
-     "percentile": 0.3212,
+     "percentile": 0.3329,
      "basis": "sector",
      "display": "3,68×",
      "tier": "alt dilim"
@@ -80,8 +80,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.23062,
-     "percentile": 0.0673,
+     "value": 0.227934,
+     "percentile": 0.0685,
      "basis": "sector",
      "display": "+%23",
      "tier": "alt dilim"
@@ -91,19 +91,28 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 1.4,
+   "score": 3.6,
    "has_data": true,
    "weight": 10,
-   "percentile": 0.0324,
+   "percentile": 0.0,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": 0.0,
-     "percentile": 0.0698,
+     "percentile": 0.0632,
      "basis": "universe",
      "display": "0,00×",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.2941,
+     "basis": "sector",
+     "display": "Kısmen",
      "tier": "alt dilim"
     }
    ]
@@ -111,17 +120,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.4,
+   "score": 4.5,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.26,
+   "percentile": 0.2292,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.222,
+     "percentile": 0.2273,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -131,17 +140,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.4,
+   "score": 7.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1064,
+   "percentile": 0.1111,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 121.0,
-     "percentile": 0.4696,
+     "percentile": 0.4388,
      "basis": "sector",
      "display": "121",
      "tier": "orta dilim"
@@ -150,7 +159,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5797,
-     "percentile": 0.2675,
+     "percentile": 0.2606,
      "basis": "sector",
      "display": "%0,58",
      "tier": "alt dilim"
@@ -159,7 +168,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.125,
-     "percentile": 0.6191,
+     "percentile": 0.6372,
      "basis": "sector",
      "display": "%12",
      "tier": "orta dilim"
@@ -167,8 +176,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.075975,
-     "percentile": 0.2221,
+     "value": 1.078713,
+     "percentile": 0.2307,
      "basis": "sector",
      "display": "1,1 yıl",
      "tier": "alt dilim"
@@ -177,7 +186,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.274,
+     "percentile": 0.2703,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -185,14 +194,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Gelirin yeni arzın değerine oranı verisi artık mevcut.",
-   "part": "value_capture",
-   "delta": -2.8,
-   "label": "Gelirin yeni arzın değerine oranı verisi artık mevcut. (Değer yakalama −2,8)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -241,6 +243,10 @@
   [
    "2026-11-04",
    25.08
+  ],
+  [
+   "2026-11-05",
+   26.52
   ]
  ],
  "changes": [
@@ -304,21 +310,21 @@
   }
  ],
  "trend": {
-  "rank_now": 685,
-  "rank_start": 366,
+  "rank_now": 675,
+  "rank_start": 381,
   "score": 0,
   "rise": 0,
   "steady": 8,
   "calm": 0,
   "weeks_up": 1,
-  "weeks_down": 11,
+  "weeks_down": 10,
   "weeks_total": 12,
   "weekly": [
    -1,
    -1,
    -1,
    -1,
-   -1,
+   0,
    -1,
    -1,
    -1,
@@ -350,11 +356,38 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/kgen",
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "service_payment",
+   "revenue_share",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://coinmarketcap.com/currencies/kgen/",
+  "note": "KGEN ekosistem içi ödemelerde, stake ile gelir paylaşımında, ödül dağıtımında ve yönetişim oylamalarında kullanılır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
- "value_transfer_pending": null,
+ "allocation": {
+  "insiders": 0.38,
+  "vesting_end": null,
+  "source": "https://tokenomist.ai/kgen/fundraising",
+  "note": "Toplam arzın %22'si ekip ve danışmanlara, %16'sı ise erken aşama yatırımcılara tahsis edilmiştir.",
+  "researched_at": "2026-11-04"
+ },
+ "value_transfer_pending": {
+  "mechanism": "burn",
+  "status": "announced",
+  "expected": null,
+  "source": "https://coinmarketcap.com/currencies/kgen/",
+  "note": "KGeN 2.0 ile AI veri sözleşmelerinden elde edilen gelirlerin belirli bir payıyla zincir üstü geri alım ve yakım duyurulmuştur.",
+  "researched_at": "2026-11-04"
+ },
  "usage_share": null,
  "exchanges": [
   "Bitget",
@@ -364,5 +397,7 @@
   "Kraken"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.38
+ }
 }

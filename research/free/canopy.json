@@ -1,0 +1,77 @@
+{
+ "slug": "canopy",
+ "schema": 2,
+ "name": "Canopy",
+ "symbol": "CNPY",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-05",
+ "pages": [
+  "https://canopy-network.gitbook.io/docs/canopy-network/core-features",
+  "https://www.canopynetwork.org/",
+  "https://www.canopynetwork.org/about",
+  "https://canopy-network.gitbook.io/docs/canopy-network/understand-the-protocol/state-machine",
+  "https://canopy-network.gitbook.io/docs/canopy-network/why-canopy",
+  "https://www.mexc.com/price/CNPY/tokenomics",
+  "https://canopy-network.gitbook.io/docs/canopy-network/canopy-economics",
+  "https://coinmarketcap.com/currencies/canopy/"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://canopy-network.gitbook.io/docs/canopy-network/canopy-economics",
+   "note": "CNPY arzı, yaklaşık iki yılda bir yarıya inen azalan bir blok ödül programını takip eder.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://canopy-network.gitbook.io/docs/canopy-network/understand-the-protocol/state-machine",
+   "note": "Protokol, BFT güvenliğini ihlal eden veya imza atmayan doğrulayıcılar için düzenli olarak yakım (slash) mekanizması uygular.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "collateral",
+     "stake_to_operate"
+    ]
+   },
+   "source": "https://canopy-network.gitbook.io/docs/canopy-network/canopy-economics",
+   "note": "CNPY işlem ücretleri, ağ güvenliği için teminat ve doğrulayıcı staking işlemleri için gereklidir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Holders",
+    "value": 14690.0,
+    "unit": "addresses",
+    "as_of": "2026-11-05",
+    "confirmed": true
+   },
+   "source": "https://coinmarketcap.com/currencies/canopy/",
+   "note": "Ağdaki toplam token sahibi sayısı 14.690 olarak kaydedilmiştir.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  }
+ ],
+ "queue": {
+  "priority": 0,
+  "reason": "eleme için ikinci görüş"
+ },
+ "usage": {
+  "input_tokens": 15429,
+  "output_tokens": 918
+ }
+}

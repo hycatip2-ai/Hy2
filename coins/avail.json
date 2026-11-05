@@ -9,29 +9,30 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 44,
- "total_exact": 43.85,
- "band": "Zayıf",
- "delta": -0.5,
+ "total": 51,
+ "total_exact": 50.91,
+ "band": "Orta",
+ "delta": 7.1,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: arzı ağın açık kuralı belirler; yılda %5 artıyor (sınır %10).",
+  "source": "https://docs.availproject.org/docs/da/user-guides/staking-governance/overview",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -50,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.5,
+   "score": 5.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2874,
+   "percentile": 0.1685,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.364576,
-     "percentile": 0.3492,
+     "value": 0.364656,
+     "percentile": 0.3526,
      "basis": "sector",
      "display": "%36",
      "tier": "orta dilim"
@@ -68,8 +69,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.742909,
-     "percentile": 0.3507,
+     "value": 2.742307,
+     "percentile": 0.3535,
      "basis": "sector",
      "display": "2,74×",
      "tier": "orta dilim"
@@ -77,10 +78,19 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.03421,
-     "percentile": 0.2794,
+     "value": 0.034182,
+     "percentile": 0.2713,
      "basis": "sector",
      "display": "+%3,4",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.5171,
+     "percentile": 0.087,
+     "basis": "universe",
+     "display": "%52",
      "tier": "alt dilim"
     }
    ]
@@ -88,27 +98,37 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.5,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.89,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 17.0,
+   "score": 16.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9803,
+   "percentile": 0.9551,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 5.0,
-     "percentile": 0.8522,
+     "percentile": 0.8327,
      "basis": "sector",
      "display": "5",
      "tier": "üst dilim"
@@ -118,26 +138,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.0,
+   "score": 6.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0977,
+   "percentile": 0.1011,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 71.0,
-     "percentile": 0.1902,
+     "value": 72.0,
+     "percentile": 0.1963,
      "basis": "sector",
-     "display": "71",
+     "display": "72",
      "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5757,
-     "percentile": 0.2479,
+     "percentile": 0.2621,
      "basis": "sector",
      "display": "%0,58",
      "tier": "alt dilim"
@@ -146,7 +166,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2353,
-     "percentile": 0.2503,
+     "percentile": 0.2645,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -154,8 +174,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.28063,
-     "percentile": 0.5189,
+     "value": 2.283368,
+     "percentile": 0.5202,
      "basis": "sector",
      "display": "2,3 yıl",
      "tier": "orta dilim"
@@ -163,7 +183,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token gerekli mi verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 8.52,
+   "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +8,5)"
+  },
+  {
+   "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+   "part": "supply",
+   "delta": -1.21,
+   "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −1,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -212,6 +245,10 @@
   [
    "2026-11-04",
    43.85
+  ],
+  [
+   "2026-11-05",
+   50.91
   ]
  ],
  "changes": [
@@ -244,6 +281,27 @@
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +9,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.1,
+   "from": 43.9,
+   "to": 50.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 8.52,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +8,5)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.21,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −1,2)"
+    }
+   ]
   }
  ],
  "events": [
@@ -260,21 +318,83 @@
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +9,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.1,
+   "from": 43.9,
+   "to": 50.9,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 8.52,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +8,5)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.21,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −1,2)"
+    }
+   ]
   }
  ],
  "trend": null,
  "chain": null,
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Founders Fund",
+  "Dragonfly Capital",
+  "Cyber Fund",
+  "SevenX Ventures",
+  "Figment Capital",
+  "Nomad Capital",
+  "LocalGlobe",
+  "Altos Ventures",
+  "Chapter One",
+  "KR1",
+  "Alliance DAO",
+  "HashKey Capital"
+ ],
+ "investors_source": "https://blog.availproject.org/avail-raises-a-total-of-75m-to-build-unification-layer-for-web3/",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "stake_to_operate",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://docs.availproject.org/docs/da/user-guides/staking-governance/overview",
+  "note": "AVAIL, veri yayınlama ücretleri, doğrulayıcı staking, emisyon ödülleri ve zincir üstü yönetişim için zorunludur.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "signed_extrinsics",
+  "value": 2460320.0,
+  "unit": "extrinsics",
+  "as_of": "2026-11-04",
+  "confirmed": true,
+  "source": "https://avail.subscan.io/?ref=blog.availproject.org",
+  "note": "Avail Subscan blok gezgini verilerine göre ana ağda toplam 2.460.320 imzalı işlem (extrinsic) gerçekleşmiştir.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.3413,
+  "vesting_end": "2028-07",
+  "source": "https://docs.availproject.org/docs/da/user-guides/staking-governance/overview",
+  "note": "Geliştiricilere %20, yatırımcılara %14,125 ayrılmış olup ekip hak edişi Temmuz 2028'de tamamlanmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -284,5 +404,7 @@
   "HTX"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.3413
+ }
 }

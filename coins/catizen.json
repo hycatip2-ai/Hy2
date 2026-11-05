@@ -10,9 +10,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 48,
- "total_exact": 47.97,
+ "total_exact": 47.9,
  "band": "Zayıf",
- "delta": -0.4,
+ "delta": -0.1,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -21,16 +21,17 @@
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
+  "source": "https://docs.catizen.ai/usdcati-tokenomics",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
-  "arz kuralı"
+  "kullanım kanıtı"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -49,17 +50,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.2,
+   "score": 13.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6988,
+   "percentile": 0.7229,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.565507,
-     "percentile": 0.4885,
+     "percentile": 0.499,
      "basis": "sector",
      "display": "%57",
      "tier": "orta dilim"
@@ -68,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.768325,
-     "percentile": 0.5124,
+     "percentile": 0.5233,
      "basis": "sector",
      "display": "1,77×",
      "tier": "orta dilim"
@@ -76,10 +77,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.155536,
-     "percentile": 0.9772,
+     "value": -0.154032,
+     "percentile": 0.9663,
      "basis": "sector",
-     "display": "−%16",
+     "display": "−%15",
      "tier": "üst dilim"
     }
    ]
@@ -107,7 +108,7 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.8,
+   "score": 13.6,
    "has_data": true,
    "weight": 20,
    "percentile": 0.9518,
@@ -117,7 +118,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 195.0,
-     "percentile": 0.8772,
+     "percentile": 0.8771,
      "basis": "sector",
      "display": "195",
      "tier": "üst dilim"
@@ -126,7 +127,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2206,
-     "percentile": 0.8228,
+     "percentile": 0.8143,
      "basis": "sector",
      "display": "%0,22",
      "tier": "üst dilim"
@@ -135,7 +136,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1277,
-     "percentile": 0.587,
+     "percentile": 0.5662,
      "basis": "sector",
      "display": "%13",
      "tier": "orta dilim"
@@ -143,8 +144,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.140999,
-     "percentile": 0.4696,
+     "value": 2.143737,
+     "percentile": 0.4713,
      "basis": "sector",
      "display": "2,1 yıl",
      "tier": "orta dilim"
@@ -201,6 +202,10 @@
   [
    "2026-11-04",
    47.97
+  ],
+  [
+   "2026-11-05",
+   47.9
   ]
  ],
  "changes": [
@@ -222,8 +227,8 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 607,
-  "rank_start": 525,
+  "rank_now": 614,
+  "rank_start": 504,
   "score": 0,
   "rise": 0,
   "steady": 33,
@@ -246,7 +251,7 @@
    -1
   ],
   "labels": [],
-  "trend": "falling",
+  "trend": "flat",
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
@@ -269,7 +274,13 @@
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.37,
+  "vesting_end": "2029-09",
+  "source": "https://docs.catizen.ai/usdcati-tokenomics",
+  "note": "Takım (%20), yatırımcılar (%10) ve danışmanlar (%7) toplam %37 pay alır; 12 ay uçurum ve 48 ay lineer dağıtımla Eylül 2029'da biter.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -281,5 +292,7 @@
   "MEXC"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.37
+ }
 }

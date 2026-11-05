@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 92,
  "slug": "law-blocks",
  "symbol": "LBT",
  "name": "Law Blocks (AI)",
@@ -9,29 +9,28 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 37,
- "total_exact": 36.81,
+ "total": 42,
+ "total_exact": 41.58,
  "band": "Zayıf",
- "delta": -0.3,
+ "delta": 4.8,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
+  "source": "https://xdcscan.com/token/0x05940b2df33d6371201e7ae099ced4c363855dfe",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
- "eligible_for_top": false,
- "missing": [
-  "kullanım kanıtı",
-  "arz kuralı"
- ],
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -49,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.7,
+   "score": 8.9,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.5106,
+   "percentile": 0.5556,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.244998,
-     "percentile": 0.1823,
+     "percentile": 0.1896,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -68,7 +67,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.081666,
-     "percentile": 0.2349,
+     "percentile": 0.2438,
      "basis": "sector",
      "display": "4,08×",
      "tier": "alt dilim"
@@ -77,7 +76,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.885,
+     "percentile": 0.8975,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -87,27 +86,37 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.6,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.8704,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7783,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.4,
+   "score": 4.5,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.26,
+   "percentile": 0.2292,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.222,
+     "percentile": 0.2273,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -120,14 +129,14 @@
    "score": 11.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.7447,
+   "percentile": 0.7556,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 8.0,
-     "percentile": 0.021,
+     "percentile": 0.0217,
      "basis": "sector",
      "display": "8",
      "tier": "alt dilim"
@@ -136,7 +145,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4154,
-     "percentile": 0.4655,
+     "percentile": 0.4501,
      "basis": "sector",
      "display": "%0,42",
      "tier": "orta dilim"
@@ -145,7 +154,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.92,
+     "percentile": 0.9334,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -153,8 +162,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.314853,
-     "percentile": 0.8277,
+     "value": 4.317591,
+     "percentile": 0.8384,
      "basis": "sector",
      "display": "4,3 yıl",
      "tier": "üst dilim"
@@ -162,7 +171,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token gerekli mi verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 4.28,
+   "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +4,3)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -211,29 +227,49 @@
   [
    "2026-11-04",
    36.81
+  ],
+  [
+   "2026-11-05",
+   41.58
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": 4.8,
+   "from": 36.8,
+   "to": 41.6,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 4.28,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +4,3)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": {
-  "rank_now": 267,
-  "rank_start": 258,
+  "rank_now": 270,
+  "rank_start": 261,
   "score": 0,
   "rise": 0,
-  "steady": 42,
+  "steady": 58,
   "calm": 0,
-  "weeks_up": 5,
+  "weeks_up": 7,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
-   0,
+   1,
    -1,
    -1,
    -1,
    1,
    -1,
    -1,
-   0,
+   1,
    1,
    1,
    1,
@@ -261,12 +297,37 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment"
+  ],
+  "source": "https://lawblocks.io/tokenomics",
+  "note": "LBT, platform abonelikleri, tahkim, arabuluculuk ve hukuki hizmetlerin ödenmesinde kullanılmaktadır.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "token_holders",
+  "value": 7561.0,
+  "unit": "holders",
+  "as_of": "2026-08-04",
+  "confirmed": true,
+  "source": "https://xdcscan.com/token/0x05940b2df33d6371201e7ae099ced4c363855dfe",
+  "note": "XDCScan blok gezgini verilerine göre LBT token sahibi cüzdan sayısı 7.561'dir.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.32,
+  "vesting_end": null,
+  "source": "https://lawblocks.io/tokenomics",
+  "note": "Kuruculara %20, çekirdek ekibe %2 ve özel satış yatırımcılarına %10 olmak üzere toplam %32 ayrılmıştır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.32
+ }
 }

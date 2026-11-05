@@ -10,22 +10,24 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 40,
- "total_exact": 39.97,
+ "total_exact": 40.5,
  "band": "Zayıf",
- "delta": 0.9,
+ "delta": 0.5,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: yeni token basma ya da basım oranını değiştirme yetkisi bir grupta, kesin üst sınır belgelenmemiş. Kendin araştır.",
+  "source": "https://growunited.com/",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -50,7 +52,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.9,
+   "score": 14.8,
    "has_data": true,
    "weight": 20,
    "percentile": 0.8434,
@@ -60,7 +62,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.963163,
-     "percentile": 0.7847,
+     "percentile": 0.785,
      "basis": "sector",
      "display": "%96",
      "tier": "üst dilim"
@@ -69,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.269058,
-     "percentile": 0.7091,
+     "percentile": 0.6988,
      "basis": "sector",
      "display": "1,27×",
      "tier": "üst dilim"
@@ -79,27 +81,37 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 7.6,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.3375,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3298,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2857,
+     "percentile": 0.289,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -119,7 +131,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 27.0,
-     "percentile": 0.2517,
+     "percentile": 0.2722,
      "basis": "sector",
      "display": "27",
      "tier": "alt dilim"
@@ -128,7 +140,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6149,
-     "percentile": 0.3191,
+     "percentile": 0.3092,
      "basis": "sector",
      "display": "%0,61",
      "tier": "alt dilim"
@@ -145,8 +157,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.313484,
-     "percentile": 0.4924,
+     "value": 2.316222,
+     "percentile": 0.4839,
      "basis": "sector",
      "display": "2,3 yıl",
      "tier": "orta dilim"
@@ -171,6 +183,10 @@
   [
    "2026-11-04",
    39.97
+  ],
+  [
+   "2026-11-05",
+   40.5
   ]
  ],
  "changes": [],
@@ -185,7 +201,16 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://growunited.com/",
+  "note": "Token, ekosistem ürünleri ve hizmetleri için fayda sağlamakta ve yönetişim oylamalarında kullanılmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,

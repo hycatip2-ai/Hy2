@@ -9,28 +9,29 @@
  "us_exchanges": [],
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 31,
- "total_exact": 30.9,
+ "total": 35,
+ "total_exact": 34.9,
  "band": "Zayıf",
- "delta": -0.4,
+ "delta": 4.0,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: arzı ağın açık kuralı belirler; arz artmıyor.",
+  "source": "https://www.nocktane.com/news/block-170501-reward-cut/",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
-  "arz kuralı"
+  "kullanım kanıtı"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -49,17 +50,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.8,
+   "score": 7.6,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.3944,
+   "percentile": 0.3801,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.552645,
-     "percentile": 0.4504,
+     "percentile": 0.4541,
      "basis": "universe",
      "display": "%55",
      "tier": "orta dilim"
@@ -68,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.80948,
-     "percentile": 0.4682,
+     "percentile": 0.4719,
      "basis": "universe",
      "display": "1,81×",
      "tier": "orta dilim"
@@ -76,23 +77,42 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.049509,
-     "percentile": 0.2559,
+     "value": 0.048976,
+     "percentile": 0.2546,
      "basis": "universe",
-     "display": "+%5,0",
+     "display": "+%4,9",
      "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0839,
+     "percentile": 0.3478,
+     "basis": "universe",
+     "display": "%8,4",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.5,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.8146,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -100,7 +120,7 @@
    "score": 3.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.103,
+   "percentile": 0.096,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -117,17 +137,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0763,
+   "percentile": 0.0791,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 42.0,
-     "percentile": 0.1781,
+     "percentile": 0.1786,
      "basis": "universe",
      "display": "42",
      "tier": "alt dilim"
@@ -136,7 +156,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6636,
-     "percentile": 0.2188,
+     "percentile": 0.2193,
      "basis": "universe",
      "display": "%0,66",
      "tier": "alt dilim"
@@ -145,7 +165,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1429,
-     "percentile": 0.5729,
+     "percentile": 0.5705,
      "basis": "universe",
      "display": "%14",
      "tier": "orta dilim"
@@ -153,8 +173,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.03217,
-     "percentile": 0.1768,
+     "value": 1.034908,
+     "percentile": 0.1824,
      "basis": "universe",
      "display": "1,0 yıl",
      "tier": "alt dilim"
@@ -162,7 +182,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token gerekli mi verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 4.26,
+   "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +4,3)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -207,6 +234,10 @@
   [
    "2026-11-04",
    30.9
+  ],
+  [
+   "2026-11-05",
+   34.9
   ]
  ],
  "changes": [
@@ -230,14 +261,29 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,6)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 4.0,
+   "from": 30.9,
+   "to": 34.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 4.26,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +4,3)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 489,
-  "rank_start": 564,
-  "score": 37,
-  "rise": 57,
+  "rank_now": 448,
+  "rank_start": 574,
+  "score": 39,
+  "rise": 64,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
@@ -268,29 +314,61 @@
    }
   ],
   "trend": "rising",
-  "supply_share": 0.18,
+  "supply_share": 0.17,
   "eligible": false,
   "window_days": 90,
   "score_change": null,
   "double": false
  },
  "chain": null,
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
+ "investors": [
+  "Delphi Ventures",
+  "North Island Ventures",
+  "CMCC Global",
+  "Portal Ventures",
+  "Champion Hill Ventures",
+  "Breed VC",
+  "Octu Ventures",
+  "Labyrinth DAO",
+  "Assembly Capital"
+ ],
+ "investors_source": "https://zorp.io/blog/seed",
+ "angel_investors": [
+  "Avi Zurlo"
+ ],
+ "angel_investors_source": "https://members.delphidigital.io/feed/nock",
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "emission_rewards"
+  ],
+  "source": "https://www.nockchain.org/writings/transactions",
+  "note": "NOCK, ağ üzerindeki işlem ücretlerini karşılamak ve madencilere blok ödüllerini dağıtmak için zorunludur.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.0764,
+  "vesting_end": "2028-05",
+  "source": "https://nockscan.com/economics",
+  "note": "Zorp madenciliğinden yatırımcılara 211M, ekibe 117M NOCK (%7,64) ayrılmıştır; hak ediş Mayıs 2028'de tamamlanır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
   "Kraken"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.0764
+ }
 }

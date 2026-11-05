@@ -11,13 +11,13 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 40,
- "total_exact": 39.87,
+ "total": 39,
+ "total_exact": 39.16,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": -0.7,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -27,7 +27,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -56,14 +56,14 @@
    "score": 8.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4458,
+   "percentile": 0.4337,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.464316,
-     "percentile": 0.3571,
+     "percentile": 0.3573,
      "basis": "sector",
      "display": "%46",
      "tier": "orta dilim"
@@ -72,7 +72,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.153706,
-     "percentile": 0.3887,
+     "percentile": 0.3889,
      "basis": "sector",
      "display": "2,15×",
      "tier": "orta dilim"
@@ -81,7 +81,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5382,
+     "percentile": 0.5374,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -91,27 +91,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.2,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.15,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1774,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3298,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2857,
+     "percentile": 0.289,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -124,14 +143,14 @@
    "score": 11.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.747,
+   "percentile": 0.7349,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 128.0,
-     "percentile": 0.6841,
+     "percentile": 0.7048,
      "basis": "sector",
      "display": "128",
      "tier": "üst dilim"
@@ -140,7 +159,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4259,
-     "percentile": 0.5475,
+     "percentile": 0.5483,
      "basis": "sector",
      "display": "%0,43",
      "tier": "orta dilim"
@@ -149,16 +168,16 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0909,
-     "percentile": 0.6803,
+     "percentile": 0.6596,
      "basis": "sector",
      "display": "%9,1",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.730322,
-     "percentile": 0.4067,
+     "value": 1.73306,
+     "percentile": 0.4084,
      "basis": "sector",
      "display": "1,7 yıl",
      "tier": "orta dilim"
@@ -215,19 +234,23 @@
   [
    "2026-11-04",
    39.87
+  ],
+  [
+   "2026-11-05",
+   39.16
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 542,
-  "rank_start": 607,
-  "score": 41,
-  "rise": 60,
-  "steady": 42,
+  "rank_now": 532,
+  "rank_start": 610,
+  "score": 38,
+  "rise": 63,
+  "steady": 33,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 6,
+  "weeks_up": 4,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -237,20 +260,16 @@
    1,
    -1,
    1,
-   0,
+   -1,
    -1,
    1,
-   1,
+   0,
    -1
   ],
   "labels": [
    {
     "id": "spike",
     "text": "Ani sıçrama"
-   },
-   {
-    "id": "wavy",
-    "text": "Dalgalı"
    }
   ],
   "trend": "rising",
@@ -274,9 +293,25 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "service_payment",
+   "emission_rewards"
+  ],
+  "source": "https://docs.b3.fun/protocol/tokenomics",
+  "note": "B3; yönetişim, oyun fonlama/erişim ve stake ödüllerinde kullanılır, ağ kullanımı için zorunlu değildir.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.433,
+  "vesting_end": "2029-01",
+  "source": "https://docs.b3.fun/protocol/tokenomics",
+  "note": "Takım & danışmanlar (%23,3) ve yatırımcılara (%20,0) toplam %43,3 ayrılmış olup 4 yıllık hak ediş Ocak 2029'da biter.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -288,6 +323,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 2268264
+  "holder_count": 2268264,
+  "insider_share": 0.433
  }
 }

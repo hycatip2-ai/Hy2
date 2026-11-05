@@ -11,10 +11,10 @@
  ],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 59,
- "total_exact": 59.35,
+ "total": 60,
+ "total_exact": 59.83,
  "band": "Orta",
- "delta": 8.4,
+ "delta": 0.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -31,7 +31,7 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -54,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 3.8,
+   "score": 4.0,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.0213,
+   "percentile": 0.0222,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.130468,
-     "percentile": 0.027,
+     "percentile": 0.0279,
      "basis": "sector",
      "display": "%13",
      "tier": "alt dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 7.664742,
-     "percentile": 0.0428,
+     "percentile": 0.0441,
      "basis": "sector",
      "display": "7,66×",
      "tier": "alt dilim"
@@ -82,7 +82,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5062,
+     "percentile": 0.5223,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -92,27 +92,27 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 14.4,
+   "score": 14.9,
    "has_data": true,
    "weight": 10,
-   "percentile": 0.7454,
+   "percentile": 0.6852,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "buyback_burn",
      "name": "Geri alım / yakım",
      "value": 1.0,
-     "percentile": 0.6111,
+     "percentile": 0.6827,
      "basis": "universe",
      "display": "Düzenli",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 1.0,
-     "percentile": 0.7778,
-     "basis": "universe",
+     "percentile": 0.7783,
+     "basis": "sector",
      "display": "Zorunlu",
      "tier": "üst dilim"
     }
@@ -121,17 +121,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 18.6,
+   "score": 18.5,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.96,
+   "percentile": 0.9583,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 10.0,
-     "percentile": 0.9289,
+     "percentile": 0.9256,
      "basis": "sector",
      "display": "10",
      "tier": "üst dilim"
@@ -141,17 +141,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.0,
+   "score": 11.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6809,
+   "percentile": 0.7333,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 240.0,
-     "percentile": 0.9708,
+     "percentile": 0.9699,
      "basis": "sector",
      "display": "240",
      "tier": "üst dilim"
@@ -160,7 +160,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2258,
-     "percentile": 0.837,
+     "percentile": 0.8496,
      "basis": "sector",
      "display": "%0,23",
      "tier": "üst dilim"
@@ -169,7 +169,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1724,
-     "percentile": 0.3458,
+     "percentile": 0.3716,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -177,8 +177,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.520192,
-     "percentile": 0.0465,
+     "value": 0.52293,
+     "percentile": 0.0495,
      "basis": "sector",
      "display": "0,5 yıl",
      "tier": "alt dilim"
@@ -186,20 +186,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
-   "part": "bonus",
-   "delta": 5.0,
-   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
-  },
-  {
-   "text": "Geri alım / yakım verisi artık mevcut.",
-   "part": "value_capture",
-   "delta": 3.72,
-   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +3,7)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -240,6 +227,10 @@
   [
    "2026-11-04",
    59.35
+  ],
+  [
+   "2026-11-05",
+   59.83
   ]
  ],
  "changes": [
@@ -346,20 +337,20 @@
   }
  ],
  "trend": {
-  "rank_now": 651,
-  "rank_start": 515,
+  "rank_now": 647,
+  "rank_start": 513,
   "score": 0,
   "rise": 0,
-  "steady": 17,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 2,
+  "weeks_up": 3,
   "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    0,
    -1,
    -1,
-   0,
+   1,
    -1,
    -1,
    -1,

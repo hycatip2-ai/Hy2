@@ -5,61 +5,77 @@
  "name": "StonkBroker",
  "cmc_id": 40978,
  "graduated": false,
- "chain_flow": null,
+ "chain_flow": "Robinhood Chain",
  "us_exchanges": [],
- "sector": "other",
- "sector_name": "Diğer",
- "total": 40,
- "total_exact": 39.5,
- "band": "Zayıf",
+ "sector": "infra",
+ "sector_name": "Altyapı",
+ "total": 69,
+ "total_exact": 68.95,
+ "band": "Orta",
  "delta": null,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": 0.3797,
+  "revenue_90d": 900484,
+  "source": "DefiLlama",
+  "dilution": 0.0,
+  "net_yield": 0.3797,
+  "mechanism": "buyback_burn"
+ },
  "supply": {
   "status": "unchecked",
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
- "revenue_unmeasured": true,
- "date": "2026-11-02",
+ "revenue_unmeasured": false,
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 9.0,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.4219,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 6.924829,
+     "percentile": 0.4516,
+     "basis": "universe",
+     "display": "6,92×",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.4,
+   "score": 12.2,
    "has_data": true,
-   "weight": 20,
-   "percentile": 0.642,
-   "tier": "orta dilim",
+   "weight": 25,
+   "percentile": 0.7778,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.529107,
-     "percentile": 0.4336,
+     "value": 0.529366,
+     "percentile": 0.4152,
      "basis": "sector",
      "display": "%53",
      "tier": "orta dilim"
@@ -67,8 +83,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.950208,
-     "percentile": 0.4434,
+     "value": 1.949353,
+     "percentile": 0.4184,
      "basis": "sector",
      "display": "1,95×",
      "tier": "orta dilim"
@@ -76,10 +92,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.195492,
-     "percentile": 0.9785,
+     "value": -0.186072,
+     "percentile": 0.9956,
      "basis": "sector",
-     "display": "−%20",
+     "display": "−%19",
      "tier": "üst dilim"
     }
    ]
@@ -87,46 +103,93 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
-   "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "score": 17.2,
+   "has_data": true,
+   "weight": 15,
+   "percentile": 0.9888,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "holders_revenue_share",
+     "name": "Token sahibine dönen gelir payı",
+     "value": 0.176092,
+     "percentile": 0.7742,
+     "basis": "universe",
+     "display": "%18",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": 0.379708,
+     "percentile": 1.0,
+     "basis": "universe",
+     "display": "+%38",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": null,
+     "percentile": 0.7586,
+     "basis": "universe",
+     "display": "Yeni arz yok",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
-   "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "score": 18.9,
+   "has_data": true,
+   "weight": 25,
+   "percentile": 1.0,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 2.622487,
+     "percentile": 0.8932,
+     "basis": "universe",
+     "display": "+%162",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": 8.196607,
+     "percentile": 1.0,
+     "basis": "universe",
+     "display": "+%820",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.1,
+   "score": 4.2,
    "has_data": true,
-   "weight": 20,
-   "percentile": 0.1477,
+   "weight": 15,
+   "percentile": 0.0,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 89.0,
-     "percentile": 0.5307,
+     "value": 90.0,
+     "percentile": 0.1971,
      "basis": "sector",
-     "display": "89",
-     "tier": "orta dilim"
+     "display": "90",
+     "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4837,
-     "percentile": 0.4772,
+     "percentile": 0.4473,
      "basis": "sector",
      "display": "%0,48",
      "tier": "orta dilim"
@@ -135,7 +198,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1481,
+     "percentile": 0.0862,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -143,10 +206,19 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.240931,
-     "percentile": 0.071,
+     "value": 0.249144,
+     "percentile": 0.0122,
      "basis": "sector",
      "display": "0,2 yıl",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.3033,
+     "basis": "sector",
+     "display": "0",
      "tier": "alt dilim"
     }
    ]
@@ -157,6 +229,10 @@
   [
    "2026-11-02",
    39.5
+  ],
+  [
+   "2026-11-05",
+   68.95
   ]
  ],
  "changes": [],
@@ -164,9 +240,9 @@
  "trend": null,
  "chain": {
   "name": "Robinhood Chain",
-  "source": "contract",
-  "flow": false,
-  "flow_rank": null
+  "source": "tvl",
+  "flow": true,
+  "flow_rank": 1
  },
  "investors": [],
  "investors_source": null,
@@ -174,14 +250,17 @@
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/stonkbrokers",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
- "exchanges": null,
+ "exchanges": [
+  "Gate",
+  "MEXC"
+ ],
  "delisted": [],
  "recorded": null
 }

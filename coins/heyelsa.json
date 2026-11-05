@@ -11,30 +11,34 @@
  ],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 40,
- "total_exact": 39.79,
+ "total": 44,
+ "total_exact": 43.7,
  "band": "Zayıf",
- "delta": 0.0,
+ "delta": 3.9,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Base",
   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca"
@@ -53,17 +57,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.6,
+   "score": 5.1,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.2234,
+   "percentile": 0.1111,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.255647,
-     "percentile": 0.2341,
+     "percentile": 0.2431,
      "basis": "sector",
      "display": "%26",
      "tier": "alt dilim"
@@ -72,7 +76,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.911649,
-     "percentile": 0.2716,
+     "percentile": 0.2818,
      "basis": "sector",
      "display": "3,91×",
      "tier": "alt dilim"
@@ -81,37 +85,65 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.482,
+     "percentile": 0.4973,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 1.138,
+     "percentile": 0.0,
+     "basis": "universe",
+     "display": "%114",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 8.5,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.4815,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.2941,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.7,
+   "score": 11.0,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.62,
+   "percentile": 0.6458,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.5355,
+     "percentile": 0.5483,
      "basis": "sector",
      "display": "1",
      "tier": "orta dilim"
@@ -124,14 +156,14 @@
    "score": 6.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0851,
+   "percentile": 0.0889,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 114.0,
-     "percentile": 0.3844,
+     "percentile": 0.3665,
      "basis": "sector",
      "display": "114",
      "tier": "orta dilim"
@@ -140,7 +172,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3176,
-     "percentile": 0.6482,
+     "percentile": 0.6394,
      "basis": "sector",
      "display": "%0,32",
      "tier": "orta dilim"
@@ -149,7 +181,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2069,
-     "percentile": 0.238,
+     "percentile": 0.2611,
      "basis": "sector",
      "display": "%21",
      "tier": "alt dilim"
@@ -157,8 +189,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.793977,
-     "percentile": 0.0893,
+     "value": 0.796715,
+     "percentile": 0.0936,
      "basis": "sector",
      "display": "0,8 yıl",
      "tier": "alt dilim"
@@ -166,7 +198,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+   "part": "supply",
+   "delta": -2.21,
+   "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −2,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -215,6 +260,10 @@
   [
    "2026-11-04",
    39.79
+  ],
+  [
+   "2026-11-05",
+   43.7
   ]
  ],
  "changes": [
@@ -236,6 +285,27 @@
      "part": "liquidity",
      "delta": 1.08,
      "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,1)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 3.9,
+   "from": 39.8,
+   "to": 43.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": -2.21,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz −2,2)"
     }
    ]
   }
@@ -263,28 +333,28 @@
   }
  ],
  "trend": {
-  "rank_now": 717,
-  "rank_start": 760,
-  "score": 27,
-  "rise": 35,
+  "rank_now": 576,
+  "rank_start": 763,
+  "score": 29,
+  "rise": 39,
   "steady": 33,
   "calm": 0,
   "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    -1,
    -1,
+   1,
+   1,
+   0,
+   0,
+   -1,
+   -1,
    0,
    1,
-   0,
    1,
-   -1,
-   -1,
-   -1,
-   1,
-   1,
-   -1
+   0
   ],
   "labels": [
    {
@@ -309,17 +379,49 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
+ "investors": [
+  "M31 Capital",
+  "Base Ecosystem Fund",
+  "MH Ventures",
+  "Absoluta Capital",
+  "2Shares",
+  "Levitate Labs"
+ ],
+ "investors_source": "https://blog.heyelsa.ai/heyelsa-raises-3m-to-build-ai-stack-for-crypto/",
+ "angel_investors": [
+  "Martin Ochwat",
+  "Jonathan Man",
+  "Jaskanwar Singh",
+  "Alexey Bondar",
+  "Yonatan Ben Shimon"
+ ],
+ "angel_investors_source": "https://blog.heyelsa.ai/heyelsa-raises-3m-to-build-ai-stack-for-crypto/",
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "fee_discount",
+   "service_payment",
+   "governance"
+  ],
+  "source": "https://docs.heyelsa.ai/elsa-white-paper/heyelsa-mica-whitepaper",
+  "note": "ELSA otomasyon ve yürütme ücreti indirimleri, x402 mikro ödemeleri ve protokol yönetişimi için kullanılmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.1751,
+  "vesting_end": "2029-01",
+  "source": "https://docs.heyelsa.ai/elsa-white-paper/heyelsa-mica-whitepaper",
+  "note": "Ekip (%7) ve yatırımcılara (%10,51) toplam %17,51 ayrılmış olup 12 ay uçurum ve 24 ay vesting ile 2029-01'de tamamlanmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -331,6 +433,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 241417
+  "holder_count": 241417,
+  "insider_share": 0.1751
  }
 }

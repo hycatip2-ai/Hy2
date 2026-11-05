@@ -9,23 +9,25 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 47,
- "total_exact": 47.02,
+ "total": 49,
+ "total_exact": 49.21,
  "band": "Zayıf",
- "delta": -0.6,
+ "delta": 2.2,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: arzı ağın kuralı belirliyor ve yılda %51 artıyor (sınır %10); ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://www.canopynetwork.org/blogs/cnpy-is-collateral-first",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -49,7 +51,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 3.0,
+   "score": 3.1,
    "has_data": true,
    "weight": 30,
    "percentile": 0.0,
@@ -58,8 +60,8 @@
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.270374,
-     "percentile": 0.2874,
+     "value": 0.269998,
+     "percentile": 0.2973,
      "basis": "sector",
      "display": "%27",
      "tier": "alt dilim"
@@ -68,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.342558,
-     "percentile": 0.0097,
+     "percentile": 0.01,
      "basis": "sector",
      "display": "8,34×",
      "tier": "alt dilim"
@@ -78,12 +80,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 11.3,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5741,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1442,
+     "basis": "universe",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7783,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -91,14 +112,14 @@
    "score": 17.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.92,
+   "percentile": 0.9167,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 8.0,
-     "percentile": 0.8922,
+     "percentile": 0.888,
      "basis": "sector",
      "display": "8",
      "tier": "üst dilim"
@@ -111,14 +132,14 @@
    "score": 9.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.383,
+   "percentile": 0.3778,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 146.0,
-     "percentile": 0.5709,
+     "percentile": 0.5604,
      "basis": "sector",
      "display": "146",
      "tier": "orta dilim"
@@ -127,16 +148,16 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3065,
-     "percentile": 0.6709,
+     "percentile": 0.6628,
      "basis": "sector",
      "display": "%0,31",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.125,
-     "percentile": 0.6191,
+     "percentile": 0.6372,
      "basis": "sector",
      "display": "%12",
      "tier": "orta dilim"
@@ -144,8 +165,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.167009,
-     "percentile": 0.018,
+     "value": 0.169747,
+     "percentile": 0.0186,
      "basis": "sector",
      "display": "0,2 yıl",
      "tier": "alt dilim"
@@ -153,7 +174,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 2.17,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -198,6 +226,10 @@
   [
    "2026-11-04",
    47.02
+  ],
+  [
+   "2026-11-05",
+   49.21
   ]
  ],
  "changes": [
@@ -213,6 +245,21 @@
      "part": "usage",
      "delta": 16.36,
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +16,4)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 2.2,
+   "from": 47.0,
+   "to": 49.2,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 2.17,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,2)"
     }
    ]
   }
@@ -240,17 +287,52 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Arrington Capital",
+  "Fenbushi Capital",
+  "Borderless Capital",
+  "SNZ Capital"
+ ],
+ "investors_source": "https://www.canopynetwork.org/blogs/canopy-raises-8-5m-seed-round",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "stake_to_operate",
+   "collateral",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://www.micarwhitepapers.eu/registry/canopy",
+  "note": "CNPY, kök zincirde işlem ücretleri, validatör teminatı ve mutabakat stake işlemleri ile yönetişim için zorunlu varlıktır.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "Block Rocket round 2 participants",
+  "value": 4515.0,
+  "unit": "participants",
+  "as_of": "2026-09-01",
+  "confirmed": true,
+  "source": "https://www.canopynetwork.org/blogs/from-testnet-to-ownership",
+  "note": "Geliştirici odaklı Block Rocket yarışmasının ikinci turunda 4.515 tekil katılımcı ağ üzerinde uygulama geliştirmiştir.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.1393,
+  "vesting_end": "2029-09",
+  "source": "https://www.micarwhitepapers.eu/registry/canopy",
+  "note": "Yatırımcı ve danışmanlara %6,01, çekirdek ekibe %7,92 ayrılmış olup 12 ay uçurum ve 24 ay doğrusal hak edişle 2029-09'da tamamlanır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -259,5 +341,7 @@
   "MEXC"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.1393
+ }
 }

@@ -9,27 +9,28 @@
  "us_exchanges": [],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 41,
- "total_exact": 41.06,
+ "total": 47,
+ "total_exact": 47.27,
  "band": "Zayıf",
- "delta": -0.4,
+ "delta": 6.2,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: token kontratını bir kişi ya da grup değiştirebiliyor (sınırsız basım eklenebilir); ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://storx.tech/pdf/storx-whitepaper-1.pdf",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
   "arz kuralı"
  ],
  "penalty": 0.0,
@@ -49,17 +50,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.0,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.64,
-   "tier": "orta dilim",
+   "percentile": 0.68,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.853634,
-     "percentile": 0.6301,
+     "percentile": 0.6512,
      "basis": "sector",
      "display": "%85",
      "tier": "orta dilim"
@@ -68,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.798561,
-     "percentile": 0.4997,
+     "percentile": 0.5239,
      "basis": "sector",
      "display": "1,80×",
      "tier": "orta dilim"
@@ -77,7 +78,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6703,
+     "percentile": 0.6817,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -87,27 +88,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 11.3,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5309,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1442,
+     "basis": "universe",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 8.0,
+   "score": 8.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2368,
+   "percentile": 0.2632,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 2.0,
-     "percentile": 0.3999,
+     "percentile": 0.4131,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -117,17 +137,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.1,
+   "score": 7.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.04,
+   "percentile": 0.16,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 30.0,
-     "percentile": 0.0829,
+     "percentile": 0.0836,
      "basis": "sector",
      "display": "30",
      "tier": "alt dilim"
@@ -135,8 +155,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.308693,
-     "percentile": 0.6252,
+     "value": 5.311431,
+     "percentile": 0.6486,
      "basis": "sector",
      "display": "5,3 yıl",
      "tier": "orta dilim"
@@ -144,7 +164,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.39,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -193,6 +220,10 @@
   [
    "2026-11-04",
    41.06
+  ],
+  [
+   "2026-11-05",
+   47.27
   ]
  ],
  "changes": [
@@ -210,21 +241,51 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −1,7)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 6.2,
+   "from": 41.1,
+   "to": 47.3,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.39,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,4)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 6.2,
+   "from": 41.1,
+   "to": 47.3,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.39,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,4)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 392,
-  "rank_start": 370,
+  "rank_now": 395,
+  "rank_start": 374,
   "score": 0,
   "rise": 0,
-  "steady": 58,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 7,
+  "weeks_up": 6,
   "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
-   1,
+   0,
    -1,
    1,
    -1,
@@ -259,14 +320,42 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment",
+   "stake_to_operate",
+   "emission_rewards",
+   "governance"
+  ],
+  "source": "https://storx.tech/host-node.html",
+  "note": "Depolama operatörlerinin ağda düğüm çalıştırabilmesi için SRX stake etmesi zorunludur ve hizmetler SRX ile ödenebilmektedir.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "active_nodes",
+  "value": 4000.0,
+  "unit": "nodes",
+  "as_of": "2026-09-05",
+  "confirmed": true,
+  "source": "https://coinmarketcap.com/currencies/storx-network/",
+  "note": "Ağ üzerinde 117.000'den fazla kullanıcıya hizmet veren 4.000'in üzerinde aktif depolama düğümü bulunmaktadır.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.345,
+  "vesting_end": null,
+  "source": "https://storx.tech/pdf/storx-whitepaper-1.pdf",
+  "note": "Dağıtımda çekirdek ekibe %17,5, tohum turuna %10 ve özel satışa %7 pay ayrılmış olup net bir hak ediş bitiş tarihi belirtilmemiştir.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
   "MEXC"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.345
+ }
 }

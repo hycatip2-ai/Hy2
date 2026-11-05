@@ -9,30 +9,34 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 39,
- "total_exact": 38.98,
+ "total": 47,
+ "total_exact": 46.87,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": 7.9,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrattaki üst sınıra ulaşıldı; yeni token basılamaz."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Ethereum",
   "address": "0xe7976c4efc60d9f4c200cc1bcef1a1e3b02c73e7"
@@ -51,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 3.9,
+   "score": 4.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0964,
+   "percentile": 0.1084,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.243267,
-     "percentile": 0.1666,
+     "percentile": 0.1676,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -70,7 +74,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 7.211765,
-     "percentile": 0.0881,
+     "percentile": 0.0882,
      "basis": "sector",
      "display": "7,21×",
      "tier": "alt dilim"
@@ -78,10 +82,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.012589,
-     "percentile": 0.3319,
+     "value": 0.012455,
+     "percentile": 0.3361,
      "basis": "sector",
-     "display": "+%1,3",
+     "display": "+%1,2",
      "tier": "alt dilim"
     }
    ]
@@ -89,12 +93,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 9.9,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7361,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -109,7 +132,7 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.1,
+   "score": 14.0,
    "has_data": true,
    "weight": 20,
    "percentile": 0.9639,
@@ -137,7 +160,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8863,
+     "percentile": 0.8765,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -145,8 +168,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 6.308008,
-     "percentile": 0.8947,
+     "value": 6.310746,
+     "percentile": 0.8854,
      "basis": "sector",
      "display": "6,3 yıl",
      "tier": "üst dilim"
@@ -154,7 +177,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 2.95,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -203,6 +239,10 @@
   [
    "2026-11-04",
    38.98
+  ],
+  [
+   "2026-11-05",
+   46.87
   ]
  ],
  "changes": [
@@ -224,6 +264,27 @@
      "part": "supply",
      "delta": 1.63,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +1,6)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.9,
+   "from": 39.0,
+   "to": 46.9,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 2.95,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,9)"
     }
    ]
   }
@@ -248,16 +309,36 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +1,6)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.9,
+   "from": 39.0,
+   "to": 46.9,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 2.95,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,9)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 749,
-  "rank_start": 664,
+  "rank_now": 750,
+  "rank_start": 671,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 4,
+  "weeks_up": 3,
   "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
@@ -271,7 +352,7 @@
    -1,
    1,
    1,
-   1,
+   0,
    0
   ],
   "labels": [],
@@ -296,7 +377,16 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "fee_discount",
+   "emission_rewards"
+  ],
+  "source": "https://max.maicoin.com/docs/fees",
+  "note": "Borsa tokensız kullanılabilir; MAX Token işlem ve çekim ücretlerinde indirim ile staking ödülleri sunar.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,

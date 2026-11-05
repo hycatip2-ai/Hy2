@@ -12,13 +12,13 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 46,
- "total_exact": 46.25,
- "band": "Zayıf",
- "delta": -0.2,
+ "total": 54,
+ "total_exact": 53.53,
+ "band": "Orta",
+ "delta": 7.3,
  "confidence": {
-  "parts": 4,
-  "level": "Orta"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
  "notes": [],
@@ -28,7 +28,7 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -46,16 +46,16 @@
    "score": 4.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1887,
+   "percentile": 0.1923,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 226.126492,
-     "percentile": 0.2055,
+     "value": 228.17134,
+     "percentile": 0.2035,
      "basis": "sector",
-     "display": "226×",
+     "display": "228×",
      "tier": "alt dilim"
     }
    ]
@@ -63,17 +63,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.1,
+   "score": 11.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5169,
+   "percentile": 0.5172,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.812395,
-     "percentile": 0.5946,
+     "value": 0.812404,
+     "percentile": 0.5864,
      "basis": "sector",
      "display": "%81",
      "tier": "orta dilim"
@@ -81,8 +81,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.230928,
-     "percentile": 0.6195,
+     "value": 1.230915,
+     "percentile": 0.6122,
      "basis": "sector",
      "display": "1,23×",
      "tier": "orta dilim"
@@ -90,38 +90,57 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.023607,
-     "percentile": 0.2979,
+     "value": 0.023367,
+     "percentile": 0.2943,
      "basis": "sector",
-     "display": "+%2,4",
+     "display": "+%2,3",
      "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.5,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7963,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 11.6,
+   "score": 11.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5864,
+   "percentile": 0.5886,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.581,
+     "percentile": 0.5718,
      "basis": "sector",
      "display": "3",
      "tier": "orta dilim"
@@ -134,14 +153,14 @@
    "score": 13.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8764,
+   "percentile": 0.8736,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 200.0,
-     "percentile": 0.8005,
+     "percentile": 0.7967,
      "basis": "sector",
      "display": "200",
      "tier": "üst dilim"
@@ -150,7 +169,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3508,
-     "percentile": 0.6041,
+     "percentile": 0.6165,
      "basis": "sector",
      "display": "%0,35",
      "tier": "orta dilim"
@@ -159,7 +178,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.5366,
+     "percentile": 0.5274,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -167,8 +186,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.976728,
-     "percentile": 0.6633,
+     "value": 5.979466,
+     "percentile": 0.6667,
      "basis": "sector",
      "display": "6,0 yıl",
      "tier": "orta dilim"
@@ -176,7 +195,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token gerekli mi verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 6.39,
+   "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,4)"
+  },
+  {
+   "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+   "part": "supply",
+   "delta": 1.15,
+   "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz +1,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -217,6 +249,10 @@
   [
    "2026-11-04",
    46.25
+  ],
+  [
+   "2026-11-05",
+   53.53
   ]
  ],
  "changes": [
@@ -234,14 +270,56 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,2)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.3,
+   "from": 46.2,
+   "to": 53.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 6.39,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,4)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": 1.15,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz +1,2)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 7.3,
+   "from": 46.2,
+   "to": 53.5,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 6.39,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,4)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": 1.15,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz +1,2)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 370,
-  "rank_start": 359,
-  "score": 24,
-  "rise": 19,
+  "rank_now": 364,
+  "rank_start": 358,
+  "score": 0,
+  "rise": 0,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
@@ -261,9 +339,22 @@
    -1,
    -1
   ],
-  "labels": [],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   },
+   {
+    "id": "supply",
+    "text": "Arz etkisi"
+   }
+  ],
   "trend": "flat",
-  "supply_share": 0.0,
+  "supply_share": 1.0,
   "eligible": false,
   "window_days": 90,
   "score_change": null,
@@ -275,17 +366,55 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Andreessen Horowitz",
+  "Accel",
+  "Binance",
+  "DCVC (Data Collective)",
+  "Electric Capital",
+  "Foundation Capital",
+  "Metastable",
+  "Pantera Capital",
+  "Polychain Capital"
+ ],
+ "investors_source": "https://oasis.net/blog/a-beginners-guide-to-oasis",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "stake_to_operate",
+   "governance"
+  ],
+  "source": "https://docs.oasis.io/general/oasis-network/token-metrics-and-distribution/",
+  "note": "ROSE token ağdaki işlem ücretlerinin ödenmesi, hisse kanıtı doğrulayıcılığı ve ağ yönetişimine katılım için gereklidir.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "Total Value Locked",
+  "value": 3552.0,
+  "unit": "USD",
+  "as_of": "2026-10-30",
+  "confirmed": true,
+  "source": "https://defillama.com/protocol/valleyswap",
+  "note": "DefiLlama verilerine göre Oasis Emerald üzerinde çalışan ValleySwap DEX protokolünün kilitli toplam değeri 30 Ekim 2026'da 3.552 USD'dir.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.43,
+  "vesting_end": "2024-11",
+  "source": "https://dropstab.com/coins/oasis-network/vesting",
+  "note": "Arzın %23'ü yatırımcılara ve %20'si çekirdek ekibe ayrılmış olup hak ediş süreçleri Kasım 2024'te sona ermiştir.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -298,5 +427,7 @@
   "Binance.US"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.43
+ }
 }

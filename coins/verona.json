@@ -9,23 +9,29 @@
  "us_exchanges": [],
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 37,
- "total_exact": 37.18,
+ "total": 46,
+ "total_exact": 46.2,
  "band": "Zayıf",
- "delta": -0.3,
+ "delta": 9.0,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: yeni token basma ya da basım oranını değiştirme yetkisi bir grupta, kesin üst sınır belgelenmemiş. Kendin araştır.",
+  "source": "https://www.micarwhitepapers.eu/registry/verona",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -33,7 +39,7 @@
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -52,14 +58,14 @@
    "score": 9.9,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.5267,
+   "percentile": 0.5281,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.46338,
-     "percentile": 0.3842,
+     "percentile": 0.3852,
      "basis": "universe",
      "display": "%46",
      "tier": "orta dilim"
@@ -68,7 +74,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.158057,
-     "percentile": 0.3969,
+     "percentile": 0.398,
      "basis": "universe",
      "display": "2,16×",
      "tier": "orta dilim"
@@ -77,7 +83,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7098,
+     "percentile": 0.71,
      "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
@@ -87,12 +93,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.9,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7331,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -110,14 +135,14 @@
    "score": 4.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0331,
+   "percentile": 0.0383,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 63.0,
-     "percentile": 0.2583,
+     "percentile": 0.2589,
      "basis": "universe",
      "display": "63",
      "tier": "alt dilim"
@@ -126,7 +151,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6068,
-     "percentile": 0.2526,
+     "percentile": 0.2533,
      "basis": "universe",
      "display": "%0,61",
      "tier": "alt dilim"
@@ -143,8 +168,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.913758,
-     "percentile": 0.4402,
+     "value": 1.916496,
+     "percentile": 0.449,
      "basis": "universe",
      "display": "1,9 yıl",
      "tier": "orta dilim"
@@ -152,7 +177,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 3.95,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -201,6 +239,10 @@
   [
    "2026-11-04",
    37.18
+  ],
+  [
+   "2026-11-05",
+   46.2
   ]
  ],
  "changes": [
@@ -269,24 +311,66 @@
      "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −4,4)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 9.0,
+   "from": 37.2,
+   "to": 46.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 3.95,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 9.0,
+   "from": 37.2,
+   "to": 46.2,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 3.95,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
   "rank_now": 918,
-  "rank_start": 905,
+  "rank_start": 900,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_up": 5,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
    -1,
+   1,
    0,
    0,
-   -1,
    -1,
    -1,
    -1,
@@ -305,15 +389,37 @@
   "double": false
  },
  "chain": null,
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Multicoin Capital",
+  "Animoca Brands",
+  "Arrington Capital",
+  "Circle Ventures",
+  "Mechanism Capital",
+  "HashKey Capital"
+ ],
+ "investors_source": "https://dropstab.com/coins/verona",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "stake_to_operate",
+   "collateral",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://www.micarwhitepapers.eu/registry/verona",
+  "note": "Ağ doğrulayıcıları blok üretimi için tokenı teminat olarak stake etmek zorundadır; ayrıca işlem ve yönetişimde kullanılır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,

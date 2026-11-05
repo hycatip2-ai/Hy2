@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 48,
- "total_exact": 48.12,
- "band": "Zayıf",
- "delta": 0.0,
+ "total": 53,
+ "total_exact": 53.33,
+ "band": "Orta",
+ "delta": 5.2,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
@@ -25,11 +25,10 @@
   "text": "Kontrat sonradan değiştirilebiliyor ama yetkili (başka bir kontrat) görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
   "arz kuralı"
  ],
  "penalty": 0.0,
@@ -62,7 +61,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9189,
+     "percentile": 0.9191,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -71,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.642276,
-     "percentile": 0.5888,
+     "percentile": 0.5891,
      "basis": "sector",
      "display": "1,64×",
      "tier": "orta dilim"
@@ -80,7 +79,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8309,
+     "percentile": 0.8242,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -90,12 +89,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 12.3,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.725,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1774,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.8374,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -110,17 +128,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.5,
+   "score": 11.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7349,
+   "percentile": 0.7229,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 54.0,
-     "percentile": 0.4231,
+     "percentile": 0.4424,
      "basis": "sector",
      "display": "54",
      "tier": "orta dilim"
@@ -129,7 +147,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5865,
-     "percentile": 0.3875,
+     "percentile": 0.3777,
      "basis": "sector",
      "display": "%0,59",
      "tier": "orta dilim"
@@ -138,7 +156,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8863,
+     "percentile": 0.8765,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -146,8 +164,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.899384,
-     "percentile": 0.6083,
+     "value": 2.902122,
+     "percentile": 0.5891,
      "basis": "sector",
      "display": "2,9 yıl",
      "tier": "orta dilim"
@@ -155,7 +173,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.35,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -196,10 +221,45 @@
   [
    "2026-11-04",
    48.12
+  ],
+  [
+   "2026-11-05",
+   53.33
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": 5.2,
+   "from": 48.1,
+   "to": 53.3,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.35,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 5.2,
+   "from": 48.1,
+   "to": 53.3,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.35,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
   "name": "Base",
@@ -215,8 +275,25 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment"
+  ],
+  "source": "https://vicicoin.io/faq/",
+  "note": "VCNT; kilitli dijital içeriklere, Zoom video oturumlarına ve etkinliklere bilet/erişim ödemesi olarak gereklidir.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "Polygon token holders",
+  "value": 5230.0,
+  "unit": "holders",
+  "as_of": "2026-10-23",
+  "confirmed": true,
+  "source": "https://www.coincarp.com/currencies/vicicoin/richlist/",
+  "note": "CoinCarp analitik verilerine göre 23 Ekim 2026 itibarıyla Polygon üzerindeki VCNT sahibi cüzdan sayısı 5.230'dur.",
+  "researched_at": "2026-11-04"
+ },
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,

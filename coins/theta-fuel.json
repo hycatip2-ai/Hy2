@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 30,
  "slug": "theta-fuel",
  "symbol": "TFUEL",
  "name": "Theta Fuel",
@@ -11,30 +11,32 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 42,
- "total_exact": 42.13,
- "band": "Zayıf",
- "delta": -0.2,
+ "total": 57,
+ "total_exact": 57.24,
+ "band": "Orta",
+ "delta": 15.1,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %5,5 artıyor (sınır %10)."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
- "eligible_for_top": false,
- "missing": [
-  "kullanım kanıtı"
- ],
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -50,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.8,
+   "score": 15.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.76,
+   "percentile": 0.84,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8918,
+     "percentile": 0.9035,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -69,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9012,
+     "percentile": 0.9726,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -77,23 +79,51 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.012847,
-     "percentile": 0.4331,
+     "value": 0.012849,
+     "percentile": 0.4322,
      "basis": "sector",
      "display": "+%1,3",
      "tier": "orta dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.9,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7331,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -121,14 +151,14 @@
    "score": 7.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.14,
+   "percentile": 0.1,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 94.0,
-     "percentile": 0.2128,
+     "percentile": 0.2142,
      "basis": "sector",
      "display": "94",
      "tier": "alt dilim"
@@ -137,7 +167,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.7246,
-     "percentile": 0.0995,
+     "percentile": 0.0997,
      "basis": "sector",
      "display": "%0,72",
      "tier": "alt dilim"
@@ -146,7 +176,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1765,
-     "percentile": 0.3819,
+     "percentile": 0.3581,
      "basis": "sector",
      "display": "%18",
      "tier": "orta dilim"
@@ -154,8 +184,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 7.605749,
-     "percentile": 0.7627,
+     "value": 7.608487,
+     "percentile": 0.7863,
      "basis": "sector",
      "display": "7,6 yıl",
      "tier": "üst dilim"
@@ -163,7 +193,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 9.87,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,9)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -212,6 +255,10 @@
   [
    "2026-11-04",
    42.13
+  ],
+  [
+   "2026-11-05",
+   57.24
   ]
  ],
  "changes": [
@@ -233,6 +280,27 @@
      "part": "usage",
      "delta": -2.04,
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −2,0)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 15.1,
+   "from": 42.1,
+   "to": 57.2,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 9.87,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,9)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
     }
    ]
   }
@@ -257,11 +325,31 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler güçlendi. (Kullanım −2,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 15.1,
+   "from": 42.1,
+   "to": 57.2,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 9.87,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,9)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 322,
-  "rank_start": 316,
+  "rank_now": 317,
+  "rank_start": 320,
   "score": 22,
   "rise": 13,
   "steady": 42,
@@ -276,10 +364,10 @@
    -1,
    1,
    -1,
+   -1,
+   -1,
+   -1,
    0,
-   -1,
-   -1,
-   -1,
    1,
    -1
   ],
@@ -292,16 +380,52 @@
   "double": false
  },
  "chain": null,
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
+ "investors": [
+  "Samsung NEXT",
+  "Sony Innovation Fund",
+  "Sierra Ventures",
+  "The Venture Reality Fund",
+  "Blockchain Capital",
+  "DCM",
+  "DHVC",
+  "BDMI",
+  "Creative Artists Agency"
+ ],
+ "investors_source": "https://www.lbank.com/explore/theta-network-dual-token-blockchain-for-ai-and-media",
+ "angel_investors": [
+  "Steve Chen",
+  "Justin Kan"
+ ],
+ "angel_investors_source": "https://www.gemini.com/es/cryptopedia/theta-coin-tfuel-theta-crypto",
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "service_payment",
+   "stake_to_operate",
+   "emission_rewards"
+  ],
+  "source": "https://docs.thetatoken.org/docs/what-is-theta-network",
+  "note": "TFUEL gas ücretlerinde, uç bilişim/video işleme ödemelerinde ve Elite Edge Node çalıştırmak için staking amacıyla zorunludur.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "total_elite_nodes",
+  "value": 9633.0,
+  "unit": "nodes",
+  "as_of": "2026-11-04",
+  "confirmed": true,
+  "source": "https://metachain-explorer.thetatoken.org/",
+  "note": "Theta Explorer üzerinde 9.633 adet aktif Elite Edge Node ve günlük 10.793 aktif cüzdan kaydedilmiştir.",
+  "researched_at": "2026-11-04"
+ },
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,

@@ -11,23 +11,29 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 44,
- "total_exact": 43.53,
- "band": "Zayıf",
- "delta": -0.1,
+ "total": 55,
+ "total_exact": 55.0,
+ "band": "Orta",
+ "delta": 11.5,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: yeni token basma ya da basım oranını değiştirme yetkisi bir grupta, kesin üst sınır belgelenmemiş. Kendin araştır.",
+  "source": "https://tokenomist.ai/stepn",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -36,7 +42,7 @@
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -52,17 +58,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.0,
+   "score": 12.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6067,
+   "percentile": 0.6322,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.613223,
-     "percentile": 0.4253,
+     "percentile": 0.4143,
      "basis": "sector",
      "display": "%61",
      "tier": "orta dilim"
@@ -71,7 +77,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.630729,
-     "percentile": 0.4483,
+     "percentile": 0.4476,
      "basis": "sector",
      "display": "1,63×",
      "tier": "orta dilim"
@@ -80,8 +86,17 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.9274,
+     "percentile": 0.9256,
      "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
     }
@@ -90,12 +105,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.9,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7037,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6827,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.776,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -113,14 +147,14 @@
    "score": 10.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4719,
+   "percentile": 0.4713,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 466.0,
-     "percentile": 0.989,
+     "percentile": 0.9883,
      "basis": "sector",
      "display": "466",
      "tier": "üst dilim"
@@ -129,7 +163,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.002,
-     "percentile": 0.1046,
+     "percentile": 0.1071,
      "basis": "sector",
      "display": "%1,0",
      "tier": "alt dilim"
@@ -138,7 +172,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1667,
-     "percentile": 0.5366,
+     "percentile": 0.5274,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -146,8 +180,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 4.657084,
-     "percentile": 0.5119,
+     "value": 4.659822,
+     "percentile": 0.5124,
      "basis": "sector",
      "display": "4,7 yıl",
      "tier": "orta dilim"
@@ -156,7 +190,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3655,
+     "percentile": 0.3611,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -164,7 +198,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.92,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,9)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -213,6 +260,10 @@
   [
    "2026-11-04",
    43.53
+  ],
+  [
+   "2026-11-05",
+   55.0
   ]
  ],
  "changes": [
@@ -230,32 +281,74 @@
      "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Arz +3,1)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 11.5,
+   "from": 43.5,
+   "to": 55.0,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.92,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,9)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 11.5,
+   "from": 43.5,
+   "to": 55.0,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.92,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,9)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 663,
-  "rank_start": 601,
+  "rank_now": 671,
+  "rank_start": 607,
   "score": 0,
   "rise": 0,
-  "steady": 33,
+  "steady": 17,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 6,
+  "weeks_up": 2,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
    -1,
-   1,
+   0,
    -1,
    -1,
-   1,
+   0,
    0,
    1,
    -1,
    -1,
-   0
+   -1
   ],
   "labels": [],
   "trend": "falling",
@@ -266,17 +359,48 @@
   "double": false
  },
  "chain": null,
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Binance"
+ ],
+ "investors_source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-gmt",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/stepn",
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini-free",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment",
+   "burn_mint",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-gmt",
+  "note": "GMT, uygulama içi seviye atlama, mintleme ve marketplace ödemeleri için zorunlu bir yardımcı tokendır.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "FSL Mystery Boxes owners",
+  "value": 81480.0,
+  "unit": "users",
+  "as_of": "2026-11-04",
+  "confirmed": true,
+  "source": "https://www.mooar.com/",
+  "note": "MOOAR platformundaki FSL Mystery Boxes koleksiyonunun güncel kullanıcı sayısıdır.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.33,
+  "vesting_end": null,
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-gmt",
+  "note": "Ekip (%14.2), Özel Satış (%16.3) ve Danışmanlar (%2.5) toplam %33'lük bir paya sahiptir.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -287,5 +411,7 @@
   "Kraken"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.33
+ }
 }

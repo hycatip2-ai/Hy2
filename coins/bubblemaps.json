@@ -12,12 +12,12 @@
  "sector": "ai",
  "sector_name": "Yapay zekâ",
  "total": 46,
- "total_exact": 45.99,
+ "total_exact": 45.5,
  "band": "Zayıf",
- "delta": -0.7,
+ "delta": -0.5,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
@@ -27,7 +27,7 @@
   "text": "Yeni tokeni değiştirilemez bir program basıyor; arz son bir yılda artmadı."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -53,17 +53,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.9,
+   "score": 10.8,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.7021,
+   "percentile": 0.6889,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.760527,
-     "percentile": 0.6595,
+     "value": 0.761171,
+     "percentile": 0.6486,
      "basis": "sector",
      "display": "%76",
      "tier": "orta dilim"
@@ -71,8 +71,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.314878,
-     "percentile": 0.697,
+     "value": 1.313766,
+     "percentile": 0.6881,
      "basis": "sector",
      "display": "1,31×",
      "tier": "üst dilim"
@@ -80,8 +80,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.066613,
-     "percentile": 0.2816,
+     "value": 0.066744,
+     "percentile": 0.2895,
      "basis": "sector",
      "display": "+%6,7",
      "tier": "alt dilim"
@@ -91,12 +91,22 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 5.9,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.2593,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.2941,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -111,26 +121,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.8,
+   "score": 14.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9787,
+   "percentile": 1.0,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 175.0,
-     "percentile": 0.7852,
+     "value": 176.0,
+     "percentile": 0.788,
      "basis": "sector",
-     "display": "175",
+     "display": "176",
      "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1469,
-     "percentile": 0.9766,
+     "percentile": 0.9758,
      "basis": "sector",
      "display": "%0,15",
      "tier": "üst dilim"
@@ -139,7 +149,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1556,
-     "percentile": 0.4266,
+     "percentile": 0.4549,
      "basis": "sector",
      "display": "%16",
      "tier": "orta dilim"
@@ -147,8 +157,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 1.806982,
-     "percentile": 0.5733,
+     "value": 1.809719,
+     "percentile": 0.5937,
      "basis": "sector",
      "display": "1,8 yıl",
      "tier": "orta dilim"
@@ -205,6 +215,10 @@
   [
    "2026-11-04",
    45.99
+  ],
+  [
+   "2026-11-05",
+   45.5
   ]
  ],
  "changes": [
@@ -268,14 +282,14 @@
   }
  ],
  "trend": {
-  "rank_now": 603,
-  "rank_start": 934,
-  "score": 40,
+  "rank_now": 656,
+  "rank_start": 931,
+  "score": 35,
   "rise": 53,
-  "steady": 58,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 7,
-  "weeks_down": 5,
+  "weeks_up": 5,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -283,10 +297,10 @@
    1,
    -1,
    1,
-   1,
+   0,
    -1,
-   -1,
-   1,
+   0,
+   0,
    1,
    1,
    -1
@@ -302,7 +316,7 @@
    }
   ],
   "trend": "rising",
-  "supply_share": 0.2,
+  "supply_share": 0.21,
   "eligible": false,
   "window_days": 90,
   "score_change": null,
@@ -314,17 +328,45 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
+ "investors": [
+  "INCE Capital",
+  "Stake Capital",
+  "Momentum 6",
+  "LBank",
+  "V3ntures"
+ ],
+ "investors_source": "https://www.theblock.co/news/deals/2023-09-18-blockchain-data-visualization-firm-bubblemaps-raises-3-2-million-in-seed-funding-250888",
+ "angel_investors": [
+  "Nicolas Bacca",
+  "Dyma Budorin",
+  "Owen Simonin"
+ ],
+ "angel_investors_source": "https://www.theblock.co/news/deals/2023-09-18-blockchain-data-visualization-firm-bubblemaps-raises-3-2-million-in-seed-funding-250888",
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://wiki.bubblemaps.io/bmt/tokenomics",
+  "note": "Ürün tokensız da kullanılabilir; BMT, Intel Desk vaka oylamalarında, dedektif teşviklerinde ve premium analizlerde kullanılır.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.2835,
+  "vesting_end": "2029-03",
+  "source": "https://wiki.bubblemaps.io/bmt/tokenomics",
+  "note": "Arzın %19,35'i yatırımcılara, %9'u ekibe ayrılmıştır; ekip hak ediş süreci TGE'den 4 yıl sonra (Mart 2029) tamamlanmaktadır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -339,5 +381,7 @@
   "Binance.US"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.2835
+ }
 }

@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 41,
- "total_exact": 40.75,
+ "total": 48,
+ "total_exact": 47.95,
  "band": "Zayıf",
- "delta": -5.3,
+ "delta": 7.2,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [
   {
@@ -24,20 +24,24 @@
   }
  ],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
  "penalty": 5.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Ethereum",
   "address": "0xd85a6ae55a7f33b0ee113c234d2ee308edeaf7fd"
@@ -56,17 +60,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.9,
+   "score": 16.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9518,
+   "percentile": 0.9157,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9189,
+     "percentile": 0.9191,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -75,7 +79,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9289,
+     "percentile": 0.9254,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -84,8 +88,17 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6915,
+     "percentile": 0.6876,
      "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
     }
@@ -94,27 +107,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 9.9,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7361,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3779,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3298,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.2857,
+     "percentile": 0.289,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -124,26 +156,26 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.1,
+   "score": 9.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4458,
+   "percentile": 0.4337,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 36.0,
-     "percentile": 0.3383,
+     "percentile": 0.353,
      "basis": "sector",
      "display": "36",
-     "tier": "alt dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.7183,
-     "percentile": 0.2371,
+     "percentile": 0.2272,
      "basis": "sector",
      "display": "%0,72",
      "tier": "alt dilim"
@@ -152,7 +184,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2,
-     "percentile": 0.3904,
+     "percentile": 0.3806,
      "basis": "sector",
      "display": "%20",
      "tier": "orta dilim"
@@ -160,8 +192,8 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.861739,
-     "percentile": 0.8552,
+     "value": 5.864476,
+     "percentile": 0.8459,
      "basis": "sector",
      "display": "5,9 yıl",
      "tier": "üst dilim"
@@ -171,10 +203,16 @@
  ],
  "reasons": [
   {
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı.",
-   "part": "penalty",
-   "delta": -5.0,
-   "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 2.95,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,9)"
   }
  ],
  "history": [
@@ -225,6 +263,10 @@
   [
    "2026-11-04",
    40.75
+  ],
+  [
+   "2026-11-05",
+   47.95
   ]
  ],
  "changes": [
@@ -263,6 +305,27 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.2,
+   "from": 40.8,
+   "to": 48.0,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 2.95,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,9)"
+    }
+   ]
   }
  ],
  "events": [
@@ -299,22 +362,42 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-05",
+   "delta": 7.2,
+   "from": 40.8,
+   "to": 48.0,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 2.95,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,9)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 696,
-  "rank_start": 693,
-  "score": 20,
-  "rise": 7,
-  "steady": 42,
+  "rank_now": 694,
+  "rank_start": 699,
+  "score": 23,
+  "rise": 9,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 5,
+  "weeks_up": 6,
   "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    -1,
    1,
-   0,
+   1,
    1,
    1,
    -1,
@@ -339,17 +422,41 @@
   "flow": false,
   "flow_rank": null
  },
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Ontology",
+  "Neo",
+  "GXChain",
+  "Standard Tokenization Protocol"
+ ],
+ "investors_source": "https://medium.com/cobak/cbk-distribuion-update-6634bbdff66e",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "service_payment",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://resources.cryptocompare.com/asset-management/962/1671704900938.pdf",
+  "note": "CBK platform içi hizmet ödemeleri, oylama ve topluluk ödülleri için kullanılır; platform kullanımı zorunlu değildir.",
+  "researched_at": "2026-11-04"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.47,
+  "vesting_end": "2023-12",
+  "source": "https://medium.com/cobak/cbk-token-distribution-schedule-for-next-6-months-c7b9fe2dff71",
+  "note": "Özel satış (%30), ekip (%15) ve ortaklara (%2) toplam %47 tahsis edilmiştir; hakedişleri Aralık 2023'te bitmiştir.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
@@ -360,6 +467,7 @@
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 2320
+  "holder_count": 2320,
+  "insider_share": 0.47
  }
 }

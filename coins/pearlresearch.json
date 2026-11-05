@@ -9,23 +9,25 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 45,
- "total_exact": 44.96,
- "band": "Zayıf",
- "delta": -0.2,
+ "total": 52,
+ "total_exact": 51.69,
+ "band": "Orta",
+ "delta": 6.7,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler; arzın yıllık artışı henüz ölçülemedi (en az 6 aylık geçmiş gerekir). Kendin araştır."
+  "text": "Kaynaklı araştırma: arzı ağın kuralı belirliyor ve yılda %131 artıyor (sınır %10); ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://pearlresearch.ai/research/int-whitepaper",
+  "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -49,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 10.6,
+   "score": 11.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.512,
+   "percentile": 0.5663,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9189,
+     "percentile": 0.9191,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -67,23 +69,51 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 5.70745,
-     "percentile": 0.1446,
+     "value": 5.69037,
+     "percentile": 0.1451,
      "basis": "sector",
-     "display": "5,71×",
+     "display": "5,69×",
      "tier": "alt dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7065,
+     "basis": "universe",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 12.3,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.725,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1774,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.8374,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -91,14 +121,14 @@
    "score": 18.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9574,
+   "percentile": 0.9583,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 8.0,
-     "percentile": 0.9259,
+     "percentile": 0.926,
      "basis": "sector",
      "display": "8",
      "tier": "üst dilim"
@@ -108,7 +138,7 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 1.8,
+   "score": 2.0,
    "has_data": true,
    "weight": 20,
    "percentile": 0.012,
@@ -118,7 +148,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 15.0,
-     "percentile": 0.1283,
+     "percentile": 0.1487,
      "basis": "sector",
      "display": "15",
      "tier": "alt dilim"
@@ -126,7 +156,7 @@
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 0.213552,
+     "value": 0.21629,
      "percentile": 0.0526,
      "basis": "sector",
      "display": "0,2 yıl",
@@ -135,7 +165,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 5.35,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+  },
+  {
+   "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+   "part": "supply",
+   "delta": 1.18,
+   "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz +1,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -184,28 +227,110 @@
   [
    "2026-11-04",
    44.96
+  ],
+  [
+   "2026-11-05",
+   51.69
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-05",
+   "delta": 6.7,
+   "from": 45.0,
+   "to": 51.7,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.35,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": 1.18,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz +1,2)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-05",
+   "delta": 6.7,
+   "from": 45.0,
+   "to": 51.7,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 5.35,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+    },
+    {
+     "text": "12 ay içindeki kilit açılışı verisi artık mevcut.",
+     "part": "supply",
+     "delta": 1.18,
+     "label": "12 ay içindeki kilit açılışı verisi artık mevcut. (Arz +1,2)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": null,
- "investors": [],
- "investors_source": null,
- "angel_investors": [],
- "angel_investors_source": null,
+ "investors": [
+  "Lightspeed Venture Partners",
+  "Ribbit Capital",
+  "Square Peg Capital"
+ ],
+ "investors_source": "https://defillama.com/raises/ribbit-capital",
+ "angel_investors": [
+  "Omer Perchik"
+ ],
+ "angel_investors_source": "https://signal.nfx.com/investors/omer-perchik",
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini",
+  "researched_at": "2026-11-04"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "emission_rewards"
+  ],
+  "source": "https://pearlresearch.ai/research/int-whitepaper",
+  "note": "Ağ işlem ücretleri PEARL ile ödenmek zorundadır ve blok ödülleri madencilere PEARL olarak dağıtılır.",
+  "researched_at": "2026-11-04"
+ },
+ "usage_evidence": {
+  "metric": "block_height",
+  "value": 137983.0,
+  "unit": "blocks",
+  "as_of": "2026-11-03",
+  "confirmed": true,
+  "source": "https://explorer.pearlresearch.ai/?network=mainnet",
+  "note": "Resmi Pearl blok gezginine göre 3 Kasım 2026 itibarıyla ana ağda blok yüksekliği 137.983'e ulaşmıştır.",
+  "researched_at": "2026-11-04"
+ },
+ "allocation": {
+  "insiders": 0.0,
+  "vesting_end": null,
+  "source": "https://pearlresearch.ai/research/int-whitepaper",
+  "note": "Adil lansmanla kurulan projede kurucu, ekip ve yatırımcılara ayrılan token oranı %0'dır.",
+  "researched_at": "2026-11-04"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "exchanges": [
   "Gate"
  ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "insider_share": 0.0
+ }
 }
