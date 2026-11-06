@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 53,
- "total_exact": 53.33,
+ "total": 50,
+ "total_exact": 50.06,
  "band": "Orta",
- "delta": 5.2,
+ "delta": -3.3,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -25,7 +25,7 @@
   "text": "Kontrat sonradan değiştirilebiliyor ama yetkili (başka bir kontrat) görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-05",
+ "date": "2026-11-06",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.6,
+   "score": 15.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8916,
+   "percentile": 0.8675,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9191,
+     "percentile": 0.919,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.642276,
-     "percentile": 0.5891,
+     "percentile": 0.5786,
      "basis": "sector",
      "display": "1,64×",
      "tier": "orta dilim"
@@ -79,7 +79,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8242,
+     "percentile": 0.8147,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -89,17 +89,17 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 12.3,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.725,
+   "percentile": 0.7308,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "buyback_burn",
      "name": "Geri alım / yakım",
      "value": 0.0,
-     "percentile": 0.1774,
+     "percentile": 0.1651,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
@@ -108,7 +108,7 @@
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 1.0,
-     "percentile": 0.8374,
+     "percentile": 0.8456,
      "basis": "sector",
      "display": "Zorunlu",
      "tier": "üst dilim"
@@ -128,17 +128,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.4,
+   "score": 8.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7229,
-   "tier": "üst dilim",
+   "percentile": 0.3494,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 54.0,
-     "percentile": 0.4424,
+     "percentile": 0.444,
      "basis": "sector",
      "display": "54",
      "tier": "orta dilim"
@@ -146,26 +146,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.5865,
-     "percentile": 0.3777,
+     "value": 0.5726,
+     "percentile": 0.3973,
      "basis": "sector",
-     "display": "%0,59",
+     "display": "%0,57",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0,
-     "percentile": 0.8765,
+     "value": 0.2857,
+     "percentile": 0.2343,
      "basis": "sector",
-     "display": "%0",
-     "tier": "üst dilim"
+     "display": "%29",
+     "tier": "alt dilim"
     },
     {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 2.902122,
-     "percentile": 0.5891,
+     "value": 2.90486,
+     "percentile": 0.5772,
      "basis": "sector",
      "display": "2,9 yıl",
      "tier": "orta dilim"
@@ -175,10 +175,10 @@
  ],
  "reasons": [
   {
-   "text": "Geri alım / yakım verisi artık mevcut.",
-   "part": "value_capture",
-   "delta": 5.35,
-   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+   "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+   "part": "liquidity",
+   "delta": -3.17,
+   "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −3,2)"
   }
  ],
  "history": [
@@ -225,6 +225,10 @@
   [
    "2026-11-05",
    53.33
+  ],
+  [
+   "2026-11-06",
+   50.06
   ]
  ],
  "changes": [
@@ -240,6 +244,21 @@
      "part": "value_capture",
      "delta": 5.35,
      "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +5,3)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-06",
+   "delta": -3.3,
+   "from": 53.3,
+   "to": 50.1,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -3.17,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −3,2)"
     }
    ]
   }
@@ -300,6 +319,7 @@
  "exchanges": [],
  "delisted": [],
  "recorded": {
+  "major_volume_share": 0.0,
   "holder_count": 6619
  }
 }

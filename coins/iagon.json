@@ -9,29 +9,28 @@
  "us_exchanges": [],
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 37,
- "total_exact": 37.46,
+ "total": 27,
+ "total_exact": 26.77,
  "band": "Zayıf",
- "delta": 0.2,
+ "delta": null,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-10-24",
+ "date": "2026-11-06",
  "formula_version": "1.22.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
   "gelir trendi",
-  "arz geçmişi",
   "arz kuralı"
  ],
  "penalty": 0.0,
@@ -51,17 +50,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.3,
+   "score": 5.8,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.375,
-   "tier": "orta dilim",
+   "percentile": 0.1481,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.498435,
-     "percentile": 0.402,
+     "value": 0.498244,
+     "percentile": 0.4071,
      "basis": "sector",
      "display": "%50",
      "tier": "orta dilim"
@@ -69,11 +68,20 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.006278,
-     "percentile": 0.4323,
+     "value": 2.007048,
+     "percentile": 0.4114,
      "basis": "sector",
      "display": "2,01×",
      "tier": "orta dilim"
+    },
+    {
+     "id": "supply_growth_90d",
+     "name": "Arz artışı (90 gün)",
+     "value": 0.301941,
+     "percentile": 0.0435,
+     "basis": "sector",
+     "display": "+%30",
+     "tier": "alt dilim"
     }
    ]
   },
@@ -90,45 +98,73 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 2.8,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.0714,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 0.0,
+     "percentile": 0.1405,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.0,
+   "score": 5.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.25,
+   "percentile": 0.0,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 28.0,
-     "percentile": 0.0877,
+     "percentile": 0.077,
      "basis": "sector",
      "display": "28",
      "tier": "alt dilim"
     },
     {
+     "id": "spread",
+     "name": "Alış-satış farkı",
+     "value": 1.5203,
+     "percentile": 0.0682,
+     "basis": "sector",
+     "display": "%1,5",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "bad_pair_ratio",
+     "name": "Şüpheli işlem çifti oranı",
+     "value": 0.4444,
+     "percentile": 0.0368,
+     "basis": "sector",
+     "display": "%44",
+     "tier": "alt dilim"
+    },
+    {
      "id": "age_years",
      "name": "Proje yaşı",
-     "value": 5.240246,
-     "percentile": 0.787,
+     "value": 5.275838,
+     "percentile": 0.79,
      "basis": "sector",
-     "display": "5,2 yıl",
+     "display": "5,3 yıl",
      "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3319,
+     "percentile": 0.3034,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -145,26 +181,62 @@
   [
    "2026-10-24",
    37.46
+  ],
+  [
+   "2026-11-06",
+   26.77
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
- "chain": null,
+ "trend": {
+  "rank_now": 975,
+  "rank_start": 977,
+  "score": 1,
+  "rise": 4,
+  "steady": 0,
+  "calm": 0,
+  "weeks_up": 0,
+  "weeks_down": 0,
+  "weeks_total": 0,
+  "weekly": [],
+  "labels": [],
+  "trend": "flat",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": -10.5,
+  "double": false
+ },
+ "chain": {
+  "name": "Cardano",
+  "source": "contract",
+  "flow": false,
+  "flow_rank": null
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/iagon",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
- "exchanges": null,
+ "exchanges": [
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "Kraken"
+ ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "depth_2pct_usd": 5114.41,
+  "major_volume_share": 0.9996,
+  "depth_to_mc": 0.000591
+ }
 }
