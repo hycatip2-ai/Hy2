@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 34,
- "total_exact": 34.11,
+ "total": 35,
+ "total_exact": 34.87,
  "band": "Zayıf",
- "delta": 0.3,
+ "delta": 0.5,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 2,
+  "level": "Yetersiz"
  },
  "flags": [],
  "notes": [],
@@ -26,7 +26,7 @@
  },
  "revenue_unmeasured": true,
  "date": "2026-10-30",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -92,31 +92,21 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.2,
-   "has_data": true,
+   "score": 7.0,
+   "has_data": false,
    "weight": 20,
-   "percentile": 0.2917,
-   "tier": "alt dilim",
-   "metrics": [
-    {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.2599,
-     "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
-    }
-   ]
+   "percentile": null,
+   "tier": null,
+   "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.1,
+   "score": 10.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7059,
-   "tier": "üst dilim",
+   "percentile": 0.4941,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
@@ -144,15 +134,6 @@
      "basis": "sector",
      "display": "%25",
      "tier": "alt dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 4.950034,
-     "percentile": 0.7097,
-     "basis": "sector",
-     "display": "5,0 yıl",
-     "tier": "üst dilim"
     }
    ]
   }
@@ -161,41 +142,61 @@
  "history": [
   [
    "2026-10-23",
-   34.61
+   30.32
   ],
   [
    "2026-10-24",
-   34.68
+   30.49
   ],
   [
    "2026-10-25",
-   33.55
+   34.48
   ],
   [
    "2026-10-26",
-   33.92
+   34.6
   ],
   [
    "2026-10-27",
-   34.04
+   34.61
   ],
   [
    "2026-10-28",
-   34.18
+   34.56
   ],
   [
    "2026-10-29",
-   33.83
+   34.41
   ],
   [
    "2026-10-30",
-   34.11
+   34.87
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-25",
+   "delta": 4.0,
+   "from": 30.5,
+   "to": 34.5,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 4.1,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +4,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": null,
  "chain": null,
+ "funds": {
+  "active": [],
+  "closed": []
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
@@ -209,6 +210,35 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-10-30",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-07-31",
+   "2026-08-07",
+   "2026-08-14",
+   "2026-08-21",
+   "2026-08-28",
+   "2026-09-04",
+   "2026-09-11",
+   "2026-10-23",
+   "2026-10-30"
+  ],
+  "supply_values": [
+   1374040000.0,
+   1374040000.0,
+   1374040000.0,
+   1374040000.0,
+   1374040000.0,
+   1374040000.0,
+   1374040000.0,
+   1374040000.0,
+   1374040000.0
+  ],
+  "supply_change": 0.0,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

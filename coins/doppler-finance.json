@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 31,
- "total_exact": 30.68,
+ "total": 33,
+ "total_exact": 33.14,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": 0.2,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,8 +25,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -56,14 +56,14 @@
    "score": 0.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0115,
+   "percentile": 0.0111,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.122835,
-     "percentile": 0.0441,
+     "percentile": 0.0428,
      "basis": "sector",
      "display": "%12",
      "tier": "alt dilim"
@@ -72,7 +72,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.141002,
-     "percentile": 0.0446,
+     "percentile": 0.0432,
      "basis": "sector",
      "display": "8,14×",
      "tier": "alt dilim"
@@ -102,17 +102,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.4,
+   "score": 12.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3333,
-   "tier": "alt dilim",
+   "percentile": 0.8222,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 178.0,
-     "percentile": 0.6384,
+     "percentile": 0.6291,
      "basis": "sector",
      "display": "178",
      "tier": "orta dilim"
@@ -121,7 +121,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5573,
-     "percentile": 0.2698,
+     "percentile": 0.3022,
      "basis": "sector",
      "display": "%0,56",
      "tier": "alt dilim"
@@ -130,19 +130,10 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.9545,
+     "percentile": 0.9755,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 0.260096,
-     "percentile": 0.0146,
-     "basis": "sector",
-     "display": "0,3 yıl",
-     "tier": "alt dilim"
     }
    ]
   }
@@ -151,74 +142,93 @@
  "history": [
   [
    "2026-10-23",
-   27.89
+   32.08
   ],
   [
    "2026-10-24",
-   28.04
+   32.31
   ],
   [
    "2026-10-25",
-   27.62
+   28.95
   ],
   [
    "2026-10-26",
-   27.61
+   28.92
   ],
   [
    "2026-10-27",
-   27.46
+   28.77
   ],
   [
    "2026-10-28",
-   27.75
+   29.11
   ],
   [
    "2026-10-29",
-   28.34
+   29.74
   ],
   [
    "2026-10-30",
-   28.25
+   29.69
   ],
   [
    "2026-10-31",
-   27.98
+   29.39
   ],
   [
    "2026-11-01",
-   30.72
+   33.02
   ],
   [
    "2026-11-02",
-   30.77
+   33.1
   ],
   [
    "2026-11-04",
-   30.67
+   32.95
   ],
   [
    "2026-11-05",
-   30.74
+   33.02
   ],
   [
    "2026-11-06",
-   30.68
+   32.95
+  ],
+  [
+   "2026-11-07",
+   33.14
   ]
  ],
  "changes": [
   {
+   "date": "2026-10-25",
+   "delta": -3.4,
+   "from": 32.3,
+   "to": 28.9,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -3.32,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −3,3)"
+    }
+   ]
+  },
+  {
    "date": "2026-11-01",
-   "delta": 2.7,
-   "from": 28.0,
-   "to": 30.7,
+   "delta": 3.6,
+   "from": 29.4,
+   "to": 33.0,
    "event": false,
    "reasons": [
     {
      "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
      "part": "liquidity",
-     "delta": 2.69,
-     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,7)"
+     "delta": 3.6,
+     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +3,6)"
     }
    ]
   }
@@ -230,6 +240,10 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -244,6 +258,29 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   1000000000.0,
+   1000000000.0,
+   1139000000.0,
+   1139000000.0,
+   1228350000.0,
+   1228350000.0
+  ],
+  "supply_change": 0.2284,
+  "supply_days": 35
+ },
  "exchanges": [
   "OKX",
   "KuCoin",

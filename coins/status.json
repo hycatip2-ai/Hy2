@@ -10,9 +10,9 @@
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
  "total": 55,
- "total_exact": 55.23,
+ "total_exact": 55.16,
  "band": "Orta",
- "delta": 0.1,
+ "delta": 1.7,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -30,8 +30,8 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -60,8 +60,8 @@
    "score": 12.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6591,
-   "tier": "orta dilim",
+   "percentile": 0.6705,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
@@ -85,7 +85,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8767,
+     "percentile": 0.8768,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -105,17 +105,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 19.8,
+   "score": 19.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.975,
+   "percentile": 0.9722,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 36.0,
-     "percentile": 0.9877,
+     "percentile": 0.9855,
      "basis": "sector",
      "display": "36",
      "tier": "üst dilim"
@@ -125,17 +125,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.9,
+   "score": 9.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4545,
+   "percentile": 0.5,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 190.0,
-     "percentile": 0.733,
+     "percentile": 0.7324,
      "basis": "sector",
      "display": "190",
      "tier": "üst dilim"
@@ -143,35 +143,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.87,
-     "percentile": 0.1583,
+     "value": 2.1393,
+     "percentile": 0.0364,
      "basis": "sector",
-     "display": "%0,87",
+     "display": "%2,1",
      "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.25,
-     "percentile": 0.2644,
+     "value": 0.0714,
+     "percentile": 0.8323,
      "basis": "sector",
-     "display": "%25",
-     "tier": "alt dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 9.357974,
-     "percentile": 0.947,
-     "basis": "sector",
-     "display": "9,4 yıl",
+     "display": "%7,1",
      "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3612,
+     "percentile": 0.3658,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -183,88 +174,86 @@
  "history": [
   [
    "2026-10-23",
-   44.27
+   42.19
   ],
   [
    "2026-10-24",
-   59.25
+   57.88
   ],
   [
    "2026-10-25",
-   58.85
+   57.38
   ],
   [
    "2026-10-26",
-   58.85
+   57.38
   ],
   [
    "2026-10-27",
-   53.74
+   52.27
   ],
   [
    "2026-10-28",
-   53.92
+   52.49
   ],
   [
    "2026-10-29",
-   53.96
+   52.56
   ],
   [
    "2026-10-30",
-   53.93
+   52.52
   ],
   [
    "2026-10-31",
-   52.18
+   50.29
   ],
   [
    "2026-11-01",
-   52.26
+   50.39
   ],
   [
    "2026-11-02",
-   55.3
+   53.49
   ],
   [
    "2026-11-04",
-   55.34
+   53.55
   ],
   [
    "2026-11-05",
-   55.12
+   53.34
   ],
   [
    "2026-11-06",
-   55.23
+   53.45
+  ],
+  [
+   "2026-11-07",
+   55.16
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": 15.0,
-   "from": 44.3,
-   "to": 59.2,
+   "delta": 15.7,
+   "from": 42.2,
+   "to": 57.9,
    "event": true,
    "reasons": [
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": 16.19,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +16,2)"
-    },
-    {
-     "text": "Alış-satış farkı verisi artık mevcut.",
-     "part": "liquidity",
-     "delta": -1.11,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,1)"
+     "delta": 16.14,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +16,1)"
     }
    ]
   },
   {
    "date": "2026-10-27",
    "delta": -5.1,
-   "from": 58.9,
-   "to": 53.7,
+   "from": 57.4,
+   "to": 52.3,
    "event": true,
    "reasons": [
     {
@@ -276,10 +265,25 @@
    ]
   },
   {
+   "date": "2026-10-31",
+   "delta": -2.2,
+   "from": 52.5,
+   "to": 50.3,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -2.32,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −2,3)"
+    }
+   ]
+  },
+  {
    "date": "2026-11-02",
-   "delta": 3.0,
-   "from": 52.3,
-   "to": 55.3,
+   "delta": 3.1,
+   "from": 50.4,
+   "to": 53.5,
    "event": false,
    "reasons": [
     {
@@ -294,29 +298,23 @@
  "events": [
   {
    "date": "2026-10-24",
-   "delta": 15.0,
-   "from": 44.3,
-   "to": 59.2,
+   "delta": 15.7,
+   "from": 42.2,
+   "to": 57.9,
    "reasons": [
     {
      "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
      "part": "usage",
-     "delta": 16.19,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +16,2)"
-    },
-    {
-     "text": "Alış-satış farkı verisi artık mevcut.",
-     "part": "liquidity",
-     "delta": -1.11,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,1)"
+     "delta": 16.14,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +16,1)"
     }
    ]
   },
   {
    "date": "2026-10-27",
    "delta": -5.1,
-   "from": 58.9,
-   "to": 53.7,
+   "from": 57.4,
+   "to": 52.3,
    "reasons": [
     {
      "text": "GoPlus satışı engelleyen kontrat işareti verdi (köklü ve bol işlem gören coin olduğu için elenmedi; büyük olasılıkla yanlış alarm).",
@@ -328,10 +326,10 @@
   }
  ],
  "trend": {
-  "rank_now": 499,
-  "rank_start": 544,
-  "score": 38,
-  "rise": 54,
+  "rank_now": 504,
+  "rank_start": 549,
+  "score": 39,
+  "rise": 55,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
@@ -365,7 +363,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 11.0,
+  "score_change": 13.0,
   "double": false
  },
  "chain": {
@@ -373,6 +371,13 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [
+   "Fabric Ventures",
+   "Kenetic Capital"
+  ],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -387,14 +392,57 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0,
+   4812300000.0
+  ],
+  "supply_change": 0.0,
+  "supply_days": 91
+ },
  "exchanges": [
   "Upbit",
   "OKX",
   "Gate",
+  "MEXC",
   "HTX"
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 75562
+  "depth_2pct_usd": 121298.68,
+  "major_volume_share": 0.02,
+  "holder_count": 75546,
+  "depth_to_mc": 0.003929
  }
 }

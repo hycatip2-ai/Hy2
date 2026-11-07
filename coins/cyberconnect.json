@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 41,
- "total_exact": 41.01,
+ "total": 45,
+ "total_exact": 44.55,
  "band": "Zayıf",
- "delta": 0.3,
+ "delta": 0.1,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 2,
+  "level": "Yetersiz"
  },
  "flags": [],
  "notes": [],
@@ -26,7 +26,7 @@
  },
  "revenue_unmeasured": true,
  "date": "2026-10-28",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -100,30 +100,20 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.2,
-   "has_data": true,
+   "score": 7.0,
+   "has_data": false,
    "weight": 30,
-   "percentile": 0.2027,
-   "tier": "alt dilim",
-   "metrics": [
-    {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.2111,
-     "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
-    }
-   ]
+   "percentile": null,
+   "tier": null,
+   "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.7,
+   "score": 11.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8548,
+   "percentile": 0.6935,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -154,15 +144,6 @@
      "tier": "orta dilim"
     },
     {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 3.203285,
-     "percentile": 0.8001,
-     "basis": "sector",
-     "display": "3,2 yıl",
-     "tier": "üst dilim"
-    },
-    {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
@@ -178,50 +159,35 @@
  "history": [
   [
    "2026-10-23",
-   50.37
+   49.4
   ],
   [
    "2026-10-24",
-   44.86
+   48.91
   ],
   [
    "2026-10-25",
-   40.29
+   44.32
   ],
   [
    "2026-10-26",
-   40.73
+   44.43
   ],
   [
    "2026-10-27",
-   40.75
+   44.44
   ],
   [
    "2026-10-28",
-   41.01
+   44.55
   ]
  ],
  "changes": [
   {
-   "date": "2026-10-24",
-   "delta": -5.5,
-   "from": 50.4,
-   "to": 44.9,
-   "event": true,
-   "reasons": [
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": -4.7,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,7)"
-    }
-   ]
-  },
-  {
    "date": "2026-10-25",
    "delta": -4.6,
-   "from": 44.9,
-   "to": 40.3,
+   "from": 48.9,
+   "to": 44.3,
    "event": false,
    "reasons": [
     {
@@ -233,24 +199,21 @@
    ]
   }
  ],
- "events": [
-  {
-   "date": "2026-10-24",
-   "delta": -5.5,
-   "from": 50.4,
-   "to": 44.9,
-   "reasons": [
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": -4.7,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −4,7)"
-    }
-   ]
-  }
- ],
+ "events": [],
  "trend": null,
  "chain": null,
+ "funds": {
+  "active": [
+   "Amber Group",
+   "Animoca Brands",
+   "Binance Labs",
+   "Dragonfly Capital",
+   "DWF Labs",
+   "Multicoin Capital",
+   "Polygon Ventures"
+  ],
+  "closed": []
+ },
  "investors": [
   "Animoca Brands",
   "Sky9 Capital",
@@ -288,6 +251,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-10-28",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-07-29",
+   "2026-08-05",
+   "2026-08-12",
+   "2026-08-19",
+   "2026-08-26",
+   "2026-09-02",
+   "2026-09-09",
+   "2026-09-16",
+   "2026-09-23",
+   "2026-09-30",
+   "2026-10-07",
+   "2026-10-14",
+   "2026-10-21",
+   "2026-10-28"
+  ],
+  "supply_values": [
+   71955400.0,
+   71955400.0,
+   71955400.0,
+   77284900.0,
+   77284900.0,
+   77284900.0,
+   77284900.0,
+   77796000.0,
+   77796000.0,
+   77796000.0,
+   77796000.0,
+   77796000.0,
+   78307100.0,
+   78307100.0
+  ],
+  "supply_change": 0.0883,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

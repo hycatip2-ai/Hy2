@@ -11,10 +11,10 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 34,
- "total_exact": 33.52,
+ "total": 32,
+ "total_exact": 32.11,
  "band": "Zayıf",
- "delta": -3.4,
+ "delta": -2.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -33,7 +33,7 @@
  },
  "revenue_unmeasured": true,
  "date": "2026-11-02",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
@@ -106,17 +106,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.2,
+   "score": 8.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4091,
+   "percentile": 0.35,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.5085,
+     "percentile": 0.3999,
      "basis": "sector",
      "display": "3",
      "tier": "orta dilim"
@@ -126,11 +126,11 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.0,
+   "score": 10.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.3333,
-   "tier": "alt dilim",
+   "percentile": 0.3667,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
@@ -158,15 +158,6 @@
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 1.141684,
-     "percentile": 0.2973,
-     "basis": "sector",
-     "display": "1,1 yıl",
-     "tier": "alt dilim"
     }
    ]
   }
@@ -181,62 +172,83 @@
   {
    "text": "Aktif geliştirici sayısı sert biçimde arttı.",
    "part": "usage",
-   "delta": 1.85,
-   "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +1,8)"
+   "delta": 2.47,
+   "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +2,5)"
   }
  ],
  "history": [
   [
    "2026-10-23",
-   38.87
+   42.43
   ],
   [
    "2026-10-24",
-   38.73
+   42.35
   ],
   [
    "2026-10-25",
-   37.74
+   34.35
   ],
   [
    "2026-10-26",
-   37.7
+   34.6
   ],
   [
    "2026-10-27",
-   37.43
+   34.1
   ],
   [
    "2026-10-28",
-   38.23
+   35.12
   ],
   [
    "2026-10-29",
-   38.18
+   34.99
   ],
   [
    "2026-10-30",
-   37.54
+   34.72
   ],
   [
    "2026-10-31",
-   38.13
+   35.35
   ],
   [
    "2026-11-01",
-   36.93
+   34.9
   ],
   [
    "2026-11-02",
-   33.52
+   32.11
   ]
  ],
  "changes": [
   {
+   "date": "2026-10-25",
+   "delta": -8.0,
+   "from": 42.4,
+   "to": 34.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -2.73,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,7)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.72,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,7)"
+    }
+   ]
+  },
+  {
    "date": "2026-11-02",
-   "delta": -3.4,
-   "from": 36.9,
-   "to": 33.5,
+   "delta": -2.8,
+   "from": 34.9,
+   "to": 32.1,
    "event": false,
    "reasons": [
     {
@@ -248,15 +260,43 @@
     {
      "text": "Aktif geliştirici sayısı sert biçimde arttı.",
      "part": "usage",
-     "delta": 1.85,
-     "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +1,8)"
+     "delta": 2.47,
+     "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +2,5)"
     }
    ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-25",
+   "delta": -8.0,
+   "from": 42.4,
+   "to": 34.4,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -2.73,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,7)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.72,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,7)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": null,
+ "funds": {
+  "active": [
+   "Fenbushi Capital",
+   "Galaxy Digital"
+  ],
+  "closed": []
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
@@ -270,6 +310,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-02",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-03",
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02"
+  ],
+  "supply_values": [
+   311759000.0,
+   313025000.0,
+   314656000.0,
+   315815000.0,
+   317465000.0,
+   318842000.0,
+   320204000.0,
+   539465000.0,
+   540711000.0,
+   541965000.0,
+   543112000.0,
+   563819000.0,
+   564963000.0,
+   566089000.0
+  ],
+  "supply_change": 0.8158,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

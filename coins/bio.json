@@ -11,10 +11,10 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 48,
- "total_exact": 47.62,
+ "total": 39,
+ "total_exact": 39.1,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": 0.1,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -28,7 +28,7 @@
  },
  "revenue_unmeasured": true,
  "date": "2026-10-29",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -112,30 +112,30 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 12.2,
+   "score": 2.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6759,
-   "tier": "üst dilim",
+   "percentile": 0.1522,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.6105,
+     "percentile": 0.1307,
      "basis": "sector",
      "display": "1",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.2,
+   "score": 13.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.75,
+   "percentile": 0.8878,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -166,15 +166,6 @@
      "tier": "orta dilim"
     },
     {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 1.848049,
-     "percentile": 0.3961,
-     "basis": "sector",
-     "display": "1,8 yıl",
-     "tier": "orta dilim"
-    },
-    {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
@@ -190,34 +181,56 @@
  "history": [
   [
    "2026-10-23",
-   45.38
+   41.0
   ],
   [
    "2026-10-24",
-   44.84
+   38.3
   ],
   [
    "2026-10-25",
-   46.72
+   38.74
   ],
   [
    "2026-10-26",
-   47.18
+   38.78
   ],
   [
    "2026-10-27",
-   47.06
+   38.53
   ],
   [
    "2026-10-28",
-   47.86
+   39.05
   ],
   [
    "2026-10-29",
-   47.62
+   39.1
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -2.7,
+   "from": 41.0,
+   "to": 38.3,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -3.64,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,6)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 1.1,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +1,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": null,
  "chain": {
@@ -225,6 +238,12 @@
   "source": "tvl",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [
+   "Binance Labs"
+  ],
+  "closed": []
  },
  "investors": [
   "Maelstrom",
@@ -259,6 +278,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-10-29",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-07-30",
+   "2026-08-06",
+   "2026-08-13",
+   "2026-08-20",
+   "2026-08-27",
+   "2026-09-03",
+   "2026-09-10",
+   "2026-09-17",
+   "2026-09-24",
+   "2026-10-01",
+   "2026-10-08",
+   "2026-10-15",
+   "2026-10-22",
+   "2026-10-29"
+  ],
+  "supply_values": [
+   2255990000.0,
+   2263220000.0,
+   2270450000.0,
+   2277670000.0,
+   2284900000.0,
+   2470420000.0,
+   2474670000.0,
+   2483240000.0,
+   2485910000.0,
+   2494410000.0,
+   2500380000.0,
+   2508350000.0,
+   2515030000.0,
+   2520090000.0
+  ],
+  "supply_change": 0.1171,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

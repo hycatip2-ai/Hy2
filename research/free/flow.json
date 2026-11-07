@@ -1,0 +1,108 @@
+{
+ "slug": "flow",
+ "schema": 2,
+ "name": "Flow",
+ "symbol": "FLOW",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-07",
+ "pages": [
+  "https://flow.com/token-distribution",
+  "https://flow.com/",
+  "https://flow.com/flow-tokenomics/technical-overview",
+  "https://flow.com/post/flow-token-circulating-supply-updates",
+  "https://flow.com/post/transaction-fees-rising-flow-issuance-falling",
+  "https://developers.flow.com/build/cadence/basics/flow-token",
+  "https://tokenomist.ai/flow"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://flow.com/token-distribution",
+   "note": "Yeni tokenlar protokol kurallarına göre staking ödülleri için basılmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 0.0,
+   "source": "https://flow.com/token-distribution",
+   "note": "Protokolde düzenli bir geri alım veya yakım mekanizması bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "unlock_6m_pct": {
+   "value": 0.0,
+   "source": "https://tokenomist.ai/flow",
+   "note": "Planlanmış bir kilit açılımı bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "hack_12m": {
+   "value": true,
+   "source": "https://flow.com/",
+   "note": "1 Eylül 2026 tarihinde Ankr likit staking istismarı gerçekleşmiştir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "investors": {
+   "value": [
+    "Dapper Labs"
+   ],
+   "source": "https://flow.com/token-distribution",
+   "note": "Dapper Labs, Flow teknolojisinin geliştirilmesini finanse eden kurumsal kuruluştur.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "unlock_12m_pct": {
+   "value": 0.0,
+   "source": "https://tokenomist.ai/flow",
+   "note": "Önümüzdeki 12 ay için planlanmış bir kilit açılımı yoktur.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "stake_to_operate",
+     "emission_rewards",
+     "collateral",
+     "governance"
+    ]
+   },
+   "source": "https://flow.com/flow-tokenomics/technical-overview",
+   "note": "FLOW, ağ ücretleri, staking ve yönetişim için zorunlu bir tokendır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Stablecoin Market Cap",
+    "value": 74.6,
+    "unit": "million USD",
+    "as_of": "2026-06-30",
+    "confirmed": true
+   },
+   "source": "https://flow.com/",
+   "note": "Flow ağındaki stablecoin piyasa değeri 30 Haziran 2026 itibarıyla 74.6 milyon dolardır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.4962,
+    "vesting_end": "2023-10"
+   },
+   "source": "https://tokenomist.ai/flow",
+   "note": "İçeriden öğrenenlerin (ekip, yatırımcılar, Dapper Labs) toplam tahsisatı %49.62'dir.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [],
+ "queue": {
+  "priority": 3,
+  "reason": "ilk 100: geri alım, kilit açılışı, hack"
+ },
+ "usage": {
+  "input_tokens": 13642,
+  "output_tokens": 845
+ }
+}

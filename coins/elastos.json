@@ -11,10 +11,10 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 46,
- "total_exact": 45.76,
+ "total": 40,
+ "total_exact": 39.83,
  "band": "Zayıf",
- "delta": 0.2,
+ "delta": 0.8,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -27,8 +27,8 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; azami arza kadar en fazla %7,6 yer kaldı."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -41,19 +41,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.4,
+   "score": 7.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3585,
+   "percentile": 0.3654,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 41.49897,
-     "percentile": 0.369,
+     "value": 40.778883,
+     "percentile": 0.3782,
      "basis": "sector",
-     "display": "41,5×",
+     "display": "40,8×",
      "tier": "orta dilim"
     }
    ]
@@ -61,7 +61,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.2,
+   "score": 13.3,
    "has_data": true,
    "weight": 25,
    "percentile": 0.7614,
@@ -71,7 +71,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.880259,
-     "percentile": 0.6546,
+     "percentile": 0.6547,
      "basis": "sector",
      "display": "%88",
      "tier": "orta dilim"
@@ -80,7 +80,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.222243,
-     "percentile": 0.6245,
+     "percentile": 0.6241,
      "basis": "sector",
      "display": "1,22×",
      "tier": "orta dilim"
@@ -89,7 +89,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7072,
+     "percentile": 0.7119,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -109,17 +109,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 9.9,
+   "score": 7.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.4625,
-   "tier": "orta dilim",
+   "percentile": 0.3194,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 2.0,
-     "percentile": 0.4935,
+     "percentile": 0.3526,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -129,17 +129,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.7,
+   "score": 2.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0568,
+   "percentile": 0.0114,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 46.0,
-     "percentile": 0.1308,
+     "percentile": 0.1213,
      "basis": "sector",
      "display": "46",
      "tier": "alt dilim"
@@ -148,7 +148,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.7464,
-     "percentile": 0.038,
+     "percentile": 0.0564,
      "basis": "sector",
      "display": "%1,7",
      "tier": "alt dilim"
@@ -157,19 +157,10 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.0875,
+     "percentile": 0.1452,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 8.76386,
-     "percentile": 0.8732,
-     "basis": "sector",
-     "display": "8,8 yıl",
-     "tier": "üst dilim"
     }
    ]
   }
@@ -178,15 +169,19 @@
  "history": [
   [
    "2026-11-04",
-   46.38
+   39.57
   ],
   [
    "2026-11-05",
-   45.57
+   39.02
   ],
   [
    "2026-11-06",
-   45.76
+   39.08
+  ],
+  [
+   "2026-11-07",
+   39.83
   ]
  ],
  "changes": [],
@@ -197,6 +192,10 @@
   "source": "native",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -211,6 +210,7 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": null,
  "exchanges": [
   "Coinbase",
   "Gate",

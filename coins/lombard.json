@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 25,
  "slug": "lombard",
  "symbol": "BARD",
  "name": "Lombard",
@@ -11,30 +11,31 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 34,
- "total_exact": 34.14,
- "band": "Zayıf",
- "delta": 1.6,
+ "total": 57,
+ "total_exact": 57.12,
+ "band": "Orta",
+ "delta": null,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
- "notes": [],
+ "notes": [
+  {
+   "id": "incentive_growth",
+   "text": "Yılda basılan yeni tokenlerin değeri gelirin iki katından fazla; büyüme büyük ölçüde teşvikle besleniyor olabilir."
+  }
+ ],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Yeni token basılabiliyor (yetki: bir grup (çoklu imza)) ama kontrat yılda en fazla %10 basıma izin veriyor (sınır %10)."
  },
  "revenue_unmeasured": false,
- "date": "2026-10-28",
- "formula_version": "1.22.0",
- "eligible_for_top": false,
- "missing": [
-  "gelir",
-  "gelir trendi",
-  "arz kuralı"
- ],
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
@@ -45,27 +46,37 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 17.3,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.8333,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 0.058201,
+     "percentile": 0.8659,
+     "basis": "sector",
+     "display": "0,058×",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.2,
+   "score": 5.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2451,
+   "percentile": 0.2333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.396562,
-     "percentile": 0.3499,
+     "percentile": 0.3699,
      "basis": "sector",
      "display": "%40",
      "tier": "orta dilim"
@@ -74,7 +85,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.521671,
-     "percentile": 0.3719,
+     "percentile": 0.3704,
      "basis": "sector",
      "display": "2,52×",
      "tier": "orta dilim"
@@ -82,10 +93,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.155738,
-     "percentile": 0.212,
+     "value": 0.143729,
+     "percentile": 0.1246,
      "basis": "sector",
-     "display": "+%16",
+     "display": "+%14",
      "tier": "alt dilim"
     }
    ]
@@ -93,77 +104,114 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.1,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.0755,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "holders_revenue_share",
+     "name": "Token sahibine dönen gelir payı",
+     "value": 0.0,
+     "percentile": 0.2756,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "net_holder_yield",
+     "name": "Sahibe net getiri (seyrelme düşülmüş)",
+     "value": -0.5829,
+     "percentile": 0.1203,
+     "basis": "sector",
+     "display": "−%58",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "revenue_to_emissions",
+     "name": "Gelirin yeni arzın değerine oranı",
+     "value": 0.039143,
+     "percentile": 0.2505,
+     "basis": "sector",
+     "display": "0,039×",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.4,
+   "score": 14.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1534,
-   "tier": "alt dilim",
+   "percentile": 0.9014,
+   "tier": "üst dilim",
    "metrics": [
     {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.2182,
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 1.882975,
+     "percentile": 0.8312,
      "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
+     "display": "+%88",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": -0.005022,
+     "percentile": 0.641,
+     "basis": "sector",
+     "display": "−%0,5",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.4,
+   "score": 14.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4706,
-   "tier": "orta dilim",
+   "percentile": 0.9556,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 219.0,
-     "percentile": 0.792,
+     "value": 220.0,
+     "percentile": 0.7954,
      "basis": "sector",
-     "display": "219",
+     "display": "220",
      "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.1832,
-     "percentile": 0.8969,
+     "value": 0.2031,
+     "percentile": 0.8972,
      "basis": "sector",
-     "display": "%0,18",
+     "display": "%0,20",
      "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.3261,
-     "percentile": 0.1371,
+     "value": 0.1795,
+     "percentile": 0.5317,
      "basis": "sector",
-     "display": "%33",
-     "tier": "alt dilim"
+     "display": "%18",
+     "tier": "orta dilim"
     },
     {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 1.114305,
-     "percentile": 0.2546,
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 2.0,
+     "percentile": 0.6858,
      "basis": "sector",
-     "display": "1,1 yıl",
-     "tier": "alt dilim"
+     "display": "2",
+     "tier": "üst dilim"
     }
    ]
   }
@@ -172,47 +220,217 @@
  "history": [
   [
    "2026-10-23",
-   33.77
+   40.63
   ],
   [
    "2026-10-24",
-   32.63
+   37.76
   ],
   [
    "2026-10-25",
-   32.44
+   37.07
   ],
   [
    "2026-10-26",
-   32.48
+   36.96
   ],
   [
    "2026-10-27",
-   32.57
+   36.93
   ],
   [
    "2026-10-28",
-   34.14
+   38.11
+  ],
+  [
+   "2026-11-07",
+   57.12
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -2.9,
+   "from": 40.6,
+   "to": 37.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -2.19,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −2,2)"
+    }
+   ]
+  }
+ ],
  "events": [],
- "trend": null,
- "chain": null,
- "investors": [],
- "investors_source": null,
+ "trend": {
+  "rank_now": 387,
+  "rank_start": 419,
+  "score": 0,
+  "rise": 0,
+  "steady": 50,
+  "calm": 8,
+  "weeks_up": 6,
+  "weeks_down": 4,
+  "weeks_total": 12,
+  "weekly": [
+   0,
+   0,
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   },
+   {
+    "id": "supply",
+    "text": "Arz etkisi"
+   }
+  ],
+  "trend": "flat",
+  "supply_share": 1.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": 16.5,
+  "double": false
+ },
+ "chain": {
+  "name": "Bitcoin",
+  "source": "tvl",
+  "flow": false,
+  "flow_rank": null
+ },
+ "funds": {
+  "active": [
+   "Binance Labs",
+   "OKX Ventures",
+   "Polychain Capital"
+  ],
+  "closed": []
+ },
+ "investors": [
+  "Polychain Capital",
+  "BabylonChain",
+  "Inc.",
+  "dao5",
+  "Franklin Templeton",
+  "Foresight Ventures",
+  "Mirana Ventures",
+  "Mantle Ecosystem",
+  "Nomad Capital",
+  "Binance Labs"
+ ],
+ "investors_source": "https://defillama.com/protocol/lombard",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/lombard",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
- "exchanges": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": [
+   42025.0,
+   49994.0,
+   -52076.0,
+   164396.0,
+   478870.0,
+   251498.0,
+   529101.0,
+   434387.0,
+   314712.0,
+   134410.0,
+   143009.0,
+   82339.0,
+   91312.0
+  ],
+  "holders_weekly": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "supply_dates": [
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   343125000.0,
+   343125000.0,
+   353438000.0,
+   353438000.0,
+   353438000.0,
+   353438000.0,
+   363750000.0,
+   363750000.0,
+   363750000.0,
+   363750000.0,
+   363750000.0,
+   396562000.0,
+   396562000.0,
+   396562000.0
+  ],
+  "supply_change": 0.1557,
+  "supply_days": 91
+ },
+ "exchanges": [
+  "Binance",
+  "Upbit",
+  "Coinbase",
+  "OKX",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX"
+ ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "depth_2pct_usd": 239280.16,
+  "major_volume_share": 0.2052,
+  "holder_count": 17976,
+  "depth_to_mc": 0.005466
+ }
 }

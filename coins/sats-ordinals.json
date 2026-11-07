@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 49,
- "total_exact": 48.73,
+ "total": 48,
+ "total_exact": 48.45,
  "band": "Zayıf",
- "delta": 0.4,
+ "delta": -0.0,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,8 +27,8 @@
   "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": true,
  "missing": [],
  "penalty": 0.0,
@@ -48,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 17.1,
+   "score": 16.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9699,
+   "percentile": 0.9524,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.919,
+     "percentile": 0.9199,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -67,7 +67,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9598,
+     "percentile": 0.9254,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -76,7 +76,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6854,
+     "percentile": 0.6886,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -96,7 +96,7 @@
      "id": "buyback_burn",
      "name": "Geri alım / yakım",
      "value": 0.0,
-     "percentile": 0.1651,
+     "percentile": 0.1726,
      "basis": "sector",
      "display": "Yok",
      "tier": "alt dilim"
@@ -105,7 +105,7 @@
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 0.5,
-     "percentile": 0.3869,
+     "percentile": 0.3871,
      "basis": "sector",
      "display": "Kısmen",
      "tier": "orta dilim"
@@ -125,17 +125,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.4,
+   "score": 11.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7108,
-   "tier": "üst dilim",
+   "percentile": 0.6071,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 125.0,
-     "percentile": 0.6834,
+     "percentile": 0.6868,
      "basis": "sector",
      "display": "125",
      "tier": "üst dilim"
@@ -144,7 +144,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2974,
-     "percentile": 0.7269,
+     "percentile": 0.7354,
      "basis": "sector",
      "display": "%0,30",
      "tier": "üst dilim"
@@ -153,19 +153,10 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2609,
-     "percentile": 0.2616,
+     "percentile": 0.2642,
      "basis": "sector",
      "display": "%26",
      "tier": "alt dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 3.104723,
-     "percentile": 0.6035,
-     "basis": "sector",
-     "display": "3,1 yıl",
-     "tier": "orta dilim"
     }
    ]
   }
@@ -174,82 +165,86 @@
  "history": [
   [
    "2026-10-23",
-   51.45
+   52.32
   ],
   [
    "2026-10-24",
-   51.75
+   52.68
   ],
   [
    "2026-10-25",
-   50.16
+   50.74
   ],
   [
    "2026-10-26",
-   50.93
+   51.44
   ],
   [
    "2026-10-27",
-   50.9
+   51.36
   ],
   [
    "2026-10-28",
-   51.08
+   51.5
   ],
   [
    "2026-10-29",
-   51.27
+   51.81
   ],
   [
    "2026-10-30",
-   51.23
+   51.63
   ],
   [
    "2026-10-31",
-   51.77
+   52.12
   ],
   [
    "2026-11-01",
-   49.21
+   48.8
   ],
   [
    "2026-11-02",
-   49.61
+   49.22
   ],
   [
    "2026-11-04",
-   47.13
+   46.69
   ],
   [
    "2026-11-05",
-   48.32
+   48.02
   ],
   [
    "2026-11-06",
-   48.73
+   48.5
+  ],
+  [
+   "2026-11-07",
+   48.45
   ]
  ],
  "changes": [
   {
    "date": "2026-11-01",
-   "delta": -2.6,
-   "from": 51.8,
-   "to": 49.2,
+   "delta": -3.3,
+   "from": 52.1,
+   "to": 48.8,
    "event": false,
    "reasons": [
     {
      "text": "Şüpheli işlem çiftlerinin oranı arttı.",
      "part": "liquidity",
-     "delta": -1.89,
-     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −1,9)"
+     "delta": -2.65,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −2,7)"
     }
    ]
   },
   {
    "date": "2026-11-04",
    "delta": -2.5,
-   "from": 49.6,
-   "to": 47.1,
+   "from": 49.2,
+   "to": 46.7,
    "event": false,
    "reasons": [
     {
@@ -263,8 +258,8 @@
  ],
  "events": [],
  "trend": {
-  "rank_now": 688,
-  "rank_start": 573,
+  "rank_now": 687,
+  "rank_start": 584,
   "score": 0,
   "rise": 0,
   "steady": 17,
@@ -274,11 +269,11 @@
   "weeks_total": 12,
   "weekly": [
    1,
+   -1,
+   -1,
+   -1,
+   -1,
    0,
-   -1,
-   -1,
-   -1,
-   -1,
    1,
    -1,
    -1,
@@ -291,7 +286,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -2.7,
+  "score_change": -3.9,
   "double": false
  },
  "chain": {
@@ -299,6 +294,10 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -330,6 +329,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0,
+   2100000000000000.0
+  ],
+  "supply_change": 0.0,
+  "supply_days": 91
+ },
  "exchanges": [
   "OKX",
   "Gate",

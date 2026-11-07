@@ -12,10 +12,10 @@
  ],
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 51,
- "total_exact": 50.99,
- "band": "Orta",
- "delta": -0.3,
+ "total": 46,
+ "total_exact": 46.06,
+ "band": "Zayıf",
+ "delta": -0.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -29,7 +29,7 @@
  },
  "revenue_unmeasured": false,
  "date": "2026-10-31",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -104,17 +104,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.7,
+   "score": 2.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.25,
+   "percentile": 0.04,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.2842,
+     "percentile": 0.0986,
      "basis": "sector",
      "display": "1",
      "tier": "alt dilim"
@@ -124,10 +124,10 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.0,
+   "score": 12.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9118,
+   "percentile": 0.7941,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -158,15 +158,6 @@
      "tier": "orta dilim"
     },
     {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 4.914442,
-     "percentile": 0.7293,
-     "basis": "sector",
-     "display": "4,9 yıl",
-     "tier": "üst dilim"
-    },
-    {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
@@ -182,60 +173,60 @@
  "history": [
   [
    "2026-10-23",
-   55.29
+   55.71
   ],
   [
    "2026-10-24",
-   55.77
+   56.06
   ],
   [
    "2026-10-25",
-   50.42
+   45.53
   ],
   [
    "2026-10-26",
-   50.08
+   45.18
   ],
   [
    "2026-10-27",
-   50.66
+   45.72
   ],
   [
    "2026-10-28",
-   50.43
+   45.54
   ],
   [
    "2026-10-29",
-   51.08
+   46.04
   ],
   [
    "2026-10-30",
-   51.32
+   46.21
   ],
   [
    "2026-10-31",
-   50.99
+   46.06
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": -5.4,
-   "from": 55.8,
-   "to": 50.4,
+   "delta": -10.5,
+   "from": 56.1,
+   "to": 45.5,
    "event": true,
    "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -6.68,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −6,7)"
+    },
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
      "delta": -2.03,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,0)"
-    },
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": -2.01,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,0)"
     }
    ]
   }
@@ -243,27 +234,36 @@
  "events": [
   {
    "date": "2026-10-25",
-   "delta": -5.4,
-   "from": 55.8,
-   "to": 50.4,
+   "delta": -10.5,
+   "from": 56.1,
+   "to": 45.5,
    "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": -6.68,
+     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −6,7)"
+    },
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
      "delta": -2.03,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −2,0)"
-    },
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": -2.01,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −2,0)"
     }
    ]
   }
  ],
  "trend": null,
  "chain": null,
+ "funds": {
+  "active": [
+   "Binance Labs",
+   "Coinbase Ventures",
+   "DWF Labs",
+   "Fenbushi Capital"
+  ],
+  "closed": []
+ },
  "investors": [],
  "investors_source": null,
  "angel_investors": [],
@@ -277,6 +277,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-10-31",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-01",
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31"
+  ],
+  "supply_values": [
+   1000240000.0,
+   1000240000.0,
+   1000240000.0,
+   1000240000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0,
+   1000000000.0
+  ],
+  "supply_change": -0.0002,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 41,
- "total_exact": 41.42,
+ "total": 42,
+ "total_exact": 42.21,
  "band": "Zayıf",
  "delta": -0.1,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 2,
+  "level": "Yetersiz"
  },
  "flags": [],
  "notes": [],
@@ -25,8 +25,8 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; azami arzın tamamı çıkarıldı, arz artmaz."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
@@ -48,17 +48,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.9,
+   "score": 8.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4578,
+   "percentile": 0.4524,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.536087,
-     "percentile": 0.4237,
+     "percentile": 0.4196,
      "basis": "sector",
      "display": "%54",
      "tier": "orta dilim"
@@ -67,7 +67,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.86537,
-     "percentile": 0.4359,
+     "percentile": 0.4316,
      "basis": "sector",
      "display": "1,87×",
      "tier": "orta dilim"
@@ -76,7 +76,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.4722,
+     "percentile": 0.4671,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -96,37 +96,27 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.9,
-   "has_data": true,
+   "score": 7.0,
+   "has_data": false,
    "weight": 20,
-   "percentile": 0.3617,
-   "tier": "orta dilim",
-   "metrics": [
-    {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.2945,
-     "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
-    }
-   ]
+   "percentile": null,
+   "tier": null,
+   "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.7,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8554,
+   "percentile": 0.7619,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 10.0,
-     "percentile": 0.0645,
+     "percentile": 0.0638,
      "basis": "sector",
      "display": "10",
      "tier": "alt dilim"
@@ -135,7 +125,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1473,
-     "percentile": 0.9234,
+     "percentile": 0.9242,
      "basis": "sector",
      "display": "%0,15",
      "tier": "üst dilim"
@@ -144,19 +134,10 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8832,
+     "percentile": 0.8758,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 4.052019,
-     "percentile": 0.6595,
-     "basis": "sector",
-     "display": "4,1 yıl",
-     "tier": "orta dilim"
     }
    ]
   }
@@ -165,21 +146,69 @@
  "history": [
   [
    "2026-11-05",
-   41.49
+   42.48
   ],
   [
    "2026-11-06",
-   41.42
+   42.35
+  ],
+  [
+   "2026-11-07",
+   42.21
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 653,
+  "rank_start": 695,
+  "score": 32,
+  "rise": 39,
+  "steady": 42,
+  "calm": 0,
+  "weeks_up": 5,
+  "weeks_down": 5,
+  "weeks_total": 12,
+  "weekly": [
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   1,
+   -1,
+   1
+  ],
+  "labels": [
+   {
+    "id": "spike",
+    "text": "Ani sıçrama"
+   },
+   {
+    "id": "wavy",
+    "text": "Dalgalı"
+   }
+  ],
+  "trend": "rising",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": null,
+  "double": false
+ },
  "chain": {
   "name": "BSC",
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -194,6 +223,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0,
+   24123900000.0
+  ],
+  "supply_change": 0.0,
+  "supply_days": 91
+ },
  "exchanges": [],
  "delisted": [],
  "recorded": {

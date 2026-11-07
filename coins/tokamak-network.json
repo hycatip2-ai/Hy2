@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 46,
- "total_exact": 45.51,
+ "total": 40,
+ "total_exact": 39.86,
  "band": "Zayıf",
- "delta": -1.6,
+ "delta": -1.2,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -26,7 +26,7 @@
  },
  "revenue_unmeasured": false,
  "date": "2026-11-02",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -101,17 +101,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 13.1,
+   "score": 9.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.744,
-   "tier": "üst dilim",
+   "percentile": 0.4231,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 2.0,
-     "percentile": 0.6569,
+     "percentile": 0.4482,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -121,10 +121,10 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.5,
+   "score": 6.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2708,
+   "percentile": 0.1562,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -155,15 +155,6 @@
      "tier": "üst dilim"
     },
     {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 6.176591,
-     "percentile": 0.8188,
-     "basis": "sector",
-     "display": "6,2 yıl",
-     "tier": "üst dilim"
-    },
-    {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
@@ -179,68 +170,68 @@
  "history": [
   [
    "2026-10-23",
-   35.89
+   32.56
   ],
   [
    "2026-10-24",
-   36.31
+   32.99
   ],
   [
    "2026-10-25",
-   45.8
+   39.39
   ],
   [
    "2026-10-26",
-   45.9
+   39.26
   ],
   [
    "2026-10-27",
-   46.02
+   39.29
   ],
   [
    "2026-10-28",
-   47.82
+   40.85
   ],
   [
    "2026-10-29",
-   47.56
+   40.49
   ],
   [
    "2026-10-30",
-   47.19
+   40.14
   ],
   [
    "2026-10-31",
-   46.73
+   40.58
   ],
   [
    "2026-11-01",
-   47.06
+   41.09
   ],
   [
    "2026-11-02",
-   45.51
+   39.86
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": 9.5,
-   "from": 36.3,
-   "to": 45.8,
+   "delta": 6.4,
+   "from": 33.0,
+   "to": 39.4,
    "event": true,
    "reasons": [
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": 5.12,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +5,1)"
-    },
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
      "delta": 3.73,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,7)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 2.53,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +2,5)"
     }
    ]
   }
@@ -248,21 +239,21 @@
  "events": [
   {
    "date": "2026-10-25",
-   "delta": 9.5,
-   "from": 36.3,
-   "to": 45.8,
+   "delta": 6.4,
+   "from": 33.0,
+   "to": 39.4,
    "reasons": [
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": 5.12,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım +5,1)"
-    },
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
      "part": "supply",
      "delta": 3.73,
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,7)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 2.53,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +2,5)"
     }
    ]
   }
@@ -273,6 +264,10 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -287,6 +282,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-02",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-03",
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02"
+  ],
+  "supply_values": [
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0,
+   43841500.0
+  ],
+  "supply_change": 0.0,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

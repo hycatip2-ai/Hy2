@@ -12,9 +12,9 @@
  "sector": "infra",
  "sector_name": "Altyapı",
  "total": 42,
- "total_exact": 41.71,
+ "total_exact": 42.05,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": 0.3,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -27,8 +27,8 @@
   "text": "Kontrattaki üst sınıra ulaşıldı; yeni token basılamaz."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -57,14 +57,14 @@
    "score": 9.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6296,
+   "percentile": 0.6071,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.760791,
-     "percentile": 0.662,
+     "percentile": 0.6477,
      "basis": "sector",
      "display": "%76",
      "tier": "orta dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.314422,
-     "percentile": 0.6932,
+     "percentile": 0.6781,
      "basis": "sector",
      "display": "1,31×",
      "tier": "üst dilim"
@@ -81,10 +81,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.098047,
-     "percentile": 0.1359,
+     "value": 0.096989,
+     "percentile": 0.155,
      "basis": "sector",
-     "display": "+%9,8",
+     "display": "+%9,7",
      "tier": "alt dilim"
     }
    ]
@@ -112,17 +112,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.1,
+   "score": 11.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6296,
+   "percentile": 0.6429,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 203.0,
-     "percentile": 0.7536,
+     "percentile": 0.7581,
      "basis": "sector",
      "display": "203",
      "tier": "üst dilim"
@@ -130,35 +130,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.2575,
-     "percentile": 0.8438,
+     "value": 0.2796,
+     "percentile": 0.8056,
      "basis": "sector",
-     "display": "%0,26",
+     "display": "%0,28",
      "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.1961,
-     "percentile": 0.3128,
+     "value": 0.1731,
+     "percentile": 0.4535,
      "basis": "sector",
-     "display": "%20",
-     "tier": "alt dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 2.803559,
-     "percentile": 0.5479,
-     "basis": "sector",
-     "display": "2,8 yıl",
+     "display": "%17",
      "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3034,
+     "percentile": 0.3055,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -170,68 +161,72 @@
  "history": [
   [
    "2026-10-23",
-   44.81
+   44.97
   ],
   [
    "2026-10-24",
-   40.13
+   39.89
   ],
   [
    "2026-10-25",
-   40.76
+   40.53
   ],
   [
    "2026-10-26",
-   40.11
+   39.89
   ],
   [
    "2026-10-27",
-   40.33
+   40.1
   ],
   [
    "2026-10-28",
-   40.37
+   40.12
   ],
   [
    "2026-10-29",
-   40.98
+   40.73
   ],
   [
    "2026-10-30",
-   40.83
+   40.57
   ],
   [
    "2026-10-31",
-   42.18
+   42.23
   ],
   [
    "2026-11-01",
-   42.3
+   42.26
   ],
   [
    "2026-11-02",
-   41.31
+   41.25
   ],
   [
    "2026-11-04",
-   41.43
+   41.38
   ],
   [
    "2026-11-05",
-   41.61
+   41.55
   ],
   [
    "2026-11-06",
-   41.71
+   41.73
+  ],
+  [
+   "2026-11-07",
+   42.05
   ]
  ],
  "changes": [
   {
    "date": "2026-10-24",
-   "delta": -4.7,
-   "from": 44.8,
-   "to": 40.1,
-   "event": false,
+   "delta": -5.1,
+   "from": 45.0,
+   "to": 39.9,
+   "event": true,
    "reasons": [
     {
      "text": "Arz artışı (90 gün) verisi artık mevcut.",
@@ -242,16 +237,37 @@
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": -1.46,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,5)"
+     "delta": -1.86,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,9)"
     }
    ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-10-24",
+   "delta": -5.1,
+   "from": 45.0,
+   "to": 39.9,
+   "reasons": [
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -3.22,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −3,2)"
+    },
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.86,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,9)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 400,
-  "rank_start": 385,
+  "rank_now": 405,
+  "rank_start": 372,
   "score": 0,
   "rise": 0,
   "steady": 67,
@@ -278,7 +294,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -3.1,
+  "score_change": -2.9,
   "double": false
  },
  "chain": {
@@ -286,6 +302,13 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [
+   "Binance Labs",
+   "Polychain Capital"
+  ],
+  "closed": []
  },
  "investors": [
   "Polychain Capital",
@@ -315,17 +338,60 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   6885510000.0,
+   6885510000.0,
+   6885510000.0,
+   7126310000.0,
+   7126310000.0,
+   7126310000.0,
+   7126310000.0,
+   7367110000.0,
+   7367110000.0,
+   7367110000.0,
+   7367110000.0,
+   7367110000.0,
+   7607910000.0,
+   7607910000.0
+  ],
+  "supply_change": 0.1049,
+  "supply_days": 91
+ },
  "exchanges": [
   "Binance",
   "Upbit",
   "Coinbase",
   "Gate",
   "KuCoin",
+  "MEXC",
   "HTX",
   "Kraken"
  ],
  "delisted": [],
  "recorded": {
-  "holder_count": 52292
+  "depth_2pct_usd": 182774.5,
+  "major_volume_share": 0.3531,
+  "holder_count": 52331,
+  "depth_to_mc": 0.004382
  }
 }

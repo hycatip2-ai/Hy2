@@ -9,32 +9,37 @@
  "us_exchanges": [],
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 27,
- "total_exact": 26.77,
+ "total": 41,
+ "total_exact": 40.83,
  "band": "Zayıf",
- "delta": null,
+ "delta": 10.8,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
+  "source": "https://docs.iagon.com/blockchain/iagon-token/tokenomics",
+  "researched_at": "2026-11-06"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-06",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -50,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.8,
+   "score": 5.6,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1481,
+   "percentile": 0.1429,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.498244,
-     "percentile": 0.4071,
+     "value": 0.498259,
+     "percentile": 0.3986,
      "basis": "sector",
      "display": "%50",
      "tier": "orta dilim"
@@ -68,8 +73,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.007048,
-     "percentile": 0.4114,
+     "value": 2.006989,
+     "percentile": 0.4027,
      "basis": "sector",
      "display": "2,01×",
      "tier": "orta dilim"
@@ -77,8 +82,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.301941,
-     "percentile": 0.0435,
+     "value": 0.29844,
+     "percentile": 0.0422,
      "basis": "sector",
      "display": "+%30",
      "tier": "alt dilim"
@@ -88,37 +93,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
+   "score": 15.1,
+   "has_data": true,
+   "weight": 15,
+   "percentile": 0.7459,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6964,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7828,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
+  },
+  {
+   "id": "usage",
+   "name": "Kullanım ve büyüme",
    "score": 7.0,
    "has_data": false,
-   "weight": 15,
+   "weight": 25,
    "percentile": null,
    "tier": null,
    "metrics": []
   },
   {
-   "id": "usage",
-   "name": "Kullanım ve büyüme",
-   "score": 2.8,
-   "has_data": true,
-   "weight": 25,
-   "percentile": 0.0714,
-   "tier": "alt dilim",
-   "metrics": [
-    {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.1405,
-     "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
-    }
-   ]
-  },
-  {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.1,
+   "score": 2.3,
    "has_data": true,
    "weight": 15,
    "percentile": 0.0,
@@ -128,7 +142,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 28.0,
-     "percentile": 0.077,
+     "percentile": 0.0961,
      "basis": "sector",
      "display": "28",
      "tier": "alt dilim"
@@ -137,7 +151,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.5203,
-     "percentile": 0.0682,
+     "percentile": 0.0241,
      "basis": "sector",
      "display": "%1,5",
      "tier": "alt dilim"
@@ -146,25 +160,16 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.4444,
-     "percentile": 0.0368,
+     "percentile": 0.0379,
      "basis": "sector",
      "display": "%44",
      "tier": "alt dilim"
     },
     {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 5.275838,
-     "percentile": 0.79,
-     "basis": "sector",
-     "display": "5,3 yıl",
-     "tier": "üst dilim"
-    },
-    {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3034,
+     "percentile": 0.3055,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -172,28 +177,88 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 6.06,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +6,1)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
-   37.28
+   34.45
   ],
   [
    "2026-10-24",
-   37.46
+   34.58
   ],
   [
    "2026-11-06",
-   26.77
+   30.0
+  ],
+  [
+   "2026-11-07",
+   40.83
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-07",
+   "delta": 10.8,
+   "from": 30.0,
+   "to": 40.8,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 6.06,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +6,1)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-07",
+   "delta": 10.8,
+   "from": 30.0,
+   "to": 40.8,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 6.06,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +6,1)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 975,
-  "rank_start": 977,
+  "rank_now": 964,
+  "rank_start": 973,
   "score": 1,
-  "rise": 4,
+  "rise": 3,
   "steady": 0,
   "calm": 0,
   "weeks_up": 0,
@@ -205,7 +270,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -10.5,
+  "score_change": 6.4,
   "double": false
  },
  "chain": {
@@ -213,6 +278,10 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -222,11 +291,65 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/iagon",
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment",
+   "stake_to_operate",
+   "emission_rewards",
+   "revenue_share"
+  ],
+  "source": "https://docs.iagon.com/blockchain/iagon-token/tokenomics",
+  "note": "Token, depolama hizmetleri için ödeme ve düğüm operatörleri için stake gerekliliği olarak kullanılır.",
+  "researched_at": "2026-11-06"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.197,
+  "vesting_end": "2026-04",
+  "source": "https://docs.iagon.com/blockchain/iagon-token/tokenomics",
+  "note": "Ekip (85m) ve pazarlama/danışmanlar (112m) toplam arzın yaklaşık %19.7'sini oluşturur.",
+  "researched_at": "2026-11-06"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-07",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-08",
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-31",
+   "2026-11-07"
+  ],
+  "supply_values": [
+   376020000.0,
+   478863000.0,
+   487023000.0,
+   487221000.0,
+   487418000.0,
+   487029000.0,
+   486764000.0,
+   493377000.0,
+   492368000.0,
+   492349000.0,
+   500950000.0,
+   498055000.0,
+   498259000.0
+  ],
+  "supply_change": 0.3251,
+  "supply_days": 91
+ },
  "exchanges": [
   "Bitget",
   "Gate",
@@ -237,6 +360,7 @@
  "recorded": {
   "depth_2pct_usd": 5114.41,
   "major_volume_share": 0.9996,
-  "depth_to_mc": 0.000591
+  "depth_to_mc": 0.000562,
+  "insider_share": 0.197
  }
 }

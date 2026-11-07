@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 28,
- "total_exact": 27.74,
+ "total": 29,
+ "total_exact": 29.31,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": -0.2,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 2,
+  "level": "Yetersiz"
  },
  "flags": [],
  "notes": [],
@@ -26,7 +26,7 @@
  },
  "revenue_unmeasured": false,
  "date": "2026-11-02",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
@@ -101,30 +101,20 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.1,
-   "has_data": true,
+   "score": 7.0,
+   "has_data": false,
    "weight": 20,
-   "percentile": 0.2024,
-   "tier": "alt dilim",
-   "metrics": [
-    {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.2053,
-     "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
-    }
-   ]
+   "percentile": null,
+   "tier": null,
+   "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 3.7,
+   "score": 1.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0312,
+   "percentile": 0.0208,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -153,15 +143,6 @@
      "basis": "sector",
      "display": "%50",
      "tier": "alt dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 1.71937,
-     "percentile": 0.4491,
-     "basis": "sector",
-     "display": "1,7 yıl",
-     "tier": "orta dilim"
     }
    ]
   }
@@ -170,104 +151,103 @@
  "history": [
   [
    "2026-10-23",
-   32.01
+   29.51
   ],
   [
    "2026-10-24",
-   32.45
+   29.92
   ],
   [
    "2026-10-25",
-   35.94
+   36.42
   ],
   [
    "2026-10-26",
-   31.98
+   35.6
   ],
   [
    "2026-10-27",
-   32.08
+   35.58
   ],
   [
    "2026-10-29",
-   33.72
+   36.84
   ],
   [
    "2026-10-30",
-   33.44
+   36.8
   ],
   [
    "2026-10-31",
-   33.09
+   36.66
   ],
   [
    "2026-11-01",
-   27.82
+   29.56
   ],
   [
    "2026-11-02",
-   27.74
+   29.31
   ]
  ],
  "changes": [
   {
    "date": "2026-10-25",
-   "delta": 3.5,
-   "from": 32.5,
-   "to": 35.9,
-   "event": false,
+   "delta": 6.5,
+   "from": 29.9,
+   "to": 36.4,
+   "event": true,
    "reasons": [
     {
      "text": "Alış-satış farkı verisi artık mevcut.",
      "part": "liquidity",
-     "delta": 3.83,
-     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +3,8)"
-    }
-   ]
-  },
-  {
-   "date": "2026-10-26",
-   "delta": -4.0,
-   "from": 35.9,
-   "to": 32.0,
-   "event": false,
-   "reasons": [
-    {
-     "text": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut.",
-     "part": "usage",
-     "delta": -3.12,
-     "label": "Aktif geliştirici sayısı (90 gün) verisi artık mevcut. (Kullanım −3,1)"
+     "delta": 6.84,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +6,8)"
     }
    ]
   },
   {
    "date": "2026-11-01",
-   "delta": -5.3,
-   "from": 33.1,
-   "to": 27.8,
+   "delta": -7.1,
+   "from": 36.7,
+   "to": 29.6,
    "event": true,
    "reasons": [
     {
      "text": "Şüpheli işlem çiftlerinin oranı arttı.",
      "part": "liquidity",
-     "delta": -5.35,
-     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
+     "delta": -7.22,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −7,2)"
     }
    ]
   }
  ],
  "events": [
   {
+   "date": "2026-10-25",
+   "delta": 6.5,
+   "from": 29.9,
+   "to": 36.4,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": 6.84,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite +6,8)"
+    }
+   ]
+  },
+  {
    "date": "2026-11-01",
-   "delta": -5.3,
-   "from": 33.1,
-   "to": 27.8,
+   "delta": -7.1,
+   "from": 36.7,
+   "to": 29.6,
    "reasons": [
     {
      "text": "Şüpheli işlem çiftlerinin oranı arttı.",
      "part": "liquidity",
-     "delta": -5.35,
-     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
+     "delta": -7.22,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −7,2)"
     }
    ]
   }
@@ -278,6 +258,10 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -292,6 +276,45 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": {
+  "end": "2026-11-02",
+  "fees_weekly": null,
+  "holders_weekly": null,
+  "supply_dates": [
+   "2026-08-03",
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02"
+  ],
+  "supply_values": [
+   2055860000.0,
+   2055860000.0,
+   2055860000.0,
+   2095980000.0,
+   2095980000.0,
+   2095980000.0,
+   2296800000.0,
+   2333890000.0,
+   2333890000.0,
+   2333890000.0,
+   2333890000.0,
+   2372960000.0,
+   2372960000.0,
+   2533960000.0
+  ],
+  "supply_change": 0.2326,
+  "supply_days": 91
+ },
  "exchanges": null,
  "delisted": [],
  "recorded": null

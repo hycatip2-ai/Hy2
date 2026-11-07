@@ -1,25 +1,25 @@
 {
- "date": "2026-11-06",
- "generated_at": "2026-11-06T06:48:58Z",
- "formula_version": "1.22.0",
+ "date": "2026-11-07",
+ "generated_at": "2026-11-07T06:28:59Z",
+ "formula_version": "1.25.0",
  "label": "Doğrulama",
  "live": {
   "scorecard": {
-   "date": "2026-11-06",
+   "date": "2026-11-07",
    "start": "2026-10-23",
    "verdict": "chance",
    "top": {
-    "n": 60,
-    "hits": 28,
-    "rate": 0.467,
-    "p": 0.6989,
-    "relative": 0.0029
+    "n": 64,
+    "hits": 29,
+    "rate": 0.453,
+    "p": 0.5323,
+    "relative": -0.0024
    },
    "rest": {
-    "n": 476,
+    "n": 478,
     "hits": 239,
-    "rate": 0.502,
-    "p": 0.9634,
+    "rate": 0.5,
+    "p": 1.0,
     "relative": -0.0114
    },
    "threshold": 60
@@ -1643,6 +1643,20 @@
  },
  "lessons": [
   {
+   "date": "2026-11-06",
+   "title": "Geliştirici sayısı eski GitHub adreslerinden okunuyordu",
+   "wrong": "Puanlanan 366 coinin 137'sinde geliştirici 0 görünüyordu; Solana (arşivlenmiş solana-labs), Sky (eski makerdao), Numerai bunlardandı. Zcash ve Bittensor tek eski depodan okunup 'Geliştirme durdu' diye −5 alıyordu.",
+   "right": "Etkinlik görülmeyen kayıt bilinmiyor sayılır; tek depo verilmişse organizasyonun güncel depolarına da bakılır; etkin depo bulunamayanlar gece kaydına yazılır.",
+   "fix": "1.24.0; düzeltme geliştirici verisi yenilendikçe ~1 haftada oturur."
+  },
+  {
+   "date": "2026-11-06",
+   "title": "Kontrattaki basım sınırı okunamadığı için büyük coinler eleniyordu",
+   "wrong": "ENA (yılda en fazla %10), WLD (~%1,5) ve CRV (değiştirilemez takvim, ~%4) 'sınırsız basım' ya da 'şeffaf değil' diye eleniyordu; 200–1000 aralığında Lombard da.",
+   "right": "Bu üç sınır biçimi zincirden okunur; kullanıcının %10 kuralına göre dördü de kalır. POL'un sınırı yetkili tarafından yükseltilebildiği için elenmeye devam eder (kullanıcı kararı).",
+   "fix": "1.23.0; CMC ilk 100'deki 13 elemenin her biri zincirden doğrulandı."
+  },
+  {
    "date": "2026-11-03",
    "title": "Gelir trendi yorumu fazla genellendi",
    "wrong": "Gelir trendini puandan çıkarmak ilk 10'u iki dönemde de kötüleştiriyor denmişti.",
@@ -1749,6 +1763,24 @@
   }
  ],
  "formula_history": [
+  {
+   "version": "1.25.0",
+   "date": "2026-11-06",
+   "change": "Proje yaşı puandan çıktı (kullanıcı: \"biz yeni coin istiyoruz\"); geriye dönük testte ilk 10 isabeti %70 → %67, büyük kayıp %18 → %20.",
+   "basis": "user"
+  },
+  {
+   "version": "1.24.0",
+   "date": "2026-11-06",
+   "change": "180 günde commit görülmeyen geliştirici kaydı 0 değil bilinmiyor; tek depo verilmişse organizasyonun güncel depoları da okunur.",
+   "basis": "fix"
+  },
+  {
+   "version": "1.23.0",
+   "date": "2026-11-06",
+   "change": "Kontrattaki yıllık basım sınırının üç biçimi daha okunur (ENA, WLD, Curve tarzı); haksız elenen ENA, WLD, CRV ve Lombard kalır.",
+   "basis": "fix"
+  },
   {
    "version": "1.22.0",
    "date": "2026-11-03",

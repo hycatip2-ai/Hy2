@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 34,
- "total_exact": 33.68,
+ "total": 36,
+ "total_exact": 36.09,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 2,
+  "level": "Yetersiz"
  },
  "flags": [],
  "notes": [],
@@ -26,7 +26,7 @@
  },
  "revenue_unmeasured": true,
  "date": "2026-10-27",
- "formula_version": "1.22.0",
+ "formula_version": "1.25.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -89,30 +89,20 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.3,
-   "has_data": true,
+   "score": 7.0,
+   "has_data": false,
    "weight": 20,
-   "percentile": 0.2769,
-   "tier": "alt dilim",
-   "metrics": [
-    {
-     "id": "active_devs",
-     "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 0.0,
-     "percentile": 0.2646,
-     "basis": "sector",
-     "display": "0",
-     "tier": "alt dilim"
-    }
-   ]
+   "percentile": null,
+   "tier": null,
+   "metrics": []
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.7,
+   "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7213,
+   "percentile": 0.7787,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -141,15 +131,6 @@
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
-    },
-    {
-     "id": "age_years",
-     "name": "Proje yaşı",
-     "value": 2.466804,
-     "percentile": 0.4788,
-     "basis": "sector",
-     "display": "2,5 yıl",
-     "tier": "orta dilim"
     }
    ]
   }
@@ -158,11 +139,11 @@
  "history": [
   [
    "2026-10-23",
-   29.52
+   26.06
   ],
   [
    "2026-10-27",
-   33.68
+   36.09
   ]
  ],
  "changes": [],
@@ -173,6 +154,10 @@
   "source": "contract",
   "flow": false,
   "flow_rank": null
+ },
+ "funds": {
+  "active": [],
+  "closed": []
  },
  "investors": [],
  "investors_source": null,
@@ -187,6 +172,7 @@
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
+ "last90": null,
  "exchanges": null,
  "delisted": [],
  "recorded": null
