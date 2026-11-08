@@ -1,0 +1,66 @@
+{
+ "slug": "zano",
+ "schema": 2,
+ "name": "Zano",
+ "symbol": "ZANO",
+ "provider": "gemini-free",
+ "model": "gemini-3.8-flash",
+ "researched_at": "2026-11-08",
+ "pages": [
+  "https://docs.zano.org/docs/learn/what-is-zano/",
+  "https://zano.org/",
+  "https://docs.zano.org/",
+  "https://docs.zano.org/docs/stake/overview/",
+  "https://docs.zano.org/docs/mine/overview/",
+  "https://docs.zano.org/docs/use/overview/",
+  "https://docs.zano.org/docs/learn/emission/",
+  "https://www.mexc.com/price/ZANO/tokenomics",
+  "https://www.coingecko.com/en/coins/zano"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": 0.0339,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://docs.zano.org/docs/learn/emission/",
+   "note": "Blok süresi 1 dakika olup her blokta sabit 1 ZANO PoW ve PoS madencilerine ödül olarak protokol kuralıyla basılır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://docs.zano.org/docs/learn/emission/",
+   "note": "Ağdaki tüm işlem ücretlerinin yüzde 100'ü otomatik ve kalıcı olarak yakılmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "network_fees",
+     "stake_to_operate",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://docs.zano.org/docs/learn/emission/",
+   "note": "Ağdaki işlem ücretleri ZANO ile ödenir ve ağ güvenliğini sağlamak için PoS staking yapılarak ödül kazanılır.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  }
+ ],
+ "queue": {
+  "priority": 3,
+  "reason": "ilk 100: geri alım, kilit açılışı, hack"
+ },
+ "usage": {
+  "input_tokens": 11097,
+  "output_tokens": 859
+ }
+}

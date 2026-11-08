@@ -1,5 +1,5 @@
 {
- "rank": 3,
+ "rank": 1,
  "slug": "helium",
  "symbol": "HNT",
  "name": "Helium",
@@ -12,28 +12,32 @@
  ],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 66,
- "total_exact": 65.87,
- "band": "Orta",
- "delta": 0.3,
+ "total": 72,
+ "total_exact": 72.4,
+ "band": "Güçlü",
+ "delta": 6.5,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz son bir yılda artmadı."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-07",
- "formula_version": "1.25.0",
+ "date": "2026-11-08",
+ "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -49,17 +53,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.5,
+   "score": 16.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8846,
+   "percentile": 0.92,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8947,
+     "percentile": 0.9044,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -68,7 +72,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.196856,
-     "percentile": 0.6896,
+     "percentile": 0.7064,
      "basis": "sector",
      "display": "1,20×",
      "tier": "üst dilim"
@@ -77,7 +81,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8855,
+     "percentile": 0.8858,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -87,17 +91,26 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 14.1,
+   "score": 14.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6657,
-   "tier": "orta dilim",
+   "percentile": 0.6833,
+   "tier": "üst dilim",
    "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.6949,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
     {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
      "value": 0.0,
-     "percentile": 0.6418,
+     "percentile": 0.6642,
      "basis": "universe",
      "display": "%0",
      "tier": "orta dilim"
@@ -106,9 +119,18 @@
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": null,
-     "percentile": 0.767,
+     "percentile": 0.7727,
      "basis": "universe",
      "display": "Yeni arz yok",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.78,
+     "basis": "universe",
+     "display": "Zorunlu",
      "tier": "üst dilim"
     }
    ]
@@ -116,17 +138,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 16.1,
+   "score": 16.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8421,
+   "percentile": 0.9167,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 7.0,
-     "percentile": 0.8062,
+     "percentile": 0.8409,
      "basis": "sector",
      "display": "7",
      "tier": "üst dilim"
@@ -136,17 +158,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.6,
+   "score": 11.5,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6923,
+   "percentile": 0.68,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 238.0,
-     "percentile": 0.8909,
+     "percentile": 0.9086,
      "basis": "sector",
      "display": "238",
      "tier": "üst dilim"
@@ -155,7 +177,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4129,
-     "percentile": 0.5632,
+     "percentile": 0.5526,
      "basis": "sector",
      "display": "%0,41",
      "tier": "orta dilim"
@@ -164,7 +186,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1429,
-     "percentile": 0.583,
+     "percentile": 0.5731,
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
@@ -173,7 +195,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2748,
+     "percentile": 0.2651,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -181,7 +203,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -193,23 +222,23 @@
   ],
   [
    "2026-10-25",
-   51.66
+   51.65
   ],
   [
    "2026-10-26",
-   51.12
+   51.11
   ],
   [
    "2026-10-27",
-   51.36
+   51.35
   ],
   [
    "2026-10-28",
-   53.48
+   53.47
   ],
   [
    "2026-10-29",
-   53.51
+   53.5
   ],
   [
    "2026-10-30",
@@ -217,7 +246,7 @@
   ],
   [
    "2026-10-31",
-   49.09
+   49.08
   ],
   [
    "2026-11-01",
@@ -225,15 +254,15 @@
   ],
   [
    "2026-11-02",
-   65.89
+   65.9
   ],
   [
    "2026-11-04",
-   65.07
+   65.08
   ],
   [
    "2026-11-05",
-   65.28
+   65.29
   ],
   [
    "2026-11-06",
@@ -242,6 +271,10 @@
   [
    "2026-11-07",
    65.87
+  ],
+  [
+   "2026-11-08",
+   72.4
   ]
  ],
  "changes": [
@@ -318,8 +351,23 @@
     {
      "text": "Arz artışı son 3 ayda yavaşladı.",
      "part": "supply",
-     "delta": 3.13,
+     "delta": 3.14,
      "label": "Arz artışı son 3 ayda yavaşladı. (Arz +3,1)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "delta": 6.5,
+   "from": 65.9,
+   "to": 72.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
     }
    ]
   }
@@ -360,21 +408,35 @@
     {
      "text": "Arz artışı son 3 ayda yavaşladı.",
      "part": "supply",
-     "delta": 3.13,
+     "delta": 3.14,
      "label": "Arz artışı son 3 ayda yavaşladı. (Arz +3,1)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "delta": 6.5,
+   "from": 65.9,
+   "to": 72.4,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
     }
    ]
   }
  ],
  "trend": {
-  "rank_now": 344,
+  "rank_now": 347,
   "rank_start": 458,
-  "score": 49,
+  "score": 46,
   "rise": 90,
-  "steady": 33,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 8,
+  "weeks_up": 3,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    1,
@@ -383,8 +445,8 @@
    -1,
    -1,
    -1,
-   -1,
-   1,
+   0,
+   0,
    -1,
    -1,
    -1,
@@ -404,7 +466,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 8.5,
+  "score_change": 15.0,
   "double": false
  },
  "chain": null,
@@ -415,6 +477,7 @@
   ],
   "closed": []
  },
+ "funding_rounds": [],
  "investors": [
   "Khosla Ventures",
   "FirstMark Capital",
@@ -442,13 +505,39 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/helium-network",
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "service_payment",
+   "burn_mint",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://app.tokenomics.com/tokenomics/helium",
+  "note": "HNT, ağ hizmetleri için Data Credit oluşturulmasında, yönetişimde ve ödüllendirme mekanizmalarında zorunlu olarak kullanılır.",
+  "researched_at": "2026-11-07"
+ },
+ "usage_evidence": {
+  "metric": "Daily Data Transferred",
+  "value": 49.0,
+  "unit": "TB",
+  "as_of": "2026-11-07",
+  "confirmed": true,
+  "source": "https://www.helium.com/hnt",
+  "note": "Ağ üzerinden günlük 49 TB'dan fazla veri transferi gerçekleştiği resmi web sitesinde belirtilmiştir.",
+  "researched_at": "2026-11-07"
+ },
+ "allocation": {
+  "insiders": 0.35,
+  "vesting_end": "2069-07",
+  "source": "https://app.tokenomics.com/tokenomics/helium",
+  "note": "İçeriden öğrenenler ve yatırımcılar toplam arzın %35'ine sahiptir ve 600 aylık doğrusal bir vesting süreci uygulanmaktadır.",
+  "researched_at": "2026-11-07"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-07",
+  "end": "2026-11-08",
   "fees_weekly": [
    0.0,
    0.0,
@@ -480,20 +569,20 @@
    0.0
   ],
   "supply_dates": [
-   "2026-08-08",
-   "2026-08-15",
-   "2026-08-22",
-   "2026-08-29",
-   "2026-09-05",
-   "2026-09-12",
-   "2026-09-19",
-   "2026-09-26",
-   "2026-10-03",
-   "2026-10-10",
-   "2026-10-17",
-   "2026-10-24",
-   "2026-10-31",
-   "2026-11-07"
+   "2026-08-09",
+   "2026-08-16",
+   "2026-08-23",
+   "2026-08-30",
+   "2026-09-06",
+   "2026-09-13",
+   "2026-09-20",
+   "2026-09-27",
+   "2026-10-04",
+   "2026-10-11",
+   "2026-10-18",
+   "2026-10-25",
+   "2026-11-01",
+   "2026-11-08"
   ],
   "supply_values": [
    186321000.0,
@@ -527,6 +616,7 @@
  "recorded": {
   "depth_2pct_usd": 131036.39,
   "major_volume_share": 0.4215,
-  "depth_to_mc": 0.002481
+  "depth_to_mc": 0.002547,
+  "insider_share": 0.35
  }
 }
