@@ -1,0 +1,67 @@
+{
+ "slug": "firo",
+ "schema": 2,
+ "name": "Firo",
+ "symbol": "FIRO",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-09",
+ "pages": [
+  "https://firo.org/pillars/ecosystem/",
+  "https://firo.org/",
+  "https://firo.org/index.html",
+  "https://firo.org/pillars/private/",
+  "https://firo.org/2024/09/01/finalized-tokenomics-2024.html",
+  "https://www.mexc.com/price/FIRO/tokenomics",
+  "https://coinoswap.com/blogs/firo-price-prediction-2025-2030"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": 0.0098,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://firo.org/2024/09/01/finalized-tokenomics-2024.html",
+   "note": "Firo, blok ödülleri ve sabit bir kuyruk emisyonu ile protokol kurallarına göre yeni tokenlar üretir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 0.0,
+   "source": "https://firo.org/2024/09/01/finalized-tokenomics-2024.html",
+   "note": "Resmi belgelerde protokol geliriyle yapılan bir geri alım veya yakım mekanizmasından bahsedilmemektedir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "stake_to_operate",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://firo.org/",
+   "note": "Masternode çalıştırmak için 1.000 FIRO kilitlenmesi gerekmektedir.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [
+  {
+   "field": "usage_evidence",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  },
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  }
+ ],
+ "queue": {
+  "priority": 3,
+  "reason": "ilk 100: geri alım, kilit açılışı, hack"
+ },
+ "usage": {
+  "input_tokens": 11158,
+  "output_tokens": 805
+ }
+}

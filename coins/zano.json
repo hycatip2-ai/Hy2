@@ -1,5 +1,5 @@
 {
- "rank": 10,
+ "rank": 2,
  "slug": "zano",
  "symbol": "ZANO",
  "name": "Zano",
@@ -9,28 +9,32 @@
  "us_exchanges": [],
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 63,
- "total_exact": 62.98,
- "band": "Orta",
- "delta": 5.7,
+ "total": 72,
+ "total_exact": 71.74,
+ "band": "Güçlü",
+ "delta": 8.8,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %2,3 artıyor (sınır %10)."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -49,14 +53,14 @@
    "score": 15.5,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.8709,
+   "percentile": 0.8593,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9101,
+     "percentile": 0.9105,
      "basis": "universe",
      "display": "%100",
      "tier": "üst dilim"
@@ -65,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9759,
+     "percentile": 0.9629,
      "basis": "universe",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -73,8 +77,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.005611,
-     "percentile": 0.4427,
+     "value": 0.005643,
+     "percentile": 0.4488,
      "basis": "universe",
      "display": "+%0,6",
      "tier": "orta dilim"
@@ -84,27 +88,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.0,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7194,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7016,
+     "basis": "universe",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7767,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 17.5,
+   "score": 17.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9106,
+   "percentile": 0.8984,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 11.0,
-     "percentile": 0.875,
+     "percentile": 0.8643,
      "basis": "universe",
      "display": "11",
      "tier": "üst dilim"
@@ -117,14 +140,14 @@
    "score": 9.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3722,
+   "percentile": 0.376,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 26.0,
-     "percentile": 0.1101,
+     "percentile": 0.11,
      "basis": "universe",
      "display": "26",
      "tier": "alt dilim"
@@ -133,7 +156,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3825,
-     "percentile": 0.5504,
+     "percentile": 0.5602,
      "basis": "universe",
      "display": "%0,38",
      "tier": "orta dilim"
@@ -142,7 +165,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.125,
-     "percentile": 0.7003,
+     "percentile": 0.701,
      "basis": "universe",
      "display": "%12",
      "tier": "üst dilim"
@@ -152,10 +175,16 @@
  ],
  "reasons": [
   {
-   "text": "Aktif geliştirici sayısı sert biçimde arttı.",
-   "part": "usage",
-   "delta": 5.49,
-   "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +5,5)"
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 4.02,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
   }
  ],
  "history": [
@@ -222,6 +251,10 @@
   [
    "2026-11-08",
    62.98
+  ],
+  [
+   "2026-11-09",
+   71.74
   ]
  ],
  "changes": [
@@ -260,6 +293,27 @@
      "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +5,5)"
     }
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "delta": 8.8,
+   "from": 63.0,
+   "to": 71.7,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 4.02,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+    }
+   ]
   }
  ],
  "events": [
@@ -276,11 +330,31 @@
      "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +5,5)"
     }
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "delta": 8.8,
+   "from": 63.0,
+   "to": 71.7,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 4.02,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +4,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 297,
-  "rank_start": 231,
+  "rank_now": 306,
+  "rank_start": 233,
   "score": 0,
   "rise": 0,
   "steady": 25,
@@ -307,7 +381,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 10.3,
+  "score_change": 19.0,
   "double": false
  },
  "chain": null,
@@ -324,46 +398,56 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "stake_to_operate",
+   "emission_rewards"
+  ],
+  "source": "https://docs.zano.org/docs/learn/emission/",
+  "note": "Ağdaki işlem ücretleri ZANO ile ödenir ve ağ güvenliğini sağlamak için PoS staking yapılarak ödül kazanılır.",
+  "researched_at": "2026-11-08"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-08",
+  "end": "2026-11-09",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-09",
-   "2026-08-16",
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08"
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09"
   ],
   "supply_values": [
-   15406900.0,
-   15416900.0,
-   15426800.0,
-   15436700.0,
-   15446400.0,
-   15456400.0,
-   15466300.0,
-   15432500.0,
-   15442600.0,
-   15452600.0,
-   15462500.0,
-   15471200.0,
-   15481200.0,
-   15491200.0
+   15408400.0,
+   15418300.0,
+   15428300.0,
+   15438000.0,
+   15447800.0,
+   15457800.0,
+   15467700.0,
+   15434000.0,
+   15444000.0,
+   15454000.0,
+   15463900.0,
+   15472600.0,
+   15482700.0,
+   15492700.0
   ],
   "supply_change": 0.0055,
   "supply_days": 91

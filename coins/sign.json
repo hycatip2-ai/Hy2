@@ -1,5 +1,5 @@
 {
- "rank": 102,
+ "rank": 84,
  "slug": "sign",
  "symbol": "SIGN",
  "name": "Sign",
@@ -11,20 +11,15 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 38,
- "total_exact": 38.47,
+ "total": 44,
+ "total_exact": 43.54,
  "band": "Zayıf",
- "delta": 0.2,
+ "delta": 5.1,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [
-  {
-   "id": "top10_concentration",
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
-  }
- ],
+ "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
@@ -32,11 +27,11 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
- "penalty": 5.0,
+ "penalty": 0.0,
  "bonus": 0.0,
  "contract": {
   "chain": "Ethereum",
@@ -56,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.2,
+   "score": 8.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4024,
+   "percentile": 0.4074,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.238667,
-     "percentile": 0.1563,
+     "percentile": 0.1576,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -75,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.189944,
-     "percentile": 0.2,
+     "percentile": 0.2018,
      "basis": "sector",
      "display": "4,19×",
      "tier": "alt dilim"
@@ -84,7 +79,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8775,
+     "percentile": 0.8865,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -104,17 +99,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 9.7,
+   "score": 9.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5909,
+   "percentile": 0.5455,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 3.0,
-     "percentile": 0.4831,
+     "percentile": 0.4719,
      "basis": "sector",
      "display": "3",
      "tier": "orta dilim"
@@ -124,17 +119,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.6,
+   "score": 11.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.689,
+   "percentile": 0.7037,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 192.0,
-     "percentile": 0.8346,
+     "percentile": 0.8422,
      "basis": "sector",
      "display": "192",
      "tier": "üst dilim"
@@ -143,7 +138,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4758,
-     "percentile": 0.4628,
+     "percentile": 0.4777,
      "basis": "sector",
      "display": "%0,48",
      "tier": "orta dilim"
@@ -152,7 +147,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0513,
-     "percentile": 0.7544,
+     "percentile": 0.7714,
      "basis": "sector",
      "display": "%5,1",
      "tier": "üst dilim"
@@ -161,7 +156,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2651,
+     "percentile": 0.2669,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -169,7 +164,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",
+   "part": "penalty",
+   "delta": 5.0,
+   "label": "Arzın cüzdanlar arasındaki dağılımı iyileşti. (Uyarı +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -234,6 +236,10 @@
   [
    "2026-11-08",
    38.47
+  ],
+  [
+   "2026-11-09",
+   43.54
   ]
  ],
  "changes": [
@@ -266,6 +272,21 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "delta": 5.1,
+   "from": 38.5,
+   "to": 43.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",
+     "part": "penalty",
+     "delta": 5.0,
+     "label": "Arzın cüzdanlar arasındaki dağılımı iyileşti. (Uyarı +5,0)"
+    }
+   ]
   }
  ],
  "events": [
@@ -282,28 +303,42 @@
      "label": "Arzın büyük kısmı az sayıda cüzdanda toplandı. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "delta": 5.1,
+   "from": 38.5,
+   "to": 43.5,
+   "reasons": [
+    {
+     "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",
+     "part": "penalty",
+     "delta": 5.0,
+     "label": "Arzın cüzdanlar arasındaki dağılımı iyileşti. (Uyarı +5,0)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 621,
-  "rank_start": 713,
+  "rank_now": 653,
+  "rank_start": 714,
   "score": 50,
-  "rise": 65,
+  "rise": 66,
   "steady": 58,
   "calm": 0,
   "weeks_up": 7,
-  "weeks_down": 3,
+  "weeks_down": 4,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
    1,
    1,
-   0,
+   1,
    1,
    -1,
    1,
-   1,
+   -1,
    -1,
    0,
    -1
@@ -318,7 +353,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 2.1,
+  "score_change": 7.2,
   "double": false
  },
  "chain": {
@@ -352,24 +387,24 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-08",
+  "end": "2026-11-09",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-09",
-   "2026-08-16",
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08"
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09"
   ],
   "supply_values": [
    2386670000.0,
@@ -404,7 +439,7 @@
  "recorded": {
   "depth_2pct_usd": 238238.17,
   "major_volume_share": 0.1035,
-  "holder_count": 930,
-  "depth_to_mc": 0.011037
+  "holder_count": 924,
+  "depth_to_mc": 0.012423
  }
 }

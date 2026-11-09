@@ -1,5 +1,5 @@
 {
- "rank": 7,
+ "rank": 10,
  "slug": "benqi",
  "symbol": "QI",
  "name": "BENQI",
@@ -11,10 +11,10 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 64,
- "total_exact": 64.5,
+ "total": 63,
+ "total_exact": 62.64,
  "band": "Orta",
- "delta": 0.9,
+ "delta": -1.9,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -32,7 +32,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
@@ -55,10 +55,10 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.04195,
+     "value": 0.038766,
      "percentile": 0.9169,
      "basis": "sector",
-     "display": "0,042×",
+     "display": "0,039×",
      "tier": "üst dilim"
     }
    ]
@@ -66,17 +66,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.7,
+   "score": 16.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8901,
+   "percentile": 0.8444,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9208,
+     "percentile": 0.9247,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -85,7 +85,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.8808,
+     "percentile": 0.8681,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -94,8 +94,17 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7022,
+     "percentile": 0.7044,
      "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.71,
+     "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
     }
@@ -104,26 +113,35 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 12.6,
+   "score": 10.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6321,
+   "percentile": 0.4717,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 0.0,
-     "percentile": 0.2872,
+     "percentile": 0.2883,
      "basis": "sector",
      "display": "%0",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1613,
+     "basis": "universe",
+     "display": "Yok",
      "tier": "alt dilim"
     },
     {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
      "value": 0.0,
-     "percentile": 0.6744,
+     "percentile": 0.7075,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -132,47 +150,56 @@
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": null,
-     "percentile": 0.7604,
+     "percentile": 0.7706,
      "basis": "sector",
      "display": "Yeni arz yok",
      "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3306,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 11.1,
+   "score": 10.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5833,
+   "percentile": 0.493,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.00459,
-     "percentile": 0.4663,
+     "value": 1.011656,
+     "percentile": 0.4851,
      "basis": "sector",
-     "display": "+%0,5",
+     "display": "+%1,2",
      "tier": "orta dilim"
     },
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": -0.226522,
+     "value": -0.221334,
      "percentile": 0.5586,
      "basis": "sector",
-     "display": "−%23",
+     "display": "−%22",
      "tier": "orta dilim"
     },
     {
      "id": "fee_consistency",
      "name": "Kullanımın sürekliliği (13 hafta)",
-     "value": 0.977659,
-     "percentile": 0.641,
+     "value": 0.967954,
+     "percentile": 0.5,
      "basis": "sector",
-     "display": "%98",
+     "display": "%97",
      "tier": "orta dilim"
     }
    ]
@@ -180,17 +207,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.2,
+   "score": 11.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2527,
-   "tier": "alt dilim",
+   "percentile": 0.5056,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 138.0,
-     "percentile": 0.3716,
+     "percentile": 0.3654,
      "basis": "sector",
      "display": "138",
      "tier": "orta dilim"
@@ -198,26 +225,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.3717,
-     "percentile": 0.4987,
+     "value": 0.5521,
+     "percentile": 0.3032,
      "basis": "sector",
-     "display": "%0,37",
-     "tier": "orta dilim"
+     "display": "%0,55",
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.381,
-     "percentile": 0.0978,
+     "value": 0.087,
+     "percentile": 0.8503,
      "basis": "sector",
-     "display": "%38",
-     "tier": "alt dilim"
+     "display": "%8,7",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6724,
+     "percentile": 0.6747,
      "basis": "sector",
      "display": "2",
      "tier": "üst dilim"
@@ -282,6 +309,10 @@
   [
    "2026-11-08",
    64.5
+  ],
+  [
+   "2026-11-09",
+   62.64
   ]
  ],
  "changes": [
@@ -339,25 +370,25 @@
   }
  ],
  "trend": {
-  "rank_now": 826,
-  "rank_start": 905,
-  "score": 32,
-  "rise": 47,
-  "steady": 33,
+  "rank_now": 857,
+  "rank_start": 912,
+  "score": 30,
+  "rise": 49,
+  "steady": 25,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 8,
+  "weeks_up": 3,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
    -1,
    -1,
    -1,
    1,
-   1,
+   0,
    1,
    1,
    -1,
-   -1,
+   0,
    -1,
    -1,
    -1
@@ -376,7 +407,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -1.3,
+  "score_change": -3.2,
   "double": false
  },
  "chain": {
@@ -414,38 +445,63 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/benqi",
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "emission_rewards",
+   "fee_discount"
+  ],
+  "source": "https://phemex.com/academy/what-is-benqi-qi-avalanche-defi-token",
+  "note": "Token yönetişim, ödüller ve Ignite ücretlerinde indirim sağlamak için kullanılmaktadır.",
+  "researched_at": "2026-11-08"
+ },
+ "usage_evidence": {
+  "metric": "24H Fees",
+  "value": 5321.98,
+  "unit": "USD",
+  "as_of": "2026-11-08",
+  "confirmed": true,
+  "source": "https://www.coingecko.com/en/coins/benqi",
+  "note": "Protokolün 24 saatlik işlem ücreti geliri 5.321,98 USD olarak kaydedilmiştir.",
+  "researched_at": "2026-11-08"
+ },
+ "allocation": {
+  "insiders": 0.25,
+  "vesting_end": "2026-08",
+  "source": "https://phemex.com/academy/what-is-benqi-qi-avalanche-defi-token",
+  "note": "Ekip ve çekirdek katkıda bulunanların toplam payı %25'tir ve hak edişleri Ağustos 2026'da bitmiştir.",
+  "researched_at": "2026-11-08"
+ },
  "value_transfer_pending": null,
  "usage_share": {
   "category": "Liquid Staking",
   "peers": "category",
   "protocols": 92,
   "quarters": [
-   0.01058,
-   0.01036,
-   0.009336,
-   0.01092,
-   0.008447
+   0.0106,
+   0.01037,
+   0.009384,
+   0.01084,
+   0.008441
   ]
  },
  "last90": {
-  "end": "2026-11-08",
+  "end": "2026-11-09",
   "fees_weekly": [
-   193026.0,
-   164372.0,
-   156426.0,
-   244713.0,
-   173523.0,
-   257694.0,
-   253496.0,
-   368304.0,
-   240945.0,
-   372782.0,
-   207894.0,
-   337381.0,
-   171720.0
+   195767.0,
+   169843.0,
+   234724.0,
+   167931.0,
+   168842.0,
+   270481.0,
+   247498.0,
+   372661.0,
+   244211.0,
+   368356.0,
+   204241.0,
+   342929.0,
+   162785.0
   ],
   "holders_weekly": [
    0.0,
@@ -463,20 +519,20 @@
    0.0
   ],
   "supply_dates": [
-   "2026-08-09",
-   "2026-08-16",
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08"
+   "2026-08-10",
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09"
   ],
   "supply_values": [
    7200000000.0,
@@ -500,13 +556,19 @@
  "exchanges": [
   "Binance",
   "Coinbase",
+  "Gate",
   "KuCoin",
+  "MEXC",
   "Kraken"
  ],
  "delisted": [],
  "recorded": {
-  "active_users_30d": 77.2,
+  "depth_2pct_usd": 17035.4,
+  "major_volume_share": 0.4098,
+  "active_users_30d": 77.8,
   "holder_count": 39527,
-  "users_growth": 0.522682
+  "depth_to_mc": 0.001518,
+  "users_growth": 0.531496,
+  "insider_share": 0.25
  }
 }

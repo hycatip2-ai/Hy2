@@ -1,6 +1,6 @@
 {
- "generated": "2026-11-04",
- "formula_version": "1.22.0",
+ "generated": "2026-11-09",
+ "formula_version": "1.27.0",
  "label": "Doğrulama",
  "rule": {
   "step_days": 7,
@@ -24,8 +24,8 @@
    "higher_is_better": true,
    "why": "Gerçek likidite: fiyatı %2 oynatmak için gereken para; sahte hacimden etkilenmez.",
    "since": "2026-11-03",
-   "coverage": 1,
-   "coverage_top": 1,
+   "coverage": 331,
+   "coverage_top": 102,
    "h30": {
     "mean": null,
     "days": 0
@@ -47,8 +47,8 @@
    "higher_is_better": true,
    "why": "Hacmin güvenilir büyük borsalardan gelen kısmı.",
    "since": "2026-11-03",
-   "coverage": 1,
-   "coverage_top": 1,
+   "coverage": 378,
+   "coverage_top": 111,
    "h30": {
     "mean": null,
     "days": 0
@@ -70,7 +70,7 @@
    "higher_is_better": true,
    "why": "Aktif kullanıcı başına ucuzluk (kapsam dar: ~20 coin).",
    "since": "2026-11-03",
-   "coverage": 12,
+   "coverage": 13,
    "coverage_top": 7,
    "h30": {
     "mean": null,
@@ -139,8 +139,8 @@
    "higher_is_better": false,
    "why": "Ekip ve yatırımcı payı: içeriden satış baskısı (yapay zekâ araştırması).",
    "since": "2026-11-03",
-   "coverage": 23,
-   "coverage_top": 7,
+   "coverage": 81,
+   "coverage_top": 16,
    "h30": {
     "mean": null,
     "days": 0
@@ -153,6 +153,29 @@
    "status": "kayit",
    "status_text": "Veri birikiyor",
    "ready_after": "2027-03-22"
+  },
+  {
+   "id": "fund_count",
+   "name": "Fon sayısı (CMC portföy etiketleri)",
+   "part": "liquidity",
+   "part_name": "Likidite",
+   "higher_is_better": true,
+   "why": "Kaç tanınmış fonun portföyünde (CMC etiketleri; fon listesi, 6 Kasım 2026). Etiketler ham kayıtta 23 Ekim'den beri var.",
+   "since": "2026-10-23",
+   "coverage": 392,
+   "coverage_top": 111,
+   "h30": {
+    "mean": null,
+    "days": 0
+   },
+   "h90": {
+    "mean": null,
+    "days": 0
+   },
+   "effect": null,
+   "status": "kayit",
+   "status_text": "Veri birikiyor",
+   "ready_after": "2027-03-11"
   }
  ],
  "scored": [
@@ -202,7 +225,7 @@
    "part": "supply",
    "part_name": "Arz baskısı",
    "weight": 1.0,
-   "coverage": 394,
+   "coverage": 392,
    "h30": {
     "mean": null,
     "days": 0
@@ -222,7 +245,7 @@
    "part": "supply",
    "part_name": "Arz baskısı",
    "weight": 1.0,
-   "coverage": 394,
+   "coverage": 392,
    "h30": {
     "mean": null,
     "days": 0
@@ -242,7 +265,7 @@
    "part": "supply",
    "part_name": "Arz baskısı",
    "weight": 1.0,
-   "coverage": 380,
+   "coverage": 382,
    "h30": {
     "mean": null,
     "days": 0
@@ -262,7 +285,7 @@
    "part": "supply",
    "part_name": "Arz baskısı",
    "weight": 1.0,
-   "coverage": 15,
+   "coverage": 51,
    "h30": {
     "mean": null,
     "days": 0
@@ -282,7 +305,7 @@
    "part": "value_capture",
    "part_name": "Değer yakalama",
    "weight": 1.0,
-   "coverage": 62,
+   "coverage": 65,
    "h30": {
     "mean": null,
     "days": 0
@@ -302,7 +325,7 @@
    "part": "value_capture",
    "part_name": "Değer yakalama",
    "weight": 1.0,
-   "coverage": 19,
+   "coverage": 63,
    "h30": {
     "mean": null,
     "days": 0
@@ -322,7 +345,7 @@
    "part": "value_capture",
    "part_name": "Değer yakalama",
    "weight": 2.0,
-   "coverage": 66,
+   "coverage": 68,
    "h30": {
     "mean": null,
     "days": 0
@@ -342,7 +365,7 @@
    "part": "value_capture",
    "part_name": "Değer yakalama",
    "weight": 2.0,
-   "coverage": 87,
+   "coverage": 88,
    "h30": {
     "mean": null,
     "days": 0
@@ -362,7 +385,7 @@
    "part": "value_capture",
    "part_name": "Değer yakalama",
    "weight": 2.0,
-   "coverage": 28,
+   "coverage": 104,
    "h30": {
     "mean": null,
     "days": 0
@@ -382,7 +405,7 @@
    "part": "usage",
    "part_name": "Kullanım",
    "weight": 1.0,
-   "coverage": 103,
+   "coverage": 104,
    "h30": {
     "mean": null,
     "days": 0
@@ -402,7 +425,7 @@
    "part": "usage",
    "part_name": "Kullanım",
    "weight": 1.0,
-   "coverage": 69,
+   "coverage": 72,
    "h30": {
     "mean": null,
     "days": 0
@@ -422,7 +445,7 @@
    "part": "usage",
    "part_name": "Kullanım",
    "weight": 1.0,
-   "coverage": 45,
+   "coverage": 47,
    "h30": {
     "mean": null,
     "days": 0
@@ -442,7 +465,7 @@
    "part": "usage",
    "part_name": "Kullanım",
    "weight": 1.0,
-   "coverage": 279,
+   "coverage": 211,
    "h30": {
     "mean": null,
     "days": 0
@@ -522,7 +545,7 @@
    "part": "liquidity",
    "part_name": "Likidite",
    "weight": 1.0,
-   "coverage": 394,
+   "coverage": 392,
    "h30": {
     "mean": null,
     "days": 0
@@ -542,7 +565,7 @@
    "part": "liquidity",
    "part_name": "Likidite",
    "weight": 1.0,
-   "coverage": 385,
+   "coverage": 383,
    "h30": {
     "mean": null,
     "days": 0
@@ -562,27 +585,7 @@
    "part": "liquidity",
    "part_name": "Likidite",
    "weight": 1.0,
-   "coverage": 385,
-   "h30": {
-    "mean": null,
-    "days": 0
-   },
-   "h90": {
-    "mean": null,
-    "days": 0
-   },
-   "effect": null,
-   "status": "kayit",
-   "status_text": "Veri birikiyor",
-   "ready_after": "2027-03-11"
-  },
-  {
-   "id": "age_years",
-   "name": "Proje yaşı",
-   "part": "liquidity",
-   "part_name": "Likidite",
-   "weight": 1.0,
-   "coverage": 394,
+   "coverage": 384,
    "h30": {
     "mean": null,
     "days": 0
@@ -602,7 +605,7 @@
    "part": "liquidity",
    "part_name": "Likidite",
    "weight": 1.0,
-   "coverage": 147,
+   "coverage": 149,
    "h30": {
     "mean": null,
     "days": 0
