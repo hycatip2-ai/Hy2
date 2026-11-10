@@ -1,5 +1,5 @@
 {
- "rank": 15,
+ "rank": 16,
  "slug": "mask-network",
  "symbol": "MASK",
  "name": "Mask Network",
@@ -12,9 +12,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 58,
- "total_exact": 58.32,
+ "total_exact": 57.71,
  "band": "Orta",
- "delta": 4.2,
+ "delta": -0.6,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,7 +27,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
@@ -51,10 +51,10 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 17.3,
+   "score": 16.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9877,
+   "percentile": 0.9383,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -70,7 +70,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9729,
+     "percentile": 0.9697,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -79,8 +79,17 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7008,
+     "percentile": 0.6954,
      "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7019,
+     "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
     }
@@ -99,17 +108,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.6,
+   "score": 14.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8182,
+   "percentile": 0.8636,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 6.0,
-     "percentile": 0.7306,
+     "percentile": 0.7424,
      "basis": "sector",
      "display": "6",
      "tier": "üst dilim"
@@ -122,7 +131,7 @@
    "score": 12.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7716,
+   "percentile": 0.7654,
    "tier": "üst dilim",
    "metrics": [
     {
@@ -138,7 +147,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.013,
-     "percentile": 0.1334,
+     "percentile": 0.1315,
      "basis": "sector",
      "display": "%1,0",
      "tier": "alt dilim"
@@ -147,7 +156,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.08,
-     "percentile": 0.7381,
+     "percentile": 0.7402,
      "basis": "sector",
      "display": "%8,0",
      "tier": "üst dilim"
@@ -155,14 +164,7 @@
    ]
   }
  ],
- "reasons": [
-  {
-   "text": "Aktif geliştirici sayısı sert biçimde arttı.",
-   "part": "usage",
-   "delta": 3.44,
-   "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +3,4)"
-  }
- ],
+ "reasons": [],
  "history": [
   [
    "2026-10-23",
@@ -231,6 +233,10 @@
   [
    "2026-11-09",
    58.32
+  ],
+  [
+   "2026-11-10",
+   57.71
   ]
  ],
  "changes": [
@@ -294,23 +300,23 @@
   }
  ],
  "trend": {
-  "rank_now": 431,
-  "rank_start": 444,
-  "score": 17,
-  "rise": 9,
-  "steady": 33,
+  "rank_now": 429,
+  "rank_start": 442,
+  "score": 23,
+  "rise": 16,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 4,
-  "weeks_down": 5,
+  "weeks_up": 5,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
    1,
-   0,
    -1,
    -1,
-   0,
+   -1,
+   1,
    0,
    -1,
    -1,
@@ -322,7 +328,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -1.7,
+  "score_change": -2.3,
   "double": false
  },
  "chain": {
@@ -348,29 +354,44 @@
  "defillama_url": null,
  "research": null,
  "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "usage_evidence": {
+  "metric": "Holders",
+  "value": 33500.0,
+  "unit": "addresses",
+  "as_of": "2026-11-09",
+  "confirmed": true,
+  "source": "https://coinmarketcap.com/currencies/mask-network/",
+  "note": "CoinMarketCap verilerine göre proje 33.500 cüzdan sahibi tarafından tutulmaktadır.",
+  "researched_at": "2026-11-09"
+ },
+ "allocation": {
+  "insiders": 0.515,
+  "vesting_end": "2026-02",
+  "source": "https://app.tokenomics.com/tokenomics/mask-network/unlocks",
+  "note": "İçeriden öğrenenler (Private Investors %28.5 + Insiders %23) toplam arzın %51.5'ini almıştır.",
+  "researched_at": "2026-11-09"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-09",
+  "end": "2026-11-10",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-10",
-   "2026-08-17",
-   "2026-08-24",
-   "2026-08-31",
-   "2026-09-07",
-   "2026-09-14",
-   "2026-09-21",
-   "2026-09-28",
-   "2026-10-05",
-   "2026-10-12",
-   "2026-10-19",
-   "2026-10-26",
-   "2026-11-02",
-   "2026-11-09"
+   "2026-08-11",
+   "2026-08-18",
+   "2026-08-25",
+   "2026-09-01",
+   "2026-09-08",
+   "2026-09-15",
+   "2026-09-22",
+   "2026-09-29",
+   "2026-10-06",
+   "2026-10-13",
+   "2026-10-20",
+   "2026-10-27",
+   "2026-11-03",
+   "2026-11-10"
   ],
   "supply_values": [
    100000000.0,
@@ -408,6 +429,7 @@
   "depth_2pct_usd": 160358.42,
   "major_volume_share": 0.1862,
   "holder_count": 14853,
-  "depth_to_mc": 0.004459
+  "depth_to_mc": 0.004431,
+  "insider_share": 0.515
  }
 }

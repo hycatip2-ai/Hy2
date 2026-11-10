@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 34,
- "total_exact": 33.57,
+ "total": 36,
+ "total_exact": 36.42,
  "band": "Zayıf",
- "delta": 2.1,
+ "delta": 2.9,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -30,7 +30,7 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; azami arzın tamamı çıkarıldı, arz artmaz."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "formula_version": "1.27.0",
  "eligible_for_top": false,
  "missing": [
@@ -54,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.0,
+   "score": 13.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.733,
+   "percentile": 0.7356,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.986258,
-     "percentile": 0.7444,
+     "percentile": 0.7414,
      "basis": "sector",
      "display": "%99",
      "tier": "üst dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.013933,
-     "percentile": 0.8284,
+     "percentile": 0.8268,
      "basis": "sector",
      "display": "1,01×",
      "tier": "üst dilim"
@@ -81,8 +81,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.012196,
-     "percentile": 0.38,
+     "value": 0.012074,
+     "percentile": 0.3928,
      "basis": "sector",
      "display": "+%1,2",
      "tier": "orta dilim"
@@ -102,19 +102,19 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.6,
+   "score": 5.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1267,
+   "percentile": 0.2397,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 1.0,
-     "percentile": 0.1823,
+     "value": 2.0,
+     "percentile": 0.2965,
      "basis": "sector",
-     "display": "1",
+     "display": "2",
      "tier": "alt dilim"
     }
    ]
@@ -122,17 +122,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.3,
+   "score": 7.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2159,
+   "percentile": 0.1954,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 153.0,
-     "percentile": 0.5445,
+     "percentile": 0.54,
      "basis": "sector",
      "display": "153",
      "tier": "orta dilim"
@@ -141,7 +141,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.1862,
-     "percentile": 0.1027,
+     "percentile": 0.1032,
      "basis": "sector",
      "display": "%1,2",
      "tier": "alt dilim"
@@ -150,7 +150,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1875,
-     "percentile": 0.4572,
+     "percentile": 0.4419,
      "basis": "sector",
      "display": "%19",
      "tier": "orta dilim"
@@ -159,7 +159,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.3597,
+     "percentile": 0.3596,
      "basis": "sector",
      "display": "0",
      "tier": "orta dilim"
@@ -169,16 +169,10 @@
  ],
  "reasons": [
   {
-   "text": "Gelir trendi (90 gün) verisi artık yok.",
+   "text": "Aktif geliştirici sayısı sert biçimde arttı.",
    "part": "usage",
-   "delta": 2.02,
-   "label": "Gelir trendi (90 gün) verisi artık yok. (Kullanım +2,0)"
-  },
-  {
-   "text": "Borsalardaki alış-satış farkı açıldı.",
-   "part": "liquidity",
-   "delta": -1.84,
-   "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −1,8)"
+   "delta": 2.85,
+   "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +2,9)"
   }
  ],
  "history": [
@@ -249,6 +243,10 @@
   [
    "2026-11-09",
    33.57
+  ],
+  [
+   "2026-11-10",
+   36.42
   ]
  ],
  "changes": [
@@ -323,6 +321,21 @@
      "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −1,8)"
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "delta": 2.9,
+   "from": 33.6,
+   "to": 36.4,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Aktif geliştirici sayısı sert biçimde arttı.",
+     "part": "usage",
+     "delta": 2.85,
+     "label": "Aktif geliştirici sayısı sert biçimde arttı. (Kullanım +2,9)"
+    }
+   ]
   }
  ],
  "events": [
@@ -376,53 +389,27 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-09",
-  "fees_weekly": [
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0
-  ],
-  "holders_weekly": [
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0,
-   0.0
-  ],
+  "end": "2026-11-10",
+  "fees_weekly": null,
+  "holders_weekly": null,
   "supply_dates": [
-   "2026-08-10",
-   "2026-08-17",
-   "2026-08-24",
-   "2026-10-05",
-   "2026-10-12",
-   "2026-10-19",
-   "2026-10-26",
-   "2026-11-02",
-   "2026-11-09"
+   "2026-08-11",
+   "2026-08-18",
+   "2026-08-25",
+   "2026-09-29",
+   "2026-10-06",
+   "2026-10-13",
+   "2026-10-20",
+   "2026-10-27",
+   "2026-11-03",
+   "2026-11-10"
   ],
   "supply_values": [
    1203880000.0,
    1203880000.0,
    1203880000.0,
    1212040000.0,
+   1216040000.0,
    1220040000.0,
    1220040000.0,
    1220040000.0,
@@ -445,6 +432,6 @@
  "recorded": {
   "depth_2pct_usd": 19648.07,
   "major_volume_share": 0.171,
-  "depth_to_mc": 0.002261
+  "depth_to_mc": 0.002252
  }
 }

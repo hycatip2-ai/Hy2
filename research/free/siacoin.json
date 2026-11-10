@@ -1,0 +1,75 @@
+{
+ "slug": "siacoin",
+ "schema": 2,
+ "name": "Siacoin",
+ "symbol": "SC",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-10",
+ "pages": [
+  "https://docs.sia.tech/miscellaneous/v2/exchanges",
+  "https://docs.sia.tech/",
+  "https://docs.sia.tech/miscellaneous/siacoin-total-supply",
+  "https://sia.tech/learn",
+  "https://sia.tech/",
+  "https://coinmarketcap.com/cmc-ai/siacoin/price-prediction/",
+  "https://skynet.guide/siacoin/tokenomics.html"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "protocol_rule",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://docs.sia.tech/miscellaneous/siacoin-total-supply",
+   "note": "Siacoin yeni tokenlar proof-of-work madenciliği ile protokol kurallarına göre üretilir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 0.5,
+   "source": "https://skynet.guide/siacoin/tokenomics.html",
+   "note": "Ağdaki bazı coinler host duyuruları ve başarısız sözleşmeler nedeniyle yakılmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "service_payment",
+     "collateral"
+    ]
+   },
+   "source": "https://docs.sia.tech/miscellaneous/siacoin-total-supply",
+   "note": "Siacoin, depolama sözleşmelerini finanse etmek ve teminat olarak kullanılmak için gereklidir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Providers holding it",
+    "value": 122.0,
+    "unit": "providers",
+    "as_of": "2026-08-10",
+    "confirmed": true
+   },
+   "source": "https://sia.tech/",
+   "note": "Ağ üzerinde veri depolayan 122 bağımsız sağlayıcı bulunmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [
+  {
+   "field": "allocation",
+   "reason": "biçim anlaşılmadı ya da tarih eski"
+  }
+ ],
+ "queue": {
+  "priority": 3,
+  "reason": "ilk 100: geri alım, kilit açılışı, hack"
+ },
+ "usage": {
+  "input_tokens": 12418,
+  "output_tokens": 716
+ }
+}

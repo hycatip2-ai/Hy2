@@ -1,5 +1,5 @@
 {
- "rank": 14,
+ "rank": 13,
  "slug": "pirate-chain",
  "symbol": "ARRR",
  "name": "Pirate Chain",
@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "privacy",
  "sector_name": "Gizlilik",
- "total": 59,
- "total_exact": 58.67,
+ "total": 61,
+ "total_exact": 60.97,
  "band": "Orta",
- "delta": -0.9,
+ "delta": 2.3,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -25,7 +25,7 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz son bir yılda artmadı."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-09",
+ "date": "2026-11-10",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
@@ -46,17 +46,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 18.5,
+   "score": 18.2,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.9859,
+   "percentile": 0.9821,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9105,
+     "percentile": 0.9103,
      "basis": "universe",
      "display": "%100",
      "tier": "üst dilim"
@@ -65,7 +65,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9629,
+     "percentile": 0.9308,
      "basis": "universe",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -74,7 +74,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.895,
+     "percentile": 0.8921,
      "basis": "universe",
      "display": "%0",
      "tier": "üst dilim"
@@ -84,27 +84,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 11.5,
+   "has_data": true,
    "weight": 10,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5467,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.1866,
+     "basis": "universe",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7706,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.5,
+   "score": 10.8,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5508,
+   "percentile": 0.5571,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.5262,
+     "percentile": 0.5427,
      "basis": "universe",
      "display": "4",
      "tier": "orta dilim"
@@ -117,14 +136,14 @@
    "score": 9.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3696,
+   "percentile": 0.3692,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 23.0,
-     "percentile": 0.0985,
+     "percentile": 0.0962,
      "basis": "universe",
      "display": "23",
      "tier": "alt dilim"
@@ -150,7 +169,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 2.26,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,3)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -219,6 +245,10 @@
   [
    "2026-11-09",
    58.67
+  ],
+  [
+   "2026-11-10",
+   60.97
   ]
  ],
  "changes": [
@@ -251,6 +281,21 @@
      "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +5,6)"
     }
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "delta": 2.3,
+   "from": 58.7,
+   "to": 61.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 2.26,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +2,3)"
+    }
+   ]
   }
  ],
  "events": [
@@ -270,14 +315,14 @@
   }
  ],
  "trend": {
-  "rank_now": 442,
-  "rank_start": 357,
+  "rank_now": 440,
+  "rank_start": 370,
   "score": 0,
   "rise": 0,
-  "steady": 42,
+  "steady": 50,
   "calm": 0,
-  "weeks_up": 5,
-  "weeks_down": 7,
+  "weeks_up": 6,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -290,7 +335,7 @@
    -1,
    -1,
    -1,
-   -1,
+   1,
    1
   ],
   "labels": [],
@@ -298,7 +343,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 12.9,
+  "score_change": 15.2,
   "double": false
  },
  "chain": null,
@@ -315,30 +360,53 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees"
+  ],
+  "source": "https://piratechain.com/",
+  "note": "ARRR, ağ üzerindeki işlemler için kullanılan yerel kripto paradır.",
+  "researched_at": "2026-11-09"
+ },
+ "usage_evidence": {
+  "metric": "Anonset",
+  "value": 254.0,
+  "unit": "anonset",
+  "as_of": "2026-11-09",
+  "confirmed": true,
+  "source": "https://piratechain.com/",
+  "note": "Ağın anonimlik seti (anonset) değeri 254 olarak güncel web sitesinde belirtilmiştir.",
+  "researched_at": "2026-11-09"
+ },
+ "allocation": {
+  "insiders": 0.0,
+  "vesting_end": null,
+  "source": "https://piratechain.com/",
+  "note": "Proje, ön madencilik veya geliştirici tahsisi olmadığını belirtmektedir.",
+  "researched_at": "2026-11-09"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-09",
+  "end": "2026-11-10",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-10",
-   "2026-08-17",
-   "2026-08-24",
-   "2026-08-31",
-   "2026-09-07",
-   "2026-09-14",
-   "2026-09-21",
-   "2026-09-28",
-   "2026-10-05",
-   "2026-10-12",
-   "2026-10-19",
-   "2026-10-26",
-   "2026-11-02",
-   "2026-11-09"
+   "2026-08-11",
+   "2026-08-18",
+   "2026-08-25",
+   "2026-09-01",
+   "2026-09-08",
+   "2026-09-15",
+   "2026-09-22",
+   "2026-09-29",
+   "2026-10-06",
+   "2026-10-13",
+   "2026-10-20",
+   "2026-10-27",
+   "2026-11-03",
+   "2026-11-10"
   ],
   "supply_values": [
    196214000.0,
@@ -367,6 +435,7 @@
  "recorded": {
   "depth_2pct_usd": 235.07,
   "major_volume_share": 0.0105,
-  "depth_to_mc": 7e-06
+  "depth_to_mc": 7e-06,
+  "insider_share": 0.0
  }
 }
