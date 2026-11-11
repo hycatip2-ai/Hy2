@@ -1,5 +1,5 @@
 {
- "rank": 27,
+ "rank": 28,
  "slug": "bim",
  "symbol": "BIM",
  "name": "BIM",
@@ -9,28 +9,32 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 55,
- "total_exact": 54.57,
+ "total": 56,
+ "total_exact": 56.07,
  "band": "Orta",
- "delta": -0.5,
+ "delta": 1.5,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Base",
   "address": "0x555fff48549c1a25a723bd8e7ed10870d82e8379"
@@ -42,16 +46,16 @@
    "score": 3.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1455,
+   "percentile": 0.1429,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 157.583445,
-     "percentile": 0.1611,
+     "value": 157.223064,
+     "percentile": 0.1607,
      "basis": "sector",
-     "display": "158×",
+     "display": "157×",
      "tier": "alt dilim"
     }
    ]
@@ -59,17 +63,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 17.2,
+   "score": 17.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9556,
+   "percentile": 0.9231,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9201,
+     "percentile": 0.9209,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -78,7 +82,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.952,
+     "percentile": 0.9132,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -87,7 +91,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.7134,
+     "percentile": 0.7213,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -97,27 +101,45 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 15.4,
+   "score": 11.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7925,
-   "tier": "üst dilim",
+   "percentile": 0.5833,
+   "tier": "orta dilim",
    "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7231,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
     {
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": null,
-     "percentile": 0.7698,
+     "percentile": 0.7897,
      "basis": "sector",
      "display": "Yeni arz yok",
      "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3414,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 14.7,
+   "score": 14.8,
    "has_data": true,
    "weight": 20,
    "percentile": 0.8873,
@@ -126,8 +148,8 @@
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.273615,
-     "percentile": 0.6597,
+     "value": 1.274113,
+     "percentile": 0.6643,
      "basis": "sector",
      "display": "+%27",
      "tier": "orta dilim"
@@ -135,17 +157,17 @@
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": 0.185923,
-     "percentile": 0.8019,
+     "value": 0.177295,
+     "percentile": 0.7833,
      "basis": "sector",
-     "display": "+%19",
+     "display": "+%18",
      "tier": "üst dilim"
     },
     {
      "id": "governance",
      "name": "Yönetim oyları (90 gün)",
      "value": 7.0,
-     "percentile": 0.7368,
+     "percentile": 0.7778,
      "basis": "universe",
      "display": "7",
      "tier": "üst dilim"
@@ -158,14 +180,14 @@
    "score": 4.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0667,
+   "percentile": 0.0659,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 11.0,
-     "percentile": 0.034,
+     "percentile": 0.0346,
      "basis": "sector",
      "display": "11",
      "tier": "alt dilim"
@@ -174,7 +196,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 1.34,
-     "percentile": 0.031,
+     "percentile": 0.0307,
      "basis": "sector",
      "display": "%1,3",
      "tier": "alt dilim"
@@ -183,7 +205,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.3333,
-     "percentile": 0.1295,
+     "percentile": 0.1291,
      "basis": "sector",
      "display": "%33",
      "tier": "alt dilim"
@@ -192,10 +214,10 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6727,
+     "percentile": 0.6697,
      "basis": "sector",
      "display": "2",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   }
@@ -273,6 +295,10 @@
   [
    "2026-11-10",
    54.57
+  ],
+  [
+   "2026-11-11",
+   56.07
   ]
  ],
  "changes": [
@@ -372,19 +398,19 @@
   }
  ],
  "trend": {
-  "rank_now": 391,
-  "rank_start": 425,
-  "score": 32,
-  "rise": 46,
+  "rank_now": 395,
+  "rank_start": 419,
+  "score": 28,
+  "rise": 36,
   "steady": 33,
   "calm": 0,
   "weeks_up": 4,
-  "weeks_down": 7,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    1,
    0,
-   -1,
+   0,
    -1,
    -1,
    -1,
@@ -409,7 +435,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 7.4,
+  "score_change": 8.9,
   "double": false
  },
  "chain": {
@@ -431,38 +457,53 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/bim",
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "revenue_share"
+  ],
+  "source": "https://docs.bim.finance/whitepaper",
+  "note": "Token yönetişim hakları sağlar ve borsa gelirlerinden pay almayı mümkün kılar.",
+  "researched_at": "2026-11-10"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.1,
+  "vesting_end": null,
+  "source": "https://docs.bim.finance/whitepaper/token-bim/tokenomics",
+  "note": "Ekip için ayrılan pay %10 olarak belirtilmiştir, ancak tam kilit açılış tarihi verilmemiştir.",
+  "researched_at": "2026-11-10"
+ },
  "value_transfer_pending": null,
  "usage_share": {
   "category": "Yield Aggregator",
   "peers": "category",
   "protocols": 32,
   "quarters": [
-   0.0001373,
-   0.0002338,
-   0.0005299,
+   0.0001387,
+   0.0002342,
+   0.0005387,
    0.001019,
-   0.001208
+   0.001199
   ]
  },
  "last90": {
-  "end": "2026-11-10",
+  "end": "2026-11-11",
   "fees_weekly": [
-   306.16,
-   441.17,
-   278.93,
-   199.42,
-   245.19,
-   189.03,
-   329.63,
-   3333.97,
-   296.74,
-   629.89,
-   950.83,
-   359.6,
-   329.71
+   350.23,
+   352.18,
+   283.36,
+   259.06,
+   168.69,
+   284.45,
+   290.01,
+   3342.77,
+   272.67,
+   741.78,
+   836.91,
+   359.1,
+   322.02
   ],
   "holders_weekly": [
    0.0,
@@ -471,29 +512,29 @@
    1970.0,
    0.0,
    165.0,
-   198.0,
-   7003.0,
+   7201.0,
+   0.0,
    0.0,
    294.0,
-   119.0,
-   6347.0,
+   6192.0,
+   274.0,
    196.0
   ],
   "supply_dates": [
-   "2026-08-11",
-   "2026-08-18",
-   "2026-08-25",
-   "2026-09-01",
-   "2026-09-08",
-   "2026-09-15",
-   "2026-09-22",
-   "2026-09-29",
-   "2026-10-06",
-   "2026-10-13",
-   "2026-10-20",
-   "2026-10-27",
-   "2026-11-03",
-   "2026-11-10"
+   "2026-08-12",
+   "2026-08-19",
+   "2026-08-26",
+   "2026-09-02",
+   "2026-09-09",
+   "2026-09-16",
+   "2026-09-23",
+   "2026-09-30",
+   "2026-10-07",
+   "2026-10-14",
+   "2026-10-21",
+   "2026-10-28",
+   "2026-11-04",
+   "2026-11-11"
   ],
   "supply_values": [
    30000000.0,
@@ -518,6 +559,7 @@
  "delisted": [],
  "recorded": {
   "major_volume_share": 0.0,
-  "holder_count": 712
+  "holder_count": 712,
+  "insider_share": 0.1
  }
 }

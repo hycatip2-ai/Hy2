@@ -1,0 +1,90 @@
+{
+ "slug": "gitcoin",
+ "schema": 2,
+ "name": "Gitcoin",
+ "symbol": "GTC",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-11",
+ "pages": [
+  "https://gitcoin.co/mechanisms/token-curated-registry",
+  "https://gitcoin.co/",
+  "https://gitcoin.co/apps/protocol-guild",
+  "https://gitcoin.co/campaigns/protocol-guild-ongoing",
+  "https://tokenomist.ai/gitcoin",
+  "https://app.tokenomics.com/tokenomics/gitcoin",
+  "https://phemex.com/blogs/gitcoin-gtc-price-prediction-2026-2030"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "capped",
+    "annual_inflation": null,
+    "max_annual_mint": 0.02,
+    "upgradeable": null
+   },
+   "source": "https://phemex.com/blogs/gitcoin-gtc-price-prediction-2026-2030",
+   "note": "Sözleşme, Timelock'un 365 günde bir arzın %2'sine kadar basım yapmasına izin vermektedir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 0.0,
+   "source": "https://tokenomist.ai/gitcoin",
+   "note": "Tokenomist verilerine göre herhangi bir geri alım veya yakım mekanizması bulunmamaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "unlock_6m_pct": {
+   "value": 0.0,
+   "source": "https://tokenomist.ai/gitcoin",
+   "note": "Gitcoin tokenları tamamen kilitleri açılmış durumdadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "unlock_12m_pct": {
+   "value": 0.0,
+   "source": "https://tokenomist.ai/gitcoin",
+   "note": "Tüm token kilitleri 2023 yılı itibarıyla sona ermiştir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "none",
+    "uses": [
+     "governance"
+    ]
+   },
+   "source": "https://app.tokenomics.com/tokenomics/gitcoin",
+   "note": "GTC tokenı temel olarak platformun yönetişimi için kullanılmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Snapshot vote quorum",
+    "value": 2720000.0,
+    "unit": "GTC",
+    "as_of": "2026-09-16",
+    "confirmed": true
+   },
+   "source": "https://phemex.com/blogs/gitcoin-gtc-price-prediction-2026-2030",
+   "note": "Eylül 2026'daki Snapshot oylamasında 2,72 milyon GTC kullanılmıştır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.85,
+    "vesting_end": "2023-05"
+   },
+   "source": "https://app.tokenomics.com/tokenomics/gitcoin",
+   "note": "İçeridekiler (DAO ve paydaşlar) toplam arzın %85'ine sahiptir.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [],
+ "queue": {
+  "priority": 3,
+  "reason": "ilk 100: geri alım, kilit açılışı, hack"
+ },
+ "usage": {
+  "input_tokens": 17850,
+  "output_tokens": 866
+ }
+}

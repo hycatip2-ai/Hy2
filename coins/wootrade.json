@@ -1,5 +1,5 @@
 {
- "rank": 25,
+ "rank": 17,
  "slug": "wootrade",
  "symbol": "WOO",
  "name": "WOO",
@@ -9,28 +9,32 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 56,
- "total_exact": 56.02,
+ "total": 59,
+ "total_exact": 58.76,
  "band": "Orta",
- "delta": -0.5,
+ "delta": 2.7,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "ok",
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Ethereum",
   "address": "0x4691937a7508860f876c9c0a2a617e7d9e945d4b"
@@ -39,19 +43,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.5,
+   "score": 7.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3091,
+   "percentile": 0.3214,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 2.982115,
-     "percentile": 0.3729,
+     "value": 3.022884,
+     "percentile": 0.3824,
      "basis": "sector",
-     "display": "2,98×",
+     "display": "3,02×",
      "tier": "orta dilim"
     }
    ]
@@ -62,14 +66,14 @@
    "score": 18.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9778,
+   "percentile": 0.978,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9201,
+     "percentile": 0.9209,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -78,7 +82,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.000003,
-     "percentile": 0.8384,
+     "percentile": 0.84,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -87,7 +91,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -3e-06,
-     "percentile": 0.944,
+     "percentile": 0.945,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -97,73 +101,91 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 16.9,
+   "score": 14.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9811,
+   "percentile": 0.7963,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
-     "value": 0.800452,
-     "percentile": 0.9549,
+     "value": 0.800507,
+     "percentile": 0.9607,
      "basis": "sector",
      "display": "%80",
      "tier": "üst dilim"
     },
     {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7231,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
-     "value": 0.001501,
-     "percentile": 0.859,
+     "value": 0.001483,
+     "percentile": 0.8826,
      "basis": "sector",
-     "display": "+%0,2",
+     "display": "+%0,1",
      "tier": "üst dilim"
     },
     {
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": null,
-     "percentile": 0.7698,
+     "percentile": 0.7897,
      "basis": "sector",
      "display": "Yeni arz yok",
      "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3414,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 3.0,
+   "score": 3.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1127,
+   "percentile": 0.0986,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 0.245247,
-     "percentile": 0.0981,
+     "value": 0.237429,
+     "percentile": 0.1059,
      "basis": "sector",
-     "display": "−%75",
+     "display": "−%76",
      "tier": "alt dilim"
     },
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": -0.754453,
+     "value": -0.765282,
      "percentile": 0.1237,
      "basis": "sector",
-     "display": "−%75",
+     "display": "−%77",
      "tier": "alt dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.232,
+     "percentile": 0.2318,
      "basis": "sector",
      "display": "1",
      "tier": "alt dilim"
@@ -176,14 +198,14 @@
    "score": 11.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.6556,
+   "percentile": 0.6484,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 415.0,
-     "percentile": 0.9216,
+     "percentile": 0.9223,
      "basis": "sector",
      "display": "415",
      "tier": "üst dilim"
@@ -192,7 +214,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3697,
-     "percentile": 0.4973,
+     "percentile": 0.5014,
      "basis": "sector",
      "display": "%0,37",
      "tier": "orta dilim"
@@ -201,7 +223,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2623,
-     "percentile": 0.2575,
+     "percentile": 0.2558,
      "basis": "sector",
      "display": "%26",
      "tier": "alt dilim"
@@ -210,15 +232,28 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6727,
+     "percentile": 0.6697,
      "basis": "sector",
      "display": "2",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  },
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": -2.57,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −2,6)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -291,6 +326,10 @@
   [
    "2026-11-10",
    56.02
+  ],
+  [
+   "2026-11-11",
+   58.76
   ]
  ],
  "changes": [
@@ -344,6 +383,27 @@
      "label": "Kilitli varlığına göre değerlemesi hafifçe pahalandı. (Değerleme −2,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "delta": 2.7,
+   "from": 56.0,
+   "to": 58.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    },
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -2.57,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −2,6)"
+    }
+   ]
   }
  ],
  "events": [
@@ -369,8 +429,8 @@
   }
  ],
  "trend": {
-  "rank_now": 625,
-  "rank_start": 616,
+  "rank_now": 632,
+  "rank_start": 620,
   "score": 18,
   "rise": 2,
   "steady": 42,
@@ -397,7 +457,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -6.8,
+  "score_change": -4.1,
   "double": false
  },
  "chain": {
@@ -425,29 +485,46 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/woofi",
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "fee_discount",
+   "revenue_share",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-woo",
+  "note": "Token, ücret indirimleri, gelir paylaşımı ve yönetişim gibi çeşitli faydalar sunmaktadır.",
+  "researched_at": "2026-11-10"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.5,
+  "vesting_end": null,
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-woo",
+  "note": "Ekip, danışmanlar ve yatırımcılar için toplam %50'lik bir başlangıç tahsisi belirtilmiştir.",
+  "researched_at": "2026-11-10"
+ },
  "value_transfer_pending": null,
  "usage_share": {
   "category": "Yield",
   "peers": "category",
-  "protocols": 42,
+  "protocols": 43,
   "quarters": [
-   0.01042,
-   0.009579,
-   0.005974,
-   0.002528,
-   0.0006208
+   0.01048,
+   0.009505,
+   0.005873,
+   0.00254,
+   0.0005961
   ]
  },
  "last90": {
-  "end": "2026-11-10",
+  "end": "2026-11-11",
   "fees_weekly": [
-   1869.0,
-   4698.0,
-   3174.0,
-   237.0,
+   1972.0,
+   4979.0,
+   2776.0,
+   0.0,
    0.0,
    0.0,
    0.0,
@@ -459,10 +536,10 @@
    0.0
   ],
   "holders_weekly": [
-   1497.0,
-   3763.0,
-   2537.0,
-   190.0,
+   1580.0,
+   3988.0,
+   2218.0,
+   0.0,
    0.0,
    0.0,
    0.0,
@@ -474,20 +551,20 @@
    0.0
   ],
   "supply_dates": [
-   "2026-08-11",
-   "2026-08-18",
-   "2026-08-25",
-   "2026-09-01",
-   "2026-09-08",
-   "2026-09-15",
-   "2026-09-22",
-   "2026-09-29",
-   "2026-10-06",
-   "2026-10-13",
-   "2026-10-20",
-   "2026-10-27",
-   "2026-11-03",
-   "2026-11-10"
+   "2026-08-12",
+   "2026-08-19",
+   "2026-08-26",
+   "2026-09-02",
+   "2026-09-09",
+   "2026-09-16",
+   "2026-09-23",
+   "2026-09-30",
+   "2026-10-07",
+   "2026-10-14",
+   "2026-10-21",
+   "2026-10-28",
+   "2026-11-04",
+   "2026-11-11"
   ],
   "supply_values": [
    1888780000.0,
@@ -524,6 +601,7 @@
   "major_volume_share": 0.102,
   "active_users_30d": 0.0,
   "holder_count": 19450,
-  "depth_to_mc": 0.003862
+  "depth_to_mc": 0.003918,
+  "insider_share": 0.5
  }
 }

@@ -7,30 +7,30 @@
  "graduated": false,
  "chain_flow": null,
  "us_exchanges": [],
- "sector": "ai",
- "sector_name": "Yapay zekâ",
- "total": 38,
- "total_exact": 37.82,
+ "sector": "defi",
+ "sector_name": "DeFi",
+ "total": 33,
+ "total_exact": 33.3,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
- "revenue_unmeasured": true,
- "date": "2026-10-28",
+ "revenue_unmeasured": false,
+ "date": "2026-11-11",
  "formula_version": "1.27.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
-  "arz kuralı"
+  "gelir",
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -42,27 +42,37 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
-   "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "score": 5.0,
+   "has_data": true,
+   "weight": 25,
+   "percentile": 0.2321,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 61.020981,
+     "percentile": 0.2512,
+     "basis": "sector",
+     "display": "61,0×",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
    "score": 7.1,
    "has_data": true,
-   "weight": 30,
-   "percentile": 0.3306,
-   "tier": "alt dilim",
+   "weight": 20,
+   "percentile": 0.3407,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.23915,
-     "percentile": 0.1724,
+     "percentile": 0.1627,
      "basis": "sector",
      "display": "%24",
      "tier": "alt dilim"
@@ -71,7 +81,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.181476,
-     "percentile": 0.2941,
+     "percentile": 0.1759,
      "basis": "sector",
      "display": "4,18×",
      "tier": "alt dilim"
@@ -80,10 +90,10 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5933,
+     "percentile": 0.7213,
      "basis": "sector",
      "display": "%0",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   },
@@ -92,7 +102,7 @@
    "name": "Değer yakalama",
    "score": 7.0,
    "has_data": false,
-   "weight": 10,
+   "weight": 20,
    "percentile": null,
    "tier": null,
    "metrics": []
@@ -102,7 +112,7 @@
    "name": "Kullanım ve büyüme",
    "score": 7.0,
    "has_data": false,
-   "weight": 30,
+   "weight": 20,
    "percentile": null,
    "tier": null,
    "metrics": []
@@ -110,37 +120,46 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.6,
+   "score": 7.9,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5645,
-   "tier": "orta dilim",
+   "percentile": 0.2088,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 114.0,
-     "percentile": 0.455,
+     "value": 115.0,
+     "percentile": 0.2791,
      "basis": "sector",
-     "display": "114",
-     "tier": "orta dilim"
+     "display": "115",
+     "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.4274,
-     "percentile": 0.506,
+     "value": 0.4828,
+     "percentile": 0.3565,
      "basis": "sector",
-     "display": "%0,43",
+     "display": "%0,48",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0833,
-     "percentile": 0.6336,
+     "value": 0.25,
+     "percentile": 0.2813,
      "basis": "sector",
-     "display": "%8,3",
+     "display": "%25",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 2.0,
+     "percentile": 0.6697,
+     "basis": "sector",
+     "display": "2",
      "tier": "orta dilim"
     }
    ]
@@ -151,14 +170,18 @@
   [
    "2026-10-28",
    37.82
+  ],
+  [
+   "2026-11-11",
+   33.3
   ]
  ],
  "changes": [],
  "events": [],
  "trend": null,
  "chain": {
-  "name": "BSC",
-  "source": "contract",
+  "name": "TON",
+  "source": "tvl",
   "flow": false,
   "flow_rank": null
  },
@@ -181,18 +204,18 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-10-28",
+  "end": "2026-11-11",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-05",
    "2026-08-12",
    "2026-08-19",
    "2026-09-09",
    "2026-09-16",
    "2026-09-23",
    "2026-10-07",
-   "2026-10-28"
+   "2026-10-28",
+   "2026-11-11"
   ],
   "supply_values": [
    14349000.0,
@@ -205,9 +228,18 @@
    14349000.0
   ],
   "supply_change": 0.0,
-  "supply_days": 84
+  "supply_days": 91
  },
- "exchanges": null,
+ "exchanges": [
+  "Bitget",
+  "Gate",
+  "MEXC"
+ ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "depth_2pct_usd": 3425.48,
+  "major_volume_share": 0.053,
+  "holder_count": 104153,
+  "depth_to_mc": 0.000401
+ }
 }
