@@ -9,15 +9,20 @@
  "us_exchanges": [],
  "sector": "depin",
  "sector_name": "DePIN",
- "total": 35,
- "total_exact": 35.1,
+ "total": 28,
+ "total_exact": 27.75,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -7.4,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "dev_decline",
+   "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü."
+  }
+ ],
  "notes": [],
  "earns": null,
  "supply": {
@@ -25,13 +30,13 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "formula_version": "1.27.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": {
   "chain": "BNB Chain",
@@ -61,7 +66,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.23025,
-     "percentile": 0.105,
+     "percentile": 0.1045,
      "basis": "sector",
      "display": "%23",
      "tier": "alt dilim"
@@ -70,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 4.343105,
-     "percentile": 0.1147,
+     "percentile": 0.1122,
      "basis": "sector",
      "display": "4,34×",
      "tier": "alt dilim"
@@ -79,7 +84,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6919,
+     "percentile": 0.6926,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -99,19 +104,19 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.8,
+   "score": 2.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1316,
+   "percentile": 0.0526,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 2.0,
-     "percentile": 0.238,
+     "value": 1.0,
+     "percentile": 0.1256,
      "basis": "sector",
-     "display": "2",
+     "display": "1",
      "tier": "alt dilim"
     }
    ]
@@ -119,17 +124,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.3,
+   "score": 11.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.7308,
+   "percentile": 0.7115,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 120.0,
-     "percentile": 0.3586,
+     "percentile": 0.3583,
      "basis": "sector",
      "display": "120",
      "tier": "orta dilim"
@@ -137,25 +142,38 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.4233,
-     "percentile": 0.4627,
+     "value": 0.4422,
+     "percentile": 0.4512,
      "basis": "sector",
-     "display": "%0,42",
+     "display": "%0,44",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0667,
-     "percentile": 0.8808,
+     "value": 0.0714,
+     "percentile": 0.876,
      "basis": "sector",
-     "display": "%6,7",
+     "display": "%7,1",
      "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü. (Uyarı −5,0)"
+  },
+  {
+   "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+   "part": "usage",
+   "delta": -2.25,
+   "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −2,2)"
+  }
+ ],
  "history": [
   [
    "2026-11-05",
@@ -180,10 +198,57 @@
   [
    "2026-11-11",
    35.1
+  ],
+  [
+   "2026-11-12",
+   27.75
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-12",
+   "delta": -7.4,
+   "from": 35.1,
+   "to": 27.8,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü. (Uyarı −5,0)"
+    },
+    {
+     "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+     "part": "usage",
+     "delta": -2.25,
+     "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −2,2)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-12",
+   "delta": -7.4,
+   "from": 35.1,
+   "to": 27.8,
+   "reasons": [
+    {
+     "text": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Geliştirme neredeyse durdu; son 3 ayda kod yazan geliştirici sayısı önceki 3 aya göre %70'ten fazla düştü. (Uyarı −5,0)"
+    },
+    {
+     "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+     "part": "usage",
+     "delta": -2.25,
+     "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −2,2)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
   "name": "BSC",
@@ -212,20 +277,22 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-11",
+  "end": "2026-11-12",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-12",
-   "2026-08-19",
-   "2026-08-26",
-   "2026-09-02",
-   "2026-09-09",
-   "2026-09-16",
-   "2026-10-07",
-   "2026-11-11"
+   "2026-08-13",
+   "2026-08-20",
+   "2026-08-27",
+   "2026-09-03",
+   "2026-09-10",
+   "2026-09-17",
+   "2026-10-08",
+   "2026-11-05",
+   "2026-11-12"
   ],
   "supply_values": [
+   230250000.0,
    230250000.0,
    230250000.0,
    230250000.0,
@@ -247,9 +314,9 @@
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 15791.38,
-  "major_volume_share": 0.5029,
-  "holder_count": 59550,
-  "depth_to_mc": 0.00157
+  "depth_2pct_usd": 7672.25,
+  "major_volume_share": 0.307,
+  "holder_count": 59667,
+  "depth_to_mc": 0.000778
  }
 }

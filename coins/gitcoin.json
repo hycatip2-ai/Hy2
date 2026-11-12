@@ -1,5 +1,5 @@
 {
- "rank": 37,
+ "rank": 59,
  "slug": "gitcoin",
  "symbol": "GTC",
  "name": "Gitcoin",
@@ -12,13 +12,13 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 54,
- "total_exact": 53.5,
- "band": "Orta",
- "delta": 0.0,
+ "total": 48,
+ "total_exact": 48.12,
+ "band": "Zayıf",
+ "delta": -5.4,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [
   {
@@ -33,7 +33,7 @@
   "text": "Yeni token basılabiliyor (yetki: yönetim kararıyla bir grup, 48 saat bekletmeli) ama kontrat yılda en fazla %2 basıma izin veriyor (sınır %10)."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "formula_version": "1.27.0",
  "eligible_for_top": true,
  "missing": [],
@@ -57,17 +57,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 14.9,
+   "score": 14.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8293,
+   "percentile": 0.7805,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.874915,
-     "percentile": 0.6836,
+     "percentile": 0.6829,
      "basis": "sector",
      "display": "%87",
      "tier": "üst dilim"
@@ -76,7 +76,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.142968,
-     "percentile": 0.7411,
+     "percentile": 0.7406,
      "basis": "sector",
      "display": "1,14×",
      "tier": "üst dilim"
@@ -85,22 +85,50 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8108,
+     "percentile": 0.811,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.655,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 2.1,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.0641,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.2088,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.0,
+     "percentile": 0.0501,
+     "basis": "sector",
+     "display": "Gerekli değil",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -115,7 +143,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 6.0,
-     "percentile": 0.7522,
+     "percentile": 0.7536,
      "basis": "sector",
      "display": "6",
      "tier": "üst dilim"
@@ -137,14 +165,14 @@
    "score": 12.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7439,
+   "percentile": 0.7317,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 197.0,
-     "percentile": 0.8916,
+     "percentile": 0.8912,
      "basis": "sector",
      "display": "197",
      "tier": "üst dilim"
@@ -153,7 +181,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2746,
-     "percentile": 0.7828,
+     "percentile": 0.7833,
      "basis": "sector",
      "display": "%0,27",
      "tier": "üst dilim"
@@ -162,7 +190,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1842,
-     "percentile": 0.4787,
+     "percentile": 0.4782,
      "basis": "sector",
      "display": "%18",
      "tier": "orta dilim"
@@ -171,7 +199,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.2617,
+     "percentile": 0.2619,
      "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
@@ -179,7 +207,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": -4.94,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −4,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -236,6 +271,10 @@
   [
    "2026-11-11",
    53.5
+  ],
+  [
+   "2026-11-12",
+   48.12
   ]
  ],
  "changes": [
@@ -268,6 +307,21 @@
      "label": "Binance coine izleme etiketi koydu; Binance bu etiketi genellikle borsadan çıkarmadan önce koyar. (Uyarı −5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "delta": -5.4,
+   "from": 53.5,
+   "to": 48.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -4.94,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −4,9)"
+    }
+   ]
   }
  ],
  "events": [
@@ -282,6 +336,20 @@
      "part": "penalty",
      "delta": -5.0,
      "label": "Binance coine izleme etiketi koydu; Binance bu etiketi genellikle borsadan çıkarmadan önce koyar. (Uyarı −5,0)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "delta": -5.4,
+   "from": 53.5,
+   "to": 48.1,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": -4.94,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama −4,9)"
     }
    ]
   }
@@ -325,24 +393,49 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/gitcoin",
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "none",
+  "uses": [
+   "governance"
+  ],
+  "source": "https://app.tokenomics.com/tokenomics/gitcoin",
+  "note": "GTC tokenı temel olarak platformun yönetişimi için kullanılmaktadır.",
+  "researched_at": "2026-11-11"
+ },
+ "usage_evidence": {
+  "metric": "Snapshot vote quorum",
+  "value": 2720000.0,
+  "unit": "GTC",
+  "as_of": "2026-09-16",
+  "confirmed": true,
+  "source": "https://phemex.com/blogs/gitcoin-gtc-price-prediction-2026-2030",
+  "note": "Eylül 2026'daki Snapshot oylamasında 2,72 milyon GTC kullanılmıştır.",
+  "researched_at": "2026-11-11"
+ },
+ "allocation": {
+  "insiders": 0.85,
+  "vesting_end": "2023-05",
+  "source": "https://app.tokenomics.com/tokenomics/gitcoin",
+  "note": "İçeridekiler (DAO ve paydaşlar) toplam arzın %85'ine sahiptir.",
+  "researched_at": "2026-11-11"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-11",
+  "end": "2026-11-12",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-10-07",
-   "2026-10-14",
-   "2026-10-21",
-   "2026-10-28",
-   "2026-11-04",
-   "2026-11-11"
+   "2026-10-01",
+   "2026-10-08",
+   "2026-10-15",
+   "2026-10-22",
+   "2026-10-29",
+   "2026-11-05",
+   "2026-11-12"
   ],
   "supply_values": [
+   87491500.0,
    87491500.0,
    87491500.0,
    87491500.0,
@@ -351,7 +444,7 @@
    87491500.0
   ],
   "supply_change": 0.0,
-  "supply_days": 35
+  "supply_days": 42
  },
  "exchanges": [
   "Binance",
@@ -368,6 +461,7 @@
   "depth_2pct_usd": 95411.06,
   "major_volume_share": 0.5895,
   "holder_count": 88242,
-  "depth_to_mc": 0.006809
+  "depth_to_mc": 0.006462,
+  "insider_share": 0.85
  }
 }

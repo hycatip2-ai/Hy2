@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "ai",
  "sector_name": "Yapay zekâ",
- "total": 32,
- "total_exact": 32.48,
+ "total": 31,
+ "total_exact": 31.25,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": -1.2,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -25,7 +25,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-11",
+ "date": "2026-11-12",
  "formula_version": "1.27.0",
  "eligible_for_top": false,
  "missing": [
@@ -44,16 +44,16 @@
    "score": 2.6,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.125,
+   "percentile": 0.126,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 387.086336,
-     "percentile": 0.1301,
+     "value": 378.561083,
+     "percentile": 0.1311,
      "basis": "universe",
-     "display": "387×",
+     "display": "379×",
      "tier": "alt dilim"
     }
    ]
@@ -61,17 +61,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.7,
+   "score": 9.6,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.5652,
+   "percentile": 0.5556,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.547892,
-     "percentile": 0.545,
+     "percentile": 0.537,
      "basis": "sector",
      "display": "%55",
      "tier": "orta dilim"
@@ -80,7 +80,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.825179,
-     "percentile": 0.5808,
+     "percentile": 0.5735,
      "basis": "sector",
      "display": "1,83×",
      "tier": "orta dilim"
@@ -88,10 +88,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.052676,
-     "percentile": 0.3291,
+     "value": 0.052147,
+     "percentile": 0.3297,
      "basis": "sector",
-     "display": "+%5,3",
+     "display": "+%5,2",
      "tier": "alt dilim"
     }
    ]
@@ -109,18 +109,18 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 1.8,
+   "score": 1.1,
    "has_data": true,
    "weight": 30,
-   "percentile": 0.125,
+   "percentile": 0.1333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.0909,
-     "basis": "sector",
+     "percentile": 0.0526,
+     "basis": "universe",
      "display": "0",
      "tier": "alt dilim"
     }
@@ -129,17 +129,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.0,
+   "score": 13.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.8261,
+   "percentile": 0.8444,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 153.0,
-     "percentile": 0.641,
+     "percentile": 0.6346,
      "basis": "sector",
      "display": "153",
      "tier": "orta dilim"
@@ -148,7 +148,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3684,
-     "percentile": 0.5874,
+     "percentile": 0.6139,
      "basis": "sector",
      "display": "%0,37",
      "tier": "orta dilim"
@@ -157,7 +157,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1364,
-     "percentile": 0.6064,
+     "percentile": 0.5999,
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
@@ -166,7 +166,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7651,
+     "percentile": 0.7653,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -251,6 +251,10 @@
   [
    "2026-11-11",
    32.48
+  ],
+  [
+   "2026-11-12",
+   31.25
   ]
  ],
  "changes": [
@@ -328,8 +332,8 @@
   }
  ],
  "trend": {
-  "rank_now": 958,
-  "rank_start": 808,
+  "rank_now": 963,
+  "rank_start": 770,
   "score": 0,
   "rise": 0,
   "steady": 8,
@@ -356,7 +360,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -11.6,
+  "score_change": -12.8,
   "double": false
  },
  "chain": {
@@ -373,7 +377,24 @@
   ],
   "closed": []
  },
- "funding_rounds": [],
+ "funding_rounds": [
+  {
+   "date": "2024-09-30",
+   "round": "pre-Series A",
+   "amount_musd": 10.0,
+   "lead": [],
+   "others": [
+    "Animoca Brands",
+    "Cogitent Ventures",
+    "ArkStream Capital",
+    "Moonhill Capital",
+    "SwissBorg",
+    "MH Ventures",
+    "MV Global",
+    "IBC"
+   ]
+  }
+ ],
  "investors": [
   "Comma3 Ventures",
   "SevenX Ventures",
@@ -403,28 +424,28 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-11",
+  "end": "2026-11-12",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-12",
-   "2026-08-19",
-   "2026-08-26",
-   "2026-09-02",
-   "2026-09-09",
-   "2026-09-16",
-   "2026-09-23",
-   "2026-09-30",
-   "2026-10-07",
-   "2026-10-14",
-   "2026-10-21",
-   "2026-10-28",
-   "2026-11-04",
-   "2026-11-11"
+   "2026-08-13",
+   "2026-08-20",
+   "2026-08-27",
+   "2026-09-03",
+   "2026-09-10",
+   "2026-09-17",
+   "2026-09-24",
+   "2026-10-01",
+   "2026-10-08",
+   "2026-10-15",
+   "2026-10-22",
+   "2026-10-29",
+   "2026-11-05",
+   "2026-11-12"
   ],
   "supply_values": [
    517219000.0,
-   517219000.0,
+   547892000.0,
    547892000.0,
    547892000.0,
    547892000.0,
@@ -453,6 +474,6 @@
   "depth_2pct_usd": 26257.21,
   "major_volume_share": 0.1704,
   "holder_count": 2073,
-  "depth_to_mc": 0.002991
+  "depth_to_mc": 0.003059
  }
 }
