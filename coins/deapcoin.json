@@ -10,7 +10,7 @@
  "sector": "depin",
  "sector_name": "DePIN",
  "total": 44,
- "total_exact": 43.73,
+ "total_exact": 43.97,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
@@ -26,7 +26,7 @@
  },
  "revenue_unmeasured": true,
  "date": "2026-10-31",
- "formula_version": "1.27.0",
+ "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı",
@@ -52,17 +52,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.9,
+   "score": 17.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.931,
+   "percentile": 0.9286,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8047,
+     "percentile": 0.823,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -71,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.8749,
+     "percentile": 0.895,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -80,7 +80,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8617,
+     "percentile": 0.86,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -113,14 +113,14 @@
    "score": 5.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1034,
+   "percentile": 0.1071,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 82.0,
-     "percentile": 0.1799,
+     "percentile": 0.1848,
      "basis": "sector",
      "display": "82",
      "tier": "alt dilim"
@@ -129,7 +129,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3546,
-     "percentile": 0.6151,
+     "percentile": 0.6072,
      "basis": "sector",
      "display": "%0,35",
      "tier": "orta dilim"
@@ -138,7 +138,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.4444,
-     "percentile": 0.0135,
+     "percentile": 0.014,
      "basis": "sector",
      "display": "%44",
      "tier": "alt dilim"
@@ -150,27 +150,27 @@
  "history": [
   [
    "2026-10-23",
-   43.35
+   43.57
   ],
   [
    "2026-10-24",
-   41.49
+   41.4
   ],
   [
    "2026-10-25",
-   42.33
+   42.45
   ],
   [
    "2026-10-26",
-   41.51
+   41.74
   ],
   [
    "2026-10-27",
-   42.47
+   42.59
   ],
   [
    "2026-10-28",
-   41.92
+   41.91
   ],
   [
    "2026-10-29",
@@ -178,10 +178,32 @@
   ],
   [
    "2026-10-31",
-   43.73
+   43.97
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-10-24",
+   "delta": -2.2,
+   "from": 43.6,
+   "to": 41.4,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Alış-satış farkı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -1.1,
+     "label": "Alış-satış farkı verisi artık mevcut. (Likidite −1,1)"
+    },
+    {
+     "text": "Arz artışı (90 gün) verisi artık mevcut.",
+     "part": "supply",
+     "delta": -1.07,
+     "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,1)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": null,
  "chain": null,

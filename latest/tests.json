@@ -1,26 +1,26 @@
 {
- "date": "2026-11-12",
- "generated_at": "2026-11-12T07:17:37Z",
- "formula_version": "1.27.0",
+ "date": "2026-11-13",
+ "generated_at": "2026-11-13T07:17:20Z",
+ "formula_version": "1.28.0",
  "label": "Doğrulama",
  "live": {
   "scorecard": {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "start": "2026-10-23",
    "verdict": "chance",
    "top": {
     "n": 86,
-    "hits": 40,
-    "rate": 0.465,
-    "p": 0.59,
-    "relative": -0.0093
+    "hits": 42,
+    "rate": 0.488,
+    "p": 0.9142,
+    "relative": -0.0042
    },
    "rest": {
-    "n": 488,
-    "hits": 237,
-    "rate": 0.486,
-    "p": 0.5563,
-    "relative": -0.0129
+    "n": 489,
+    "hits": 239,
+    "rate": 0.489,
+    "p": 0.6512,
+    "relative": -0.0122
    },
    "threshold": 60
   },
@@ -1714,6 +1714,13 @@
  },
  "lessons": [
   {
+   "date": "2026-11-12",
+   "title": "CMC'nin toplam arzı Livepeer'ın basımını göstermiyordu",
+   "wrong": "Livepeer 'arz son bir yılda artmadı' diye 'Arz ?' kalıyordu (puan 70). CMC'nin toplam arzı Ethereum'daki köprü kopyasını gösteriyor; asıl basım 2022'den beri Arbitrum'da, yılda ~%20.",
+   "right": "Basma yetkilisi okunamayan coinlerde kaynak kod ve zincir tek tek okunur; köprüye taşınmış tokenlerde basımın hangi zincirde olduğuna bakılır.",
+   "fix": "1.28.0."
+  },
+  {
    "date": "2026-11-07",
    "title": "Etiketsiz stablecoin ilk 50'ye girdi",
    "wrong": "CMC Solstice USX'e ve getirili eUSX'e stablecoin etiketi koymuyor, sembolleri de stablecoin kalıbına uymuyor; ikisi puanlanıyordu ve USX 6 Kasım'da ilk 50'ye girdi. Yüksek risk listesi denetiminde fark edildi.",
@@ -1855,6 +1862,12 @@
   }
  ],
  "formula_history": [
+  {
+   "version": "1.28.0",
+   "date": "2026-11-12",
+   "change": "Basma yetkilisi okunamayan, puanı 50+ coinler zincirden elle doğrulandı: Livepeer (ağın kuralı yılda ~%20 basıyor), Bancor, Spark, Yearn (bir grup sınırsız basabiliyor) elenir; Balancer, Subsquid, Cartesi kurala uygun; Euler kontrattaki sınırla (yılda en fazla %2,7) okunur.",
+   "basis": "fix"
+  },
   {
    "version": "1.27.0",
    "date": "2026-11-07",
