@@ -12,13 +12,13 @@
  ],
  "sector": "infra",
  "sector_name": "Altyapı",
- "total": 48,
- "total_exact": 48.18,
- "band": "Zayıf",
- "delta": 0.2,
+ "total": 57,
+ "total_exact": 57.01,
+ "band": "Orta",
+ "delta": 8.8,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -28,7 +28,7 @@
   "text": "Yeni token basılabiliyor ama yetkili (başka bir kontrat) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -46,19 +46,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 6.3,
+   "score": 6.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.304,
+   "percentile": 0.3016,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 54.188814,
-     "percentile": 0.3167,
+     "value": 54.705244,
+     "percentile": 0.3223,
      "basis": "universe",
-     "display": "54,2×",
+     "display": "54,7×",
      "tier": "alt dilim"
     }
    ]
@@ -66,7 +66,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.7,
+   "score": 15.8,
    "has_data": true,
    "weight": 25,
    "percentile": 0.9615,
@@ -76,7 +76,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.90033,
-     "percentile": 0.829,
+     "percentile": 0.8303,
      "basis": "sector",
      "display": "%90",
      "tier": "üst dilim"
@@ -85,7 +85,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.113819,
-     "percentile": 0.8478,
+     "percentile": 0.8489,
      "basis": "sector",
      "display": "1,11×",
      "tier": "üst dilim"
@@ -94,7 +94,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6842,
+     "percentile": 0.6837,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -104,12 +104,22 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.7,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.8634,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.784,
+     "basis": "universe",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -124,17 +134,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.9,
+   "score": 13.8,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5385,
-   "tier": "orta dilim",
+   "percentile": 0.9231,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 194.0,
-     "percentile": 0.6942,
+     "percentile": 0.6946,
      "basis": "sector",
      "display": "194",
      "tier": "üst dilim"
@@ -142,26 +152,26 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.4609,
-     "percentile": 0.3914,
+     "value": 0.4759,
+     "percentile": 0.4534,
      "basis": "sector",
-     "display": "%0,46",
+     "display": "%0,48",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.25,
-     "percentile": 0.2836,
+     "value": 0.0952,
+     "percentile": 0.8083,
      "basis": "sector",
-     "display": "%25",
-     "tier": "alt dilim"
+     "display": "%9,5",
+     "tier": "üst dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.8098,
+     "percentile": 0.808,
      "basis": "sector",
      "display": "2",
      "tier": "üst dilim"
@@ -169,7 +179,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Token gerekli mi verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 6.51,
+   "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,5)"
+  },
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+   "part": "liquidity",
+   "delta": 2.2,
+   "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,2)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -242,6 +265,10 @@
   [
    "2026-11-13",
    48.18
+  ],
+  [
+   "2026-11-14",
+   57.01
   ]
  ],
  "changes": [
@@ -265,40 +292,82 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz −1,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "delta": 8.8,
+   "from": 48.2,
+   "to": 57.0,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 6.51,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,5)"
+    },
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+     "part": "liquidity",
+     "delta": 2.2,
+     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,2)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-14",
+   "delta": 8.8,
+   "from": 48.2,
+   "to": 57.0,
+   "reasons": [
+    {
+     "text": "Token gerekli mi verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 6.51,
+     "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,5)"
+    },
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+     "part": "liquidity",
+     "delta": 2.2,
+     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,2)"
+    }
+   ]
+  }
+ ],
  "trend": {
-  "rank_now": 327,
-  "rank_start": 447,
-  "score": 61,
-  "rise": 89,
-  "steady": 42,
+  "rank_now": 321,
+  "rank_start": 443,
+  "score": 70,
+  "rise": 88,
+  "steady": 67,
   "calm": 42,
-  "weeks_up": 5,
-  "weeks_down": 4,
+  "weeks_up": 8,
+  "weeks_down": 3,
   "weeks_total": 12,
   "weekly": [
    1,
    -1,
    -1,
    0,
-   0,
+   1,
+   1,
+   1,
+   1,
    1,
    -1,
    1,
-   1,
-   -1,
-   0,
    1
   ],
   "labels": [],
   "trend": "rising",
   "supply_share": 0.0,
-  "eligible": false,
+  "eligible": true,
   "window_days": 90,
-  "score_change": -1.7,
-  "double": false
+  "score_change": 7.1,
+  "double": true
  },
  "chain": {
   "name": "Ethereum",
@@ -334,30 +403,48 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/flexa",
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "collateral",
+   "governance"
+  ],
+  "source": "https://metamask.com/price/amp-token",
+  "note": "AMP, blok zinciri ödemeleri için teminat olarak kullanılır ve yönetişim süreçlerinde oy hakkı sağlar.",
+  "researched_at": "2026-11-13"
+ },
+ "usage_evidence": {
+  "metric": "Amount Pooled",
+  "value": 12695663.0,
+  "unit": "USD",
+  "as_of": "2026-11-13",
+  "confirmed": true,
+  "source": "https://amp.xyz/",
+  "note": "Amp web sitesinde 13 Kasım 2026 itibarıyla havuzlanan miktar 12.695.663 USD olarak gösterilmektedir.",
+  "researched_at": "2026-11-13"
+ },
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-13",
+  "end": "2026-11-14",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-14",
-   "2026-08-21",
-   "2026-08-28",
-   "2026-09-04",
-   "2026-09-11",
-   "2026-09-18",
-   "2026-09-25",
-   "2026-10-02",
-   "2026-10-09",
-   "2026-10-16",
-   "2026-10-23",
-   "2026-10-30",
-   "2026-11-06",
-   "2026-11-13"
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07",
+   "2026-11-14"
   ],
   "supply_values": [
    89781200000.0,
@@ -389,9 +476,9 @@
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 89571.51,
-  "major_volume_share": 0.2738,
+  "depth_2pct_usd": 98850.73,
+  "major_volume_share": 0.2112,
   "holder_count": 102161,
-  "depth_to_mc": 0.001668
+  "depth_to_mc": 0.001836
  }
 }

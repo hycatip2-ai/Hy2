@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 46,
- "total_exact": 45.97,
+ "total": 41,
+ "total_exact": 40.7,
  "band": "Zayıf",
- "delta": 0.0,
+ "delta": -5.3,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,7 +27,7 @@
   "researched_at": "2026-11-04"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -55,14 +55,14 @@
    "score": 14.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8072,
+   "percentile": 0.8333,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.963163,
-     "percentile": 0.7862,
+     "percentile": 0.7888,
      "basis": "sector",
      "display": "%96",
      "tier": "üst dilim"
@@ -71,7 +71,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.269058,
-     "percentile": 0.6797,
+     "percentile": 0.6835,
      "basis": "sector",
      "display": "1,27×",
      "tier": "üst dilim"
@@ -81,7 +81,7 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 8.1,
+   "score": 8.2,
    "has_data": true,
    "weight": 20,
    "percentile": 0.3816,
@@ -91,7 +91,7 @@
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 0.5,
-     "percentile": 0.406,
+     "percentile": 0.4079,
      "basis": "sector",
      "display": "Kısmen",
      "tier": "orta dilim"
@@ -111,17 +111,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.2,
+   "score": 3.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4458,
-   "tier": "orta dilim",
+   "percentile": 0.0476,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 28.0,
-     "percentile": 0.257,
+     "percentile": 0.2653,
      "basis": "sector",
      "display": "28",
      "tier": "alt dilim"
@@ -129,25 +129,32 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.7629,
-     "percentile": 0.2269,
+     "value": 0.6038,
+     "percentile": 0.2961,
      "basis": "sector",
-     "display": "%0,76",
+     "display": "%0,60",
      "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0,
-     "percentile": 0.8949,
+     "value": 0.6,
+     "percentile": 0.0107,
      "basis": "sector",
-     "display": "%0",
-     "tier": "üst dilim"
+     "display": "%60",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+   "part": "liquidity",
+   "delta": -5.38,
+   "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
+  }
+ ],
  "history": [
   [
    "2026-10-31",
@@ -200,6 +207,10 @@
   [
    "2026-11-13",
    45.97
+  ],
+  [
+   "2026-11-14",
+   40.7
   ]
  ],
  "changes": [
@@ -217,9 +228,39 @@
      "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +5,0)"
     }
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "delta": -5.3,
+   "from": 46.0,
+   "to": 40.7,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -5.38,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-14",
+   "delta": -5.3,
+   "from": 46.0,
+   "to": 40.7,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı arttı.",
+     "part": "liquidity",
+     "delta": -5.38,
+     "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −5,4)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": null,
  "funds": {
@@ -250,19 +291,21 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-13",
+  "end": "2026-11-14",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-14",
-   "2026-08-21",
-   "2026-10-09",
-   "2026-10-16",
-   "2026-10-23",
-   "2026-11-06",
-   "2026-11-13"
+   "2026-08-15",
+   "2026-08-22",
+   "2026-09-05",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07",
+   "2026-11-14"
   ],
   "supply_values": [
+   39399300000.0,
    39399300000.0,
    39399300000.0,
    39399300000.0,

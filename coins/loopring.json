@@ -9,23 +9,25 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 41,
- "total_exact": 40.81,
+ "total": 39,
+ "total_exact": 39.25,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -1.6,
  "confidence": {
-  "parts": 4,
-  "level": "Orta"
+  "parts": 5,
+  "level": "Yüksek"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Yeni token basılabiliyor ama yetkili (okunamayan bir yetkili) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz; ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://www.bitkub.com/en/blog/loopring-price-prediction-is-lrc-heading-for-recovery-x1jtq7cphhJiFV19eDSduG",
+  "researched_at": "2026-11-13"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -43,19 +45,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 2.5,
+   "score": 2.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1132,
+   "percentile": 0.0943,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 356.73534,
-     "percentile": 0.1226,
+     "value": 358.848632,
+     "percentile": 0.1083,
      "basis": "sector",
-     "display": "357×",
+     "display": "359×",
      "tier": "alt dilim"
     }
    ]
@@ -63,17 +65,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.6,
+   "score": 16.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9128,
+   "percentile": 0.8721,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.996021,
-     "percentile": 0.8105,
+     "percentile": 0.8104,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -82,7 +84,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.003995,
-     "percentile": 0.8202,
+     "percentile": 0.8205,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -91,7 +93,16 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.8563,
+     "percentile": 0.846,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7296,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -101,12 +112,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.7,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.2745,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.2214,
+     "basis": "sector",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3896,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -114,7 +144,7 @@
    "score": 6.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.2879,
+   "percentile": 0.2727,
    "tier": "alt dilim",
    "metrics": [
     {
@@ -131,17 +161,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 9.7,
+   "score": 9.3,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.407,
+   "percentile": 0.3488,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 432.0,
-     "percentile": 0.9493,
+     "percentile": 0.9494,
      "basis": "sector",
      "display": "432",
      "tier": "üst dilim"
@@ -150,7 +180,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6605,
-     "percentile": 0.1458,
+     "percentile": 0.118,
      "basis": "sector",
      "display": "%0,66",
      "tier": "alt dilim"
@@ -159,7 +189,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2927,
-     "percentile": 0.1772,
+     "percentile": 0.1252,
      "basis": "sector",
      "display": "%29",
      "tier": "alt dilim"
@@ -168,10 +198,10 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6724,
+     "percentile": 0.6657,
      "basis": "sector",
      "display": "2",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   }
@@ -261,6 +291,10 @@
   [
    "2026-11-13",
    40.81
+  ],
+  [
+   "2026-11-14",
+   39.25
   ]
  ],
  "changes": [
@@ -297,8 +331,8 @@
   }
  ],
  "trend": {
-  "rank_now": 906,
-  "rank_start": 827,
+  "rank_now": 907,
+  "rank_start": 841,
   "score": 0,
   "rise": 0,
   "steady": 25,
@@ -313,8 +347,8 @@
    1,
    -1,
    1,
-   0,
    -1,
+   0,
    -1,
    -1,
    0,
@@ -325,7 +359,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -7.0,
+  "score_change": -8.5,
   "double": false
  },
  "chain": {
@@ -351,30 +385,40 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/loopring",
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "emission_rewards",
+   "revenue_share"
+  ],
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-loopring-lrc",
+  "note": "Token yönetişim, staking ödülleri ve protokol ücretlerinden pay almak için kullanılmaktadır.",
+  "researched_at": "2026-11-13"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-13",
+  "end": "2026-11-14",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-14",
-   "2026-08-21",
-   "2026-08-28",
-   "2026-09-04",
-   "2026-09-11",
-   "2026-09-18",
-   "2026-09-25",
-   "2026-10-02",
-   "2026-10-09",
-   "2026-10-16",
-   "2026-10-23",
-   "2026-10-30",
-   "2026-11-06",
-   "2026-11-13"
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07",
+   "2026-11-14"
   ],
   "supply_values": [
    1368410000.0,
@@ -407,7 +451,7 @@
  "recorded": {
   "depth_2pct_usd": 10188.34,
   "major_volume_share": 0.0263,
-  "holder_count": 160093,
-  "depth_to_mc": 0.00107
+  "holder_count": 158532,
+  "depth_to_mc": 0.001074
  }
 }

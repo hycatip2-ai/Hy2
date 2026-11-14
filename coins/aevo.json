@@ -9,23 +9,29 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 52,
- "total_exact": 52.19,
+ "total": 56,
+ "total_exact": 56.26,
  "band": "Orta",
- "delta": 3.7,
+ "delta": 4.1,
  "confidence": {
   "parts": 4,
   "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
   "status": "unchecked",
-  "text": "Yeni token basılabiliyor ama yetkili (okunamayan bir yetkili) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz; ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://tokenomist.ai/aevo-exchange",
+  "researched_at": "2026-11-13"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -34,7 +40,7 @@
   "arz kuralı"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": {
   "chain": "Ethereum",
   "address": "0xb528edbef013aff855ac3c50b381f253af13b997"
@@ -43,19 +49,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 10.8,
+   "score": 10.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.4717,
+   "percentile": 0.4528,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 1.137466,
-     "percentile": 0.5385,
+     "value": 1.132163,
+     "percentile": 0.523,
      "basis": "sector",
-     "display": "1,14×",
+     "display": "1,13×",
      "tier": "orta dilim"
     }
    ]
@@ -63,7 +69,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.5,
+   "score": 13.0,
    "has_data": true,
    "weight": 20,
    "percentile": 0.686,
@@ -73,7 +79,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.932702,
-     "percentile": 0.7412,
+     "percentile": 0.7417,
      "basis": "sector",
      "display": "%93",
      "tier": "üst dilim"
@@ -82,7 +88,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.072154,
-     "percentile": 0.7499,
+     "percentile": 0.7508,
      "basis": "sector",
      "display": "1,07×",
      "tier": "üst dilim"
@@ -90,30 +96,57 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.014761,
-     "percentile": 0.3859,
+     "value": 0.014618,
+     "percentile": 0.3766,
      "basis": "sector",
      "display": "+%1,5",
      "tier": "orta dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7296,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "üst dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 10.9,
+   "score": 10.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.56,
+   "percentile": 0.5294,
    "tier": "orta dilim",
    "metrics": [
     {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7671,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
-     "value": -0.059864,
-     "percentile": 0.5457,
+     "value": -0.059284,
+     "percentile": 0.5221,
      "basis": "sector",
-     "display": "−%6,0",
+     "display": "−%5,9",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3896,
+     "basis": "sector",
+     "display": "Kısmen",
      "tier": "orta dilim"
     }
    ]
@@ -131,17 +164,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.1,
+   "score": 10.4,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5465,
+   "percentile": 0.4826,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 220.0,
-     "percentile": 0.7918,
+     "percentile": 0.7921,
      "basis": "sector",
      "display": "220",
      "tier": "üst dilim"
@@ -150,7 +183,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6227,
-     "percentile": 0.198,
+     "percentile": 0.1813,
      "basis": "sector",
      "display": "%0,62",
      "tier": "alt dilim"
@@ -159,7 +192,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1698,
-     "percentile": 0.5502,
+     "percentile": 0.4493,
      "basis": "sector",
      "display": "%17",
      "tier": "orta dilim"
@@ -168,20 +201,20 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6724,
+     "percentile": 0.6657,
      "basis": "sector",
      "display": "2",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   }
  ],
  "reasons": [
   {
-   "text": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut.",
-   "part": "value_capture",
-   "delta": 3.91,
-   "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +3,9)"
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
   }
  ],
  "history": [
@@ -260,6 +293,10 @@
   [
    "2026-11-13",
    52.19
+  ],
+  [
+   "2026-11-14",
+   56.26
   ]
  ],
  "changes": [
@@ -322,12 +359,27 @@
      "label": "Sahibe net getiri (seyrelme düşülmüş) verisi artık mevcut. (Değer yakalama +3,9)"
     }
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "delta": 4.1,
+   "from": 52.2,
+   "to": 56.3,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 687,
-  "rank_start": 642,
+  "rank_now": 690,
+  "rank_start": 645,
   "score": 0,
   "rise": 0,
   "steady": 25,
@@ -354,7 +406,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -1.5,
+  "score_change": 2.6,
   "double": false
  },
  "chain": {
@@ -387,14 +439,42 @@
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/aevo",
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini-free",
+  "researched_at": "2026-11-13"
+ },
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "governance",
+   "fee_discount",
+   "emission_rewards"
+  ],
+  "source": "https://www.aevo.xyz/docs/aevo-governance/definitions",
+  "note": "Token yönetişim, komisyon indirimleri ve staking ödülleri için kullanılmaktadır.",
+  "researched_at": "2026-11-13"
+ },
+ "usage_evidence": {
+  "metric": "Monthly trading volume",
+  "value": 52000000.0,
+  "unit": "USD",
+  "as_of": "2026-11-01",
+  "confirmed": true,
+  "source": "https://gov.aevo.xyz/",
+  "note": "Aevo platformunun Kasım 2026 itibarıyla aylık işlem hacmi 52 milyon dolar olarak kaydedilmiştir.",
+  "researched_at": "2026-11-13"
+ },
+ "allocation": {
+  "insiders": 0.415,
+  "vesting_end": "2024-12",
+  "source": "https://tokenomist.ai/aevo-exchange",
+  "note": "İçeriden öğrenenler (ekip ve yatırımcılar) toplam arzın %41,5'ine sahiptir ve kilit açılışları 2024'te sona ermiştir.",
+  "researched_at": "2026-11-13"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-13",
+  "end": "2026-11-14",
   "fees_weekly": null,
   "holders_weekly": [
    0.0,
@@ -412,24 +492,24 @@
    0.0
   ],
   "supply_dates": [
-   "2026-08-14",
-   "2026-08-21",
-   "2026-08-28",
-   "2026-09-04",
-   "2026-09-11",
-   "2026-09-18",
-   "2026-09-25",
-   "2026-10-02",
-   "2026-10-09",
-   "2026-10-16",
-   "2026-10-23",
-   "2026-10-30",
-   "2026-11-06",
-   "2026-11-13"
+   "2026-08-15",
+   "2026-08-22",
+   "2026-08-29",
+   "2026-09-05",
+   "2026-09-12",
+   "2026-09-19",
+   "2026-09-26",
+   "2026-10-03",
+   "2026-10-10",
+   "2026-10-17",
+   "2026-10-24",
+   "2026-10-31",
+   "2026-11-07",
+   "2026-11-14"
   ],
   "supply_values": [
-   932655000.0,
-   932695000.0,
+   932656000.0,
+   932697000.0,
    932698000.0,
    932702000.0,
    932702000.0,
@@ -461,6 +541,7 @@
   "depth_2pct_usd": 147548.43,
   "major_volume_share": 0.1369,
   "holder_count": 39065,
-  "depth_to_mc": 0.00879
+  "depth_to_mc": 0.008858,
+  "insider_share": 0.415
  }
 }
