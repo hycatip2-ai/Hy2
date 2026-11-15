@@ -11,10 +11,10 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 55,
- "total_exact": 54.87,
+ "total": 59,
+ "total_exact": 58.83,
  "band": "Orta",
- "delta": 0.2,
+ "delta": 4.0,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -29,7 +29,7 @@
   "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-14",
+ "date": "2026-11-15",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -54,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 6.2,
+   "score": 9.3,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.2093,
-   "tier": "alt dilim",
+   "percentile": 0.4615,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.322139,
-     "percentile": 0.2016,
+     "percentile": 0.2001,
      "basis": "sector",
      "display": "%32",
      "tier": "alt dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 3.219408,
-     "percentile": 0.2011,
+     "percentile": 0.2091,
      "basis": "sector",
      "display": "3,22×",
      "tier": "alt dilim"
@@ -81,11 +81,11 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.004948,
-     "percentile": 0.5226,
+     "value": -0.009362,
+     "percentile": 0.9855,
      "basis": "sector",
-     "display": "+%0,5",
-     "tier": "orta dilim"
+     "display": "−%0,9",
+     "tier": "üst dilim"
     }
    ]
   },
@@ -102,17 +102,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 19.4,
+   "score": 19.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.9577,
+   "percentile": 0.9737,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 34.0,
-     "percentile": 0.9724,
+     "percentile": 0.974,
      "basis": "sector",
      "display": "34",
      "tier": "üst dilim"
@@ -122,17 +122,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.1,
+   "score": 14.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9419,
+   "percentile": 0.9451,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 228.0,
-     "percentile": 0.8276,
+     "percentile": 0.8352,
      "basis": "sector",
      "display": "228",
      "tier": "üst dilim"
@@ -141,7 +141,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3416,
-     "percentile": 0.743,
+     "percentile": 0.7358,
      "basis": "sector",
      "display": "%0,34",
      "tier": "üst dilim"
@@ -150,7 +150,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1639,
-     "percentile": 0.5486,
+     "percentile": 0.5512,
      "basis": "sector",
      "display": "%16",
      "tier": "orta dilim"
@@ -158,7 +158,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
+   "part": "supply",
+   "delta": 3.91,
+   "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Arz +3,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -247,6 +254,10 @@
   [
    "2026-11-14",
    54.87
+  ],
+  [
+   "2026-11-15",
+   58.83
   ]
  ],
  "changes": [
@@ -315,27 +326,42 @@
      "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −2,2)"
     }
    ]
+  },
+  {
+   "date": "2026-11-15",
+   "delta": 4.0,
+   "from": 54.9,
+   "to": 58.8,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı.",
+     "part": "supply",
+     "delta": 3.91,
+     "label": "Kendi verisi belirgin biçimde değişmedi; sektördeki diğer coinler zayıfladı. (Arz +3,9)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": {
   "rank_now": 362,
-  "rank_start": 334,
+  "rank_start": 335,
   "score": 0,
   "rise": 0,
-  "steady": 25,
+  "steady": 17,
   "calm": 0,
-  "weeks_up": 3,
+  "weeks_up": 2,
   "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
-   1,
+   -1,
    1,
    -1,
    -1,
    -1,
    0,
-   -1,
+   0,
    1,
    -1,
    -1,
@@ -347,7 +373,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 0.6,
+  "score_change": 4.5,
   "double": false
  },
  "chain": {
@@ -375,42 +401,42 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-14",
+  "end": "2026-11-15",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-15",
-   "2026-08-22",
-   "2026-08-29",
-   "2026-09-05",
-   "2026-09-12",
-   "2026-09-19",
-   "2026-09-26",
-   "2026-10-03",
-   "2026-10-10",
-   "2026-10-17",
-   "2026-10-24",
-   "2026-10-31",
-   "2026-11-07",
-   "2026-11-14"
+   "2026-08-16",
+   "2026-08-23",
+   "2026-08-30",
+   "2026-09-06",
+   "2026-09-13",
+   "2026-09-20",
+   "2026-09-27",
+   "2026-10-04",
+   "2026-10-11",
+   "2026-10-18",
+   "2026-10-25",
+   "2026-11-01",
+   "2026-11-08",
+   "2026-11-15"
   ],
   "supply_values": [
-   22586200000.0,
+   22578900000.0,
    22568900000.0,
-   22553400000.0,
-   22547200000.0,
+   22553100000.0,
+   22548700000.0,
    22509200000.0,
    22488800000.0,
    22474700000.0,
-   22419600000.0,
-   22414700000.0,
-   22391600000.0,
+   22419100000.0,
+   22413700000.0,
+   22391200000.0,
    22380000000.0,
    22373100000.0,
    22364300000.0,
    22367500000.0
   ],
-  "supply_change": -0.0097,
+  "supply_change": -0.0094,
   "supply_days": 91
  },
  "exchanges": [
@@ -429,6 +455,6 @@
  "recorded": {
   "depth_2pct_usd": 472403.27,
   "major_volume_share": 0.1768,
-  "depth_to_mc": 0.010466
+  "depth_to_mc": 0.011328
  }
 }

@@ -10,12 +10,12 @@
  "sector": "depin",
  "sector_name": "DePIN",
  "total": 32,
- "total_exact": 32.29,
+ "total_exact": 31.73,
  "band": "Zayıf",
- "delta": null,
+ "delta": -0.6,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -25,7 +25,7 @@
   "text": "Yeni token basılabiliyor ama yetkili (okunamayan bir yetkili) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-14",
+ "date": "2026-11-15",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -51,17 +51,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 5.1,
+   "score": 5.0,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1481,
+   "percentile": 0.1852,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.434185,
-     "percentile": 0.3688,
+     "value": 0.430629,
+     "percentile": 0.3646,
      "basis": "sector",
      "display": "%43",
      "tier": "orta dilim"
@@ -69,19 +69,19 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 2.303402,
-     "percentile": 0.3947,
+     "value": 2.322646,
+     "percentile": 0.3905,
      "basis": "sector",
-     "display": "2,30×",
+     "display": "2,32×",
      "tier": "orta dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 2.016199,
+     "value": 2.551645,
      "percentile": 0.0011,
      "basis": "sector",
-     "display": "+%202",
+     "display": "+%255",
      "tier": "alt dilim"
     }
    ]
@@ -89,17 +89,27 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 6.7,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.2674,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3346,
+     "basis": "universe",
+     "display": "Kısmen",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 10.0,
+   "score": 9.9,
    "has_data": true,
    "weight": 20,
    "percentile": 0.5,
@@ -109,7 +119,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 4.0,
-     "percentile": 0.5002,
+     "percentile": 0.4949,
      "basis": "sector",
      "display": "4",
      "tier": "orta dilim"
@@ -129,7 +139,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 10.0,
-     "percentile": 0.016,
+     "percentile": 0.014,
      "basis": "sector",
      "display": "10",
      "tier": "alt dilim"
@@ -138,7 +148,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.6048,
-     "percentile": 0.2456,
+     "percentile": 0.2465,
      "basis": "sector",
      "display": "%0,60",
      "tier": "alt dilim"
@@ -147,7 +157,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.5,
-     "percentile": 0.0255,
+     "percentile": 0.0245,
      "basis": "sector",
      "display": "%50",
      "tier": "alt dilim"
@@ -160,6 +170,10 @@
   [
    "2026-11-14",
    32.29
+  ],
+  [
+   "2026-11-15",
+   31.73
   ]
  ],
  "changes": [],
@@ -184,8 +198,27 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "service_payment",
+   "stake_to_operate",
+   "governance"
+  ],
+  "source": "https://docs.sogni.ai/run-a-worker/supernet/sogni-token-vs-spark-points/",
+  "note": "Token, hizmet ödemeleri, staking ve yönetişim için kullanılmaktadır ancak zorunlu değildir.",
+  "researched_at": "2026-11-14"
+ },
+ "usage_evidence": {
+  "metric": "Holders",
+  "value": 34740.0,
+  "unit": "addresses",
+  "as_of": "2026-11-14",
+  "confirmed": true,
+  "source": "https://coinmarketcap.com/currencies/sogni-ai/",
+  "note": "Projenin güncel token sahibi sayısı 34.740 olarak CoinMarketCap üzerinde belirtilmiştir.",
+  "researched_at": "2026-11-14"
+ },
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,

@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 47,
- "total_exact": 47.02,
+ "total": 48,
+ "total_exact": 47.97,
  "band": "Zayıf",
- "delta": 0.6,
+ "delta": null,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -21,17 +21,16 @@
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Kendi blokzinciri olan coin: arzını ağın kuralı belirler; arzın yıllık artışı henüz ölçülemedi (en az 6 aylık geçmiş gerekir). Kendin araştır."
+  "status": "ok",
+  "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %10 artıyor (sınır %10)."
  },
  "revenue_unmeasured": false,
- "date": "2026-10-30",
+ "date": "2026-11-15",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
-  "gelir trendi",
-  "arz kuralı"
+  "gelir trendi"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -40,19 +39,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 1.8,
+   "score": 2.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.093,
+   "percentile": 0.1273,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 1434.982411,
-     "percentile": 0.0879,
+     "value": 1186.905174,
+     "percentile": 0.1057,
      "basis": "sector",
-     "display": "1.435×",
+     "display": "1.187×",
      "tier": "alt dilim"
     }
    ]
@@ -60,17 +59,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 9.6,
+   "score": 9.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.4615,
+   "percentile": 0.4725,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.81872,
-     "percentile": 0.5656,
+     "value": 0.820018,
+     "percentile": 0.6127,
      "basis": "sector",
      "display": "%82",
      "tier": "orta dilim"
@@ -78,19 +77,19 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.367552,
-     "percentile": 0.5656,
+     "value": 1.362098,
+     "percentile": 0.5635,
      "basis": "sector",
-     "display": "1,37×",
+     "display": "1,36×",
      "tier": "orta dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.037866,
-     "percentile": 0.3115,
+     "value": 0.041254,
+     "percentile": 0.255,
      "basis": "sector",
-     "display": "+%3,8",
+     "display": "+%4,1",
      "tier": "alt dilim"
     }
    ]
@@ -108,19 +107,19 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 17.9,
+   "score": 18.2,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8909,
+   "percentile": 0.9342,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 18.0,
-     "percentile": 0.897,
+     "value": 16.0,
+     "percentile": 0.9084,
      "basis": "sector",
-     "display": "18",
+     "display": "16",
      "tier": "üst dilim"
     }
    ]
@@ -128,17 +127,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.4,
+   "score": 8.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.2244,
+   "percentile": 0.2747,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 34.0,
-     "percentile": 0.121,
+     "percentile": 0.0902,
      "basis": "sector",
      "display": "34",
      "tier": "alt dilim"
@@ -146,19 +145,19 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.6694,
-     "percentile": 0.1834,
+     "value": 0.5202,
+     "percentile": 0.3859,
      "basis": "sector",
-     "display": "%0,67",
-     "tier": "alt dilim"
+     "display": "%0,52",
+     "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.1,
-     "percentile": 0.8071,
+     "value": 0.1111,
+     "percentile": 0.7171,
      "basis": "sector",
-     "display": "%10",
+     "display": "%11",
      "tier": "üst dilim"
     }
    ]
@@ -197,11 +196,46 @@
   [
    "2026-10-30",
    47.02
+  ],
+  [
+   "2026-11-15",
+   47.97
   ]
  ],
  "changes": [],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 331,
+  "rank_start": 281,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 4,
+  "weeks_down": 7,
+  "weeks_total": 12,
+  "weekly": [
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1,
+   -1,
+   -1,
+   0,
+   1,
+   -1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": 2.6,
+  "double": false
+ },
  "chain": {
   "name": "Qubic",
   "source": "native",
@@ -227,28 +261,26 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-10-30",
+  "end": "2026-11-15",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-07-31",
-   "2026-08-07",
-   "2026-08-14",
-   "2026-08-21",
-   "2026-08-28",
-   "2026-09-04",
-   "2026-09-11",
-   "2026-09-18",
-   "2026-09-25",
-   "2026-10-02",
-   "2026-10-09",
-   "2026-10-16",
-   "2026-10-23",
-   "2026-10-30"
+   "2026-08-16",
+   "2026-08-23",
+   "2026-08-30",
+   "2026-09-06",
+   "2026-09-13",
+   "2026-09-20",
+   "2026-09-27",
+   "2026-10-04",
+   "2026-10-11",
+   "2026-10-18",
+   "2026-10-25",
+   "2026-11-01",
+   "2026-11-08",
+   "2026-11-15"
   ],
   "supply_values": [
-   140911000000000.0,
-   141165000000000.0,
    141015000000000.0,
    141560000000000.0,
    141973000000000.0,
@@ -260,12 +292,21 @@
    143287000000000.0,
    143697000000000.0,
    145114000000000.0,
-   146247000000000.0
+   146247000000000.0,
+   146589000000000.0,
+   146832000000000.0
   ],
-  "supply_change": 0.0379,
+  "supply_change": 0.0413,
   "supply_days": 91
  },
- "exchanges": null,
+ "exchanges": [
+  "Gate",
+  "MEXC"
+ ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "depth_2pct_usd": 2835.88,
+  "major_volume_share": 0.2832,
+  "depth_to_mc": 5.9e-05
+ }
 }
