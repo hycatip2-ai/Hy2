@@ -9,23 +9,25 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 39,
- "total_exact": 39.14,
+ "total": 42,
+ "total_exact": 42.05,
  "band": "Zayıf",
- "delta": null,
+ "delta": 2.9,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
   "status": "unchecked",
-  "text": "Yeni token basılabiliyor ama yetkili (okunamayan bir yetkili) ve kuralı görünmüyor; arz son bir yılda artmadı. Kendin araştır."
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz; ikinci bir araştırmayla doğrulanmadı. Kendin araştır.",
+  "source": "https://docs.hunt.town/",
+  "researched_at": "2026-11-15"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -53,17 +55,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.2,
+   "score": 12.1,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.6264,
+   "percentile": 0.6154,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.634287,
-     "percentile": 0.4362,
+     "percentile": 0.4265,
      "basis": "sector",
      "display": "%63",
      "tier": "orta dilim"
@@ -72,7 +74,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.576574,
-     "percentile": 0.4684,
+     "percentile": 0.4587,
      "basis": "sector",
      "display": "1,58×",
      "tier": "orta dilim"
@@ -81,7 +83,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.9295,
+     "percentile": 0.9285,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -91,27 +93,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 11.2,
+   "has_data": true,
    "weight": 15,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.0,
+     "percentile": 0.2216,
+     "basis": "universe",
+     "display": "Yok",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.7274,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 5.3,
+   "score": 5.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.1579,
+   "percentile": 0.2105,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 2.0,
-     "percentile": 0.2646,
+     "percentile": 0.2769,
      "basis": "sector",
      "display": "2",
      "tier": "alt dilim"
@@ -121,17 +142,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.7,
+   "score": 6.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1319,
+   "percentile": 0.0879,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 43.0,
-     "percentile": 0.1425,
+     "percentile": 0.1331,
      "basis": "sector",
      "display": "43",
      "tier": "alt dilim"
@@ -139,17 +160,17 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.864,
-     "percentile": 0.1866,
+     "value": 1.1884,
+     "percentile": 0.139,
      "basis": "sector",
-     "display": "%0,86",
+     "display": "%1,2",
      "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.125,
-     "percentile": 0.6698,
+     "percentile": 0.6539,
      "basis": "sector",
      "display": "%12",
      "tier": "orta dilim"
@@ -157,7 +178,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 3.13,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +3,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-24",
@@ -226,6 +254,10 @@
   [
    "2026-11-15",
    39.14
+  ],
+  [
+   "2026-11-16",
+   42.05
   ]
  ],
  "changes": [
@@ -273,29 +305,44 @@
      "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +3,8)"
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "delta": 2.9,
+   "from": 39.1,
+   "to": 42.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 3.13,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +3,1)"
+    }
+   ]
   }
  ],
  "events": [],
  "trend": {
-  "rank_now": 886,
-  "rank_start": 900,
-  "score": 31,
-  "rise": 19,
-  "steady": 58,
+  "rank_now": 887,
+  "rank_start": 901,
+  "score": 22,
+  "rise": 15,
+  "steady": 42,
   "calm": 0,
-  "weeks_up": 7,
-  "weeks_down": 3,
+  "weeks_up": 5,
+  "weeks_down": 5,
   "weeks_total": 12,
   "weekly": [
-   1,
-   1,
+   0,
    1,
    1,
    -1,
    -1,
+   -1,
    0,
    1,
-   0,
+   -1,
    -1,
    1,
    1
@@ -305,7 +352,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 3.5,
+  "score_change": 6.4,
   "double": false
  },
  "chain": {
@@ -327,30 +374,39 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "collateral",
+   "revenue_share"
+  ],
+  "source": "https://hunt.town/",
+  "note": "HUNT, Factory NFT'leri desteklemek ve Co-op projelerinde rezerv olarak kullanılmaktadır.",
+  "researched_at": "2026-11-15"
+ },
  "usage_evidence": null,
  "allocation": null,
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-15",
+  "end": "2026-11-16",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-16",
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08",
-   "2026-11-15"
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09",
+   "2026-11-16"
   ],
   "supply_values": [
    126168000.0,
@@ -376,9 +432,9 @@
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 13500.22,
-  "major_volume_share": 0.8299,
+  "depth_2pct_usd": 10614.85,
+  "major_volume_share": 0.8843,
   "holder_count": 3601,
-  "depth_to_mc": 0.001424
+  "depth_to_mc": 0.001117
  }
 }

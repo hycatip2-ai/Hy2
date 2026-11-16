@@ -11,10 +11,10 @@
  ],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 45,
- "total_exact": 45.43,
+ "total": 39,
+ "total_exact": 39.15,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": -6.3,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,7 +27,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -54,17 +54,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.3,
+   "score": 8.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.4713,
+   "percentile": 0.4651,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.439963,
-     "percentile": 0.4065,
+     "percentile": 0.4002,
      "basis": "sector",
      "display": "%44",
      "tier": "orta dilim"
@@ -73,7 +73,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.272919,
-     "percentile": 0.4085,
+     "percentile": 0.4021,
      "basis": "sector",
      "display": "2,27×",
      "tier": "orta dilim"
@@ -81,8 +81,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.003807,
-     "percentile": 0.4371,
+     "value": 0.003765,
+     "percentile": 0.4315,
      "basis": "sector",
      "display": "+%0,4",
      "tier": "orta dilim"
@@ -102,37 +102,37 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 15.4,
+   "score": 9.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9552,
-   "tier": "üst dilim",
+   "percentile": 0.3881,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 6.0,
-     "percentile": 0.7717,
+     "value": 2.0,
+     "percentile": 0.4574,
      "basis": "sector",
-     "display": "6",
-     "tier": "üst dilim"
+     "display": "2",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 7.9,
+   "score": 8.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.1724,
+   "percentile": 0.2209,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 182.0,
-     "percentile": 0.6685,
+     "percentile": 0.6653,
      "basis": "sector",
      "display": "182",
      "tier": "orta dilim"
@@ -141,7 +141,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.4148,
-     "percentile": 0.515,
+     "percentile": 0.5499,
      "basis": "sector",
      "display": "%0,41",
      "tier": "orta dilim"
@@ -150,7 +150,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.25,
-     "percentile": 0.2258,
+     "percentile": 0.2253,
      "basis": "sector",
      "display": "%25",
      "tier": "alt dilim"
@@ -159,7 +159,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 0.0,
-     "percentile": 0.1634,
+     "percentile": 0.1665,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -167,7 +167,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+   "part": "usage",
+   "delta": -6.28,
+   "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −6,3)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -260,6 +267,10 @@
   [
    "2026-11-15",
    45.43
+  ],
+  [
+   "2026-11-16",
+   39.15
   ]
  ],
  "changes": [
@@ -313,6 +324,21 @@
      "label": "Dolaşımdaki arz son 3 ayda daha hızlı artmaya başladı. (Arz −3,1)"
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "delta": -6.3,
+   "from": 45.4,
+   "to": 39.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+     "part": "usage",
+     "delta": -6.28,
+     "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −6,3)"
+    }
+   ]
   }
  ],
  "events": [
@@ -335,23 +361,37 @@
      "label": "Arz artışı (90 gün) verisi artık mevcut. (Arz +3,7)"
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "delta": -6.3,
+   "from": 45.4,
+   "to": 39.1,
+   "reasons": [
+    {
+     "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+     "part": "usage",
+     "delta": -6.28,
+     "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −6,3)"
+    }
+   ]
   }
  ],
  "trend": {
-  "rank_now": 487,
-  "rank_start": 570,
-  "score": 42,
-  "rise": 39,
-  "steady": 58,
-  "calm": 18,
-  "weeks_up": 7,
+  "rank_now": 501,
+  "rank_start": 573,
+  "score": 34,
+  "rise": 36,
+  "steady": 50,
+  "calm": 0,
+  "weeks_up": 6,
   "weeks_down": 3,
   "weeks_total": 12,
   "weekly": [
    1,
    1,
    1,
-   1,
+   0,
    -1,
    0,
    1,
@@ -368,10 +408,10 @@
    }
   ],
   "trend": "rising",
-  "supply_share": 0.03,
+  "supply_share": 0.02,
   "eligible": false,
   "window_days": 90,
-  "score_change": 8.5,
+  "score_change": 2.2,
   "double": false
  },
  "chain": {
@@ -401,34 +441,34 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-15",
+  "end": "2026-11-16",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-16",
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08",
-   "2026-11-15"
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09",
+   "2026-11-16"
   ],
   "supply_values": [
-   4382910000.0,
-   4383440000.0,
-   4388570000.0,
-   4389690000.0,
-   4395500000.0,
-   4396240000.0,
-   4398420000.0,
-   4399310000.0,
+   4382940000.0,
+   4383450000.0,
+   4388840000.0,
+   4395010000.0,
+   4395650000.0,
+   4396270000.0,
+   4398500000.0,
+   4399330000.0,
    4399630000.0,
    4399630000.0,
    4399630000.0,
@@ -451,7 +491,7 @@
  "recorded": {
   "depth_2pct_usd": 39795.95,
   "major_volume_share": 0.3564,
-  "holder_count": 8726,
-  "depth_to_mc": 0.001449
+  "holder_count": 8753,
+  "depth_to_mc": 0.001481
  }
 }

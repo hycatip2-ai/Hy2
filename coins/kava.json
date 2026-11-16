@@ -12,15 +12,20 @@
  ],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 59,
- "total_exact": 59.41,
+ "total": 55,
+ "total_exact": 54.72,
  "band": "Orta",
- "delta": 1.5,
+ "delta": -4.7,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "upbit_warning",
+   "text": "Upbit coin için yatırım uyarısı verdi; uyarı kalkmazsa Upbit coini borsadan çıkarabilir."
+  }
+ ],
  "notes": [],
  "earns": null,
  "supply": {
@@ -30,33 +35,33 @@
   "researched_at": "2026-11-02"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
   "gelir",
   "gelir trendi"
  ],
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": null,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 15.2,
+   "score": 15.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8727,
+   "percentile": 0.8704,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 2.724329,
-     "percentile": 0.7582,
+     "value": 2.591652,
+     "percentile": 0.7729,
      "basis": "sector",
-     "display": "2,72×",
+     "display": "2,59×",
      "tier": "üst dilim"
     }
    ]
@@ -74,7 +79,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9078,
+     "percentile": 0.9075,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -83,7 +88,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9676,
+     "percentile": 0.9728,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -92,7 +97,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": -0.0,
-     "percentile": 0.9701,
+     "percentile": 0.9691,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -111,7 +116,7 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 14.8,
+   "score": 14.6,
    "has_data": true,
    "weight": 15,
    "percentile": 0.7321,
@@ -121,7 +126,7 @@
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 1.0,
-     "percentile": 0.7381,
+     "percentile": 0.7274,
      "basis": "sector",
      "display": "Zorunlu",
      "tier": "üst dilim"
@@ -131,7 +136,7 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 0.4,
+   "score": 0.6,
    "has_data": true,
    "weight": 25,
    "percentile": 0.0132,
@@ -141,7 +146,7 @@
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.0221,
+     "percentile": 0.0295,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -151,17 +156,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 14.1,
+   "score": 14.0,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9341,
+   "percentile": 0.9451,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 251.0,
-     "percentile": 0.8744,
+     "percentile": 0.8743,
      "basis": "sector",
      "display": "251",
      "tier": "üst dilim"
@@ -170,7 +175,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1678,
-     "percentile": 0.9449,
+     "percentile": 0.9463,
      "basis": "sector",
      "display": "%0,17",
      "tier": "üst dilim"
@@ -179,7 +184,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.2308,
-     "percentile": 0.2895,
+     "percentile": 0.2811,
      "basis": "sector",
      "display": "%23",
      "tier": "alt dilim"
@@ -187,7 +192,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Upbit coin için yatırım uyarısı verdi; uyarı kalkmazsa Upbit coini borsadan çıkarabilir.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Upbit coin için yatırım uyarısı verdi; uyarı kalkmazsa Upbit coini borsadan çıkarabilir. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -280,6 +292,10 @@
   [
    "2026-11-15",
    59.41
+  ],
+  [
+   "2026-11-16",
+   54.72
   ]
  ],
  "changes": [
@@ -333,6 +349,21 @@
      "label": "Token gerekli mi verisi artık mevcut. (Değer yakalama +6,4)"
     }
    ]
+  },
+  {
+   "date": "2026-11-16",
+   "delta": -4.7,
+   "from": 59.4,
+   "to": 54.7,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Upbit coin için yatırım uyarısı verdi; uyarı kalkmazsa Upbit coini borsadan çıkarabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Upbit coin için yatırım uyarısı verdi; uyarı kalkmazsa Upbit coini borsadan çıkarabilir. (Uyarı −5,0)"
+    }
+   ]
   }
  ],
  "events": [
@@ -366,13 +397,13 @@
   }
  ],
  "trend": {
-  "rank_now": 388,
-  "rank_start": 356,
-  "score": 74,
+  "rank_now": 395,
+  "rank_start": 365,
+  "score": 71,
   "rise": 85,
-  "steady": 83,
-  "calm": 35,
-  "weeks_up": 10,
+  "steady": 75,
+  "calm": 34,
+  "weeks_up": 9,
   "weeks_down": 2,
   "weeks_total": 12,
   "weekly": [
@@ -381,7 +412,7 @@
    1,
    1,
    -1,
-   1,
+   0,
    1,
    1,
    1,
@@ -394,7 +425,7 @@
   "supply_share": 0.0,
   "eligible": true,
   "window_days": 90,
-  "score_change": -5.9,
+  "score_change": -10.6,
   "double": false
  },
  "chain": {
@@ -439,24 +470,24 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-15",
+  "end": "2026-11-16",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-16",
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08",
-   "2026-11-15"
+   "2026-08-17",
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09",
+   "2026-11-16"
   ],
   "supply_values": [
    1082850000.0,
@@ -493,6 +524,6 @@
  "recorded": {
   "depth_2pct_usd": 340548.11,
   "major_volume_share": 0.447,
-  "depth_to_mc": 0.008972
+  "depth_to_mc": 0.009428
  }
 }
