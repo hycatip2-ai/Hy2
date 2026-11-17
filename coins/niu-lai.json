@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 46,
- "total_exact": 46.23,
+ "total": 47,
+ "total_exact": 46.61,
  "band": "Zayıf",
- "delta": -1.0,
+ "delta": 0.4,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -30,7 +30,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -56,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 16.9,
+   "score": 17.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9873,
+   "percentile": 0.9878,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9216,
+     "percentile": 0.9193,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -75,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.9354,
+     "percentile": 0.9691,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -84,7 +84,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.6745,
+     "percentile": 0.6799,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -114,17 +114,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.3,
+   "score": 13.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8987,
+   "percentile": 0.9085,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 145.0,
-     "percentile": 0.7198,
+     "percentile": 0.7278,
      "basis": "sector",
      "display": "145",
      "tier": "üst dilim"
@@ -133,7 +133,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2193,
-     "percentile": 0.8516,
+     "percentile": 0.8561,
      "basis": "sector",
      "display": "%0,22",
      "tier": "üst dilim"
@@ -142,7 +142,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.15,
-     "percentile": 0.4311,
+     "percentile": 0.4386,
      "basis": "sector",
      "display": "%15",
      "tier": "orta dilim"
@@ -247,6 +247,10 @@
   [
    "2026-11-16",
    46.23
+  ],
+  [
+   "2026-11-17",
+   46.61
   ]
  ],
  "changes": [
@@ -282,7 +286,35 @@
   }
  ],
  "events": [],
- "trend": null,
+ "trend": {
+  "rank_now": 335,
+  "rank_start": 263,
+  "score": 0,
+  "rise": 0,
+  "steady": 33,
+  "calm": 0,
+  "weeks_up": 3,
+  "weeks_down": 6,
+  "weeks_total": 9,
+  "weekly": [
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   -1,
+   1,
+   1,
+   1
+  ],
+  "labels": [],
+  "trend": "falling",
+  "supply_share": 0.0,
+  "eligible": false,
+  "window_days": 90,
+  "score_change": -6.9,
+  "double": false
+ },
  "chain": {
   "name": "BSC",
   "source": "contract",
@@ -308,25 +340,27 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-16",
+  "end": "2026-11-17",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-24",
-   "2026-08-31",
-   "2026-09-07",
-   "2026-09-14",
-   "2026-09-21",
-   "2026-09-28",
-   "2026-10-05",
-   "2026-10-12",
-   "2026-10-19",
-   "2026-10-26",
-   "2026-11-02",
-   "2026-11-09",
-   "2026-11-16"
+   "2026-08-18",
+   "2026-08-25",
+   "2026-09-01",
+   "2026-09-08",
+   "2026-09-15",
+   "2026-09-22",
+   "2026-09-29",
+   "2026-10-06",
+   "2026-10-13",
+   "2026-10-20",
+   "2026-10-27",
+   "2026-11-03",
+   "2026-11-10",
+   "2026-11-17"
   ],
   "supply_values": [
+   1000000000.0,
    1000000000.0,
    1000000000.0,
    1000000000.0,
@@ -342,7 +376,7 @@
    1000000000.0
   ],
   "supply_change": 0.0,
-  "supply_days": 84
+  "supply_days": 91
  },
  "exchanges": [
   "Binance",
@@ -355,6 +389,6 @@
   "depth_2pct_usd": 104699.97,
   "major_volume_share": 0.683,
   "holder_count": 62556,
-  "depth_to_mc": 0.002176
+  "depth_to_mc": 0.002158
  }
 }
