@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 28,
- "total_exact": 27.69,
+ "total": 26,
+ "total_exact": 25.64,
  "band": "Zayıf",
- "delta": 0.1,
+ "delta": -2.1,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -30,7 +30,7 @@
   "text": "Kontrattaki üst sınıra ulaşıldı; yeni token basılamaz."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -47,19 +47,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 5.4,
+   "score": 3.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.2407,
+   "percentile": 0.1667,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 52.349981,
-     "percentile": 0.2691,
+     "value": 87.406041,
+     "percentile": 0.187,
      "basis": "sector",
-     "display": "52,3×",
+     "display": "87,4×",
      "tier": "alt dilim"
     }
    ]
@@ -67,17 +67,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.2,
+   "score": 7.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3837,
+   "percentile": 0.407,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.473856,
-     "percentile": 0.4435,
+     "percentile": 0.4528,
      "basis": "sector",
      "display": "%47",
      "tier": "orta dilim"
@@ -86,7 +86,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 2.110345,
-     "percentile": 0.4464,
+     "percentile": 0.4552,
      "basis": "sector",
      "display": "2,11×",
      "tier": "orta dilim"
@@ -94,10 +94,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.115046,
-     "percentile": 0.1838,
+     "value": 0.113755,
+     "percentile": 0.1943,
      "basis": "sector",
-     "display": "+%12",
+     "display": "+%11",
      "tier": "alt dilim"
     }
    ]
@@ -115,17 +115,17 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 1.6,
+   "score": 1.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0373,
+   "percentile": 0.0303,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 0.0,
-     "percentile": 0.0776,
+     "percentile": 0.0717,
      "basis": "sector",
      "display": "0",
      "tier": "alt dilim"
@@ -135,7 +135,7 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.7,
+   "score": 13.6,
    "has_data": true,
    "weight": 15,
    "percentile": 0.9186,
@@ -145,7 +145,7 @@
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 158.0,
-     "percentile": 0.5477,
+     "percentile": 0.5474,
      "basis": "sector",
      "display": "158",
      "tier": "orta dilim"
@@ -154,7 +154,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3367,
-     "percentile": 0.6438,
+     "percentile": 0.6343,
      "basis": "sector",
      "display": "%0,34",
      "tier": "orta dilim"
@@ -163,7 +163,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0741,
-     "percentile": 0.8717,
+     "percentile": 0.8632,
      "basis": "sector",
      "display": "%7,4",
      "tier": "üst dilim"
@@ -172,15 +172,22 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6715,
+     "percentile": 0.6697,
      "basis": "sector",
      "display": "2",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kilitli varlığına göre değerlemesi sert biçimde pahalandı.",
+   "part": "valuation",
+   "delta": -2.06,
+   "label": "Kilitli varlığına göre değerlemesi sert biçimde pahalandı. (Değerleme −2,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -285,6 +292,10 @@
   [
    "2026-11-18",
    27.69
+  ],
+  [
+   "2026-11-19",
+   25.64
   ]
  ],
  "changes": [
@@ -344,6 +355,21 @@
      "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −3,7)"
     }
    ]
+  },
+  {
+   "date": "2026-11-19",
+   "delta": -2.1,
+   "from": 27.7,
+   "to": 25.6,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kilitli varlığına göre değerlemesi sert biçimde pahalandı.",
+     "part": "valuation",
+     "delta": -2.06,
+     "label": "Kilitli varlığına göre değerlemesi sert biçimde pahalandı. (Değerleme −2,1)"
+    }
+   ]
   }
  ],
  "events": [
@@ -383,8 +409,8 @@
   }
  ],
  "trend": {
-  "rank_now": 507,
-  "rank_start": 103,
+  "rank_now": 409,
+  "rank_start": 102,
   "score": 0,
   "rise": 0,
   "steady": 25,
@@ -396,14 +422,14 @@
    -1,
    -1,
    -1,
+   -1,
+   -1,
+   1,
+   1,
+   -1,
+   -1,
+   -1,
    0,
-   -1,
-   1,
-   1,
-   -1,
-   -1,
-   -1,
-   -1,
    1
   ],
   "labels": [],
@@ -411,7 +437,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -17.8,
+  "score_change": -19.9,
   "double": false
  },
  "chain": {
@@ -485,24 +511,24 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-18",
+  "end": "2026-11-19",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-19",
-   "2026-08-26",
-   "2026-09-02",
-   "2026-09-09",
-   "2026-09-16",
-   "2026-09-23",
-   "2026-09-30",
-   "2026-10-07",
-   "2026-10-14",
-   "2026-10-21",
-   "2026-10-28",
-   "2026-11-04",
-   "2026-11-11",
-   "2026-11-18"
+   "2026-08-20",
+   "2026-08-27",
+   "2026-09-03",
+   "2026-09-10",
+   "2026-09-17",
+   "2026-09-24",
+   "2026-10-01",
+   "2026-10-08",
+   "2026-10-15",
+   "2026-10-22",
+   "2026-10-29",
+   "2026-11-05",
+   "2026-11-12",
+   "2026-11-19"
   ],
   "supply_values": [
    423426000.0,
@@ -535,6 +561,6 @@
   "depth_2pct_usd": 22090.16,
   "major_volume_share": 0.1579,
   "holder_count": 15257,
-  "depth_to_mc": 0.000827
+  "depth_to_mc": 0.000638
  }
 }
