@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 41,
- "total_exact": 41.03,
+ "total": 36,
+ "total_exact": 36.42,
  "band": "Zayıf",
- "delta": 0.5,
+ "delta": -4.6,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -25,7 +25,7 @@
   "text": "Kendi blokzinciri: arzını ağın açık kuralı belirler; arz yılda %2,2 artıyor (sınır %10)."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -39,19 +39,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.6,
+   "score": 7.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3529,
+   "percentile": 0.3654,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 49.958425,
-     "percentile": 0.3785,
+     "value": 46.894952,
+     "percentile": 0.39,
      "basis": "sector",
-     "display": "50,0×",
+     "display": "46,9×",
      "tier": "orta dilim"
     }
    ]
@@ -62,14 +62,14 @@
    "score": 11.7,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5862,
+   "percentile": 0.5909,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.8181,
+     "percentile": 0.819,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -77,8 +77,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.767473,
-     "percentile": 0.3901,
+     "value": 1.767373,
+     "percentile": 0.3948,
      "basis": "sector",
      "display": "1,77×",
      "tier": "orta dilim"
@@ -86,8 +86,8 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.004636,
-     "percentile": 0.548,
+     "value": 0.004641,
+     "percentile": 0.5428,
      "basis": "sector",
      "display": "+%0,5",
      "tier": "orta dilim"
@@ -107,37 +107,37 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.8,
+   "score": 3.0,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.3425,
-   "tier": "orta dilim",
+   "percentile": 0.1081,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
-     "value": 3.0,
-     "percentile": 0.3886,
+     "value": 1.0,
+     "percentile": 0.1481,
      "basis": "sector",
-     "display": "3",
-     "tier": "orta dilim"
+     "display": "1",
+     "tier": "alt dilim"
     }
    ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 5.1,
+   "score": 6.7,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.0345,
+   "percentile": 0.1307,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 41.0,
-     "percentile": 0.1185,
+     "percentile": 0.127,
      "basis": "sector",
      "display": "41",
      "tier": "alt dilim"
@@ -145,17 +145,17 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 2.727,
-     "percentile": 0.0446,
+     "value": 0.8207,
+     "percentile": 0.2215,
      "basis": "sector",
-     "display": "%2,7",
+     "display": "%0,82",
      "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1429,
-     "percentile": 0.6082,
+     "percentile": 0.6577,
      "basis": "sector",
      "display": "%14",
      "tier": "orta dilim"
@@ -163,7 +163,20 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+   "part": "usage",
+   "delta": -6.01,
+   "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −6,0)"
+  },
+  {
+   "text": "Borsalardaki alış-satış farkı daraldı.",
+   "part": "liquidity",
+   "delta": 1.17,
+   "label": "Borsalardaki alış-satış farkı daraldı. (Likidite +1,2)"
+  }
+ ],
  "history": [
   [
    "2026-11-14",
@@ -192,9 +205,35 @@
   [
    "2026-11-20",
    41.03
+  ],
+  [
+   "2026-11-21",
+   36.42
   ]
  ],
- "changes": [],
+ "changes": [
+  {
+   "date": "2026-11-21",
+   "delta": -4.6,
+   "from": 41.0,
+   "to": 36.4,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı.",
+     "part": "usage",
+     "delta": -6.01,
+     "label": "Kod deposundaki çalışma son 3 ayda sert biçimde azaldı. (Kullanım −6,0)"
+    },
+    {
+     "text": "Borsalardaki alış-satış farkı daraldı.",
+     "part": "liquidity",
+     "delta": 1.17,
+     "label": "Borsalardaki alış-satış farkı daraldı. (Likidite +1,2)"
+    }
+   ]
+  }
+ ],
  "events": [],
  "trend": null,
  "chain": {
@@ -224,18 +263,20 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-20",
+  "end": "2026-11-21",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-21",
-   "2026-08-28",
-   "2026-11-20"
+   "2026-08-22",
+   "2026-08-29",
+   "2026-11-14",
+   "2026-11-21"
   ],
   "supply_values": [
-   13515800000.0,
-   13521500000.0,
-   13578700000.0
+   13516600000.0,
+   13522300000.0,
+   13573900000.0,
+   13579500000.0
   ],
   "supply_change": 0.0047,
   "supply_days": 91
@@ -247,8 +288,8 @@
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 216.74,
-  "major_volume_share": 0.9884,
-  "depth_to_mc": 1.6e-05
+  "depth_2pct_usd": 524.95,
+  "major_volume_share": 0.9685,
+  "depth_to_mc": 4.7e-05
  }
 }

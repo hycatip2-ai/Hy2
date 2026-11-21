@@ -9,28 +9,29 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 47,
- "total_exact": 47.44,
- "band": "Zayıf",
- "delta": null,
+ "total": 55,
+ "total_exact": 54.59,
+ "band": "Orta",
+ "delta": 7.2,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 3,
+  "level": "Düşük"
  },
  "flags": [],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: arzı ağın açık kuralı belirler; arz artmıyor.",
+  "source": "https://docs.superwalk.io/english/tokenomics/usdgrnd-governance-token",
+  "researched_at": "2026-11-20"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
-  "arz kuralı"
+  "kullanım kanıtı"
  ],
  "penalty": 0.0,
  "bonus": 0.0,
@@ -49,17 +50,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 13.0,
+   "score": 12.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7412,
+   "percentile": 0.6786,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.791582,
-     "percentile": 0.6554,
+     "percentile": 0.6311,
      "basis": "sector",
      "display": "%79",
      "tier": "orta dilim"
@@ -68,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.263293,
-     "percentile": 0.7095,
+     "percentile": 0.6959,
      "basis": "sector",
      "display": "1,26×",
      "tier": "üst dilim"
@@ -77,7 +78,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5811,
+     "percentile": 0.5667,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -87,12 +88,31 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 14.5,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.7561,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 0.5,
+     "percentile": 0.4834,
+     "basis": "sector",
+     "display": "Kısmi",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.8466,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
@@ -107,17 +127,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.5,
+   "score": 13.4,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8706,
+   "percentile": 0.869,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 22.0,
-     "percentile": 0.2197,
+     "percentile": 0.222,
      "basis": "sector",
      "display": "22",
      "tier": "alt dilim"
@@ -126,7 +146,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1676,
-     "percentile": 0.9448,
+     "percentile": 0.9416,
      "basis": "sector",
      "display": "%0,17",
      "tier": "üst dilim"
@@ -135,7 +155,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8561,
+     "percentile": 0.8538,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -143,15 +163,57 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 7.51,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,5)"
+  }
+ ],
  "history": [
   [
    "2026-11-20",
    47.44
+  ],
+  [
+   "2026-11-21",
+   54.59
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-21",
+   "delta": 7.2,
+   "from": 47.4,
+   "to": 54.6,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.51,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,5)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-21",
+   "delta": 7.2,
+   "from": 47.4,
+   "to": 54.6,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 7.51,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,5)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": null,
  "funds": {
@@ -167,9 +229,24 @@
  "hacks_12m": [],
  "defillama_url": null,
  "research": null,
- "token_utility": null,
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://docs.superwalk.io/english/tokenomics/usdgrnd-governance-token",
+  "note": "GRND tokeni yönetişim, topluluk operasyonları ve oyun içi NFT etkileşimleri için gereklidir.",
+  "researched_at": "2026-11-20"
+ },
  "usage_evidence": null,
- "allocation": null,
+ "allocation": {
+  "insiders": 0.2,
+  "vesting_end": "2028-09",
+  "source": "https://app.tokenomics.com/tokenomics/superwalk",
+  "note": "İçeriden öğrenenler (takım ve danışmanlar) toplam arzın %20'sini oluşturmaktadır.",
+  "researched_at": "2026-11-20"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": null,
@@ -180,6 +257,7 @@
  "recorded": {
   "depth_2pct_usd": 6814.41,
   "major_volume_share": 0.9807,
-  "depth_to_mc": 0.000601
+  "depth_to_mc": 0.000723,
+  "insider_share": 0.2
  }
 }
