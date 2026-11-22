@@ -9,15 +9,20 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 36,
- "total_exact": 36.13,
+ "total": 31,
+ "total_exact": 31.12,
  "band": "Zayıf",
- "delta": -0.2,
+ "delta": -5.0,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "site_down",
+   "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir."
+  }
+ ],
  "notes": [],
  "earns": null,
  "supply": {
@@ -25,13 +30,13 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
   "kullanım kanıtı"
  ],
- "penalty": 0.0,
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": {
   "chain": "BNB Chain",
@@ -51,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 7.0,
+   "score": 6.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3333,
+   "percentile": 0.321,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.597423,
-     "percentile": 0.5084,
+     "percentile": 0.5029,
      "basis": "sector",
      "display": "%60",
      "tier": "orta dilim"
@@ -70,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.673856,
-     "percentile": 0.5423,
+     "percentile": 0.5378,
      "basis": "sector",
      "display": "1,67×",
      "tier": "orta dilim"
@@ -78,10 +83,10 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 2.653245,
+     "value": 2.604773,
      "percentile": 0.0005,
      "basis": "sector",
-     "display": "+%265",
+     "display": "+%260",
      "tier": "alt dilim"
     }
    ]
@@ -109,17 +114,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 8.1,
+   "score": 8.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.3214,
+   "percentile": 0.3333,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 19.0,
-     "percentile": 0.1909,
+     "percentile": 0.1867,
      "basis": "sector",
      "display": "19",
      "tier": "alt dilim"
@@ -128,7 +133,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.8643,
-     "percentile": 0.1736,
+     "percentile": 0.1799,
      "basis": "sector",
      "display": "%0,86",
      "tier": "alt dilim"
@@ -137,7 +142,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8538,
+     "percentile": 0.8596,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -145,7 +150,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+   "part": "penalty",
+   "delta": -5.0,
+   "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+  }
+ ],
  "history": [
   [
    "2026-11-20",
@@ -154,10 +166,45 @@
   [
    "2026-11-21",
    36.13
+  ],
+  [
+   "2026-11-22",
+   31.12
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-22",
+   "delta": -5.0,
+   "from": 36.1,
+   "to": 31.1,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-22",
+   "delta": -5.0,
+   "from": 36.1,
+   "to": 31.1,
+   "reasons": [
+    {
+     "text": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir.",
+     "part": "penalty",
+     "delta": -5.0,
+     "label": "Projenin resmi sitesi art arda birkaç gece açılmadı; proje terk edilmiş olabilir. (Uyarı −5,0)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
   "name": "BSC",

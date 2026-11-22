@@ -1,0 +1,102 @@
+{
+ "slug": "dydx-chain",
+ "schema": 2,
+ "name": "dYdX",
+ "symbol": "DYDX",
+ "provider": "gemini-free",
+ "model": "gemini-3.1-flash-lite",
+ "researched_at": "2026-11-22",
+ "pages": [
+  "https://docs.dydx.community/dydx-token-migration",
+  "https://docs.dydx.community/dydx-token-migration/llms.txt",
+  "https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/governancestrategyv2-smart-contract.md",
+  "https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview",
+  "https://docs.dydx.community/dydx-token-migration/migration-of-dydx-from-ethereum-to-dydx-chain/wethdydx-and-wethdydx-smart-contract",
+  "https://dydx.trade/",
+  "https://www.findas.org/tokenomics-review/the-tokenomics-of-dydx",
+  "https://dydx.forum/t/analysis-and-proposals-on-dydx-chain-and-dydx-tokenomics/3093",
+  "https://www.dydx.xyz/blog/dydx-buyback-program"
+ ],
+ "fields": {
+  "supply_rule": {
+   "value": {
+    "minting": "capped",
+    "annual_inflation": null,
+    "max_annual_mint": null,
+    "upgradeable": null
+   },
+   "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-dydx",
+   "note": "Token arzı yönetişim kararlarına tabidir ve beş yılın ardından yıllık maksimum %2 enflasyon öngörülmüştür.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "buyback_burn": {
+   "value": 1.0,
+   "source": "https://www.dydx.xyz/blog/dydx-buyback-program",
+   "note": "Protokol, net ücretlerin %25'ini aylık düzenli geri alımlar için kullanmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "unlock_6m_pct": {
+   "value": 0.0,
+   "source": "https://www.dydx.xyz/blog/dydx-buyback-program",
+   "note": "Tüm token kilit açılışlarının Haziran 2026 itibarıyla tamamlandığı belirtilmiştir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "investors": {
+   "value": [
+    "dYdX Trading Inc."
+   ],
+   "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-dydx",
+   "note": "Belgelerde geçmiş yatırımcılar olarak dYdX Trading Inc. ile ilişkili gruplar belirtilmiştir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "unlock_12m_pct": {
+   "value": 0.0,
+   "source": "https://www.dydx.xyz/blog/dydx-buyback-program",
+   "note": "Token kilit açılışları Haziran 2026'da sona ermiştir.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "token_utility": {
+   "value": {
+    "level": "required",
+    "uses": [
+     "stake_to_operate",
+     "governance",
+     "emission_rewards"
+    ]
+   },
+   "source": "https://docs.dydx.community/dydx-token-migration",
+   "note": "DYDX, ağ güvenliği için staking ve ağ yönetişimi süreçlerinde zorunlu bir rol oynamaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "usage_evidence": {
+   "value": {
+    "metric": "Trading Volume 24h",
+    "value": 37982246.0,
+    "unit": "USD",
+    "as_of": "2026-11-22",
+    "confirmed": true
+   },
+   "source": "https://dydx.trade/",
+   "note": "Platformun 24 saatlik işlem hacmi resmi web sitesinde güncel olarak paylaşılmaktadır.",
+   "check": "sayfada coin adı geçiyor"
+  },
+  "allocation": {
+   "value": {
+    "insiders": 0.5,
+    "vesting_end": "2026-06"
+   },
+   "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-dydx",
+   "note": "Yatırımcılar ve ekip için ayrılan toplam pay %50 civarındadır ve kilitler 2026'da bitmiştir.",
+   "check": "sayfada coin adı geçiyor"
+  }
+ },
+ "dropped": [],
+ "queue": {
+  "priority": 1,
+  "reason": "ilk 50 için tek eksiği arz kuralı"
+ },
+ "usage": {
+  "input_tokens": 14173,
+  "output_tokens": 931
+ }
+}
