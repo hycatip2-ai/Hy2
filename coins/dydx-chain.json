@@ -4,15 +4,15 @@
  "symbol": "DYDX",
  "name": "dYdX",
  "cmc_id": 28324,
- "graduated": false,
+ "graduated": true,
  "chain_flow": null,
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
  "total": 75,
- "total_exact": 75.37,
+ "total_exact": 74.7,
  "band": "Güçlü",
- "delta": null,
+ "delta": -0.7,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
@@ -20,19 +20,21 @@
  "flags": [],
  "notes": [],
  "earns": {
-  "yield": 0.0523,
-  "revenue_90d": 745313,
+  "yield": 0.0492,
+  "revenue_90d": 740800,
   "source": "DefiLlama",
   "dilution": 0.0,
-  "net_yield": 0.0523,
+  "net_yield": 0.0492,
   "mechanism": "distribution"
  },
  "supply": {
   "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "text": "Kaynaklı araştırma: yeni token basma ya da basım oranını değiştirme yetkisi bir grupta, kesin üst sınır belgelenmemiş. Kendin araştır.",
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-dydx",
+  "researched_at": "2026-11-22"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -45,19 +47,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 11.3,
+   "score": 11.4,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.5,
+   "percentile": 0.5091,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 0.844716,
-     "percentile": 0.5648,
+     "value": 0.892117,
+     "percentile": 0.5714,
      "basis": "sector",
-     "display": "0,84×",
+     "display": "0,89×",
      "tier": "orta dilim"
     }
    ]
@@ -65,17 +67,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.9,
+   "score": 15.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8605,
+   "percentile": 0.8276,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.882872,
-     "percentile": 0.7168,
+     "percentile": 0.7205,
      "basis": "sector",
      "display": "%88",
      "tier": "üst dilim"
@@ -84,7 +86,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.181901,
-     "percentile": 0.6994,
+     "percentile": 0.7028,
      "basis": "sector",
      "display": "1,18×",
      "tier": "üst dilim"
@@ -92,10 +94,19 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.002749,
-     "percentile": 0.9643,
+     "value": -0.002721,
+     "percentile": 0.9647,
      "basis": "sector",
      "display": "−%0,3",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.7211,
+     "basis": "sector",
+     "display": "%0",
      "tier": "üst dilim"
     }
    ]
@@ -103,7 +114,7 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 18.1,
+   "score": 17.5,
    "has_data": true,
    "weight": 20,
    "percentile": 1.0,
@@ -113,27 +124,45 @@
      "id": "holders_revenue_share",
      "name": "Token sahibine dönen gelir payı",
      "value": 1.0,
-     "percentile": 0.9971,
+     "percentile": 0.9972,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
     },
     {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7661,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
      "id": "net_holder_yield",
      "name": "Sahibe net getiri (seyrelme düşülmüş)",
-     "value": 0.052292,
-     "percentile": 0.9841,
+     "value": 0.049238,
+     "percentile": 0.9846,
      "basis": "sector",
-     "display": "+%5,2",
+     "display": "+%4,9",
      "tier": "üst dilim"
     },
     {
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
      "value": null,
-     "percentile": 0.7751,
+     "percentile": 0.7794,
      "basis": "sector",
      "display": "Yeni arz yok",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.8588,
+     "basis": "sector",
+     "display": "Zorunlu",
      "tier": "üst dilim"
     }
    ]
@@ -144,41 +173,41 @@
    "score": 11.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6515,
+   "percentile": 0.6418,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.24128,
-     "percentile": 0.6716,
+     "value": 1.218441,
+     "percentile": 0.6773,
      "basis": "sector",
-     "display": "+%24",
+     "display": "+%22",
      "tier": "üst dilim"
     },
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": -0.223152,
-     "percentile": 0.5226,
+     "value": -0.226767,
+     "percentile": 0.5122,
      "basis": "sector",
-     "display": "−%22",
+     "display": "−%23",
      "tier": "orta dilim"
     },
     {
      "id": "fee_consistency",
      "name": "Kullanımın sürekliliği (13 hafta)",
-     "value": 0.933131,
-     "percentile": 0.4772,
+     "value": 0.944197,
+     "percentile": 0.4692,
      "basis": "sector",
-     "display": "%93",
+     "display": "%94",
      "tier": "orta dilim"
     },
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 12.0,
-     "percentile": 0.8981,
+     "percentile": 0.9063,
      "basis": "sector",
      "display": "12",
      "tier": "üst dilim"
@@ -200,14 +229,14 @@
    "score": 14.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9535,
+   "percentile": 0.9425,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 301.0,
-     "percentile": 0.9146,
+     "percentile": 0.9155,
      "basis": "sector",
      "display": "301",
      "tier": "üst dilim"
@@ -216,7 +245,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.2827,
-     "percentile": 0.7255,
+     "percentile": 0.731,
      "basis": "sector",
      "display": "%0,28",
      "tier": "üst dilim"
@@ -225,7 +254,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.1818,
-     "percentile": 0.5302,
+     "percentile": 0.5337,
      "basis": "sector",
      "display": "%18",
      "tier": "orta dilim"
@@ -234,7 +263,7 @@
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.6633,
+     "percentile": 0.6676,
      "basis": "sector",
      "display": "2",
      "tier": "orta dilim"
@@ -247,31 +276,35 @@
   [
    "2026-11-22",
    75.37
+  ],
+  [
+   "2026-11-23",
+   74.7
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 200,
+  "rank_now": 196,
   "rank_start": 174,
   "score": 0,
   "rise": 0,
-  "steady": 17,
+  "steady": 8,
   "calm": 0,
-  "weeks_up": 2,
-  "weeks_down": 9,
+  "weeks_up": 1,
+  "weeks_down": 7,
   "weeks_total": 12,
   "weekly": [
+   0,
    -1,
-   -1,
-   -1,
+   0,
+   0,
    1,
-   1,
-   -1,
    -1,
    -1,
    -1,
    0,
+   -1,
    -1,
    -1
   ],
@@ -341,70 +374,98 @@
  "angel_investors_estimated": true,
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/dydx",
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini-free",
+  "researched_at": "2026-11-22"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "stake_to_operate",
+   "governance",
+   "emission_rewards"
+  ],
+  "source": "https://docs.dydx.community/dydx-token-migration",
+  "note": "DYDX, ağ güvenliği için staking ve ağ yönetişimi süreçlerinde zorunlu bir rol oynamaktadır.",
+  "researched_at": "2026-11-22"
+ },
+ "usage_evidence": {
+  "metric": "Trading Volume 24h",
+  "value": 37982246.0,
+  "unit": "USD",
+  "as_of": "2026-11-22",
+  "confirmed": true,
+  "source": "https://dydx.trade/",
+  "note": "Platformun 24 saatlik işlem hacmi resmi web sitesinde güncel olarak paylaşılmaktadır.",
+  "researched_at": "2026-11-22"
+ },
+ "allocation": {
+  "insiders": 0.5,
+  "vesting_end": "2026-06",
+  "source": "https://www.findas.org/tokenomics-review/the-tokenomics-of-dydx",
+  "note": "Yatırımcılar ve ekip için ayrılan toplam pay %50 civarındadır ve kilitler 2026'da bitmiştir.",
+  "researched_at": "2026-11-22"
+ },
  "value_transfer_pending": null,
  "usage_share": {
   "category": "Derivatives",
   "peers": "category",
-  "protocols": 102,
+  "protocols": 101,
   "quarters": [
-   0.003931,
-   0.002301,
-   0.002399,
-   0.001895,
-   0.001472
+   0.003958,
+   0.002209,
+   0.0024,
+   0.001902,
+   0.001471
   ]
  },
  "last90": {
-  "end": "2026-11-22",
+  "end": "2026-11-23",
   "fees_weekly": [
-   84677.0,
-   37589.0,
-   41750.0,
-   54712.0,
-   87023.0,
-   78833.0,
-   48738.0,
-   53920.0,
-   55257.0,
-   65899.0,
-   51664.0,
-   51872.0,
-   43660.0
+   78738.0,
+   36459.0,
+   41751.0,
+   58532.0,
+   93949.0,
+   66496.0,
+   50214.0,
+   54555.0,
+   53415.0,
+   65750.0,
+   52850.0,
+   61360.0,
+   36383.0
   ],
   "holders_weekly": [
-   84677.0,
-   37589.0,
-   41750.0,
-   54712.0,
-   87023.0,
-   78833.0,
-   48738.0,
-   53920.0,
-   55257.0,
-   65899.0,
-   51664.0,
-   51872.0,
-   43660.0
+   78738.0,
+   36459.0,
+   41751.0,
+   58532.0,
+   93949.0,
+   66496.0,
+   50214.0,
+   54555.0,
+   53415.0,
+   65750.0,
+   52850.0,
+   61360.0,
+   36383.0
   ],
   "supply_dates": [
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08",
-   "2026-11-15",
-   "2026-11-22"
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09",
+   "2026-11-16",
+   "2026-11-23"
   ],
   "supply_values": [
    848608000.0,
@@ -439,6 +500,7 @@
  "recorded": {
   "depth_2pct_usd": 210712.22,
   "major_volume_share": 0.4205,
-  "depth_to_mc": 0.003696
+  "depth_to_mc": 0.003501,
+  "insider_share": 0.5
  }
 }

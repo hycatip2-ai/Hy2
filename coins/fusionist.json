@@ -9,20 +9,15 @@
  "us_exchanges": [],
  "sector": "l1l2",
  "sector_name": "Katman 1/2",
- "total": 54,
- "total_exact": 54.18,
+ "total": 51,
+ "total_exact": 51.38,
  "band": "Orta",
- "delta": -0.6,
+ "delta": -2.8,
  "confidence": {
   "parts": 5,
   "level": "Yüksek"
  },
- "flags": [
-  {
-   "id": "top10_concentration",
-   "text": "Arzın büyük kısmı az sayıda cüzdanda toplandı."
-  }
- ],
+ "flags": [],
  "notes": [],
  "earns": {
   "yield": null,
@@ -34,20 +29,20 @@
   "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
   "arz kuralı"
  ],
- "penalty": 5.0,
+ "penalty": 0.0,
  "bonus": 5.0,
  "contract": null,
  "parts": [
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 1.6,
+   "score": 1.8,
    "has_data": true,
    "weight": 20,
    "percentile": 0.0588,
@@ -56,19 +51,19 @@
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 369961.82302,
-     "percentile": 0.0,
+     "value": 299133.034065,
+     "percentile": 0.0172,
      "basis": "sector",
-     "display": "369.962×",
+     "display": "299.133×",
      "tier": "alt dilim"
     },
     {
      "id": "mc_to_fees",
      "name": "Piyasa değeri / yıllık ücret",
-     "value": 860465.889571,
+     "value": 700676.026722,
      "percentile": 0.1588,
      "basis": "sector",
-     "display": "860.466×",
+     "display": "700.676×",
      "tier": "alt dilim"
     }
    ]
@@ -76,17 +71,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 8.0,
+   "score": 7.9,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.375,
+   "percentile": 0.3721,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.79578,
-     "percentile": 0.5709,
+     "percentile": 0.564,
      "basis": "sector",
      "display": "%80",
      "tier": "orta dilim"
@@ -95,7 +90,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.262573,
-     "percentile": 0.6055,
+     "percentile": 0.5986,
      "basis": "sector",
      "display": "1,26×",
      "tier": "orta dilim"
@@ -103,17 +98,17 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.075785,
-     "percentile": 0.2138,
+     "value": 0.074983,
+     "percentile": 0.2088,
      "basis": "sector",
-     "display": "+%7,6",
+     "display": "+%7,5",
      "tier": "alt dilim"
     },
     {
      "id": "unlock_12m",
      "name": "12 ay içindeki kilit açılışı",
      "value": 0.26,
-     "percentile": 0.2188,
+     "percentile": 0.2154,
      "basis": "universe",
      "display": "%26",
      "tier": "alt dilim"
@@ -123,17 +118,17 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 15.3,
+   "score": 15.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.931,
+   "percentile": 0.8929,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "buyback_burn",
      "name": "Geri alım / yakım",
      "value": 1.0,
-     "percentile": 0.764,
+     "percentile": 0.7584,
      "basis": "universe",
      "display": "Düzenli",
      "tier": "üst dilim"
@@ -146,16 +141,16 @@
    "score": 15.5,
    "has_data": true,
    "weight": 25,
-   "percentile": 0.8378,
+   "percentile": 0.8194,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 1.473684,
-     "percentile": 0.7756,
+     "value": 1.440415,
+     "percentile": 0.7764,
      "basis": "sector",
-     "display": "+%47",
+     "display": "+%44",
      "tier": "üst dilim"
     }
    ]
@@ -163,17 +158,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 15.6,
+   "score": 5.2,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.9886,
-   "tier": "üst dilim",
+   "percentile": 0.0814,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 180.0,
-     "percentile": 0.6781,
+     "percentile": 0.6726,
      "basis": "sector",
      "display": "180",
      "tier": "üst dilim"
@@ -181,25 +176,38 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.3012,
-     "percentile": 0.7317,
+     "value": 5.4877,
+     "percentile": 0.0331,
      "basis": "sector",
-     "display": "%0,30",
-     "tier": "üst dilim"
+     "display": "%5,5",
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.0,
-     "percentile": 0.9284,
+     "value": 0.4286,
+     "percentile": 0.0767,
      "basis": "sector",
-     "display": "%0",
-     "tier": "üst dilim"
+     "display": "%43",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Borsalardaki alış-satış farkı açıldı.",
+   "part": "liquidity",
+   "delta": -7.78,
+   "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −7,8)"
+  },
+  {
+   "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",
+   "part": "penalty",
+   "delta": 5.0,
+   "label": "Arzın cüzdanlar arasındaki dağılımı iyileşti. (Uyarı +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -312,6 +320,10 @@
   [
    "2026-11-22",
    54.18
+  ],
+  [
+   "2026-11-23",
+   51.38
   ]
  ],
  "changes": [
@@ -350,6 +362,27 @@
      "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +3,9)"
     }
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "delta": -2.8,
+   "from": 54.2,
+   "to": 51.4,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Borsalardaki alış-satış farkı açıldı.",
+     "part": "liquidity",
+     "delta": -7.78,
+     "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −7,8)"
+    },
+    {
+     "text": "Arzın cüzdanlar arasındaki dağılımı iyileşti.",
+     "part": "penalty",
+     "delta": 5.0,
+     "label": "Arzın cüzdanlar arasındaki dağılımı iyileşti. (Uyarı +5,0)"
+    }
+   ]
   }
  ],
  "events": [
@@ -375,14 +408,14 @@
   }
  ],
  "trend": {
-  "rank_now": 853,
-  "rank_start": 587,
+  "rank_now": 955,
+  "rank_start": 605,
   "score": 0,
   "rise": 0,
-  "steady": 25,
+  "steady": 17,
   "calm": 0,
-  "weeks_up": 3,
-  "weeks_down": 7,
+  "weeks_up": 2,
+  "weeks_down": 6,
   "weeks_total": 12,
   "weekly": [
    -1,
@@ -393,8 +426,8 @@
    1,
    0,
    -1,
-   -1,
-   1,
+   0,
+   0,
    -1,
    -1
   ],
@@ -403,7 +436,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": 3.4,
+  "score_change": 0.6,
   "double": false
  },
  "chain": {
@@ -434,46 +467,46 @@
   "peers": "chains",
   "protocols": 38,
   "quarters": [
-   1.208e-05,
-   9.204e-07,
-   4.985e-07,
-   1.927e-06,
-   3.081e-06
+   1.2e-05,
+   9.236e-07,
+   5.064e-07,
+   2.009e-06,
+   3.049e-06
   ]
  },
  "last90": {
-  "end": "2026-11-22",
+  "end": "2026-11-23",
   "fees_weekly": [
-   0.31,
-   0.23,
+   0.3,
+   0.22,
    0.21,
-   0.21,
+   0.22,
    0.28,
-   0.28,
-   0.17,
-   0.27,
+   0.25,
+   0.2,
+   0.26,
    0.21,
    0.21,
-   0.16,
+   0.15,
    0.17,
-   0.14
+   0.15
   ],
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-23",
-   "2026-08-30",
-   "2026-09-06",
-   "2026-09-13",
-   "2026-09-20",
-   "2026-09-27",
-   "2026-10-04",
-   "2026-10-11",
-   "2026-10-18",
-   "2026-10-25",
-   "2026-11-01",
-   "2026-11-08",
-   "2026-11-15",
-   "2026-11-22"
+   "2026-08-24",
+   "2026-08-31",
+   "2026-09-07",
+   "2026-09-14",
+   "2026-09-21",
+   "2026-09-28",
+   "2026-10-05",
+   "2026-10-12",
+   "2026-10-19",
+   "2026-10-26",
+   "2026-11-02",
+   "2026-11-09",
+   "2026-11-16",
+   "2026-11-23"
   ],
   "supply_values": [
    107614000.0,
@@ -486,7 +519,7 @@
    113491000.0,
    113491000.0,
    113491000.0,
-   113491000.0,
+   116429000.0,
    116429000.0,
    116429000.0,
    116429000.0
@@ -498,15 +531,14 @@
   "Binance",
   "OKX",
   "Bitget",
-  "Gate",
   "KuCoin",
   "MEXC",
   "HTX"
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 109324.11,
-  "major_volume_share": 0.2647,
-  "depth_to_mc": 0.011189
+  "depth_2pct_usd": 21434.26,
+  "major_volume_share": 0.6088,
+  "depth_to_mc": 0.002713
  }
 }
