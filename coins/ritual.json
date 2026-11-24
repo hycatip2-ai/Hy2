@@ -11,32 +11,36 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 33,
- "total_exact": 33.3,
+ "total": 48,
+ "total_exact": 47.83,
  "band": "Zayıf",
- "delta": null,
+ "delta": 14.5,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: arzı ağın açık kuralı belirler; yılda %5 artıyor (sınır %10).",
+  "source": "https://tokenomics.ritualfoundation.org/",
+  "researched_at": "2026-11-23"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
-  "kullanım kanıtı",
-  "arz geçmişi",
-  "arz kuralı"
+  "arz geçmişi"
  ],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -52,17 +56,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 2.4,
+   "score": 2.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0119,
+   "percentile": 0.0115,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.18,
-     "percentile": 0.103,
+     "percentile": 0.1002,
      "basis": "sector",
      "display": "%18",
      "tier": "alt dilim"
@@ -71,7 +75,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 5.555556,
-     "percentile": 0.1334,
+     "percentile": 0.1297,
      "basis": "sector",
      "display": "5,56×",
      "tier": "alt dilim"
@@ -81,27 +85,46 @@
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 7.0,
-   "has_data": false,
+   "score": 16.4,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.8721,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7706,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 1.0,
+     "percentile": 0.8424,
+     "basis": "sector",
+     "display": "Zorunlu",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 4.4,
+   "score": 4.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.25,
+   "percentile": 0.2619,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "active_devs",
      "name": "Aktif geliştirici sayısı (90 gün)",
      "value": 1.0,
-     "percentile": 0.2198,
+     "percentile": 0.2232,
      "basis": "sector",
      "display": "1",
      "tier": "alt dilim"
@@ -111,17 +134,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.5,
+   "score": 12.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7857,
+   "percentile": 0.8046,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 9.0,
-     "percentile": 0.0541,
+     "percentile": 0.0524,
      "basis": "sector",
      "display": "9",
      "tier": "alt dilim"
@@ -130,7 +153,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.1151,
-     "percentile": 0.958,
+     "percentile": 0.9692,
      "basis": "sector",
      "display": "%0,12",
      "tier": "üst dilim"
@@ -139,7 +162,7 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.869,
+     "percentile": 0.8829,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -147,15 +170,75 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Geri alım / yakım verisi artık mevcut.",
+   "part": "value_capture",
+   "delta": 9.37,
+   "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,4)"
+  },
+  {
+   "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+   "part": "bonus",
+   "delta": 5.0,
+   "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+  }
+ ],
  "history": [
   [
    "2026-11-23",
    33.3
+  ],
+  [
+   "2026-11-24",
+   47.83
   ]
  ],
- "changes": [],
- "events": [],
+ "changes": [
+  {
+   "date": "2026-11-24",
+   "delta": 14.5,
+   "from": 33.3,
+   "to": 47.8,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 9.37,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,4)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-24",
+   "delta": 14.5,
+   "from": 33.3,
+   "to": 47.8,
+   "reasons": [
+    {
+     "text": "Geri alım / yakım verisi artık mevcut.",
+     "part": "value_capture",
+     "delta": 9.37,
+     "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +9,4)"
+    },
+    {
+     "text": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma).",
+     "part": "bonus",
+     "delta": 5.0,
+     "label": "Token sahiplerine gerçek gelir dönmeye başladı (altın arma). (Altın arma +5,0)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
   "name": "BSC",
@@ -168,37 +251,71 @@
   "closed": []
  },
  "funding_rounds": [],
- "investors": [],
- "investors_source": null,
+ "investors": [
+  "Archetype",
+  "Polychain Capital"
+ ],
+ "investors_source": "https://dealroom.co/news/167237-ritual-launches-ai-layer-1-and-ritual-token-after-30m-raise/",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
  "defillama_url": null,
- "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "research": {
+  "provider": "gemini-free",
+  "researched_at": "2026-11-23"
+ },
+ "token_utility": {
+  "level": "required",
+  "uses": [
+   "network_fees",
+   "service_payment",
+   "stake_to_operate",
+   "governance"
+  ],
+  "source": "https://tokenomics.ritualfoundation.org/",
+  "note": "Token ağ güvenliği, işlem ücretleri, AI hesaplama ödemeleri ve yönetişim için gereklidir.",
+  "researched_at": "2026-11-23"
+ },
+ "usage_evidence": {
+  "metric": "transactions processed on testnet",
+  "value": 90000000.0,
+  "unit": "transactions",
+  "as_of": "2026-10-26",
+  "confirmed": true,
+  "source": "https://www.kucoin.com/blog/ritual-mainnet-ritual-tokenomics-airdrop",
+  "note": "Testnet üzerinde ana ağ lansmanına kadar 90 milyondan fazla işlem gerçekleştirilmiştir.",
+  "researched_at": "2026-11-23"
+ },
+ "allocation": {
+  "insiders": 0.403,
+  "vesting_end": "2030-10",
+  "source": "https://tokenomics.ritualfoundation.org/",
+  "note": "İçeriden öğrenenler (Core Contributors %29 + Labs Investors %11.3) toplam arzın %40.3'ünü oluşturur.",
+  "researched_at": "2026-11-23"
+ },
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-23",
+  "end": "2026-11-24",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-11-02",
-   "2026-11-09",
-   "2026-11-16",
-   "2026-11-23"
+   "2026-10-27",
+   "2026-11-03",
+   "2026-11-10",
+   "2026-11-17",
+   "2026-11-24"
   ],
   "supply_values": [
+   1800000000.0,
    1800000000.0,
    1800000000.0,
    1800000000.0,
    1800000000.0
   ],
   "supply_change": 0.0,
-  "supply_days": 21
+  "supply_days": 28
  },
  "exchanges": [
   "Coinbase",
@@ -210,6 +327,7 @@
  "recorded": {
   "depth_2pct_usd": 14518.37,
   "major_volume_share": 0.9521,
-  "depth_to_mc": 0.000281
+  "depth_to_mc": 0.000261,
+  "insider_share": 0.403
  }
 }

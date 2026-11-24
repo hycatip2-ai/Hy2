@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 38,
- "total_exact": 37.63,
+ "total": 36,
+ "total_exact": 35.62,
  "band": "Zayıf",
- "delta": 0.3,
+ "delta": -2.0,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -25,7 +25,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -54,14 +54,14 @@
    "score": 3.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0952,
+   "percentile": 0.092,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.272319,
-     "percentile": 0.2023,
+     "value": 0.273278,
+     "percentile": 0.1964,
      "basis": "sector",
      "display": "%27",
      "tier": "alt dilim"
@@ -69,19 +69,19 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 4.002156,
-     "percentile": 0.2075,
+     "value": 3.988105,
+     "percentile": 0.2048,
      "basis": "sector",
-     "display": "4,00×",
+     "display": "3,99×",
      "tier": "alt dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.086097,
-     "percentile": 0.178,
+     "value": 0.088667,
+     "percentile": 0.1832,
      "basis": "sector",
-     "display": "+%8,6",
+     "display": "+%8,9",
      "tier": "alt dilim"
     }
    ]
@@ -109,17 +109,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 12.7,
+   "score": 10.7,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8274,
-   "tier": "üst dilim",
+   "percentile": 0.6322,
+   "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 8.0,
-     "percentile": 0.0382,
+     "percentile": 0.0369,
      "basis": "sector",
      "display": "8",
      "tier": "alt dilim"
@@ -127,17 +127,17 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.0605,
-     "percentile": 1.0,
+     "value": 0.3372,
+     "percentile": 0.6895,
      "basis": "sector",
-     "display": "%0,06",
+     "display": "%0,34",
      "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.869,
+     "percentile": 0.8829,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -145,7 +145,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Borsalardaki alış-satış farkı açıldı.",
+   "part": "liquidity",
+   "delta": -1.98,
+   "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −2,0)"
+  }
+ ],
  "history": [
   [
    "2026-11-04",
@@ -226,6 +233,10 @@
   [
    "2026-11-23",
    37.63
+  ],
+  [
+   "2026-11-24",
+   35.62
   ]
  ],
  "changes": [
@@ -241,6 +252,21 @@
      "part": "usage",
      "delta": 5.62,
      "label": "Aktif geliştirici sayısı (90 gün) verisi artık yok. (Kullanım +5,6)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "delta": -2.0,
+   "from": 37.6,
+   "to": 35.6,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Borsalardaki alış-satış farkı açıldı.",
+     "part": "liquidity",
+     "delta": -1.98,
+     "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −2,0)"
     }
    ]
   }
@@ -287,21 +313,23 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-23",
+  "end": "2026-11-24",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-11-09",
-   "2026-11-16",
-   "2026-11-23"
+   "2026-11-03",
+   "2026-11-10",
+   "2026-11-17",
+   "2026-11-24"
   ],
   "supply_values": [
-   10363600000.0,
-   10466000000.0,
-   10639800000.0
+   10304000000.0,
+   10383500000.0,
+   10506500000.0,
+   10677300000.0
   ],
-  "supply_change": 0.0266,
-  "supply_days": 14
+  "supply_change": 0.0362,
+  "supply_days": 21
  },
  "exchanges": [
   "MEXC"
@@ -309,6 +337,6 @@
  "delisted": [],
  "recorded": {
   "major_volume_share": 0.0,
-  "holder_count": 8259
+  "holder_count": 8283
  }
 }
