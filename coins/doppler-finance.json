@@ -9,13 +9,13 @@
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 32,
- "total_exact": 31.9,
+ "total": 45,
+ "total_exact": 44.54,
  "band": "Zayıf",
- "delta": 0.0,
+ "delta": 12.6,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -25,12 +25,10 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-25",
+ "date": "2026-11-26",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
-  "gelir",
-  "gelir trendi",
   "arz geçmişi"
  ],
  "penalty": 0.0,
@@ -43,12 +41,22 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 15.1,
+   "has_data": true,
    "weight": 25,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.6964,
+   "tier": "üst dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 0.185601,
+     "percentile": 0.7567,
+     "basis": "sector",
+     "display": "0,19×",
+     "tier": "üst dilim"
+    }
+   ]
   },
   {
    "id": "supply",
@@ -56,14 +64,14 @@
    "score": 0.9,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.0114,
+   "percentile": 0.0112,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.122835,
-     "percentile": 0.0442,
+     "percentile": 0.0443,
      "basis": "sector",
      "display": "%12",
      "tier": "alt dilim"
@@ -72,7 +80,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 8.141002,
-     "percentile": 0.0442,
+     "percentile": 0.0443,
      "basis": "sector",
      "display": "8,14×",
      "tier": "alt dilim"
@@ -92,27 +100,46 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 10.9,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5286,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "revenue_trend",
+     "name": "Gelir trendi (90 gün)",
+     "value": 1.100223,
+     "percentile": 0.5319,
+     "basis": "sector",
+     "display": "+%10",
+     "tier": "orta dilim"
+    },
+    {
+     "id": "category_share_change",
+     "name": "Kategorideki ücret payının değişimi (90 gün)",
+     "value": -0.099544,
+     "percentile": 0.5569,
+     "basis": "sector",
+     "display": "−%10,0",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 11.0,
+   "score": 9.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.5341,
+   "percentile": 0.3596,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 181.0,
-     "percentile": 0.6415,
+     "percentile": 0.644,
      "basis": "sector",
      "display": "181",
      "tier": "orta dilim"
@@ -121,7 +148,7 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5435,
-     "percentile": 0.2872,
+     "percentile": 0.2828,
      "basis": "sector",
      "display": "%0,54",
      "tier": "alt dilim"
@@ -130,15 +157,37 @@
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.125,
-     "percentile": 0.7236,
+     "percentile": 0.7266,
      "basis": "sector",
      "display": "%12",
      "tier": "üst dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.1739,
+     "basis": "sector",
+     "display": "0",
+     "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+   "part": "valuation",
+   "delta": 10.17,
+   "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme +10,2)"
+  },
+  {
+   "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+   "part": "usage",
+   "delta": 3.89,
+   "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım +3,9)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -271,6 +320,10 @@
   [
    "2026-11-25",
    31.9
+  ],
+  [
+   "2026-11-26",
+   44.54
   ]
  ],
  "changes": [
@@ -303,13 +356,55 @@
      "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +3,6)"
     }
    ]
+  },
+  {
+   "date": "2026-11-26",
+   "delta": 12.6,
+   "from": 31.9,
+   "to": 44.5,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+     "part": "valuation",
+     "delta": 10.17,
+     "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme +10,2)"
+    },
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 3.89,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım +3,9)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-26",
+   "delta": 12.6,
+   "from": 31.9,
+   "to": 44.5,
+   "reasons": [
+    {
+     "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+     "part": "valuation",
+     "delta": 10.17,
+     "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme +10,2)"
+    },
+    {
+     "text": "Gelir trendi (90 gün) verisi artık mevcut.",
+     "part": "usage",
+     "delta": 3.89,
+     "label": "Gelir trendi (90 gün) verisi artık mevcut. (Kullanım +3,9)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
-  "name": "Base",
-  "source": "contract",
+  "name": "XRPL",
+  "source": "tvl",
   "flow": false,
   "flow_rank": null
  },
@@ -317,14 +412,66 @@
   "active": [],
   "closed": []
  },
- "funding_rounds": [],
- "investors": [],
- "investors_source": null,
+ "funding_rounds": [
+  {
+   "date": "2025-08-07",
+   "round": "Seed",
+   "amount_musd": 3.0,
+   "lead": [
+    "Reforge"
+   ],
+   "others": [
+    "DCG",
+    "Maven 11",
+    "HashKey Capital",
+    "Titan Fund",
+    "GSR",
+    "KeyRock",
+    "Tenity",
+    "Crit Ventures",
+    "Cluster Capital",
+    "Flowdesk",
+    "Auros Global",
+    "G-20 Group"
+   ]
+  },
+  {
+   "date": "2025-02-27",
+   "round": "Pre-Seed",
+   "amount_musd": 2.5,
+   "lead": [],
+   "others": [
+    "Crit Ventures",
+    "TRIVE Ventures",
+    "Born Ready Ventures",
+    "Green Whale Ventures"
+   ]
+  }
+ ],
+ "investors": [
+  "Reforge",
+  "DCG",
+  "Maven 11",
+  "HashKey Capital",
+  "Titan Fund",
+  "GSR",
+  "KeyRock",
+  "Tenity",
+  "Crit Ventures",
+  "Cluster Capital",
+  "Flowdesk",
+  "Auros Global",
+  "G-20 Group",
+  "TRIVE Ventures",
+  "Born Ready Ventures",
+  "Green Whale Ventures"
+ ],
+ "investors_source": "https://defillama.com/protocol/doppler-finance",
  "angel_investors": [],
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/doppler-finance",
  "research": null,
  "token_utility": null,
  "usage_evidence": null,
@@ -332,26 +479,40 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-25",
-  "fees_weekly": null,
+  "end": "2026-11-26",
+  "fees_weekly": [
+   61290.0,
+   63148.0,
+   60342.0,
+   64616.0,
+   66105.0,
+   65499.0,
+   62347.0,
+   59156.0,
+   59364.0,
+   57705.0,
+   51675.0,
+   45068.0,
+   42856.0
+  ],
   "holders_weekly": null,
   "supply_dates": [
-   "2026-09-30",
-   "2026-10-07",
-   "2026-10-14",
-   "2026-10-21",
-   "2026-10-28",
-   "2026-11-04",
-   "2026-11-11",
-   "2026-11-18",
-   "2026-11-25"
+   "2026-10-01",
+   "2026-10-08",
+   "2026-10-15",
+   "2026-10-22",
+   "2026-10-29",
+   "2026-11-05",
+   "2026-11-12",
+   "2026-11-19",
+   "2026-11-26"
   ],
   "supply_values": [
    1000000000.0,
    1000000000.0,
    1139000000.0,
    1139000000.0,
-   1139000000.0,
+   1228350000.0,
    1228350000.0,
    1228350000.0,
    1228350000.0,
@@ -372,6 +533,6 @@
   "depth_2pct_usd": 123100.01,
   "major_volume_share": 0.0525,
   "holder_count": 15986,
-  "depth_to_mc": 0.007288
+  "depth_to_mc": 0.007652
  }
 }

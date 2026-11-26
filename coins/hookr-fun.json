@@ -7,15 +7,15 @@
  "graduated": false,
  "chain_flow": null,
  "us_exchanges": [],
- "sector": "other",
- "sector_name": "Diğer",
- "total": 44,
- "total_exact": 43.53,
+ "sector": "defi",
+ "sector_name": "DeFi",
+ "total": 33,
+ "total_exact": 33.42,
  "band": "Zayıf",
- "delta": 0.2,
+ "delta": -10.1,
  "confidence": {
-  "parts": 2,
-  "level": "Yetersiz"
+  "parts": 4,
+  "level": "Orta"
  },
  "flags": [],
  "notes": [],
@@ -26,11 +26,14 @@
   "source": "https://coinmarketcap.com/currencies/hookr-fun/",
   "researched_at": "2026-11-04"
  },
- "revenue_unmeasured": true,
- "date": "2026-11-25",
+ "revenue_unmeasured": false,
+ "date": "2026-11-26",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
- "missing": [],
+ "missing": [
+  "gelir",
+  "gelir trendi"
+ ],
  "penalty": 0.0,
  "bonus": 0.0,
  "contract": null,
@@ -38,27 +41,37 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 7.0,
-   "has_data": false,
-   "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "score": 1.9,
+   "has_data": true,
+   "weight": 25,
+   "percentile": 0.0893,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "mc_to_tvl",
+     "name": "Piyasa değeri / kilitli varlık",
+     "value": 744.840976,
+     "percentile": 0.0937,
+     "basis": "sector",
+     "display": "745×",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 15.8,
+   "score": 16.6,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.9091,
+   "percentile": 0.9101,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9296,
+     "percentile": 0.9211,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -67,7 +80,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.0,
-     "percentile": 0.8956,
+     "percentile": 0.9673,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -76,7 +89,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.696,
+     "percentile": 0.7176,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -85,10 +98,10 @@
      "id": "unlock_12m",
      "name": "12 ay içindeki kilit açılışı",
      "value": 0.0,
-     "percentile": 0.6402,
+     "percentile": 0.712,
      "basis": "sector",
      "display": "%0",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     }
    ]
   },
@@ -105,53 +118,85 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 4.8,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.1643,
+   "tier": "alt dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 1.0,
+     "percentile": 0.2425,
+     "basis": "sector",
+     "display": "1",
+     "tier": "alt dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 6.7,
+   "score": 3.5,
    "has_data": true,
-   "weight": 20,
-   "percentile": 0.2045,
+   "weight": 15,
+   "percentile": 0.0449,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 93.0,
-     "percentile": 0.56,
+     "value": 94.0,
+     "percentile": 0.2141,
      "basis": "sector",
-     "display": "93",
-     "tier": "orta dilim"
+     "display": "94",
+     "tier": "alt dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.5245,
-     "percentile": 0.4387,
+     "percentile": 0.3153,
      "basis": "sector",
      "display": "%0,52",
-     "tier": "orta dilim"
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.6774,
-     "percentile": 0.0103,
+     "percentile": 0.001,
      "basis": "sector",
      "display": "%68",
+     "tier": "alt dilim"
+    },
+    {
+     "id": "audits",
+     "name": "Denetim sayısı",
+     "value": 0.0,
+     "percentile": 0.1739,
+     "basis": "sector",
+     "display": "0",
      "tier": "alt dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+   "part": "valuation",
+   "delta": -4.66,
+   "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme −4,7)"
+  },
+  {
+   "text": "Denetim sayısı verisi artık mevcut.",
+   "part": "liquidity",
+   "delta": -4.09,
+   "label": "Denetim sayısı verisi artık mevcut. (Likidite −4,1)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -284,6 +329,10 @@
   [
    "2026-11-25",
    43.53
+  ],
+  [
+   "2026-11-26",
+   33.42
   ]
  ],
  "changes": [
@@ -316,13 +365,55 @@
      "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,3)"
     }
    ]
+  },
+  {
+   "date": "2026-11-26",
+   "delta": -10.1,
+   "from": 43.5,
+   "to": 33.4,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+     "part": "valuation",
+     "delta": -4.66,
+     "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme −4,7)"
+    },
+    {
+     "text": "Denetim sayısı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -4.09,
+     "label": "Denetim sayısı verisi artık mevcut. (Likidite −4,1)"
+    }
+   ]
   }
  ],
- "events": [],
+ "events": [
+  {
+   "date": "2026-11-26",
+   "delta": -10.1,
+   "from": 43.5,
+   "to": 33.4,
+   "reasons": [
+    {
+     "text": "Piyasa değeri / kilitli varlık verisi artık mevcut.",
+     "part": "valuation",
+     "delta": -4.66,
+     "label": "Piyasa değeri / kilitli varlık verisi artık mevcut. (Değerleme −4,7)"
+    },
+    {
+     "text": "Denetim sayısı verisi artık mevcut.",
+     "part": "liquidity",
+     "delta": -4.09,
+     "label": "Denetim sayısı verisi artık mevcut. (Likidite −4,1)"
+    }
+   ]
+  }
+ ],
  "trend": null,
  "chain": {
   "name": "Robinhood Chain",
-  "source": "contract",
+  "source": "tvl",
   "flow": false,
   "flow_rank": null
  },
@@ -337,7 +428,7 @@
  "angel_investors_source": null,
  "angel_investors_estimated": false,
  "hacks_12m": [],
- "defillama_url": null,
+ "defillama_url": "https://defillama.com/protocol/hookr",
  "research": null,
  "token_utility": null,
  "usage_evidence": {
@@ -354,17 +445,17 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-25",
+  "end": "2026-11-26",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-10-14",
-   "2026-10-21",
-   "2026-10-28",
-   "2026-11-04",
-   "2026-11-11",
-   "2026-11-18",
-   "2026-11-25"
+   "2026-10-15",
+   "2026-10-22",
+   "2026-10-29",
+   "2026-11-05",
+   "2026-11-12",
+   "2026-11-19",
+   "2026-11-26"
   ],
   "supply_values": [
    1000000000.0,
