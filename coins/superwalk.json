@@ -9,10 +9,10 @@
  "us_exchanges": [],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 55,
- "total_exact": 54.85,
- "band": "Orta",
- "delta": 0.0,
+ "total": 49,
+ "total_exact": 49.33,
+ "band": "Zayıf",
+ "delta": -5.5,
  "confidence": {
   "parts": 3,
   "level": "Düşük"
@@ -27,7 +27,7 @@
   "researched_at": "2026-11-20"
  },
  "revenue_unmeasured": true,
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -53,14 +53,14 @@
    "score": 12.8,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7126,
+   "percentile": 0.7093,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 0.791582,
-     "percentile": 0.6417,
+     "percentile": 0.6483,
      "basis": "sector",
      "display": "%79",
      "tier": "orta dilim"
@@ -69,7 +69,7 @@
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
      "value": 1.263293,
-     "percentile": 0.6948,
+     "percentile": 0.6919,
      "basis": "sector",
      "display": "1,26×",
      "tier": "üst dilim"
@@ -78,7 +78,7 @@
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
      "value": 0.0,
-     "percentile": 0.5805,
+     "percentile": 0.5764,
      "basis": "sector",
      "display": "%0",
      "tier": "orta dilim"
@@ -91,14 +91,14 @@
    "score": 14.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7333,
+   "percentile": 0.75,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "buyback_burn",
      "name": "Geri alım / yakım",
      "value": 0.5,
-     "percentile": 0.4795,
+     "percentile": 0.4819,
      "basis": "sector",
      "display": "Kısmi",
      "tier": "orta dilim"
@@ -107,7 +107,7 @@
      "id": "token_need",
      "name": "Token gerekli mi",
      "value": 1.0,
-     "percentile": 0.8456,
+     "percentile": 0.8449,
      "basis": "sector",
      "display": "Zorunlu",
      "tier": "üst dilim"
@@ -127,17 +127,17 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.6,
+   "score": 8.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8851,
-   "tier": "üst dilim",
+   "percentile": 0.314,
+   "tier": "alt dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
      "value": 22.0,
-     "percentile": 0.2156,
+     "percentile": 0.2077,
      "basis": "sector",
      "display": "22",
      "tier": "alt dilim"
@@ -145,17 +145,17 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.1676,
-     "percentile": 0.9419,
+     "value": 0.948,
+     "percentile": 0.1169,
      "basis": "sector",
-     "display": "%0,17",
-     "tier": "üst dilim"
+     "display": "%0,95",
+     "tier": "alt dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.0,
-     "percentile": 0.8827,
+     "percentile": 0.8866,
      "basis": "sector",
      "display": "%0",
      "tier": "üst dilim"
@@ -163,7 +163,14 @@
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Borsalardaki alış-satış farkı açıldı.",
+   "part": "liquidity",
+   "delta": -5.53,
+   "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −5,5)"
+  }
+ ],
  "history": [
   [
    "2026-11-20",
@@ -192,6 +199,10 @@
   [
    "2026-11-26",
    54.85
+  ],
+  [
+   "2026-11-27",
+   49.33
   ]
  ],
  "changes": [
@@ -209,6 +220,21 @@
      "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,5)"
     }
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "delta": -5.5,
+   "from": 54.9,
+   "to": 49.3,
+   "event": true,
+   "reasons": [
+    {
+     "text": "Borsalardaki alış-satış farkı açıldı.",
+     "part": "liquidity",
+     "delta": -5.53,
+     "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −5,5)"
+    }
+   ]
   }
  ],
  "events": [
@@ -223,6 +249,20 @@
      "part": "value_capture",
      "delta": 7.51,
      "label": "Geri alım / yakım verisi artık mevcut. (Değer yakalama +7,5)"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "delta": -5.5,
+   "from": 54.9,
+   "to": 49.3,
+   "reasons": [
+    {
+     "text": "Borsalardaki alış-satış farkı açıldı.",
+     "part": "liquidity",
+     "delta": -5.53,
+     "label": "Borsalardaki alış-satış farkı açıldı. (Likidite −5,5)"
     }
    ]
   }
@@ -263,28 +303,28 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-26",
+  "end": "2026-11-27",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-27",
-   "2026-11-26"
+   "2026-11-20",
+   "2026-11-27"
   ],
   "supply_values": [
    791582000.0,
    791582000.0
   ],
   "supply_change": 0.0,
-  "supply_days": 91
+  "supply_days": 7
  },
  "exchanges": [
   "Gate"
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 6814.41,
-  "major_volume_share": 0.9807,
-  "depth_to_mc": 0.000817,
+  "depth_2pct_usd": 1226.49,
+  "major_volume_share": 0.4812,
+  "depth_to_mc": 0.00015,
   "insider_share": 0.2
  }
 }

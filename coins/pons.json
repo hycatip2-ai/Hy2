@@ -1,10 +1,10 @@
 {
- "rank": null,
+ "rank": 11,
  "slug": "pons",
  "symbol": "PONS",
  "name": "Pons",
  "cmc_id": 40938,
- "graduated": false,
+ "graduated": true,
  "chain_flow": null,
  "us_exchanges": [
   "Coinbase"
@@ -12,9 +12,9 @@
  "sector": "other",
  "sector_name": "Diğer",
  "total": 65,
- "total_exact": 64.59,
+ "total_exact": 65.28,
  "band": "Orta",
- "delta": null,
+ "delta": 0.7,
  "confidence": {
   "parts": 4,
   "level": "Orta"
@@ -26,20 +26,24 @@
    "text": "Son 13 haftada, kategorisindeki rakiplerine göre ücretlerinin yarıdan fazlası iki haftada oluştu. Bu tek başına olumsuz değildir; sonraki haftalarda kullanımın kalıcı olup olmadığına bakılmalı."
   }
  ],
- "earns": null,
+ "earns": {
+  "yield": null,
+  "revenue_90d": null,
+  "source": "research"
+ },
  "supply": {
-  "status": "unchecked",
-  "text": "Token desteklenmeyen bir zincirde (ya da asıl kontratı bulunamadı); arz yetkisi kontrol edilemedi. Kendin araştır."
+  "status": "ok",
+  "text": "Kaynaklı araştırma: kimse yeni token basamaz.",
+  "source": "https://tokenomist.ai/pons",
+  "researched_at": "2026-11-26"
  },
  "revenue_unmeasured": false,
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "formula_version": "1.28.0",
- "eligible_for_top": false,
- "missing": [
-  "arz kuralı"
- ],
+ "eligible_for_top": true,
+ "missing": [],
  "penalty": 0.0,
- "bonus": 0.0,
+ "bonus": 5.0,
  "contract": null,
  "parts": [
   {
@@ -55,7 +59,7 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 18.6,
+   "score": 17.3,
    "has_data": true,
    "weight": 20,
    "percentile": 1.0,
@@ -65,7 +69,7 @@
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
      "value": 1.0,
-     "percentile": 0.9337,
+     "percentile": 0.933,
      "basis": "sector",
      "display": "%100",
      "tier": "üst dilim"
@@ -73,8 +77,8 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.000005,
-     "percentile": 0.8913,
+     "value": 1.0,
+     "percentile": 0.9392,
      "basis": "sector",
      "display": "1,00×",
      "tier": "üst dilim"
@@ -82,23 +86,41 @@
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": -0.061441,
-     "percentile": 0.9579,
+     "value": -0.059502,
+     "percentile": 0.9575,
      "basis": "sector",
-     "display": "−%6,1",
+     "display": "−%6,0",
      "tier": "üst dilim"
+    },
+    {
+     "id": "unlock_12m",
+     "name": "12 ay içindeki kilit açılışı",
+     "value": 0.0,
+     "percentile": 0.6387,
+     "basis": "sector",
+     "display": "%0",
+     "tier": "orta dilim"
     }
    ]
   },
   {
    "id": "value_capture",
    "name": "Değer yakalama",
-   "score": 15.7,
+   "score": 12.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.7778,
+   "percentile": 0.6818,
    "tier": "üst dilim",
    "metrics": [
+    {
+     "id": "buyback_burn",
+     "name": "Geri alım / yakım",
+     "value": 1.0,
+     "percentile": 0.7779,
+     "basis": "sector",
+     "display": "Düzenli",
+     "tier": "üst dilim"
+    },
     {
      "id": "revenue_to_emissions",
      "name": "Gelirin yeni arzın değerine oranı",
@@ -107,6 +129,15 @@
      "basis": "universe",
      "display": "Yeni arz yok",
      "tier": "üst dilim"
+    },
+    {
+     "id": "token_need",
+     "name": "Token gerekli mi",
+     "value": 0.5,
+     "percentile": 0.3917,
+     "basis": "sector",
+     "display": "Kısmen",
+     "tier": "orta dilim"
     }
    ]
   },
@@ -122,26 +153,26 @@
     {
      "id": "revenue_trend",
      "name": "Gelir trendi (90 gün)",
-     "value": 17.946536,
-     "percentile": 0.97,
+     "value": 14.942921,
+     "percentile": 0.98,
      "basis": "universe",
-     "display": "+%1.695",
+     "display": "+%1.394",
      "tier": "üst dilim"
     },
     {
      "id": "category_share_change",
      "name": "Kategorideki ücret payının değişimi (90 gün)",
-     "value": 7.374455,
+     "value": 6.064596,
      "percentile": 0.9855,
      "basis": "universe",
-     "display": "+%737",
+     "display": "+%606",
      "tier": "üst dilim"
     },
     {
      "id": "fee_consistency",
      "name": "Kullanımın sürekliliği (13 hafta)",
-     "value": 0.307319,
-     "percentile": 0.0213,
+     "value": 0.310477,
+     "percentile": 0.0217,
      "basis": "universe",
      "display": "%31",
      "tier": "alt dilim"
@@ -154,7 +185,7 @@
    "score": 10.2,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.5632,
+   "percentile": 0.6047,
    "tier": "orta dilim",
    "metrics": [
     {
@@ -170,16 +201,16 @@
      "id": "spread",
      "name": "Alış-satış farkı",
      "value": 0.3486,
-     "percentile": 0.6676,
+     "percentile": 0.674,
      "basis": "sector",
      "display": "%0,35",
-     "tier": "orta dilim"
+     "tier": "üst dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
      "value": 0.4198,
-     "percentile": 0.1003,
+     "percentile": 0.0913,
      "basis": "sector",
      "display": "%42",
      "tier": "alt dilim"
@@ -201,19 +232,23 @@
   [
    "2026-11-26",
    64.59
+  ],
+  [
+   "2026-11-27",
+   65.28
   ]
  ],
  "changes": [],
  "events": [],
  "trend": {
-  "rank_now": 293,
-  "rank_start": 227,
+  "rank_now": 186,
+  "rank_start": 219,
   "score": 0,
   "rise": 0,
-  "steady": 8,
+  "steady": 17,
   "calm": 0,
-  "weeks_up": 1,
-  "weeks_down": 11,
+  "weeks_up": 2,
+  "weeks_down": 10,
   "weeks_total": 12,
   "weekly": [
    1,
@@ -223,7 +258,7 @@
    -1,
    -1,
    -1,
-   -1,
+   1,
    -1,
    -1,
    -1,
@@ -256,70 +291,93 @@
  "hacks_12m": [],
  "defillama_url": "https://defillama.com/protocol/pons",
  "research": null,
- "token_utility": null,
- "usage_evidence": null,
- "allocation": null,
+ "token_utility": {
+  "level": "partial",
+  "uses": [
+   "revenue_share"
+  ],
+  "source": "https://altfins.com/crypto-screener/pons-pons",
+  "note": "Token, protokol gelirlerinden pay almayı (geri alım ve yakım yoluyla) sağlar ancak platform kullanımı için zorunlu değildir.",
+  "researched_at": "2026-11-26"
+ },
+ "usage_evidence": {
+  "metric": "token launches",
+  "value": 22500.0,
+  "unit": "launches",
+  "as_of": "2026-08-30",
+  "confirmed": true,
+  "source": "https://altfins.com/crypto-screener/pons-pons",
+  "note": "30 Ağustos 2026 tarihinde platformda tek bir günde 22.500'den fazla token oluşturulmuştur.",
+  "researched_at": "2026-11-26"
+ },
+ "allocation": {
+  "insiders": null,
+  "vesting_end": "2026-07",
+  "source": "https://tokenomist.ai/pons",
+  "note": "Tahsisat bilgileri net değildir ancak vesting süreci 2026 yılı içinde tamamlanmıştır.",
+  "researched_at": "2026-11-26"
+ },
  "value_transfer_pending": null,
  "usage_share": {
   "category": "Launchpad",
   "peers": "category",
-  "protocols": 135,
+  "protocols": 134,
   "quarters": [
-   0.04317,
-   0.3615
+   0.05109,
+   0.3609
   ]
  },
  "last90": {
-  "end": "2026-11-26",
+  "end": "2026-11-27",
   "fees_weekly": [
-   26333200.0,
-   57360400.0,
-   35238400.0,
-   18948300.0,
-   10809300.0,
-   6753720.0,
-   3377060.0,
-   3118750.0,
-   2273740.0,
-   1575900.0,
-   1250620.0,
-   790471.0,
-   756111.0
+   30329100.0,
+   56908700.0,
+   32551700.0,
+   17773600.0,
+   10368900.0,
+   5937180.0,
+   3295360.0,
+   3094240.0,
+   2214590.0,
+   1473660.0,
+   1110410.0,
+   815686.0,
+   824363.0
   ],
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-27",
-   "2026-09-03",
-   "2026-09-10",
-   "2026-09-17",
-   "2026-09-24",
-   "2026-10-01",
-   "2026-10-08",
-   "2026-10-15",
-   "2026-10-22",
-   "2026-10-29",
-   "2026-11-05",
-   "2026-11-12",
-   "2026-11-19",
-   "2026-11-26"
+   "2026-08-28",
+   "2026-09-04",
+   "2026-09-11",
+   "2026-09-18",
+   "2026-09-25",
+   "2026-10-02",
+   "2026-10-09",
+   "2026-10-16",
+   "2026-10-23",
+   "2026-10-30",
+   "2026-11-06",
+   "2026-11-13",
+   "2026-11-20",
+   "2026-11-27"
   ],
   "supply_values": [
-   711746000.0,
-   706566000.0,
-   695730000.0,
-   686395000.0,
-   683997000.0,
-   681807000.0,
-   679327000.0,
-   675348000.0,
-   672873000.0,
-   671844000.0,
-   670713000.0,
-   670048000.0,
-   669423000.0,
-   668025000.0
+   709992000.0,
+   704859000.0,
+   693874000.0,
+   686158000.0,
+   683797000.0,
+   681550000.0,
+   678709000.0,
+   675017000.0,
+   672691000.0,
+   671705000.0,
+   670628000.0,
+   669948000.0,
+   669342000.0,
+   667898000.0
   ],
-  "supply_change": -0.0614,
+  "supply_change": -0.0593,
   "supply_days": 91
  },
  "exchanges": [
@@ -337,6 +395,6 @@
  "recorded": {
   "depth_2pct_usd": 363687.68,
   "major_volume_share": 0.6458,
-  "depth_to_mc": 0.006283
+  "depth_to_mc": 0.005029
  }
 }

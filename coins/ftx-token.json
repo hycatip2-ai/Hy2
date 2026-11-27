@@ -4,15 +4,15 @@
  "symbol": "FTT",
  "name": "FTX Token",
  "cmc_id": 4195,
- "graduated": true,
+ "graduated": false,
  "chain_flow": null,
  "us_exchanges": [],
  "sector": "defi",
  "sector_name": "DeFi",
- "total": 40,
- "total_exact": 40.26,
+ "total": 43,
+ "total_exact": 43.01,
  "band": "Zayıf",
- "delta": -0.1,
+ "delta": 2.8,
  "confidence": {
   "parts": 2,
   "level": "Yetersiz"
@@ -30,7 +30,7 @@
   "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": false,
- "date": "2026-11-26",
+ "date": "2026-11-27",
  "formula_version": "1.28.0",
  "eligible_for_top": false,
  "missing": [
@@ -115,11 +115,11 @@
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 10.4,
+   "score": 14.1,
    "has_data": true,
    "weight": 15,
-   "percentile": 0.4494,
-   "tier": "orta dilim",
+   "percentile": 0.9213,
+   "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
@@ -133,25 +133,32 @@
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.531,
-     "percentile": 0.2949,
+     "value": 0.439,
+     "percentile": 0.4418,
      "basis": "sector",
-     "display": "%0,53",
-     "tier": "alt dilim"
+     "display": "%0,44",
+     "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.2121,
-     "percentile": 0.3979,
+     "value": 0.1,
+     "percentile": 0.8009,
      "basis": "sector",
-     "display": "%21",
-     "tier": "orta dilim"
+     "display": "%10",
+     "tier": "üst dilim"
     }
    ]
   }
  ],
- "reasons": [],
+ "reasons": [
+  {
+   "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+   "part": "liquidity",
+   "delta": 2.75,
+   "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,8)"
+  }
+ ],
  "history": [
   [
    "2026-10-23",
@@ -288,6 +295,10 @@
   [
    "2026-11-26",
    40.26
+  ],
+  [
+   "2026-11-27",
+   43.01
   ]
  ],
  "changes": [
@@ -350,6 +361,21 @@
      "label": "Şüpheli işlem çiftlerinin oranı arttı. (Likidite −3,9)"
     }
    ]
+  },
+  {
+   "date": "2026-11-27",
+   "delta": 2.8,
+   "from": 40.3,
+   "to": 43.0,
+   "event": false,
+   "reasons": [
+    {
+     "text": "Şüpheli işlem çiftlerinin oranı azaldı.",
+     "part": "liquidity",
+     "delta": 2.75,
+     "label": "Şüpheli işlem çiftlerinin oranı azaldı. (Likidite +2,8)"
+    }
+   ]
   }
  ],
  "events": [
@@ -369,10 +395,10 @@
   }
  ],
  "trend": {
-  "rank_now": 195,
+  "rank_now": 289,
   "rank_start": 269,
-  "score": 26,
-  "rise": 24,
+  "score": 28,
+  "rise": 29,
   "steady": 42,
   "calm": 0,
   "weeks_up": 5,
@@ -383,14 +409,14 @@
    -1,
    1,
    -1,
-   0,
+   1,
    1,
    1,
    -1,
    1,
+   -1,
    0,
-   1,
-   -1
+   0
   ],
   "labels": [
    {
@@ -406,7 +432,7 @@
   "supply_share": 0.0,
   "eligible": false,
   "window_days": 90,
-  "score_change": -8.8,
+  "score_change": -6.1,
   "double": false
  },
  "chain": {
@@ -441,24 +467,24 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-11-26",
+  "end": "2026-11-27",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-27",
-   "2026-09-03",
-   "2026-09-10",
-   "2026-09-17",
-   "2026-09-24",
-   "2026-10-01",
-   "2026-10-08",
-   "2026-10-15",
-   "2026-10-22",
-   "2026-10-29",
-   "2026-11-05",
-   "2026-11-12",
-   "2026-11-19",
-   "2026-11-26"
+   "2026-08-28",
+   "2026-09-04",
+   "2026-09-11",
+   "2026-09-18",
+   "2026-09-25",
+   "2026-10-02",
+   "2026-10-09",
+   "2026-10-16",
+   "2026-10-23",
+   "2026-10-30",
+   "2026-11-06",
+   "2026-11-13",
+   "2026-11-20",
+   "2026-11-27"
   ],
   "supply_values": [
    328895000.0,
@@ -488,9 +514,9 @@
  ],
  "delisted": [],
  "recorded": {
-  "depth_2pct_usd": 5642.53,
-  "major_volume_share": 0.3508,
+  "depth_2pct_usd": 10858.46,
+  "major_volume_share": 0.1678,
   "holder_count": 30494,
-  "depth_to_mc": 9.3e-05
+  "depth_to_mc": 0.000176
  }
 }
