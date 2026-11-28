@@ -1,5 +1,5 @@
 {
- "rank": null,
+ "rank": 95,
  "slug": "alien-worlds",
  "symbol": "TLM",
  "name": "Alien Worlds",
@@ -11,30 +11,32 @@
  ],
  "sector": "other",
  "sector_name": "Diğer",
- "total": 44,
- "total_exact": 43.8,
+ "total": 41,
+ "total_exact": 41.21,
  "band": "Zayıf",
  "delta": null,
  "confidence": {
-  "parts": 3,
-  "level": "Düşük"
+  "parts": 4,
+  "level": "Orta"
  },
- "flags": [],
+ "flags": [
+  {
+   "id": "binance_monitoring",
+   "text": "Binance coine izleme etiketi koydu; Binance bu etiketi genellikle borsadan çıkarmadan önce koyar."
+  }
+ ],
  "notes": [],
  "earns": null,
  "supply": {
-  "status": "unchecked",
-  "text": "Arz yetkisi henüz kontrol edilmedi (sonraki gecelerde kontrol edilecek). Kendin araştır."
+  "status": "ok",
+  "text": "Kontrat yeni token basamıyor ve sonradan değiştirilemiyor."
  },
  "revenue_unmeasured": true,
- "date": "2026-10-31",
+ "date": "2026-11-28",
  "formula_version": "1.28.0",
- "eligible_for_top": false,
- "missing": [
-  "kullanım kanıtı",
-  "arz kuralı"
- ],
- "penalty": 0.0,
+ "eligible_for_top": true,
+ "missing": [],
+ "penalty": 5.0,
  "bonus": 0.0,
  "contract": {
   "chain": "Ethereum",
@@ -44,19 +46,19 @@
   {
    "id": "valuation",
    "name": "Değerleme",
-   "score": 4.2,
+   "score": 3.3,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.1858,
+   "percentile": 0.1667,
    "tier": "alt dilim",
    "metrics": [
     {
      "id": "mc_to_tvl",
      "name": "Piyasa değeri / kilitli varlık",
-     "value": 213.301771,
-     "percentile": 0.2091,
+     "value": 221.601831,
+     "percentile": 0.1667,
      "basis": "universe",
-     "display": "213×",
+     "display": "222×",
      "tier": "alt dilim"
     }
    ]
@@ -64,17 +66,17 @@
   {
    "id": "supply",
    "name": "Arz baskısı",
-   "score": 12.4,
+   "score": 12.1,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.6023,
+   "percentile": 0.6325,
    "tier": "orta dilim",
    "metrics": [
     {
      "id": "circulating_ratio",
      "name": "Dolaşımdaki arz oranı",
-     "value": 0.992718,
-     "percentile": 0.7938,
+     "value": 0.992834,
+     "percentile": 0.8147,
      "basis": "sector",
      "display": "%99",
      "tier": "üst dilim"
@@ -82,19 +84,19 @@
     {
      "id": "fdv_to_mc",
      "name": "Tam seyreltilmiş değer / piyasa değeri",
-     "value": 1.414404,
-     "percentile": 0.6778,
+     "value": 1.410082,
+     "percentile": 0.6216,
      "basis": "sector",
      "display": "1,41×",
-     "tier": "üst dilim"
+     "tier": "orta dilim"
     },
     {
      "id": "supply_growth_90d",
      "name": "Arz artışı (90 gün)",
-     "value": 0.011623,
-     "percentile": 0.3869,
+     "value": 0.011133,
+     "percentile": 0.3764,
      "basis": "sector",
-     "display": "+%1,2",
+     "display": "+%1,1",
      "tier": "orta dilim"
     }
    ]
@@ -112,54 +114,64 @@
   {
    "id": "usage",
    "name": "Kullanım ve büyüme",
-   "score": 7.0,
-   "has_data": false,
+   "score": 10.3,
+   "has_data": true,
    "weight": 20,
-   "percentile": null,
-   "tier": null,
-   "metrics": []
+   "percentile": 0.5909,
+   "tier": "orta dilim",
+   "metrics": [
+    {
+     "id": "active_devs",
+     "name": "Aktif geliştirici sayısı (90 gün)",
+     "value": 3.0,
+     "percentile": 0.5165,
+     "basis": "sector",
+     "display": "3",
+     "tier": "orta dilim"
+    }
+   ]
   },
   {
    "id": "liquidity",
    "name": "Likidite",
-   "score": 13.2,
+   "score": 13.5,
    "has_data": true,
    "weight": 20,
-   "percentile": 0.8864,
+   "percentile": 0.8916,
    "tier": "üst dilim",
    "metrics": [
     {
      "id": "market_pairs",
      "name": "İşlem çifti sayısı",
-     "value": 243.0,
-     "percentile": 0.9367,
+     "value": 246.0,
+     "percentile": 0.9204,
      "basis": "sector",
-     "display": "243",
+     "display": "246",
      "tier": "üst dilim"
     },
     {
      "id": "spread",
      "name": "Alış-satış farkı",
-     "value": 0.3018,
-     "percentile": 0.6665,
+     "value": 0.518,
+     "percentile": 0.4277,
      "basis": "sector",
-     "display": "%0,30",
+     "display": "%0,52",
      "tier": "orta dilim"
     },
     {
      "id": "bad_pair_ratio",
      "name": "Şüpheli işlem çifti oranı",
-     "value": 0.2549,
-     "percentile": 0.2748,
+     "value": 0.1522,
+     "percentile": 0.5699,
      "basis": "sector",
-     "display": "%25",
-     "tier": "alt dilim"
+     "display": "%15",
+     "tier": "orta dilim"
     },
     {
      "id": "audits",
      "name": "Denetim sayısı",
      "value": 2.0,
-     "percentile": 0.7674,
+     "percentile": 0.7736,
      "basis": "universe",
      "display": "2",
      "tier": "üst dilim"
@@ -172,6 +184,10 @@
   [
    "2026-10-31",
    43.8
+  ],
+  [
+   "2026-11-28",
+   41.21
   ]
  ],
  "changes": [],
@@ -204,14 +220,10 @@
  "value_transfer_pending": null,
  "usage_share": null,
  "last90": {
-  "end": "2026-10-31",
+  "end": "2026-11-28",
   "fees_weekly": null,
   "holders_weekly": null,
   "supply_dates": [
-   "2026-08-01",
-   "2026-08-08",
-   "2026-08-15",
-   "2026-08-22",
    "2026-08-29",
    "2026-09-05",
    "2026-09-12",
@@ -219,13 +231,10 @@
    "2026-09-26",
    "2026-10-03",
    "2026-10-10",
-   "2026-10-31"
+   "2026-10-31",
+   "2026-11-28"
   ],
   "supply_values": [
-   6988880000.0,
-   6994020000.0,
-   7001070000.0,
-   7006100000.0,
    7012030000.0,
    7017160000.0,
    7023170000.0,
@@ -233,12 +242,27 @@
    7033950000.0,
    7040080000.0,
    7047670000.0,
-   7070110000.0
+   7070110000.0,
+   7091780000.0
   ],
-  "supply_change": 0.0116,
+  "supply_change": 0.0114,
   "supply_days": 91
  },
- "exchanges": null,
+ "exchanges": [
+  "Binance",
+  "Bitget",
+  "Gate",
+  "KuCoin",
+  "MEXC",
+  "HTX",
+  "Kraken",
+  "Binance.US"
+ ],
  "delisted": [],
- "recorded": null
+ "recorded": {
+  "depth_2pct_usd": 32240.45,
+  "major_volume_share": 0.3541,
+  "holder_count": 6034,
+  "depth_to_mc": 0.00437
+ }
 }
